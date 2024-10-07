@@ -5,8 +5,8 @@
 
     <!--  *********************************************** TextBox*****************************************************  -->
 
-    <Style 
-        x:Key="DefaultTextBoxStyle" 
+    <Style
+        x:Key="DefaultTextBoxStyle"
         TargetType="{x:Type TextBox}">
         <Setter Property="Background" Value="{DynamicResource ControlInteriorBrush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource BlueBorderBrush}" />
@@ -23,7 +23,7 @@
 
     <!--  *********************************************** MetroTextBox*****************************************************  -->
 
-    <Style 
+    <Style
         x:Key="MetroTextBoxStyle"
         TargetType="{x:Type b:MetroTextBox}">
         <Setter Property="Background" Value="{DynamicResource ControlInteriorBrush}" />

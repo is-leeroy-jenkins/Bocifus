@@ -13,36 +13,44 @@ namespace Bocifus
     {
         private Mutex _mutex;
 
-        protected override void OnStartup(StartupEventArgs e)
+        protected override void OnStartup( StartupEventArgs e )
         {
             bool isNewInstance;
-            _mutex = new Mutex(true, "OpenAIOnWPFMutex", out isNewInstance);
-
-            if (!isNewInstance)
+            _mutex = new Mutex( true, "BocifusMutex", out isNewInstance );
+            if( !isNewInstance )
             {
-                ModernWpf.MessageBox.Show("The application is already up and running.");
+                ModernWpf.MessageBox.Show( "The application is already up and running." );
                 _mutex = null;
-                Application.Current.Shutdown();
+                Application.Current.Shutdown( );
             }
 
-            DispatcherUnhandledException += (s, args) => HandleException(args.Exception);
-            TaskScheduler.UnobservedTaskException += (s, args) => HandleException(args.Exception?.InnerException);
-            AppDomain.CurrentDomain.UnhandledException += (s, args) => HandleException(args.ExceptionObject as Exception);
+            DispatcherUnhandledException += ( s, args ) => 
+                HandleException( args.Exception );
+
+            TaskScheduler.UnobservedTaskException += ( s, args ) => 
+                HandleException( args.Exception?.InnerException );
+
+            AppDomain.CurrentDomain.UnhandledException += ( s, args ) => 
+                HandleException( args.ExceptionObject as Exception );
         }
 
-        protected override void OnExit(ExitEventArgs e)
+        protected override void OnExit( ExitEventArgs e )
         {
-            _mutex?.ReleaseMutex();
+            _mutex?.ReleaseMutex( );
         }
-        private void HandleException(Exception e)
-        {
-            if (e == null) return;
 
-            // ModernWpf.MessageBox.Show($"An error has occurred.\n{e}", "Abnormal termination", MessageBoxButton.OK, MessageBoxImage.Error);
-            ShowCustomErrorDialog("An error has occurred.\n" + e.ToString());
-            Environment.Exit(1);
+        private void HandleException( Exception e )
+        {
+            if( e == null )
+            {
+                return;
+            }
+
+            Fail( e );
+            Environment.Exit( 1 );
         }
-        private void ShowCustomErrorDialog(string message)
+
+        private void ShowCustomErrorDialog( string message )
         {
             Window errorWindow = new Window
             {
@@ -60,8 +68,19 @@ namespace Bocifus
             };
 
             errorWindow.Content = textBox;
-            errorWindow.ShowDialog();
-            Environment.Exit(1);
+            errorWindow.ShowDialog( );
+            Environment.Exit( 1 );
+        }
+
+        /// <summary>
+        /// Fails the specified ex.
+        /// </summary>
+        /// <param name="ex">The ex.</param>
+        private protected void Fail( Exception ex )
+        {
+            var _error = new ErrorWindow( ex );
+            _error?.SetText( );
+            _error?.ShowDialog( );
         }
     }
 }

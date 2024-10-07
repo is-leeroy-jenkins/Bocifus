@@ -10,9 +10,13 @@
     xmlns:mdxam="clr-namespace:MdXaml;assembly=MdXaml"
     xmlns:ui="http://schemas.modernwpf.com/2019"
     StartupUri="/UI/Windows/MainWindow.xaml">
+
+    <!--  ****************************************  RESOURCES  *******************************************  -->
+
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
+
                 <ui:ThemeResources>
                     <ui:ThemeResources.ThemeDictionaries>
                         <ResourceDictionary x:Key="Dark">
@@ -37,20 +41,28 @@
                         </ResourceDictionary>
                     </ui:ThemeResources.ThemeDictionaries>
                 </ui:ThemeResources>
+
+                <!--  XAML Resources  -->
                 <ui:XamlControlsResources />
 
                 <!--  Fonts  -->
                 <ResourceDictionary>
                     <FontFamily x:Key="Roboto">pack://application:,,,/Fonts/Roboto-Regular.ttf</FontFamily>
                 </ResourceDictionary>
+
+                <!--  Styles  -->
                 <ResourceDictionary Source="/UI/Themes/generic.xaml" />
                 <ResourceDictionary Source="/FluentWPF;component/Styles/Controls.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+
+            <!--  ****************************************  STYLES *******************************************  -->
+
             <Style
                 BasedOn="{StaticResource DefaultRichTextBoxStyle}"
                 TargetType="{x:Type RichTextBox}">
-                <Setter Property="Background" Value="Transparent" />
-                <!--<Setter Property="Padding" Value="5" />-->
+                <Setter Property="Background" Value="{StaticResource ControlInteriorBrush}" />
+                <Setter Property="Padding" Value="30,3,3,3" />
                 <Setter Property="IsReadOnly" Value="True" />
                 <Setter Property="IsTabStop" Value="False" />
                 <Setter Property="Template">
@@ -59,8 +71,8 @@
                             <Border
                                 x:Name="border"
                                 Background="{TemplateBinding Background}"
-                                BorderBrush="Transparent"
-                                BorderThickness="0">
+                                BorderBrush="{StaticResource BlueBorderBrush}"
+                                BorderThickness="1">
                                 <ScrollViewer x:Name="PART_ContentHost" />
                             </Border>
                             <ControlTemplate.Triggers>
@@ -72,12 +84,13 @@
                     </Setter.Value>
                 </Setter>
             </Style>
+
             <Style
                 x:Key="NoBorderTextBoxStyle"
                 BasedOn="{StaticResource DefaultTextBoxStyle}"
                 TargetType="{x:Type TextBox}">
-                <Setter Property="Background" Value="Transparent" />
-                <Setter Property="BorderBrush" Value="Transparent" />
+                <Setter Property="Background" Value="{StaticResource ControlInteriorBrush}" />
+                <Setter Property="BorderBrush" Value="{StaticResource ControlInteriorBrush}" />
                 <Setter Property="CaretBrush" Value="{DynamicResource SystemBaseHighColorBrush}" />
                 <Setter Property="BorderThickness" Value="0" />
                 <Setter Property="IsTabStop" Value="False" />
@@ -99,6 +112,7 @@
                     </Setter.Value>
                 </Setter>
             </Style>
+
             <!--  MdXaml From  -->
             <Style
                 x:Key="MdXamlStyle"
@@ -114,17 +128,19 @@
                             </Trigger>
                         </Style.Triggers>
                     </Style>
+
                     <Style
                         xmlns:avalonEdit="http://icsharpcode.net/sharpdevelop/avalonedit"
                         TargetType="avalonEdit:TextEditor">
                         <Setter Property="Foreground" Value="{mde:Alpha Foreground, 1, TargetType={x:Type mdxam:MarkdownScrollViewer}}" />
                         <Setter Property="Background" Value="{mde:Alpha Foreground, 0.0800, TargetType={x:Type mdxam:MarkdownScrollViewer}}" />
                         <Setter Property="SyntaxHighlighting" Value="{mde:SyntaxHighlightWrapper TargetType={x:Type mdxam:MarkdownScrollViewer}}" />
-                        <Setter Property="FontFamily" Value="Consolas, Lucida Sans Typewriter, Courier New" />
+                        <Setter Property="FontFamily" Value="Roboto-Regular" />
                         <Setter Property="HorizontalScrollBarVisibility" Value="Auto" />
                         <Setter Property="VerticalScrollBarVisibility" Value="Auto" />
                         <Setter Property="Padding" Value="5,0,5,0" />
                     </Style>
+
                     <Style TargetType="Paragraph">
                         <Style.Triggers>
                             <Trigger Property="Tag" Value="Heading1">
@@ -144,29 +160,33 @@
                             </Trigger>
 
                             <Trigger Property="Tag" Value="CodeBlock">
-                                <Setter Property="FontFamily" Value="Courier New" />
+                                <Setter Property="FontFamily" Value="Roboto-Regular" />
                                 <Setter Property="FontSize" Value="11.9" />
                                 <Setter Property="Background" Value="{mde:Alpha Foreground, 0.0800, TargetType={x:Type mdxam:MarkdownScrollViewer}}" />
                                 <Setter Property="Padding" Value="20,10" />
                             </Trigger>
                         </Style.Triggers>
                     </Style>
+
                     <Style TargetType="List">
                         <Setter Property="Margin" Value="0,0,0,0" />
                         <Setter Property="Padding" Value="30,0,0,0" />
                     </Style>
+
                     <Style TargetType="ListItem">
                         <Setter Property="Margin" Value="0,0,0,0" />
                         <Setter Property="Padding" Value="0,3,0,0" />
                     </Style>
+
                     <Style TargetType="Run">
                         <Style.Triggers>
                             <Trigger Property="Tag" Value="CodeSpan">
-                                <Setter Property="FontFamily" Value="Consolas, Lucida Sans Typewriter, Courier New" />
+                                <Setter Property="FontFamily" Value="Roboto-Regular" />
                                 <Setter Property="Background" Value="{DynamicResource SystemListLowColorBrush}" />
                             </Trigger>
                         </Style.Triggers>
                     </Style>
+
                     <Style TargetType="Table">
                         <Setter Property="CellSpacing" Value="0" />
                         <Setter Property="BorderThickness" Value="0.5" />
@@ -179,6 +199,7 @@
                             </Style>
                         </Style.Resources>
                     </Style>
+
                     <Style TargetType="TableRowGroup">
                         <Style.Triggers>
                             <Trigger Property="Tag" Value="TableHeader">
@@ -186,6 +207,7 @@
                             </Trigger>
                         </Style.Triggers>
                     </Style>
+
                     <Style TargetType="TableRow">
                         <Style.Triggers>
                             <Trigger Property="Tag" Value="EvenTableRow">
@@ -193,15 +215,21 @@
                             </Trigger>
                         </Style.Triggers>
                     </Style>
+
                 </Style.Resources>
             </Style>
+
             <mdplug:MdXamlPlugins x:Key="MdXamlPlugins">
+
                 <mdhtml:HtmlPluginSetup />
                 <mdsvg:SvgPluginSetup />
+
             </mdplug:MdXamlPlugins>
+
             <Style TargetType="{x:Type mdxam:MarkdownScrollViewer}">
                 <Setter Property="FocusVisualStyle" Value="{x:Null}" />
             </Style>
+
             <!--  MdXaml To  -->
         </ResourceDictionary>
     </Application.Resources>

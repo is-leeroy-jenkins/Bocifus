@@ -12,7 +12,7 @@
     <wpf:RevealItem
         x:Key="ButtonAdvRevealItem"
         CornerRadius="{DynamicResource FluentDark.CornerRadius2}"
-        HoverBackground="{DynamicResource SecondaryBackgroundHovered}"
+        HoverBackground="{DynamicResource ControlHoverBrush}"
         HoverBorder="{DynamicResource RevealBorder}"
         PressedBackground="{DynamicResource RevealBackground}" />
 
@@ -67,14 +67,14 @@
         </Border>
         <ControlTemplate.Triggers>
             <Trigger Property="sfskin:SfSkinManager.SizeMode" Value="Touch">
-                <Setter Property="MinHeight" Value="{DynamicResource TouchMode.MinHeight}" />
+                <Setter Property="MinHeight" Value="{DynamicResource FluentDark.MinHeight}" />
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
                     <Condition Property="IsFocused" Value="True" />
                 </MultiTrigger.Conditions>
                 <Setter TargetName="ItemBorder1" Property="Border.Background" Value="{DynamicResource ControlHoverBrush}" />
-                <Setter TargetName="ItemBorder1" Property="Border.BorderBrush" Value="{DynamicResource BorderBrush}" />
+                <Setter TargetName="ItemBorder1" Property="Border.BorderBrush" Value="{DynamicResource BlueBorderBrush}" />
                 <Setter TargetName="PART_LargeText" Property="TextElement.Foreground" Value="{DynamicResource WhiteForeground}" />
                 <Setter Property="Foreground" Value="{DynamicResource LightBlueBrush}" />
             </MultiTrigger>
@@ -137,10 +137,10 @@
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="HorizontalContentAlignment" Value="Center" />
         <Setter Property="Background" Value="{DynamicResource ControlInterior}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource BlueBorderBrush}" />
         <Setter Property="Foreground" Value="{DynamicResource FormForeground}" />
-        <Setter Property="FontFamily" Value="Segoe UI" />
-        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontFamily" Value="Roboto-Regular" />
+        <Setter Property="FontSize" Value="11" />
         <Setter Property="FontWeight" Value="Normal" />
         <Setter Property="Template">
             <Setter.Value>
@@ -198,8 +198,8 @@
                             <MultiTrigger.Conditions>
                                 <Condition Property="IsFocused" Value="True" />
                             </MultiTrigger.Conditions>
-                            <Setter TargetName="ItemBorder" Property="Border.Background" Value="{DynamicResource ControlInterior}" />
-                            <Setter TargetName="ItemBorder" Property="Border.BorderBrush" Value="{DynamicResource ControlInterior}" />
+                            <Setter TargetName="ItemBorder" Property="Border.Background" Value="{DynamicResource ControlInteriorBrush}" />
+                            <Setter TargetName="ItemBorder" Property="Border.BorderBrush" Value="{DynamicResource ControlInteriorBrush}" />
                             <Setter TargetName="PART_NormalText" Property="TextElement.Foreground" Value="{DynamicResource WhiteForeground}" />
                             <Setter Property="Foreground" Value="{DynamicResource WhiteForeground}" />
                         </MultiTrigger>

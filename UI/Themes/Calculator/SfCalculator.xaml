@@ -16,7 +16,7 @@
     <Style x:Key="SyncfusionCalculatorButtonStyle" TargetType="{x:Type syncfusion:CalculatorButton}">
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="Background" Value="{StaticResource ControlInteriorBrush}" />
-        <Setter Property="BorderThickness" Value="{StaticResource FluentDark.BorderThickness}" />
+        <Setter Property="BorderThickness" Value="1" />
         <Setter Property="BorderBrush" Value="{StaticResource ControlInteriorBrush}" />
         <Setter Property="Foreground" Value="{StaticResource WhiteForeground}" />
         <Setter Property="HorizontalContentAlignment" Value="Center" />
@@ -478,7 +478,7 @@
                                 Margin="1"
                                 
                                 BorderBrush="{TemplateBinding BorderBrush}"
-                                BorderThickness="{StaticResource FluentDark.BorderThickness}"
+                                BorderThickness="1"
                                 DisplayText="{Binding DisplayText, RelativeSource={RelativeSource TemplatedParent}}"
                                 Expression="{Binding Expression, RelativeSource={RelativeSource TemplatedParent}}"
                                 FontFamily="{TemplateBinding FontFamily}"
