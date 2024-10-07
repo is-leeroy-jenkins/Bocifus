@@ -15,6 +15,12 @@
     <PackageProjectUrl>https://github.com/is-leeroy-jenkins/Bocifus</PackageProjectUrl>
     <StartupObject>Bocifus.App</StartupObject>
     <AssemblyName>Bocifus</AssemblyName>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/is-leeroy-jenkins/Bocifus</RepositoryUrl>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -426,6 +432,14 @@
   <ItemGroup>
     <None Update="Libraries\MdXaml\MdXaml.dll">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
     </None>
     <None Update="Resources\Assets\image\OpenAI.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
