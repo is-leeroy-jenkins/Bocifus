@@ -1,5 +1,5 @@
 ##  _
-![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/DemoImages/Bocifus.png)
+![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/DemoImages/bocefus.png)
 ###  A simple application for interacting with the OpenAI API written in C#
 
 ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/DemoImages/OpenAIOnWPF.gif)
