@@ -58,13 +58,13 @@
             Foreground="{StaticResource WhiteForeground}" />
         <b:MetroLabel
             x:Name="StatusLabel"
-            Canvas.Left="385"
+            Canvas.Left="523"
             Canvas.Top="5"
             Width="365"
             Height="35"
             Padding="1"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
             HorizontalContentAlignment="Right"
             Content="MetroLabel"
             FontSize="9"
@@ -83,7 +83,9 @@
             FontFamily="Roboto"
             FontSize="11"
             Foreground="{StaticResource WhiteForeground}"
+            ScrollViewer.CanContentScroll="True"
             SelectionBrush="{DynamicResource SteelBlueBackground}"
-            TextWrapping="Wrap" />
+            TextWrapping="Wrap"
+            VerticalScrollBarVisibility="Auto" />
     </Canvas>
 </Window>

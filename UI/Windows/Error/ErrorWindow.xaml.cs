@@ -418,13 +418,13 @@ namespace Bocifus
         /// <param name="sender">The sender.</param>
         /// <param name="e">The <see cref="MouseEventArgs"/>
         /// instance containing the event data.</param>
-        private void OnClick(object sender, MouseEventArgs e)
+        private void OnClick( object sender, MouseEventArgs e )
         {
             try
             {
                 Close( );
             }
-            catch(Exception ex)
+            catch( Exception ex )
             {
                 Fail( ex );
             }
@@ -502,9 +502,9 @@ namespace Bocifus
         /// Fails the specified ex.
         /// </summary>
         /// <param name="ex"> The ex. </param>
-        private void Fail(Exception ex)
+        private void Fail( Exception ex )
         {
-            Console.WriteLine(ex.Message);
+            Console.WriteLine( ex.Message );
         }
     }
 }

@@ -1,0 +1,113 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:b="clr-namespace:Bocifus"
+    xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2">
+
+    <!--  *********************************************** ComboBox *****************************************************  -->
+
+    <Style
+        x:Key="DefaultComboBoxStyle"
+        TargetType="{x:Type ComboBox}">
+        <Setter Property="Background" Value="{DynamicResource ControlInterior}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource LightBlueBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Padding" Value="1" />
+        <Setter Property="Margin" Value="1" />
+        <Setter Property="IsEditable" Value="True" />
+
+    </Style>
+
+
+    <!--  *********************************************** ComboBoxItem *****************************************************  -->
+
+    <Style
+        x:Key="DefaultComboBoxItemStyle"
+        TargetType="{x:Type ComboBoxItem}">
+        <Setter Property="Background" Value="{DynamicResource ControlInterior}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource ControlInterior}" />
+        <Setter Property="Foreground" Value="{DynamicResource LightBlueBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Padding" Value="1" />
+        <Setter Property="Margin" Value="1" />
+        <Setter Property="Height" Value="24" />
+
+
+        <Style.Triggers>
+
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource SteelBlueBackground}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource SteelBlueBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource WhiteForeground}" />
+            </Trigger>
+
+            <Trigger Property="IsMouseOver" Value="False">
+                <Setter Property="Background" Value="{DynamicResource ControlInterior}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource ControlInterior}" />
+                <Setter Property="Foreground" Value="{DynamicResource LightBlueBrush}" />
+            </Trigger>
+
+
+        </Style.Triggers>
+
+    </Style>
+
+    <!--  *********************************************** MetroComboBox *****************************************************  -->
+
+    <Style
+        x:Key="MetroComboBoxStyle"
+        TargetType="{x:Type b:MetroComboBox}">
+        <Setter Property="Background" Value="{DynamicResource ControlInterior}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource LightBlueBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Padding" Value="1" />
+        <Setter Property="Margin" Value="1" />
+        <Setter Property="IsEditable" Value="True" />
+
+    </Style>
+
+
+    <!--  *********************************************** MetroComboBoxItem *****************************************************  -->
+
+    <Style
+        x:Key="MetroComboBoxItemStyle"
+        TargetType="{x:Type b:MetroComboBoxItem}">
+        <Setter Property="Background" Value="{DynamicResource ControlInterior}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource ControlInterior}" />
+        <Setter Property="Foreground" Value="{DynamicResource LightBlueBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Padding" Value="1" />
+        <Setter Property="Margin" Value="1" />
+        <Setter Property="Height" Value="24" />
+
+
+        <Style.Triggers>
+
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource SteelBlueBackground}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource SteelBlueBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource WhiteForeground}" />
+            </Trigger>
+
+            <Trigger Property="IsMouseOver" Value="False">
+                <Setter Property="Background" Value="{DynamicResource ControlInterior}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource ControlInterior}" />
+                <Setter Property="Foreground" Value="{DynamicResource LightBlueBrush}" />
+            </Trigger>
+
+
+        </Style.Triggers>
+
+    </Style>
+
+</ResourceDictionary>

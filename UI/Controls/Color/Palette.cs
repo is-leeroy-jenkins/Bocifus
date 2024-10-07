@@ -127,9 +127,9 @@ namespace Bocifus
         private protected Color _controlInteriorColor = new Color( )
         {
             A = 255,
-            R = 45,
-            G = 45,
-            B = 45
+            R = 61,
+            G = 61,
+            B = 61
         };
 
         /// <summary>

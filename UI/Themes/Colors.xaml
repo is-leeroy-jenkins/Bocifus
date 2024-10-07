@@ -59,7 +59,7 @@
 
     <Color x:Key="BackColor1">#FF141414</Color>
     <Color x:Key="BackColor2">#FF282828</Color>
-    <Color x:Key="BackColor3">#FF2D2D2D</Color>
+    <Color x:Key="BackColor3">#FF3D3D3D</Color>
     <Color x:Key="BackColor4">#FF013D11</Color>
     <Color x:Key="BackColor5">#FF002336</Color>
 

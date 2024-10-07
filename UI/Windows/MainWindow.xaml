@@ -8,8 +8,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:mdxam="clr-namespace:MdXaml;assembly=MdXaml"
     xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
-    xmlns:ui="http://schemas.modernwpf.com/2019"
     xmlns:sync="http://schemas.syncfusion.com/wpf"
+    xmlns:ui="http://schemas.modernwpf.com/2019"
     Title="Brocifus"
     Width="1050"
     Height="800"
@@ -26,9 +26,10 @@
     TintOpacity="0.7"
     mc:Ignorable="d">
 
-<!--***********************************************************RESOURCES**************************************************** -->
+    <!--  ***********************************************************RESOURCES****************************************************  -->
 
     <Window.Resources>
+
         <CollectionViewSource
             x:Key="SortedConversations"
             Source="{Binding ConversationManager.Histories}">
@@ -38,6 +39,7 @@
                     PropertyName="LastUpdated" />
             </CollectionViewSource.SortDescriptions>
         </CollectionViewSource>
+
         <CollectionViewSource
             x:Key="SortedPromptTemplates"
             Source="{Binding PromptTemplatesManger.Templates}">
@@ -47,24 +49,27 @@
                     PropertyName="SortOrder" />
             </CollectionViewSource.SortDescriptions>
         </CollectionViewSource>
+
         <b:FavoriteToSymbolConverter x:Key="FavoriteToSymbolConverter" />
         <b:ContentToVisibilityConverter x:Key="ContentToVisibilityConverter" />
+
         <Style TargetType="ToolTip">
             <Setter Property="BorderThickness" Value="1" />
             <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
             <Setter Property="Background" Value="{StaticResource BlackBackground}" />
             <Setter Property="Foreground" Value="{StaticResource LightBlueBrush}" />
         </Style>
+
     </Window.Resources>
 
     <!--  ******************************************** Context Menu ******************************************  -->
 
     <Window.ContextMenu>
-        <ContextMenu x:Name="MainWindowContextMenu" >
-        
+        <ContextMenu x:Name="MainWindowContextMenu">
+
             <sync:MenuItemAdv
-                Foreground="{StaticResource LightBlueBrush}"
                 Click="OnFileMenuOptionClick"
+                Foreground="{StaticResource LightBlueBrush}"
                 Header="File"
                 ToolTip="Browse File System">
                 <sync:MenuItemAdv.Icon>
@@ -73,8 +78,8 @@
             </sync:MenuItemAdv>
 
             <sync:MenuItemAdv
-                Foreground="{StaticResource LightBlueBrush}"
                 Click="OnFolderMenuOptionClick"
+                Foreground="{StaticResource LightBlueBrush}"
                 Header="Folder"
                 ToolTip="Browse Directories">
                 <sync:MenuItemAdv.Icon>
@@ -85,8 +90,8 @@
             <Separator Background="{StaticResource BlueBorderBrush}" />
 
             <sync:MenuItemAdv
-                Foreground="{StaticResource LightBlueBrush}"
                 Click="OnChromeOptionClick"
+                Foreground="{StaticResource LightBlueBrush}"
                 Header="Chrome"
                 ToolTip="Launch Chrome Browser">
                 <sync:MenuItemAdv.Icon>
@@ -95,8 +100,8 @@
             </sync:MenuItemAdv>
 
             <sync:MenuItemAdv
-                Foreground="{StaticResource LightBlueBrush}"
                 Click="OnEdgeOptionClick"
+                Foreground="{StaticResource LightBlueBrush}"
                 Header="Edge"
                 ToolTip="Launch Edge Browser">
                 <sync:MenuItemAdv.Icon>
@@ -105,8 +110,8 @@
             </sync:MenuItemAdv>
 
             <sync:MenuItemAdv
-                Foreground="{StaticResource LightBlueBrush}"
                 Click="OnFirefoxOptionClick"
+                Foreground="{StaticResource LightBlueBrush}"
                 Header="FireFox"
                 ToolTip="Launch Firefox Browser">
                 <sync:MenuItemAdv.Icon>
@@ -117,8 +122,8 @@
             <Separator Background="{StaticResource BlueBorderBrush}" />
 
             <sync:MenuItemAdv
-                Foreground="{StaticResource LightBlueBrush}"
                 Click="OnCalculatorMenuOptionClick"
+                Foreground="{StaticResource LightBlueBrush}"
                 Header="Calculator"
                 ToolTip="Open Calculator">
                 <sync:MenuItemAdv.Icon>
@@ -127,8 +132,8 @@
             </sync:MenuItemAdv>
 
             <sync:MenuItemAdv
-                Foreground="{StaticResource LightBlueBrush}"
                 Click="OnControlPanelOptionClick"
+                Foreground="{StaticResource LightBlueBrush}"
                 Header="Control Panel"
                 ToolTip="Windows 10 Control Panel">
                 <sync:MenuItemAdv.Icon>
@@ -137,8 +142,8 @@
             </sync:MenuItemAdv>
 
             <sync:MenuItemAdv
-                Foreground="{StaticResource LightBlueBrush}"
                 Click="OnTaskManagerOptionClick"
+                Foreground="{StaticResource LightBlueBrush}"
                 Header="Task Manager"
                 ToolTip="Windows 10 Task Manager">
                 <sync:MenuItemAdv.Icon>
@@ -149,8 +154,8 @@
             <Separator Background="{StaticResource BlueBorderBrush}" />
 
             <sync:MenuItemAdv
-                Foreground="{StaticResource LightBlueBrush}"
                 Click="OnCloseOptionClick"
+                Foreground="{StaticResource LightBlueBrush}"
                 Header="Close"
                 ToolTip="Exit Application">
                 <sync:MenuItemAdv.Icon>
@@ -161,7 +166,7 @@
         </ContextMenu>
     </Window.ContextMenu>
 
-<!--***********************************************************LAYOUT**************************************************** -->
+    <!--  ***********************************************************LAYOUT****************************************************  -->
 
     <Grid>
         <Grid.RowDefinitions>
@@ -1249,6 +1254,12 @@
     <fw:AcrylicWindow.Background>
         <SolidColorBrush
             Opacity="0.6"
-            Color="{DynamicResource SystemChromeHighColor}" />
+            Color="{DynamicResource DefaultColor1}" />
     </fw:AcrylicWindow.Background>
+
+    <fw:AcrylicWindow.Foreground>
+        <SolidColorBrush
+            Opacity="0.6"
+            Color="{DynamicResource InfoColor2}" />
+    </fw:AcrylicWindow.Foreground>
 </fw:AcrylicWindow>

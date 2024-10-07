@@ -38,7 +38,12 @@
                     </ui:ThemeResources.ThemeDictionaries>
                 </ui:ThemeResources>
                 <ui:XamlControlsResources />
-                <ResourceDictionary Source="/UI/Themes/Colors.xaml" />
+
+                <!--  Fonts  -->
+                <ResourceDictionary>
+                    <FontFamily x:Key="Roboto">pack://application:,,,/Fonts/Roboto-Regular.ttf</FontFamily>
+                </ResourceDictionary>
+                <ResourceDictionary Source="/UI/Themes/generic.xaml" />
                 <ResourceDictionary Source="/FluentWPF;component/Styles/Controls.xaml" />
             </ResourceDictionary.MergedDictionaries>
             <Style
