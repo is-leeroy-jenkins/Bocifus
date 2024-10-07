@@ -1,0 +1,444 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows10.0.18362.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Resources\Assets\ApplicationImages\Bocifus.ico</ApplicationIcon>
+    <PackageIcon>Bocifus.png</PackageIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyVersion>0.0.9.0</AssemblyVersion>
+    <FileVersion>0.0.9</FileVersion>
+    <Company>Terry D. Eppler</Company>
+    <Copyright>© Terry D. Eppler All rights reserved.</Copyright>
+    <PackageProjectUrl>https://github.com/is-leeroy-jenkins/Bocifus</PackageProjectUrl>
+    <StartupObject>Bocifus.App</StartupObject>
+    <AssemblyName>Bocifus</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Assets\ApplicationImages\Bocifus.png" />
+    <None Remove="Resources\Assets\CalculatorImages\Cancel.png" />
+    <None Remove="Resources\Assets\CalculatorImages\Main.png" />
+    <None Remove="Resources\Assets\DialogImages\AddColumnButton.png" />
+    <None Remove="Resources\Assets\DialogImages\AddRecordButton.png" />
+    <None Remove="Resources\Assets\DialogImages\AddTableButton.png" />
+    <None Remove="Resources\Assets\DialogImages\ApplicationError.ico" />
+    <None Remove="Resources\Assets\DialogImages\Calendar.png" />
+    <None Remove="Resources\Assets\DialogImages\ColumnConfiguration.png" />
+    <None Remove="Resources\Assets\DialogImages\CopyRecordButton.png" />
+    <None Remove="Resources\Assets\DialogImages\DataSettings.png" />
+    <None Remove="Resources\Assets\DialogImages\DeleteColumnButton.png" />
+    <None Remove="Resources\Assets\DialogImages\DeleteRecordButton.png" />
+    <None Remove="Resources\Assets\DialogImages\DeleteTableButton.png" />
+    <None Remove="Resources\Assets\DialogImages\EditColumnButton.png" />
+    <None Remove="Resources\Assets\DialogImages\EditRecordButton.png" />
+    <None Remove="Resources\Assets\DialogImages\EditSqlButton.png" />
+    <None Remove="Resources\Assets\DialogImages\Error.ico" />
+    <None Remove="Resources\Assets\DialogImages\Error.png" />
+    <None Remove="Resources\Assets\DialogImages\ErrorDialog.png" />
+    <None Remove="Resources\Assets\DialogImages\Error_16.png" />
+    <None Remove="Resources\Assets\DialogImages\Error_64.png" />
+    <None Remove="Resources\Assets\DialogImages\FileBrowse.png" />
+    <None Remove="Resources\Assets\DialogImages\FolderBrowse.png" />
+    <None Remove="Resources\Assets\DialogImages\InputDialog.png" />
+    <None Remove="Resources\Assets\DialogImages\MenuDialog.png" />
+    <None Remove="Resources\Assets\DialogImages\Message.ico" />
+    <None Remove="Resources\Assets\DialogImages\Message.png" />
+    <None Remove="Resources\Assets\DialogImages\SplashNotification.png" />
+    <None Remove="Resources\Assets\DialogImages\TextDialog.png" />
+    <None Remove="Resources\Assets\ExtensionImages\ACCDB.png" />
+    <None Remove="Resources\Assets\ExtensionImages\CSV.png" />
+    <None Remove="Resources\Assets\ExtensionImages\DB.png" />
+    <None Remove="Resources\Assets\ExtensionImages\DLL.png" />
+    <None Remove="Resources\Assets\ExtensionImages\DOC.png" />
+    <None Remove="Resources\Assets\ExtensionImages\DOCX.png" />
+    <None Remove="Resources\Assets\ExtensionImages\EXE.png" />
+    <None Remove="Resources\Assets\ExtensionImages\HTML.png" />
+    <None Remove="Resources\Assets\ExtensionImages\MDB.png" />
+    <None Remove="Resources\Assets\ExtensionImages\MDF.png" />
+    <None Remove="Resources\Assets\ExtensionImages\PDF.png" />
+    <None Remove="Resources\Assets\ExtensionImages\PNG.png" />
+    <None Remove="Resources\Assets\ExtensionImages\PPTX.png" />
+    <None Remove="Resources\Assets\ExtensionImages\PY.png" />
+    <None Remove="Resources\Assets\ExtensionImages\SDF.png" />
+    <None Remove="Resources\Assets\ExtensionImages\SQL.png" />
+    <None Remove="Resources\Assets\ExtensionImages\TXT.png" />
+    <None Remove="Resources\Assets\ExtensionImages\XLS.png" />
+    <None Remove="Resources\Assets\ExtensionImages\XLSX.png" />
+    <None Remove="Resources\Assets\ExtensionImages\XML.png" />
+    <None Remove="Resources\Assets\LoaderImages\Loading.gif" />
+    <None Remove="Resources\Assets\LoaderImages\Processing.gif" />
+    <None Remove="Resources\Assets\LoaderImages\Waiting.gif" />
+    <None Remove="Resources\Assets\MenuImages\CalculatorItem.png" />
+    <None Remove="Resources\Assets\MenuImages\CalendarItem.png" />
+    <None Remove="Resources\Assets\MenuImages\ChromeItem.png" />
+    <None Remove="Resources\Assets\MenuImages\ClockItem.png" />
+    <None Remove="Resources\Assets\MenuImages\CloseItem.png" />
+    <None Remove="Resources\Assets\MenuImages\ControlPanelItem.png" />
+    <None Remove="Resources\Assets\MenuImages\DocumentaionItem.png" />
+    <None Remove="Resources\Assets\MenuImages\EdgeItem.png" />
+    <None Remove="Resources\Assets\MenuImages\ExitItem.png" />
+    <None Remove="Resources\Assets\MenuImages\FileItem.png" />
+    <None Remove="Resources\Assets\MenuImages\FirefoxItem.png" />
+    <None Remove="Resources\Assets\MenuImages\FolderItem.png" />
+    <None Remove="Resources\Assets\MenuImages\MapItem.png" />
+    <None Remove="Resources\Assets\MenuImages\MediaPlayerItem.png" />
+    <None Remove="Resources\Assets\MenuImages\OneDriveItem.png" />
+    <None Remove="Resources\Assets\MenuImages\RefreshItem.png" />
+    <None Remove="Resources\Assets\MenuImages\SaveItem.png" />
+    <None Remove="Resources\Assets\MenuImages\TaskManagerItem.png" />
+    <None Remove="Resources\Assets\ProviderImages\Access.png" />
+    <None Remove="Resources\Assets\ProviderImages\Excel.ico" />
+    <None Remove="Resources\Assets\ProviderImages\Excel.png" />
+    <None Remove="Resources\Assets\ProviderImages\SqlCe.png" />
+    <None Remove="Resources\Assets\ProviderImages\SQLite.png" />
+    <None Remove="Resources\Assets\ProviderImages\SqlServer.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Assets\ApplicationImages\Bocifus.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Betalgo.OpenAI" Version="8.0.1" />
+    <PackageReference Include="EPPlus" Version="7.4.0" />
+    <PackageReference Include="FluentWPF" Version="0.10.2" />
+    <PackageReference Include="Google.Cloud.Translation.V2" Version="3.2.0" />
+    <PackageReference Include="MdXaml.Html" Version="1.27.0" />
+    <PackageReference Include="MdXaml.Plugins" Version="1.27.0" />
+    <PackageReference Include="MdXaml.Svg" Version="1.27.0" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Office.Interop.Outlook" Version="15.0.4797.1004" />
+    <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.1.3-rc" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2420.47" />
+    <PackageReference Include="ModernWpf.MessageBox" Version="0.5.2" />
+    <PackageReference Include="ModernWpfUI" Version="0.9.6" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SkiaSharp" Version="2.88.8" />
+    <PackageReference Include="Syncfusion.Licensing" Version="24.1.41" />
+    <PackageReference Include="Syncfusion.SfSkinManager.WPF" Version="24.1.41" />
+    <PackageReference Include="Syncfusion.Shared.Base" Version="24.1.41" />
+    <PackageReference Include="Syncfusion.Shared.WPF" Version="24.1.41" />
+    <PackageReference Include="Syncfusion.Themes.FluentDark.WPF" Version="24.1.41" />
+    <PackageReference Include="Syncfusion.Tools.WPF" Version="24.1.41" />
+    <PackageReference Include="Syncfusion.UI.WPF.NET" Version="24.1.41" />
+    <PackageReference Include="System.Data.OleDb" Version="8.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.119" />
+    <PackageReference Include="ToastNotifications.Messages.Net6" Version="1.0.4" />
+    <PackageReference Include="ToastNotifications.Net" Version="2.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="LinqStatistics">
+      <HintPath>Libraries\LinqStatistics\LinqStatistics.dll</HintPath>
+    </Reference>
+    <Reference Include="MdXaml">
+      <HintPath>Libraries\MdXaml\MdXaml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe">
+      <HintPath>Libraries\System.Data\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Assets\ApplicationImages\Bocifus.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\CalculatorImages\Cancel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\CalculatorImages\Main.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\AddColumnButton.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\AddRecordButton.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\AddTableButton.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\ApplicationError.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\Calendar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\ColumnConfiguration.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\CopyRecordButton.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\DataSettings.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\DeleteColumnButton.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\DeleteRecordButton.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\DeleteTableButton.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\EditColumnButton.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\EditRecordButton.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\EditSqlButton.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\Error.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\Error.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\ErrorDialog.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\Error_16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\Error_64.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\FileBrowse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\FolderBrowse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\InputDialog.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\MenuDialog.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\Message.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\Message.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\SplashNotification.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\DialogImages\TextDialog.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ExtensionImages\ACCDB.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ExtensionImages\CSV.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ExtensionImages\DB.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ExtensionImages\DLL.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ExtensionImages\DOC.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ExtensionImages\DOCX.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ExtensionImages\EXE.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ExtensionImages\HTML.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ExtensionImages\MDB.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ExtensionImages\MDF.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ExtensionImages\PDF.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ExtensionImages\PNG.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ExtensionImages\PPTX.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ExtensionImages\PY.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ExtensionImages\SDF.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ExtensionImages\SQL.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ExtensionImages\TXT.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ExtensionImages\XLS.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ExtensionImages\XLSX.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ExtensionImages\XML.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\image\OpenAI.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </Resource>
+    <Resource Include="Resources\Assets\LoaderImages\Loading.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\LoaderImages\Processing.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\LoaderImages\Waiting.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\MenuImages\CalculatorItem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\MenuImages\CalendarItem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\MenuImages\ChromeItem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\MenuImages\ClockItem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\MenuImages\CloseItem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\MenuImages\ControlPanelItem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\MenuImages\DocumentaionItem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\MenuImages\EdgeItem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\MenuImages\ExitItem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\MenuImages\FileItem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\MenuImages\FirefoxItem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\MenuImages\FolderItem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\MenuImages\MapItem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\MenuImages\MediaPlayerItem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\MenuImages\OneDriveItem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\MenuImages\RefreshItem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\MenuImages\SaveItem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\MenuImages\TaskManagerItem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ProviderImages\Access.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ProviderImages\Excel.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ProviderImages\Excel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ProviderImages\SqlCe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ProviderImages\SQLite.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Assets\ProviderImages\SqlServer.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Update="SubWindow\TokenCalculator.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UI\Views\WebBrowserPreview.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UI\Views\TitleGenerationSettings.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UI\Views\PromptTemplateInput.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UI\Views\LargeUserTextInput.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UI\Views\VersionWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Libraries\MdXaml\MdXaml.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Assets\image\OpenAI.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Assets\image\OpenAI.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

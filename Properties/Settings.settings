@@ -1,0 +1,155 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="OpenAIOnWPF.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConversationHistoryCount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="NoticeFlg" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="InstructionList" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[["Language Instruction","Please speak Japanese"],["Summarize","Summarize the following text and bullet the most important points"],["Question","Ask questions to achieve the objectives you communicate next.\n- Ask questions to see if this condition is met or to achieve this goal\n- Please ask only one question\n- Please ask the question in Japanese"]]</Value>
+    </Setting>
+    <Setting Name="Instruction" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TokenUsage" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="dailyTokenThreshold" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30000</Value>
+    </Setting>
+    <Setting Name="LastAlertDate" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AccentColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AccentColorName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Theme" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ConfigDataTable" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SelectConfig" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="WindowWidth" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="WindowHeight" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="WindowLeft" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="WindowTop" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="WindowMaximized" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="UseConversationHistory" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="IsSystemPromptColumnVisible" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SystemPromptColumnWidth" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
+    <Setting Name="ConversationColumnWidth" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
+    <Setting Name="IsConversationColumnVisible" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="FontSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">16</Value>
+    </Setting>
+    <Setting Name="FontWeight" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">400</Value>
+    </Setting>
+    <Setting Name="TranslationAPIUrlDeepL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://api-free.deepl.com/v2/translate</Value>
+    </Setting>
+    <Setting Name="TranslationAPIKeyDeepL" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TranslationAPIUseFlg" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="FromTranslationLanguage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">JA</Value>
+    </Setting>
+    <Setting Name="ToTranslationLanguage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">EN</Value>
+    </Setting>
+    <Setting Name="TranslationAPIProvider" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DeepL</Value>
+    </Setting>
+    <Setting Name="TranslationAPIUrlGoogle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://translation.googleapis.com/language/translate/v2</Value>
+    </Setting>
+    <Setting Name="TranslationAPIKeyGoogle" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UpgradeRequired" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="IsPromptTemplateListVisible" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="PromptTemplateGridRowHeigh" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
+    <Setting Name="ChatListGridRowHeight" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
+    <Setting Name="PromptTemplateGridRowHeightSave" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
+    <Setting Name="ModelForTitleGeneration" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TitleGenerationPrompt" Type="System.String" Scope="User">
+      <Value Profile="(Default)">## Instructions
+I would like you to consider the title of the following prompt.
+
+## Constraints
+- Exclude the word "prompt"
+- Do not enclose title in quotes
+- Avoid spoken language
+- Consider the prompt's purpose
+- Title about 3 words
+- {Language}
+
+## prompt
+```
+{Prompt}
+```</Value>
+    </Setting>
+    <Setting Name="TitleLanguage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">English</Value>
+    </Setting>
+    <Setting Name="UseTitleGeneration" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DestinationCurrency" Type="System.String" Scope="User">
+      <Value Profile="(Default)">JPY</Value>
+    </Setting>
+    <Setting Name="ExchangeRate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">150</Value>
+    </Setting>
+    <Setting Name="InputTokenCost" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0.01</Value>
+    </Setting>
+    <Setting Name="OutputTokenCost" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0.03</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

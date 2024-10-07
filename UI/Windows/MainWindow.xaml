@@ -1,0 +1,1137 @@
+﻿<fw:AcrylicWindow
+    x:Class="Bocifus.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:b="clr-namespace:Bocifus"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mdxam="clr-namespace:MdXaml;assembly=MdXaml"
+    xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
+    xmlns:ui="http://schemas.modernwpf.com/2019"
+    Title="Brocifus"
+    Width="1050"
+    Height="800"
+    fw:AcrylicWindow.AcrylicAccentState="Default"
+    fw:AcrylicWindow.Enabled="True"
+    fw:PointerTracker.Enabled="True"
+    ui:ThemeManager.IsThemeAware="True"
+    BorderBrush="{DynamicResource BlueBorderBrush}"
+    Closing="Window_Closing"
+    Icon="/Resources/Assets/ApplicationImages/Bocifus.png"
+    KeyDown="Window_KeyDown"
+    Loaded="MainWindow_Loaded"
+    PreviewKeyDown="AcrylicWindow_PreviewKeyDown"
+    TintOpacity="0.7"
+    mc:Ignorable="d">
+    <Window.Resources>
+        <CollectionViewSource
+            x:Key="SortedConversations"
+            Source="{Binding ConversationManager.Histories}">
+            <CollectionViewSource.SortDescriptions>
+                <scm:SortDescription
+                    Direction="Descending"
+                    PropertyName="LastUpdated" />
+            </CollectionViewSource.SortDescriptions>
+        </CollectionViewSource>
+        <CollectionViewSource
+            x:Key="SortedPromptTemplates"
+            Source="{Binding PromptTemplatesManger.Templates}">
+            <CollectionViewSource.SortDescriptions>
+                <scm:SortDescription
+                    Direction="Ascending"
+                    PropertyName="SortOrder" />
+            </CollectionViewSource.SortDescriptions>
+        </CollectionViewSource>
+        <b:FavoriteToSymbolConverter x:Key="FavoriteToSymbolConverter" />
+        <b:ContentToVisibilityConverter x:Key="ContentToVisibilityConverter" />
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="25" />
+        </Grid.RowDefinitions>
+        <fw:DropShadowPanel
+            Grid.Row="0"
+            Panel.ZIndex="-5"
+            BlurRadius="100"
+            ShadowMode="Inner"
+            ShadowOpacity="0.2"
+            Color="{DynamicResource SystemChromeBlackHighColor}">
+            <Grid
+                Grid.Row="0"
+                Height="60">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackPanel
+                    Grid.Column="0"
+                    Margin="15,0,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center">
+                    <Label
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Content="Configuration" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <ComboBox
+                            x:Name="ConfigurationComboBox"
+                            MinWidth="120"
+                            MaxWidth="200"
+                            Margin="0,0,5,0"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Center"
+                            MaxDropDownHeight="500"
+                            SelectionChanged="ConfigurationComboBox_SelectionChanged">
+                            <ComboBox.Background>
+                                <SolidColorBrush
+                                    Opacity="0.5"
+                                    Color="{DynamicResource SystemChromeLowColor}" />
+                            </ComboBox.Background>
+                        </ComboBox>
+                        <Button
+                            x:Name="ConfigurationSettingButton"
+                            Grid.Column="1"
+                            Width="32"
+                            Height="32"
+                            Padding="-10,-10,-10,-10"
+                            VerticalAlignment="Center"
+                            fw:RevealElement.BorderRadius="4"
+                            Background="Transparent"
+                            Click="ConfigurationSettingButton_Click"
+                            Style="{StaticResource ButtonRevealStyle}">
+                            <ui:SymbolIcon Symbol="Setting" />
+                        </Button>
+                    </Grid>
+                </StackPanel>
+                <StackPanel
+                    Grid.Column="3"
+                    Margin="15,0,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center">
+                    <Label
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Content="System Prompt" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <ComboBox
+                            x:Name="SystemPromptComboBox"
+                            Grid.Column="0"
+                            MinWidth="120"
+                            MaxWidth="200"
+                            Margin="0,0,5,0"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            MaxDropDownHeight="500"
+                            SelectionChanged="SystemPromptComboBox_SelectionChanged">
+                            <ComboBox.Background>
+                                <SolidColorBrush
+                                    Opacity="0.5"
+                                    Color="{DynamicResource SystemChromeLowColor}" />
+                            </ComboBox.Background>
+                        </ComboBox>
+                        <Button
+                            x:Name="InstructionSettingButton"
+                            Grid.Column="1"
+                            Width="32"
+                            Height="32"
+                            Padding="-10,-10,-10,-10"
+                            VerticalAlignment="Center"
+                            fw:RevealElement.BorderRadius="4"
+                            Background="Transparent"
+                            Click="InstructionSettingButton_Click"
+                            Style="{StaticResource ButtonRevealStyle}">
+                            <ui:SymbolIcon Symbol="List" />
+                        </Button>
+                        <Button
+                            x:Name="OpenSytemPromptWindowButton"
+                            Grid.Column="2"
+                            Width="32"
+                            Height="32"
+                            Margin="5,0,0,0"
+                            Padding="-10,-10,-10,-10"
+                            VerticalAlignment="Center"
+                            fw:RevealElement.BorderRadius="4"
+                            Background="Transparent"
+                            Click="OpenSytemPromptWindowButton_Click"
+                            Style="{StaticResource ButtonRevealStyle}">
+                            <ui:SymbolIcon
+                                x:Name="OpenSytemPromptWindowButtonIcon"
+                                Symbol="OpenPane" />
+                        </Button>
+                    </Grid>
+                </StackPanel>
+                <StackPanel
+                    Grid.Column="4"
+                    Margin="15,0,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center">
+                    <Label
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Content="Conversation History" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="105" />
+                        </Grid.ColumnDefinitions>
+                        <Button
+                            x:Name="ConversationHistoryButton"
+                            Grid.Column="0"
+                            Width="32"
+                            Height="32"
+                            Margin="0,0,5,0"
+                            VerticalAlignment="Bottom"
+                            fw:RevealElement.BorderRadius="4"
+                            Background="Transparent"
+                            Click="ConversationHistoryButton_Click"
+                            Style="{StaticResource ButtonRevealStyle}"
+                            ToolTip="Open conversation history">
+                            <ui:SymbolIcon Symbol="Edit" />
+                        </Button>
+                        <Button
+                            x:Name="ConversationHistoryClearButton"
+                            Grid.Column="1"
+                            Width="32"
+                            Height="32"
+                            Margin="0,0,5,0"
+                            VerticalAlignment="Bottom"
+                            fw:RevealElement.BorderRadius="4"
+                            Background="Transparent"
+                            Click="ConversationHistoryClearButton_Click"
+                            Style="{StaticResource ButtonRevealStyle}"
+                            ToolTip="Delete conversation history">
+                            <ui:SymbolIcon Symbol="Delete" />
+                        </Button>
+                        <ui:ToggleSwitch
+                            x:Name="UseConversationHistoryToggleSwitch"
+                            Grid.Column="2"
+                            HorizontalAlignment="Left"
+                            OffContent="Not Use"
+                            OnContent="Use"
+                            Toggled="UseConversationHistoryToggleSwitch_Toggled"
+                            ToolTip="Turn on to use conversation history" />
+                    </Grid>
+                </StackPanel>
+                <StackPanel
+                    Grid.Column="5"
+                    Margin="15,0,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center">
+                    <ui:ToggleSwitch
+                        x:Name="NoticeToggleSwitch"
+                        Grid.Column="2"
+                        Width="80"
+                        HorizontalAlignment="Left"
+                        Header="Notice"
+                        OffContent="Off"
+                        OnContent="On"
+                        Toggled="NoticeToggleSwitch_Toggled"
+                        ToolTip="If on, sends notification after response is complete" />
+                </StackPanel>
+                <Menu
+                    Grid.Column="8"
+                    Height="60"
+                    Margin="0,0,15,0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center">
+                    <MenuItem
+                        Height="60"
+                        Padding="0,0,0,0"
+                        Header="Settings">
+                        <MenuItem
+                            x:Name="ColorMenuItem"
+                            Click="ColorMenuItem_Click"
+                            Header="Color Theme">
+                            <MenuItem.Icon>
+                                <ui:SymbolIcon Symbol="Highlight" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem
+                            x:Name="TranslationAPIMenuItem"
+                            Click="TranslationAPIMenuItem_Click"
+                            Header="Translation API">
+                            <MenuItem.Icon>
+                                <ui:SymbolIcon Symbol="Globe" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem
+                            x:Name="TitleGenerationMenuItem"
+                            Click="TitleGenerationMenuItem_Click"
+                            Header="Title Generation">
+                            <MenuItem.Icon>
+                                <ui:SymbolIcon Symbol="Edit" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem
+                            x:Name="VersionInformationMenuItem"
+                            Click="VersionInformationMenuItem_Click"
+                            Header="Version Information">
+                            <MenuItem.Icon>
+                                <ui:SymbolIcon Symbol="Sync" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </MenuItem>
+                </Menu>
+            </Grid>
+        </fw:DropShadowPanel>
+        <!--        <Button x:Name="BottomScrollButton"
+                Content="⬇"
+                Grid.Row="1"
+                Style="{StaticResource ButtonRevealStyle}"
+                fw:RevealElement.BorderRadius="100"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Right"
+                Margin="0,0,20,20"
+                Width="32"
+                Height="32"
+                Panel.ZIndex="10"
+                Click="BottomScrollButton_Click"
+                Opacity="0.8" />-->
+        <!--<Thumb x:Name="ResizeThumb" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="15" Height="15" DragDelta="ResizeThumb_DragDelta" Background="gray"
+            ToolTip="You can resize the user text box by dragging it with the mouse."/>-->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Name="ConversationHistorytGridColumn" />
+                <ColumnDefinition
+                    x:Name="GridSplitterGridColumn"
+                    Width="Auto" />
+                <ColumnDefinition x:Name="SystemPromptGridColumn" />
+                <ColumnDefinition
+                    x:Name="GridSplitterGridColumn2"
+                    Width="Auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid
+                x:Name="LeftColumnGrid"
+                Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition
+                        x:Name="ChatListGridRow"
+                        Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition
+                        x:Name="PromptTemplateGridRow"
+                        Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.Background>
+                    <SolidColorBrush
+                        Opacity="0.2"
+                        Color="{DynamicResource SystemAltMediumHighColor}" />
+                </Grid.Background>
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid
+                        Grid.Row="0"
+                        Margin="0,5,0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Button
+                            x:Name="NewChatButton"
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                            Height="32"
+                            Margin="10,0,5,0"
+                            HorizontalAlignment="Stretch"
+                            fw:RevealElement.BorderRadius="4"
+                            Background="#33808080"
+                            Click="NewChatButton_Click"
+                            Content="+ New chat"
+                            FontSize="14"
+                            Style="{StaticResource ButtonRevealStyle}" />
+                        <Button
+                            x:Name="ToggleFilterButton"
+                            Grid.Row="0"
+                            Grid.Column="2"
+                            Width="32"
+                            Height="32"
+                            Margin="0,0,10,0"
+                            Padding="-10,-10,-10,-10"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Top"
+                            fw:RevealElement.BorderRadius="4"
+                            Background="#33808080"
+                            Click="ToggleFilterButton_Click"
+                            Foreground="{DynamicResource SystemBaseMediumHighColorBrush}"
+                            Style="{StaticResource ButtonRevealStyle}">
+                            <ui:SymbolIcon Symbol="Filter" />
+                        </Button>
+                        <TextBox
+                            x:Name="FilterTextBox"
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"
+                            Height="30"
+                            Margin="50,5,80,0"
+                            Padding="10,5,20,5"
+                            VerticalAlignment="Center"
+                            ui:ControlHelper.PlaceholderText="Filter"
+                            TextChanged="FilterTextBox_TextChanged"
+                            TextWrapping="Wrap"
+                            Visibility="Collapsed">
+                            <TextBox.Background>
+                                <SolidColorBrush
+                                    Opacity="0.5"
+                                    Color="{DynamicResource SystemChromeLowColor}" />
+                            </TextBox.Background>
+                        </TextBox>
+                        <Button
+                            x:Name="FilterTextBoxClearButton"
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"
+                            Width="20"
+                            Height="20"
+                            Margin="0,3,83,0"
+                            Padding="0"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            Background="Transparent"
+                            Click="ClearTextButton_Click"
+                            Content="✕"
+                            Visibility="Collapsed" />
+                        <ToggleButton
+                            x:Name="FavoriteFilterToggleButton"
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"
+                            Width="32"
+                            Height="32"
+                            Margin="0,5,43,0"
+                            Padding="-10,-10,-10,-10"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Stretch"
+                            fw:RevealElement.BorderRadius="4"
+                            Background="Transparent"
+                            Click="FavoriteFilterToggleButton_Click"
+                            FontSize="20"
+                            Foreground="{DynamicResource SystemBaseMediumHighColorBrush}"
+                            Visibility="Collapsed">
+                            <ToggleButton.ContentTemplate>
+                                <DataTemplate>
+                                    <TextBlock
+                                        x:Name="FavoriteIconTextBlock"
+                                        Text="☆" />
+                                    <DataTemplate.Triggers>
+                                        <DataTrigger
+                                            Binding="{Binding IsChecked, RelativeSource={RelativeSource AncestorType=ToggleButton}}"
+                                            Value="True">
+                                            <Setter TargetName="FavoriteIconTextBlock" Property="Text" Value="★" />
+                                        </DataTrigger>
+                                    </DataTemplate.Triggers>
+                                </DataTemplate>
+                            </ToggleButton.ContentTemplate>
+                        </ToggleButton>
+                    </Grid>
+                    <ListBox
+                        x:Name="ConversationListBox"
+                        Grid.Row="1"
+                        d:ItemsSource="{d:SampleData ItemCount=5}"
+                        ItemsSource="{Binding Source={StaticResource SortedConversations}}"
+                        SelectionChanged="ConversationListBox_SelectionChanged">
+                        <ListBox.ItemContainerStyle>
+                            <Style
+                                BasedOn="{StaticResource DefaultListBoxItemStyle}"
+                                TargetType="ListBoxItem">
+                                <Setter Property="Height" Value="51" />
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                            </Style>
+                        </ListBox.ItemContainerStyle>
+                        <ListBox.Background>
+                            <SolidColorBrush Opacity="0.2" />
+                        </ListBox.Background>
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <TextBox
+                                        Grid.Column="0"
+                                        VerticalAlignment="Stretch"
+                                        VerticalContentAlignment="Center"
+                                        Background="Transparent"
+                                        BorderThickness="0"
+                                        Cursor="Arrow"
+                                        Focusable="False"
+                                        IsReadOnly="True"
+                                        Text="{Binding Title, Mode=TwoWay}">
+                                        <TextBox.ToolTip>
+                                            <ToolTip>
+                                                <ToolTip.Content>
+                                                    <StackPanel>
+                                                        <TextBlock
+                                                            Text="{Binding Title}"
+                                                            TextWrapping="Wrap" />
+                                                        <TextBlock
+                                                            Text="{Binding LastUpdated, StringFormat='LastUpdate: {0:yyyy/MM/dd HH:mm:ss}'}"
+                                                            TextWrapping="Wrap" />
+                                                    </StackPanel>
+                                                </ToolTip.Content>
+                                            </ToolTip>
+                                        </TextBox.ToolTip>
+                                    </TextBox>
+                                    <Button
+                                        x:Name="ConversationListBoxMoreButton"
+                                        Grid.Column="1"
+                                        Width="32"
+                                        Height="32"
+                                        Margin="10,0,0,0"
+                                        Padding="-10,-10,-10,-10"
+                                        VerticalAlignment="Center"
+                                        fw:RevealElement.BorderRadius="4"
+                                        Background="Transparent"
+                                        Click="ConversationListBoxMoreButton_Click"
+                                        FontSize="20"
+                                        Opacity="0.6">
+                                        <Button.ContextMenu>
+                                            <ContextMenu
+                                                Opened="ContextMenu_Opened"
+                                                PreviewKeyDown="ConversationListBoxContextMenu_PreviewKeyDown">
+                                                <MenuItem
+                                                    Click="ConversationFavoriteButton_Click"
+                                                    Header="Favorite">
+                                                    <MenuItem.Icon>
+                                                        <ContentControl Content="{Binding Favorite, Converter={StaticResource FavoriteToSymbolConverter}}" />
+                                                    </MenuItem.Icon>
+                                                </MenuItem>
+                                                <MenuItem
+                                                    Click="ConversationTitleEditButton_Click"
+                                                    Header="Title Edit">
+                                                    <MenuItem.Icon>
+                                                        <ui:SymbolIcon Symbol="Edit" />
+                                                    </MenuItem.Icon>
+                                                </MenuItem>
+                                                <MenuItem
+                                                    Click="ConversationDeleteButton_Click"
+                                                    Header="Delete">
+                                                    <MenuItem.Icon>
+                                                        <ui:SymbolIcon Symbol="Delete" />
+                                                    </MenuItem.Icon>
+                                                </MenuItem>
+                                            </ContextMenu>
+                                        </Button.ContextMenu>
+                                        <Button.Style>
+                                            <Style
+                                                BasedOn="{StaticResource ButtonRevealStyle}"
+                                                TargetType="Button">
+                                                <Setter Property="Visibility" Value="Collapsed" />
+                                                <Style.Triggers>
+                                                    <DataTrigger
+                                                        Binding="{Binding IsSelected}"
+                                                        Value="True">
+                                                        <Setter Property="Visibility" Value="Visible" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Button.Style>
+                                        <ui:SymbolIcon Symbol="More" />
+                                    </Button>
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Grid>
+                <GridSplitter
+                    x:Name="testsplitter"
+                    Grid.Row="1"
+                    Height="10"
+                    HorizontalAlignment="Stretch"
+                    Background="Transparent" />
+                <Border
+                    Grid.Row="2"
+                    Margin="10,0,10,0"
+                    Padding="0"
+                    CornerRadius="10"
+                    ScrollViewer.VerticalScrollBarVisibility="Auto">
+                    <Border.Background>
+                        <SolidColorBrush
+                            Opacity="0.05"
+                            Color="{DynamicResource SystemChromeHighColor}" />
+                    </Border.Background>
+                    <Grid Margin="0,0,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid
+                            x:Name="PromptTemplateGrid1"
+                            Grid.Row="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Button
+                                x:Name="NewTemplateButton"
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                Height="32"
+                                Margin="10,5,10,5"
+                                HorizontalAlignment="Stretch"
+                                fw:RevealElement.BorderRadius="4"
+                                Background="#33808080"
+                                Click="NewTemplateButton_Click"
+                                Content="+ New template"
+                                FontSize="14"
+                                Style="{StaticResource ButtonRevealStyle}" />
+                            <ListBox
+                                x:Name="PromptTemplateListBox"
+                                Grid.Row="1"
+                                d:ItemsSource="{d:SampleData ItemCount=5}"
+                                ItemsSource="{Binding Source={StaticResource SortedPromptTemplates}}"
+                                MouseLeave="PromptTemplateListBox_MouseLeave"
+                                ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                SelectionChanged="PromptTemplateListBox_SelectionChanged">
+                                <ListBox.ItemContainerStyle>
+                                    <Style
+                                        BasedOn="{StaticResource DefaultListBoxItemStyle}"
+                                        TargetType="ListBoxItem">
+                                        <Setter Property="Height" Value="51" />
+                                        <EventSetter
+                                            Event="MouseEnter"
+                                            Handler="PromptTemplateListBoxItem_MouseEnter" />
+                                    </Style>
+                                </ListBox.ItemContainerStyle>
+                                <ListBox.Background>
+                                    <SolidColorBrush Opacity="0.2" />
+                                </ListBox.Background>
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="Auto" />
+                                            </Grid.ColumnDefinitions>
+                                            <TextBox
+                                                Grid.Column="0"
+                                                VerticalAlignment="Stretch"
+                                                VerticalContentAlignment="Center"
+                                                Background="Transparent"
+                                                BorderThickness="0"
+                                                Cursor="Arrow"
+                                                Focusable="False"
+                                                IsReadOnly="True"
+                                                Text="{Binding Title, Mode=TwoWay}">
+                                                <TextBox.ToolTip>
+                                                    <ToolTip>
+                                                        <ToolTip.Content>
+                                                            <TextBlock Text="{Binding LastUpdated, StringFormat='LastUpdate: {0:yyyy/MM/dd HH:mm:ss}'}" />
+                                                        </ToolTip.Content>
+                                                    </ToolTip>
+                                                </TextBox.ToolTip>
+                                            </TextBox>
+                                            <!--<Button
+                                            x:Name="PromptTemplateDeleteButton"
+                                            Grid.Column="2"
+                                            Width="32"
+                                            Height="32"
+                                            Margin="5,0,0,0"
+                                            Padding="-10,-10,-10,-10"
+                                            VerticalAlignment="Center"
+                                            fw:RevealElement.BorderRadius="4"
+                                            Background="Transparent"
+                                            Click="PromptTemplateDeleteButton_Click"
+                                            Opacity="0.6">
+                                            <Button.Style>
+                                                <Style BasedOn="{StaticResource ButtonRevealStyle}" TargetType="Button">
+                                                    <Setter Property="Visibility" Value="Collapsed" />
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=ListBoxItem}}" Value="True">
+                                                            <Setter Property="Visibility" Value="Visible" />
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Button.Style>
+                                            <ui:SymbolIcon Symbol="Delete" />
+                                        </Button>-->
+                                            <Button
+                                                x:Name="PromptTemplateSortUpButton"
+                                                Grid.Column="2"
+                                                Width="32"
+                                                Height="32"
+                                                Margin="5,0,0,0"
+                                                Padding="-10,-10,-10,-10"
+                                                VerticalAlignment="Center"
+                                                fw:RevealElement.BorderRadius="4"
+                                                Background="Transparent"
+                                                Click="PromptTemplateSortUpButton_Click"
+                                                Content="△"
+                                                Opacity="0.6">
+                                                <Button.Style>
+                                                    <Style
+                                                        BasedOn="{StaticResource ButtonRevealStyle}"
+                                                        TargetType="Button">
+                                                        <Setter Property="Visibility" Value="Collapsed" />
+                                                        <Style.Triggers>
+                                                            <DataTrigger
+                                                                Binding="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=ListBoxItem}}"
+                                                                Value="True">
+                                                                <Setter Property="Visibility" Value="Visible" />
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Button.Style>
+                                            </Button>
+                                            <Button
+                                                x:Name="PromptTemplateSortDownButton"
+                                                Grid.Column="3"
+                                                Width="32"
+                                                Height="32"
+                                                Margin="5,0,0,0"
+                                                Padding="-10,-10,-10,-10"
+                                                VerticalAlignment="Center"
+                                                fw:RevealElement.BorderRadius="4"
+                                                Background="Transparent"
+                                                Click="PromptTemplateSortDownButton_Click"
+                                                Content="▽"
+                                                Opacity="0.6">
+                                                <Button.Style>
+                                                    <Style
+                                                        BasedOn="{StaticResource ButtonRevealStyle}"
+                                                        TargetType="Button">
+                                                        <Setter Property="Visibility" Value="Collapsed" />
+                                                        <Style.Triggers>
+                                                            <DataTrigger
+                                                                Binding="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=ListBoxItem}}"
+                                                                Value="True">
+                                                                <Setter Property="Visibility" Value="Visible" />
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Button.Style>
+                                            </Button>
+                                            <Button
+                                                x:Name="PromptTemplateEditButton"
+                                                Grid.Column="4"
+                                                Width="32"
+                                                Height="32"
+                                                Margin="5,0,0,0"
+                                                Padding="-10,-10,-10,-10"
+                                                VerticalAlignment="Center"
+                                                fw:RevealElement.BorderRadius="4"
+                                                Background="Transparent"
+                                                Click="PromptTemplateEditButton_Click"
+                                                Opacity="0.6">
+                                                <Button.Style>
+                                                    <Style
+                                                        BasedOn="{StaticResource ButtonRevealStyle}"
+                                                        TargetType="Button">
+                                                        <Setter Property="Visibility" Value="Collapsed" />
+                                                        <Style.Triggers>
+                                                            <DataTrigger
+                                                                Binding="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=ListBoxItem}}"
+                                                                Value="True">
+                                                                <Setter Property="Visibility" Value="Visible" />
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Button.Style>
+                                                <ui:SymbolIcon Symbol="Edit" />
+                                            </Button>
+                                            <Button
+                                                x:Name="PromptTemplateInsertButton"
+                                                Grid.Column="5"
+                                                Width="64"
+                                                Height="32"
+                                                Margin="5,0,0,0"
+                                                Padding="-10,-10,-10,-10"
+                                                VerticalAlignment="Center"
+                                                fw:RevealElement.BorderRadius="4"
+                                                Click="PromptTemplateInsertButton_Click"
+                                                Opacity="0.8">
+                                                <Button.Style>
+                                                    <Style
+                                                        BasedOn="{StaticResource ButtonRevealStyle}"
+                                                        TargetType="Button">
+                                                        <Setter Property="Visibility" Value="Collapsed" />
+                                                        <Style.Triggers>
+                                                            <DataTrigger
+                                                                Binding="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=ListBoxItem}}"
+                                                                Value="True">
+                                                                <Setter Property="Visibility" Value="Visible" />
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Button.Style>
+                                                <ui:SymbolIcon Symbol="Next" />
+                                            </Button>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </Grid>
+                    </Grid>
+                </Border>
+                <Button
+                    x:Name="ToggleVisibilityPromptTemplateButton"
+                    Grid.Row="3"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    fw:RevealElement.BorderRadius="4"
+                    Background="Transparent"
+                    Click="ToggleVisibilityPromptTemplateButton_Click"
+                    Content="▼"
+                    Style="{StaticResource ButtonRevealStyle}" />
+            </Grid>
+            <GridSplitter
+                Grid.Column="1"
+                Width="10"
+                Margin="-10,0,0,0"
+                HorizontalAlignment="Stretch"
+                Background="Transparent" />
+            <Grid
+                x:Name="SystemPromptGrid"
+                Grid.Column="2">
+                <Grid.Background>
+                    <SolidColorBrush
+                        Opacity="0.1"
+                        Color="{DynamicResource SystemAltMediumHighColor}" />
+                </Grid.Background>
+                <Grid Margin="0,10,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Label
+                        Grid.Row="0"
+                        HorizontalAlignment="Center"
+                        Content="System Prompt Templete" />
+                    <Grid
+                        Grid.Row="1"
+                        HorizontalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <ComboBox
+                            x:Name="SystemPromptComboBox2"
+                            Grid.Column="0"
+                            MinWidth="120"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Top"
+                            MaxDropDownHeight="500"
+                            SelectionChanged="SystemPromptComboBox2_SelectionChanged">
+                            <ComboBox.Background>
+                                <SolidColorBrush
+                                    Opacity="0.5"
+                                    Color="{DynamicResource SystemChromeLowColor}" />
+                            </ComboBox.Background>
+                        </ComboBox>
+                        <Label
+                            x:Name="UnsavedLabel"
+                            Grid.Column="1"
+                            Margin="5,0,0,0"
+                            Content="*"
+                            Visibility="Collapsed" />
+                    </Grid>
+                    <TextBox
+                        x:Name="SystemPromptContentsTextBox"
+                        Grid.Row="2"
+                        Margin="10,10,10,10"
+                        VerticalAlignment="Top"
+                        ui:ControlHelper.PlaceholderText="System Prompt Content"
+                        AcceptsReturn="True"
+                        AcceptsTab="True"
+                        TextChanged="SystemPromptContentsTextBox_TextChanged"
+                        TextWrapping="Wrap">
+                        <TextBox.Background>
+                            <SolidColorBrush
+                                Opacity="0.5"
+                                Color="{DynamicResource SystemChromeLowColor}" />
+                        </TextBox.Background>
+                    </TextBox>
+                </Grid>
+            </Grid>
+            <GridSplitter
+                x:Name="SystemPromptSplitter"
+                Grid.Column="3"
+                Width="10"
+                Margin="-10,0,0,0"
+                HorizontalAlignment="Stretch"
+                Background="Transparent" />
+            <Grid Grid.Column="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <ScrollViewer
+                    x:Name="MessageScrollViewer"
+                    Grid.Row="0"
+                    PreviewKeyDown="MessageScrollViewer_PreviewKeyDown"
+                    ScrollChanged="MessageScrollViewer_ScrollChanged"
+                    VerticalScrollBarVisibility="Auto">
+                    <StackPanel
+                        x:Name="MessagesPanel"
+                        PreviewMouseWheel="PreviewMouseWheel" />
+                </ScrollViewer>
+                <Button
+                    x:Name="BottomScrollButton"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Width="32"
+                    Height="32"
+                    Margin="0,0,20,20"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Panel.ZIndex="10"
+                    fw:RevealElement.BorderRadius="100"
+                    Click="BottomScrollButton_Click"
+                    Content="⬇"
+                    Opacity="0.8"
+                    Style="{StaticResource ButtonRevealStyle}" />
+                <Grid
+                    Grid.Row="1"
+                    MouseEnter="AssistantMessageGrid_MouseEnter"
+                    MouseLeave="AssistantMessageGrid_MouseLeave">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition
+                            Width="20*"
+                            MaxWidth="1300" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label
+                            x:Name="ImageFilePathLabel"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                            Margin="21,-21,0,45"
+                            HorizontalAlignment="Left"
+                            Content="C:\\work\image.png"
+                            Cursor="Hand"
+                            MouseUp="ImageFilePathLabel_MouseUp"
+                            Opacity="0.9" />
+                        <Button
+                            x:Name="ClearImageFilePathLabelButton"
+                            Grid.Column="0"
+                            Width="22"
+                            Height="22"
+                            Margin="0,-68,0,0"
+                            Padding="-10,-10,-10,-10"
+                            HorizontalAlignment="Left"
+                            Background="Transparent"
+                            Click="ClearImageFilePathLabelButton_Click"
+                            Content="✖"
+                            Opacity="0.5"
+                            Visibility="{Binding Content, ElementName=ImageFilePathLabel, Converter={StaticResource ContentToVisibilityConverter}}" />
+                        <StackPanel Grid.Column="0">
+                            <Button
+                                x:Name="ShowLargeTextInputWindowButton"
+                                HorizontalAlignment="Stretch"
+                                fw:RevealElement.BorderRadius="4"
+                                Click="ShowLargeTextInputWindowButton_Click"
+                                Content="▲"
+                                Style="{StaticResource ButtonRevealStyle}"
+                                ToolTip="Expand text input (F2)"
+                                Visibility="Collapsed" />
+                            <TextBox
+                                x:Name="UserTextBox"
+                                MinWidth="0"
+                                MaxHeight="180"
+                                Padding="10,10,10,10"
+                                VerticalAlignment="Bottom"
+                                ui:ControlHelper.PlaceholderText="Send a message..."
+                                AcceptsReturn="True"
+                                FontSize="16"
+                                KeyDown="UserTextBox_KeyDown"
+                                MouseWheel="UserTextBox_MouseWheel"
+                                SizeChanged="UserTextBox_SizeChanged"
+                                TextChanged="UserTextBox_TextChanged"
+                                TextWrapping="Wrap"
+                                VerticalScrollBarVisibility="Auto">
+                                <TextBox.Background>
+                                    <SolidColorBrush
+                                        Opacity="0.5"
+                                        Color="{DynamicResource SystemChromeLowColor}" />
+                                </TextBox.Background>
+                            </TextBox>
+                        </StackPanel>
+                        <Button
+                            x:Name="AttachFileButton"
+                            Grid.Column="0"
+                            Height="30"
+                            MaxHeight="180"
+                            Margin="5,0,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            fw:RevealElement.BorderRadius="4"
+                            Background="Transparent"
+                            Click="AttachFileButton_Click"
+                            Foreground="{DynamicResource SystemBaseMediumHighColorBrush}"
+                            Opacity="0.7"
+                            Style="{StaticResource ButtonRevealStyle}"
+                            ToolTip="Translate (Ctrl+Alt+Enter)">
+                            <Button.ContextMenu>
+                                <ContextMenu Opened="ContextMenu_Opened">
+                                    <MenuItem
+                                        Click="SelectFile_Click"
+                                        Header="Select File" />
+                                    <MenuItem
+                                        x:Name="PasteFromClipboardMenuItem"
+                                        Click="PasteFromClipboard_Click"
+                                        Header="Paste from Clipboard" />
+                                </ContextMenu>
+                            </Button.ContextMenu>
+                            <StackPanel Orientation="Horizontal">
+                                <Viewbox Width="22">
+                                    <ui:SymbolIcon
+                                        Margin="5,5,5,5"
+                                        Foreground="{DynamicResource SystemBaseMediumHighColorBrush}"
+                                        Symbol="Add" />
+                                </Viewbox>
+                            </StackPanel>
+                        </Button>
+                        <Button
+                            x:Name="TranslateButton"
+                            Grid.Column="0"
+                            Height="30"
+                            MaxHeight="180"
+                            Margin="0,0,5,0"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            fw:RevealElement.BorderRadius="4"
+                            Background="Transparent"
+                            Click="TranslateButton_Click"
+                            Foreground="{DynamicResource SystemBaseMediumHighColorBrush}"
+                            Opacity="0.7"
+                            Style="{StaticResource ButtonRevealStyle}"
+                            ToolTip="Translate (Ctrl+Alt+Enter)">
+                            <StackPanel Orientation="Horizontal">
+                                <Viewbox Width="22">
+                                    <ui:SymbolIcon
+                                        Margin="5,5,5,5"
+                                        Foreground="{DynamicResource SystemBaseMediumHighColorBrush}"
+                                        Symbol="Globe" />
+                                </Viewbox>
+                            </StackPanel>
+                        </Button>
+                        <Button
+                            x:Name="ExecButton"
+                            Grid.Column="1"
+                            Width="43"
+                            Margin="5,0,0,0"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                            fw:RevealElement.BorderRadius="4"
+                            Click="ExecButton_Click"
+                            Foreground="{DynamicResource SystemBaseMediumHighColorBrush}"
+                            Style="{StaticResource ButtonRevealStyle}"
+                            ToolTip="Send message (Ctrl+Enter)">
+                            <ui:SymbolIcon Symbol="Send" />
+                        </Button>
+                        <Button
+                            x:Name="CancelButton"
+                            Grid.Column="1"
+                            Width="43"
+                            Margin="5,0,0,0"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                            fw:RevealElement.BorderRadius="4"
+                            Click="CancelButton_Click"
+                            Foreground="{DynamicResource SystemBaseMediumHighColorBrush}"
+                            Opacity="0.9"
+                            Style="{StaticResource ButtonRevealStyle}"
+                            Visibility="Collapsed">
+                            <ui:SymbolIcon Symbol="Cancel" />
+                        </Button>
+                        <ui:ProgressRing
+                            x:Name="ProgressRing"
+                            Grid.Column="1"
+                            Width="43"
+                            Height="30"
+                            Margin="5,0,0,0"
+                            IsActive="False"
+                            Opacity="0.9" />
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+        <StatusBar
+            Grid.Row="2"
+            Background="#00000000">
+            <StatusBarItem
+                HorizontalAlignment="Right"
+                DockPanel.Dock="Right">
+                <Label
+                    x:Name="TokenUsageButton"
+                    Padding="5,0,5,0"
+                    Foreground="#FF959595"
+                    MouseLeftButtonDown="TokenUsage_MouseLeftButtonDown">
+                    <ui:SymbolIcon Symbol="FourBars" />
+                </Label>
+            </StatusBarItem>
+            <Separator DockPanel.Dock="Right" />
+            <StatusBarItem
+                HorizontalAlignment="Right"
+                DockPanel.Dock="Right">
+                <Label
+                    x:Name="TokensLabel"
+                    Padding="10,0,10,0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    Foreground="#FF959595"
+                    MouseLeftButtonDown="TokensLabel_MouseLeftButtonDown" />
+            </StatusBarItem>
+            <Separator DockPanel.Dock="Right" />
+            <StatusBarItem
+                HorizontalAlignment="Right"
+                DockPanel.Dock="Right">
+                <Label
+                    x:Name="TimeLabel"
+                    Padding="10,0,10,0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    Foreground="#FF959595" />
+            </StatusBarItem>
+        </StatusBar>
+        <!--  https://github.com/whistyun/MdXaml/wiki/How-to-customise-style  -->
+    </Grid>
+    <fw:AcrylicWindow.Background>
+        <SolidColorBrush
+            Opacity="0.6"
+            Color="{DynamicResource SystemChromeHighColor}" />
+    </fw:AcrylicWindow.Background>
+</fw:AcrylicWindow>

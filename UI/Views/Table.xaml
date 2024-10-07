@@ -1,0 +1,133 @@
+﻿<fw:AcrylicWindow
+    x:Class="Bocifus.Table"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
+    xmlns:local="clr-namespace:Bocifus"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="http://schemas.modernwpf.com/2019"
+    Width="1200"
+    HorizontalContentAlignment="Center"
+    fw:AcrylicWindow.AcrylicAccentState="Default"
+    fw:AcrylicWindow.Enabled="True"
+    fw:PointerTracker.Enabled="True"
+    AcrylicWindowStyle="NoIcon"
+    BorderBrush="{DynamicResource SystemAltHighColor}"
+    Closing="Window_Closing"
+    KeyDown="Window_KeyDown"
+    Loaded="AcrylicWindow_Loaded"
+    ShowInTaskbar="False"
+    WindowStartupLocation="CenterOwner"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <Window.Resources>
+        <Style x:Key="editingTextBoxStyle" TargetType="TextBox">
+            <Setter Property="TextWrapping" Value="Wrap" />
+            <Setter Property="AcceptsReturn" Value="true" />
+            <EventSetter Event="KeyDown" Handler="editingTextBox_KeyDown" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <Grid
+            Grid.Row="2"
+            Margin="0,0,10,0"
+            HorizontalAlignment="Right">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Button
+                x:Name="SetHistoryCountButton"
+                Grid.Column="0"
+                Height="32"
+                MinWidth="60"
+                Margin="0,0,10,0"
+                Padding="5,0,5,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                fw:RevealElement.BorderRadius="2"
+                Click="SetHistoryCountButton_Click"
+                Content="Set Number of Past Conversations"
+                FontSize="14"
+                Style="{StaticResource ButtonRevealStyle}" />
+            <Button
+                x:Name="ExportButton"
+                Grid.Column="3"
+                Width="32"
+                Height="32"
+                Margin="0,0,10,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                VerticalContentAlignment="Center"
+                fw:RevealElement.BorderRadius="2"
+                Click="ExportButton_Click"
+                FontSize="16"
+                Style="{StaticResource ButtonRevealStyle}"
+                ToolTip="Outputs instructions as a JSON file.">
+                <ui:SymbolIcon Symbol="Upload" />
+            </Button>
+            <Button
+                x:Name="ImportButton"
+                Grid.Row="2"
+                Grid.Column="4"
+                Width="32"
+                Height="32"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                VerticalContentAlignment="Center"
+                fw:RevealElement.BorderRadius="2"
+                Click="ImportButton_Click"
+                FontSize="16"
+                Style="{StaticResource ButtonRevealStyle}"
+                ToolTip="Select a JSON file to import.">
+                <ui:SymbolIcon Symbol="Download" />
+            </Button>
+            <Button
+                x:Name="SaveButton"
+                Grid.Column="1"
+                Height="32"
+                MinWidth="60"
+                Margin="0,0,10,0"
+                HorizontalAlignment="Center"
+                fw:RevealElement.BorderRadius="2"
+                Click="SaveButton_Click"
+                Content="Save"
+                FontSize="14"
+                Style="{StaticResource ButtonRevealStyle}" />
+            <Button
+                x:Name="CancelButton"
+                Grid.Column="2"
+                Height="32"
+                MinWidth="60"
+                Margin="0,0,10,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                fw:RevealElement.BorderRadius="2"
+                Click="CancelButton_Click"
+                Content="Cancel"
+                FontSize="14"
+                Style="{StaticResource ButtonRevealStyle}" />
+        </Grid>
+
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <DataGrid
+                x:Name="DataTable"
+                AutoGenerateColumns="True"
+                AutoGeneratingColumn="dataGrid_AutoGeneratingColumn"
+                Loaded="DataTable_Loaded"
+                PreviewMouseWheel="PreviewMouseWheel" />
+        </ScrollViewer>
+    </Grid>
+    <fw:AcrylicWindow.Background>
+        <SolidColorBrush Opacity="0.3" Color="{DynamicResource SystemChromeLowColor}" />
+    </fw:AcrylicWindow.Background>
+</fw:AcrylicWindow>

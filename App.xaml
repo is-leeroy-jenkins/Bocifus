@@ -1,0 +1,203 @@
+﻿<Application
+    x:Class="Bocifus.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:b="clr-namespace:Bocifus"
+    xmlns:mde="clr-namespace:MdXaml.Ext;assembly=MdXaml"
+    xmlns:mdhtml="clr-namespace:MdXaml.Html;assembly=MdXaml.Html"
+    xmlns:mdplug="clr-namespace:MdXaml.Plugins;assembly=MdXaml.Plugins"
+    xmlns:mdsvg="clr-namespace:MdXaml.Svg;assembly=MdXaml.Svg"
+    xmlns:mdxam="clr-namespace:MdXaml;assembly=MdXaml"
+    xmlns:ui="http://schemas.modernwpf.com/2019"
+    StartupUri="/UI/Windows/MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ui:ThemeResources>
+                    <ui:ThemeResources.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Dark">
+                            <ResourceDictionary.MergedDictionaries>
+                                <ResourceDictionary Source="/FluentWPF;component/Styles/Colors.Dark.xaml" />
+                                <ResourceDictionary Source="/FluentWPF;component/Styles/Brushes.xaml" />
+                                <ResourceDictionary Source="/ModernWpf;component/ThemeResources/Dark.xaml" />
+                            </ResourceDictionary.MergedDictionaries>
+                            <SolidColorBrush
+                                x:Key="NavigationViewSelectionIndicatorForeground"
+                                Color="{StaticResource SystemBaseHighColor}" />
+                        </ResourceDictionary>
+                        <ResourceDictionary x:Key="Light">
+                            <ResourceDictionary.MergedDictionaries>
+                                <ResourceDictionary Source="/FluentWPF;component/Styles/Colors.Light.xaml" />
+                                <ResourceDictionary Source="/FluentWPF;component/Styles/Brushes.xaml" />
+                                <ResourceDictionary Source="/ModernWpf;component/ThemeResources/Light.xaml" />
+                            </ResourceDictionary.MergedDictionaries>
+                            <SolidColorBrush
+                                x:Key="NavigationViewSelectionIndicatorForeground"
+                                Color="{StaticResource SystemBaseHighColor}" />
+                        </ResourceDictionary>
+                    </ui:ThemeResources.ThemeDictionaries>
+                </ui:ThemeResources>
+                <ui:XamlControlsResources />
+                <ResourceDictionary Source="/UI/Themes/Colors.xaml" />
+                <ResourceDictionary Source="/FluentWPF;component/Styles/Controls.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Style
+                BasedOn="{StaticResource DefaultRichTextBoxStyle}"
+                TargetType="{x:Type RichTextBox}">
+                <Setter Property="Background" Value="Transparent" />
+                <!--<Setter Property="Padding" Value="5" />-->
+                <Setter Property="IsReadOnly" Value="True" />
+                <Setter Property="IsTabStop" Value="False" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type RichTextBox}">
+                            <Border
+                                x:Name="border"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="Transparent"
+                                BorderThickness="0">
+                                <ScrollViewer x:Name="PART_ContentHost" />
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsFocused" Value="True">
+                                    <Setter TargetName="border" Property="BorderBrush" Value="Transparent" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style
+                x:Key="NoBorderTextBoxStyle"
+                BasedOn="{StaticResource DefaultTextBoxStyle}"
+                TargetType="{x:Type TextBox}">
+                <Setter Property="Background" Value="Transparent" />
+                <Setter Property="BorderBrush" Value="Transparent" />
+                <Setter Property="CaretBrush" Value="{DynamicResource SystemBaseHighColorBrush}" />
+                <Setter Property="BorderThickness" Value="0" />
+                <Setter Property="IsTabStop" Value="False" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type TextBox}">
+                            <Border
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                                <ScrollViewer x:Name="PART_ContentHost" />
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsFocused" Value="True">
+                                    <Setter Property="BorderBrush" Value="Transparent" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <!--  MdXaml From  -->
+            <Style
+                x:Key="MdXamlStyle"
+                BasedOn="{x:Static mdxam:MarkdownStyle.Sasabune}"
+                TargetType="FlowDocument">
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="Foreground" Value="{DynamicResource SystemBaseHighColorBrush}" />
+                <Style.Resources>
+                    <Style TargetType="Section">
+                        <Style.Triggers>
+                            <Trigger Property="Tag" Value="Blockquote">
+                                <Setter Property="BorderBrush" Value="{mde:Alpha Foreground, 0.1839, TargetType={x:Type mdxam:MarkdownScrollViewer}}" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                    <Style
+                        xmlns:avalonEdit="http://icsharpcode.net/sharpdevelop/avalonedit"
+                        TargetType="avalonEdit:TextEditor">
+                        <Setter Property="Foreground" Value="{mde:Alpha Foreground, 1, TargetType={x:Type mdxam:MarkdownScrollViewer}}" />
+                        <Setter Property="Background" Value="{mde:Alpha Foreground, 0.0800, TargetType={x:Type mdxam:MarkdownScrollViewer}}" />
+                        <Setter Property="SyntaxHighlighting" Value="{mde:SyntaxHighlightWrapper TargetType={x:Type mdxam:MarkdownScrollViewer}}" />
+                        <Setter Property="FontFamily" Value="Consolas, Lucida Sans Typewriter, Courier New" />
+                        <Setter Property="HorizontalScrollBarVisibility" Value="Auto" />
+                        <Setter Property="VerticalScrollBarVisibility" Value="Auto" />
+                        <Setter Property="Padding" Value="5,0,5,0" />
+                    </Style>
+                    <Style TargetType="Paragraph">
+                        <Style.Triggers>
+                            <Trigger Property="Tag" Value="Heading1">
+                                <Setter Property="Margin" Value="0,10,0,5" />
+                                <Setter Property="FontWeight" Value="Bold" />
+                                <Setter Property="FontSize" Value="28" />
+                                <Setter Property="TextDecorations" Value="Underline" />
+                            </Trigger>
+                            <Trigger Property="Tag" Value="Heading2">
+                                <Setter Property="Margin" Value="0,10,0,5" />
+                                <Setter Property="FontSize" Value="21" />
+                                <Setter Property="FontWeight" Value="Bold" />
+                            </Trigger>
+                            <Trigger Property="Tag" Value="Heading3">
+                                <Setter Property="Margin" Value="0,10,0,5" />
+                                <Setter Property="FontWeight" Value="Bold" />
+                            </Trigger>
+
+                            <Trigger Property="Tag" Value="CodeBlock">
+                                <Setter Property="FontFamily" Value="Courier New" />
+                                <Setter Property="FontSize" Value="11.9" />
+                                <Setter Property="Background" Value="{mde:Alpha Foreground, 0.0800, TargetType={x:Type mdxam:MarkdownScrollViewer}}" />
+                                <Setter Property="Padding" Value="20,10" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                    <Style TargetType="List">
+                        <Setter Property="Margin" Value="0,0,0,0" />
+                        <Setter Property="Padding" Value="30,0,0,0" />
+                    </Style>
+                    <Style TargetType="ListItem">
+                        <Setter Property="Margin" Value="0,0,0,0" />
+                        <Setter Property="Padding" Value="0,3,0,0" />
+                    </Style>
+                    <Style TargetType="Run">
+                        <Style.Triggers>
+                            <Trigger Property="Tag" Value="CodeSpan">
+                                <Setter Property="FontFamily" Value="Consolas, Lucida Sans Typewriter, Courier New" />
+                                <Setter Property="Background" Value="{DynamicResource SystemListLowColorBrush}" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                    <Style TargetType="Table">
+                        <Setter Property="CellSpacing" Value="0" />
+                        <Setter Property="BorderThickness" Value="0.5" />
+                        <Setter Property="BorderBrush" Value="{mde:Alpha Foreground, 0.4980, TargetType={x:Type mdxam:MarkdownScrollViewer}}" />
+                        <Style.Resources>
+                            <Style TargetType="TableCell">
+                                <Setter Property="BorderThickness" Value="0.5" />
+                                <Setter Property="BorderBrush" Value="{mde:Alpha Foreground, 0.4980, TargetType={x:Type mdxam:MarkdownScrollViewer}}" />
+                                <Setter Property="Padding" Value="13,6" />
+                            </Style>
+                        </Style.Resources>
+                    </Style>
+                    <Style TargetType="TableRowGroup">
+                        <Style.Triggers>
+                            <Trigger Property="Tag" Value="TableHeader">
+                                <Setter Property="FontWeight" Value="DemiBold" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                    <Style TargetType="TableRow">
+                        <Style.Triggers>
+                            <Trigger Property="Tag" Value="EvenTableRow">
+                                <Setter Property="Background" Value="{mde:Alpha Foreground, 0.1200, TargetType={x:Type mdxam:MarkdownScrollViewer}}" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Style.Resources>
+            </Style>
+            <mdplug:MdXamlPlugins x:Key="MdXamlPlugins">
+                <mdhtml:HtmlPluginSetup />
+                <mdsvg:SvgPluginSetup />
+            </mdplug:MdXamlPlugins>
+            <Style TargetType="{x:Type mdxam:MarkdownScrollViewer}">
+                <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+            </Style>
+            <!--  MdXaml To  -->
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
