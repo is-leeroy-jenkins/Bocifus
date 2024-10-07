@@ -118,10 +118,6 @@ https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/DemoImag
         </Reference>
       '''
 
-### Author
-
-[Terry Eppler](mailto://terry.eppler@gmail.com)
-
 ### License
 
 [MIT](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Properties/LICENSE)
