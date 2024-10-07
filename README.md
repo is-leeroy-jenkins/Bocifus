@@ -1,9 +1,10 @@
 ##  _
-![](https://github.com/is-leeroy-jenkins/Bocefus/blob/master/Resources/Assets/DemoImages/bocefus.png)
+![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/DemoImages/bocefus.png)
 ###  A simple application for interacting with the OpenAI API written in C#
 
+![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/DemoImages/OpenAIOnWPF.gif)
 
-## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/master/Resources/Assets/GitHubImages/web.png) Basics
+## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/main/Resources/Assets/GitHubImages/web.png) Basics
 
 1. Run the application.
 2. Click the button next to the Configuration combo box and set the API key.
@@ -11,19 +12,19 @@
 4. The response from the API will appear in the Assistant text box.
 5. Continue the dialogue by sending further messages if necessary.
 
-## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/master/Resources/Assets/GitHubImages/system_requirements.png)  Requirements
+## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/main/Resources/Assets/GitHubImages/system_requirements.png)  Requirements
 
 - You need [VC++ 2019 Runtime](https://aka.ms/vs/17/release/vc_redist.x64.exe) 32-bit and 64-bit versions
 - You will need .NET 8.
 
-## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/master/Resources/Assets/GitHubImages/tools.png) Build
+## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/main/Resources/Assets/GitHubImages/tools.png) Build
 
 - [x] VisualStudio 2022
 - [x] Built on  Windows Presentation Framework
 - [x] Written in C#
 - [x] Windows 10/11
 
-## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/master/Resources/Assets/GitHubImages/documentation.png) Documentation
+## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/main/Resources/Assets/GitHubImages/documentation.png) Documentation
 
 - [User Guide](Resources/Github/Users.md) - how to use Bocefus.
 - [Compilation Guide](Resources/Github/Compilation.md) - instructions on how to compile Bocefus.
@@ -31,7 +32,7 @@
 - [Distribution Guide](Resources/Github/Distribution.md) -  distributing Bocefus.
 
 
-## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/master/Resources/Assets/GitHubImages/csharp.png)  Code
+## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/main/Resources/Assets/GitHubImages/csharp.png)  Code
 
 - Bocefus supports 'AnyCPU' as well as x86/x64 specific builds
 - [Controls](https://github.com/is-leeroy-jenkins/Bocefus/tree/master/UI/Controls) - controls associated main ui layer and related functionality.
@@ -47,36 +48,36 @@
 - [Themes](https://github.com/is-leeroy-jenkins/Bocefus/tree/master/UI/Themes) - themes used in the ui
 - [Windows](https://github.com/is-leeroy-jenkins/Bocefus/tree/master/UI/Windows) - window classes
 
-## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/master/Resources/Assets/GitHubImages/edit.png)  Dependencies
+## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/main/Resources/Assets/GitHubImages/edit.png)  Dependencies
 Here are the key dependencies of this project:
 - [**Betalgo.OpenAI** ](https://github.com/betalgo/openai)
 - [**ModernWpf**](https://github.com/Kinnara/ModernWpf)
 - [**FluentWPF**](https://github.com/sourcechord/FluentWPF)
 - [**MdXaml(Fork)**](https://github.com/yt3trees/MdXaml/tree/dev_yt3trees) - This is a forked version from the original project.
 
-## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/master/Resources/Assets/GitHubImages/features.png)  Examples
+## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/main/Resources/Assets/GitHubImages/features.png)  Examples
 
-![](https://github.com/is-leeroy-jenkins/Bocefus/blob/master/Resources/Assets/DemoImages/OpenAIOnWPF.gif)
+![](https://github.com/is-leeroy-jenkins/Bocefus/blob/main/Resources/Assets/DemoImages/OpenAIOnWPF.gif)
 
-## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/master/Resources/Assets/GitHubImages/baby.png)  Configurations
+## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/main/Resources/Assets/GitHubImages/baby.png)  Configurations
 OpenAI or AzureOpenAI APIs are available.
-<img src="https://github.com/is-leeroy-jenkins/Bocefus/blob/master/Resources/Assets/DemoImages/57471763/fc457b14-f563-4551-aadb-dffa1c89c316" width="100%" />
+<img src="https://github.com/is-leeroy-jenkins/Bocefus/blob/main/Resources/Assets/DemoImages/57471763/fc457b14-f563-4551-aadb-dffa1c89c316" width="100%" />
 
-## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/master/Resources/Assets/GitHubImages/features.png)  History
-https://github.com/is-leeroy-jenkins/Bocefus/blob/master/Resources/Assets/DemoImages/57471763/d7bcb773-9832-44cc-8a97-a3a13e6f8c18
+## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/main/Resources/Assets/GitHubImages/features.png)  History
+https://github.com/is-leeroy-jenkins/Bocefus/blob/main/Resources/Assets/DemoImages/57471763/d7bcb773-9832-44cc-8a97-a3a13e6f8c18
 
-## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/master/Resources/Assets/GitHubImages/epa.png)  Prompts
-https://github.com/is-leeroy-jenkins/Bocefus/blob/master/Resources/Assets/DemoImages/57471763/1057896a-3f72-495c-9db7-68223e5d1136
+## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/main/Resources/Assets/GitHubImages/epa.png)  Prompts
+https://github.com/is-leeroy-jenkins/Bocefus/blob/main/Resources/Assets/DemoImages/57471763/1057896a-3f72-495c-9db7-68223e5d1136
 
-## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/master/Resources/Assets/GitHubImages/edit.png)  Extras
+## ![](https://github.com/is-leeroy-jenkins/Bocefus/blob/main/Resources/Assets/GitHubImages/edit.png)  Extras
 - For people whose native language is not English.
 - English is said to be the most accurate. Use this if you want to interact with the AI in English.
 - Requires DeepLearning or Google's translation API.
 
-https://github.com/is-leeroy-jenkins/Bocefus/blob/master/Resources/Assets/DemoImages/57471763/18462921-7c50-45d3-87cd-be751a5a3197
+https://github.com/is-leeroy-jenkins/Bocefus/blob/main/Resources/Assets/DemoImages/57471763/18462921-7c50-45d3-87cd-be751a5a3197
 
 ### Change Color Theme
-![color_theme](https://github.com/is-leeroy-jenkins/Bocefus/blob/master/Resources/Assets/DemoImages/57471763/8ab7f837-e7c6-4038-b98b-20b52146c399)
+![color_theme](https://github.com/is-leeroy-jenkins/Bocefus/blob/main/Resources/Assets/DemoImages/57471763/8ab7f837-e7c6-4038-b98b-20b52146c399)
 
 
 ### NuGet Packages
@@ -131,4 +132,4 @@ https://github.com/is-leeroy-jenkins/Bocefus/blob/master/Resources/Assets/DemoIm
 
 ### License
 
-[MIT](https://github.com/is-leeroy-jenkins/Bocefus/blob/master/Properties/LICENSE)
+[MIT](https://github.com/is-leeroy-jenkins/Bocefus/blob/main/Properties/LICENSE)
