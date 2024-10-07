@@ -2,8 +2,6 @@
 ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/DemoImages/bocefus.png)
 ###  A simple application for interacting with the OpenAI API written in C#
 
-![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/DemoImages/OpenAIOnWPF.gif)
-
 ## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/web.png) Basics
 
 1. Run the application.
@@ -17,9 +15,11 @@
 - You need [VC++ 2019 Runtime](https://aka.ms/vs/17/release/vc_redist.x64.exe) 32-bit and 64-bit versions
 - You will need .NET 6.
 
+![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/DemoImages/OpenAIOnWPF.gif)
+
 ## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/tools.png) Build
 
-- [x] VisualStudio 2022
+- [x] Visual Studio 2022
 - [x] Built on  Windows Presentation Framework
 - [x] Written in C#
 - [x] Windows 10/11
@@ -70,11 +70,6 @@ https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/DemoImag
 - For people whose native language is not English.
 - English is said to be the most accurate. Use this if you want to interact with the AI in English.
 - Requires DeepLearning or Google's translation API.
-
-https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/DemoImages/57471763/18462921-7c50-45d3-87cd-be751a5a3197
-
-### Change Color Theme
-![color_theme](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/DemoImages/57471763/8ab7f837-e7c6-4038-b98b-20b52146c399)
 
 
 ### NuGet Packages
