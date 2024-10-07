@@ -39,6 +39,31 @@ namespace Bocifus
 
     public partial class MainWindow
     {
+        /// <summary>
+        /// The busy
+        /// </summary>
+        private protected bool _busy;
+
+        /// <summary>
+        /// The path
+        /// </summary>
+        private protected object _path = new object();
+
+        /// <summary>
+        /// The seconds
+        /// </summary>
+        private protected int _seconds;
+
+        /// <summary>
+        /// The update status
+        /// </summary>
+        private protected Action _statusUpdate;
+
+        /// <summary>
+        /// The theme
+        /// </summary>
+        private protected readonly DarkMode _theme = new DarkMode();
+
         string selectInstructionContent = "";
         Stopwatch stopWatch = new Stopwatch();
         private bool gKeyPressed;
@@ -53,6 +78,7 @@ namespace Bocifus
             InitializeUI();
             RecoverWindowBounds();
         }
+
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
             var collectionViewSource = FindResource("SortedConversations") as CollectionViewSource;
@@ -79,17 +105,20 @@ namespace Bocifus
                 PromptTemplateGridRow.Height = new GridLength(0);
             }
         }
+
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             AppSettings.PromptTemplateGridRowHeighSetting = PromptTemplateGridRow.ActualHeight;
             AppSettings.ChatListGridRowHeightSetting = ChatListGridRow.ActualHeight;
             DataManagement.SettingsManager.SaveSettings();
         }
+
         protected override void OnClosing(CancelEventArgs e)
         {
             SaveWindowBounds();
             base.OnClosing(e);
         }
+
         void SaveWindowBounds()
         {
             var settings = Properties.Settings.Default;
@@ -109,6 +138,7 @@ namespace Bocifus
             }
             settings.Save();
         }
+
         void RecoverWindowBounds()
         {
             var settings = Properties.Settings.Default;
@@ -129,6 +159,7 @@ namespace Bocifus
                 Loaded += (o, e) => WindowState = WindowState.Maximized;
             }
         }
+
         private void InitializeUI()
         {
             UtilityFunctions.InitialColorSet();
@@ -158,26 +189,19 @@ namespace Bocifus
             SystemPromptComboBox.Text = String.IsNullOrEmpty(AppSettings.InstructionSetting) ? "" : AppSettings.InstructionSetting;
             SystemPromptComboBox2.ItemsSource = UtilityFunctions.SetupInstructionComboBox();
             SystemPromptComboBox2.Text = String.IsNullOrEmpty(AppSettings.InstructionSetting) ? "" : AppSettings.InstructionSetting;
-
             var appSettings = System.Configuration.ConfigurationManager.OpenExeConfiguration(System.Configuration.ConfigurationUserLevel.PerUserRoamingAndLocal);
             Debug.Print("Path to save the configuration file:" + appSettings.FilePath);
-
             UtilityFunctions.InitializeConfigDataTable();
             UtilityFunctions.EnsureColumnsForType(AppSettings.ConfigDataTable, typeof(ConfigSettingWindow.ModelList));
             ConfigurationComboBox.ItemsSource = AppSettings.ConfigDataTable.AsEnumerable().Select(x => x.Field<string>("ConfigurationName")).ToList();
             ConfigurationComboBox.Text = AppSettings.SelectConfigSetting;
-
             UseConversationHistoryToggleSwitch.IsOn = AppSettings.UseConversationHistoryFlg;
-
             MessageScrollViewer.ScrollToBottom();
-
             InitializeSystemPromptColumn();
-
             bool isCollapsed = !(AppSettings.IsPromptTemplateListVisible);
             PromptTemplateListBox.Visibility = isCollapsed ? Visibility.Collapsed : Visibility.Visible;
             NewTemplateButton.Visibility = isCollapsed ? Visibility.Collapsed : Visibility.Visible;
             ToggleVisibilityPromptTemplateButton.Content = isCollapsed ? "▲" : "▼";
-
             var currentPadding = UserTextBox.Padding;
             if (AppSettings.TranslationAPIUseFlg == true)
             {
@@ -198,6 +222,7 @@ namespace Bocifus
 
             ImageFilePathLabel.Content = string.Empty;
         }
+
         private void InitializeSystemPromptColumn()
         {
             if (AppSettings.IsSystemPromptColumnVisible == true)
@@ -226,6 +251,7 @@ namespace Bocifus
                 GridSplitterGridColumn2.Width = new GridLength(0);
             }
         }
+
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.F2)
@@ -241,6 +267,7 @@ namespace Bocifus
                 ShowTable();
             }
         }
+
         private void AcrylicWindow_PreviewKeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.N && Keyboard.Modifiers == ModifierKeys.Control)
@@ -297,6 +324,7 @@ namespace Bocifus
                 FilterTextBox.Focus();
             }
         }
+
         private void UserTextBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter && Keyboard.Modifiers == ModifierKeys.Control)
@@ -321,6 +349,7 @@ namespace Bocifus
                 MessageScrollViewer.ScrollToVerticalOffset(newVerticalOffset);
             }
         }
+
         private void ExecButton_Click(object sender, RoutedEventArgs e)
         {
             if (!(string.IsNullOrWhiteSpace(UserTextBox.Text)))
@@ -328,11 +357,13 @@ namespace Bocifus
                 _ = ProcessOpenAIAsync(UserTextBox.Text);
             }
         }
+
         private CancellationTokenSource _cancellationTokenSource;
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
             _cancellationTokenSource?.Cancel();
         }
+
         private void AssistantMessageGrid_MouseEnter(object sender, MouseEventArgs e)
         {
             if (isProcessing)
@@ -340,16 +371,19 @@ namespace Bocifus
                 CancelButton.Visibility = Visibility.Visible;
             }
         }
+
         private void AssistantMessageGrid_MouseLeave(object sender, MouseEventArgs e)
         {
             CancelButton.Visibility = Visibility.Collapsed;
         }
+
         private void UserTextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
             var tokens = TokenizerGpt3.Encode(UserTextBox.Text);
             string tooltip = $"Tokens : {tokens.Count()}";
             UserTextBox.ToolTip = tooltip;
         }
+
         private void UserTextBox_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             if (UserTextBox.ActualHeight >= UserTextBox.MaxHeight)
@@ -361,38 +395,46 @@ namespace Bocifus
                 ShowLargeTextInputWindowButton.Visibility = Visibility.Collapsed;
             }
         }
+
         private void NoticeToggleSwitch_Toggled(object sender, RoutedEventArgs e)
         {
             AppSettings.NoticeFlgSetting = (bool)NoticeToggleSwitch.IsOn;
         }
+
         private void TokensLabel_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             UtilityFunctions.ShowMessagebox("Tokens", TokensLabel.ToolTip.ToString());
         }
+
         private void ConfigurationComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             if (ConfigurationComboBox.SelectedItem == null) return;
             AppSettings.SelectConfigSetting = ConfigurationComboBox.SelectedItem.ToString();
             UpdateUIBasedOnVision();
         }
+
         private void UpdateUIBasedOnVision()
         {
             if (ConfigurationComboBox.SelectedItem == null)
             {
                 return;
             }
+
             string selectedConfigName = ConfigurationComboBox.SelectedItem.ToString();
             var row = AppSettings.ConfigDataTable.AsEnumerable()
                         .FirstOrDefault(x => x.Field<string>("ConfigurationName") == selectedConfigName);
+
             if (row != null)
             {
                 visionEnabled = row.Field<bool>("Vision");
             }
+
             AttachFileButton.Visibility = visionEnabled ? Visibility.Visible : Visibility.Collapsed;
             var currentPadding = UserTextBox.Padding;
             int leftPadding = visionEnabled ? 35 : 10;
             UserTextBox.Padding = new Thickness(leftPadding, currentPadding.Top, currentPadding.Right, currentPadding.Bottom);
         }
+
         private void SystemPromptComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             SystemPromptComboBox2.SelectedIndex = SystemPromptComboBox.SelectedIndex;
@@ -401,6 +443,7 @@ namespace Bocifus
                 AppSettings.InstructionSetting = "";
                 return;
             }
+
             AppSettings.InstructionSetting = SystemPromptComboBox.SelectedItem.ToString();
             string selectInstructionContent = "";
             if (!String.IsNullOrEmpty(AppSettings.InstructionSetting))
@@ -409,13 +452,16 @@ namespace Bocifus
                 int index = Array.IndexOf(instructionList, AppSettings.InstructionSetting);
                 selectInstructionContent = AppSettings.InstructionListSetting[index, 1];
             }
-            SystemPromptComboBox.ToolTip = "# " + AppSettings.InstructionSetting + "\r\n"
-                                          + selectInstructionContent;
+
+            SystemPromptComboBox.ToolTip = "# " 
+                + AppSettings.InstructionSetting 
+                + "\r\n"
+                + selectInstructionContent;
         }
+
         private void SystemPromptComboBox2_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             SystemPromptComboBox.SelectedIndex = SystemPromptComboBox2.SelectedIndex;
-
             string selectInstructionContent = "";
             if (!String.IsNullOrEmpty(SystemPromptComboBox2.SelectedItem.ToString()))
             {
@@ -423,9 +469,11 @@ namespace Bocifus
                 int index = Array.IndexOf(instructionList, SystemPromptComboBox2.SelectedItem.ToString());
                 selectInstructionContent = AppSettings.InstructionListSetting[index, 1];
             }
+
             SystemPromptContentsTextBox.Text = selectInstructionContent;
             UnsavedLabel.Visibility = Visibility.Collapsed;
         }
+
         private void UserTextBox_MouseWheel(object sender, MouseWheelEventArgs e)
         {
             if (Keyboard.Modifiers == ModifierKeys.Control)
@@ -440,12 +488,14 @@ namespace Bocifus
                 }
             }
         }
+
         private void TokenUsage_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             var window = new TokenUsageWindow();
             window.Owner = this;
             window.ShowDialog();
         }
+
         private void ConfigurationSettingButton_Click(object sender, RoutedEventArgs e)
         {
             var window = new ConfigSettingWindow();
@@ -454,6 +504,7 @@ namespace Bocifus
             ConfigurationComboBox.ItemsSource = AppSettings.ConfigDataTable.AsEnumerable().Select(x => x.Field<string>("ConfigurationName")).ToList();
             UpdateUIBasedOnVision();
         }
+
         private void InstructionSettingButton_Click(object sender, RoutedEventArgs e)
         {
             var window = new InstructionSettingWindow(AppSettings.InstructionListSetting);
@@ -469,39 +520,46 @@ namespace Bocifus
                 SystemPromptComboBox2.ItemsSource = instructionList;
             }
         }
+
         private void ColorMenuItem_Click(object sender, RoutedEventArgs e)
         {
             var window = new ColorSettings();
             window.Owner = this;
             window.ShowDialog();
         }
+
         private void TranslationAPIMenuItem_Click(object sender, RoutedEventArgs e)
         {
             var window = new TranslationAPISettingWindow();
             window.Owner = this;
             window.ShowDialog();
         }
+
         private void TitleGenerationMenuItem_Click(object sender, RoutedEventArgs e)
         {
             var window = new TitleGenerationSettings();
             window.Owner = this;
             window.ShowDialog();
         }
+
         private void VersionInformationMenuItem_Click(object sender, RoutedEventArgs e)
         {
             var window = new VersionWindow();
             window.Owner = this;
             window.ShowDialog();
         }
+
         private void ResizeThumb_DragDelta(object sender, DragDeltaEventArgs e)
         {
             UserTextBox.Height = Math.Max(UserTextBox.ActualHeight + e.VerticalChange, UserTextBox.MinHeight);
         }
+
         private void UserTextBox_MouseDown(object sender, MouseButtonEventArgs e)
         {
             Keyboard.ClearFocus();
             ConversationListBox.Focus();  
         }
+
         private void MessageGrid_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             if (sender is Grid messageGrid)
@@ -516,10 +574,10 @@ namespace Bocifus
                 }
             }
         }
+
         private ContextMenu CreateContextMenu(string paragraphText = null)
         {
             ContextMenu contextMenu = new ContextMenu();
-
             MenuItem copyTextMenuItem = new MenuItem();
             copyTextMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.Copy);
             contextMenu.Opened += (s, e) => UpdateMenuItemButtonContent(contextMenu.PlacementTarget, copyTextMenuItem);
@@ -527,9 +585,11 @@ namespace Bocifus
             {
                 contextMenu.IsOpen = false;
             };
+
             copyTextMenuItem.Click += (s, e) => copyTextAndCloseMenu();
             copyTextMenuItem.Click += CopyTextToClipboard;
             copyTextMenuItem.Header = "Copy Text";
+
             void CopyTextToClipboard(object sender, RoutedEventArgs e)
             {
                 var target = contextMenu.PlacementTarget;
@@ -573,66 +633,56 @@ namespace Bocifus
                     }
                 }
             }
+
             contextMenu.Items.Add(copyTextMenuItem);
-
             contextMenu.Items.Add(new Separator());
-
             MenuItem currentFontSizeMenuItem = new MenuItem();
             currentFontSizeMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.FontSize);
             currentFontSizeMenuItem.Header = $"Font Size: {Properties.Settings.Default.FontSize}pt";
             contextMenu.Items.Add(currentFontSizeMenuItem);
-
             MenuItem increaseFontSizeMenuItem = new MenuItem();
             increaseFontSizeMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.FontIncrease);
             Button increaseFontSizeButton = new Button { Content = "Increase Font Size", Background = Brushes.Transparent };
             increaseFontSizeMenuItem.Header = increaseFontSizeButton;
             increaseFontSizeButton.Click += (s, e) => SetFontSize(Properties.Settings.Default.FontSize + 1, currentFontSizeMenuItem);
             increaseFontSizeMenuItem.Click += (s, e) => SetFontSize(Properties.Settings.Default.FontSize + 1, currentFontSizeMenuItem);
-
             MenuItem decreaseFontSizeMenuItem = new MenuItem();
             decreaseFontSizeMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.FontDecrease);
             Button decreaseFontSizeButton = new Button { Content = "Decrease Font Size", Background = Brushes.Transparent };
             decreaseFontSizeMenuItem.Header = decreaseFontSizeButton;
             decreaseFontSizeButton.Click += (s, e) => SetFontSize(Properties.Settings.Default.FontSize - 1, currentFontSizeMenuItem);
             decreaseFontSizeMenuItem.Click += (s, e) => SetFontSize(Properties.Settings.Default.FontSize - 1, currentFontSizeMenuItem);
-
             MenuItem defaultFontSizeMenuItem = new MenuItem { Header = "Default Font Size" };
             defaultFontSizeMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.Refresh);
             Button defaultFontSizeButton = new Button { Content = "Default Font Size", Background = Brushes.Transparent };
             defaultFontSizeMenuItem.Header = defaultFontSizeButton;
             defaultFontSizeButton.Click += (s, e) => SetFontSize(16, currentFontSizeMenuItem);
             defaultFontSizeMenuItem.Click += (s, e) => SetFontSize(16, currentFontSizeMenuItem);
-
             currentFontSizeMenuItem.Items.Add(increaseFontSizeMenuItem);
             currentFontSizeMenuItem.Items.Add(decreaseFontSizeMenuItem);
             currentFontSizeMenuItem.Items.Add(defaultFontSizeMenuItem);
-
             MenuItem currentFontWeightMenuItem = new MenuItem();
             currentFontWeightMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.Font);
             currentFontWeightMenuItem.Header = $"Font Weight: {Properties.Settings.Default.FontWeight}";
             contextMenu.Items.Add(currentFontWeightMenuItem);
-
             MenuItem increaseFontWeightMenuItem = new MenuItem();
             increaseFontWeightMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.FontIncrease);
             Button increaseFontWeightButton = new Button { Content = "Increase Font Weight", Background = Brushes.Transparent };
             increaseFontWeightMenuItem.Header = increaseFontWeightButton;
             increaseFontWeightButton.Click += (s, e) => SetFontWeight(Properties.Settings.Default.FontWeight + 50, currentFontWeightMenuItem);
             increaseFontWeightMenuItem.Click += (s, e) => SetFontWeight(Properties.Settings.Default.FontWeight + 50, currentFontWeightMenuItem);
-
             MenuItem decreaseFontWeightMenuItem = new MenuItem();
             decreaseFontWeightMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.FontDecrease);
             Button decreaseFontWeightButton = new Button { Content = "Decrease Font Weight", Background = Brushes.Transparent };
             decreaseFontWeightMenuItem.Header = decreaseFontWeightButton;
             decreaseFontWeightButton.Click += (s, e) => SetFontWeight(Properties.Settings.Default.FontWeight - 50, currentFontWeightMenuItem);
             decreaseFontWeightMenuItem.Click += (s, e) => SetFontWeight(Properties.Settings.Default.FontWeight - 50, currentFontWeightMenuItem);
-
             MenuItem defaultFontWeightMenuItem = new MenuItem { Header = "Default Font Weight" };
             defaultFontWeightMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.Refresh);
             Button defaultFontWeightButton = new Button { Content = "Default Font Weight", Background = Brushes.Transparent };
             defaultFontWeightMenuItem.Header = defaultFontWeightButton;
             defaultFontWeightButton.Click += (s, e) => SetFontWeight(400, currentFontWeightMenuItem);
             defaultFontWeightMenuItem.Click += (s, e) => SetFontWeight(400, currentFontWeightMenuItem);
-
             currentFontWeightMenuItem.Items.Add(increaseFontWeightMenuItem);
             currentFontWeightMenuItem.Items.Add(decreaseFontWeightMenuItem);
             currentFontWeightMenuItem.Items.Add(defaultFontWeightMenuItem);
@@ -642,7 +692,6 @@ namespace Bocifus
                 int minSize = 8;
                 int maxSize = 32;
                 newSize = Math.Max(minSize, Math.Min(maxSize, newSize));
-
                 Properties.Settings.Default.FontSize = newSize;
                 Properties.Settings.Default.Save();
                 foreach (var item in MessagesPanel.Children)
@@ -671,7 +720,6 @@ namespace Bocifus
                 int minSize = 300;
                 int maxSize = 600;
                 newWeight = Math.Max(minSize, Math.Min(maxSize, newWeight));
-
                 Properties.Settings.Default.FontWeight = newWeight;
                 Properties.Settings.Default.Save();
                 foreach (var item in MessagesPanel.Children)
@@ -695,11 +743,9 @@ namespace Bocifus
                 menuItem.Header = $"Font Weight: {Properties.Settings.Default.FontWeight}";
             }
 
-
             if (paragraphText is not null && IsMermaidCode(paragraphText))
             {
                 contextMenu.Items.Add(new Separator());
-
                 MenuItem mermaidMenuItem = new MenuItem();
                 mermaidMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.AllApps);
                 Action mermaidTextAndCloseMenu = () =>
@@ -707,15 +753,15 @@ namespace Bocifus
                     MermaidPreviewContextMenu_Click(paragraphText);
                     contextMenu.IsOpen = false;
                 };
+
                 mermaidMenuItem.Click += (s, e) => mermaidTextAndCloseMenu();
                 mermaidMenuItem.Header = "Mermaid Preview";
-
                 contextMenu.Items.Add(mermaidMenuItem);
             }
+
             if (paragraphText is not null && IsMarkdownTable(paragraphText))
             {
                 contextMenu.Items.Add(new Separator());
-
                 MenuItem copyTableMenuItem = new MenuItem();
                 copyTableMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.Copy);
                 Action copyTableAndCloseMenu = () =>
@@ -723,11 +769,10 @@ namespace Bocifus
                     CopyMarkdownTableToClipboard(paragraphText);
                     contextMenu.IsOpen = false;
                 };
+
                 copyTableMenuItem.Click += (s, e) => copyTableAndCloseMenu();
                 copyTableMenuItem.Header = "Copy Table to Clipboard";
-
                 contextMenu.Items.Add(copyTableMenuItem);
-
                 MenuItem exportCsvMenuItem = new MenuItem();
                 exportCsvMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.Download);
                 Action exportCsvAndCloseMenu = () =>
@@ -735,18 +780,20 @@ namespace Bocifus
                     ExportCsvContextMenu_Click(paragraphText);
                     contextMenu.IsOpen = false;
                 };
+
                 exportCsvMenuItem.Click += (s, e) => exportCsvAndCloseMenu();
                 exportCsvMenuItem.Header = "Export CSV";
-
                 contextMenu.Items.Add(exportCsvMenuItem);
             }
 
             return contextMenu;
         }
+
         private void MermaidPreviewContextMenu_Click(string text)
         {
             ShowMermaidPreview(text);
         }
+
         private void ShowMermaidPreview(string mermaidCode)
         {
             string theme;
@@ -761,6 +808,7 @@ namespace Bocifus
                 theme = "default";
                 backgroundColor = "#FFFFFF";
             }
+
             string htmlContent = $@"<!DOCTYPE html>
 <html>
 <head>
@@ -783,6 +831,7 @@ namespace Bocifus
             previewWindow.Top = parentCenterY - (previewWindow.Height / 2);
             previewWindow.Show();
         }
+
         public static bool IsMermaidCode(string text)
         {
             if (string.IsNullOrEmpty(text))
@@ -806,19 +855,19 @@ namespace Bocifus
             };
 
             string firstLine = text.Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries)[0];
-
             foreach (var pattern in patterns)
             {
                 if (Regex.IsMatch(firstLine, pattern, RegexOptions.IgnoreCase | RegexOptions.Multiline))
                     return true;
             }
+
             return false;
         }
+
         private void ExportCsvContextMenu_Click(string text)
         {
             var lines = text.Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
             var csvLines = new System.Text.StringBuilder();
-
             foreach (var line in lines)
             {
                 if (!line.StartsWith("|")) continue;  
@@ -847,9 +896,11 @@ namespace Bocifus
                 {
                     File.WriteAllText(dialog.FileName, csvLines.ToString());
                 }
+
                 ModernWpf.MessageBox.Show("Exported successfully.");
             }
         }
+
         public static void CopyMarkdownTableToClipboard(string markdownText)
         {
             var lines = markdownText.Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
@@ -879,21 +930,23 @@ namespace Bocifus
                 Console.WriteLine("No table data found in the markdown text.");
             }
         }
+
         static bool IsMarkdownTable(string text)
         {
             string pattern = @"^\|.*\|\s*\n\|\s*[-:]+\s*\|";
             return Regex.IsMatch(text, pattern, RegexOptions.Multiline);
         }
+
         public static bool ContainsJapanese(string text)
         {
             return text.Any(c => (c >= 0x3040 && c <= 0x30FF) ||   
                                  (c >= 0x4E00 && c <= 0x9FAF) ||   
                                  (c >= 0xFF66 && c <= 0xFF9D));    
         }
+
         void UpdateMenuItemButtonContent(object target, MenuItem menuItem)
         {
             string headerText = "Copy All Text";
-
             if (target is TextBox textBox && !string.IsNullOrEmpty(textBox.SelectedText))
             {
                 headerText = "Copy Selected Text";
@@ -935,6 +988,7 @@ namespace Bocifus
 
             menuItem.Header = headerText;
         }
+
         private void PreviewMouseWheel(object sender, MouseWheelEventArgs e)
         {
             UIElement element = sender as UIElement;
@@ -949,15 +1003,18 @@ namespace Bocifus
                 }
             }
         }
+
         private void MessageScrollViewer_ScrollChanged(object sender, ScrollChangedEventArgs e)
         {
             bool isAtBottom = MessageScrollViewer.VerticalOffset >= MessageScrollViewer.ScrollableHeight;
             BottomScrollButton.Visibility = isAtBottom ? Visibility.Collapsed : Visibility.Visible;
         }
+
         private void BottomScrollButton_Click(object sender, RoutedEventArgs e)
         {
             MessageScrollViewer.ScrollToBottom();
         }
+
         private void MessageScrollViewer_PreviewKeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.G && Keyboard.IsKeyDown(Key.LeftShift) || Keyboard.IsKeyDown(Key.RightShift))
@@ -1028,6 +1085,7 @@ namespace Bocifus
                 gKeyPressed = false;
             }
         }
+
         private void OpenSytemPromptWindowButton_Click(object sender, RoutedEventArgs e)
         {
             if (SystemPromptGridColumn.Width.Value > 0)
@@ -1049,6 +1107,7 @@ namespace Bocifus
                 AppSettings.IsSystemPromptColumnVisible = true;
                 SystemPromptComboBox2.SelectedIndex = SystemPromptComboBox.SelectedIndex;
             }
+
             if (AppSettings.IsConversationColumnVisible == true)
             {
                 ConversationHistorytGridColumn.Width = new GridLength(Properties.Settings.Default.ConversationColumnWidth);
@@ -1065,40 +1124,44 @@ namespace Bocifus
         {
             UnsavedLabel.Visibility = Visibility.Visible;
         }
+
         private void NewChatButton_Click(object sender, RoutedEventArgs e)
         {
             MessagesPanel.Children.Clear();
-            
             if (ConversationListBox.SelectedItem is ConversationHistory selectedItem)
             {
                 selectedItem.IsSelected = false;
             }
-            ConversationListBox.SelectedItem = null;
 
+            ConversationListBox.SelectedItem = null;
             UserTextBox.Focus();
             UserTextBox.CaretIndex = UserTextBox.Text.Length;
         }
-        private void ConversationDeleteButton_Click(object sender, RoutedEventArgs e)
+
+        private void ConversationDeleteButton_Click( object sender, RoutedEventArgs e )
         {
             ConversationHistory itemToDelete = null;
-            if (sender is MenuItem)
+            if( sender is MenuItem )
             {
-                itemToDelete = (ConversationHistory)((MenuItem)sender).DataContext;
+                itemToDelete = ( ConversationHistory )( ( MenuItem )sender ).DataContext;
             }
-            if (sender is ContextMenu)
+
+            if( sender is ContextMenu )
             {
-                itemToDelete = (ConversationHistory)((ContextMenu)sender).DataContext;
+                itemToDelete = ( ConversationHistory )( ( ContextMenu )sender ).DataContext;
             }
-            var result = ModernWpf.MessageBox.Show("Are you sure you want to delete this conversation?",
-                                                   "Confirmation",
-                                                   MessageBoxButton.YesNo,
-                                                   MessageBoxImage.Question);
-            if (result == MessageBoxResult.Yes)
+
+            var result = ModernWpf.MessageBox.Show(
+                "Are you sure you want to delete this conversation?", "Confirmation",
+                MessageBoxButton.YesNo, MessageBoxImage.Question );
+
+            if( result == MessageBoxResult.Yes )
             {
-                AppSettings.ConversationManager.Histories.Remove(itemToDelete);
-                ConversationListBox.Items.Refresh();
+                AppSettings.ConversationManager.Histories.Remove( itemToDelete );
+                ConversationListBox.Items.Refresh( );
             }
         }
+
         private void ConversationTitleEditButton_Click(object sender, RoutedEventArgs e)
         {
             ConversationHistory itemToDelete = null;
@@ -1106,36 +1169,40 @@ namespace Bocifus
             {
                 itemToDelete = (ConversationHistory)((MenuItem)sender).DataContext;
             }
+
             if (sender is ContextMenu)
             {
                 itemToDelete = (ConversationHistory)((ContextMenu)sender).DataContext;
             }
-            string currentTitle = itemToDelete.Title;
 
+            string currentTitle = itemToDelete.Title;
             var editWindow = new TitleEditWindow(currentTitle);
             editWindow.Owner = this;
-
             if (editWindow.ShowDialog() == true)
             {
                 string newTitle = editWindow.NewTitle;
                 itemToDelete.Title = newTitle;
             }
         }
+
         private void ConversationListBoxContextMenu_PreviewKeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.F)
             {
                 ConversationFavoriteButton_Click(sender, e);
             }
+
             if (e.Key == Key.T)
             {
                 ConversationTitleEditButton_Click(sender, e);
             }
+
             if (e.Key == Key.D)
             {
                 ConversationDeleteButton_Click(sender, e);
             }
         }
+
         private void ConversationFavoriteButton_Click(object sender, RoutedEventArgs e)
         {
             ConversationHistory item = null;
@@ -1143,10 +1210,12 @@ namespace Bocifus
             {
                 item = (ConversationHistory)((MenuItem)sender).DataContext;
             }
+
             if (sender is ContextMenu)
             {
                 item = (ConversationHistory)((ContextMenu)sender).DataContext;
             }
+
             item.Favorite = !item.Favorite;
         }
 
@@ -1156,13 +1225,12 @@ namespace Bocifus
             if (button.ContextMenu != null)
             {
                 button.ContextMenu.IsOpen = false;
-
                 button.ContextMenu.PlacementTarget = button;
                 button.ContextMenu.Placement = System.Windows.Controls.Primitives.PlacementMode.Right;
-
                 button.ContextMenu.IsOpen = true;
             }
         }
+
         public void RefreshConversationList()
         {
             var collectionViewSource = FindResource("SortedConversations") as CollectionViewSource;
@@ -1172,6 +1240,7 @@ namespace Bocifus
                 collectionViewSource.View.Refresh();
             }
         }
+
         private void ToastNotificationManagerCompat_OnActivated(ToastNotificationActivatedEventArgsCompat e)
         {
             this.Dispatcher.Invoke(() =>
@@ -1181,6 +1250,7 @@ namespace Bocifus
                 this.Topmost = false;
             });
         }
+
         private async void TranslateButton_Click(object sender, RoutedEventArgs e)
         {
             Storyboard? animation = null;
@@ -1190,7 +1260,6 @@ namespace Bocifus
                 TranslateButton.IsEnabled = false;
                 animation = UtilityFunctions.CreateTextColorAnimation(UserTextBox, out initialTextColor);
                 animation.Begin();
-
                 string resultText = await TranslateAPIRequestAsync(UserTextBox.Text, AppSettings.ToTranslationLanguage);
                 UserTextBox.Text = resultText;
                 UserTextBox.CaretIndex = UserTextBox.Text.Length;
@@ -1206,6 +1275,7 @@ namespace Bocifus
                 UserTextBox.Foreground = new SolidColorBrush(initialTextColor);
             }
         }
+
         private void ApplyFilter(string filterText, bool? isFilteringByFavorite = null)
         {
             var collectionViewSource = FindResource("SortedConversations") as CollectionViewSource;
@@ -1220,11 +1290,14 @@ namespace Bocifus
                         bool matchesFavoriteFilter = isFilteringByFavorite == null || isFilteringByFavorite.Value == false || conversationHistory.Favorite == isFilteringByFavorite.Value;
                         return matchesTextFilter && matchesFavoriteFilter;
                     }
+
                     return false;
                 };
+
                 collectionViewSource.View.Refresh();
             }
         }
+
         private void FilterTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             isFiltering = true;  
@@ -1232,6 +1305,7 @@ namespace Bocifus
             ApplyFilter(FilterTextBox.Text, isFilteringByFavorite);
             isFiltering = false;
         }
+
         private void ToggleFilterButton_Click(object sender, RoutedEventArgs e)
         {
             FilterTextBox.Visibility = FilterTextBox.Visibility == Visibility.Visible
@@ -1247,10 +1321,12 @@ namespace Bocifus
             FavoriteFilterToggleButton.IsChecked = false;
             ApplyFilter("", false);
         }
+
         private void ClearTextButton_Click(object sender, RoutedEventArgs e)
         {
             FilterTextBox.Text = string.Empty;
         }
+
         private void FavoriteFilterToggleButton_Click(object sender, RoutedEventArgs e)
         {
             var toggleButton = sender as ToggleButton;
@@ -1258,19 +1334,19 @@ namespace Bocifus
             ApplyFilter(FilterTextBox.Text, isFilteringByFavorite);
             FavoriteFilterToggleButton.Content = FavoriteFilterToggleButton.IsChecked == true ? "★" : "☆";
         }
+
         private void AttachFileButton_Click(object sender, RoutedEventArgs e)
         {
             Button button = sender as Button;
             if (button.ContextMenu != null)
             {
                 button.ContextMenu.IsOpen = false;
-
                 button.ContextMenu.PlacementTarget = button;
                 button.ContextMenu.Placement = System.Windows.Controls.Primitives.PlacementMode.Top;
-
                 button.ContextMenu.IsOpen = true;
             }
         }
+
         private void SelectFile_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -1284,6 +1360,7 @@ namespace Bocifus
                 clipboardImage = null;
             }
         }
+
         private void PasteFromClipboard_Click(object sender, RoutedEventArgs e)
         {
             if (Clipboard.ContainsImage())
@@ -1304,21 +1381,25 @@ namespace Bocifus
                 ModernWpf.MessageBox.Show("The clipboard does not contain any images.", "error", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
+
         private void ContextMenu_Opened(object sender, RoutedEventArgs e)
         {
             bool imageAvailable = Clipboard.ContainsImage();
             PasteFromClipboardMenuItem.IsEnabled = imageAvailable;
         }
+
         private void ClearImageFilePathLabelButton_Click(object sender, RoutedEventArgs e)
         {
             imageFilePath = null;
             ImageFilePathLabel.Content = string.Empty;
         }
+
         private void ImageFilePathLabel_MouseUp(object sender, MouseButtonEventArgs e)
         {
             string argument = $"/select, \"{imageFilePath}\"";
             System.Diagnostics.Process.Start("explorer.exe", argument);
         }
+
         private void ShowLargeTextInputWindowButton_Click(object sender, RoutedEventArgs e)
         {
             string currentText = UserTextBox.Text;
@@ -1327,14 +1408,13 @@ namespace Bocifus
             window.ShowDialog();
             UserTextBox.Focus();
         }
+
         private void ToggleVisibilityPromptTemplateButton_Click(object sender, RoutedEventArgs e)
         {
             bool isCollapsed = PromptTemplateListBox.Visibility == Visibility.Collapsed;
             PromptTemplateListBox.Visibility = isCollapsed ? Visibility.Visible : Visibility.Collapsed;
             NewTemplateButton.Visibility = isCollapsed ? Visibility.Visible : Visibility.Collapsed;
-
             ToggleVisibilityPromptTemplateButton.Content = isCollapsed ? "▼" : "▲";
-
             if (isCollapsed)  
             {
                 ChatListGridRow.Height = new GridLength(AppSettings.ChatListGridRowHeightSetting, GridUnitType.Star);
@@ -1348,6 +1428,192 @@ namespace Bocifus
             }
 
             AppSettings.IsPromptTemplateListVisible = isCollapsed;
+        }
+
+        /// <summary>
+        /// Called when [calculator menu option click].
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/>
+        /// instance containing the event data.</param>
+        private void OnCalculatorMenuOptionClick( object sender, RoutedEventArgs e )
+        {
+            try
+            {
+                var _calculator = new CalculatorWindow( );
+                _calculator.ShowDialog( );
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Called when [file menu option click].
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/>
+        /// instance containing the event data.</param>
+        private void OnFileMenuOptionClick( object sender, RoutedEventArgs e )
+        {
+            try
+            {
+                var _fileBrowser = new FileBrowser
+                {
+                    Owner = this,
+                    Topmost = true
+                };
+
+                _fileBrowser.Show( );
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Called when [folder menu option click].
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/>
+        /// instance containing the event data.</param>
+        private void OnFolderMenuOptionClick( object sender, RoutedEventArgs e )
+        {
+            try
+            {
+                var _fileBrowser = new FileBrowser
+                {
+                    Owner = this,
+                    Topmost = true
+                };
+
+                _fileBrowser.Show( );
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Called when [control panel option click].
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/>
+        /// instance containing the event data.</param>
+        private void OnControlPanelOptionClick( object sender, RoutedEventArgs e )
+        {
+            try
+            {
+                WinMinion.LaunchControlPanel( );
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Called when [task manager option click].
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/>
+        /// instance containing the event data.</param>
+        private void OnTaskManagerOptionClick( object sender, RoutedEventArgs e )
+        {
+            try
+            {
+                WinMinion.LaunchTaskManager( );
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Called when [close option click].
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/>
+        /// instance containing the event data.</param>
+        private void OnCloseOptionClick( object sender, RoutedEventArgs e )
+        {
+            try
+            {
+                Application.Current.Shutdown( );
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Called when [chrome option click].
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/>
+        /// containing the event data.</param>
+        private void OnChromeOptionClick( object sender, RoutedEventArgs e )
+        {
+            try
+            {
+                WebMinion.RunChrome( );
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Called when [edge option click].
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/>
+        /// instance containing the event data.</param>
+        private void OnEdgeOptionClick( object sender, RoutedEventArgs e )
+        {
+            try
+            {
+                WebMinion.RunEdge( );
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Called when [firefox option click].
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/>
+        /// containing the event data.</param>
+        private void OnFirefoxOptionClick( object sender, RoutedEventArgs e )
+        {
+            try
+            {
+                WebMinion.RunFirefox( );
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Fails the specified ex.
+        /// </summary>
+        /// <param name="ex">The ex.</param>
+        private protected void Fail( Exception ex )
+        {
+            var _error = new ErrorWindow( ex );
+            _error?.SetText( );
+            _error?.ShowDialog( );
         }
     }
 }

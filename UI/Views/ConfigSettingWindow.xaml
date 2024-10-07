@@ -11,12 +11,28 @@
     Width="700"
     fw:PointerTracker.Enabled="True"
     AcrylicWindowStyle="NoIcon"
-    BorderBrush="{DynamicResource SystemAltHighColor}"
+    BorderBrush="{StaticResource BlueBorderBrush}"
     KeyDown="Window_KeyDown"
     ShowInTaskbar="False"
     SizeToContent="Height"
     WindowStartupLocation="CenterOwner"
     mc:Ignorable="d">
+
+    <!--  ***********************************************************RESOURCES****************************************************  -->
+
+    <Window.Resources>
+        <Style TargetType="ToolTip">
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
+            <Setter Property="Background" Value="{StaticResource BlackBackground}" />
+            <Setter Property="Foreground" Value="{StaticResource LightBlueBrush}" />
+        </Style>
+    </Window.Resources>
+
+
+    <!--  ***********************************************************LAYOUT****************************************************  -->
+
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
@@ -27,7 +43,9 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="50" />
             </Grid.RowDefinitions>
-            <Grid Grid.Row="1" HorizontalAlignment="Center">
+            <Grid
+                Grid.Row="1"
+                HorizontalAlignment="Center">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition Width="*" />
@@ -43,7 +61,8 @@
                     fw:RevealElement.BorderRadius="2"
                     Click="AddButton_Click"
                     FontSize="16"
-                    Style="{StaticResource ButtonRevealStyle}">
+                    Style="{StaticResource ButtonRevealStyle}"
+                    ToolTip="Add">
                     <ui:SymbolIcon Symbol="Add" />
                 </Button>
                 <Button
@@ -57,7 +76,8 @@
                     fw:RevealElement.BorderRadius="2"
                     Click="RemoveButton_Click"
                     FontSize="16"
-                    Style="{StaticResource ButtonRevealStyle}">
+                    Style="{StaticResource ButtonRevealStyle}"
+                    ToolTip="Remove">
                     <ui:SymbolIcon Symbol="Remove" />
                 </Button>
             </Grid>
@@ -95,9 +115,12 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     ui:ControlHelper.PlaceholderText=""
-                    KeyDown="TextBox_KeyDown">
+                    KeyDown="TextBox_KeyDown"
+                    ToolTip="Enter Configuration Name">
                     <TextBox.Background>
-                        <SolidColorBrush Opacity="0.5" Color="{DynamicResource SystemChromeLowColor}" />
+                        <SolidColorBrush
+                            Opacity="0.5"
+                            Color="{DynamicResource SystemChromeLowColor}" />
                     </TextBox.Background>
                 </TextBox>
             </StackPanel>
@@ -106,62 +129,91 @@
                 Grid.Column="0"
                 MinHeight="340"
                 Margin="15,0,15,0">
-                <Label Content="APISettings" FontSize="20" />
-                <Label HorizontalAlignment="Left" Content="Provider" />
+                <Label
+                    Content="APISettings"
+                    FontSize="20" />
+                <Label
+                    HorizontalAlignment="Left"
+                    Content="Provider" />
                 <ComboBox
                     x:Name="ProviderComboBox"
                     Width="120"
                     HorizontalAlignment="Left"
                     VerticalAlignment="Top"
-                    SelectionChanged="ProviderComboBox_SelectionChanged">
+                    SelectionChanged="ProviderComboBox_SelectionChanged"
+                    ToolTip="Select Provider">
                     <ComboBoxItem Content="OpenAI" />
                     <ComboBoxItem Content="Azure" />
                 </ComboBox>
-                <Label HorizontalAlignment="Left" Content="API Key" />
+                <Label
+                    HorizontalAlignment="Left"
+                    Content="API Key" />
                 <PasswordBox
                     x:Name="APIKeyPasswordbox"
                     MinWidth="200"
                     VerticalAlignment="Top"
-                    PasswordChar="*">
+                    PasswordChar="*"
+                    ToolTip="Enter API Password">
                     <PasswordBox.Background>
-                        <SolidColorBrush Opacity="0.5" Color="{DynamicResource SystemChromeLowColor}" />
+                        <SolidColorBrush
+                            Opacity="0.5"
+                            Color="{DynamicResource SystemChromeLowColor}" />
                     </PasswordBox.Background>
                 </PasswordBox>
-                <Label HorizontalAlignment="Left" Content="Model" />
+                <Label
+                    HorizontalAlignment="Left"
+                    Content="Model" />
                 <ComboBox
                     x:Name="ModelComboBox"
                     MinWidth="140"
                     HorizontalAlignment="Left"
-                    VerticalAlignment="Top" />
-                <Label HorizontalAlignment="Left" Content="Deployment-ID" />
+                    VerticalAlignment="Top"
+                    ToolTip="Select Model" />
+                <Label
+                    HorizontalAlignment="Left"
+                    Content="Deployment-ID" />
                 <TextBox
                     x:Name="DeploymentIdTextbox"
                     MinWidth="200"
-                    VerticalAlignment="Top">
+                    VerticalAlignment="Top"
+                    ToolTip="ID">
                     <TextBox.Background>
-                        <SolidColorBrush Opacity="0.5" Color="{DynamicResource SystemChromeLowColor}" />
+                        <SolidColorBrush
+                            Opacity="0.5"
+                            Color="{DynamicResource SystemChromeLowColor}" />
                     </TextBox.Background>
                 </TextBox>
-                <Label HorizontalAlignment="Left" Content="BaseDomain" />
+                <Label
+                    HorizontalAlignment="Left"
+                    Content="BaseDomain" />
                 <TextBox
                     x:Name="BaseDomainTextbox"
                     MinWidth="200"
                     VerticalAlignment="Top"
                     ui:ControlHelper.PlaceholderText="">
                     <TextBox.Background>
-                        <SolidColorBrush Opacity="0.5" Color="{DynamicResource SystemChromeLowColor}" />
+                        <SolidColorBrush
+                            Opacity="0.5"
+                            Color="{DynamicResource SystemChromeLowColor}" />
                     </TextBox.Background>
                 </TextBox>
-                <Label HorizontalAlignment="Left" Content="API-Version (optional)" />
+                <Label
+                    HorizontalAlignment="Left"
+                    Content="API-Version (optional)" />
                 <TextBox
                     x:Name="ApiVersionTextbox"
                     MinWidth="200"
-                    VerticalAlignment="Top">
+                    VerticalAlignment="Top"
+                    ToolTip="API Version">
                     <TextBox.Background>
-                        <SolidColorBrush Opacity="0.5" Color="{DynamicResource SystemChromeLowColor}" />
+                        <SolidColorBrush
+                            Opacity="0.5"
+                            Color="{DynamicResource SystemChromeLowColor}" />
                     </TextBox.Background>
                 </TextBox>
-                <Label HorizontalAlignment="Left" Content="Vision" />
+                <Label
+                    HorizontalAlignment="Left"
+                    Content="Vision" />
                 <ui:ToggleSwitch
                     x:Name="VisionToggleSwitch"
                     HorizontalAlignment="Left"
@@ -173,8 +225,12 @@
                 Grid.Column="1"
                 MinHeight="340"
                 Margin="15,0,15,0">
-                <Label Content="Parameter" FontSize="20" />
-                <Label HorizontalAlignment="Left" Content="Temperature" />
+                <Label
+                    Content="Parameter"
+                    FontSize="20" />
+                <Label
+                    HorizontalAlignment="Left"
+                    Content="Temperature" />
                 <ui:NumberBox
                     x:Name="TemperatureNumberbox"
                     MinHeight="0"
@@ -182,13 +238,16 @@
                     Minimum="0"
                     SmallChange="0.1"
                     SpinButtonPlacementMode="Inline" />
-                <Label HorizontalAlignment="Left" Content="Max Tokens" />
+                <Label
+                    HorizontalAlignment="Left"
+                    Content="Max Tokens" />
                 <ui:NumberBox
                     x:Name="MaxTokensNumberbox"
                     MinHeight="0"
                     Minimum="0"
                     SmallChange="1"
-                    SpinButtonPlacementMode="Inline" />
+                    SpinButtonPlacementMode="Inline"
+                    ToolTip="Maximum Token Number" />
             </StackPanel>
             <Grid
                 Grid.Row="2"
@@ -213,7 +272,8 @@
                     Click="SaveButton_Click"
                     Content="Save"
                     FontSize="16"
-                    Style="{StaticResource ButtonRevealStyle}">
+                    Style="{StaticResource ButtonRevealStyle}"
+                    ToolTip="Save">
                     <ui:FlyoutService.Flyout>
                         <ui:Flyout x:Name="Flyout1">
                             <StackPanel x:Name="StackPanelFlyout">
@@ -238,7 +298,8 @@
                     Click="CloseButton_Click"
                     Content="Close"
                     FontSize="16"
-                    Style="{StaticResource ButtonRevealStyle}" />
+                    Style="{StaticResource ButtonRevealStyle}"
+                    ToolTip="Close" />
                 <Button
                     x:Name="ExportButton"
                     Grid.Row="2"
@@ -279,6 +340,8 @@
         </Grid>
     </Grid>
     <fw:AcrylicWindow.Background>
-        <SolidColorBrush Opacity="0.3" Color="{DynamicResource SystemChromeLowColor}" />
+        <SolidColorBrush
+            Opacity="0.3"
+            Color="{DynamicResource SystemChromeLowColor}" />
     </fw:AcrylicWindow.Background>
 </fw:AcrylicWindow>

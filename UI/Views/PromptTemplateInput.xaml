@@ -19,12 +19,28 @@
     ShowInTaskbar="False"
     WindowStartupLocation="CenterOwner"
     mc:Ignorable="d">
+
+    <!--  ***********************************************************RESOURCES****************************************************  -->
+
+    <Window.Resources>
+        <Style TargetType="ToolTip">
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
+            <Setter Property="Background" Value="{StaticResource BlackBackground}" />
+            <Setter Property="Foreground" Value="{StaticResource LightBlueBrush}" />
+        </Style>
+    </Window.Resources>
+
+    <!--  ***********************************************************LAYOUT****************************************************  -->
+
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0" Margin="10,0,10,0">
+        <Grid
+            Grid.Row="0"
+            Margin="10,0,10,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
@@ -41,7 +57,9 @@
                     TextWrapping="Wrap"
                     VerticalScrollBarVisibility="Auto">
                     <TextBox.Background>
-                        <SolidColorBrush Opacity="0.5" Color="{DynamicResource SystemChromeLowColor}" />
+                        <SolidColorBrush
+                            Opacity="0.5"
+                            Color="{DynamicResource SystemChromeLowColor}" />
                     </TextBox.Background>
                 </TextBox>
                 <TextBlock
@@ -57,7 +75,9 @@
                     TextWrapping="Wrap"
                     VerticalScrollBarVisibility="Auto">
                     <TextBox.Background>
-                        <SolidColorBrush Opacity="0.5" Color="{DynamicResource SystemChromeLowColor}" />
+                        <SolidColorBrush
+                            Opacity="0.5"
+                            Color="{DynamicResource SystemChromeLowColor}" />
                     </TextBox.Background>
                 </TextBox>
                 <TextBlock
@@ -76,16 +96,22 @@
                 TextWrapping="Wrap"
                 VerticalScrollBarVisibility="Auto">
                 <TextBox.Background>
-                    <SolidColorBrush Opacity="0.5" Color="{DynamicResource SystemChromeLowColor}" />
+                    <SolidColorBrush
+                        Opacity="0.5"
+                        Color="{DynamicResource SystemChromeLowColor}" />
                 </TextBox.Background>
             </TextBox>
         </Grid>
-        <Grid Grid.Row="1" Margin="10,0,10,0">
+        <Grid
+            Grid.Row="1"
+            Margin="10,0,10,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
-            <Grid Grid.Column="0" HorizontalAlignment="Left">
+            <Grid
+                Grid.Column="0"
+                HorizontalAlignment="Left">
                 <Button
                     x:Name="DeleteButton"
                     Height="32"
@@ -96,7 +122,9 @@
                     <ui:SymbolIcon Symbol="Delete" />
                 </Button>
             </Grid>
-            <Grid Grid.Column="1" HorizontalAlignment="Right">
+            <Grid
+                Grid.Column="1"
+                HorizontalAlignment="Right">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="70" />
                     <ColumnDefinition Width="70" />
@@ -135,6 +163,8 @@
         </Grid>
     </Grid>
     <fw:AcrylicWindow.Background>
-        <SolidColorBrush Opacity="0.3" Color="{DynamicResource SystemChromeLowColor}" />
+        <SolidColorBrush
+            Opacity="0.3"
+            Color="{DynamicResource SystemChromeLowColor}" />
     </fw:AcrylicWindow.Background>
 </fw:AcrylicWindow>

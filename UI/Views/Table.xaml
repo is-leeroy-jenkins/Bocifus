@@ -21,13 +21,34 @@
     WindowStartupLocation="CenterOwner"
     WindowStyle="None"
     mc:Ignorable="d">
+
+
+    <!--  ***********************************************************RESOURCES****************************************************  -->
+
     <Window.Resources>
-        <Style x:Key="editingTextBoxStyle" TargetType="TextBox">
+
+        <Style
+            x:Key="editingTextBoxStyle"
+            TargetType="TextBox">
             <Setter Property="TextWrapping" Value="Wrap" />
             <Setter Property="AcceptsReturn" Value="true" />
-            <EventSetter Event="KeyDown" Handler="editingTextBox_KeyDown" />
+            <EventSetter
+                Event="KeyDown"
+                Handler="editingTextBox_KeyDown" />
         </Style>
+
+        <Style TargetType="ToolTip">
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
+            <Setter Property="Background" Value="{StaticResource BlackBackground}" />
+            <Setter Property="Foreground" Value="{StaticResource LightBlueBrush}" />
+        </Style>
+
     </Window.Resources>
+
+
+    <!--  ***********************************************************LAYOUT****************************************************  -->
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20" />
@@ -118,7 +139,9 @@
                 Style="{StaticResource ButtonRevealStyle}" />
         </Grid>
 
-        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+        <ScrollViewer
+            Grid.Row="1"
+            VerticalScrollBarVisibility="Auto">
             <DataGrid
                 x:Name="DataTable"
                 AutoGenerateColumns="True"
@@ -128,6 +151,8 @@
         </ScrollViewer>
     </Grid>
     <fw:AcrylicWindow.Background>
-        <SolidColorBrush Opacity="0.3" Color="{DynamicResource SystemChromeLowColor}" />
+        <SolidColorBrush
+            Opacity="0.3"
+            Color="{DynamicResource SystemChromeLowColor}" />
     </fw:AcrylicWindow.Background>
 </fw:AcrylicWindow>

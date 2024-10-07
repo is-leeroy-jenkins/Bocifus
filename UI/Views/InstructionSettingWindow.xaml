@@ -12,11 +12,27 @@
     Height="433"
     fw:PointerTracker.Enabled="True"
     AcrylicWindowStyle="NoIcon"
-    BorderBrush="{DynamicResource SystemAltHighColor}"
+    BorderBrush="{StaticResource BlueBorderBrush}"
     KeyDown="Window_KeyDown"
     ShowInTaskbar="False"
     WindowStartupLocation="CenterOwner"
     mc:Ignorable="d">
+
+    <!--  ***********************************************************RESOURCES****************************************************  -->
+
+    <Window.Resources>
+        <Style TargetType="ToolTip">
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
+            <Setter Property="Background" Value="{StaticResource BlackBackground}" />
+            <Setter Property="Foreground" Value="{StaticResource LightBlueBrush}" />
+        </Style>
+    </Window.Resources>
+
+
+    <!--  ***********************************************************LAYOUT****************************************************  -->
+
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
@@ -27,7 +43,9 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="50" />
             </Grid.RowDefinitions>
-            <Grid Grid.Row="1" HorizontalAlignment="Center">
+            <Grid
+                Grid.Row="1"
+                HorizontalAlignment="Center">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
@@ -76,7 +94,9 @@
                 <RowDefinition />
                 <RowDefinition Height="50" />
             </Grid.RowDefinitions>
-            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
                 <Label Content="Title" />
                 <TextBox
                     x:Name="InstructionTextBox"
@@ -84,7 +104,9 @@
                     ui:ControlHelper.PlaceholderText="Title"
                     KeyDown="TextBox_KeyDown">
                     <TextBox.Background>
-                        <SolidColorBrush Opacity="0.5" Color="{DynamicResource SystemChromeLowColor}" />
+                        <SolidColorBrush
+                            Opacity="0.5"
+                            Color="{DynamicResource SystemChromeLowColor}" />
                     </TextBox.Background>
                 </TextBox>
             </StackPanel>
@@ -98,7 +120,9 @@
                 KeyDown="TextBox_KeyDown"
                 TextWrapping="Wrap">
                 <TextBox.Background>
-                    <SolidColorBrush Opacity="0.5" Color="{DynamicResource SystemChromeLowColor}" />
+                    <SolidColorBrush
+                        Opacity="0.5"
+                        Color="{DynamicResource SystemChromeLowColor}" />
                 </TextBox.Background>
             </TextBox>
             <Grid
@@ -189,6 +213,8 @@
         </Grid>
     </Grid>
     <fw:AcrylicWindow.Background>
-        <SolidColorBrush Opacity="0.3" Color="{DynamicResource SystemChromeLowColor}" />
+        <SolidColorBrush
+            Opacity="0.3"
+            Color="{DynamicResource SystemChromeLowColor}" />
     </fw:AcrylicWindow.Background>
 </fw:AcrylicWindow>

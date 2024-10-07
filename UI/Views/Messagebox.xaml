@@ -10,7 +10,7 @@
     Title="Messagebox"
     VerticalAlignment="Top"
     AcrylicWindowStyle="NoIcon"
-    BorderBrush="{DynamicResource SystemAltHighColor}"
+    BorderBrush="{StaticResource BlueBorderBrush}"
     KeyDown="Window_KeyDown"
     ResizeMode="NoResize"
     ShowInTaskbar="False"
@@ -18,6 +18,21 @@
     WindowStartupLocation="CenterOwner"
     WindowStyle="None"
     mc:Ignorable="d">
+
+    <!--  ***********************************************************RESOURCES****************************************************  -->
+
+    <Window.Resources>
+        <Style TargetType="ToolTip">
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
+            <Setter Property="Background" Value="{StaticResource BlackBackground}" />
+            <Setter Property="Foreground" Value="{StaticResource LightBlueBrush}" />
+        </Style>
+    </Window.Resources>
+
+
+    <!--  ***********************************************************LAYOUT****************************************************  -->
+
     <Grid VerticalAlignment="Top">
         <Grid.RowDefinitions>
             <RowDefinition Height="5*" />
@@ -43,7 +58,9 @@
                 SpinButtonPlacementMode="Inline"
                 Visibility="Collapsed" />
         </StackPanel>
-        <StackPanel Grid.Row="1" Margin="15,0,15,15">
+        <StackPanel
+            Grid.Row="1"
+            Margin="15,0,15,15">
             <Button
                 x:Name="OkButton"
                 MinWidth="60"

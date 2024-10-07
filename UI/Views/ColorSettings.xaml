@@ -19,7 +19,16 @@
     WindowStartupLocation="CenterScreen"
     WindowStyle="ToolWindow"
     mc:Ignorable="d">
+
+    <!--  ***********************************************************RESOURCES****************************************************  -->
+
     <Window.Resources>
+        <Style TargetType="ToolTip">
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
+            <Setter Property="Background" Value="{StaticResource BlackBackground}" />
+            <Setter Property="Foreground" Value="{StaticResource LightBlueBrush}" />
+        </Style>
         <Style TargetType="ui:ToggleSwitch">
             <Setter Property="Margin" Value="0,5" />
         </Style>
@@ -28,7 +37,9 @@
             BasedOn="{StaticResource DefaultRadioButtonStyle}"
             TargetType="RadioButton">
             <Setter Property="GroupName" Value="Theme" />
-            <EventSetter Event="Click" Handler="ThemeRadio_Click" />
+            <EventSetter
+                Event="Click"
+                Handler="ThemeRadio_Click" />
         </Style>
         <Style
             x:Key="AccentColorRadioStyle"
@@ -37,6 +48,9 @@
             <Setter Property="GroupName" Value="AccentColor" />
         </Style>
     </Window.Resources>
+
+    <!--  ***********************************************************LAYOUT****************************************************  -->
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="3*" />
@@ -92,7 +106,9 @@
                 ItemsSource="{Binding Items}"
                 SelectionChanged="AccentColorList_SelectionChanged">
                 <ListBox.ItemContainerStyle>
-                    <Style BasedOn="{StaticResource DefaultListBoxItemStyle}" TargetType="ListBoxItem">
+                    <Style
+                        BasedOn="{StaticResource DefaultListBoxItemStyle}"
+                        TargetType="ListBoxItem">
                         <Setter Property="Height" Value="32" />
                         <Setter Property="HorizontalContentAlignment" Value="Stretch" />
                     </Style>
@@ -129,6 +145,8 @@
             Style="{StaticResource ButtonAccentRevealStyle}" />
     </Grid>
     <fw:AcrylicWindow.Background>
-        <SolidColorBrush Opacity="0.3" Color="{DynamicResource SystemChromeLowColor}" />
+        <SolidColorBrush
+            Opacity="0.3"
+            Color="{DynamicResource SystemChromeLowColor}" />
     </fw:AcrylicWindow.Background>
 </fw:AcrylicWindow>
