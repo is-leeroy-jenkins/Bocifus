@@ -12,8 +12,8 @@
     fw:PointerTracker.Enabled="True"
     AcrylicWindowStyle="NoIcon"
     BorderBrush="{DynamicResource SystemAltHighColor}"
-    Closing="Window_Closing"
-    KeyDown="Window_KeyDown"
+    Closing="OnWindowClosing"
+    KeyDown="OnWindowKeyDown"
     ResizeMode="NoResize"
     ShowInTaskbar="False"
     WindowStartupLocation="CenterScreen"
@@ -29,9 +29,11 @@
             <Setter Property="Background" Value="{StaticResource BlackBackground}" />
             <Setter Property="Foreground" Value="{StaticResource LightBlueBrush}" />
         </Style>
+
         <Style TargetType="ui:ToggleSwitch">
             <Setter Property="Margin" Value="0,5" />
         </Style>
+
         <Style
             x:Key="ThemeRadioStyle"
             BasedOn="{StaticResource DefaultRadioButtonStyle}"
@@ -39,8 +41,9 @@
             <Setter Property="GroupName" Value="Theme" />
             <EventSetter
                 Event="Click"
-                Handler="ThemeRadio_Click" />
+                Handler="OnThemeRadioButtonClick" />
         </Style>
+
         <Style
             x:Key="AccentColorRadioStyle"
             BasedOn="{StaticResource DefaultRadioButtonStyle}"
@@ -87,14 +90,14 @@
             <RadioButton
                 x:Name="AccentColorSystem"
                 Margin="10,0,10,0"
-                Checked="AccentColorSystem_Checked"
+                Checked="OnAccentColorSystemChecked"
                 Content="Use windows accent color"
                 GroupName="AccentColor"
                 Style="{StaticResource AccentColorRadioStyle}" />
             <RadioButton
                 x:Name="AccentColorSet"
                 Margin="10,0,10,0"
-                Checked="AccentColorSet_Checked"
+                Checked="OnAccentColorSetChecked"
                 Content="Specify accent color"
                 GroupName="AccentColor"
                 Style="{StaticResource AccentColorRadioStyle}" />
@@ -104,7 +107,7 @@
                 Margin="10,0,10,0"
                 d:ItemsSource="{d:SampleData ItemCount=5}"
                 ItemsSource="{Binding Items}"
-                SelectionChanged="AccentColorList_SelectionChanged">
+                SelectionChanged="OnAccentColorListSelectionChanged">
                 <ListBox.ItemContainerStyle>
                     <Style
                         BasedOn="{StaticResource DefaultListBoxItemStyle}"
@@ -138,7 +141,7 @@
             HorizontalAlignment="Right"
             VerticalAlignment="Bottom"
             fw:RevealElement.BorderRadius="2"
-            Click="OkButton_Click"
+            Click="OnOkButtonClick"
             Content="_OK"
             FontSize="16"
             IsDefault="True"

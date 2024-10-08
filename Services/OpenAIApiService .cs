@@ -1,33 +1,33 @@
-﻿using MdXaml;
-using Microsoft.Toolkit.Uwp.Notifications;
-using OpenAI;
-using OpenAI.Managers;
-using OpenAI.ObjectModels.RequestModels;
-using OpenAI.Tokenizer.GPT3;
-using Bocifus.Model;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Data;
-using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Threading;
-using static Bocifus.UtilityFunctions;
+﻿
 
 namespace Bocifus
 {
     using Model;
+    using MdXaml;
+    using Microsoft.Toolkit.Uwp.Notifications;
+    using OpenAI;
+    using OpenAI.Managers;
+    using OpenAI.ObjectModels.RequestModels;
+    using OpenAI.Tokenizer.GPT3;
+    using Bocifus.Model;
+    using System;
+    using System.Collections.Generic;
+    using System.Collections.ObjectModel;
+    using System.Data;
+    using System.Diagnostics;
+    using System.IO;
+    using System.Linq;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using System.Windows;
+    using System.Windows.Controls;
+    using System.Windows.Threading;
+    using static Bocifus.UtilityFunctions;
 
     public partial class MainWindow
     {
         bool resultFlg = true;
         private bool isProcessing = false;
-        // 描画遅延対策
         private void DummySub() { }
         private void FlushWindowsMessageQueue()
         {
@@ -51,10 +51,6 @@ namespace Bocifus
             public static string userPromptToken { get; set; } = "";
             public static string responseToken { get; set; } = "";
         }
-        /// <summary>
-        /// APIを実行
-        /// </summary>
-        /// <returns></returns>
         private async Task ProcessOpenAIAsync(string prompt)
         {
             Debug.Print("===== Start processing =====");
@@ -76,9 +72,9 @@ namespace Bocifus
                 }
 
                 binaryImage = null;
-                if (imageFilePath != null)
+                if (ImageFilePath != null)
                 {
-                    binaryImage = await File.ReadAllBytesAsync(imageFilePath);
+                    binaryImage = await File.ReadAllBytesAsync(ImageFilePath);
                 }
                 else if (clipboardImage != null)
                 {
@@ -145,7 +141,7 @@ namespace Bocifus
         }
         private void Prepare()
         {
-            stopWatch.Start();
+            _stopWatch.Start();
             TimeLabel.Content = "";
             TokensLabel.Content = "";
             ProgressRing.IsActive = true;
@@ -166,9 +162,9 @@ namespace Bocifus
         }
         private void Reset()
         {
-            stopWatch.Stop();
-            TimeLabel.Content = $"{stopWatch.ElapsedMilliseconds.ToString("N0")} ms";
-            stopWatch.Reset();
+            _stopWatch.Stop();
+            TimeLabel.Content = $"{_stopWatch.ElapsedMilliseconds.ToString("N0")} ms";
+            _stopWatch.Reset();
             ExecButton.IsEnabled = true;
             TranslateButton.IsEnabled = true;
             ProgressRing.IsActive = false;
@@ -177,13 +173,10 @@ namespace Bocifus
             ConversationHistoryButton.IsEnabled = true;
             ConversationHistoryClearButton.IsEnabled = true;
             isProcessing = false;
-            imageFilePath = null;
+            ImageFilePath = null;
             clipboardImage = null;
             ImageFilePathLabel.Content = "";
         }
-        /// <summary>
-        /// 選択している設定の内容を取得
-        /// </summary>
         private bool RetrieveConfiguration()
         {
             string configName = ConfigurationComboBox.Text;
@@ -251,7 +244,6 @@ namespace Bocifus
                 ApiVersion = tempTargetApiVersion,
             });
 
-            //openAiService.SetDefaultModelId("gpt-3.5-turbo");
             openAiService.SetDefaultModelId(model);
 
             return openAiService;
@@ -259,27 +251,25 @@ namespace Bocifus
 
         private List<ChatMessage> PrepareMessages(string userMessage, byte[]? image)
         {
-            // システムプロンプトペインが開かれている場合はペイン内のテキストボックスの値をシステムプロンプトとして使用する
             if (AppSettings.IsSystemPromptColumnVisible == true)
             {
-                selectInstructionContent = SystemPromptContentsTextBox.Text;
+                _selectInstructionContent = SystemPromptContentsTextBox.Text;
             }
             else if (!String.IsNullOrEmpty(AppSettings.InstructionSetting))
             {
-                //instructionSettingをキーにAppSettins.InstructionListSettingの2列目を取得
                 string[] instructionList = AppSettings.InstructionListSetting?.Cast<string>().Where((s, i) => i % 2 == 0).ToArray();
                 int index = Array.IndexOf(instructionList, AppSettings.InstructionSetting);
-                selectInstructionContent = AppSettings.InstructionListSetting[index, 1];
+                _selectInstructionContent = AppSettings.InstructionListSetting[index, 1];
             }
             else
             {
-                selectInstructionContent = "";
+                _selectInstructionContent = "";
             }
 
             Debug.Print("----- Parameter -----");
             Debug.Print($"Temperature:{AppSettings.TemperatureSetting}");
             Debug.Print("----- Contents of this message sent -----");
-            Debug.Print(selectInstructionContent);
+            Debug.Print(_selectInstructionContent);
             Debug.Print(userMessage);
 
             List<ChatMessage> messages = new List<ChatMessage>();
@@ -292,7 +282,6 @@ namespace Bocifus
 
                     foreach (var conversationHistory in selectedConversationHistory)
                     {
-                        // 上限値を超えた分はメッセージに含めない
                         if (conversationHistory.Messages.Count > AppSettings.ConversationHistoryCountSetting)
                         {
                             var tempList = conversationHistory.Messages.ToList();
@@ -314,7 +303,7 @@ namespace Bocifus
                     }
                 }
             }
-            messages.Add(ChatMessage.FromSystem(selectInstructionContent));
+            messages.Add(ChatMessage.FromSystem(_selectInstructionContent));
             if (image == null)
             {
                 messages.Add(ChatMessage.FromUser(userMessage));
@@ -329,19 +318,15 @@ namespace Bocifus
                     }
                 ));
             }
-            ForTokenCalc.systemPromptToken = selectInstructionContent;
+            ForTokenCalc.systemPromptToken = _selectInstructionContent;
             ForTokenCalc.userPromptToken = userMessage;
 
             return messages;
         }
-        /// <summary>
-        /// レスポンスを受け取って処理する
-        /// </summary>
         private void HandleCompletionResult(OpenAI.ObjectModels.ResponseModels.ChatCompletionCreateResponse? completionResult)
         {
             if (completionResult.Successful)
             {
-                //AssistantMarkdownText.Markdown = completionResult.Choices.First().Message.Content;
                 responseText = completionResult.Choices.First().Message.Content;
                 CaluculateTokenUsage();
                 if (AppSettings.NoticeFlgSetting)
@@ -376,7 +361,6 @@ namespace Bocifus
                 try
                 {
 
-                    // 再生成ボタンを非表示にする
                     List<System.Windows.Controls.Button> foundButtons = new List<System.Windows.Controls.Button>();
                     foreach (var child in GetAllChildren(MessagesPanel))
                     {
@@ -386,7 +370,6 @@ namespace Bocifus
                         }
                     }
 
-                    // Userメッセージ
                     var messageElement = CreateMessageElement(userMessage, isUser: true, isLastMessage: false);
                     MessagesPanel.Children.Add(messageElement);
 
@@ -397,13 +380,11 @@ namespace Bocifus
                         MessagesPanel.Children.Add(messageElementImage);
                     }
 
-                    // Assistantメッセージ
                     FrameworkElement assistantMessageElement = null;
 
-                    assistantMessageElement = CreateMessageElement("", isUser: false, isLastMessage: true); // 要素だけ生成しておく
+                    assistantMessageElement = CreateMessageElement("", isUser: false, isLastMessage: true);  
                     MessagesPanel.Children.Add(assistantMessageElement);
 
-                    // Grid内のMarkdownScrollViewer要素を検索
                     Grid assistantMessageGrid = assistantMessageElement as Grid;
                     if (assistantMessageGrid != null)
                     {
@@ -429,8 +410,6 @@ namespace Bocifus
             {
                 await foreach (var completion in completionResult.WithCancellation(cancellationToken))
                 {
-                    //cancellationToken.ThrowIfCancellationRequested();
-
                     if (completion.Successful)
                     {
                         var firstChoice = completion.Choices.FirstOrDefault();
@@ -444,7 +423,7 @@ namespace Bocifus
                             responseText += $"{resultText}";
                             markdownScrollViewer.Markdown += resultText;
                             markdownScrollViewer.Document.FontSize = Properties.Settings.Default.FontSize;
-                            FlushWindowsMessageQueue(); // 描画遅延対策
+                            FlushWindowsMessageQueue();  
                         });
                     }
                     else
@@ -499,9 +478,6 @@ namespace Bocifus
                 Reset();
             });
         }
-        /// <summary>
-        /// トークン量を計算
-        /// </summary>
         private void CaluculateTokenUsage()
         {
             var conversationResultTokens = TokenizerGpt3.Encode(ForTokenCalc.oldConversationsToken);
@@ -520,7 +496,6 @@ namespace Bocifus
             TokensLabel.Content = totalTokens.ToString("N0");
             TokensLabel.ToolTip = tooltip;
 
-            // 既存の会話履歴に追加する場合
             if (ConversationListBox.SelectedIndex != -1)
             {
                 var selectedConversation = (ConversationHistory)ConversationListBox.SelectedItem;
@@ -545,9 +520,8 @@ namespace Bocifus
                     }
                     conversation.Messages.Add(ChatMessage.FromAssistant(responseText));
                 }
-                RefreshConversationList(); // Sort
+                RefreshConversationList();  
             }
-            // 何も選択していない場合
             if (ConversationListBox.SelectedIndex == -1)
             {
                 string cleanedUserMessage = userMessage.Replace("\n", "").Replace("\r", "");
@@ -560,7 +534,6 @@ namespace Bocifus
                     }
                     else
                     {
-                        // 会話終了時点でタイトルが未生成の場合は一旦仮の値を入れる
                         title = "generating...";
                         titleGenerating = true;
                     }
@@ -603,18 +576,16 @@ namespace Bocifus
                 }
                 AppSettings.ConversationManager.Histories.Add(newHistory);
 
-                // AIからの回答終了時点でタイトルがセットできていない場合は別処理でセットするためIDを一旦退避
                 if (titleGenerating)
                 {
                     newId = newHistory.ID;
                 }
 
-                RefreshConversationList(); // Sort
+                RefreshConversationList();  
                 ConversationListBox.SelectedIndex = 0;
             }
 
             string model = AppSettings.ModelSetting != "" ? AppSettings.ModelSetting : AppSettings.DeploymentIdSetting;
-            // その日のトークン使用量記録に追加
             AddTokenUsage(totalTokens, inputTokens, outputTokens, model, AppSettings.ProviderSetting);
         }
         private void AddTokenUsage(int totalToken, int inputTokens, int outputTokens, string model, string provider)
@@ -623,24 +594,20 @@ namespace Bocifus
             int colCount = AppSettings.TokenUsageSetting.GetLength(1);
             if (AppSettings.TokenUsageSetting == null || rowCount == 0 || colCount == 0)
             {
-                // 日付、プロバイダ、モデル、合計トークン量、入力トークン量、出力トークン量
                 string[,] temp = new string[0, 5];
                 AppSettings.TokenUsageSetting = temp;
             }
 
-            string[,] oldTokenUsage = AppSettings.TokenUsageSetting; // 既存の配列
-            int rows = oldTokenUsage.GetLength(0); // 既存の配列の行数
-            int cols = oldTokenUsage.GetLength(1); // 既存の配列の列数
-            // 新しい配列を作成（行数は同じ、列数は2つ増やす）
+            string[,] oldTokenUsage = AppSettings.TokenUsageSetting;  
+            int rows = oldTokenUsage.GetLength(0);  
+            int cols = oldTokenUsage.GetLength(1);  
             string[,] newTokenUsage = new string[rows, cols + 2];
-            // 既存のデータを新しい配列にコピーし、新しい要素を追加
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < cols; j++)
                 {
                     newTokenUsage[i, j] = oldTokenUsage[i, j];
                 }
-                // 新しい列のデータを追加
                 newTokenUsage[i, cols] = "0";
                 newTokenUsage[i, cols + 1] = "0";
             }
@@ -650,7 +617,6 @@ namespace Bocifus
             int tokenUsageCount = tokenUsage.GetLength(0);
             dailyTotal = 0;
 
-            //今日のトークン使用量があるか
             bool todayTokenUsageExist = false;
             for (int i = 0; i < tokenUsageCount; i++)
             {
@@ -661,7 +627,6 @@ namespace Bocifus
                     if (tokenUsage[i, 1] == provider && tokenUsage[i, 2] == model)
                     {
                         {
-                            // トークン使用量を加算
                             tokenUsage[i, 3] = (int.Parse(tokenUsage[i, 3]) + totalToken).ToString();
                             tokenUsage[i, 4] = (int.Parse(tokenUsage[i, 4]) + inputTokens).ToString();
                             tokenUsage[i, 5] = (int.Parse(tokenUsage[i, 5]) + outputTokens).ToString();
@@ -670,7 +635,6 @@ namespace Bocifus
                     }
                 }
             }
-            //今日のトークン使用量がなければ追加
             if (!todayTokenUsageExist)
             {
                 tokenUsage = ResizeArray(tokenUsage, tokenUsageCount + 1, 6);
@@ -692,9 +656,6 @@ namespace Bocifus
                 alertFlg = true;
             }
         }
-        /// <summary>
-        /// 他次元配列のサイズを変更する
-        /// </summary>
         public static string[,] ResizeArray(string[,] originalArray, int newRowCount, int newColCount)
         {
             int originalRowCount = originalArray.GetLength(0);

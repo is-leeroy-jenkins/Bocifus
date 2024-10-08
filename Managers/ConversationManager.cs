@@ -1,28 +1,29 @@
-﻿using MdXaml;
-using ModernWpf;
-using Newtonsoft.Json.Linq;
-using OpenAI.ObjectModels.RequestModels;
-using Bocifus.Model;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text.Json;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿
 
 namespace Bocifus
 {
     using Model;
+    using MdXaml;
+    using ModernWpf;
+    using Newtonsoft.Json.Linq;
+    using OpenAI.ObjectModels.RequestModels;
+    using Bocifus.Model;
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+    using System.Linq;
+    using System.Text.Json;
+    using System.Windows;
+    using System.Windows.Controls;
+    using System.Windows.Documents;
+    using System.Windows.Input;
+    using System.Windows.Media;
+    using System.Windows.Media.Imaging;
+    using System.Windows.Shapes;
 
     public partial class MainWindow
     {
-        private void ConversationListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void OnConversationListBoxSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (ConversationListBox.SelectedItem == null)
             {
@@ -44,7 +45,6 @@ namespace Bocifus
                 bool isUser = message.Role == "user";
                 bool isLastMessage = i == targetMessages.Count - 1;
 
-                // Documents\OpenAIOnWPF\ConversationHistory以外から取得した場合はContentがnullになるので取得元を変更
                 string messageContent = message.Content ?? System.Text.Json.JsonSerializer.Serialize(message.Contents, new JsonSerializerOptions { WriteIndented = true });
                 var result = UtilityFunctions.ExtractUserAndImageFromMessage(messageContent);
 
@@ -59,7 +59,6 @@ namespace Bocifus
 
             MessagesPanel.PreviewMouseWheel += PreviewMouseWheel;
 
-            // 削除ボタン活性制御用
             foreach (var item in ConversationListBox.Items.OfType<ConversationHistory>())
             {
                 item.IsSelected = false;
@@ -73,13 +72,13 @@ namespace Bocifus
                 item.IsSelected = false;
             }
 
-            if (!isFiltering)
+            if (!_isFiltering)
             {
                 UserTextBox.Focus();
             }
             UserTextBox.CaretIndex = UserTextBox.Text.Length;
         }
-        private void ConversationHistoryButton_Click(object sender, RoutedEventArgs e)
+        private void OnConversationHistoryButtonClick(object sender, RoutedEventArgs e)
         {
             ShowTable();
         }
@@ -128,9 +127,6 @@ namespace Bocifus
                 MessagesPanel.PreviewMouseWheel += PreviewMouseWheel;
             }
         }
-        /// <summary>
-        /// メッセージの要素を作成する
-        /// </summary>
         private FrameworkElement CreateMessageElement(string messageContent, bool isUser, bool isLastMessage, string visionImage = null)
         {
             var accentColor = ThemeManager.Current.AccentColor;
@@ -150,8 +146,7 @@ namespace Bocifus
                     new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
                 }
             };
-            // グリッドのサイズが変更されたときにイベントを追加
-            messageGrid.SizeChanged += MessageGrid_SizeChanged;
+            messageGrid.SizeChanged += OnMessageGridSizeChanged;
 
             var copyIcon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.Copy)
             {
@@ -219,7 +214,6 @@ namespace Bocifus
                 {
                     Padding = new Thickness(10),
                     FontSize = Properties.Settings.Default.FontSize,
-                    //Background = accentColorBrush,
                     TextAlignment = TextAlignment.Left,
                     TextWrapping = TextWrapping.Wrap,
                     Opacity = opacity,
@@ -228,7 +222,7 @@ namespace Bocifus
                     FontWeight = FontWeight.FromOpenTypeWeight(Properties.Settings.Default.FontWeight),
                     Text = messageContent
                 };
-                userTextBox.MouseDown += UserTextBox_MouseDown;
+                userTextBox.MouseDown += OnUserTextBoxMouseDown;
 
                 ContextMenu contextMenu = CreateContextMenu();
                 userTextBox.ContextMenu = contextMenu;
@@ -236,7 +230,6 @@ namespace Bocifus
                 Grid.SetColumn(userTextBox, 1);
                 messageGrid.Children.Add(userTextBox);
 
-                // 行全体の背景色を設定する
                 Rectangle backgroundRect = new Rectangle { Fill = accentColorBrush };
                 Grid.SetColumnSpan(backgroundRect, 3);
                 messageGrid.Children.Add(backgroundRect);
@@ -253,7 +246,6 @@ namespace Bocifus
                 backgroundRect.MouseEnter += ShowButtonOnMouseEnter;
                 backgroundRect.MouseLeave += HideButtonOnMouseLeave;
 
-                // マウスが要素に入ったときにボタンを表示する
                 void ShowButtonOnMouseEnter(object s, MouseEventArgs e)
                 {
                     copyTextButton.Visibility = Visibility.Visible;
@@ -268,7 +260,7 @@ namespace Bocifus
 
                     Point mousePosToWindow = Mouse.GetPosition(Application.Current.MainWindow);
 
-                    if (PresentationSource.FromVisual(userTextBox) != null) // アプリケーションエラー対策
+                    if (PresentationSource.FromVisual(userTextBox) != null)  
                     {
                         double topBoundary = userTextBox.PointToScreen(new Point(0, 0)).Y;
                         double bottomBoundary = userTextBox.PointToScreen(new Point(0, userTextBox.ActualHeight)).Y;
@@ -291,9 +283,9 @@ namespace Bocifus
                 MarkdownScrollViewer markDownScrollViewer = new MarkdownScrollViewer();
                 markDownScrollViewer.MarkdownStyle = (Style)Application.Current.FindResource("MdXamlStyle");
                 markDownScrollViewer.Engine.DisabledContextMenu = true;
-                markDownScrollViewer.UseSoftlineBreakAsHardlineBreak = true; // *Options Added in the Forked Version of MdXaml
+                markDownScrollViewer.UseSoftlineBreakAsHardlineBreak = true;         
                 markDownScrollViewer.UseDarkThemeSyntaxHighlighting =
-                    ThemeManager.Current.ActualApplicationTheme == ModernWpf.ApplicationTheme.Dark; // *Options Added in the Forked Version of MdXaml
+                    ThemeManager.Current.ActualApplicationTheme == ModernWpf.ApplicationTheme.Dark;         
                 markDownScrollViewer.Markdown = messageContent;
                 markDownScrollViewer.Opacity = opacity;
                 markDownScrollViewer.SelectionBrush = new SolidColorBrush(ThemeManager.Current.ActualAccentColor);
@@ -311,7 +303,6 @@ namespace Bocifus
                     MarkdownScrollViewer msv = sender as MarkdownScrollViewer;
                     if (msv != null)
                     {
-                        // マウス位置の要素を取得
                         var mousePos = Mouse.GetPosition(msv);
                         Visual hitVisual = msv.InputHitTest(mousePos) as Visual;
                         if (hitVisual != null && hitVisual is ICSharpCode.AvalonEdit.Rendering.TextView)
@@ -386,7 +377,6 @@ namespace Bocifus
                 backgroundRect.MouseEnter += ShowButtonOnMouseEnter;
                 backgroundRect.MouseLeave += HideButtonOnMouseLeave;
 
-                // マウスが要素に入ったときにボタンを表示する
                 void ShowButtonOnMouseEnter(object s, MouseEventArgs e)
                 {
                     copyTextButton.Visibility = Visibility.Visible;
@@ -406,7 +396,7 @@ namespace Bocifus
                         return;
 
                     Point mousePosToWindow = Mouse.GetPosition(Application.Current.MainWindow);
-                    if (PresentationSource.FromVisual(markDownScrollViewer) != null) // アプリケーションエラー対策
+                    if (PresentationSource.FromVisual(markDownScrollViewer) != null)  
                     {
                         double topBoundary = markDownScrollViewer.PointToScreen(new Point(0, 0)).Y;
                         double bottomBoundary = markDownScrollViewer.PointToScreen(new Point(0, markDownScrollViewer.ActualHeight)).Y;
@@ -455,7 +445,6 @@ namespace Bocifus
                 messageGrid.Children.Add(imageControl);
                 Grid.SetColumn(imageControl, 1);
 
-                // 行全体の背景色を設定する
                 Rectangle backgroundRect = new Rectangle { Fill = accentColorBrush };
                 Grid.SetColumnSpan(backgroundRect, 3);
                 messageGrid.Children.Add(backgroundRect);
@@ -475,7 +464,6 @@ namespace Bocifus
                 string userMessage = messages[messages.Count - 2].Content;
                 (string user, string image) result = UtilityFunctions.ExtractUserAndImageFromMessage(userMessage);
 
-                //会話履歴の最新2つを削除
                 foreach (ConversationHistory item in ConversationListBox.SelectedItems.OfType<ConversationHistory>())
                 {
                     if (item.Messages.Count > 1)
@@ -485,16 +473,15 @@ namespace Bocifus
                     }
                     else if (item.Messages.Count == 1)
                     {
-                        item.Messages.RemoveAt(0); // メッセージが1つのみの場合
+                        item.Messages.RemoveAt(0);  
                     }
                 }
-                // MessagePanelの下2つを削除
                 MessagesPanel.Children.RemoveRange(MessagesPanel.Children.Count - 2, 2);
 
                 _ = ProcessOpenAIAsync(result.user);
             }
         }
-        private void UseConversationHistoryToggleSwitch_Toggled(object sender, RoutedEventArgs e)
+        private void OnUseConversationHistoryToggleSwitchToggled(object sender, RoutedEventArgs e)
         {
             if (UseConversationHistoryToggleSwitch.IsOn == false)
             {
@@ -505,7 +492,7 @@ namespace Bocifus
                 AppSettings.UseConversationHistoryFlg = true;
             }
         }
-        private void ConversationHistoryClearButton_Click(object sender, RoutedEventArgs e)
+        private void OnConversationHistoryClearButtonClick(object sender, RoutedEventArgs e)
         {
             var yesno = ModernWpf.MessageBox.Show("Do you want to delete the entire conversation history?", "Delete Conversation History", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (yesno == MessageBoxResult.No)
@@ -520,7 +507,6 @@ namespace Bocifus
             }
             targetConversation.Messages.Clear();
 
-            //MessagesPanelをすべてクリア
             MessagesPanel.Children.Clear();
         }
     }

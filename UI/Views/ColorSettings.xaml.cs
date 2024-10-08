@@ -11,9 +11,6 @@ using static Bocifus.MainWindow;
 
 namespace Bocifus
 {
-    /// <summary>
-    /// ColorSettings.xaml の相互作用ロジック
-    /// </summary>
     public partial class ColorSettings
     {
         public static IReadOnlyList<string> KnownColorNames { get; } =
@@ -21,8 +18,11 @@ namespace Bocifus
             .GetProperties(BindingFlags.Public | BindingFlags.Static)
             .Select(info => (info.Name))
             .ToArray();
+
         public static ApplicationTheme? BefTheme { get; set; }
+
         public static Color? BefAccent { get; set; }
+
         public static bool OkFlg { get; set; }
 
         public ColorSettings()
@@ -33,19 +33,16 @@ namespace Bocifus
             if (ThemeManager.Current.AccentColor != null)
             {
                 var color = ThemeManager.Current.AccentColor;
-                //OkButton.Background = new SolidColorBrush((Color)color);
             }
             else
             {
                 var color = ThemeManager.Current.ActualAccentColor;
-                //OkButton.Background = new SolidColorBrush(color);
             }
 
             OkFlg = false;
             AccentColorList.ItemsSource = KnownColorNames;
             BefTheme = ThemeManager.Current.ApplicationTheme;
             BefAccent = ThemeManager.Current.AccentColor;
-
             if (ThemeManager.Current.ApplicationTheme == ApplicationTheme.Dark)
             {
                 ThemeDark.IsChecked = true;
@@ -70,10 +67,8 @@ namespace Bocifus
                 AccentColorList.ScrollIntoView(AccentColorList.SelectedItem);
             }
         }
-        /// <summary>
-        /// 閉じるボタン押下時
-        /// </summary>
-        protected virtual void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+
+        protected virtual void OnWindowClosing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             if (OkFlg == false)
             {
@@ -81,7 +76,8 @@ namespace Bocifus
                 ThemeManager.Current.AccentColor = BefAccent;
             }
         }
-        private void ThemeRadio_Click(object sender, RoutedEventArgs e)
+
+        private void OnThemeRadioButtonClick(object sender, RoutedEventArgs e)
         {
             var ctrl = sender as Control;
             if (ctrl == ThemeLight)
@@ -99,10 +95,11 @@ namespace Bocifus
                 ThemeManager.Current.ApplicationTheme = null;
                 SourceChord.FluentWPF.ResourceDictionaryEx.GlobalTheme = null;
             }
+
             ThemeLoad();
         }
 
-        private void OkButton_Click(object sender, RoutedEventArgs e)
+        private void OnOkButtonClick(object sender, RoutedEventArgs e)
         {
             OkFlg = true;
             if (ThemeManager.Current.ApplicationTheme == ApplicationTheme.Dark)
@@ -130,7 +127,8 @@ namespace Bocifus
 
             DialogResult = true;
         }
-        private void Window_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+
+        private void OnWindowKeyDown(object sender, System.Windows.Input.KeyEventArgs e)
         {
             if (e.Key == Key.Escape)
             {
@@ -138,28 +136,26 @@ namespace Bocifus
             }
         }
 
-        private void AccentColorSystem_Checked(object sender, RoutedEventArgs e)
+        private void OnAccentColorSystemChecked(object sender, RoutedEventArgs e)
         {
             ThemeManager.Current.AccentColor = null;
             AccentColorList.IsEnabled = false;
             ThemeLoad();
         }
 
-        private void AccentColorSet_Checked(object sender, RoutedEventArgs e)
+        private void OnAccentColorSetChecked(object sender, RoutedEventArgs e)
         {
             AccentColorList.IsEnabled = true;
             ThemeLoad();
         }
 
-        private void AccentColorList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void OnAccentColorListSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var color = (Color)ColorConverter.ConvertFromString(AccentColorList.SelectedValue.ToString());
             ThemeManager.Current.AccentColor = color;
             ThemeLoad();
         }
-        /// <summary>
-        /// 描画バグ対策
-        /// </summary>
+
         private void ThemeLoad()
         {
             var theme = new ResourceDictionary();

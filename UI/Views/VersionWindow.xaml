@@ -12,7 +12,7 @@
     Height="220"
     HorizontalContentAlignment="Center"
     AcrylicWindowStyle="NoIcon"
-    BorderBrush="{DynamicResource SystemAltHighColor}"
+    BorderBrush="{DynamicResource BlueBorderBrush}"
     KeyDown="Window_KeyDown"
     ResizeMode="NoResize"
     ShowInTaskbar="False"
@@ -85,6 +85,8 @@
             Style="{StaticResource AccentButtonStyle}" />
     </Grid>
     <fw:AcrylicWindow.Background>
-        <SolidColorBrush Opacity="0.3" Color="{DynamicResource SystemChromeLowColor}" />
+        <SolidColorBrush
+            Opacity="0.3"
+            Color="{DynamicResource SystemChromeLowColor}" />
     </fw:AcrylicWindow.Background>
 </fw:AcrylicWindow>
