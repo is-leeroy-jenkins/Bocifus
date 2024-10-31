@@ -47,11 +47,11 @@ namespace Bocifus
             //SaveButton.Background = new SolidColorBrush(color);
 
             ConfigListBox.ContextMenu = new ContextMenu();
-            MenuItem UpSwap = new MenuItem();
+            var UpSwap = new MenuItem();
             UpSwap.Header = "⬆";
             UpSwap.Click += UpSwap_Click;
             UpSwap.HorizontalAlignment = HorizontalAlignment.Center;
-            MenuItem DownSwap = new MenuItem();
+            var DownSwap = new MenuItem();
             DownSwap.Header = "⬇";
             DownSwap.Click += DownSwap_Click;
             DownSwap.HorizontalAlignment = HorizontalAlignment.Center;
@@ -84,7 +84,7 @@ namespace Bocifus
 
             if (AppSettings.ConfigDataTable == null)
             {
-                DataSet ds = new DataSet();
+                var ds = new DataSet();
                 AppSettings.ConfigDataTable = new DataTable();
                 AppSettings.ConfigDataTable.Columns.Add("ConfigurationName", typeof(string));
                 AppSettings.ConfigDataTable.Columns.Add("Provider", typeof(string));
@@ -111,11 +111,11 @@ namespace Bocifus
         private void DuplicateControl()
         {
             //重複している名前に*をつける
-            for (int i = 0; i < AppSettings.ConfigDataTable.Rows.Count; i++)
+            for (var i = 0; i < AppSettings.ConfigDataTable.Rows.Count; i++)
             {
-                string currentName = AppSettings.ConfigDataTable.Rows[i]["ConfigurationName"].ToString();
+                var currentName = AppSettings.ConfigDataTable.Rows[i]["ConfigurationName"].ToString();
 
-                for (int j = 0; j < AppSettings.ConfigDataTable.Rows.Count; j++)
+                for (var j = 0; j < AppSettings.ConfigDataTable.Rows.Count; j++)
                 {
                     if (i == j)
                     {
@@ -143,7 +143,7 @@ namespace Bocifus
             }
 
             // 入力内容をAppSettings.ConfigDataTableに保存
-            int index = ConfigListBox.SelectedIndex;
+            var index = ConfigListBox.SelectedIndex;
             AppSettings.ConfigDataTable.Rows[index]["ConfigurationName"] = ConfigurationNameTextBox.Text;
             AppSettings.ConfigDataTable.Rows[index]["Provider"] = ProviderComboBox.Text;
             AppSettings.ConfigDataTable.Rows[index]["APIKey"] = APIKeyPasswordbox.Password;
@@ -181,7 +181,7 @@ namespace Bocifus
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
             //confgDataTableに1つ追加
-            DataRow row = AppSettings.ConfigDataTable.NewRow();
+            var row = AppSettings.ConfigDataTable.NewRow();
             row["ConfigurationName"] = "New Item";
             row["Provider"] = "OpenAI";
             row["Temperature"] = "1";
@@ -195,7 +195,7 @@ namespace Bocifus
         private void RemoveButton_Click(object sender, RoutedEventArgs e)
         {
             //選択しているアイテムを削除
-            int index = ConfigListBox.SelectedIndex;
+            var index = ConfigListBox.SelectedIndex;
             if (index == -1) return;
             //ListBoxから削除
             ConfigListBox.Items.RemoveAt(index);
@@ -211,12 +211,12 @@ namespace Bocifus
                 //上に移動
                 if (index == 0) return;
                 //AppSettings.ConfigDataTableの入れ替え
-                DataRow row = AppSettings.ConfigDataTable.NewRow();
+                var row = AppSettings.ConfigDataTable.NewRow();
                 row.ItemArray = AppSettings.ConfigDataTable.Rows[index - 1].ItemArray.Clone() as object[];
                 AppSettings.ConfigDataTable.Rows[index - 1].ItemArray = AppSettings.ConfigDataTable.Rows[index].ItemArray.Clone() as object[];
                 AppSettings.ConfigDataTable.Rows[index].ItemArray = row.ItemArray.Clone() as object[];
                 //ListBoxの入れ替え
-                string name = ConfigListBox.Items[index - 1].ToString();
+                var name = ConfigListBox.Items[index - 1].ToString();
                 ConfigListBox.Items[index - 1] = ConfigListBox.Items[index];
                 ConfigListBox.Items[index] = name;
                 ConfigListBox.SelectedIndex = index - 1;
@@ -226,12 +226,12 @@ namespace Bocifus
                 //下に移動
                 if (index == ConfigListBox.Items.Count - 1) return;
                 //AppSettings.ConfigDataTableの入れ替え
-                DataRow row = AppSettings.ConfigDataTable.NewRow();
+                var row = AppSettings.ConfigDataTable.NewRow();
                 row.ItemArray = AppSettings.ConfigDataTable.Rows[index + 1].ItemArray.Clone() as object[];
                 AppSettings.ConfigDataTable.Rows[index + 1].ItemArray = AppSettings.ConfigDataTable.Rows[index].ItemArray.Clone() as object[];
                 AppSettings.ConfigDataTable.Rows[index].ItemArray = row.ItemArray.Clone() as object[];
                 //ListBoxの入れ替え
-                string name = ConfigListBox.Items[index + 1].ToString();
+                var name = ConfigListBox.Items[index + 1].ToString();
                 ConfigListBox.Items[index + 1] = ConfigListBox.Items[index];
                 ConfigListBox.Items[index] = name;
                 ConfigListBox.SelectedIndex = index + 1;
@@ -239,12 +239,12 @@ namespace Bocifus
         }
         private void UpSwap()
         {
-            int index = ConfigListBox.SelectedIndex;
+            var index = ConfigListBox.SelectedIndex;
             SwapItems(index, true);
         }
         private void DownSwap()
         {
-            int index =  ConfigListBox.SelectedIndex;
+            var index =  ConfigListBox.SelectedIndex;
             SwapItems(index, false);
         }
         void UpSwap_Click(object sender, RoutedEventArgs e)
@@ -260,10 +260,10 @@ namespace Bocifus
             try
             {
                 //ConfigListBoxをjsonファイルに出力
-                List<ModelList> items = new List<ModelList>();
+                var items = new List<ModelList>();
                 foreach (DataRow row in AppSettings.ConfigDataTable.Rows)
                 {
-                    ModelList item = new ModelList();
+                    var item = new ModelList();
                     item.ConfigurationName = row["ConfigurationName"].ToString();
                     item.Provider = row["Provider"].ToString();
                     item.Model = row["Model"].ToString();
@@ -277,7 +277,7 @@ namespace Bocifus
                     items.Add(item);
                 }
                 
-                string json = JsonConvert.SerializeObject(items);
+                var json = JsonConvert.SerializeObject(items);
                 json = JToken.Parse(json).ToString(Formatting.Indented);
 
                 var dialog = new System.Windows.Forms.SaveFileDialog();
@@ -285,7 +285,7 @@ namespace Bocifus
                 dialog.FileName = DateTime.Now.ToString("yyyyMMdd") + "_config.json";
                 dialog.Filter = "JSON files (*.json)|*.json|All files (*.*)|*.*";
                 dialog.DefaultExt = "json";
-                System.Windows.Forms.DialogResult result = dialog.ShowDialog();
+                var result = dialog.ShowDialog();
                 if (result == System.Windows.Forms.DialogResult.OK)
                 {
                     File.WriteAllText(dialog.FileName, json);
@@ -310,19 +310,19 @@ namespace Bocifus
                     dialog.Filter = "json files (*.json)|*.json|All files (*.*)|*.*";
                     dialog.FilterIndex = 1;
                     dialog.RestoreDirectory = true;
-                    System.Windows.Forms.DialogResult result = dialog.ShowDialog();
+                    var result = dialog.ShowDialog();
                     if (result == System.Windows.Forms.DialogResult.OK)
                     {
-                        string path = dialog.FileName;
-                        string json = File.ReadAllText(path);
+                        var path = dialog.FileName;
+                        var json = File.ReadAllText(path);
                         //itemsにjsonの値を格納する
-                        List<ModelList> items = JsonConvert.DeserializeObject<List<ModelList>>(json);
+                        var items = JsonConvert.DeserializeObject<List<ModelList>>(json);
 
                         // ListBoxにアイテムを再セット
                         AppSettings.ConfigDataTable.Rows.Clear();
-                        foreach (ModelList item in items)
+                        foreach (var item in items)
                         {
-                            DataRow row = AppSettings.ConfigDataTable.NewRow();
+                            var row = AppSettings.ConfigDataTable.NewRow();
                             row["ConfigurationName"] = item.ConfigurationName;
                             row["Provider"] = item.Provider;
                             row["Model"] = item.Model;

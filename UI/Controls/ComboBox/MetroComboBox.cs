@@ -1,14 +1,14 @@
 ﻿// ******************************************************************************************
-//     Assembly:                Badger
+//     Assembly:                Booger
 //     Author:                  Terry D. Eppler
-//     Created:                 08-01-2024
+//     Created:                 08-08-2024
 // 
 //     Last Modified By:        Terry D. Eppler
-//     Last Modified On:        08-01-2024
+//     Last Modified On:        08-08-2024
 // ******************************************************************************************
 // <copyright file="MetroComboBox.cs" company="Terry D. Eppler">
-//    Badger is data analysis and reporting tool for EPA Analysts
-//    based on WPF, NET6.0, and written in C-Sharp.
+//    Booger is a quick & dirty WPF application that interacts with OpenAI GPT-3.5 Turbo API
+//    based on NET6 and written in C-Sharp.
 // 
 //    Copyright ©  2024  Terry D. Eppler
 // 
@@ -41,10 +41,10 @@
 
 namespace Bocifus
 {
-    using Syncfusion.Windows.Tools.Controls;
     using System;
     using System.Diagnostics.CodeAnalysis;
     using System.Windows;
+    using Syncfusion.Windows.Tools.Controls;
 
     /// <inheritdoc />
     /// <summary>
@@ -66,29 +66,29 @@ namespace Bocifus
         /// <inheritdoc />
         /// <summary>
         /// Initializes a new instance of the
-        /// <see cref="T:Badger.UI.Controls.ComboBox.MetroComboBox" /> class.
+        /// <see cref="T:Booger.UI.Controls.ComboBox.MetroComboBox" /> class.
         /// </summary>
         public MetroComboBox( )
             : base( )
 
         {
             // Control Properties
-            SetResourceReference( MetroComboBox.StyleProperty, typeof( ComboBoxAdv ) );
+            SetResourceReference( StyleProperty, typeof( ComboBoxAdv ) );
             Width = 150;
             Height = 30;
+            FontFamily = _theme.FontFamily;
+            FontSize = _theme.FontSize;
+            Padding = new Thickness( 10, 1, 1, 1 );
+            Margin = new Thickness( 1 );
+            BorderThickness = new Thickness( 1 );
+            IsEditable = true;
             AutoCompleteMode = AutoCompleteModes.None;
             AllowMultiSelect = false;
             IsTextSearchEnabled = false;
             AllowSelectAll = false;
-            IsEditable = true;
-            Margin = new Thickness( 1, 1, 1, 1 );
-            Padding = _theme.Padding;
-            Background = _theme.ControlInterior;
-            Foreground = _theme.LightBlueBrush;
+            Background = _theme.ControlBackground;
+            Foreground = _theme.Foreground;
             BorderBrush = _theme.BorderBrush;
-            Margin = _theme.Margin;
-            Padding = _theme.Padding;
-            BorderThickness = _theme.BorderThickness;
         }
 
         /// <summary>
@@ -101,6 +101,9 @@ namespace Bocifus
             {
                 var _item = new MetroComboBoxItem
                 {
+                    Background = _theme.ControlInterior,
+                    Foreground = _theme.Foreground,
+                    BorderBrush = _theme.BorderBrush,
                     Content = name,
                     Tag = name,
                     Height = 22

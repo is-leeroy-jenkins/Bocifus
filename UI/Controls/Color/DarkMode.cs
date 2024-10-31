@@ -1,5 +1,5 @@
 ﻿// ******************************************************************************************
-//     Assembly:                Ninja
+//     Assembly:                Booger
 //     Author:                  Terry D. Eppler
 //     Created:                 09-25-2024
 // 
@@ -51,7 +51,7 @@ namespace Bocifus
     /// <inheritdoc />
     /// <summary>
     /// </summary>
-    /// <seealso cref="T:Bocifus.Palette" />
+    /// <seealso cref="T:Bobo.Palette" />
     [ SuppressMessage( "ReSharper", "UnusedType.Global" ) ]
     [ SuppressMessage( "ReSharper", "ClassCanBeSealed.Global" ) ]
     [ SuppressMessage( "ReSharper", "MemberCanBeInternal" ) ]

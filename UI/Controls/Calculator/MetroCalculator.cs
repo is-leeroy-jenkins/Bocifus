@@ -1,17 +1,16 @@
 ﻿// ******************************************************************************************
-//     Assembly:                Ninja
+//     Assembly:                Booger
 //     Author:                  Terry D. Eppler
-//     Created:                 09-25-2024
+//     Created:                 08-08-2024
 // 
 //     Last Modified By:        Terry D. Eppler
-//     Last Modified On:        09-25-2024
+//     Last Modified On:        08-08-2024
 // ******************************************************************************************
 // <copyright file="MetroCalculator.cs" company="Terry D. Eppler">
+//    Booger is a quick & dirty WPF application that interacts with OpenAI GPT-3.5 Turbo API
+//    based on NET6 and written in C-Sharp.
 // 
-//    Ninja is a network toolkit, support iperf, tcp, udp, websocket, mqtt,
-//    sniffer, pcap, port scan, listen, ip scan .etc.
-// 
-//    Copyright ©  2019-2024 Terry D. Eppler
+//    Copyright ©  2024  Terry D. Eppler
 // 
 //    Permission is hereby granted, free of charge, to any person obtaining a copy
 //    of this software and associated documentation files (the “Software”),
@@ -33,7 +32,7 @@
 //    ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 //    DEALINGS IN THE SOFTWARE.
 // 
-//    You can contact me at:  terryeppler@gmail.com or eppler.terry@epa.gov
+//    You can contact me at: terryeppler@gmail.com or eppler.terry@epa.gov
 // </copyright>
 // <summary>
 //   MetroCalculator.cs
@@ -42,15 +41,14 @@
 
 namespace Bocifus
 {
-    using Syncfusion.Windows.Controls.Input;
     using System;
     using System.Diagnostics.CodeAnalysis;
-    using System.Windows.Media;
+    using Syncfusion.Windows.Controls.Input;
 
     /// <inheritdoc />
     /// <summary>
     /// </summary>
-    /// <seealso cref="Syncfusion.Windows.Controls.Input.SfCalculator" />
+    /// <seealso cref="T:Syncfusion.Windows.Controls.Input.SfCalculator" />
     [ SuppressMessage( "ReSharper", "UnusedType.Global" ) ]
     [ SuppressMessage( "ReSharper", "InconsistentNaming" ) ]
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
@@ -65,7 +63,8 @@ namespace Bocifus
 
         /// <inheritdoc />
         /// <summary>
-        /// Initializes a new instance of the Calculator
+        /// Initializes a new instance of the
+        /// <see cref="T:Booger.Calculator" /> class.
         /// </summary>
         public MetroCalculator( )
             : base( )

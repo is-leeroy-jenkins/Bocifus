@@ -1,10 +1,16 @@
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:themelocal="clr-namespace:Syncfusion.Themes.FluentDark.WPF"  
     xmlns:sfskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.WPF"
-    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    xmlns:skin="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"
+    xmlns:sync="clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Shared.WPF"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    xmlns:theme="clr-namespace:Syncfusion.Themes.FluentDark.WPF"
+    xmlns:wpf="clr-namespace:Syncfusion.Themes.FluentDark.WPF;assembly=Syncfusion.Themes.FluentDark.WPF"
+    xmlns:b="clr-namespace:Bocifus"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+
+    <!--*********************************************** RESOURCE *****************************************************-->
 
     <ResourceDictionary.MergedDictionaries>
         <sfskin:ResourceDictionaryProvider DictionaryName="Common" ThemeName="FluentDark"/>
@@ -29,7 +35,7 @@
                         Background="{TemplateBinding Background}"
                         BorderBrush="{TemplateBinding BorderBrush}"
                         BorderThickness="{TemplateBinding BorderThickness}"
-                        CornerRadius="{StaticResource FluentDark.ThemeCornerRadiusVariant1}"
+                        CornerRadius="1"
                         SnapsToDevicePixels="true">
                         <ContentPresenter
                             x:Name="contentPresenter"
@@ -43,29 +49,24 @@
                     <ControlTemplate.Triggers>
 
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="border" Property="Background" Value="{StaticResource ContentBackgroundHovered}" />
-                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource ContentBackgroundHovered}" />
-                            <Setter TargetName="contentPresenter" Property="TextElement.Foreground" Value="{StaticResource HoveredForeground}" />
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource ControlHoverBrush}" />
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource ControlHoverBrush}" />
+                            <Setter TargetName="contentPresenter" Property="TextElement.Foreground" Value="{StaticResource WhiteForeground}" />
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
                             <Setter TargetName="border" Property="Background" Value="{StaticResource SteelBlueBackground}" />
                             <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource SteelBlueBackground}" />
-                            <Setter TargetName="contentPresenter" Property="TextElement.Foreground" Value="{StaticResource SelectedForeground}" />
+                            <Setter TargetName="contentPresenter" Property="TextElement.Foreground" Value="{StaticResource WhiteForeground}" />
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="false">
                             <Setter TargetName="border" Property="Background" Value="{StaticResource ControlInteriorBrush}" />
                             <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource ControlInteriorBrush}" />
-                            <Setter TargetName="contentPresenter" Property="TextElement.Foreground" Value="{StaticResource DisabledForeground}" />
+                            <Setter TargetName="contentPresenter" Property="TextElement.Foreground" Value="{StaticResource ControlInteriorBrush}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-        <Style.Triggers>
-            <Trigger Property="sfskin:SkinManagerHelper.FocusVisualKind" Value="HighVisibility">
-                <Setter Property="FocusVisualStyle" Value="{StaticResource KeyboardFocusVisualStyle}"/>
-            </Trigger>
-        </Style.Triggers>
     </Style>
 
     <Style BasedOn="{StaticResource SyncfusionCalculatorButtonStyle}" TargetType="{x:Type syncfusion:CalculatorButton}" />
@@ -102,7 +103,7 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Content="MC"
-                            FontSize="{StaticResource FluentDark.CaptionText}"
+                            FontSize="11"
                             FontWeight="Normal"
                             Foreground="{TemplateBinding Foreground}"
                             Function="MemoryClear" />
@@ -114,7 +115,7 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Content="MR"
-                            FontSize="{StaticResource FluentDark.CaptionText}"
+                            FontSize="12"
                             FontWeight="Normal"
                             Foreground="{TemplateBinding Foreground}"
                             Function="MemoryRecall" />
@@ -126,7 +127,7 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Content="MS"
-                            FontSize="{StaticResource FluentDark.CaptionText}"
+                            FontSize="12"
                             FontWeight="Normal"
                             Foreground="{TemplateBinding Foreground}"
                             Function="Memory" />
@@ -138,7 +139,7 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Content="M+"
-                            FontSize="{StaticResource FluentDark.CaptionText}"
+                            FontSize="12"
                             FontWeight="Normal"
                             Foreground="{TemplateBinding Foreground}"
                             Function="MemoryAdd" />
@@ -150,7 +151,7 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Content="M-"
-                            FontSize="{StaticResource FluentDark.CaptionText}"
+                            FontSize="12"
                             FontWeight="Normal"
                             Foreground="{TemplateBinding Foreground}"
                             Function="MemorySubract" />
@@ -162,7 +163,7 @@
                             Background="{TemplateBinding Background}"
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
-                            FontSize="{StaticResource FluentDark.CaptionText}"
+                            FontSize="12"
                             FontWeight="Normal"
                             Function="Back">
                             <syncfusion:CalculatorButton.Content>
@@ -197,7 +198,7 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Content="C"
-                            FontSize="{StaticResource FluentDark.CaptionText}"
+                            FontSize="12"
                             FontWeight="Normal"
                             Foreground="{TemplateBinding Foreground}"
                             Function="Clear" />
@@ -210,7 +211,7 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Content="CE"
-                            FontSize="{StaticResource FluentDark.CaptionText}"
+                            FontSize="12"
                             FontWeight="Normal"
                             Foreground="{TemplateBinding Foreground}"
                             Function="ClearEntry" />
@@ -223,7 +224,7 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Content="±"
-                            FontSize="{StaticResource FluentDark.CaptionText}"
+                            FontSize="12"
                             FontWeight="Normal"
                             Foreground="{TemplateBinding Foreground}"
                             Function="Sign" />
@@ -236,7 +237,7 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Content="√"
-                            FontSize="{StaticResource FluentDark.CaptionText}"
+                            FontSize="12"
                             FontWeight="Normal"
                             Foreground="{TemplateBinding Foreground}"
                             Function="SquareRoot" />
@@ -249,7 +250,7 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Content="/"
-                            FontSize="{StaticResource FluentDark.CaptionText}"
+                            FontSize="12"
                             FontWeight="Normal"
                             Foreground="{TemplateBinding Foreground}"
                             Function="Divide" />
@@ -261,7 +262,7 @@
                             Background="{TemplateBinding Background}"
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
-                            FontSize="{StaticResource FluentDark.CaptionText}"
+                            FontSize="12"
                             FontWeight="Normal"
                             Function="Multiply">
                             <syncfusion:CalculatorButton.Content>
@@ -373,7 +374,7 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Content="%"
-                            FontSize="{StaticResource FluentDark.CaptionText}"
+                            FontSize="12"
                             FontWeight="Normal"
                             Foreground="{TemplateBinding Foreground}"
                             Function="Percentage" />
@@ -387,7 +388,7 @@
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Content="1/x"
                             FlowDirection="LeftToRight"
-                            FontSize="{StaticResource FluentDark.CaptionText}"
+                            FontSize="12"
                             FontWeight="Normal"
                             Foreground="{TemplateBinding Foreground}"
                             Function="Reciproc" />
@@ -401,7 +402,7 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Content="="
-                            FontSize="{StaticResource FluentDark.CaptionText}"
+                            FontSize="12"
                             FontWeight="Normal"
                             Foreground="{TemplateBinding Foreground}"
                             Function="Return" />
@@ -415,44 +416,39 @@
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger SourceName="PART_Button14" Property="IsMouseOver" Value="True">
-                            <Setter TargetName="AddPath" Property="Fill" Value="{StaticResource HoveredForeground}" />
+                            <Setter TargetName="AddPath" Property="Fill" Value="{StaticResource WhiteForeground}" />
                         </Trigger>
                         <Trigger SourceName="PART_Button13" Property="IsMouseOver" Value="True">
-                            <Setter TargetName="SubractPath" Property="Fill" Value="{StaticResource HoveredForeground}" />
+                            <Setter TargetName="SubractPath" Property="Fill" Value="{StaticResource WhiteForeground}" />
                         </Trigger>
                         <Trigger SourceName="PART_Button12" Property="IsMouseOver" Value="True">
-                            <Setter TargetName="MultiplyPath" Property="Fill" Value="{StaticResource HoveredForeground}" />
+                            <Setter TargetName="MultiplyPath" Property="Fill" Value="{StaticResource WhiteForeground}" />
                         </Trigger>
                         <Trigger SourceName="PART_Button6" Property="IsMouseOver" Value="True">
-                            <Setter TargetName="BackPath" Property="Fill" Value="{StaticResource HoveredForeground}" />
+                            <Setter TargetName="BackPath" Property="Fill" Value="{StaticResource WhiteForeground}" />
                         </Trigger>
                         <Trigger SourceName="PART_Button14" Property="IsPressed" Value="True">
-                            <Setter TargetName="AddPath" Property="Fill" Value="{StaticResource SelectedForeground}" />
+                            <Setter TargetName="AddPath" Property="Fill" Value="{StaticResource WhiteForeground}" />
                         </Trigger>
                         <Trigger SourceName="PART_Button13" Property="IsPressed" Value="True">
-                            <Setter TargetName="SubractPath" Property="Fill" Value="{StaticResource SelectedForeground}" />
+                            <Setter TargetName="SubractPath" Property="Fill" Value="{StaticResource WhiteForeground}" />
                         </Trigger>
                         <Trigger SourceName="PART_Button12" Property="IsPressed" Value="True">
-                            <Setter TargetName="MultiplyPath" Property="Fill" Value="{StaticResource SelectedForeground}" />
+                            <Setter TargetName="MultiplyPath" Property="Fill" Value="{StaticResource WhiteForeground}" />
                         </Trigger>
                         <Trigger SourceName="PART_Button6" Property="IsPressed" Value="True">
-                            <Setter TargetName="BackPath" Property="Fill" Value="{StaticResource SelectedForeground}" />
+                            <Setter TargetName="BackPath" Property="Fill" Value="{StaticResource WhiteForeground}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
                 
             </Setter.Value>
         </Setter>
-        <Style.Triggers>
-            <Trigger Property="sfskin:SkinManagerHelper.FocusVisualKind" Value="HighVisibility">
-                <Setter Property="FocusVisualStyle" Value="{StaticResource KeyboardFocusVisualStyle}"/>
-            </Trigger>
-        </Style.Triggers>
     </Style>
 
     <Style x:Key="SyncfusionSfCalculatorStyle" TargetType="syncfusion:SfCalculator">
         <Setter Property="FunctionsPaneStyle" Value="{StaticResource SyncfusionFunctionsPaneStyle}" />
-        <Setter Property="Background" Value="{StaticResource PopupBackground}" />
+        <Setter Property="Background" Value="{StaticResource ControlInteriorBrush}" />
         <Setter Property="Foreground" Value="{StaticResource WhiteForeground}" />
         <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
         <Setter Property="FontFamily" Value="Roboto-Regular" />
@@ -502,11 +498,6 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-        <Style.Triggers>
-            <Trigger Property="sfskin:SkinManagerHelper.FocusVisualKind" Value="HighVisibility">
-                <Setter Property="FocusVisualStyle" Value="{StaticResource FlatKeyboardFocusVisualStyle}"/>
-            </Trigger>
-        </Style.Triggers>
     </Style>
 
     <Style BasedOn="{StaticResource SyncfusionSfCalculatorStyle}" TargetType="{x:Type syncfusion:SfCalculator}" />
@@ -515,8 +506,8 @@
         <Setter Property="BorderBrush" Value="{StaticResource ControlInteriorBrush}" />
         <Setter Property="Background" Value="{StaticResource ControlInteriorBrush}" />
         <Setter Property="Foreground" Value="{StaticResource WhiteForeground}" />
-        <Setter Property="FontSize" Value="{StaticResource FluentDark.CaptionText}" />
-        <Setter Property="FontWeight" Value="{StaticResource FluentDark.FontWeightMedium}" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontWeight" Value="Medium" />
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="Template">
             <Setter.Value>
@@ -676,11 +667,6 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-        <Style.Triggers>
-            <Trigger Property="sfskin:SkinManagerHelper.FocusVisualKind" Value="HighVisibility">
-                <Setter Property="FocusVisualStyle" Value="{StaticResource FlatKeyboardFocusVisualStyle}"/>
-            </Trigger>
-        </Style.Triggers>
     </Style>
     <Style BasedOn="{StaticResource SyncfusionInputPaneStyle}" TargetType="{x:Type syncfusion:InputPane}" />
 
@@ -710,7 +696,7 @@
                             Grid.ColumnSpan="2"
                             Margin="8"
                             HorizontalAlignment="Right"
-                            FontSize="{StaticResource FluentDark.CaptionText}"
+                            FontSize="12"
                             FontWeight="Normal"
                             Text="{TemplateBinding Expression}"
                             TextAlignment="Right"
@@ -724,8 +710,8 @@
                                 x:Name="DisplayTextBlock"
                                 Margin="8"
                                 VerticalAlignment="Center"
-                                FontSize="{StaticResource FluentDark.CaptionText}"
-                                FontWeight="{StaticResource FluentDark.FontWeightMedium}"
+                                FontSize="12"
+                                FontWeight="Medium"
                                 Text="{Binding DisplayText, RelativeSource={RelativeSource TemplatedParent}}" />
                         </Viewbox>
                         <TextBlock
@@ -740,9 +726,9 @@
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource ControlInteriorBrush}" />
                             <Setter TargetName="Border" Property="Background" Value="{StaticResource ControlInteriorBrush}" />
-                            <Setter TargetName="ExpressionBlock" Property="Foreground" Value="{StaticResource DisabledForeground}" />
-                            <Setter TargetName="PART_MemorySign" Property="Foreground" Value="{StaticResource DisabledForeground}" />
-                            <Setter TargetName="DisplayTextBlock" Property="Foreground" Value="{StaticResource DisabledForeground}" />
+                            <Setter TargetName="ExpressionBlock" Property="Foreground" Value="{StaticResource FormBackground}" />
+                            <Setter TargetName="PART_MemorySign" Property="Foreground" Value="{StaticResource FormBackground}" />
+                            <Setter TargetName="DisplayTextBlock" Property="Foreground" Value="{StaticResource FormBackground}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

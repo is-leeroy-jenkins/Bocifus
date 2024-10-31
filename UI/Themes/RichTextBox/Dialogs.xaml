@@ -21,7 +21,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="richtextboxadv:PasswordDialog">
-                    <Grid Background="{StaticResource PopupBackground}">
+                    <Grid Background="{StaticResource ControlInteriorBrush}">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="12" />
                             <RowDefinition Height="Auto" />
@@ -68,7 +68,7 @@
                             Grid.Column="0"
                             Grid.ColumnSpan="3"
                             Width="Auto"
-                            Background="{StaticResource PopupBackground}"
+                            Background="{StaticResource ControlInteriorBrush}"
                             BorderBrush="{StaticResource BlueBorderBrush}"
                             BorderThickness="0,1,0,0">
                             <StackPanel
@@ -115,7 +115,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="richtextboxadv:HyperlinkDialog">
-                    <Grid Background="{StaticResource PopupBackground}">
+                    <Grid Background="{StaticResource ControlInteriorBrush}">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="12" />
                             <RowDefinition Height="Auto" />
@@ -206,7 +206,7 @@
                             Grid.Column="0"
                             Grid.ColumnSpan="3"
                             Width="Auto"
-                            Background="{StaticResource PopupBackground}"
+                            Background="{StaticResource ControlInteriorBrush}"
                             BorderBrush="{StaticResource BlueBorderBrush}"
                             BorderThickness="0,1,0,0">
                             <StackPanel
@@ -253,7 +253,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="richtextboxadv:FindAndReplaceDialog">
-                    <Grid Background="{StaticResource PopupBackground}">
+                    <Grid Background="{StaticResource ControlInteriorBrush}">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*" />
                             <RowDefinition Height="38" />
@@ -454,7 +454,7 @@
                         <Border
                             Grid.Row="1"
                             Width="405"
-                            Background="{StaticResource PopupBackground}"
+                            Background="{StaticResource ControlInteriorBrush}"
                             BorderBrush="{StaticResource BlueBorderBrush}"
                             BorderThickness="0,1,0,0">
                             <Grid Grid.Row="1">
@@ -536,7 +536,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="richtextboxadv:ShowMessageDialog">
-                    <Grid Background="{StaticResource PopupBackground}">
+                    <Grid Background="{StaticResource ControlInteriorBrush}">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="38" />

@@ -122,7 +122,7 @@ namespace Bocifus
             {
                 if (TargetTemplate != null)
                 {
-                    int sortOrderToDelete = TargetTemplate.SortOrder;
+                    var sortOrderToDelete = TargetTemplate.SortOrder;
                     AppSettings.PromptTemplateManager.Templates.Remove(TargetTemplate);
                     foreach (var item in AppSettings.PromptTemplateManager.Templates.Where(t => t.SortOrder > sortOrderToDelete))
                     {

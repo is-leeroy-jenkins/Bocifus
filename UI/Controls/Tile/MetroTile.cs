@@ -1,16 +1,16 @@
 ﻿// ******************************************************************************************
-//     Assembly:                Badger
+//     Assembly:                Booger
 //     Author:                  Terry D. Eppler
-//     Created:                 09-07-2020
+//     Created:                 08-08-2024
 // 
 //     Last Modified By:        Terry D. Eppler
-//     Last Modified On:        09-07-2024
+//     Last Modified On:        08-08-2024
 // ******************************************************************************************
 // <copyright file="MetroTile.cs" company="Terry D. Eppler">
-//    Badger is data analysis and reporting tool for EPA Analysts
-//    that is based on WPF, NET6.0, and written in C-Sharp.
+//    Booger is a quick & dirty WPF application that interacts with OpenAI GPT-3.5 Turbo API
+//    based on NET6 and written in C-Sharp.
 // 
-//     Copyright ©  2020, 2022, 2204 Terry D. Eppler
+//    Copyright ©  2024  Terry D. Eppler
 // 
 //    Permission is hereby granted, free of charge, to any person obtaining a copy
 //    of this software and associated documentation files (the “Software”),
@@ -32,7 +32,7 @@
 //    ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 //    DEALINGS IN THE SOFTWARE.
 // 
-//    You can contact me at:  terryeppler@gmail.com or eppler.terry@epa.gov
+//    You can contact me at: terryeppler@gmail.com or eppler.terry@epa.gov
 // </copyright>
 // <summary>
 //   MetroTile.cs
@@ -41,10 +41,10 @@
 
 namespace Bocifus
 {
-    using Syncfusion.Windows.Controls.Notification;
     using System;
     using System.Diagnostics.CodeAnalysis;
     using System.Windows.Input;
+    using Syncfusion.Windows.Controls.Notification;
 
     /// <inheritdoc />
     /// <summary>
@@ -57,6 +57,7 @@ namespace Bocifus
     [ SuppressMessage( "ReSharper", "MemberCanBeInternal" ) ]
     [ SuppressMessage( "ReSharper", "FieldCanBeMadeReadOnly.Local" ) ]
     [ SuppressMessage( "ReSharper", "ClassCanBeSealed.Global" ) ]
+    [ SuppressMessage( "ReSharper", "ClassNeverInstantiated.Global" ) ]
     public class MetroTile : SfHubTile
     {
         /// <summary>
@@ -67,7 +68,7 @@ namespace Bocifus
         /// <inheritdoc />
         /// <summary>
         /// Initializes a new instance of the
-        /// <see cref="T:Badger.Tile" /> class.
+        /// <see cref="T:Booger.Tile" /> class.
         /// </summary>
         public MetroTile( )
             : base( )
@@ -76,12 +77,14 @@ namespace Bocifus
             SetResourceReference( StyleProperty, typeof( SfHubTile ) );
             Width = 200;
             Height = 100;
-            Background = _theme.ControlBackground;
-            Foreground = _theme.LightBlueBrush;
-            BorderBrush = _theme.ControlBackground;
-            Margin = _theme.Margin;
+            FontFamily = _theme.FontFamily;
+            FontSize = _theme.FontSize;
             Padding = _theme.Padding;
+            Margin = _theme.Margin;
             BorderThickness = _theme.BorderThickness;
+            Background = _theme.ControlInterior;
+            Foreground = _theme.LightBlueBrush;
+            BorderBrush = _theme.ControlInterior;
 
             // Wire Events
             MouseEnter += OnMouseEnter;
@@ -120,9 +123,9 @@ namespace Bocifus
         {
             try
             {
-                Background = _theme.ControlBackground;
-                BorderBrush = _theme.ControlBackground;
+                Background = _theme.ControlInterior;
                 Foreground = _theme.LightBlueBrush;
+                BorderBrush = _theme.ControlInterior;
             }
             catch( Exception ex )
             {

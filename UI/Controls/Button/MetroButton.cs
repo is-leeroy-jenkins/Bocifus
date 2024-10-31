@@ -1,14 +1,14 @@
 ﻿// ******************************************************************************************
-//     Assembly:                Badger
+//     Assembly:                Booger
 //     Author:                  Terry D. Eppler
-//     Created:                 08-01-2024
+//     Created:                 08-08-2024
 // 
 //     Last Modified By:        Terry D. Eppler
-//     Last Modified On:        08-01-2024
+//     Last Modified On:        08-08-2024
 // ******************************************************************************************
 // <copyright file="MetroButton.cs" company="Terry D. Eppler">
-//    Badger is data analysis and reporting tool for EPA Analysts
-//    based on WPF, NET6.0, and written in C-Sharp.
+//    Booger is a quick & dirty WPF application that interacts with OpenAI GPT-3.5 Turbo API
+//    based on NET6 and written in C-Sharp.
 // 
 //    Copyright ©  2024  Terry D. Eppler
 // 
@@ -41,11 +41,11 @@
 
 namespace Bocifus
 {
-    using Syncfusion.Windows.Tools.Controls;
     using System;
     using System.Diagnostics.CodeAnalysis;
     using System.Windows;
     using System.Windows.Input;
+    using Syncfusion.Windows.Tools.Controls;
 
     /// <inheritdoc />
     /// <summary>
@@ -56,7 +56,6 @@ namespace Bocifus
     [ SuppressMessage( "ReSharper", "InconsistentNaming" ) ]
     [ SuppressMessage( "ReSharper", "MemberCanBeInternal" ) ]
     [ SuppressMessage( "ReSharper", "ClassCanBeSealed.Global" ) ]
-    [ SuppressMessage( "ReSharper", "ClassNeverInstantiated.Global" ) ]
     public class MetroButton : ButtonAdv
     {
         /// <summary>
@@ -67,26 +66,28 @@ namespace Bocifus
         /// <inheritdoc />
         /// <summary>
         /// Initializes a new instance of the
-        /// <see cref="T:Badger.Button" /> class.
+        /// <see cref="T:Booger.Button" /> class.
         /// </summary>
         public MetroButton( )
             : base( )
         {
             // Control Properties
-            SetResourceReference( MetroButton.StyleProperty, typeof( ButtonAdv ) );
+            SetResourceReference( StyleProperty, typeof( ButtonAdv ) );
+            FontFamily = _theme.FontFamily;
+            FontSize = _theme.FontSize;
             Width = 140;
             Height = 50;
             IconHeight = 16;
             IconWidth = 16;
             SizeMode = SizeMode.Normal;
-            Background = _theme.ControlBackground;
-            Foreground = _theme.LightBlueBrush;
-            BorderBrush = _theme.ControlBackground;
-            Margin = _theme.Margin;
-            Padding = _theme.Padding;
+            HorizontalContentAlignment = HorizontalAlignment.Center;
+            VerticalContentAlignment = VerticalAlignment.Center;
             BorderThickness = _theme.BorderThickness;
+            Background = _theme.ControlInterior;
+            Foreground = _theme.Foreground;
+            BorderBrush = _theme.BorderBrush;
 
-            // Wire Events
+            // Event Wiring
             MouseEnter += OnMouseEnter;
             MouseLeave += OnMouseLeave;
         }
@@ -98,17 +99,20 @@ namespace Bocifus
         /// <see cref="EventArgs"/>
         /// instance containing the event data.
         /// </param>
-        private protected virtual void OnMouseEnter( object sender, RoutedEventArgs e )
+        private void OnMouseEnter( object sender, MouseEventArgs e )
         {
             try
             {
-                Background = _theme.SteelBlueBrush;
-                BorderBrush = _theme.LightBlueBrush;
-                Foreground = _theme.WhiteForeground;
+                if( sender is MetroButton _button )
+                {
+                    _button.Foreground = _theme.WhiteForeground;
+                    _button.Background = _theme.DarkBlueBrush;
+                    _button.BorderBrush = _theme.LightBlueBrush;
+                }
             }
-            catch(Exception ex)
+            catch( Exception ex )
             {
-                Fail(ex);
+                Fail( ex );
             }
         }
 
@@ -119,17 +123,20 @@ namespace Bocifus
         /// <see cref="EventArgs"/>
         /// instance containing the event data.
         /// </param>
-        private protected virtual void OnMouseLeave( object sender, RoutedEventArgs e )
+        private void OnMouseLeave( object sender, MouseEventArgs e )
         {
             try
             {
-                Background = _theme.ControlBackground;
-                BorderBrush = _theme.ControlBackground;
-                Foreground = _theme.LightBlueBrush;
+                if( sender is MetroButton _button )
+                {
+                    _button.Foreground = _theme.LightBlueBrush;
+                    _button.Background = _theme.ControlInterior;
+                    _button.BorderBrush = _theme.ControlInterior;
+                }
             }
-            catch(Exception ex)
+            catch( Exception ex )
             {
-                Fail(ex);
+                Fail( ex );
             }
         }
 

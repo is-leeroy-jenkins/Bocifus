@@ -1,17 +1,16 @@
 ﻿// ******************************************************************************************
-//     Assembly:                Ninja
+//     Assembly:                Badger
 //     Author:                  Terry D. Eppler
-//     Created:                 09-25-2024
+//     Created:                 09-07-2020
 // 
 //     Last Modified By:        Terry D. Eppler
-//     Last Modified On:        09-25-2024
+//     Last Modified On:        09-07-2024
 // ******************************************************************************************
 // <copyright file="MetroListBoxItem.cs" company="Terry D. Eppler">
+//    Badger is data analysis and reporting tool for EPA Analysts
+//    that is based on WPF, NET6.0, and written in C-Sharp.
 // 
-//    Ninja is a network toolkit, support iperf, tcp, udp, websocket, mqtt,
-//    sniffer, pcap, port scan, listen, ip scan .etc.
-// 
-//    Copyright ©  2019-2024 Terry D. Eppler
+//     Copyright ©  2020, 2022, 2204 Terry D. Eppler
 // 
 //    Permission is hereby granted, free of charge, to any person obtaining a copy
 //    of this software and associated documentation files (the “Software”),
@@ -78,16 +77,15 @@ namespace Bocifus
             : base( )
         {
             // Control Properties
-            FontFamily = _theme.FontFamily;
-            FontSize = _theme.FontSize;
-            Height = 40;
+            Height = 35;
             Background = _theme.ControlInterior;
             Foreground = _theme.LightBlueBrush;
             BorderBrush = _theme.ControlInterior;
             Margin = _theme.Margin;
-            Padding = _theme.Padding;
-            BorderThickness = _theme.BorderThickness;
-            HorizontalContentAlignment = HorizontalAlignment.Left;
+            Padding = new Thickness( 30, 10, 1, 1 );
+            BorderThickness = new Thickness( 0 );
+            HorizontalContentAlignment = HorizontalAlignment.Stretch;
+            VerticalContentAlignment = VerticalAlignment.Stretch;
 
             // Event Wiring
             MouseEnter += OnMouseEnter;

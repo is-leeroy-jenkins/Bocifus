@@ -61,7 +61,7 @@ namespace Bocifus
                 {
                     try
                     {
-                        TranslationResult translationResult = await client.TranslateTextAsync(
+                        var translationResult = await client.TranslateTextAsync(
                                                         text: inputText,
                                                         targetLanguage: targetLang,
                                                         model: TranslationModel.NeuralMachineTranslation);

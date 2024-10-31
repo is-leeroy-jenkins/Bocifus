@@ -1,7 +1,7 @@
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:bx="clr-namespace:Bocifus"
+    xmlns:b="clr-namespace:Bocifus"
     xmlns:sfskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
     xmlns:skin="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"
     xmlns:sync="clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Shared.WPF"
@@ -9,24 +9,26 @@
     xmlns:theme="clr-namespace:Syncfusion.Themes.FluentDark.WPF"
     xmlns:wpf="clr-namespace:Syncfusion.Themes.FluentDark.WPF;assembly=Syncfusion.Themes.FluentDark.WPF">
 
+
+    <!--  *********************************************** RESOURCES *****************************************************  -->
+
+
     <wpf:RevealItem
         x:Key="ButtonAdvRevealItem"
         CornerRadius="{DynamicResource FluentDark.CornerRadius2}"
         HoverBackground="{DynamicResource ControlHoverBrush}"
         HoverBorder="{DynamicResource RevealBorder}"
-        PressedBackground="{DynamicResource RevealBackground}" />
+        PressedBackground="{DynamicResource SteelBlueBackground}" />
 
     <DataTemplate x:Key="LargeIconTemplate">
-        <Image
-            x:Name="LargeImage"
+        <Image x:Name="LargeImage"
             Width="{Binding Width, RelativeSource={RelativeSource TemplatedParent}}"
             Height="{Binding Height, RelativeSource={RelativeSource TemplatedParent}}"
             Source="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" />
     </DataTemplate>
 
     <DataTemplate x:Key="SmallIconTemplate">
-        <Image
-            x:Name="smallimage"
+        <Image x:Name="smallimage"
             Width="{Binding Width, RelativeSource={RelativeSource TemplatedParent}}"
             Height="{Binding Height, RelativeSource={RelativeSource TemplatedParent}}"
             Source="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" />
@@ -42,7 +44,7 @@
             Background="{TemplateBinding Background}"
             BorderBrush="{TemplateBinding BorderBrush}"
             BorderThickness="{TemplateBinding BorderThickness}"
-            CornerRadius="{DynamicResource FluentDark.CornerRadius2}"
+            CornerRadius="2"
             SnapsToDevicePixels="True">
             <Border.Resources>
                 <sync:HorizontalContentToTextAlignmentConverter x:Key="TextAlignmentConverter" />
@@ -51,13 +53,11 @@
                 Margin="2,0,2,0"
                 HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                 VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
-                <ContentPresenter
-                    x:Name="LargeIconContent"
+                <ContentPresenter x:Name="LargeIconContent"
                     Content="{Binding}"
                     ContentTemplate="{TemplateBinding IconTemplate}"
                     ContentTemplateSelector="{TemplateBinding IconTemplateSelector}" />
-                <TextBlock
-                    x:Name="PART_LargeText"
+                <TextBlock x:Name="PART_LargeText"
                     Margin="2,0,2,1"
                     HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
                     VerticalAlignment="{TemplateBinding VerticalAlignment}"
@@ -136,10 +136,10 @@
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="HorizontalContentAlignment" Value="Center" />
-        <Setter Property="Background" Value="{DynamicResource ControlInterior}" />
+        <Setter Property="Background" Value="{DynamicResource ControlInteriorBrush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource BlueBorderBrush}" />
         <Setter Property="Foreground" Value="{DynamicResource FormForeground}" />
-        <Setter Property="FontFamily" Value="Roboto-Regular" />
+        <Setter Property="FontFamily" Value="Roboto" />
         <Setter Property="FontSize" Value="11" />
         <Setter Property="FontWeight" Value="Normal" />
         <Setter Property="Template">
@@ -152,7 +152,7 @@
                         Background="{TemplateBinding Background}"
                         BorderBrush="{TemplateBinding BorderBrush}"
                         BorderThickness="{TemplateBinding BorderThickness}"
-                        CornerRadius="{DynamicResource FluentDark.CornerRadius2}"
+                        CornerRadius="2"
                         SnapsToDevicePixels="True">
                         <Border.Resources>
                             <sync:HorizontalContentToTextAlignmentConverter x:Key="TextAlignmentConverter" />
@@ -164,14 +164,12 @@
                                 <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
-                            <ContentPresenter
-                                x:Name="SmallIconContent"
+                            <ContentPresenter x:Name="SmallIconContent"
                                 Margin="2"
                                 Content="{Binding}"
                                 ContentTemplate="{TemplateBinding IconTemplate}"
                                 ContentTemplateSelector="{TemplateBinding IconTemplateSelector}" />
-                            <AccessText
-                                x:Name="PART_NormalText"
+                            <AccessText x:Name="PART_NormalText"
                                 Grid.Column="1"
                                 Margin="2,0,2,0"
                                 VerticalAlignment="{TemplateBinding VerticalContentAlignment}"

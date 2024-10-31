@@ -48,7 +48,7 @@ namespace Bocifus
             viewModel.ComboBoxItems.Add("user");
             viewModel.ComboBoxItems.Add("assistant");
 
-            ObservableCollection<DataTableItem> list = new ObservableCollection<DataTableItem>();
+            var list = new ObservableCollection<DataTableItem>();
             foreach (var message in conversationHistory.Messages)
             {
                 var result = UtilityFunctions.ExtractUserAndImageFromMessage(message.Content);
@@ -78,9 +78,9 @@ namespace Bocifus
         }
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            ObservableCollection<DataTableItem> list = (ObservableCollection<DataTableItem>)DataTable.ItemsSource;
+            var list = (ObservableCollection<DataTableItem>)DataTable.ItemsSource;
             UpdatedConversationHistory = new ConversationHistory();
-            foreach (DataTableItem item in list)
+            foreach (var item in list)
             {
                 if (item.Role == "user")  
                 {
@@ -88,7 +88,7 @@ namespace Bocifus
                     {
                         Encoder = System.Text.Encodings.Web.JavaScriptEncoder.Create(System.Text.Unicode.UnicodeRanges.All)
                     };
-                    string contentJson = System.Text.Json.JsonSerializer.Serialize(new List<VisionUserContentItem>
+                    var contentJson = System.Text.Json.JsonSerializer.Serialize(new List<VisionUserContentItem>
                     {
                         new VisionUserContentItem { type = "text", text = item.Content },
                         new VisionUserContentItem { type = "image_url", image_url = new Image_Url { url = item.ImageUrl, detail = "auto" } }
@@ -127,8 +127,8 @@ namespace Bocifus
         {
             if (Key.Return == e.Key && 0 < (ModifierKeys.Shift & e.KeyboardDevice.Modifiers))
             {
-                TextBox tb = (TextBox)sender;
-                int caret = tb.CaretIndex;
+                var tb = (TextBox)sender;
+                var caret = tb.CaretIndex;
                 tb.Text = tb.Text.Insert(caret, "\r\n");
                 tb.CaretIndex = caret + 1;
                 e.Handled = true;
@@ -149,12 +149,12 @@ namespace Bocifus
 
                 DataTable.Columns[2].Width = new DataGridLength(1.0, DataGridLengthUnitType.SizeToHeader);
 
-                DataGridTemplateColumn comboBoxColumn = new DataGridTemplateColumn();
+                var comboBoxColumn = new DataGridTemplateColumn();
                 comboBoxColumn.Header = DataTable.Columns[0].Header;
 
-                FrameworkElementFactory comboBoxFactory = new FrameworkElementFactory(typeof(ComboBox));
+                var comboBoxFactory = new FrameworkElementFactory(typeof(ComboBox));
 
-                Binding itemsSourceBinding = new Binding
+                var itemsSourceBinding = new Binding
                 {
                     Path = new PropertyPath("ComboBoxItems"),
                     Mode = BindingMode.OneWay,
@@ -162,7 +162,7 @@ namespace Bocifus
                 };
                 comboBoxFactory.SetBinding(ComboBox.ItemsSourceProperty, itemsSourceBinding);
 
-                Binding selectedItemBinding = new Binding
+                var selectedItemBinding = new Binding
                 {
                     Path = new PropertyPath("Role"),
                     Mode = BindingMode.TwoWay,
@@ -172,7 +172,7 @@ namespace Bocifus
 
                 comboBoxFactory.SetValue(ComboBox.WidthProperty, 100.0);
 
-                DataTemplate cellTemplate = new DataTemplate();
+                var cellTemplate = new DataTemplate();
                 cellTemplate.VisualTree = comboBoxFactory;
 
                 comboBoxColumn.CellTemplate = cellTemplate;
@@ -182,14 +182,14 @@ namespace Bocifus
                 DataTable.Columns.Insert(0, comboBoxColumn);
             }
 
-            ContextMenu contextMenu = new ContextMenu();
-            MenuItem menuItem = new MenuItem();
+            var contextMenu = new ContextMenu();
+            var menuItem = new MenuItem();
             menuItem.Header = "Add new row after selected row";
             menuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.Add);
             menuItem.Click += AddNewRowBeforeSelected_Click;
             contextMenu.Items.Add(menuItem);
 
-            MenuItem deleteMenuItem = new MenuItem();
+            var deleteMenuItem = new MenuItem();
             deleteMenuItem.Header = "Delete selected row";
             deleteMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.Delete);
             deleteMenuItem.Click += DeleteSelectedRow_Click;
@@ -206,7 +206,7 @@ namespace Bocifus
             }
             var dialog = new System.Windows.Forms.SaveFileDialog();
             dialog.Title = "Please select an export file.";
-            string fileName = DateTime.Now.ToString("yyyyMMdd") + "_";
+            var fileName = DateTime.Now.ToString("yyyyMMdd") + "_";
             if (((DataTableItem)DataTable.Items[0]).Content.Length < 20)
             {
                 fileName += ((DataTableItem)DataTable.Items[0]).Content.Substring(0, ((DataTableItem)DataTable.Items[0]).Content.Length).Replace("/", "").Replace(":", "");
@@ -219,12 +219,12 @@ namespace Bocifus
             dialog.Filter = "JSON files (*.json)|*.json|All files (*.*)|*.*";
             dialog.DefaultExt = "json";
 
-            System.Windows.Forms.DialogResult result = dialog.ShowDialog();
+            var result = dialog.ShowDialog();
             if (result == System.Windows.Forms.DialogResult.OK)
             {
-                string json = JsonConvert.SerializeObject(DataTable.ItemsSource);
+                var json = JsonConvert.SerializeObject(DataTable.ItemsSource);
                 json = JToken.Parse(json).ToString(Formatting.Indented);
-                string path = dialog.FileName;
+                var path = dialog.FileName;
                 File.WriteAllText(path, json);
                 ModernWpf.MessageBox.Show("Exported successfully.");
             }
@@ -234,12 +234,12 @@ namespace Bocifus
             var dialog = new System.Windows.Forms.OpenFileDialog();
             dialog.Title = "Please select an import file.";
             dialog.Filter = "JSON files (*.json)|*.json|All files (*.*)|*.*";
-            System.Windows.Forms.DialogResult result = dialog.ShowDialog();
+            var result = dialog.ShowDialog();
             if (result == System.Windows.Forms.DialogResult.OK)
             {
-                string path = dialog.FileName;
-                string json = File.ReadAllText(path);
-                ObservableCollection<DataTableItem> list = JsonConvert.DeserializeObject<ObservableCollection<DataTableItem>>(json);
+                var path = dialog.FileName;
+                var json = File.ReadAllText(path);
+                var list = JsonConvert.DeserializeObject<ObservableCollection<DataTableItem>>(json);
                 DataTable.ItemsSource = list;
                 DataTable.Columns.RemoveAt(1);
                 DataTable_Loaded(null, null);
@@ -248,18 +248,18 @@ namespace Bocifus
         }
         private void AddNewRowBeforeSelected_Click(object sender, RoutedEventArgs e)
         {
-            int selectedIndex = DataTable.SelectedIndex;
+            var selectedIndex = DataTable.SelectedIndex;
 
             if (selectedIndex >= 0)
             {
-                DataTableItem item = new DataTableItem();
+                var item = new DataTableItem();
                 item.Role = "User";
                 item.Content = "";
                 (DataTable.ItemsSource as ObservableCollection<DataTableItem>).Insert(selectedIndex + 1, item);
             }
             else
             {
-                DataTableItem item = new DataTableItem();
+                var item = new DataTableItem();
                 item.Role = "User";
                 item.Content = "";
                 (DataTable.ItemsSource as ObservableCollection<DataTableItem>).Insert(0, item);
@@ -267,7 +267,7 @@ namespace Bocifus
         }
         private void DeleteSelectedRow_Click(object sender, RoutedEventArgs e)
         {
-            int selectedIndex = DataTable.SelectedIndex;
+            var selectedIndex = DataTable.SelectedIndex;
 
             if (selectedIndex >= 0)
             {
@@ -281,7 +281,7 @@ namespace Bocifus
         }
         private void PreviewMouseWheel(object sender, MouseWheelEventArgs e)
         {
-            UIElement element = sender as UIElement;
+            var element = sender as UIElement;
             while (element != null)
             {
                 element = VisualTreeHelper.GetParent(element) as UIElement;
@@ -295,7 +295,7 @@ namespace Bocifus
         }
         private void SetHistoryCountButton_Click(object sender, RoutedEventArgs e)
         {
-            int conversationHistoryCount = AppSettings.ConversationHistoryCountSetting;
+            var conversationHistoryCount = AppSettings.ConversationHistoryCountSetting;
             var window = new Messagebox("Conversation History Setting", "Adjust the number of past conversation histories to include in the conversation.", conversationHistoryCount);
             window.Owner = Application.Current.Windows.OfType<MainWindow>().FirstOrDefault();
             if (window.ShowDialog() == true)

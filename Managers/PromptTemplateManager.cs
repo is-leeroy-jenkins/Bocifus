@@ -32,11 +32,11 @@ namespace Bocifus
         }
         private void PromptTemplateSortUpButton_Click(object sender, RoutedEventArgs e)
         {
-            PromptTemplate selectedItem = (PromptTemplate)((Button)sender).DataContext;
-            int currentIndex = AppSettings.PromptTemplateManager.Templates.IndexOf(selectedItem);
+            var selectedItem = (PromptTemplate)((Button)sender).DataContext;
+            var currentIndex = AppSettings.PromptTemplateManager.Templates.IndexOf(selectedItem);
             if (currentIndex > 0)
             {
-                PromptTemplate itemAbove = AppSettings.PromptTemplateManager.Templates[currentIndex - 1];
+                var itemAbove = AppSettings.PromptTemplateManager.Templates[currentIndex - 1];
 
                 selectedItem.SortOrder -= 1;
                 itemAbove.SortOrder += 1;
@@ -49,13 +49,13 @@ namespace Bocifus
         }
         private void PromptTemplateSortDownButton_Click(object sender, RoutedEventArgs e)
         {
-            PromptTemplate selectedItem = (PromptTemplate)((Button)sender).DataContext;
+            var selectedItem = (PromptTemplate)((Button)sender).DataContext;
             var templates = AppSettings.PromptTemplateManager.Templates;
-            int currentIndex = templates.IndexOf(selectedItem);
+            var currentIndex = templates.IndexOf(selectedItem);
 
             if (currentIndex < templates.Count - 1)
             {
-                PromptTemplate itemBelow = templates[currentIndex + 1];
+                var itemBelow = templates[currentIndex + 1];
 
                 selectedItem.SortOrder += 1;
                 itemBelow.SortOrder -= 1;
@@ -80,8 +80,8 @@ namespace Bocifus
         }
         private void PromptTemplateInsertButton_Click(object sender, RoutedEventArgs e)
         {
-            PromptTemplate selectedItem = (PromptTemplate)((Button)sender).DataContext;
-            string prompt = selectedItem.Prompt;
+            var selectedItem = (PromptTemplate)((Button)sender).DataContext;
+            var prompt = selectedItem.Prompt;
             if (!string.IsNullOrEmpty(UserTextBox.Text))
             {
                 // ユーザーに確認するメッセージボックスを表示
@@ -115,13 +115,13 @@ namespace Bocifus
         }
         private void PromptTemplateEditButton_Click(object sender, RoutedEventArgs e)
         {
-            PromptTemplate item = (PromptTemplate)((Button)sender).DataContext;
+            var item = (PromptTemplate)((Button)sender).DataContext;
 
             var dialog = new PromptTemplateInput(item);
             dialog.Owner = this;
             if (dialog.ShowDialog() == true)
             {
-                PromptTemplate newTemplate = dialog.Result;
+                var newTemplate = dialog.Result;
                 item.Title = newTemplate.Title;
                 item.Description = newTemplate.Description;
                 item.Prompt = newTemplate.Prompt;
@@ -146,11 +146,11 @@ namespace Bocifus
             dialog.Owner = this;
             if (dialog.ShowDialog() == true)
             {
-                PromptTemplate newTemplate = dialog.Result;
+                var newTemplate = dialog.Result;
 
                 if (AppSettings.PromptTemplateManager.Templates.Count > 0)
                 {
-                    int maxSortOrder = AppSettings.PromptTemplateManager.Templates.Max(t => t.SortOrder);
+                    var maxSortOrder = AppSettings.PromptTemplateManager.Templates.Max(t => t.SortOrder);
                     newTemplate.SortOrder = maxSortOrder + 1;
                 }
                 else

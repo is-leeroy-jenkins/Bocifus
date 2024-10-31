@@ -31,21 +31,21 @@ namespace Bocifus
                 return;
             }
             var selectedConversation = (ConversationHistory)ConversationListBox.SelectedItem;
-            List<ChatMessage> messages = selectedConversation.Messages.ToList();
+            var messages = selectedConversation.Messages.ToList();
 
             MessagesPanel.Children.Clear();
 
             var targetMessages = selectedConversation.Messages;
-            for (int i = 0; i < targetMessages.Count; i++)
+            for (var i = 0; i < targetMessages.Count; i++)
             {
                 var message = targetMessages[i];
 
                 if (message.Role == null) { break; }
 
-                bool isUser = message.Role == "user";
-                bool isLastMessage = i == targetMessages.Count - 1;
+                var isUser = message.Role == "user";
+                var isLastMessage = i == targetMessages.Count - 1;
 
-                string messageContent = message.Content ?? System.Text.Json.JsonSerializer.Serialize(message.Contents, new JsonSerializerOptions { WriteIndented = true });
+                var messageContent = message.Content ?? System.Text.Json.JsonSerializer.Serialize(message.Contents, new JsonSerializerOptions { WriteIndented = true });
                 var result = UtilityFunctions.ExtractUserAndImageFromMessage(messageContent);
 
                 var messageElement = CreateMessageElement(result.userMessage, isUser, isLastMessage);
@@ -84,7 +84,7 @@ namespace Bocifus
         }
         private void ShowTable()
         {
-            ConversationHistory targetConversation = ConversationListBox.SelectedItem as ConversationHistory;
+            var targetConversation = ConversationListBox.SelectedItem as ConversationHistory;
             if (targetConversation == null)
             {
                 return;
@@ -92,29 +92,29 @@ namespace Bocifus
 
             var window = new Table(targetConversation);
             window.Owner = Application.Current.Windows.OfType<MainWindow>().FirstOrDefault();
-            bool result = (bool)window.ShowDialog();
+            var result = (bool)window.ShowDialog();
             if (result)
             {
                 targetConversation.Messages = window.UpdatedConversationHistory.Messages;
                 MessagesPanel.Children.Clear();
 
-                ConversationHistory selectedConversation = ConversationListBox.SelectedItem as ConversationHistory;
+                var selectedConversation = ConversationListBox.SelectedItem as ConversationHistory;
                 if (selectedConversation == null)
                 {
                     return;
                 }
 
                 var targetMessages = selectedConversation.Messages;
-                for (int i = 0; i < targetMessages.Count; i++)
+                for (var i = 0; i < targetMessages.Count; i++)
                 {
                     var message = targetMessages[i];
 
                     if (message.Role == null) { break; }
 
-                    bool isUser = message.Role == "user";
-                    bool isLastMessage = i == targetMessages.Count - 1;
+                    var isUser = message.Role == "user";
+                    var isLastMessage = i == targetMessages.Count - 1;
 
-                    string messageContent = message.Content ?? System.Text.Json.JsonSerializer.Serialize(message.Contents, new JsonSerializerOptions { WriteIndented = true });
+                    var messageContent = message.Content ?? System.Text.Json.JsonSerializer.Serialize(message.Contents, new JsonSerializerOptions { WriteIndented = true });
                     var content = UtilityFunctions.ExtractUserAndImageFromMessage(messageContent);
                     var messageElement = CreateMessageElement(content.userMessage, isUser, isLastMessage);
                     MessagesPanel.Children.Add(messageElement);
@@ -137,7 +137,7 @@ namespace Bocifus
             var accentColorBrush = new SolidColorBrush((Color)accentColor);
             accentColorBrush.Opacity = 0.3;
 
-            Grid messageGrid = new Grid
+            var messageGrid = new Grid
             {
                 ColumnDefinitions =
                 {
@@ -152,12 +152,12 @@ namespace Bocifus
             {
                 Foreground = (Brush)Application.Current.Resources["SystemBaseMediumHighColorBrush"]
             };
-            Viewbox copyViewBox = new Viewbox
+            var copyViewBox = new Viewbox
             {
                 Width = 16,
                 Child = copyIcon
             };
-            Button copyTextButton = new Button
+            var copyTextButton = new Button
             {
                 Width = 30,
                 Opacity = 0.5,
@@ -179,12 +179,12 @@ namespace Bocifus
             {
                 Foreground = (Brush)Application.Current.Resources["SystemBaseMediumHighColorBrush"]
             };
-            Viewbox viewbox = new Viewbox
+            var viewbox = new Viewbox
             {
                 Width = 16,
                 Child = translateIcon
             };
-            Button translateButton = new Button
+            var translateButton = new Button
             {
                 Width = 30,
                 Opacity = 0.5,
@@ -210,7 +210,7 @@ namespace Bocifus
             }
             if (isUser && visionImage == null)
             {
-                TextBox userTextBox = new TextBox
+                var userTextBox = new TextBox
                 {
                     Padding = new Thickness(10),
                     FontSize = Properties.Settings.Default.FontSize,
@@ -224,13 +224,13 @@ namespace Bocifus
                 };
                 userTextBox.MouseDown += OnUserTextBoxMouseDown;
 
-                ContextMenu contextMenu = CreateContextMenu();
+                var contextMenu = CreateContextMenu();
                 userTextBox.ContextMenu = contextMenu;
 
                 Grid.SetColumn(userTextBox, 1);
                 messageGrid.Children.Add(userTextBox);
 
-                Rectangle backgroundRect = new Rectangle { Fill = accentColorBrush };
+                var backgroundRect = new Rectangle { Fill = accentColorBrush };
                 Grid.SetColumnSpan(backgroundRect, 3);
                 messageGrid.Children.Add(backgroundRect);
                 Panel.SetZIndex(backgroundRect, -1);
@@ -258,12 +258,12 @@ namespace Bocifus
                     if (translateButton.IsMouseOver)
                         return;
 
-                    Point mousePosToWindow = Mouse.GetPosition(Application.Current.MainWindow);
+                    var mousePosToWindow = Mouse.GetPosition(Application.Current.MainWindow);
 
                     if (PresentationSource.FromVisual(userTextBox) != null)  
                     {
-                        double topBoundary = userTextBox.PointToScreen(new Point(0, 0)).Y;
-                        double bottomBoundary = userTextBox.PointToScreen(new Point(0, userTextBox.ActualHeight)).Y;
+                        var topBoundary = userTextBox.PointToScreen(new Point(0, 0)).Y;
+                        var bottomBoundary = userTextBox.PointToScreen(new Point(0, userTextBox.ActualHeight)).Y;
 
                         if (mousePosToWindow.Y >= topBoundary && mousePosToWindow.Y <= bottomBoundary)
                         {
@@ -280,7 +280,7 @@ namespace Bocifus
             }
             else if (!(isUser) && visionImage == null)
             {
-                MarkdownScrollViewer markDownScrollViewer = new MarkdownScrollViewer();
+                var markDownScrollViewer = new MarkdownScrollViewer();
                 markDownScrollViewer.MarkdownStyle = (Style)Application.Current.FindResource("MdXamlStyle");
                 markDownScrollViewer.Engine.DisabledContextMenu = true;
                 markDownScrollViewer.UseSoftlineBreakAsHardlineBreak = true;         
@@ -299,12 +299,12 @@ namespace Bocifus
 
                 void MarkdwonScroll_ContextMenuOpening(object sender, ContextMenuEventArgs e)
                 {
-                    string paragraphText = "";
-                    MarkdownScrollViewer msv = sender as MarkdownScrollViewer;
+                    var paragraphText = "";
+                    var msv = sender as MarkdownScrollViewer;
                     if (msv != null)
                     {
                         var mousePos = Mouse.GetPosition(msv);
-                        Visual hitVisual = msv.InputHitTest(mousePos) as Visual;
+                        var hitVisual = msv.InputHitTest(mousePos) as Visual;
                         if (hitVisual != null && hitVisual is ICSharpCode.AvalonEdit.Rendering.TextView)
                         {
                             var editor = hitVisual as ICSharpCode.AvalonEdit.Rendering.TextView;
@@ -318,7 +318,7 @@ namespace Bocifus
                         {
                             paragraphText = msv.Markdown;
                         }
-                        ContextMenu contextMenu = CreateContextMenu(paragraphText);
+                        var contextMenu = CreateContextMenu(paragraphText);
                         markDownScrollViewer.ContextMenu = contextMenu;
                     }
                 }
@@ -326,7 +326,7 @@ namespace Bocifus
                 Grid.SetColumn(markDownScrollViewer, 1);
                 messageGrid.Children.Add(markDownScrollViewer);
 
-                Rectangle backgroundRect = new Rectangle { Fill = Brushes.Transparent };
+                var backgroundRect = new Rectangle { Fill = Brushes.Transparent };
                 Grid.SetColumnSpan(backgroundRect, 3);
                 messageGrid.Children.Add(backgroundRect);
                 Panel.SetZIndex(backgroundRect, -1);
@@ -344,7 +344,7 @@ namespace Bocifus
                     {
                         Foreground = (Brush)Application.Current.Resources["SystemBaseMediumHighColorBrush"]
                     };
-                    Viewbox viewBox = new Viewbox
+                    var viewBox = new Viewbox
                     {
                         Width = 16,
                         Child = icon
@@ -395,11 +395,11 @@ namespace Bocifus
                     if (regenerateButton != null && regenerateButton.IsMouseOver)
                         return;
 
-                    Point mousePosToWindow = Mouse.GetPosition(Application.Current.MainWindow);
+                    var mousePosToWindow = Mouse.GetPosition(Application.Current.MainWindow);
                     if (PresentationSource.FromVisual(markDownScrollViewer) != null)  
                     {
-                        double topBoundary = markDownScrollViewer.PointToScreen(new Point(0, 0)).Y;
-                        double bottomBoundary = markDownScrollViewer.PointToScreen(new Point(0, markDownScrollViewer.ActualHeight)).Y;
+                        var topBoundary = markDownScrollViewer.PointToScreen(new Point(0, 0)).Y;
+                        var bottomBoundary = markDownScrollViewer.PointToScreen(new Point(0, markDownScrollViewer.ActualHeight)).Y;
 
                         if (mousePosToWindow.Y >= topBoundary && mousePosToWindow.Y <= bottomBoundary)
                         {
@@ -424,9 +424,9 @@ namespace Bocifus
             }
             if (visionImage != null)
             {
-                string base64Data = visionImage.Substring(visionImage.IndexOf(",") + 1);
-                byte[] imageBytes = Convert.FromBase64String(base64Data);
-                BitmapImage bitmapImage = new BitmapImage();
+                var base64Data = visionImage.Substring(visionImage.IndexOf(",") + 1);
+                var imageBytes = Convert.FromBase64String(base64Data);
+                var bitmapImage = new BitmapImage();
                 using (var ms = new MemoryStream(imageBytes))
                 {
                     bitmapImage.BeginInit();
@@ -435,7 +435,7 @@ namespace Bocifus
                     bitmapImage.EndInit();
                 }
                 bitmapImage.Freeze();
-                Image imageControl = new Image
+                var imageControl = new Image
                 {
                     Source = bitmapImage,
                     Stretch = Stretch.Uniform,
@@ -445,7 +445,7 @@ namespace Bocifus
                 messageGrid.Children.Add(imageControl);
                 Grid.SetColumn(imageControl, 1);
 
-                Rectangle backgroundRect = new Rectangle { Fill = accentColorBrush };
+                var backgroundRect = new Rectangle { Fill = accentColorBrush };
                 Grid.SetColumnSpan(backgroundRect, 3);
                 messageGrid.Children.Add(backgroundRect);
                 Panel.SetZIndex(backgroundRect, -1);
@@ -461,10 +461,10 @@ namespace Bocifus
 
             if (messages.Count > 1)
             {
-                string userMessage = messages[messages.Count - 2].Content;
+                var userMessage = messages[messages.Count - 2].Content;
                 (string user, string image) result = UtilityFunctions.ExtractUserAndImageFromMessage(userMessage);
 
-                foreach (ConversationHistory item in ConversationListBox.SelectedItems.OfType<ConversationHistory>())
+                foreach (var item in ConversationListBox.SelectedItems.OfType<ConversationHistory>())
                 {
                     if (item.Messages.Count > 1)
                     {
@@ -500,7 +500,7 @@ namespace Bocifus
                 return;
             }
 
-            ConversationHistory targetConversation = ConversationListBox.SelectedItem as ConversationHistory;
+            var targetConversation = ConversationListBox.SelectedItem as ConversationHistory;
             if (targetConversation == null)
             {
                 return;

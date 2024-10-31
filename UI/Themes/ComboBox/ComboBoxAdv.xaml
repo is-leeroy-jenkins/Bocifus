@@ -1,18 +1,21 @@
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:ctrl="clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Shared.WPF"
-    xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"
-    xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-    xmlns:sync="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"
+    xmlns:sfskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+    xmlns:skin="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"
+    xmlns:sync="clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Shared.WPF"
     xmlns:sys="clr-namespace:System;assembly=mscorlib"
-    xmlns:theme="clr-namespace:Syncfusion.Themes.FluentDark.WPF">
+    xmlns:theme="clr-namespace:Syncfusion.Themes.FluentDark.WPF"
+    xmlns:wpf="clr-namespace:Syncfusion.Themes.FluentDark.WPF;assembly=Syncfusion.Themes.FluentDark.WPF"
+    xmlns:b="clr-namespace:Bocifus">
+
+    <!--  *********************************************** RESOURCES *****************************************************  -->
 
     <ResourceDictionary.MergedDictionaries>
-        <skin:ResourceDictionaryProvider
+        <sfskin:ResourceDictionaryProvider
             DictionaryName="Common"
             ThemeName="FluentDark" />
-        <skin:ResourceDictionaryProvider
+        <sfskin:ResourceDictionaryProvider
             DictionaryName="Brushes"
             ThemeName="FluentDark" />
         <ResourceDictionary Source="/Syncfusion.Themes.FluentDark.WPF;component/MSControl/TextBox.xaml" />
@@ -29,7 +32,10 @@
         Color="#d0d1d4" />
 
     <BooleanToVisibilityConverter x:Key="VisiblityConverter" />
-    <ctrl:TemplateToVisibilityConverter x:Key="DropDownTemplateConvertor" />
+    <sync:TemplateToVisibilityConverter x:Key="DropDownTemplateConvertor" />
+
+
+    <!--  *********************************************** STYLES *****************************************************  -->
 
     <Style x:Key="SyncfusionComboBoxItemFocusVisual">
         <Setter Property="Control.Template">
@@ -48,8 +54,7 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="{TemplateBinding Background}">
-                        <Path
-                            x:Name="Token_Path"
+                        <Path x:Name="Token_Path"
                             Width="8"
                             Height="8"
                             Margin="3,2,3,2"
@@ -75,16 +80,15 @@
         </Setter>
     </Style>
 
-    <Style TargetType="{x:Type ctrl:ComboBoxTokenItem}">
+    <Style TargetType="{x:Type sync:ComboBoxTokenItem}">
         <Setter Property="Focusable" Value="False" />
         <Setter Property="Foreground" Value="{StaticResource FormForeground}" />
         <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
         <Setter Property="Background" Value="{StaticResource ControlInteriorBrush}" />
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type ctrl:ComboBoxTokenItem}">
-                    <Border
-                        x:Name="rootBorder"
+                <ControlTemplate TargetType="{x:Type sync:ComboBoxTokenItem}">
+                    <Border x:Name="rootBorder"
                         Margin="2"
                         Padding="3"
                         Background="{TemplateBinding Background}"
@@ -96,15 +100,13 @@
                                 <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="24" />
                             </Grid.ColumnDefinitions>
-                            <ContentPresenter
-                                x:Name="Token_ContentPresenter"
+                            <ContentPresenter x:Name="Token_ContentPresenter"
                                 Grid.Column="0"
                                 Margin="4,0,0,0"
                                 HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
                                 Content="{TemplateBinding Content}" />
-                            <Button
-                                x:Name="Token_CloseButton"
+                            <Button x:Name="Token_CloseButton"
                                 Grid.Column="1"
                                 Padding="1"
                                 HorizontalAlignment="Right"
@@ -128,7 +130,7 @@
 
     <ControlTemplate
         x:Key="MultiSelectTemplate"
-        TargetType="ctrl:ComboBoxAdv">
+        TargetType="sync:ComboBoxAdv">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -136,8 +138,7 @@
                     Width="0"
                     MinWidth="{StaticResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}" />
             </Grid.ColumnDefinitions>
-            <Popup
-                x:Name="PART_Popup"
+            <Popup x:Name="PART_Popup"
                 Grid.ColumnSpan="2"
                 AllowsTransparency="true"
                 IsOpen="{Binding IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}}"
@@ -145,8 +146,7 @@
                 SnapsToDevicePixels="True"
                 StaysOpen="False">
 
-                <Border
-                    x:Name="DropDownBorder"
+                <Border x:Name="DropDownBorder"
                     MinWidth="{TemplateBinding ActualWidth}"
                     MaxHeight="{TemplateBinding MaxDropDownHeight}"
                     Background="{StaticResource MenuBackground}"
@@ -168,8 +168,7 @@
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="Auto" />
                             </Grid.RowDefinitions>
-                            <ScrollViewer
-                                x:Name="DropDownScrollViewer"
+                            <ScrollViewer x:Name="DropDownScrollViewer"
                                 Background="{StaticResource MenuBackground}">
                                 <ScrollViewer.Padding>
                                     <Thickness>0,4,0,4</Thickness>
@@ -184,22 +183,19 @@
                                         Height="0"
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Top">
-                                        <Rectangle
-                                            x:Name="OpaqueRect"
+                                        <Rectangle x:Name="OpaqueRect"
                                             Width="{Binding ActualWidth, ElementName=DropDownBorder}"
                                             Height="{Binding ActualHeight, ElementName=DropDownBorder}"
                                             Fill="{Binding Background, ElementName=DropDownBorder}" />
                                     </Canvas>
-                                    <ItemsPresenter
-                                        x:Name="ItemsPresenter"
+                                    <ItemsPresenter x:Name="ItemsPresenter"
                                         Grid.Row="1"
                                         ClipToBounds="True"
                                         SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
-                                    <ctrl:ComboBoxItemAdv
-                                        x:Name="PART_SelectAll"
+                                    <sync:ComboBoxItemAdv x:Name="PART_SelectAll"
                                         Grid.Row="0"
                                         Margin="0.2,0,0,0.5"
-                                        Content="{sync:SharedLocalizationResourceExtension ResourceName=SelectAll}"
+                                        Content="{skin:SharedLocalizationResourceExtension ResourceName=SelectAll}"
                                         Visibility="{TemplateBinding AllowSelectAll,
                                                                      Converter={StaticResource VisiblityConverter}}" />
                                     <Border
@@ -208,19 +204,18 @@
                                         BorderThickness="0,0,0,1"
                                         SnapsToDevicePixels="True"
                                         Visibility="Collapsed" />
-                                    <TextBlock
-                                        x:Name="No_Records"
+                                    <TextBlock x:Name="No_Records"
                                         Padding="3"
                                         Background="{Binding Background, ElementName=DropDownBorder}"
                                         Focusable="False"
-                                        Text="{shared:SharedLocalizationResourceExtension ResourceName=NoRecords}"
+                                        Text="{skin:SharedLocalizationResourceExtension ResourceName=NoRecords}"
                                         Visibility="Collapsed" />
                                 </Grid>
                             </ScrollViewer>
                             <Separator
                                 Grid.Row="1"
                                 Height="1"
-                                Visibility="{Binding Path=EnableOKCancel, Converter={StaticResource VisiblityConverter}, RelativeSource={RelativeSource AncestorType={x:Type ctrl:ComboBoxAdv}}}" />
+                                Visibility="{Binding Path=EnableOKCancel, Converter={StaticResource VisiblityConverter}, RelativeSource={RelativeSource AncestorType={x:Type sync:ComboBoxAdv}}}" />
                             <StackPanel
                                 Grid.Row="2"
                                 Margin="4"
@@ -228,18 +223,16 @@
                                 Orientation="Horizontal"
                                 Visibility="{TemplateBinding EnableOKCancel,
                                                              Converter={StaticResource VisiblityConverter}}">
-                                <Button
-                                    x:Name="PART_OKButton"
+                                <Button x:Name="PART_OKButton"
                                     Width="70"
-                                    Height="{StaticResource FluentDark.MinHeight}"
+                                    Height="30"
                                     Margin="0,0,10,0"
-                                    Content="{sync:SharedLocalizationResourceExtension ResourceName=OKText}"
+                                    Content="{skin:SharedLocalizationResourceExtension ResourceName=OKText}"
                                     Style="{StaticResource WPFButtonStyle}" />
-                                <Button
-                                    x:Name="PART_CancelButton"
+                                <Button x:Name="PART_CancelButton"
                                     Width="70"
-                                    Height="{StaticResource FluentDark.MinHeight}"
-                                    Content="{sync:SharedLocalizationResourceExtension ResourceName=CancelText}"
+                                    Height="30"
+                                    Content="{skin:SharedLocalizationResourceExtension ResourceName=CancelText}"
                                     Style="{StaticResource WPFButtonStyle}" />
                             </StackPanel>
                         </Grid>
@@ -257,16 +250,14 @@
                 BorderBrush="{TemplateBinding BorderBrush}"
                 BorderThickness="{TemplateBinding BorderThickness}"
                 CornerRadius="2" />
-            <ToggleButton
-                x:Name="PART_ToggleButton"
+            <ToggleButton x:Name="PART_ToggleButton"
                 Grid.ColumnSpan="2"
                 Margin="0,0,5,0"
                 HorizontalContentAlignment="Right"
                 IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
                 Style="{StaticResource WPFGlyphDropdownExpanderStyle}" />
 
-            <ContentPresenter
-                x:Name="ContentPresenter"
+            <ContentPresenter x:Name="ContentPresenter"
                 Margin="{TemplateBinding Padding}"
                 HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                 VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
@@ -277,8 +268,7 @@
                 IsHitTestVisible="false"
                 SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
 
-            <ItemsControl
-                x:Name="PART_SelectedItems"
+            <ItemsControl x:Name="PART_SelectedItems"
                 Margin="{TemplateBinding Padding}"
                 HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                 VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
@@ -292,8 +282,7 @@
                 </ItemsControl.ItemsPanel>
             </ItemsControl>
 
-            <TextBlock
-                x:Name="PART_DefaultText"
+            <TextBlock x:Name="PART_DefaultText"
                 Margin="{TemplateBinding Padding}"
                 HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                 VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
@@ -301,16 +290,14 @@
                 Opacity="0.5"
                 Text="{TemplateBinding DefaultText}" />
 
-            <Border
-                x:Name="PART_Border"
+            <Border x:Name="PART_Border"
                 Margin="0"
                 Background="{StaticResource ControlBackground}"
                 BorderBrush="Transparent"
                 BorderThickness="1,1,0,1"
                 CornerRadius="0"
                 Visibility="Collapsed">
-                <ItemsControl
-                    x:Name="PART_TokenItems"
+                <ItemsControl x:Name="PART_TokenItems"
                     HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                     VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                     DisplayMemberPath="{Binding DisplayMemberPath, RelativeSource={RelativeSource Mode=TemplatedParent}}"
@@ -321,8 +308,7 @@
                         </ItemsPanelTemplate>
                     </ItemsControl.ItemsPanel>
                     <ItemsControl.Items>
-                        <TextBox
-                            x:Name="PART_Editable"
+                        <TextBox x:Name="PART_Editable"
                             Margin="1,2,0,2"
                             Padding="2,0,2,5"
                             HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
@@ -339,8 +325,7 @@
                 </ItemsControl>
             </Border>
 
-            <TextBox
-                x:Name="PART_IsEditDefaultText"
+            <TextBox x:Name="PART_IsEditDefaultText"
                 HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
                 VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
                 BorderThickness="0"
@@ -354,7 +339,7 @@
                 Visibility="Collapsed" />
         </Grid>
         <ControlTemplate.Triggers>
-            <Trigger Property="skin:SfSkinManager.SizeMode" Value="Touch">
+            <Trigger Property="sfskin:SfSkinManager.SizeMode" Value="Touch">
                 <Setter Property="MinHeight" Value="{StaticResource TouchMode.MinHeight}" />
             </Trigger>
             <MultiTrigger>
@@ -425,15 +410,15 @@
 
     <Style
         x:Key="SyncfusionComboBoxAdvStyle"
-        TargetType="{x:Type ctrl:ComboBoxAdv}">
+        TargetType="{x:Type sync:ComboBoxAdv}">
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
-        <Setter Property="BorderBrush" Value="{StaticResource Border}" />
+        <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
         <Setter Property="Background" Value="{StaticResource ControlInteriorBrush}" />
         <Setter Property="Foreground" Value="{StaticResource WhiteForeground}" />
         <Setter Property="FontFamily" Value="Roboto-Regular" />
         <Setter Property="FontWeight" Value="Normal" />
         <Setter Property="FontSize" Value="11" />
-        <Setter Property="BorderThickness" Value="{StaticResource FluentDark.ThemeBorderThicknessVariant1}" />
+        <Setter Property="BorderThickness" Value="1" />
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto" />
         <Setter Property="Padding">
             <Setter.Value>
@@ -444,7 +429,7 @@
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type ctrl:ComboBoxAdv}">
+                <ControlTemplate TargetType="{x:Type sync:ComboBoxAdv}">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
@@ -453,8 +438,7 @@
                                 MinWidth="{StaticResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}" />
                         </Grid.ColumnDefinitions>
 
-                        <Popup
-                            x:Name="PART_Popup"
+                        <Popup x:Name="PART_Popup"
                             Grid.ColumnSpan="2"
                             AllowsTransparency="true"
                             IsOpen="{Binding IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}}"
@@ -462,11 +446,10 @@
                             SnapsToDevicePixels="True"
                             StaysOpen="False">
 
-                            <Border
-                                x:Name="DropDownBorder"
+                            <Border x:Name="DropDownBorder"
                                 MinWidth="{TemplateBinding ActualWidth}"
                                 MaxHeight="{TemplateBinding MaxDropDownHeight}"
-                                Background="{StaticResource PopupBackground}"
+                                Background="{StaticResource ControlInteriorBrush}"
                                 BorderBrush="{StaticResource BlueBorderBrush}"
                                 BorderThickness="1"
                                 CornerRadius="4"
@@ -487,8 +470,7 @@
                                             <RowDefinition Height="Auto" />
                                             <RowDefinition Height="Auto" />
                                         </Grid.RowDefinitions>
-                                        <ScrollViewer
-                                            x:Name="DropDownScrollViewer"
+                                        <ScrollViewer x:Name="DropDownScrollViewer"
                                             Background="{StaticResource MenuBackground}">
                                             <ScrollViewer.Padding>
                                                 <Thickness>0,4,0,4</Thickness>
@@ -503,23 +485,20 @@
                                                     Height="0"
                                                     HorizontalAlignment="Left"
                                                     VerticalAlignment="Top">
-                                                    <Rectangle
-                                                        x:Name="OpaqueRect"
+                                                    <Rectangle x:Name="OpaqueRect"
                                                         Width="{Binding ActualWidth, ElementName=DropDownBorder}"
                                                         Height="{Binding ActualHeight, ElementName=DropDownBorder}"
                                                         Fill="{Binding Background, ElementName=DropDownBorder}" />
                                                 </Canvas>
-                                                <ItemsPresenter
-                                                    x:Name="ItemsPresenter"
+                                                <ItemsPresenter x:Name="ItemsPresenter"
                                                     Grid.Row="1"
                                                     ClipToBounds="True"
                                                     SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
-                                                <TextBlock
-                                                    x:Name="No_Records"
+                                                <TextBlock x:Name="No_Records"
                                                     Padding="3"
                                                     Background="{Binding Background, ElementName=DropDownBorder}"
                                                     Focusable="False"
-                                                    Text="{shared:SharedLocalizationResourceExtension ResourceName=NoRecords}"
+                                                    Text="{skin:SharedLocalizationResourceExtension ResourceName=NoRecords}"
                                                     Visibility="Collapsed" />
                                             </Grid>
                                         </ScrollViewer>
@@ -538,16 +517,14 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             CornerRadius="2" />
-                        <ToggleButton
-                            x:Name="PART_ToggleButton"
+                        <ToggleButton x:Name="PART_ToggleButton"
                             Grid.ColumnSpan="2"
                             Margin="0,0,5,0"
                             HorizontalContentAlignment="Right"
                             IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
                             Style="{StaticResource WPFGlyphDropdownExpanderStyle}" />
 
-                        <ContentPresenter
-                            x:Name="ContentPresenter"
+                        <ContentPresenter x:Name="ContentPresenter"
                             Margin="{TemplateBinding Padding}"
                             HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                             VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
@@ -564,8 +541,7 @@
                             </ContentPresenter.Resources>
                         </ContentPresenter>
 
-                        <TextBlock
-                            x:Name="PART_DefaultText"
+                        <TextBlock x:Name="PART_DefaultText"
                             Margin="{TemplateBinding Padding}"
                             HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                             VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
@@ -573,8 +549,7 @@
                             Opacity="0.5"
                             Text="{TemplateBinding DefaultText}" />
 
-                        <TextBox
-                            x:Name="PART_Editable"
+                        <TextBox x:Name="PART_Editable"
                             Margin="1,2,0,2"
                             HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
                             VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
@@ -587,8 +562,7 @@
                             Style="{StaticResource WPFBorderlessTextBoxStyle}"
                             Visibility="Collapsed" />
 
-                        <TextBox
-                            x:Name="PART_IsEditDefaultText"
+                        <TextBox x:Name="PART_IsEditDefaultText"
                             HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
                             VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
                             BorderThickness="0"
@@ -623,8 +597,8 @@
                             <Setter TargetName="PART_ToggleButton" Property="HorizontalAlignment" Value="Right" />
                             <Setter TargetName="PART_ToggleButton" Property="HorizontalContentAlignment" Value="Center" />
                         </Trigger>
-                        <Trigger Property="skin:SfSkinManager.SizeMode" Value="Touch">
-                            <Setter Property="MinHeight" Value="{StaticResource TouchMode.MinHeight}" />
+                        <Trigger Property="sfskin:SfSkinManager.SizeMode" Value="Touch">
+                            <Setter Property="MinHeight" Value="{StaticResource FluentDark.MinHeight}" />
                         </Trigger>
                         <MultiDataTrigger>
                             <MultiDataTrigger.Conditions>
@@ -661,7 +635,7 @@
                             <Setter Property="BorderThickness" Value="1" />
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="false">
-                            <Setter Property="Foreground" Value="{StaticResource DisabledForeground}" />
+                            <Setter Property="Foreground" Value="{StaticResource FormBackground}" />
                             <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
                             <Setter Property="Background" Value="{StaticResource BlueBorderBrush}" />
                         </Trigger>
@@ -693,11 +667,11 @@
 
     <Style
         BasedOn="{StaticResource SyncfusionComboBoxAdvStyle}"
-        TargetType="{x:Type ctrl:ComboBoxAdv}" />
+        TargetType="{x:Type sync:ComboBoxAdv}" />
 
     <Style
         x:Key="SyncfusionComboBoxItemAdvStyle"
-        TargetType="{x:Type ctrl:ComboBoxItemAdv}">
+        TargetType="{x:Type sync:ComboBoxItemAdv}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource SyncfusionComboBoxItemFocusVisual}" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Padding">
@@ -711,17 +685,16 @@
             </Setter.Value>
         </Setter>
         <Setter Property="BorderThickness" Value="1" />
-        <Setter Property="Background" Value="{StaticResource PopupBackground}" />
+        <Setter Property="Background" Value="{StaticResource ControlInteriorBrush}" />
         <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
         <Setter Property="Foreground" Value="{StaticResource WhiteForeground}" />
-        <Setter Property="FontFamily" Value="Roboto-Regular" />
-        <Setter Property="MinHeight" Value="{StaticResource FluentDark.MinHeight1}" />
+        <Setter Property="FontFamily" Value="Roboto" />
+        <Setter Property="MinHeight" Value="22" />
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type ctrl:ComboBoxItemAdv}">
+                <ControlTemplate TargetType="{x:Type sync:ComboBoxItemAdv}">
                     <Grid>
-                        <Border
-                            x:Name="SelectionIndicator"
+                        <Border x:Name="SelectionIndicator"
                             Width="2"
                             Height="12"
                             HorizontalAlignment="Left"
@@ -742,11 +715,10 @@
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
 
-                                <CheckBox
-                                    x:Name="PART_CheckBox"
+                                <CheckBox x:Name="PART_CheckBox"
                                     Margin="2"
                                     IsHitTestVisible="False"
-                                    Visibility="{Binding Path=AllowMultiSelect, Converter={StaticResource VisiblityConverter}, RelativeSource={RelativeSource AncestorType={x:Type ctrl:ComboBoxAdv}}}" />
+                                    Visibility="{Binding Path=AllowMultiSelect, Converter={StaticResource VisiblityConverter}, RelativeSource={RelativeSource AncestorType={x:Type sync:ComboBoxAdv}}}" />
 
                                 <ContentPresenter
                                     Grid.Column="1"
@@ -763,33 +735,33 @@
                         </Border>
                     </Grid>
                     <ControlTemplate.Triggers>
-                        <Trigger Property="skin:SfSkinManager.SizeMode" Value="Touch">
-                            <Setter Property="MinHeight" Value="{StaticResource TouchMode.MinHeight}" />
+                        <Trigger Property="sfskin:SfSkinManager.SizeMode" Value="Touch">
+                            <Setter Property="MinHeight" Value="{StaticResource FluentDark.MinHeight}" />
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="true">
                             <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
-                            <Setter Property="Background" Value="{StaticResource ContentBackgroundHovered}" />
-                            <Setter Property="Foreground" Value="{StaticResource HoveredForeground}" />
+                            <Setter Property="Background" Value="{StaticResource ControlHoverBrush}" />
+                            <Setter Property="Foreground" Value="{StaticResource WhiteForeground}" />
                         </Trigger>
                         <Trigger Property="IsHighlighted" Value="true">
                             <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
-                            <Setter Property="Background" Value="{StaticResource ContentBackgroundHovered}" />
-                            <Setter Property="Foreground" Value="{StaticResource HoveredForeground}" />
+                            <Setter Property="Background" Value="{StaticResource ControlHoverBrush}" />
+                            <Setter Property="Foreground" Value="{StaticResource WhiteForeground}" />
                         </Trigger>
                         <Trigger Property="IsPressed" Value="true">
                             <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
                             <Setter Property="Background" Value="{StaticResource SteelBlueBackground}" />
-                            <Setter Property="Foreground" Value="{StaticResource SelectedForeground}" />
+                            <Setter Property="Foreground" Value="{StaticResource WhiteForeground}" />
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="false">
                             <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
                             <Setter Property="Background" Value="Transparent" />
-                            <Setter Property="Foreground" Value="{StaticResource DisabledForeground}" />
+                            <Setter Property="Foreground" Value="{StaticResource FormBackground}" />
                         </Trigger>
                         <Trigger Property="IsFocused" Value="true">
                             <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
-                            <Setter Property="Background" Value="{StaticResource ContentBackgroundHovered}" />
-                            <Setter Property="Foreground" Value="{StaticResource HoveredForeground}" />
+                            <Setter Property="Background" Value="{StaticResource ControlHoverBrush}" />
+                            <Setter Property="Foreground" Value="{StaticResource WhiteForeground}" />
                         </Trigger>
                         <MultiDataTrigger>
                             <MultiDataTrigger.Conditions>
@@ -799,7 +771,7 @@
                             </MultiDataTrigger.Conditions>
                             <Setter Property="Background" Value="{StaticResource SteelBlueBackground}" />
                             <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
-                            <Setter Property="Foreground" Value="{StaticResource SelectedForeground}" />
+                            <Setter Property="Foreground" Value="{StaticResource WhiteForeground}" />
                         </MultiDataTrigger>
                         <MultiDataTrigger>
                             <MultiDataTrigger.Conditions>
@@ -813,7 +785,7 @@
             </Setter.Value>
         </Setter>
         <Style.Triggers>
-            <Trigger Property="skin:SkinManagerHelper.FocusVisualKind" Value="HighVisibility">
+            <Trigger Property="sfskin:SkinManagerHelper.FocusVisualKind" Value="HighVisibility">
                 <Setter Property="FocusVisualStyle" Value="{StaticResource FlatKeyboardFocusVisualStyle}" />
             </Trigger>
         </Style.Triggers>
@@ -821,6 +793,6 @@
 
     <Style
         BasedOn="{StaticResource SyncfusionComboBoxItemAdvStyle}"
-        TargetType="{x:Type ctrl:ComboBoxItemAdv}" />
+        TargetType="{x:Type sync:ComboBoxItemAdv}" />
 
 </ResourceDictionary>

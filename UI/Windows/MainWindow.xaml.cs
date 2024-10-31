@@ -351,7 +351,7 @@ namespace Bocifus
             UseConversationHistoryToggleSwitch.IsOn = AppSettings.UseConversationHistoryFlg;
             MessageScrollViewer.ScrollToBottom();
             InitializeSystemPromptColumn();
-            bool _isCollapsed = !(AppSettings.IsPromptTemplateListVisible);
+            var _isCollapsed = !(AppSettings.IsPromptTemplateListVisible);
             PromptTemplateListBox.Visibility = _isCollapsed ? Visibility.Collapsed : Visibility.Visible;
             NewTemplateButton.Visibility = _isCollapsed ? Visibility.Collapsed : Visibility.Visible;
             ToggleVisibilityPromptTemplateButton.Content = _isCollapsed ? "▲" : "▼";
@@ -409,7 +409,7 @@ namespace Bocifus
         {
             if (e.Key == Key.F2)
             {
-                string _currentText = UserTextBox.Text;
+                var _currentText = UserTextBox.Text;
                 var _window = new LargeUserTextInput(_currentText);
                 _window.Owner = this;
                 _window.ShowDialog();
@@ -433,7 +433,7 @@ namespace Bocifus
                 {
                     DataManagement.DataManager.SaveConversationsAsJson(AppSettings.ConversationManager);
                     DataManagement.DataManager.SavePromptTemplateAsJson(AppSettings.PromptTemplateManager);
-                    string _documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                    var _documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
                     ModernWpf.MessageBox.Show("Saved to " + _documentsPath + @"\Bocifus\ConversationHistory"
                         + "\r\n" + _documentsPath + @"\Bocifus\PromptTemplate"
                         ,"Information", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -495,12 +495,12 @@ namespace Bocifus
             }
             else if (e.Key == Key.K && Keyboard.Modifiers == ModifierKeys.Control)
             {
-                double _newVerticalOffset = MessageScrollViewer.VerticalOffset - 20;
+                var _newVerticalOffset = MessageScrollViewer.VerticalOffset - 20;
                 MessageScrollViewer.ScrollToVerticalOffset(_newVerticalOffset);
             }
             else if (e.Key == Key.J && Keyboard.Modifiers == ModifierKeys.Control)
             {
-                double _newVerticalOffset = MessageScrollViewer.VerticalOffset + 20;
+                var _newVerticalOffset = MessageScrollViewer.VerticalOffset + 20;
                 MessageScrollViewer.ScrollToVerticalOffset(_newVerticalOffset);
             }
         }
@@ -536,7 +536,7 @@ namespace Bocifus
         private void OnUserTextBoxTextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
             var _tokens = TokenizerGpt3.Encode(UserTextBox.Text);
-            string _tooltip = $"Tokens : {_tokens.Count()}";
+            var _tooltip = $"Tokens : {_tokens.Count()}";
             UserTextBox.ToolTip = _tooltip;
         }
 
@@ -576,7 +576,7 @@ namespace Bocifus
                 return;
             }
 
-            string _selectedConfigName = ConfigurationComboBox.SelectedItem.ToString();
+            var _selectedConfigName = ConfigurationComboBox.SelectedItem.ToString();
             var _row = AppSettings.ConfigDataTable.AsEnumerable()
                         .FirstOrDefault(x => x.Field<string>("ConfigurationName") == _selectedConfigName);
 
@@ -587,7 +587,7 @@ namespace Bocifus
 
             AttachFileButton.Visibility = VisionEnabled ? Visibility.Visible : Visibility.Collapsed;
             var _currentPadding = UserTextBox.Padding;
-            int _leftPadding = VisionEnabled ? 35 : 10;
+            var _leftPadding = VisionEnabled ? 35 : 10;
             UserTextBox.Padding = new Thickness(_leftPadding, _currentPadding.Top, _currentPadding.Right, _currentPadding.Bottom);
         }
 
@@ -601,11 +601,11 @@ namespace Bocifus
             }
 
             AppSettings.InstructionSetting = SystemPromptComboBox.SelectedItem.ToString();
-            string _selectInstructionContent = "";
+            var _selectInstructionContent = "";
             if (!String.IsNullOrEmpty(AppSettings.InstructionSetting))
             {
-                string[] _instructionList = AppSettings.InstructionListSetting?.Cast<string>().Where((s, i) => i % 2 == 0).ToArray();
-                int _index = Array.IndexOf(_instructionList, AppSettings.InstructionSetting);
+                var _instructionList = AppSettings.InstructionListSetting?.Cast<string>().Where((s, i) => i % 2 == 0).ToArray();
+                var _index = Array.IndexOf(_instructionList, AppSettings.InstructionSetting);
                 _selectInstructionContent = AppSettings.InstructionListSetting[_index, 1];
             }
 
@@ -618,11 +618,11 @@ namespace Bocifus
         private void OnSystemPromptComboBox2SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             SystemPromptComboBox.SelectedIndex = SystemPromptComboBox2.SelectedIndex;
-            string _selectInstructionContent = "";
+            var _selectInstructionContent = "";
             if (!String.IsNullOrEmpty(SystemPromptComboBox2.SelectedItem.ToString()))
             {
-                string[] _instructionList = AppSettings.InstructionListSetting?.Cast<string>().Where((s, i) => i % 2 == 0).ToArray();
-                int _index = Array.IndexOf(_instructionList, SystemPromptComboBox2.SelectedItem.ToString());
+                var _instructionList = AppSettings.InstructionListSetting?.Cast<string>().Where((s, i) => i % 2 == 0).ToArray();
+                var _index = Array.IndexOf(_instructionList, SystemPromptComboBox2.SelectedItem.ToString());
                 _selectInstructionContent = AppSettings.InstructionListSetting[_index, 1];
             }
 
@@ -665,11 +665,11 @@ namespace Bocifus
         {
             var _window = new InstructionSettingWindow(AppSettings.InstructionListSetting);
             _window.Owner = this;
-            bool _result = (bool)_window.ShowDialog();
+            var _result = (bool)_window.ShowDialog();
             if (_result)
             {
                 AppSettings.InstructionListSetting = _result ? _window.inputResult : null;
-                string[] _instructionList = AppSettings.InstructionListSetting?.Cast<string>().Where((s, i) => i % 2 == 0).ToArray();
+                var _instructionList = AppSettings.InstructionListSetting?.Cast<string>().Where((s, i) => i % 2 == 0).ToArray();
                 Array.Resize(ref _instructionList, _instructionList.Length + 1);
                 _instructionList[_instructionList.Length - 1] = "";
                 SystemPromptComboBox.ItemsSource = _instructionList;
@@ -733,11 +733,11 @@ namespace Bocifus
 
         private ContextMenu CreateContextMenu(string paragraphText = null)
         {
-            ContextMenu _contextMenu = new ContextMenu();
-            MenuItem _copyTextMenuItem = new MenuItem();
+            var _contextMenu = new ContextMenu();
+            var _copyTextMenuItem = new MenuItem();
             _copyTextMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.Copy);
             _contextMenu.Opened += (s, e) => UpdateMenuItemButtonContent(_contextMenu.PlacementTarget, _copyTextMenuItem);
-            Action _copyTextAndCloseMenu = () =>
+            var _copyTextAndCloseMenu = () =>
             {
                 _contextMenu.IsOpen = false;
             };
@@ -751,12 +751,12 @@ namespace Bocifus
                 var _target = _contextMenu.PlacementTarget;
                 if (_target is TextBox _textBox)
                 {
-                    string _textToCopy = _textBox.SelectedText.Length > 0 ? _textBox.SelectedText : _textBox.Text;
+                    var _textToCopy = _textBox.SelectedText.Length > 0 ? _textBox.SelectedText : _textBox.Text;
                     Clipboard.SetText(_textToCopy);
                 }
                 else if (_target is MarkdownScrollViewer _markdownScrollViewer)
                 {
-                    TextRange _selectedTextRange = new TextRange(_markdownScrollViewer.Selection.Start, _markdownScrollViewer.Selection.End);
+                    var _selectedTextRange = new TextRange(_markdownScrollViewer.Selection.Start, _markdownScrollViewer.Selection.End);
                     if (!string.IsNullOrEmpty(_selectedTextRange.Text))    
                     {
                         Clipboard.SetText(_selectedTextRange.Text);
@@ -764,7 +764,7 @@ namespace Bocifus
                     else
                     {
                         var _mousePos = Mouse.GetPosition(_markdownScrollViewer);  
-                        Visual _hitVisual = _markdownScrollViewer.InputHitTest(_mousePos) as Visual;
+                        var _hitVisual = _markdownScrollViewer.InputHitTest(_mousePos) as Visual;
                         if (_hitVisual is ICSharpCode.AvalonEdit.Rendering.TextView _editor)    
                         {
                             Clipboard.SetText(_editor.Document.Text);     
@@ -778,7 +778,7 @@ namespace Bocifus
                 else if (_target is ICSharpCode.AvalonEdit.Rendering.TextView _textView)
                 {
                     var _mousePos = Mouse.GetPosition(_textView);  
-                    Visual _hitVisual = _textView.InputHitTest(_mousePos) as Visual;
+                    var _hitVisual = _textView.InputHitTest(_mousePos) as Visual;
                     if (_hitVisual is ICSharpCode.AvalonEdit.Rendering.TextView _editor)
                     {
                         Clipboard.SetText(_editor.Document.Text);     
@@ -792,50 +792,50 @@ namespace Bocifus
 
             _contextMenu.Items.Add(_copyTextMenuItem);
             _contextMenu.Items.Add(new Separator());
-            MenuItem _currentFontSizeMenuItem = new MenuItem();
+            var _currentFontSizeMenuItem = new MenuItem();
             _currentFontSizeMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.FontSize);
             _currentFontSizeMenuItem.Header = $"Font Size: {Properties.Settings.Default.FontSize}pt";
             _contextMenu.Items.Add(_currentFontSizeMenuItem);
-            MenuItem _increaseFontSizeMenuItem = new MenuItem();
+            var _increaseFontSizeMenuItem = new MenuItem();
             _increaseFontSizeMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.FontIncrease);
-            Button _increaseFontSizeButton = new Button { Content = "Increase Font Size", Background = Brushes.Transparent };
+            var _increaseFontSizeButton = new Button { Content = "Increase Font Size", Background = Brushes.Transparent };
             _increaseFontSizeMenuItem.Header = _increaseFontSizeButton;
             _increaseFontSizeButton.Click += (s, e) => SetFontSize(Properties.Settings.Default.FontSize + 1, _currentFontSizeMenuItem);
             _increaseFontSizeMenuItem.Click += (s, e) => SetFontSize(Properties.Settings.Default.FontSize + 1, _currentFontSizeMenuItem);
-            MenuItem _decreaseFontSizeMenuItem = new MenuItem();
+            var _decreaseFontSizeMenuItem = new MenuItem();
             _decreaseFontSizeMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.FontDecrease);
-            Button _decreaseFontSizeButton = new Button { Content = "Decrease Font Size", Background = Brushes.Transparent };
+            var _decreaseFontSizeButton = new Button { Content = "Decrease Font Size", Background = Brushes.Transparent };
             _decreaseFontSizeMenuItem.Header = _decreaseFontSizeButton;
             _decreaseFontSizeButton.Click += (s, e) => SetFontSize(Properties.Settings.Default.FontSize - 1, _currentFontSizeMenuItem);
             _decreaseFontSizeMenuItem.Click += (s, e) => SetFontSize(Properties.Settings.Default.FontSize - 1, _currentFontSizeMenuItem);
-            MenuItem _defaultFontSizeMenuItem = new MenuItem { Header = "Default Font Size" };
+            var _defaultFontSizeMenuItem = new MenuItem { Header = "Default Font Size" };
             _defaultFontSizeMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.Refresh);
-            Button _defaultFontSizeButton = new Button { Content = "Default Font Size", Background = Brushes.Transparent };
+            var _defaultFontSizeButton = new Button { Content = "Default Font Size", Background = Brushes.Transparent };
             _defaultFontSizeMenuItem.Header = _defaultFontSizeButton;
             _defaultFontSizeButton.Click += (s, e) => SetFontSize(16, _currentFontSizeMenuItem);
             _defaultFontSizeMenuItem.Click += (s, e) => SetFontSize(16, _currentFontSizeMenuItem);
             _currentFontSizeMenuItem.Items.Add(_increaseFontSizeMenuItem);
             _currentFontSizeMenuItem.Items.Add(_decreaseFontSizeMenuItem);
             _currentFontSizeMenuItem.Items.Add(_defaultFontSizeMenuItem);
-            MenuItem _currentFontWeightMenuItem = new MenuItem();
+            var _currentFontWeightMenuItem = new MenuItem();
             _currentFontWeightMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.Font);
             _currentFontWeightMenuItem.Header = $"Font Weight: {Properties.Settings.Default.FontWeight}";
             _contextMenu.Items.Add(_currentFontWeightMenuItem);
-            MenuItem _increaseFontWeightMenuItem = new MenuItem();
+            var _increaseFontWeightMenuItem = new MenuItem();
             _increaseFontWeightMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.FontIncrease);
-            Button _increaseFontWeightButton = new Button { Content = "Increase Font Weight", Background = Brushes.Transparent };
+            var _increaseFontWeightButton = new Button { Content = "Increase Font Weight", Background = Brushes.Transparent };
             _increaseFontWeightMenuItem.Header = _increaseFontWeightButton;
             _increaseFontWeightButton.Click += (s, e) => SetFontWeight(Properties.Settings.Default.FontWeight + 50, _currentFontWeightMenuItem);
             _increaseFontWeightMenuItem.Click += (s, e) => SetFontWeight(Properties.Settings.Default.FontWeight + 50, _currentFontWeightMenuItem);
-            MenuItem _decreaseFontWeightMenuItem = new MenuItem();
+            var _decreaseFontWeightMenuItem = new MenuItem();
             _decreaseFontWeightMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.FontDecrease);
-            Button _decreaseFontWeightButton = new Button { Content = "Decrease Font Weight", Background = Brushes.Transparent };
+            var _decreaseFontWeightButton = new Button { Content = "Decrease Font Weight", Background = Brushes.Transparent };
             _decreaseFontWeightMenuItem.Header = _decreaseFontWeightButton;
             _decreaseFontWeightButton.Click += (s, e) => SetFontWeight(Properties.Settings.Default.FontWeight - 50, _currentFontWeightMenuItem);
             _decreaseFontWeightMenuItem.Click += (s, e) => SetFontWeight(Properties.Settings.Default.FontWeight - 50, _currentFontWeightMenuItem);
-            MenuItem _defaultFontWeightMenuItem = new MenuItem { Header = "Default Font Weight" };
+            var _defaultFontWeightMenuItem = new MenuItem { Header = "Default Font Weight" };
             _defaultFontWeightMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.Refresh);
-            Button _defaultFontWeightButton = new Button { Content = "Default Font Weight", Background = Brushes.Transparent };
+            var _defaultFontWeightButton = new Button { Content = "Default Font Weight", Background = Brushes.Transparent };
             _defaultFontWeightMenuItem.Header = _defaultFontWeightButton;
             _defaultFontWeightButton.Click += (s, e) => SetFontWeight(400, _currentFontWeightMenuItem);
             _defaultFontWeightMenuItem.Click += (s, e) => SetFontWeight(400, _currentFontWeightMenuItem);
@@ -845,8 +845,8 @@ namespace Bocifus
 
             void SetFontSize(int newSize, MenuItem menuItem)
             {
-                int _minSize = 8;
-                int _maxSize = 32;
+                var _minSize = 8;
+                var _maxSize = 32;
                 newSize = Math.Max(_minSize, Math.Min(_maxSize, newSize));
                 Properties.Settings.Default.FontSize = newSize;
                 Properties.Settings.Default.Save();
@@ -873,8 +873,8 @@ namespace Bocifus
 
             void SetFontWeight(int newWeight, MenuItem menuItem)
             {
-                int _minSize = 300;
-                int _maxSize = 600;
+                var _minSize = 300;
+                var _maxSize = 600;
                 newWeight = Math.Max(_minSize, Math.Min(_maxSize, newWeight));
                 Properties.Settings.Default.FontWeight = newWeight;
                 Properties.Settings.Default.Save();
@@ -902,9 +902,9 @@ namespace Bocifus
             if (paragraphText is not null && IsMermaidCode(paragraphText))
             {
                 _contextMenu.Items.Add(new Separator());
-                MenuItem _mermaidMenuItem = new MenuItem();
+                var _mermaidMenuItem = new MenuItem();
                 _mermaidMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.AllApps);
-                Action _mermaidTextAndCloseMenu = () =>
+                var _mermaidTextAndCloseMenu = () =>
                 {
                     OnMermaidPreviewContextMenuClick(paragraphText);
                     _contextMenu.IsOpen = false;
@@ -918,9 +918,9 @@ namespace Bocifus
             if (paragraphText is not null && IsMarkdownTable(paragraphText))
             {
                 _contextMenu.Items.Add(new Separator());
-                MenuItem _copyTableMenuItem = new MenuItem();
+                var _copyTableMenuItem = new MenuItem();
                 _copyTableMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.Copy);
-                Action _copyTableAndCloseMenu = () =>
+                var _copyTableAndCloseMenu = () =>
                 {
                     CopyMarkdownTableToClipboard(paragraphText);
                     _contextMenu.IsOpen = false;
@@ -929,9 +929,9 @@ namespace Bocifus
                 _copyTableMenuItem.Click += (s, e) => _copyTableAndCloseMenu();
                 _copyTableMenuItem.Header = "Copy Table to Clipboard";
                 _contextMenu.Items.Add(_copyTableMenuItem);
-                MenuItem _exportCsvMenuItem = new MenuItem();
+                var _exportCsvMenuItem = new MenuItem();
                 _exportCsvMenuItem.Icon = new ModernWpf.Controls.SymbolIcon(ModernWpf.Controls.Symbol.Download);
-                Action _exportCsvAndCloseMenu = () =>
+                var _exportCsvAndCloseMenu = () =>
                 {
                     OnExportCsvContextMenuClick(paragraphText);
                     _contextMenu.IsOpen = false;
@@ -965,7 +965,7 @@ namespace Bocifus
                 _backgroundColor = "#FFFFFF";
             }
 
-            string _htmlContent = $@"<!DOCTYPE html>
+            var _htmlContent = $@"<!DOCTYPE html>
 <html>
 <head>
     <style>
@@ -981,8 +981,8 @@ namespace Bocifus
 </body>
 </html>";
             var _previewWindow = new WebBrowserPreview(_htmlContent);
-            double _parentCenterX = this.Left + (this.Width / 2);
-            double _parentCenterY = this.Top + (this.Height / 2);
+            var _parentCenterX = this.Left + (this.Width / 2);
+            var _parentCenterY = this.Top + (this.Height / 2);
             _previewWindow.Left = _parentCenterX - (_previewWindow.Width / 2);
             _previewWindow.Top = _parentCenterY - (_previewWindow.Height / 2);
             _previewWindow.Show();
@@ -995,7 +995,7 @@ namespace Bocifus
                 return false;
             }
 
-            string[] _patterns = new string[]
+            var _patterns = new string[]
             {
                 @"^\s*graph\s+(?:TB|BT|RL|LR|TD|DT)\s*",
                 @"^\s*sequenceDiagram\s*",
@@ -1010,7 +1010,7 @@ namespace Bocifus
                 @"^\s*flowchart\s+(?:TB|BT|RL|LR)\s*"
             };
 
-            string _firstLine = text.Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries)[0];
+            var _firstLine = text.Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries)[0];
             foreach (var _pattern in _patterns)
             {
                 if (Regex.IsMatch(_firstLine, _pattern, RegexOptions.IgnoreCase | RegexOptions.Multiline))
@@ -1039,13 +1039,13 @@ namespace Bocifus
             _dialog.FileName = DateTime.Now.ToString("yyyyMMdd") + "_output.csv";
             _dialog.Filter = "CSV files (*.csv)|*.csv|All files (*.*)|*.*";
             _dialog.DefaultExt = "csv";
-            System.Windows.Forms.DialogResult _result = _dialog.ShowDialog();
+            var _result = _dialog.ShowDialog();
             if (_result == System.Windows.Forms.DialogResult.OK)
             {
                 if (ContainsJapanese(_csvLines.ToString()))
                 {
                     Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-                    Encoding _sjisEncoding = Encoding.GetEncoding("shift_jis");
+                    var _sjisEncoding = Encoding.GetEncoding("shift_jis");
                     File.WriteAllText(_dialog.FileName, _csvLines.ToString(), _sjisEncoding);
                 }
                 else
@@ -1089,7 +1089,7 @@ namespace Bocifus
 
         static bool IsMarkdownTable(string text)
         {
-            string _pattern = @"^\|.*\|\s*\n\|\s*[-:]+\s*\|";
+            var _pattern = @"^\|.*\|\s*\n\|\s*[-:]+\s*\|";
             return Regex.IsMatch(text, _pattern, RegexOptions.Multiline);
         }
 
@@ -1102,14 +1102,14 @@ namespace Bocifus
 
         void UpdateMenuItemButtonContent(object target, MenuItem menuItem)
         {
-            string _headerText = "Copy All Text";
+            var _headerText = "Copy All Text";
             if (target is TextBox _textBox && !string.IsNullOrEmpty(_textBox.SelectedText))
             {
                 _headerText = "Copy Selected Text";
             }
             else if (target is MarkdownScrollViewer _markdownScrollViewer)
             {
-                TextRange _selectedTextRange = new TextRange(_markdownScrollViewer.Selection.Start, _markdownScrollViewer.Selection.End);
+                var _selectedTextRange = new TextRange(_markdownScrollViewer.Selection.Start, _markdownScrollViewer.Selection.End);
                 if (!string.IsNullOrEmpty(_selectedTextRange.Text))
                 {
                     _headerText = "Copy Selected Text";
@@ -1117,7 +1117,7 @@ namespace Bocifus
                 else
                 {
                     var _mousePos = Mouse.GetPosition(_markdownScrollViewer);  
-                    Visual _hitVisual = _markdownScrollViewer.InputHitTest(_mousePos) as Visual;
+                    var _hitVisual = _markdownScrollViewer.InputHitTest(_mousePos) as Visual;
                     if (_hitVisual is ICSharpCode.AvalonEdit.Rendering.TextView _editor)
                     {
                         _headerText = "Copy Code Block Text";
@@ -1131,7 +1131,7 @@ namespace Bocifus
             else if (target is ICSharpCode.AvalonEdit.Rendering.TextView _textView)
             {
                 var _mousePos = Mouse.GetPosition(_textView);  
-                Visual _hitVisual = _textView.InputHitTest(_mousePos) as Visual;
+                var _hitVisual = _textView.InputHitTest(_mousePos) as Visual;
                 if (_hitVisual is ICSharpCode.AvalonEdit.Rendering.TextView _editor)
                 {
                     _headerText = "Copy Code Block Text";
@@ -1147,7 +1147,7 @@ namespace Bocifus
 
         private void PreviewMouseWheel(object sender, MouseWheelEventArgs e)
         {
-            UIElement _element = sender as UIElement;
+            var _element = sender as UIElement;
             while (_element != null)
             {
                 _element = VisualTreeHelper.GetParent(_element) as UIElement;
@@ -1162,7 +1162,7 @@ namespace Bocifus
 
         private void OnMessageScrollViewerScrollChanged(object sender, ScrollChangedEventArgs e)
         {
-            bool _isAtBottom = MessageScrollViewer.VerticalOffset >= MessageScrollViewer.ScrollableHeight;
+            var _isAtBottom = MessageScrollViewer.VerticalOffset >= MessageScrollViewer.ScrollableHeight;
             BottomScrollButton.Visibility = _isAtBottom ? Visibility.Collapsed : Visibility.Visible;
         }
 
@@ -1202,37 +1202,37 @@ namespace Bocifus
             }
             else if (e.Key == Key.U && (Keyboard.IsKeyDown(Key.LeftCtrl) || Keyboard.IsKeyDown(Key.RightCtrl)))
             {
-                double _newVerticalOffset = MessageScrollViewer.VerticalOffset - (MessageScrollViewer.ViewportHeight / 2);
+                var _newVerticalOffset = MessageScrollViewer.VerticalOffset - (MessageScrollViewer.ViewportHeight / 2);
                 MessageScrollViewer.ScrollToVerticalOffset(_newVerticalOffset);
                 _gKeyPressed = false;
             }
             else if (e.Key == Key.D && (Keyboard.IsKeyDown(Key.LeftCtrl) || Keyboard.IsKeyDown(Key.RightCtrl)))
             {
-                double _newVerticalOffset = MessageScrollViewer.VerticalOffset + (MessageScrollViewer.ViewportHeight / 2);
+                var _newVerticalOffset = MessageScrollViewer.VerticalOffset + (MessageScrollViewer.ViewportHeight / 2);
                 MessageScrollViewer.ScrollToVerticalOffset(_newVerticalOffset);
                 _gKeyPressed = false;
             }
             else if (e.Key == Key.E && (Keyboard.IsKeyDown(Key.LeftCtrl) || Keyboard.IsKeyDown(Key.RightCtrl)))
             {
-                double _newVerticalOffset = MessageScrollViewer.VerticalOffset + 20;
+                var _newVerticalOffset = MessageScrollViewer.VerticalOffset + 20;
                 MessageScrollViewer.ScrollToVerticalOffset(_newVerticalOffset);
                 _gKeyPressed = false;
             }
             else if (e.Key == Key.Y && (Keyboard.IsKeyDown(Key.LeftCtrl) || Keyboard.IsKeyDown(Key.RightCtrl)))
             {
-                double _newVerticalOffset = MessageScrollViewer.VerticalOffset - 20;
+                var _newVerticalOffset = MessageScrollViewer.VerticalOffset - 20;
                 MessageScrollViewer.ScrollToVerticalOffset(_newVerticalOffset);
                 _gKeyPressed = false;
             }
             else if (e.Key == Key.J)
             {
-                double _newVerticalOffset = MessageScrollViewer.VerticalOffset + 20;
+                var _newVerticalOffset = MessageScrollViewer.VerticalOffset + 20;
                 MessageScrollViewer.ScrollToVerticalOffset(_newVerticalOffset);
                 _gKeyPressed = false;
             }
             else if (e.Key == Key.K)
             {
-                double _newVerticalOffset = MessageScrollViewer.VerticalOffset - 20;
+                var _newVerticalOffset = MessageScrollViewer.VerticalOffset - 20;
                 MessageScrollViewer.ScrollToVerticalOffset(_newVerticalOffset);
                 _gKeyPressed = false;
             }
@@ -1331,12 +1331,12 @@ namespace Bocifus
                 _itemToDelete = (ConversationHistory)((ContextMenu)sender).DataContext;
             }
 
-            string _currentTitle = _itemToDelete.Title;
+            var _currentTitle = _itemToDelete.Title;
             var _editWindow = new TitleEditWindow(_currentTitle);
             _editWindow.Owner = this;
             if (_editWindow.ShowDialog() == true)
             {
-                string _newTitle = _editWindow.NewTitle;
+                var _newTitle = _editWindow.NewTitle;
                 _itemToDelete.Title = _newTitle;
             }
         }
@@ -1377,7 +1377,7 @@ namespace Bocifus
 
         private void OnConversationListBoxMoreButtonClick(object sender, RoutedEventArgs e)
         {
-            Button _button = sender as Button;
+            var _button = sender as Button;
             if (_button.ContextMenu != null)
             {
                 _button.ContextMenu.IsOpen = false;
@@ -1416,7 +1416,7 @@ namespace Bocifus
                 TranslateButton.IsEnabled = false;
                 _animation = UtilityFunctions.CreateTextColorAnimation(UserTextBox, out _initialTextColor);
                 _animation.Begin();
-                string _resultText = await TranslateAPIRequestAsync(UserTextBox.Text, AppSettings.ToTranslationLanguage);
+                var _resultText = await TranslateAPIRequestAsync(UserTextBox.Text, AppSettings.ToTranslationLanguage);
                 UserTextBox.Text = _resultText;
                 UserTextBox.CaretIndex = UserTextBox.Text.Length;
             }
@@ -1442,8 +1442,8 @@ namespace Bocifus
                     var _conversationHistory = item as ConversationHistory;
                     if (_conversationHistory != null)
                     {
-                        bool _matchesTextFilter = string.IsNullOrEmpty(filterText) || _conversationHistory.Messages.Any(message => message.Content.Contains(filterText, StringComparison.OrdinalIgnoreCase));
-                        bool _matchesFavoriteFilter = isFilteringByFavorite == null || isFilteringByFavorite.Value == false || _conversationHistory.Favorite == isFilteringByFavorite.Value;
+                        var _matchesTextFilter = string.IsNullOrEmpty(filterText) || _conversationHistory.Messages.Any(message => message.Content.Contains(filterText, StringComparison.OrdinalIgnoreCase));
+                        var _matchesFavoriteFilter = isFilteringByFavorite == null || isFilteringByFavorite.Value == false || _conversationHistory.Favorite == isFilteringByFavorite.Value;
                         return _matchesTextFilter && _matchesFavoriteFilter;
                     }
 
@@ -1457,7 +1457,7 @@ namespace Bocifus
         private void OnFilterTextBoxTextChanged(object sender, TextChangedEventArgs e)
         {
             _isFiltering = true;  
-            bool? _isFilteringByFavorite = FavoriteFilterToggleButton.IsChecked;
+            var _isFilteringByFavorite = FavoriteFilterToggleButton.IsChecked;
             ApplyFilter(FilterTextBox.Text, _isFilteringByFavorite);
             _isFiltering = false;
         }
@@ -1486,14 +1486,14 @@ namespace Bocifus
         private void OnFavoriteFilterToggleButtonClick(object sender, RoutedEventArgs e)
         {
             var _toggleButton = sender as ToggleButton;
-            bool? _isFilteringByFavorite = _toggleButton.IsChecked;
+            var _isFilteringByFavorite = _toggleButton.IsChecked;
             ApplyFilter(FilterTextBox.Text, _isFilteringByFavorite);
             FavoriteFilterToggleButton.Content = FavoriteFilterToggleButton.IsChecked == true ? "★" : "☆";
         }
 
         private void OnAttachFileButtonClick(object sender, RoutedEventArgs e)
         {
-            Button _button = sender as Button;
+            var _button = sender as Button;
             if (_button.ContextMenu != null)
             {
                 _button.ContextMenu.IsOpen = false;
@@ -1505,7 +1505,7 @@ namespace Bocifus
 
         private void OnSelectFileClick(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog _openFileDialog = new OpenFileDialog();
+            var _openFileDialog = new OpenFileDialog();
             _openFileDialog.Filter = "Image files (*.png;*.jpeg;*.jpg;*.webp;*.gif)|*.png;*.jpeg;*.jpg;*.webp;*.gif";
             _openFileDialog.Multiselect = false;
 
@@ -1540,7 +1540,7 @@ namespace Bocifus
 
         private void OnContextMenuOpened(object sender, RoutedEventArgs e)
         {
-            bool _imageAvailable = Clipboard.ContainsImage();
+            var _imageAvailable = Clipboard.ContainsImage();
             PasteFromClipboardMenuItem.IsEnabled = _imageAvailable;
         }
 
@@ -1552,13 +1552,13 @@ namespace Bocifus
 
         private void OnImageFilePathLabelMouseUp(object sender, MouseButtonEventArgs e)
         {
-            string _argument = $"/select, \"{ImageFilePath}\"";
+            var _argument = $"/select, \"{ImageFilePath}\"";
             System.Diagnostics.Process.Start("explorer.exe", _argument);
         }
 
         private void OnShowLargeTextInputWindowButtonClick(object sender, RoutedEventArgs e)
         {
-            string _currentText = UserTextBox.Text;
+            var _currentText = UserTextBox.Text;
             var _window = new LargeUserTextInput(_currentText);
             _window.Owner = this;
             _window.ShowDialog();
@@ -1567,7 +1567,7 @@ namespace Bocifus
 
         private void OnToggleVisibilityPromptTemplateButtonClick(object sender, RoutedEventArgs e)
         {
-            bool _isCollapsed = PromptTemplateListBox.Visibility == Visibility.Collapsed;
+            var _isCollapsed = PromptTemplateListBox.Visibility == Visibility.Collapsed;
             PromptTemplateListBox.Visibility = _isCollapsed ? Visibility.Visible : Visibility.Collapsed;
             NewTemplateButton.Visibility = _isCollapsed ? Visibility.Visible : Visibility.Collapsed;
             ToggleVisibilityPromptTemplateButton.Content = _isCollapsed ? "▼" : "▲";

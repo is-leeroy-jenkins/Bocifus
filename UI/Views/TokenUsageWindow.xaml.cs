@@ -31,19 +31,19 @@ namespace Bocifus
         {
             InitializeComponent();
 
-            string[,] savedTokenUsage = UtilityFunctions.DeserializeArray(Properties.Settings.Default.TokenUsage);
+            var savedTokenUsage = UtilityFunctions.DeserializeArray(Properties.Settings.Default.TokenUsage);
 
-            List<TokenUsageDisplayItem> TokenUsageDisplayItems = new List<TokenUsageDisplayItem>();
+            var TokenUsageDisplayItems = new List<TokenUsageDisplayItem>();
 
-            for (int i = 0; i < savedTokenUsage.GetLength(0); i++)
+            for (var i = 0; i < savedTokenUsage.GetLength(0); i++)
             {
-                TokenUsageDisplayItem tokenUsageDisplayItem = new TokenUsageDisplayItem();
+                var tokenUsageDisplayItem = new TokenUsageDisplayItem();
                 tokenUsageDisplayItem.Date = savedTokenUsage[i, 0];
                 tokenUsageDisplayItem.Provider = savedTokenUsage[i, 1];
                 tokenUsageDisplayItem.GptVersion = savedTokenUsage[i, 2];
                 tokenUsageDisplayItem.TotalTokenUsage = int.Parse(savedTokenUsage[i, 3]).ToString("N0");
 
-                int inputTokens = 0;
+                var inputTokens = 0;
                 if (savedTokenUsage.GetLength(1) > 4 && int.TryParse(savedTokenUsage[i, 4], out inputTokens))
                 {
                     tokenUsageDisplayItem.InputTokenUsage = inputTokens.ToString("N0");
@@ -53,7 +53,7 @@ namespace Bocifus
                     tokenUsageDisplayItem.InputTokenUsage = "0";
                 }
 
-                int outputTokens = 0;
+                var outputTokens = 0;
                 if (savedTokenUsage.GetLength(1) > 5 && int.TryParse(savedTokenUsage[i, 5], out outputTokens))
                 {
                     tokenUsageDisplayItem.OutputTokenUsage = outputTokens.ToString("N0");
@@ -94,7 +94,7 @@ namespace Bocifus
 
         private void AlertSettingButton_Click(object sender, RoutedEventArgs e)
         {
-            int threshold = Properties.Settings.Default.dailyTokenThreshold;
+            var threshold = Properties.Settings.Default.dailyTokenThreshold;
             var window = new Messagebox("Set an alert threshold", "You will be alerted when daily token usage exceeds this threshold.", threshold);
             window.Owner = Application.Current.Windows.OfType<MainWindow>().FirstOrDefault();
             if (window.ShowDialog() == true)
@@ -108,8 +108,8 @@ namespace Bocifus
         {
             var button = sender as Button;
             var dataContext = button.DataContext;
-            string input = (dataContext as TokenUsageDisplayItem).InputTokenUsage.Replace(",", "");
-            string output = (dataContext as TokenUsageDisplayItem).OutputTokenUsage.Replace(",", "");;
+            var input = (dataContext as TokenUsageDisplayItem).InputTokenUsage.Replace(",", "");
+            var output = (dataContext as TokenUsageDisplayItem).OutputTokenUsage.Replace(",", "");;
         }
     }
 }

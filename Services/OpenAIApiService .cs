@@ -96,7 +96,7 @@ namespace Bocifus
                 {
                     _ = Task.Run(async () =>
                     {
-                        string prompt = AppSettings.TitleGenerationPromptSetting
+                        var prompt = AppSettings.TitleGenerationPromptSetting
                                         .Replace("{Language}", AppSettings.TitleLanguageSetting)
                                         .Replace("{Prompt}", userMessage);
                         Debug.Print("----- Title generation Prompt -----");
@@ -179,8 +179,8 @@ namespace Bocifus
         }
         private bool RetrieveConfiguration()
         {
-            string configName = ConfigurationComboBox.Text;
-            DataRow[] rows = AppSettings.ConfigDataTable.Select("ConfigurationName = '" + configName + "'");
+            var configName = ConfigurationComboBox.Text;
+            var rows = AppSettings.ConfigDataTable.Select("ConfigurationName = '" + configName + "'");
             if (rows.Length > 0)
             {
                 AppSettings.ProviderSetting = rows[0]["Provider"].ToString();
@@ -214,8 +214,8 @@ namespace Bocifus
         }
         private OpenAIService CreateOpenAiService(string providerSetting, string model, string targetApiKey, string targetBaseDomain, string targetDeploymentId, string? targetApiVersion)
         {
-            ProviderType targetType = new ProviderType();
-            string tempTargetApiKey = "";
+            var targetType = new ProviderType();
+            var tempTargetApiKey = "";
             string? tempTargetBaseDomain = null;
             string? tempTargetDeploymentId = null;
             string? tempTargetApiVersion = null;
@@ -257,8 +257,8 @@ namespace Bocifus
             }
             else if (!String.IsNullOrEmpty(AppSettings.InstructionSetting))
             {
-                string[] instructionList = AppSettings.InstructionListSetting?.Cast<string>().Where((s, i) => i % 2 == 0).ToArray();
-                int index = Array.IndexOf(instructionList, AppSettings.InstructionSetting);
+                var instructionList = AppSettings.InstructionListSetting?.Cast<string>().Where((s, i) => i % 2 == 0).ToArray();
+                var index = Array.IndexOf(instructionList, AppSettings.InstructionSetting);
                 _selectInstructionContent = AppSettings.InstructionListSetting[index, 1];
             }
             else
@@ -272,7 +272,7 @@ namespace Bocifus
             Debug.Print(_selectInstructionContent);
             Debug.Print(userMessage);
 
-            List<ChatMessage> messages = new List<ChatMessage>();
+            var messages = new List<ChatMessage>();
             if (AppSettings.UseConversationHistoryFlg == true)
             {
                 var selectedItems = ConversationListBox.SelectedItems;
@@ -361,7 +361,7 @@ namespace Bocifus
                 try
                 {
 
-                    List<System.Windows.Controls.Button> foundButtons = new List<System.Windows.Controls.Button>();
+                    var foundButtons = new List<System.Windows.Controls.Button>();
                     foreach (var child in GetAllChildren(MessagesPanel))
                     {
                         if (child is System.Windows.Controls.Button button && (string)button.Tag == "RegenerateButton")
@@ -375,7 +375,7 @@ namespace Bocifus
 
                     if (binaryImage != null)
                     {
-                        string imageString = Convert.ToBase64String(binaryImage);
+                        var imageString = Convert.ToBase64String(binaryImage);
                         var messageElementImage = CreateMessageElement(userMessage, isUser: false, isLastMessage: false, imageString);
                         MessagesPanel.Children.Add(messageElementImage);
                     }
@@ -385,7 +385,7 @@ namespace Bocifus
                     assistantMessageElement = CreateMessageElement("", isUser: false, isLastMessage: true);  
                     MessagesPanel.Children.Add(assistantMessageElement);
 
-                    Grid assistantMessageGrid = assistantMessageElement as Grid;
+                    var assistantMessageGrid = assistantMessageElement as Grid;
                     if (assistantMessageGrid != null)
                     {
                         foreach (var child in assistantMessageGrid.Children)
@@ -405,7 +405,7 @@ namespace Bocifus
                 }
             });
 
-            string resultText = "";
+            var resultText = "";
             try
             {
                 await foreach (var completion in completionResult.WithCancellation(cancellationToken))
@@ -487,7 +487,7 @@ namespace Bocifus
             var inputTokens = conversationResultTokens.Count() + instructionTokens.Count() + userTokens.Count();
             var outputTokens = responseTokens.Count();
             var totalTokens = inputTokens + outputTokens;
-            string tooltip = "";
+            var tooltip = "";
             tooltip += $"Conversation History Tokens : {conversationResultTokens.Count().ToString("N0")}\r\n";
             tooltip += $"System Prompt Tokens : {instructionTokens.Count().ToString("N0")}\r\n";
             tooltip += $"User Message Tokens : {userTokens.Count().ToString("N0")}\r\n";
@@ -499,7 +499,7 @@ namespace Bocifus
             if (ConversationListBox.SelectedIndex != -1)
             {
                 var selectedConversation = (ConversationHistory)ConversationListBox.SelectedItem;
-                Guid selectedId = selectedConversation.ID;
+                var selectedId = selectedConversation.ID;
 
                 var conversation = AppSettings.ConversationManager.Histories.FirstOrDefault(c => c.ID == selectedId);
                 if (conversation != null)
@@ -524,8 +524,8 @@ namespace Bocifus
             }
             if (ConversationListBox.SelectedIndex == -1)
             {
-                string cleanedUserMessage = userMessage.Replace("\n", "").Replace("\r", "");
-                string title = "";
+                var cleanedUserMessage = userMessage.Replace("\n", "").Replace("\r", "");
+                var title = "";
                 if (AppSettings.UseTitleGenerationSetting)
                 {
                     if (!string.IsNullOrEmpty(generatedTitle))
@@ -585,26 +585,26 @@ namespace Bocifus
                 ConversationListBox.SelectedIndex = 0;
             }
 
-            string model = AppSettings.ModelSetting != "" ? AppSettings.ModelSetting : AppSettings.DeploymentIdSetting;
+            var model = AppSettings.ModelSetting != "" ? AppSettings.ModelSetting : AppSettings.DeploymentIdSetting;
             AddTokenUsage(totalTokens, inputTokens, outputTokens, model, AppSettings.ProviderSetting);
         }
         private void AddTokenUsage(int totalToken, int inputTokens, int outputTokens, string model, string provider)
         {
-            int rowCount = AppSettings.TokenUsageSetting.GetLength(0);
-            int colCount = AppSettings.TokenUsageSetting.GetLength(1);
+            var rowCount = AppSettings.TokenUsageSetting.GetLength(0);
+            var colCount = AppSettings.TokenUsageSetting.GetLength(1);
             if (AppSettings.TokenUsageSetting == null || rowCount == 0 || colCount == 0)
             {
-                string[,] temp = new string[0, 5];
+                var temp = new string[0, 5];
                 AppSettings.TokenUsageSetting = temp;
             }
 
-            string[,] oldTokenUsage = AppSettings.TokenUsageSetting;  
-            int rows = oldTokenUsage.GetLength(0);  
-            int cols = oldTokenUsage.GetLength(1);  
-            string[,] newTokenUsage = new string[rows, cols + 2];
-            for (int i = 0; i < rows; i++)
+            var oldTokenUsage = AppSettings.TokenUsageSetting;  
+            var rows = oldTokenUsage.GetLength(0);  
+            var cols = oldTokenUsage.GetLength(1);  
+            var newTokenUsage = new string[rows, cols + 2];
+            for (var i = 0; i < rows; i++)
             {
-                for (int j = 0; j < cols; j++)
+                for (var j = 0; j < cols; j++)
                 {
                     newTokenUsage[i, j] = oldTokenUsage[i, j];
                 }
@@ -613,12 +613,12 @@ namespace Bocifus
             }
 
             todayString = DateTime.Today.ToString("yyyy/MM/dd");
-            string[,] tokenUsage = AppSettings.TokenUsageSetting;
-            int tokenUsageCount = tokenUsage.GetLength(0);
+            var tokenUsage = AppSettings.TokenUsageSetting;
+            var tokenUsageCount = tokenUsage.GetLength(0);
             dailyTotal = 0;
 
-            bool todayTokenUsageExist = false;
-            for (int i = 0; i < tokenUsageCount; i++)
+            var todayTokenUsageExist = false;
+            for (var i = 0; i < tokenUsageCount; i++)
             {
                 if (tokenUsage[i, 0] == todayString)
                 {
@@ -658,14 +658,14 @@ namespace Bocifus
         }
         public static string[,] ResizeArray(string[,] originalArray, int newRowCount, int newColCount)
         {
-            int originalRowCount = originalArray.GetLength(0);
-            int originalColCount = originalArray.GetLength(1);
+            var originalRowCount = originalArray.GetLength(0);
+            var originalColCount = originalArray.GetLength(1);
 
-            string[,] newArray = new string[newRowCount, newColCount];
+            var newArray = new string[newRowCount, newColCount];
 
-            for (int i = 0; i < Math.Min(originalRowCount, newRowCount); i++)
+            for (var i = 0; i < Math.Min(originalRowCount, newRowCount); i++)
             {
-                for (int j = 0; j < Math.Min(originalColCount, newColCount); j++)
+                for (var j = 0; j < Math.Min(originalColCount, newColCount); j++)
                 {
                     newArray[i, j] = originalArray[i, j];
                 }
@@ -679,8 +679,8 @@ namespace Bocifus
             {
                 Debug.WriteLine($"GenerateTitleAsync started on thread ID: {Thread.CurrentThread.ManagedThreadId}");
 
-                string configName = AppSettings.ModelForTitleGenerationSetting;
-                DataRow[] rows = AppSettings.ConfigDataTable.Select("ConfigurationName = '" + configName + "'");
+                var configName = AppSettings.ModelForTitleGenerationSetting;
+                var rows = AppSettings.ConfigDataTable.Select("ConfigurationName = '" + configName + "'");
                 var ProviderSetting = rows[0]["Provider"].ToString();
                 var ModelSetting = rows[0]["Model"].ToString();
                 var ApiKeySetting = rows[0]["APIKey"].ToString();
@@ -713,7 +713,7 @@ namespace Bocifus
                                                         , DeploymentIdSetting
                                                         , ApiVersionSetting);
 
-                List<ChatMessage> messages = new List<ChatMessage>();
+                var messages = new List<ChatMessage>();
                 messages.Add(ChatMessage.FromUser(userMessage));
 
                 var completionResult = await openAiService.ChatCompletion.CreateCompletion(new ChatCompletionCreateRequest()
@@ -724,7 +724,7 @@ namespace Bocifus
                 });
                 HandleCompletionResultForTitle(completionResult);
 
-                string model = ModelSetting != "" ? ModelSetting : DeploymentIdSetting;
+                var model = ModelSetting != "" ? ModelSetting : DeploymentIdSetting;
                 var userMessageTokens = TokenizerGpt3.Encode(userMessage);
                 var responseTokens = TokenizerGpt3.Encode(generatedTitle);
                 var totalTokens = userMessageTokens.Count() + responseTokens.Count();

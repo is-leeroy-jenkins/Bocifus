@@ -1,14 +1,14 @@
 ﻿// ******************************************************************************************
-//     Assembly:                Badger
+//     Assembly:                Booger
 //     Author:                  Terry D. Eppler
-//     Created:                 08-01-2024
+//     Created:                 08-08-2024
 // 
 //     Last Modified By:        Terry D. Eppler
-//     Last Modified On:        08-01-2024
+//     Last Modified On:        08-08-2024
 // ******************************************************************************************
 // <copyright file="MetroRichText.cs" company="Terry D. Eppler">
-//    Badger is data analysis and reporting tool for EPA Analysts
-//    based on WPF, NET6.0, and written in C-Sharp.
+//    Booger is a quick & dirty WPF application that interacts with OpenAI GPT-3.5 Turbo API
+//    based on NET6 and written in C-Sharp.
 // 
 //    Copyright ©  2024  Terry D. Eppler
 // 
@@ -43,7 +43,7 @@ namespace Bocifus
 {
     using System;
     using System.Diagnostics.CodeAnalysis;
-    using System.Windows.Controls;
+    using Syncfusion.Windows.Controls.RichTextBoxAdv;
 
     /// <inheritdoc />
     /// <summary>
@@ -54,7 +54,7 @@ namespace Bocifus
     [ SuppressMessage( "ReSharper", "FieldCanBeMadeReadOnly.Local" ) ]
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
     [ SuppressMessage( "ReSharper", "FieldCanBeMadeReadOnly.Global" ) ]
-    public class MetroRichText : RichTextBox
+    public class MetroRichText : SfRichTextBoxAdv
     {
         /// <summary>
         /// The theme
@@ -64,7 +64,7 @@ namespace Bocifus
         /// <inheritdoc />
         /// <summary>
         /// Initializes a new instance of the
-        /// <see cref="T:Badger.RichTextBox" /> class.
+        /// <see cref="T:Booger.RichTextBox" /> class.
         /// </summary>
         public MetroRichText( )
             : base( )
@@ -76,9 +76,9 @@ namespace Bocifus
             Height = 150;
             BorderThickness = _theme.BorderThickness;
             Padding = _theme.Padding;
-            Background = _theme.ControlBackground;
+            Background = _theme.ControlInterior;
             Foreground = _theme.Foreground;
-            BorderBrush = _theme.ControlBackground;
+            BorderBrush = _theme.ControlInterior;
             SelectionBrush = _theme.SteelBlueBrush;
         }
 

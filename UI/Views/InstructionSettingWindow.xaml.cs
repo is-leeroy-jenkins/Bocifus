@@ -32,11 +32,11 @@ namespace Bocifus
             SaveButton.Background = accentColorBrush;
 
             InstructionListBox.ContextMenu = new ContextMenu();
-            MenuItem UpSwap = new MenuItem();
+            var UpSwap = new MenuItem();
             UpSwap.Header = "⬆";
             UpSwap.Click += UpSwap_Click;
             UpSwap.HorizontalAlignment = HorizontalAlignment.Center;
-            MenuItem DownSwap = new MenuItem();
+            var DownSwap = new MenuItem();
             DownSwap.Header = "⬇";
             DownSwap.Click += DownSwap_Click;
             DownSwap.HorizontalAlignment = HorizontalAlignment.Center;
@@ -52,12 +52,12 @@ namespace Bocifus
             }
 
             // itemsの1列目をInstructionListBoxに格納
-            for (int i = 0; i < items.GetLength(0); i++)
+            for (var i = 0; i < items.GetLength(0); i++)
             {
                 InstructionListBox.Items.Add(items[i, 0]);
             }
             // コンボボックスで選択している指示を開く
-            for (int i = 0; i < items.GetLength(0); i++)
+            for (var i = 0; i < items.GetLength(0); i++)
             {
                 if (AppSettings.InstructionSetting == "" || AppSettings.InstructionSetting == null)
                 {
@@ -74,18 +74,18 @@ namespace Bocifus
         private void UpdateInstructionListBox()
         {
             InstructionListBox.Items.Clear();
-            for (int i = 0; i < items.GetLength(0); i++)
+            for (var i = 0; i < items.GetLength(0); i++)
             {
                 InstructionListBox.Items.Add(items[i, 0]);
             }
         }
         private void DuplicateControl()
         {
-            for (int i = 0; i < items.GetLength(0); i++)
+            for (var i = 0; i < items.GetLength(0); i++)
             {
-                string currentName = items[i, 0];
+                var currentName = items[i, 0];
 
-                for (int j = 0; j < items.GetLength(0); j++)
+                for (var j = 0; j < items.GetLength(0); j++)
                 {
                     if (i == j)
                     {
@@ -111,7 +111,7 @@ namespace Bocifus
                 ModernWpf.MessageBox.Show("The instruction name has not been entered.", "Error", MessageBoxButton.OK);
                 return;
             }
-            int index = InstructionListBox.SelectedIndex;
+            var index = InstructionListBox.SelectedIndex;
             items[index, 0] = InstructionTextBox.Text;
             items[index, 1] = ContentsTextBox.Text;
 
@@ -161,8 +161,8 @@ namespace Bocifus
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
             // itemsの行数を1増やす
-            string[,] newItems = new string[items.GetLength(0) + 1, 2];
-            for (int i = 0; i < items.GetLength(0); i++)
+            var newItems = new string[items.GetLength(0) + 1, 2];
+            for (var i = 0; i < items.GetLength(0); i++)
             {
                 newItems[i, 0] = items[i, 0];
                 newItems[i, 1] = items[i, 1];
@@ -178,18 +178,18 @@ namespace Bocifus
         private void RemoveButton_Click(object sender, RoutedEventArgs e)
         {
             //選択しているアイテムを削除
-            int index = InstructionListBox.SelectedIndex;
+            var index = InstructionListBox.SelectedIndex;
             if (index == -1)
             {
                 return;
             }
-            string[,] newItems = new string[items.GetLength(0) - 1, 2];
-            for (int i = 0; i < index; i++)
+            var newItems = new string[items.GetLength(0) - 1, 2];
+            for (var i = 0; i < index; i++)
             {
                 newItems[i, 0] = items[i, 0];
                 newItems[i, 1] = items[i, 1];
             }
-            for (int i = index + 1; i < items.GetLength(0); i++)
+            for (var i = index + 1; i < items.GetLength(0); i++)
             {
                 newItems[i - 1, 0] = items[i, 0];
                 newItems[i - 1, 1] = items[i, 1];
@@ -207,10 +207,10 @@ namespace Bocifus
                 return;
             }
             // 入れ替え先のインデックスを計算
-            int newIndex = isUp ? index - 1 : index + 1;
-            string[,] newItems = new string[items.GetLength(0), 2];
+            var newIndex = isUp ? index - 1 : index + 1;
+            var newItems = new string[items.GetLength(0), 2];
 
-            for (int i = 0; i < items.GetLength(0); i++)
+            for (var i = 0; i < items.GetLength(0); i++)
             {
                 if (i == index)
                 {
@@ -239,12 +239,12 @@ namespace Bocifus
         }
         private void UpSwap()
         {
-            int index = InstructionListBox.SelectedIndex;
+            var index = InstructionListBox.SelectedIndex;
             SwapItems(index, true);
         }
         private void DownSwap()
         {
-            int index = InstructionListBox.SelectedIndex;
+            var index = InstructionListBox.SelectedIndex;
             SwapItems(index, false);
         }
         void UpSwap_Click(object sender, RoutedEventArgs e)
@@ -271,7 +271,7 @@ namespace Bocifus
             try
             {
                 // 登録内容をjsonファイルに出力
-                string json = JsonConvert.SerializeObject(items);
+                var json = JsonConvert.SerializeObject(items);
                 json = JToken.Parse(json).ToString(Formatting.Indented);
 
                 var dialog = new System.Windows.Forms.SaveFileDialog();
@@ -279,7 +279,7 @@ namespace Bocifus
                 dialog.FileName = DateTime.Now.ToString("yyyyMMdd") + "_SystemPrompt.json";
                 dialog.Filter = "JSON files (*.json)|*.json|All files (*.*)|*.*";
                 dialog.DefaultExt = "json";
-                System.Windows.Forms.DialogResult result = dialog.ShowDialog();
+                var result = dialog.ShowDialog();
                 if (result == System.Windows.Forms.DialogResult.OK)
                 {
                     File.WriteAllText(dialog.FileName, json);
@@ -304,11 +304,11 @@ namespace Bocifus
                     dialog.Filter = "json files (*.json)|*.json|All files (*.*)|*.*";
                     dialog.FilterIndex = 1;
                     dialog.RestoreDirectory = true;
-                    System.Windows.Forms.DialogResult result = dialog.ShowDialog();
+                    var result = dialog.ShowDialog();
                     if (result == System.Windows.Forms.DialogResult.OK)
                     {
-                        string path = dialog.FileName;
-                        string json = File.ReadAllText(path);
+                        var path = dialog.FileName;
+                        var json = File.ReadAllText(path);
                         items = JsonConvert.DeserializeObject<string[,]>(json);
                         // ListBoxにアイテムを再セット
                         UpdateInstructionListBox();

@@ -1,16 +1,16 @@
 ﻿// ******************************************************************************************
-//     Assembly:                Bocifus
+//     Assembly:                Booger
 //     Author:                  Terry D. Eppler
-//     Created:                 09-07-2020
+//     Created:                 08-08-2024
 // 
 //     Last Modified By:        Terry D. Eppler
-//     Last Modified On:        09-07-2024
+//     Last Modified On:        08-08-2024
 // ******************************************************************************************
 // <copyright file="MetroComboBoxItem.cs" company="Terry D. Eppler">
-//    Badger is data analysis and reporting tool for EPA Analysts
-//    that is based on WPF, NET6.0, and written in C-Sharp.
+//    Booger is a quick & dirty WPF application that interacts with OpenAI GPT-3.5 Turbo API
+//    based on NET6 and written in C-Sharp.
 // 
-//     Copyright ©  2020, 2022, 2204 Terry D. Eppler
+//    Copyright ©  2024  Terry D. Eppler
 // 
 //    Permission is hereby granted, free of charge, to any person obtaining a copy
 //    of this software and associated documentation files (the “Software”),
@@ -32,7 +32,7 @@
 //    ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 //    DEALINGS IN THE SOFTWARE.
 // 
-//    You can contact me at:  terryeppler@gmail.com or eppler.terry@epa.gov
+//    You can contact me at: terryeppler@gmail.com or eppler.terry@epa.gov
 // </copyright>
 // <summary>
 //   MetroComboBoxItem.cs
@@ -41,10 +41,10 @@
 
 namespace Bocifus
 {
-    using Syncfusion.Windows.Tools.Controls;
     using System;
     using System.Diagnostics.CodeAnalysis;
     using System.Windows;
+    using Syncfusion.Windows.Tools.Controls;
 
     /// <inheritdoc />
     /// <summary>
@@ -64,12 +64,6 @@ namespace Bocifus
         /// </summary>
         private protected readonly DarkMode _theme = new DarkMode( );
 
-        /// <summary>
-        /// Gets or sets an arbitrary object value that can be used
-        /// to store custom information about this element.
-        /// </summary>
-        public new object Tag { get; set; }
-
         /// <inheritdoc />
         /// <summary>
         /// Initializes a new instance of the
@@ -80,14 +74,11 @@ namespace Bocifus
         {
             // Control Properties
             SetResourceReference( StyleProperty, typeof( ComboBoxItemAdv ) );
+            Height = 22;
+            Padding = new Thickness( 10, 1, 1, 1 );
             Background = _theme.ControlInterior;
             BorderBrush = _theme.ControlInterior;
-            Foreground = _theme.LightBlueBrush;
-            Margin = new Thickness( 10, 1, 1, 1 );
-            Height = 24;
-            Padding = _theme.Padding;
-            BorderThickness = _theme.BorderThickness;
-            HorizontalContentAlignment = HorizontalAlignment.Left;
+            Foreground = _theme.Foreground;
 
             // Event Wiring
             MouseEnter += OnItemMouseEnter;

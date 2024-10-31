@@ -1,14 +1,14 @@
 ﻿// ******************************************************************************************
-//     Assembly:                Badger
+//     Assembly:                Booger
 //     Author:                  Terry D. Eppler
-//     Created:                 08-01-2024
+//     Created:                 08-08-2024
 // 
 //     Last Modified By:        Terry D. Eppler
-//     Last Modified On:        08-01-2024
+//     Last Modified On:        08-08-2024
 // ******************************************************************************************
 // <copyright file="MetroRadioButton.cs" company="Terry D. Eppler">
-//    Badger is data analysis and reporting tool for EPA Analysts
-//    based on WPF, NET6.0, and written in C-Sharp.
+//    Booger is a quick & dirty WPF application that interacts with OpenAI GPT-3.5 Turbo API
+//    based on NET6 and written in C-Sharp.
 // 
 //    Copyright ©  2024  Terry D. Eppler
 // 
@@ -43,7 +43,6 @@ namespace Bocifus
 {
     using System;
     using System.Diagnostics.CodeAnalysis;
-    using System.Windows;
     using System.Windows.Controls;
     using System.Windows.Input;
     using System.Windows.Media;
@@ -68,7 +67,7 @@ namespace Bocifus
         /// <inheritdoc />
         /// <summary>
         /// Initializes a new instance of the
-        /// <see cref="T:Badger.MetroRadioButton" /> class.
+        /// <see cref="T:Bocifus.MetroRadioButton" /> class.
         /// </summary>
         public MetroRadioButton( )
             : base( )

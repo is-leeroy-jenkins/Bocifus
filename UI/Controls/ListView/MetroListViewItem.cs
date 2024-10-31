@@ -1,5 +1,5 @@
 ﻿// ******************************************************************************************
-//     Assembly:                Bocifus
+//     Assembly:                Badger
 //     Author:                  Terry D. Eppler
 //     Created:                 09-07-2020
 // 
@@ -81,10 +81,10 @@ namespace Bocifus
             Height = 40;
             Background = _theme.ControlInterior;
             BorderBrush = _theme.ControlInterior;
-            Foreground = _theme.LightBlueBrush;
-            Margin = new Thickness( 10, 1, 1, 1 );
-            Padding = _theme.Padding;
-            BorderThickness = _theme.BorderThickness;
+            BorderBrush = _theme.ControlInterior;
+            Margin = new Thickness( 1 );
+            Padding = new Thickness( 30, 10, 1, 1 );
+            BorderThickness = new Thickness( 0 );
             HorizontalAlignment = HorizontalAlignment.Left;
 
             // Event Wiring

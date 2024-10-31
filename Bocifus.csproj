@@ -124,9 +124,12 @@
 
   <ItemGroup>
     <PackageReference Include="Betalgo.OpenAI" Version="8.0.1" />
+    <PackageReference Include="CefSharp.Common.NETCore" Version="130.1.90" />
+    <PackageReference Include="CefSharp.Wpf.NETCore" Version="130.1.90" />
     <PackageReference Include="EPPlus" Version="7.4.0" />
     <PackageReference Include="FluentWPF" Version="0.10.2" />
     <PackageReference Include="Google.Cloud.Translation.V2" Version="3.2.0" />
+    <PackageReference Include="Markdig" Version="0.38.0" />
     <PackageReference Include="MdXaml.Html" Version="1.27.0" />
     <PackageReference Include="MdXaml.Plugins" Version="1.27.0" />
     <PackageReference Include="MdXaml.Svg" Version="1.27.0" />

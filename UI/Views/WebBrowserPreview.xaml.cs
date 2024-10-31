@@ -47,8 +47,8 @@ namespace Bocifus
         }
         private void SaveHtmlToFile()
         {
-            string htmlContent = html;
-            string dateTimeSuffix = DateTime.Now.ToString("yyyyMMddHHmmss");
+            var htmlContent = html;
+            var dateTimeSuffix = DateTime.Now.ToString("yyyyMMddHHmmss");
 
             var saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             saveFileDialog.Filter = "HTML files (*.html)|*.html|All files (*.*)|*.*";

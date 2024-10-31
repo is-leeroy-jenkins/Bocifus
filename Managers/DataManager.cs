@@ -11,20 +11,20 @@ namespace Bocifus.DataManagement
     {
         public static ConversationManager LoadConversationsFromJson()
         {
-            string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            string dataDirectory = Path.Combine(documentsPath, "OpenAIOnWPF", "ConversationHistory");
+            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            var dataDirectory = Path.Combine(documentsPath, "OpenAIOnWPF", "ConversationHistory");
 
             var manager = new ConversationManager();
             manager.Histories = new ObservableCollection<ConversationHistory>();
 
             Directory.CreateDirectory(dataDirectory);
 
-            string[] files = Directory.GetFiles(dataDirectory, "Conversation_*.json");
+            var files = Directory.GetFiles(dataDirectory, "Conversation_*.json");
 
             foreach (var file in files)
             {
-                string jsonString = File.ReadAllText(file);
-                ConversationHistory conversation = System.Text.Json.JsonSerializer.Deserialize<ConversationHistory>(jsonString);
+                var jsonString = File.ReadAllText(file);
+                var conversation = System.Text.Json.JsonSerializer.Deserialize<ConversationHistory>(jsonString);
 
                 if (conversation != null)
                 {
@@ -35,8 +35,8 @@ namespace Bocifus.DataManagement
         }
         public static void SaveConversationsAsJson(ConversationManager manager)
         {
-            string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            string dataDirectory = Path.Combine(documentsPath, "OpenAIOnWPF", "ConversationHistory");
+            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            var dataDirectory = Path.Combine(documentsPath, "OpenAIOnWPF", "ConversationHistory");
 
             Directory.CreateDirectory(dataDirectory);
 
@@ -53,17 +53,17 @@ namespace Bocifus.DataManagement
 
             foreach (var conversation in manager.Histories)
             {
-                string formattedLastUpdated = conversation.LastUpdated.ToString("yyyyMMddHHmmss");
-                string filePath = Path.Combine(dataDirectory, $"Conversation_{formattedLastUpdated}_{conversation.ID}.json");
-                string jsonString = System.Text.Json.JsonSerializer.Serialize(conversation, options);
+                var formattedLastUpdated = conversation.LastUpdated.ToString("yyyyMMddHHmmss");
+                var filePath = Path.Combine(dataDirectory, $"Conversation_{formattedLastUpdated}_{conversation.ID}.json");
+                var jsonString = System.Text.Json.JsonSerializer.Serialize(conversation, options);
 
                 File.WriteAllText(filePath, jsonString);
             }
         }
         public static void SavePromptTemplateAsJson(PromptTemplateManager manager)
         {
-            string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            string dataDirectory = Path.Combine(documentsPath, "OpenAIOnWPF", "PromptTemplate");
+            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            var dataDirectory = Path.Combine(documentsPath, "OpenAIOnWPF", "PromptTemplate");
 
             Directory.CreateDirectory(dataDirectory);
 
@@ -80,29 +80,29 @@ namespace Bocifus.DataManagement
 
             foreach (var template in manager.Templates)
             {
-                string formattedLastUpdated = template.LastUpdated.ToString("yyyyMMddHHmmss");
-                string filePath = Path.Combine(dataDirectory, $"PromptTemplate_{template.SortOrder}_{formattedLastUpdated}_{template.ID}.json");
-                string jsonString = System.Text.Json.JsonSerializer.Serialize(template, options);
+                var formattedLastUpdated = template.LastUpdated.ToString("yyyyMMddHHmmss");
+                var filePath = Path.Combine(dataDirectory, $"PromptTemplate_{template.SortOrder}_{formattedLastUpdated}_{template.ID}.json");
+                var jsonString = System.Text.Json.JsonSerializer.Serialize(template, options);
 
                 File.WriteAllText(filePath, jsonString);
             }
         }
         public static PromptTemplateManager LoadPromptTemplateFromJson()
         {
-            string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            string dataDirectory = Path.Combine(documentsPath, "OpenAIOnWPF", "PromptTemplate");
+            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            var dataDirectory = Path.Combine(documentsPath, "OpenAIOnWPF", "PromptTemplate");
 
             var manager = new PromptTemplateManager();
             manager.Templates = new ObservableCollection<PromptTemplate>();
 
             Directory.CreateDirectory(dataDirectory);
 
-            string[] files = Directory.GetFiles(dataDirectory, "PromptTemplate_*.json");
+            var files = Directory.GetFiles(dataDirectory, "PromptTemplate_*.json");
 
             foreach (var file in files)
             {
-                string jsonString = File.ReadAllText(file);
-                PromptTemplate templates = System.Text.Json.JsonSerializer.Deserialize<PromptTemplate>(jsonString);
+                var jsonString = File.ReadAllText(file);
+                var templates = System.Text.Json.JsonSerializer.Deserialize<PromptTemplate>(jsonString);
 
                 if (templates != null)
                 {

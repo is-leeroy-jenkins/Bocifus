@@ -1,17 +1,16 @@
 ﻿// ******************************************************************************************
-//     Assembly:                Ninja
+//     Assembly:                Bocifus
 //     Author:                  Terry D. Eppler
-//     Created:                 09-23-2024
+//     Created:                 10-31-2024
 // 
 //     Last Modified By:        Terry D. Eppler
-//     Last Modified On:        09-23-2024
+//     Last Modified On:        10-31-2024
 // ******************************************************************************************
 // <copyright file="TimeSpanExtensions.cs" company="Terry D. Eppler">
+//   Bocifus is an open source windows (wpf) application that interacts with OpenAI GPT-3.5 Turbo API
+//   based on NET6 and written in C-Sharp.
 // 
-//    Ninja is a network toolkit, support iperf, tcp, udp, websocket, mqtt,
-//    sniffer, pcap, port scan, listen, ip scan .etc.
-// 
-//    Copyright ©  2019-2024 Terry D. Eppler
+//    Copyright ©  2020-2024 Terry D. Eppler
 // 
 //    Permission is hereby granted, free of charge, to any person obtaining a copy
 //    of this software and associated documentation files (the “Software”),
@@ -77,7 +76,7 @@ namespace Bocifus
             }
             catch( Exception _ex )
             {
-                TimeSpanExtensions.Fail( _ex );
+                Fail( _ex );
                 return 0;
             }
         }
@@ -95,7 +94,7 @@ namespace Bocifus
             }
             catch( Exception _ex )
             {
-                TimeSpanExtensions.Fail( _ex );
+                Fail( _ex );
                 return 0D;
             }
         }
@@ -113,7 +112,7 @@ namespace Bocifus
             }
             catch( Exception _ex )
             {
-                TimeSpanExtensions.Fail( _ex );
+                Fail( _ex );
                 return 0;
             }
         }
@@ -131,7 +130,7 @@ namespace Bocifus
             }
             catch( Exception _ex )
             {
-                TimeSpanExtensions.Fail( _ex );
+                Fail( _ex );
                 return 0D;
             }
         }
@@ -149,7 +148,7 @@ namespace Bocifus
             }
             catch( Exception _ex )
             {
-                TimeSpanExtensions.Fail( _ex );
+                Fail( _ex );
                 return 0;
             }
         }
@@ -167,7 +166,7 @@ namespace Bocifus
             }
             catch( Exception _ex )
             {
-                TimeSpanExtensions.Fail( _ex );
+                Fail( _ex );
                 return 0D;
             }
         }
@@ -185,7 +184,7 @@ namespace Bocifus
             }
             catch( Exception _ex )
             {
-                TimeSpanExtensions.Fail( _ex );
+                Fail( _ex );
                 return 0;
             }
         }
@@ -203,7 +202,7 @@ namespace Bocifus
             }
             catch( Exception _ex )
             {
-                TimeSpanExtensions.Fail( _ex );
+                Fail( _ex );
                 return 0D;
             }
         }
@@ -221,7 +220,7 @@ namespace Bocifus
             }
             catch( Exception _ex )
             {
-                TimeSpanExtensions.Fail( _ex );
+                Fail( _ex );
                 return 0D;
             }
         }
@@ -243,7 +242,7 @@ namespace Bocifus
             }
             catch( Exception _ex )
             {
-                TimeSpanExtensions.Fail( _ex );
+                Fail( _ex );
                 return default( TimeSpan );
             }
         }

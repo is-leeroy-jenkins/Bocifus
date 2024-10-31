@@ -89,7 +89,7 @@ namespace Bocifus.DataManagement
             }
             catch (Exception ex)
             {
-                string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
                 var message = new StringBuilder()
                     .AppendLine("Failed to load conversation history.")
                     .AppendLine(ex.Message)

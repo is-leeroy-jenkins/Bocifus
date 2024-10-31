@@ -52,7 +52,7 @@ namespace Bocifus
     /// <inheritdoc />
     /// <summary>
     /// </summary>
-    /// <seealso cref="Bocifus.Dimensions" />
+    /// <seealso cref="Dimensions" />
     [ SuppressMessage( "ReSharper", "MemberCanBeProtected.Global" ) ]
     [ SuppressMessage( "ReSharper", "InconsistentNaming" ) ]
     [ SuppressMessage( "ReSharper", "UseObjectOrCollectionInitializer" ) ]
@@ -280,7 +280,7 @@ namespace Bocifus
         /// <inheritdoc />
         /// <summary>
         /// Initializes a new instance of the
-        /// <see cref="Bocifus.Palette" /> class.
+        /// <see cref="Palette" /> class.
         /// </summary>
         protected Palette( )
             : base( )

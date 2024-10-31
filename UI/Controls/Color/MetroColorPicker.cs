@@ -42,10 +42,10 @@
 
 namespace Bocifus
 {
-    using Syncfusion.Windows.Shared;
     using System;
     using System.Diagnostics.CodeAnalysis;
     using System.Windows.Media;
+    using Syncfusion.Windows.Shared;
 
     /// <inheritdoc />
     /// <summary>

@@ -27,7 +27,7 @@ namespace Bocifus
     {
         public static string[] SetupInstructionComboBox()
         {
-            string[] instructionList = AppSettings.InstructionListSetting?.Cast<string>().Where((s, i) => i % 2 == 0).ToArray();
+            var instructionList = AppSettings.InstructionListSetting?.Cast<string>().Where((s, i) => i % 2 == 0).ToArray();
             if (instructionList != null)
             {
                 Array.Resize(ref instructionList, instructionList.Length + 1);
@@ -40,7 +40,7 @@ namespace Bocifus
         {
             if (AppSettings.ConfigDataTable == null)
             {
-                DataSet ds = new DataSet();
+                var ds = new DataSet();
                 AppSettings.ConfigDataTable = new DataTable();
                 AppSettings.ConfigDataTable.Columns.Add("ConfigurationName", typeof(string));
                 AppSettings.ConfigDataTable.Columns.Add("Provider", typeof(string));
@@ -57,7 +57,7 @@ namespace Bocifus
         }
         public static void InitialColorSet()
         {
-            string theme = Properties.Settings.Default.Theme;
+            var theme = Properties.Settings.Default.Theme;
             if (theme == "Dark")
             {
                 ThemeManager.Current.ApplicationTheme = ApplicationTheme.Dark;
@@ -71,7 +71,7 @@ namespace Bocifus
                 ThemeManager.Current.ApplicationTheme = null;
             }
 
-            string accentColor = Properties.Settings.Default.AccentColor;
+            var accentColor = Properties.Settings.Default.AccentColor;
             if (accentColor == "Default" || accentColor == "")
             {
                 ThemeManager.Current.AccentColor = null;
@@ -84,12 +84,12 @@ namespace Bocifus
         }
         public static void EnsureColumnsForType(DataTable dataTable, Type type)
         {
-            foreach (System.Reflection.PropertyInfo propertyInfo in type.GetProperties())
+            foreach (var propertyInfo in type.GetProperties())
             {
                 if (!dataTable.Columns.Contains(propertyInfo.Name))
                 {
-                    Type columnType = Nullable.GetUnderlyingType(propertyInfo.PropertyType) ?? propertyInfo.PropertyType;
-                    DataColumn column = new DataColumn(propertyInfo.Name, columnType);
+                    var columnType = Nullable.GetUnderlyingType(propertyInfo.PropertyType) ?? propertyInfo.PropertyType;
+                    var column = new DataColumn(propertyInfo.Name, columnType);
 
                     if (columnType == typeof(string))
                     {
@@ -133,7 +133,7 @@ namespace Bocifus
         {
             initialColor = (textBox.Foreground as SolidColorBrush).Color;
 
-            Color startColor = initialColor;
+            var startColor = initialColor;
             startColor.A = (byte)(255 * 0.5);
 
             var animation = new ColorAnimation
@@ -241,7 +241,7 @@ namespace Bocifus
         }
         public static async void TranslateText(object target, object selectedItem)
         {
-            MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
             Storyboard? animation = null;
             if (target is TextBox textBox)
             {
@@ -250,8 +250,8 @@ namespace Bocifus
                     animation = UtilityFunctions.CreateOpacityAnimation(textBox);
                     animation.Begin();
 
-                    string beforeText = textBox.Text;
-                    string translatedText = await mainWindow.TranslateAPIRequestAsync(beforeText, AppSettings.FromTranslationLanguage);
+                    var beforeText = textBox.Text;
+                    var translatedText = await mainWindow.TranslateAPIRequestAsync(beforeText, AppSettings.FromTranslationLanguage);
                     translatedText = translatedText.TrimEnd('\r', '\n');
 
                     textBox.Text = translatedText;
@@ -295,8 +295,8 @@ namespace Bocifus
                     animation = UtilityFunctions.CreateOpacityAnimation(markdownScrollViewer);
                     animation.Begin();
 
-                    string beforeText = markdownScrollViewer.Markdown;
-                    string translatedText = await UtilityFunctions.TranslateTextWithCodeBlocks(beforeText);
+                    var beforeText = markdownScrollViewer.Markdown;
+                    var translatedText = await UtilityFunctions.TranslateTextWithCodeBlocks(beforeText);
                     translatedText = translatedText.TrimEnd('\r', '\n');
                     translatedText = Regex.Replace(translatedText, @"(\d+\.)\s*(\S)", "$1 $2");
 
@@ -340,13 +340,13 @@ namespace Bocifus
         {
             var regex = new Regex(@"(```\w*\s[\s\S]*?```)");
             var matches = regex.Matches(markdownText);
-            int lastPos = 0;
-            StringBuilder translatedText = new StringBuilder();
+            var lastPos = 0;
+            var translatedText = new StringBuilder();
 
             foreach (Match match in matches)
             {
-                string textToTranslate = markdownText.Substring(lastPos, match.Index - lastPos);
-                string translatedSegment = await UtilityFunctions.TranslateTextAsync(textToTranslate);
+                var textToTranslate = markdownText.Substring(lastPos, match.Index - lastPos);
+                var translatedSegment = await UtilityFunctions.TranslateTextAsync(textToTranslate);
                 translatedText.Append(translatedSegment);
 
                 translatedText.Append(match.Value);
@@ -355,8 +355,8 @@ namespace Bocifus
 
             if (lastPos < markdownText.Length)
             {
-                string remainingText = markdownText.Substring(lastPos);
-                string translatedRemaining = await UtilityFunctions.TranslateTextAsync(remainingText);
+                var remainingText = markdownText.Substring(lastPos);
+                var translatedRemaining = await UtilityFunctions.TranslateTextAsync(remainingText);
                 translatedText.Append(translatedRemaining);
             }
 
@@ -365,7 +365,7 @@ namespace Bocifus
 
         static async Task<string> TranslateTextAsync(string text)
         {
-            MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
             if (string.IsNullOrWhiteSpace(text))
                 return text;
 
@@ -373,7 +373,7 @@ namespace Bocifus
         }
         public static IEnumerable<DependencyObject> GetAllChildren(DependencyObject parent)
         {
-            for (int i = 0; i < VisualTreeHelper.GetChildrenCount(parent); i++)
+            for (var i = 0; i < VisualTreeHelper.GetChildrenCount(parent); i++)
             {
                 var child = VisualTreeHelper.GetChild(parent, i);
                 yield return child;
@@ -398,8 +398,8 @@ namespace Bocifus
             {
                 token = null;
             }
-            string user = "";
-            string image = "";
+            var user = "";
+            var image = "";
             if (token != null)   
             {
                 var items = token.ToObject<List<VisionUserContentItem>>();

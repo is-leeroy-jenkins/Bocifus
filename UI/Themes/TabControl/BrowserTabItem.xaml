@@ -1,0 +1,30 @@
+﻿<ResourceDictionary
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:b="clr-namespace:Bocifus"
+        xmlns:local="clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Shared.WPF"
+        xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+        xmlns:sync="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:theme="clr-namespace:Syncfusion.Themes.FluentDark.WPF"
+        xmlns:wpf="clr-namespace:Syncfusion.Themes.FluentDark.WPF;assembly=Syncfusion.Themes.FluentDark.WPF">
+
+        <!--  *********************************************** BROWSER TAB  *****************************************************  -->
+
+        <Style
+                x:Key="BrowserTabStyle"
+                TargetType="{x:Type b:BrowserTab}">
+                <Setter Property="Background" Value="{DynamicResource FormBackground}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource FormBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource FormForeground}" />
+                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="HorizontalAlignment" Value="Stretch" />
+                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                <Setter Property="VerticalAlignment" Value="Stretch" />
+                <Setter Property="VerticalContentAlignment" Value="Stretch" />
+                <Setter Property="Padding" Value="1" />
+                <Setter Property="Margin" Value="1" />
+        </Style>
+
+
+</ResourceDictionary>

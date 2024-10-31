@@ -1,17 +1,16 @@
 ﻿// ******************************************************************************************
-//     Assembly:                Ninja
+//     Assembly:                Badger
 //     Author:                  Terry D. Eppler
-//     Created:                 09-25-2024
+//     Created:                 08-01-2022
 // 
 //     Last Modified By:        Terry D. Eppler
-//     Last Modified On:        09-25-2024
+//     Last Modified On:        08-01-2022
 // ******************************************************************************************
 // <copyright file="MetroListBox.cs" company="Terry D. Eppler">
+//    Badger is data analysis and reporting tool for EPA Analysts
+//    based on WPF, NET6.0, and written in C-Sharp.
 // 
-//    Ninja is a network toolkit, support iperf, tcp, udp, websocket, mqtt,
-//    sniffer, pcap, port scan, listen, ip scan .etc.
-// 
-//    Copyright ©  2019-2024 Terry D. Eppler
+//    Copyright ©  2022  Terry D. Eppler
 // 
 //    Permission is hereby granted, free of charge, to any person obtaining a copy
 //    of this software and associated documentation files (the “Software”),
@@ -33,7 +32,7 @@
 //    ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 //    DEALINGS IN THE SOFTWARE.
 // 
-//    You can contact me at:  terryeppler@gmail.com or eppler.terry@epa.gov
+//    You can contact me at: terryeppler@gmail.com or eppler.terry@epa.gov
 // </copyright>
 // <summary>
 //   MetroListBox.cs
@@ -65,13 +64,12 @@ namespace Bocifus
         /// <inheritdoc />
         /// <summary>
         /// Initializes a new instance of the
+        /// <see cref="T:Bocifus.MetroListBox" /> class.
         /// </summary>
         public MetroListBox( )
             : base( )
         {
             // Control Properties
-            FontFamily = _theme.FontFamily;
-            FontSize = _theme.FontSize;
             Background = _theme.ControlInterior;
             Foreground = _theme.LightBlueBrush;
             BorderBrush = _theme.BorderBrush;
