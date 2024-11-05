@@ -55,6 +55,7 @@
 
         <Style TargetType="ToolTip">
             <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Margin" Value="10" />
             <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
             <Setter Property="Background" Value="{StaticResource BlackBackground}" />
             <Setter Property="Foreground" Value="{StaticResource LightBlueBrush}" />
@@ -221,7 +222,7 @@
                             <ComboBox.Background>
                                 <SolidColorBrush
                                     Opacity="0.5"
-                                    Color="{DynamicResource SystemChromeLowColor}" />
+                                    Color="{DynamicResource ControlInteriorColor}" />
                             </ComboBox.Background>
                         </ComboBox>
                         <Button
@@ -504,7 +505,7 @@
                             VerticalAlignment="Top"
                             fw:RevealElement.BorderRadius="4"
                             Background="#33808080"
-                            Click="ToggleFilterButton_Click"
+                            Click="OnToggleFilterButtonClick"
                             Foreground="{DynamicResource SystemBaseMediumHighColorBrush}"
                             Style="{StaticResource ButtonRevealStyle}">
                             <ui:SymbolIcon Symbol="Filter" />
@@ -525,7 +526,7 @@
                             <TextBox.Background>
                                 <SolidColorBrush
                                     Opacity="0.5"
-                                    Color="{DynamicResource SystemChromeLowColor}" />
+                                    Color="{StaticResource ControlInteriorColor}" />
                             </TextBox.Background>
                         </TextBox>
                         <Button
@@ -584,7 +585,7 @@
                         SelectionChanged="OnConversationListBoxSelectionChanged">
                         <ListBox.ItemContainerStyle>
                             <Style
-                                BasedOn="{StaticResource DefaultListBoxItemStyle}"
+                                BasedOn="{StaticResource ListBoxItemStyle}"
                                 TargetType="ListBoxItem">
                                 <Setter Property="Height" Value="51" />
                                 <Setter Property="HorizontalContentAlignment" Value="Stretch" />
@@ -687,7 +688,7 @@
                     </ListBox>
                 </Grid>
                 <GridSplitter
-                    x:Name="testsplitter"
+                    x:Name="Testsplitter"
                     Grid.Row="1"
                     Height="10"
                     HorizontalAlignment="Stretch"
@@ -701,7 +702,7 @@
                     <Border.Background>
                         <SolidColorBrush
                             Opacity="0.05"
-                            Color="{DynamicResource SystemChromeHighColor}" />
+                            Color="{StaticResource BlueBorderColor}" />
                     </Border.Background>
                     <Grid Margin="0,0,0,0">
                         <Grid.RowDefinitions>
@@ -740,9 +741,9 @@
                                 SelectionChanged="PromptTemplateListBox_SelectionChanged">
                                 <ListBox.ItemContainerStyle>
                                     <Style
-                                        BasedOn="{StaticResource DefaultListBoxItemStyle}"
+                                        BasedOn="{StaticResource ListBoxItemStyle}"
                                         TargetType="ListBoxItem">
-                                        <Setter Property="Height" Value="51" />
+                                        <Setter Property="Height" Value="40" />
                                         <EventSetter
                                             Event="MouseEnter"
                                             Handler="PromptTemplateListBoxItem_MouseEnter" />
@@ -766,7 +767,6 @@
                                                 Grid.Column="0"
                                                 VerticalAlignment="Stretch"
                                                 VerticalContentAlignment="Center"
-                                                Background="Transparent"
                                                 BorderThickness="0"
                                                 Cursor="Arrow"
                                                 Focusable="False"
@@ -1023,7 +1023,7 @@
                     VerticalScrollBarVisibility="Auto">
                     <StackPanel
                         x:Name="MessagesPanel"
-                        PreviewMouseWheel="PreviewMouseWheel" />
+                        PreviewMouseWheel="OnMouseWheelPreview" />
                 </ScrollViewer>
                 <Button
                     x:Name="BottomScrollButton"

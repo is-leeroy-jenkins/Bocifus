@@ -1,115 +1,173 @@
-﻿using Bocifus.Model;
-using System;
-using System.Collections.ObjectModel;
-using System.IO;
+﻿// ******************************************************************************************
+//     Assembly:                Bocifus
+//     Author:                  Terry D. Eppler
+//     Created:                 11-05-2024
+// 
+//     Last Modified By:        Terry D. Eppler
+//     Last Modified On:        11-05-2024
+// ******************************************************************************************
+// <copyright file="DataManager.cs" company="Terry D. Eppler">
+//   Bocifus is an open source windows (wpf) application that interacts with OpenAI GPT-3.5 Turbo API
+//   based on NET6 and written in C-Sharp.
+// 
+//    Copyright ©  2020-2024 Terry D. Eppler
+// 
+//    Permission is hereby granted, free of charge, to any person obtaining a copy
+//    of this software and associated documentation files (the “Software”),
+//    to deal in the Software without restriction,
+//    including without limitation the rights to use,
+//    copy, modify, merge, publish, distribute, sublicense,
+//    and/or sell copies of the Software,
+//    and to permit persons to whom the Software is furnished to do so,
+//    subject to the following conditions:
+// 
+//    The above copyright notice and this permission notice shall be included in all
+//    copies or substantial portions of the Software.
+// 
+//    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+//    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//    FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+//    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+//    DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+//    ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+//    DEALINGS IN THE SOFTWARE.
+// 
+//    You can contact me at:  terryeppler@gmail.com or eppler.terry@epa.gov
+// </copyright>
+// <summary>
+//   DataManager.cs
+// </summary>
+// ******************************************************************************************
 
-namespace Bocifus.DataManagement
+namespace Bocifus
 {
     using Model;
+    using System;
+    using System.Collections.ObjectModel;
+    using System.Diagnostics.CodeAnalysis;
+    using System.IO;
+    using System.Text.Encodings.Web;
+    using System.Text.Json;
 
-    internal class DataManager
+    [ SuppressMessage( "ReSharper", "ClassNeverInstantiated.Global" ) ]
+    public class DataManager
     {
-        public static ConversationManager LoadConversationsFromJson()
+        /// <summary>
+        /// Loads the conversations from json.
+        /// </summary>
+        /// <returns></returns>
+        public static ConversationManager LoadConversationsFromJson( )
         {
-            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            var dataDirectory = Path.Combine(documentsPath, "OpenAIOnWPF", "ConversationHistory");
+            var _documentsPath = Environment.GetFolderPath( Environment.SpecialFolder.MyDocuments );
+            var _dataDirectory =
+                Path.Combine( _documentsPath, "OpenAIOnWPF", "ConversationHistory" );
 
-            var manager = new ConversationManager();
-            manager.Histories = new ObservableCollection<ConversationHistory>();
-
-            Directory.CreateDirectory(dataDirectory);
-
-            var files = Directory.GetFiles(dataDirectory, "Conversation_*.json");
-
-            foreach (var file in files)
+            var _manager = new ConversationManager( );
+            _manager.Histories = new ObservableCollection<ConversationHistory>( );
+            Directory.CreateDirectory( _dataDirectory );
+            var _files = Directory.GetFiles( _dataDirectory, "Conversation_*.json" );
+            for( var _i = 0; _i < _files.Length; _i++ )
             {
-                var jsonString = File.ReadAllText(file);
-                var conversation = System.Text.Json.JsonSerializer.Deserialize<ConversationHistory>(jsonString);
-
-                if (conversation != null)
+                var _file = _files[ _i ];
+                var _jsonString = File.ReadAllText( _file );
+                var _conversation = JsonSerializer.Deserialize<ConversationHistory>( _jsonString );
+                if( _conversation != null )
                 {
-                    manager.Histories.Add(conversation);
+                    _manager.Histories.Add( _conversation );
                 }
             }
-            return manager;
+
+            return _manager;
         }
-        public static void SaveConversationsAsJson(ConversationManager manager)
+
+        /// <summary>
+        /// Saves the conversations as json.
+        /// </summary>
+        /// <param name="manager">The manager.</param>
+        public static void SaveConversationsAsJson( ConversationManager manager )
         {
-            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            var dataDirectory = Path.Combine(documentsPath, "OpenAIOnWPF", "ConversationHistory");
+            var _documentsPath = Environment.GetFolderPath( Environment.SpecialFolder.MyDocuments );
+            var _dataDirectory =
+                Path.Combine( _documentsPath, "OpenAIOnWPF", "ConversationHistory" );
 
-            Directory.CreateDirectory(dataDirectory);
-
-            foreach (var file in Directory.EnumerateFiles(dataDirectory, "*.json"))
+            Directory.CreateDirectory( _dataDirectory );
+            foreach( var _file in Directory.EnumerateFiles( _dataDirectory, "*.json" ) )
             {
-                File.Delete(file);
+                File.Delete( _file );
             }
 
-            var options = new System.Text.Json.JsonSerializerOptions
+            var _options = new JsonSerializerOptions
             {
                 WriteIndented = true,
-                Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping // 非ASCII文字をエスケープしない
+                Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping 
             };
 
-            foreach (var conversation in manager.Histories)
+            foreach( var _conversation in manager.Histories )
             {
-                var formattedLastUpdated = conversation.LastUpdated.ToString("yyyyMMddHHmmss");
-                var filePath = Path.Combine(dataDirectory, $"Conversation_{formattedLastUpdated}_{conversation.ID}.json");
-                var jsonString = System.Text.Json.JsonSerializer.Serialize(conversation, options);
+                var _formattedLastUpdated = _conversation.LastUpdated.ToString( "yyyyMMddHHmmss" );
+                var _filePath = Path.Combine( _dataDirectory,
+                    $"Conversation_{_formattedLastUpdated}_{_conversation.ID}.json" );
 
-                File.WriteAllText(filePath, jsonString);
+                var _jsonString = JsonSerializer.Serialize( _conversation, _options );
+                File.WriteAllText( _filePath, _jsonString );
             }
         }
-        public static void SavePromptTemplateAsJson(PromptTemplateManager manager)
+
+        /// <summary>
+        /// Saves the prompt template as json.
+        /// </summary>
+        /// <param name="manager">The manager.</param>
+        public static void SavePromptTemplateAsJson( PromptTemplateManager manager )
         {
-            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            var dataDirectory = Path.Combine(documentsPath, "OpenAIOnWPF", "PromptTemplate");
-
-            Directory.CreateDirectory(dataDirectory);
-
-            foreach (var file in Directory.EnumerateFiles(dataDirectory, "*.json"))
+            var _documentsPath = Environment.GetFolderPath( Environment.SpecialFolder.MyDocuments );
+            var _dataDirectory = Path.Combine( _documentsPath, "OpenAIOnWPF", "PromptTemplate" );
+            Directory.CreateDirectory( _dataDirectory );
+            foreach( var _file in Directory.EnumerateFiles( _dataDirectory, "*.json" ) )
             {
-                File.Delete(file);
+                File.Delete( _file );
             }
 
-            var options = new System.Text.Json.JsonSerializerOptions
+            var _options = new JsonSerializerOptions
             {
                 WriteIndented = true,
-                Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping // 非ASCII文字をエスケープしない
+                Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping 
             };
 
-            foreach (var template in manager.Templates)
+            foreach( var _template in manager.Templates )
             {
-                var formattedLastUpdated = template.LastUpdated.ToString("yyyyMMddHHmmss");
-                var filePath = Path.Combine(dataDirectory, $"PromptTemplate_{template.SortOrder}_{formattedLastUpdated}_{template.ID}.json");
-                var jsonString = System.Text.Json.JsonSerializer.Serialize(template, options);
+                var _formattedLastUpdated = _template.LastUpdated.ToString( "yyyyMMddHHmmss" );
+                var _filePath = Path.Combine( _dataDirectory,
+                    $"PromptTemplate_{_template.SortOrder}_{_formattedLastUpdated}_{_template.ID}.json" );
 
-                File.WriteAllText(filePath, jsonString);
+                var _jsonString = JsonSerializer.Serialize( _template, _options );
+                File.WriteAllText( _filePath, _jsonString );
             }
         }
-        public static PromptTemplateManager LoadPromptTemplateFromJson()
+
+        /// <summary>
+        /// Loads the prompt template from json.
+        /// </summary>
+        /// <returns></returns>
+        public static PromptTemplateManager LoadPromptTemplateFromJson( )
         {
-            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            var dataDirectory = Path.Combine(documentsPath, "OpenAIOnWPF", "PromptTemplate");
-
-            var manager = new PromptTemplateManager();
-            manager.Templates = new ObservableCollection<PromptTemplate>();
-
-            Directory.CreateDirectory(dataDirectory);
-
-            var files = Directory.GetFiles(dataDirectory, "PromptTemplate_*.json");
-
-            foreach (var file in files)
+            var _documentsPath = Environment.GetFolderPath( Environment.SpecialFolder.MyDocuments );
+            var _dataDirectory = Path.Combine( _documentsPath, "OpenAIOnWPF", "PromptTemplate" );
+            var _manager = new PromptTemplateManager( );
+            _manager.Templates = new ObservableCollection<PromptTemplate>( );
+            Directory.CreateDirectory( _dataDirectory );
+            var _files = Directory.GetFiles( _dataDirectory, "PromptTemplate_*.json" );
+            for( var _index = 0; _index < _files.Length; _index++ )
             {
-                var jsonString = File.ReadAllText(file);
-                var templates = System.Text.Json.JsonSerializer.Deserialize<PromptTemplate>(jsonString);
-
-                if (templates != null)
+                var _file = _files[ _index ];
+                var _jsonString = File.ReadAllText( _file );
+                var _templates = JsonSerializer.Deserialize<PromptTemplate>( _jsonString );
+                if( _templates != null )
                 {
-                    manager.Templates.Add(templates);
+                    _manager.Templates.Add( _templates );
                 }
             }
-            return manager;
+
+            return _manager;
         }
     }
 }

@@ -76,7 +76,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
                 return default( string );
             }
         }
@@ -100,7 +100,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
                 return default( DirectoryInfo );
             }
         }
@@ -120,7 +120,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -139,7 +139,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -170,7 +170,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
                 return default( DirectoryInfo );
             }
         }
@@ -200,7 +200,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -220,7 +220,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -240,7 +240,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -309,7 +309,7 @@ namespace Bocifus
             }
             catch( IOException ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
                 return string.Empty;
             }
         }

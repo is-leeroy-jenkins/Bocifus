@@ -12,7 +12,7 @@ namespace Bocifus
         public VersionWindow()
         {
             InitializeComponent();
-            this.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+            WindowStartupLocation = WindowStartupLocation.CenterOwner;
             try
             {
                 VersionText.Text = "Version: " + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
@@ -24,14 +24,14 @@ namespace Bocifus
         }
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Close();
         }
 
-        private void Window_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Escape)
             {
-                this.Close();
+                Close();
             }
         }
         private void VersionText_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

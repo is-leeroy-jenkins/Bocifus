@@ -1,32 +1,50 @@
 ﻿<ResourceDictionary
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:b="clr-namespace:Bocifus"
-        xmlns:local="clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Shared.WPF"
-        xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-        xmlns:sync="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"
-        xmlns:sys="clr-namespace:System;assembly=mscorlib"
-        xmlns:theme="clr-namespace:Syncfusion.Themes.FluentDark.WPF"
-        xmlns:wpf="clr-namespace:Syncfusion.Themes.FluentDark.WPF;assembly=Syncfusion.Themes.FluentDark.WPF">
-        <!--*********************************************** TextBox*****************************************************-->
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:b="clr-namespace:Bocifus"
+    xmlns:local="clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Shared.WPF"
+    xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+    xmlns:sync="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    xmlns:theme="clr-namespace:Syncfusion.Themes.FluentDark.WPF"
+    xmlns:wpf="clr-namespace:Syncfusion.Themes.FluentDark.WPF;assembly=Syncfusion.Themes.FluentDark.WPF">
+    <!--  *********************************************** TextBox*****************************************************  -->
 
-        <Style
-                x:Key="RichTextBoxStyle"
-                TargetType="{x:Type RichTextBox}">
-                <Setter Property="Background" Value="{DynamicResource ControlInteriorBrush}" />
-                <Setter Property="BorderBrush" Value="{DynamicResource BlueBorderBrush}" />
+    <Style
+        x:Key="RichTextBoxStyle"
+        TargetType="{x:Type RichTextBox}">
+        <Setter Property="Background" Value="{DynamicResource ControlInteriorBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource BlueBorderBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource WhiteForeground}" />
+        <Setter Property="SelectionBrush" Value="{DynamicResource SteelBlueBackground}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Padding" Value="10,1,1,1" />
+        <Setter Property="Margin" Value="1" />
+        <Setter Property="FontFamily" Value="Roboto" />
+        <Setter Property="FontSize" Value="12" />
+
+
+        <Style.Triggers>
+
+            <Trigger Property="IsFocused" Value="True">
+                <Setter Property="Background" Value="{DynamicResource BlackBackground}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource SteelBlueBackground}" />
                 <Setter Property="Foreground" Value="{DynamicResource WhiteForeground}" />
-                <Setter Property="SelectionBrush" Value="{DynamicResource SteelBlueBackground}" />
-                <Setter Property="BorderThickness" Value="1" />
-                <Setter Property="HorizontalAlignment" Value="Stretch" />
-                <Setter Property="HorizontalContentAlignment" Value="Left" />
-                <Setter Property="VerticalAlignment" Value="Stretch" />
-                <Setter Property="VerticalContentAlignment" Value="Center" />
-                <Setter Property="Padding" Value="10,1,1,1" />
-                <Setter Property="Margin" Value="1" />
-                <Setter Property="FontFamily" Value="Roboto" />
-                <Setter Property="FontSize" Value="12" />
+            </Trigger>
 
-        </Style>
+            <Trigger Property="IsFocused" Value="False">
+                <Setter Property="Background" Value="{DynamicResource ControlInteriorBrush}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource ControlInteriorBrush}" />
+                <Setter Property="Foreground" Value="{DynamicResource LightBlueBrush}" />
+            </Trigger>
+
+
+        </Style.Triggers>
+
+    </Style>
 
 </ResourceDictionary>

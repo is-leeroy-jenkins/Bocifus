@@ -59,7 +59,7 @@ namespace Bocifus
                 Description = DescriptionTextBox.Text,
                 Prompt = PromptTextBox.Text
             };
-            this.DialogResult = true;
+            DialogResult = true;
         }
         private bool ValidateInput()
         {
@@ -129,7 +129,7 @@ namespace Bocifus
                         // 各アイテムのSortOrderをデクリメント
                         item.SortOrder--;
                     }
-                    this.DialogResult = false;
+                    DialogResult = false;
                 }
             }
         }
@@ -171,7 +171,7 @@ namespace Bocifus
                 mainWindow.UserTextBox.Text = PromptTextBox.Text;
             }
 
-            this.DialogResult = true;
+            DialogResult = true;
         }
     }
 }

@@ -17,7 +17,7 @@
     fw:PointerTracker.Enabled="True"
     AcrylicWindowStyle="NoIcon"
     BorderBrush="{DynamicResource SystemAltHighColor}"
-    KeyDown="Window_KeyDown"
+    KeyDown="OnWindowKeyDown"
     ShowInTaskbar="False"
     WindowStartupLocation="CenterOwner"
     mc:Ignorable="d">
@@ -51,7 +51,7 @@
                                 VerticalContentAlignment="Center"
                                 fw:RevealElement.BorderRadius="2"
                                 Background="Transparent"
-                                Click="CalculateButton_Click"
+                                Click="OnCalculateButtonClick"
                                 FontSize="14"
                                 Style="{StaticResource ButtonRevealStyle}">
                                 <ui:SymbolIcon Symbol="Calculator" />
@@ -74,7 +74,7 @@
                 HorizontalAlignment="Right"
                 VerticalAlignment="Center"
                 fw:RevealElement.BorderRadius="2"
-                Click="AlertSettingButton_Click"
+                Click="OnAlertSettingButtonClick"
                 Content="Set Alert Threshold"
                 FontSize="14"
                 Style="{StaticResource ButtonRevealStyle}" />
@@ -86,7 +86,7 @@
                 HorizontalAlignment="Right"
                 VerticalAlignment="Center"
                 fw:RevealElement.BorderRadius="2"
-                Click="OkButton_Click"
+                Click="OnOkayButtonClick"
                 Content="OK"
                 FontSize="14"
                 Style="{StaticResource ButtonRevealStyle}" />

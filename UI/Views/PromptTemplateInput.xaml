@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
-    xmlns:local="clr-namespace:Bocifus"
+    xmlns:b="clr-namespace:Bocifus"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ui="http://schemas.modernwpf.com/2019"
     Title=""
@@ -12,7 +12,7 @@
     Height="700"
     HorizontalContentAlignment="Center"
     AcrylicWindowStyle="NoIcon"
-    BorderBrush="{DynamicResource SystemAltHighColor}"
+    BorderBrush="{StaticResource BlueBorderBrush}"
     Closing="Window_Closing"
     KeyDown="Window_KeyDown"
     Loaded="Window_Loaded"
@@ -20,18 +20,19 @@
     WindowStartupLocation="CenterOwner"
     mc:Ignorable="d">
 
-    <!--***********************************************************RESOURCES****************************************************-->
+    <!--  ***********************************************************RESOURCES****************************************************  -->
 
     <Window.Resources>
         <Style TargetType="ToolTip">
             <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Margin" Value="10" />
             <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
             <Setter Property="Background" Value="{StaticResource BlackBackground}" />
             <Setter Property="Foreground" Value="{StaticResource LightBlueBrush}" />
         </Style>
     </Window.Resources>
 
-    <!--***********************************************************LAYOUT****************************************************-->
+    <!--  ***********************************************************LAYOUT****************************************************  -->
 
     <Grid Margin="10">
         <Grid.RowDefinitions>
@@ -59,7 +60,7 @@
                     <TextBox.Background>
                         <SolidColorBrush
                             Opacity="0.5"
-                            Color="{DynamicResource SystemChromeLowColor}" />
+                            Color="{StaticResource ControlInteriorColor}" />
                     </TextBox.Background>
                 </TextBox>
                 <TextBlock

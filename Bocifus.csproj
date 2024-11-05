@@ -114,6 +114,7 @@
     <None Remove="Resources\Fonts\JetBrainsMono-Regular.ttf" />
     <None Remove="Resources\Fonts\Monaco.ttf" />
     <None Remove="Resources\Fonts\Roboto-Regular.ttf" />
+    <None Remove="SplashScreen.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -129,6 +130,7 @@
     <PackageReference Include="EPPlus" Version="7.4.0" />
     <PackageReference Include="FluentWPF" Version="0.10.2" />
     <PackageReference Include="Google.Cloud.Translation.V2" Version="3.2.0" />
+    <PackageReference Include="MahApps.Metro" Version="2.4.10" />
     <PackageReference Include="Markdig" Version="0.38.0" />
     <PackageReference Include="MdXaml.Html" Version="1.27.0" />
     <PackageReference Include="MdXaml.Plugins" Version="1.27.0" />
@@ -424,6 +426,10 @@
     <Resource Include="Resources\Fonts\Roboto-Regular.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <SplashScreen Include="SplashScreen.png" />
   </ItemGroup>
 
   <ItemGroup>

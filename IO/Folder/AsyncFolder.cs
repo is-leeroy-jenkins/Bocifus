@@ -97,7 +97,7 @@ namespace Bocifus
                 catch( Exception ex )
                 {
                     _async.SetException( ex );
-                    PathBase.Fail( ex );
+                    Fail( ex );
                     return default( Task<string> );
                 }
             }
@@ -127,7 +127,7 @@ namespace Bocifus
             catch( IOException ex )
             {
                 _async.SetException( ex );
-                PathBase.Fail( ex );
+                Fail( ex );
                 return _async.Task;
             }
         }
@@ -147,7 +147,7 @@ namespace Bocifus
             catch( Exception ex )
             {
                 _async.SetException( ex );
-                PathBase.Fail( ex );
+                Fail( ex );
                 return default( Task<string> );
             }
         }
@@ -182,7 +182,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
                 return default( Task<DirectoryInfo> );
             }
         }
@@ -205,7 +205,7 @@ namespace Bocifus
             catch( Exception ex )
             {
                 _async.SetException( ex );
-                PathBase.Fail( ex );
+                Fail( ex );
                 return default( Task<object> );
             }
 
@@ -234,7 +234,7 @@ namespace Bocifus
             catch( Exception ex )
             {
                 _async.SetException( ex );
-                PathBase.Fail( ex );
+                Fail( ex );
                 return default( Task<object> );
             }
 
@@ -268,7 +268,7 @@ namespace Bocifus
             catch( Exception ex )
             {
                 _async.SetException( ex );
-                PathBase.Fail( ex );
+                Fail( ex );
                 return default( Task<DirectoryInfo> );
             }
         }
@@ -293,7 +293,7 @@ namespace Bocifus
             catch( Exception ex )
             {
                 _async.SetException( ex );
-                PathBase.Fail( ex );
+                Fail( ex );
                 return default( Task<object> );
             }
 
@@ -319,7 +319,7 @@ namespace Bocifus
             catch( Exception ex )
             {
                 _async.SetException( ex );
-                PathBase.Fail( ex );
+                Fail( ex );
                 return default( Task<object> );
             }
 
@@ -345,7 +345,7 @@ namespace Bocifus
             catch( Exception ex )
             {
                 _async.SetException( ex );
-                PathBase.Fail( ex );
+                Fail( ex );
                 return default( Task<object> );
             }
 
@@ -394,7 +394,7 @@ namespace Bocifus
             }
             catch( IOException ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
                 return string.Empty;
             }
         }

@@ -27,8 +27,8 @@ namespace Bocifus
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = Application.Current.MainWindow as MainWindow;
-            mainWindow.UserTextBox.Text = this.UserLargeTextBox.Text;
-            this.DialogResult = true;
+            mainWindow.UserTextBox.Text = UserLargeTextBox.Text;
+            DialogResult = true;
         }
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {

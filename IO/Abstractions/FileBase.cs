@@ -103,7 +103,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -121,7 +121,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -149,7 +149,7 @@ namespace Bocifus
             }
             catch( IOException ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -177,7 +177,7 @@ namespace Bocifus
             }
             catch( IOException ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -195,7 +195,7 @@ namespace Bocifus
             }
             catch( IOException ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -215,7 +215,7 @@ namespace Bocifus
                 }
                 catch( Exception ex )
                 {
-                    PathBase.Fail( ex );
+                    Fail( ex );
                     return default( FileStream );
                 }
             }
@@ -248,7 +248,7 @@ namespace Bocifus
                 }
                 catch( IOException ex )
                 {
-                    PathBase.Fail( ex );
+                    Fail( ex );
                     return default( IList<string> );
                 }
             }
@@ -274,7 +274,7 @@ namespace Bocifus
                 }
                 catch( IOException ex )
                 {
-                    PathBase.Fail( ex );
+                    Fail( ex );
                     return default( byte[ ] );
                 }
             }
@@ -305,7 +305,7 @@ namespace Bocifus
                 }
                 catch( IOException ex )
                 {
-                    PathBase.Fail( ex );
+                    Fail( ex );
                     return string.Empty;
                 }
             }

@@ -117,7 +117,7 @@ namespace Bocifus
             }
             catch( IOException ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
                 return default( IEnumerable<string> );
             }
         }
@@ -154,7 +154,7 @@ namespace Bocifus
                 }
                 catch( IOException ex )
                 {
-                    PathBase.Fail( ex );
+                    Fail( ex );
                     return default( IDictionary<string, FileInfo> );
                 }
             }
@@ -195,7 +195,7 @@ namespace Bocifus
                 }
                 catch( Exception ex )
                 {
-                    PathBase.Fail( ex );
+                    Fail( ex );
                     return default( IDictionary<string, DirectoryInfo> );
                 }
             }
@@ -252,7 +252,7 @@ namespace Bocifus
                 }
                 catch( Exception ex )
                 {
-                    PathBase.Fail( ex );
+                    Fail( ex );
                     return default( IEnumerable<string> );
                 }
             }

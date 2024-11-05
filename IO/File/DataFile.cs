@@ -106,7 +106,7 @@ namespace Bocifus
                 }
                 catch( IOException ex )
                 {
-                    PathBase.Fail( ex );
+                    Fail( ex );
                     return false;
                 }
             }
@@ -129,7 +129,7 @@ namespace Bocifus
             {
                 try
                 {
-                    IEnumerable<string> _enumerable = Directory.GetDirectories( _input, pattern );
+                    IEnumerable<string> _enumerable = GetDirectories( _input, pattern );
                     var _list = new List<FileInfo>( );
                     foreach( var _file in _enumerable )
                     {
@@ -142,7 +142,7 @@ namespace Bocifus
                 }
                 catch( IOException ex )
                 {
-                    PathBase.Fail( ex );
+                    Fail( ex );
                     return default( IEnumerable<FileInfo> );
                 }
             }
@@ -176,7 +176,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
                 return default( FileInfo );
             }
         }
@@ -204,7 +204,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
                 return string.Empty;
             }
         }
@@ -233,7 +233,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
                 _stream?.Close( );
             }
             finally
@@ -284,7 +284,7 @@ namespace Bocifus
             }
             catch( IOException ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
                 return string.Empty;
             }
         }
@@ -317,9 +317,9 @@ namespace Bocifus
             _fileAttributes = File.GetAttributes( input );
             _created = File.GetCreationTime( input );
             _modified = File.GetLastWriteTime( input );
-            _hasParent = !string.IsNullOrEmpty( Directory.GetParent( input )?.Name );
+            _hasParent = !string.IsNullOrEmpty( GetParent( input )?.Name );
             _parentName = Path.GetDirectoryName( input );
-            _parentPath = Directory.GetParent( _fullPath )?.FullName;
+            _parentPath = GetParent( _fullPath )?.FullName;
             _size = File.Open( input, FileMode.Open ).Length;
         }
 
@@ -341,7 +341,7 @@ namespace Bocifus
             _fileAttributes = file.FileAttributes;
             _created = file.Created;
             _modified = file.Modified;
-            _hasParent = !string.IsNullOrEmpty( Directory.GetParent( file.FullPath )?.Name );
+            _hasParent = !string.IsNullOrEmpty( GetParent( file.FullPath )?.Name );
             _parentName = file.ParentName;
             _parentPath = file.ParentPath;
             _size = file.Size;

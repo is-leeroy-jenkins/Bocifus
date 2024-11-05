@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
-    xmlns:local="clr-namespace:Bocifus"
+    xmlns:b="clr-namespace:Bocifus"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ui="http://schemas.modernwpf.com/2019"
     Title="Configuration Setting"
@@ -12,17 +12,18 @@
     fw:PointerTracker.Enabled="True"
     AcrylicWindowStyle="NoIcon"
     BorderBrush="{StaticResource BlueBorderBrush}"
-    KeyDown="Window_KeyDown"
+    KeyDown="OnWindowKeyDown"
     ShowInTaskbar="False"
     SizeToContent="Height"
     WindowStartupLocation="CenterOwner"
     mc:Ignorable="d">
 
-    <!--***********************************************************RESOURCES****************************************************-->
+    <!--  ***********************************************************RESOURCES****************************************************  -->
 
     <Window.Resources>
         <Style TargetType="ToolTip">
             <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Margin" Value="10" />
             <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
             <Setter Property="Background" Value="{StaticResource BlackBackground}" />
             <Setter Property="Foreground" Value="{StaticResource LightBlueBrush}" />
@@ -30,7 +31,7 @@
     </Window.Resources>
 
 
-    <!--***********************************************************LAYOUT****************************************************-->
+    <!--  ***********************************************************LAYOUT****************************************************  -->
 
 
     <Grid>
@@ -59,7 +60,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     fw:RevealElement.BorderRadius="2"
-                    Click="AddButton_Click"
+                    Click="OnAddButtonClick"
                     FontSize="16"
                     Style="{StaticResource ButtonRevealStyle}"
                     ToolTip="Add">
@@ -74,21 +75,21 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     fw:RevealElement.BorderRadius="2"
-                    Click="RemoveButton_Click"
+                    Click="OnRemoveButtonClick"
                     FontSize="16"
                     Style="{StaticResource ButtonRevealStyle}"
                     ToolTip="Remove">
                     <ui:SymbolIcon Symbol="Remove" />
                 </Button>
             </Grid>
-            <ListBox
+            <b:MetroListBox
                 x:Name="ConfigListBox"
                 Grid.Row="0"
                 Width="170"
                 MinWidth="150"
                 Margin="10,10,5,0"
-                KeyDown="ConfigListBox_KeyDown"
-                SelectionChanged="ListView_SelectionChanged" />
+                KeyDown="OnConfigListBoxKeyDown"
+                SelectionChanged="OnListViewSelectionChanged" />
         </Grid>
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
@@ -108,6 +109,7 @@
                 <Label
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
+                    Foreground="{StaticResource LightBlueBrush}"
                     Content="Configuration Name" />
                 <TextBox
                     x:Name="ConfigurationNameTextBox"
@@ -115,7 +117,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     ui:ControlHelper.PlaceholderText=""
-                    KeyDown="TextBox_KeyDown"
+                    KeyDown="OnTextBoxKeyDown"
                     ToolTip="Enter Configuration Name">
                     <TextBox.Background>
                         <SolidColorBrush
@@ -130,26 +132,30 @@
                 MinHeight="340"
                 Margin="15,0,15,0">
                 <Label
+                    Foreground="{StaticResource LightBlueBrush}"
                     Content="APISettings"
                     FontSize="20" />
                 <Label
                     HorizontalAlignment="Left"
+                    Foreground="{StaticResource LightBlueBrush}"
                     Content="Provider" />
                 <ComboBox
                     x:Name="ProviderComboBox"
                     Width="120"
                     HorizontalAlignment="Left"
                     VerticalAlignment="Top"
-                    SelectionChanged="ProviderComboBox_SelectionChanged"
+                    Foreground="{StaticResource LightBlueBrush}"
+                    SelectionChanged="OnProviderComboBoxSelectionChanged"
                     ToolTip="Select Provider">
                     <ComboBoxItem Content="OpenAI" />
                     <ComboBoxItem Content="Azure" />
                 </ComboBox>
                 <Label
                     HorizontalAlignment="Left"
+                    Foreground="{StaticResource LightBlueBrush}"
                     Content="API Key" />
                 <PasswordBox
-                    x:Name="APIKeyPasswordbox"
+                    x:Name="ApiKeyPasswordbox"
                     MinWidth="200"
                     VerticalAlignment="Top"
                     PasswordChar="*"
@@ -162,15 +168,18 @@
                 </PasswordBox>
                 <Label
                     HorizontalAlignment="Left"
+                    Foreground="{StaticResource LightBlueBrush}"
                     Content="Model" />
                 <ComboBox
                     x:Name="ModelComboBox"
                     MinWidth="140"
                     HorizontalAlignment="Left"
                     VerticalAlignment="Top"
+                    Foreground="{StaticResource LightBlueBrush}"
                     ToolTip="Select Model" />
                 <Label
                     HorizontalAlignment="Left"
+                    Foreground="{StaticResource LightBlueBrush}"
                     Content="Deployment-ID" />
                 <TextBox
                     x:Name="DeploymentIdTextbox"
@@ -185,6 +194,7 @@
                 </TextBox>
                 <Label
                     HorizontalAlignment="Left"
+                    Foreground="{StaticResource LightBlueBrush}"
                     Content="BaseDomain" />
                 <TextBox
                     x:Name="BaseDomainTextbox"
@@ -199,6 +209,7 @@
                 </TextBox>
                 <Label
                     HorizontalAlignment="Left"
+                    Foreground="{StaticResource LightBlueBrush}"
                     Content="API-Version (optional)" />
                 <TextBox
                     x:Name="ApiVersionTextbox"
@@ -213,10 +224,12 @@
                 </TextBox>
                 <Label
                     HorizontalAlignment="Left"
+                    Foreground="{StaticResource LightBlueBrush}"
                     Content="Vision" />
                 <ui:ToggleSwitch
                     x:Name="VisionToggleSwitch"
                     HorizontalAlignment="Left"
+                    Foreground="{StaticResource LightBlueBrush}"
                     OffContent="Disabled"
                     OnContent="Enabled" />
             </StackPanel>
@@ -227,9 +240,11 @@
                 Margin="15,0,15,0">
                 <Label
                     Content="Parameter"
+                    Foreground="{StaticResource LightBlueBrush}"
                     FontSize="20" />
                 <Label
                     HorizontalAlignment="Left"
+                    Foreground="{StaticResource LightBlueBrush}"
                     Content="Temperature" />
                 <ui:NumberBox
                     x:Name="TemperatureNumberbox"
@@ -240,6 +255,7 @@
                     SpinButtonPlacementMode="Inline" />
                 <Label
                     HorizontalAlignment="Left"
+                    Foreground="{StaticResource LightBlueBrush}"
                     Content="Max Tokens" />
                 <ui:NumberBox
                     x:Name="MaxTokensNumberbox"
@@ -269,7 +285,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Top"
                     fw:RevealElement.BorderRadius="2"
-                    Click="SaveButton_Click"
+                    Click="OnSaveButtonClick"
                     Content="Save"
                     FontSize="16"
                     Style="{StaticResource ButtonRevealStyle}"
@@ -295,7 +311,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Top"
                     fw:RevealElement.BorderRadius="2"
-                    Click="CloseButton_Click"
+                    Click="OnCloseButtonClick"
                     Content="Close"
                     FontSize="16"
                     Style="{StaticResource ButtonRevealStyle}"
@@ -312,7 +328,7 @@
                     VerticalAlignment="Top"
                     VerticalContentAlignment="Center"
                     fw:RevealElement.BorderRadius="2"
-                    Click="ExportButton_Click"
+                    Click="OnExportButtonClick"
                     FontSize="16"
                     Style="{StaticResource ButtonRevealStyle}"
                     ToolTip="Outputs Model as a JSON file.">
@@ -330,7 +346,7 @@
                     VerticalAlignment="Top"
                     VerticalContentAlignment="Center"
                     fw:RevealElement.BorderRadius="2"
-                    Click="ImportButton_Click"
+                    Click="OnImportButtonClick"
                     FontSize="16"
                     Style="{StaticResource ButtonRevealStyle}"
                     ToolTip="Select a JSON file to import.">

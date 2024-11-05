@@ -26,7 +26,7 @@ namespace Bocifus
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
             NewTitle = TitleTextBox.Text;
-            this.DialogResult = true;
+            DialogResult = true;
         }
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {

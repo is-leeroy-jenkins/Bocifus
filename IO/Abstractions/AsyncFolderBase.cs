@@ -113,7 +113,7 @@ namespace Bocifus
             }
             catch( IOException ex )
             {
-                PathBase.Fail( ex );
+                Fail( ex );
                 return default( Task<IList<string>> );
             }
         }
@@ -138,7 +138,7 @@ namespace Bocifus
             catch( IOException ex )
             {
                 _async.SetException( ex );
-                PathBase.Fail( ex );
+                Fail( ex );
                 return default( Task<DirectoryInfo> );
             }
         }
@@ -174,7 +174,7 @@ namespace Bocifus
                 }
                 catch( IOException ex )
                 {
-                    PathBase.Fail( ex );
+                    Fail( ex );
                     return default( Task<IDictionary<string, FileInfo>> );
                 }
             }
@@ -215,7 +215,7 @@ namespace Bocifus
                 }
                 catch( Exception ex )
                 {
-                    PathBase.Fail( ex );
+                    Fail( ex );
                     return default( Task<IDictionary<string, DirectoryInfo>> );
                 }
             }
@@ -275,7 +275,7 @@ namespace Bocifus
                 catch( Exception ex )
                 {
                     _async.SetException( ex );
-                    PathBase.Fail( ex );
+                    Fail( ex );
                     return default( Task<IList<string>> );
                 }
             }

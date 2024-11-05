@@ -1,4 +1,43 @@
-﻿
+﻿// ******************************************************************************************
+//     Assembly:                Bocifus
+//     Author:                  Terry D. Eppler
+//     Created:                 11-05-2024
+// 
+//     Last Modified By:        Terry D. Eppler
+//     Last Modified On:        11-05-2024
+// ******************************************************************************************
+// <copyright file="OpenAIApiService .cs" company="Terry D. Eppler">
+//   Bocifus is an open source windows (wpf) application that interacts with OpenAI GPT-3.5 Turbo API
+//   based on NET6 and written in C-Sharp.
+// 
+//    Copyright ©  2020-2024 Terry D. Eppler
+// 
+//    Permission is hereby granted, free of charge, to any person obtaining a copy
+//    of this software and associated documentation files (the “Software”),
+//    to deal in the Software without restriction,
+//    including without limitation the rights to use,
+//    copy, modify, merge, publish, distribute, sublicense,
+//    and/or sell copies of the Software,
+//    and to permit persons to whom the Software is furnished to do so,
+//    subject to the following conditions:
+// 
+//    The above copyright notice and this permission notice shall be included in all
+//    copies or substantial portions of the Software.
+// 
+//    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+//    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//    FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+//    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+//    DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+//    ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+//    DEALINGS IN THE SOFTWARE.
+// 
+//    You can contact me at:  terryeppler@gmail.com or eppler.terry@epa.gov
+// </copyright>
+// <summary>
+//   OpenAIApiService .cs
+// </summary>
+// ******************************************************************************************
 
 namespace Bocifus
 {
@@ -9,12 +48,13 @@ namespace Bocifus
     using OpenAI.Managers;
     using OpenAI.ObjectModels.RequestModels;
     using OpenAI.Tokenizer.GPT3;
-    using Bocifus.Model;
+    using Model;
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using System.Data;
     using System.Diagnostics;
+    using System.Diagnostics.CodeAnalysis;
     using System.IO;
     using System.Linq;
     using System.Threading;
@@ -22,126 +62,218 @@ namespace Bocifus
     using System.Windows;
     using System.Windows.Controls;
     using System.Windows.Threading;
-    using static Bocifus.UtilityFunctions;
+    using OpenAI.ObjectModels.ResponseModels;
+    using Properties;
+    using static UtilityFunctions;
+    using MessageBox = ModernWpf.MessageBox;
 
+    /// <inheritdoc />
+    /// <summary>
+    /// </summary>
+    /// <seealso cref="T:SourceChord.FluentWPF.AcrylicWindow" />
+    /// <seealso cref="T:System.IDisposable" />
+    /// <seealso cref="T:System.Windows.Markup.IComponentConnector" />
+    /// <seealso cref="T:System.Windows.Markup.IStyleConnector" />
+    [ SuppressMessage( "ReSharper", "PossibleNullReferenceException" ) ]
+    [ SuppressMessage( "ReSharper", "BadParensLineBreaks" ) ]
+    [ SuppressMessage( "ReSharper", "AssignNullToNotNullAttribute" ) ]
+    [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
     public partial class MainWindow
     {
-        bool resultFlg = true;
-        private bool isProcessing = false;
-        private void DummySub() { }
-        private void FlushWindowsMessageQueue()
+        /// <summary>
+        /// The result FLG
+        /// </summary>
+        private bool _resultFlg = true;
+
+        /// <summary>
+        /// The is processing
+        /// </summary>
+        private bool _isProcessing;
+
+        /// <summary>
+        /// Dummies the sub.
+        /// </summary>
+        private void DummySub( ) { }
+
+        /// <summary>
+        /// Flushes the windows message queue.
+        /// </summary>
+        private void FlushWindowsMessageQueue( )
         {
-            System.Windows.Application.Current.Dispatcher.Invoke(new Action(DummySub), DispatcherPriority.Background, new Object[] { });
+            Application.Current.Dispatcher.Invoke( new Action( DummySub ),
+                DispatcherPriority.Background, new Object[ ]
+                {
+                } );
         }
-        string userMessage = "";
-        string responseText = "";
-        byte[] binaryImage = null;
-        byte[] clipboardImage = null;
-        string generatedTitle = "";
-        bool titleGenerating = false;
-        bool alertFlg = false;
-        int dailyTotal = 0;
-        string todayString = null;
-        Guid newId;
-        List<ChatMessage> tempMessages = new List<ChatMessage>();
-        public static class ForTokenCalc
+
+        /// <summary>
+        /// The user message
+        /// </summary>
+        private string _userMessage = "";
+
+        /// <summary>
+        /// The response text
+        /// </summary>
+        private string _responseText = "";
+
+        /// <summary>
+        /// The binary image
+        /// </summary>
+        private byte[ ] _binaryImage;
+
+        /// <summary>
+        /// The clipboard image
+        /// </summary>
+        private byte[ ] _clipboardImage;
+
+        /// <summary>
+        /// The generated title
+        /// </summary>
+        private string _generatedTitle = "";
+
+        /// <summary>
+        /// The title generating
+        /// </summary>
+        private bool _titleGenerating;
+
+        /// <summary>
+        /// The alert FLG
+        /// </summary>
+        private bool _alertFlg;
+
+        /// <summary>
+        /// The daily total
+        /// </summary>
+        private int _dailyTotal;
+
+        /// <summary>
+        /// The today string
+        /// </summary>
+        private string _todayString;
+
+        /// <summary>
+        /// The new identifier
+        /// </summary>
+        private Guid _newId;
+
+        /// <summary>
+        /// The temporary messages
+        /// </summary>
+        private List<ChatMessage> _tempMessages = new List<ChatMessage>( );
+
+        /// <summary>
+        /// Processes the open ai asynchronous.
+        /// </summary>
+        /// <param name="prompt">The prompt.</param>
+        /// <exception cref="Exception">
+        /// ConfigurationName is not set.
+        /// or
+        /// </exception>
+        private async Task ProcessOpenAiAsync( string prompt )
         {
-            public static string oldConversationsToken { get; set; } = "";
-            public static string systemPromptToken { get; set; } = "";
-            public static string userPromptToken { get; set; } = "";
-            public static string responseToken { get; set; } = "";
-        }
-        private async Task ProcessOpenAIAsync(string prompt)
-        {
-            Debug.Print("===== Start processing =====");
-            if (isProcessing)
+            Debug.Print( "===== Start processing =====" );
+            if( _isProcessing )
             {
-                ModernWpf.MessageBox.Show("Processing is in progress.");
+                MessageBox.Show( "Processing is in progress." );
                 return;
             }
-            isProcessing = true;
-            resultFlg = true;
-            Prepare();
-            MessageScrollViewer.ScrollToBottom();
 
+            _isProcessing = true;
+            _resultFlg = true;
+            Prepare( );
+            MessageScrollViewer.ScrollToBottom( );
             try
             {
-                if (!RetrieveConfiguration())
+                if( !RetrieveConfiguration( ) )
                 {
-                    throw new Exception("ConfigurationName is not set.");
+                    throw new Exception( "ConfigurationName is not set." );
                 }
 
-                binaryImage = null;
-                if (ImageFilePath != null)
+                _binaryImage = null;
+                if( _imageFilePath != null )
                 {
-                    binaryImage = await File.ReadAllBytesAsync(ImageFilePath);
+                    _binaryImage = await File.ReadAllBytesAsync( _imageFilePath );
                 }
-                else if (clipboardImage != null)
+                else if( _clipboardImage != null )
                 {
-                    binaryImage = clipboardImage;
+                    _binaryImage = _clipboardImage;
                 }
 
-                var openAiService = CreateOpenAiService(AppSettings.ProviderSetting
-                                                        , AppSettings.ModelSetting
-                                                        , AppSettings.ApiKeySetting
-                                                        , AppSettings.BaseDomainSetting
-                                                        , AppSettings.DeploymentIdSetting
-                                                        , AppSettings.ApiVersionSetting);
-                userMessage = prompt.Trim();
-                var messages = PrepareMessages(prompt, binaryImage);
-                tempMessages = messages;
+                var _openAiService = CreateOpenAiService( AppSettings.ProviderSetting,
+                    AppSettings.ModelSetting, AppSettings.ApiKeySetting,
+                    AppSettings.BaseDomainSetting, AppSettings.DeploymentIdSetting,
+                    AppSettings.ApiVersionSetting );
 
-                generatedTitle = "";
-                if (AppSettings.UseTitleGenerationSetting && ConversationListBox.SelectedIndex == -1)
+                _userMessage = prompt.Trim( );
+                var _messages = PrepareMessages( prompt, _binaryImage );
+                _tempMessages = _messages;
+                _generatedTitle = "";
+                if( AppSettings.UseTitleGenerationSetting
+                    && ConversationListBox.SelectedIndex == -1 )
                 {
-                    _ = Task.Run(async () =>
+                    _ = Task.Run( async ( ) =>
                     {
-                        var prompt = AppSettings.TitleGenerationPromptSetting
-                                        .Replace("{Language}", AppSettings.TitleLanguageSetting)
-                                        .Replace("{Prompt}", userMessage);
-                        Debug.Print("----- Title generation Prompt -----");
-                        Debug.Print(prompt);
-                        Debug.Print("-----------------------------------");
-                        await GenerateTitleAsync(prompt);
-                    });
+                        var _prompt = AppSettings.TitleGenerationPromptSetting
+                            .Replace( "{Language}", AppSettings.TitleLanguageSetting )
+                            .Replace( "{Prompt}", _userMessage );
+
+                        Debug.Print( "----- Title generation Prompt -----" );
+                        Debug.Print( _prompt );
+                        Debug.Print( "-----------------------------------" );
+                        await GenerateTitleAsync( _prompt );
+                    } );
                 }
 
-                if (1 == 2)
+                if( 1 == 2 )
                 {
-                    var completionResult = await openAiService.ChatCompletion.CreateCompletion(new ChatCompletionCreateRequest()
-                    {
-                        Messages = messages,
-                        Temperature = AppSettings.TemperatureSetting,
-                        MaxTokens = AppSettings.MaxTokensSetting
-                    });
-                    HandleCompletionResult(completionResult);
+                    var _completionResult = await _openAiService.ChatCompletion.CreateCompletion(
+                        new ChatCompletionCreateRequest( )
+                        {
+                            Messages = _messages,
+                            Temperature = AppSettings.TemperatureSetting,
+                            MaxTokens = AppSettings.MaxTokensSetting
+                        } );
+
+                    HandleCompletionResult( _completionResult );
                 }
                 else
                 {
-                    var completionResult = openAiService.ChatCompletion.CreateCompletionAsStream(new ChatCompletionCreateRequest
+                    var _request = new ChatCompletionCreateRequest
                     {
-                        Messages = messages,
+                        Messages = _messages,
                         Temperature = AppSettings.TemperatureSetting,
                         MaxTokens = AppSettings.MaxTokensSetting
-                    });
-                    _cancellationTokenSource = new CancellationTokenSource();
-                    Task.Run(async () => { await HandleCompletionResultStream(completionResult,_cancellationTokenSource.Token); });
+                    };
+
+                    var _completionResult = 
+                        _openAiService.ChatCompletion.CreateCompletionAsStream( _request );
+
+                    _cancellationTokenSource = new CancellationTokenSource( );
+                    Task.Run( async ( ) =>
+                    {
+                        await HandleCompletionResultStream( _completionResult,
+                            _cancellationTokenSource.Token );
+                    } );
                 }
             }
-            catch (Exception ex)
+            catch( Exception ex )
             {
-                Reset();
-                ModernWpf.MessageBox.Show(ex.ToString());
-                throw new Exception($"{ex.Message}");
+                Reset( );
+                MessageBox.Show( ex.ToString( ) );
+                throw new Exception( $"{ex.Message}" );
             }
             finally
             {
-                Debug.Print("===== End of process =====");
+                Debug.Print( "===== End of process =====" );
             }
         }
-        private void Prepare()
+
+        /// <summary>
+        /// Prepares this instance.
+        /// </summary>
+        private void Prepare( )
         {
-            _stopWatch.Start();
+            _stopWatch.Start( );
             TimeLabel.Content = "";
             TokensLabel.Content = "";
             ProgressRing.IsActive = true;
@@ -150,21 +282,23 @@ namespace Bocifus
             NewChatButton.IsEnabled = false;
             ConversationHistoryButton.IsEnabled = false;
             ConversationHistoryClearButton.IsEnabled = false;
-
-            responseText = "";
+            _responseText = "";
             ExecButton.IsEnabled = false;
             TranslateButton.IsEnabled = false;
-
-            ForTokenCalc.oldConversationsToken = "";
-            ForTokenCalc.systemPromptToken = "";
-            ForTokenCalc.userPromptToken = "";
-            ForTokenCalc.responseToken = "";
+            ForTokenCalc.OldConversationsToken = "";
+            ForTokenCalc.SystemPromptToken = "";
+            ForTokenCalc.UserPromptToken = "";
+            ForTokenCalc.ResponseToken = "";
         }
-        private void Reset()
+
+        /// <summary>
+        /// Resets this instance.
+        /// </summary>
+        private void Reset( )
         {
-            _stopWatch.Stop();
-            TimeLabel.Content = $"{_stopWatch.ElapsedMilliseconds.ToString("N0")} ms";
-            _stopWatch.Reset();
+            _stopWatch.Stop( );
+            TimeLabel.Content = $"{_stopWatch.ElapsedMilliseconds.ToString( "N0" )} ms";
+            _stopWatch.Reset( );
             ExecButton.IsEnabled = true;
             TranslateButton.IsEnabled = true;
             ProgressRing.IsActive = false;
@@ -172,39 +306,50 @@ namespace Bocifus
             NewChatButton.IsEnabled = true;
             ConversationHistoryButton.IsEnabled = true;
             ConversationHistoryClearButton.IsEnabled = true;
-            isProcessing = false;
-            ImageFilePath = null;
-            clipboardImage = null;
+            _isProcessing = false;
+            _imageFilePath = null;
+            _clipboardImage = null;
             ImageFilePathLabel.Content = "";
         }
-        private bool RetrieveConfiguration()
+
+        /// <summary>
+        /// Retrieves the configuration.
+        /// </summary>
+        /// <returns></returns>
+        private bool RetrieveConfiguration( )
         {
-            var configName = ConfigurationComboBox.Text;
-            var rows = AppSettings.ConfigDataTable.Select("ConfigurationName = '" + configName + "'");
-            if (rows.Length > 0)
+            var _configName = ConfigurationComboBox.Text;
+            var _rows =
+                AppSettings.ConfigDataTable.Select( "ConfigurationName = '" + _configName + "'" );
+
+            if( _rows.Length > 0 )
             {
-                AppSettings.ProviderSetting = rows[0]["Provider"].ToString();
-                AppSettings.ModelSetting = rows[0]["Model"].ToString();
-                AppSettings.ApiKeySetting = rows[0]["APIKey"].ToString();
-                AppSettings.DeploymentIdSetting = rows[0]["DeploymentId"].ToString();
-                AppSettings.BaseDomainSetting = rows[0]["BaseDomain"].ToString();
-                AppSettings.ApiVersionSetting = rows[0]["ApiVersion"].ToString();
-                if (string.IsNullOrEmpty(rows[0]["Temperature"].ToString()) == false)
+                AppSettings.ProviderSetting = _rows[ 0 ][ "Provider" ].ToString( );
+                AppSettings.ModelSetting = _rows[ 0 ][ "Model" ].ToString( );
+                AppSettings.ApiKeySetting = _rows[ 0 ][ "APIKey" ].ToString( );
+                AppSettings.DeploymentIdSetting = _rows[ 0 ][ "DeploymentId" ].ToString( );
+                AppSettings.BaseDomainSetting = _rows[ 0 ][ "BaseDomain" ].ToString( );
+                AppSettings.ApiVersionSetting = _rows[ 0 ][ "ApiVersion" ].ToString( );
+                if( string.IsNullOrEmpty( _rows[ 0 ][ "Temperature" ].ToString( ) ) == false )
                 {
-                    AppSettings.TemperatureSetting = float.Parse(rows[0]["Temperature"].ToString());
+                    AppSettings.TemperatureSetting =
+                        float.Parse( _rows[ 0 ][ "Temperature" ].ToString( ) );
                 }
                 else
                 {
                     AppSettings.TemperatureSetting = 1;
                 }
-                if (string.IsNullOrEmpty(rows[0]["MaxTokens"].ToString()) == false)
+
+                if( string.IsNullOrEmpty( _rows[ 0 ][ "MaxTokens" ].ToString( ) ) == false )
                 {
-                    AppSettings.MaxTokensSetting = int.Parse(rows[0]["MaxTokens"].ToString());
+                    AppSettings.MaxTokensSetting =
+                        int.Parse( _rows[ 0 ][ "MaxTokens" ].ToString( ) );
                 }
                 else
                 {
                     AppSettings.MaxTokensSetting = 2048;
                 }
+
                 return true;
             }
             else
@@ -212,564 +357,682 @@ namespace Bocifus
                 return false;
             }
         }
-        private OpenAIService CreateOpenAiService(string providerSetting, string model, string targetApiKey, string targetBaseDomain, string targetDeploymentId, string? targetApiVersion)
-        {
-            var targetType = new ProviderType();
-            var tempTargetApiKey = "";
-            string? tempTargetBaseDomain = null;
-            string? tempTargetDeploymentId = null;
-            string? tempTargetApiVersion = null;
 
-            switch (providerSetting)
+        /// <summary>
+        /// Creates the open ai service.
+        /// </summary>
+        /// <param name="providerSetting">The provider setting.</param>
+        /// <param name="model">The model.</param>
+        /// <param name="targetApiKey">The target API key.</param>
+        /// <param name="targetBaseDomain">The target base domain.</param>
+        /// <param name="targetDeploymentId">The target deployment identifier.</param>
+        /// <param name="targetApiVersion">The target API version.</param>
+        /// <returns></returns>
+        private OpenAIService CreateOpenAiService( string providerSetting, string model,
+            string targetApiKey, string targetBaseDomain, string targetDeploymentId,
+            string targetApiVersion )
+        {
+            var _targetType = new ProviderType( );
+            var _tempTargetApiKey = "";
+            string _tempTargetBaseDomain = null;
+            string _tempTargetDeploymentId = null;
+            string _tempTargetApiVersion = null;
+            switch( providerSetting )
             {
                 case "OpenAI":
-                    targetType = ProviderType.OpenAi;
-                    tempTargetApiKey = targetApiKey;
+                {
+                    _targetType = ProviderType.OpenAi;
+                    _tempTargetApiKey = targetApiKey;
                     break;
+                }
                 case "Azure":
-                    targetType = ProviderType.Azure;
-                    tempTargetApiKey = targetApiKey;
-                    tempTargetBaseDomain = targetBaseDomain;
-                    tempTargetDeploymentId = targetDeploymentId;
-                    tempTargetApiVersion = string.IsNullOrEmpty(targetApiVersion) ? null : targetApiVersion;
+                {
+                    _targetType = ProviderType.Azure;
+                    _tempTargetApiKey = targetApiKey;
+                    _tempTargetBaseDomain = targetBaseDomain;
+                    _tempTargetDeploymentId = targetDeploymentId;
+                    _tempTargetApiVersion = string.IsNullOrEmpty( targetApiVersion )
+                        ? null
+                        : targetApiVersion;
+
                     break;
+                }
             }
 
-            var openAiService = new OpenAIService(new OpenAiOptions()
+            var _openAiService = new OpenAIService( new OpenAiOptions( )
             {
-                ProviderType = targetType,
-                ApiKey = tempTargetApiKey,
-                BaseDomain = tempTargetBaseDomain,
-                DeploymentId = tempTargetDeploymentId,
-                ApiVersion = tempTargetApiVersion,
-            });
+                ProviderType = _targetType,
+                ApiKey = _tempTargetApiKey,
+                BaseDomain = _tempTargetBaseDomain,
+                DeploymentId = _tempTargetDeploymentId,
+                ApiVersion = _tempTargetApiVersion
+            } );
 
-            openAiService.SetDefaultModelId(model);
-
-            return openAiService;
+            _openAiService.SetDefaultModelId( model );
+            return _openAiService;
         }
 
-        private List<ChatMessage> PrepareMessages(string userMessage, byte[]? image)
+        /// <summary>
+        /// Prepares the messages.
+        /// </summary>
+        /// <param name="userMessage">The user message.</param>
+        /// <param name="image">The image.</param>
+        /// <returns></returns>
+        private List<ChatMessage> PrepareMessages( string userMessage, byte[ ] image )
         {
-            if (AppSettings.IsSystemPromptColumnVisible == true)
+            if( AppSettings.IsSystemPromptColumnVisible )
             {
                 _selectInstructionContent = SystemPromptContentsTextBox.Text;
             }
-            else if (!String.IsNullOrEmpty(AppSettings.InstructionSetting))
+            else if( !String.IsNullOrEmpty( AppSettings.InstructionSetting ) )
             {
-                var instructionList = AppSettings.InstructionListSetting?.Cast<string>().Where((s, i) => i % 2 == 0).ToArray();
-                var index = Array.IndexOf(instructionList, AppSettings.InstructionSetting);
-                _selectInstructionContent = AppSettings.InstructionListSetting[index, 1];
+                var _instructionList = AppSettings.InstructionListSetting?.Cast<string>( )
+                    .Where( ( s, i ) => i % 2 == 0 ).ToArray( );
+
+                var _index = Array.IndexOf( _instructionList, AppSettings.InstructionSetting );
+                _selectInstructionContent = AppSettings.InstructionListSetting[ _index, 1 ];
             }
             else
             {
                 _selectInstructionContent = "";
             }
 
-            Debug.Print("----- Parameter -----");
-            Debug.Print($"Temperature:{AppSettings.TemperatureSetting}");
-            Debug.Print("----- Contents of this message sent -----");
-            Debug.Print(_selectInstructionContent);
-            Debug.Print(userMessage);
-
-            var messages = new List<ChatMessage>();
-            if (AppSettings.UseConversationHistoryFlg == true)
+            Debug.Print( "----- Parameter -----" );
+            Debug.Print( $"Temperature:{AppSettings.TemperatureSetting}" );
+            Debug.Print( "----- Contents of this message sent -----" );
+            Debug.Print( _selectInstructionContent );
+            Debug.Print( userMessage );
+            var _messages = new List<ChatMessage>( );
+            if( AppSettings.UseConversationHistoryFlg )
             {
-                var selectedItems = ConversationListBox.SelectedItems;
-                if (selectedItems.Count > 0)
+                var _selectedItems = ConversationListBox.SelectedItems;
+                if( _selectedItems.Count > 0 )
                 {
-                    var selectedConversationHistory = selectedItems.Cast<ConversationHistory>().ToList();
+                    var _selectedConversationHistory =
+                        _selectedItems.Cast<ConversationHistory>( ).ToList( );
 
-                    foreach (var conversationHistory in selectedConversationHistory)
+                    foreach( var _conversationHistory in _selectedConversationHistory )
                     {
-                        if (conversationHistory.Messages.Count > AppSettings.ConversationHistoryCountSetting)
+                        if( _conversationHistory.Messages.Count
+                            > AppSettings.ConversationHistoryCountSetting )
                         {
-                            var tempList = conversationHistory.Messages.ToList();
-                            tempList = tempList.Skip(tempList.Count - AppSettings.ConversationHistoryCountSetting).ToList();
-                            messages.AddRange(tempList);
-                            foreach (var token in tempList)
+                            var _tempList = _conversationHistory.Messages.ToList( );
+                            _tempList = _tempList
+                                .Skip( _tempList.Count
+                                    - AppSettings.ConversationHistoryCountSetting ).ToList( );
+
+                            _messages.AddRange( _tempList );
+                            foreach( var _token in _tempList )
                             {
-                                ForTokenCalc.oldConversationsToken += token.Content;
+                                ForTokenCalc.OldConversationsToken += _token.Content;
                             }
                         }
                         else
                         {
-                            foreach (var token in conversationHistory.Messages)
+                            foreach( var _token in _conversationHistory.Messages )
                             {
-                                ForTokenCalc.oldConversationsToken += token.Content;
+                                ForTokenCalc.OldConversationsToken += _token.Content;
                             }
-                            messages.AddRange(conversationHistory.Messages);
+
+                            _messages.AddRange( _conversationHistory.Messages );
                         }
                     }
                 }
             }
-            messages.Add(ChatMessage.FromSystem(_selectInstructionContent));
-            if (image == null)
-            {
-                messages.Add(ChatMessage.FromUser(userMessage));
-            }
-            else
-            {
-                messages.Add(ChatMessage.FromUser(
-                    new List<MessageContent>
-                    {
-                        MessageContent.TextContent(userMessage),
-                        MessageContent.ImageBinaryContent(image, "png")
-                    }
-                ));
-            }
-            ForTokenCalc.systemPromptToken = _selectInstructionContent;
-            ForTokenCalc.userPromptToken = userMessage;
 
-            return messages;
-        }
-        private void HandleCompletionResult(OpenAI.ObjectModels.ResponseModels.ChatCompletionCreateResponse? completionResult)
-        {
-            if (completionResult.Successful)
+            _messages.Add( ChatMessage.FromSystem( _selectInstructionContent ) );
+            if( image == null )
             {
-                responseText = completionResult.Choices.First().Message.Content;
-                CaluculateTokenUsage();
-                if (AppSettings.NoticeFlgSetting)
+                _messages.Add( ChatMessage.FromUser( userMessage ) );
+            }
+            else
+            {
+                _messages.Add( ChatMessage.FromUser( new List<MessageContent>
                 {
-                    new ToastContentBuilder()
-                        .AddText("️AI responded back.")
-                        .Show();
+                    MessageContent.TextContent( userMessage ),
+                    MessageContent.ImageBinaryContent( image, "png" )
+                } ) );
+            }
+
+            ForTokenCalc.SystemPromptToken = _selectInstructionContent;
+            ForTokenCalc.UserPromptToken = userMessage;
+            return _messages;
+        }
+
+        /// <summary>
+        /// Handles the completion result.
+        /// </summary>
+        /// <param name="completionResult">The completion result.</param>
+        /// <exception cref="Exception">Unknown Error</exception>
+        private void HandleCompletionResult( ChatCompletionCreateResponse completionResult )
+        {
+            if( completionResult.Successful )
+            {
+                _responseText = completionResult.Choices.First( ).Message.Content;
+                CaluculateTokenUsage( );
+                if( AppSettings.NoticeFlgSetting )
+                {
+                    new ToastContentBuilder( ).AddText( "️AI responded back." ).Show( );
                 }
             }
             else
             {
-                if (completionResult.Error == null)
+                if( completionResult.Error == null )
                 {
-                    throw new Exception("Unknown Error");
+                    throw new Exception( "Unknown Error" );
                 }
-                if (AppSettings.NoticeFlgSetting)
+
+                if( AppSettings.NoticeFlgSetting )
                 {
-                    new ToastContentBuilder()
-                        .AddText("️An error has occurred.")
-                        .Show();
+                    new ToastContentBuilder( ).AddText( "️An error has occurred." ).Show( );
                 }
-                resultFlg = false;
-                ModernWpf.MessageBox.Show($"{completionResult.Error.Code}: {completionResult.Error.Message}");
+
+                _resultFlg = false;
+                MessageBox.Show(
+                    $"{completionResult.Error.Code}: {completionResult.Error.Message}" );
             }
-            Reset();
+
+            Reset( );
         }
-        private async Task HandleCompletionResultStream(IAsyncEnumerable<OpenAI.ObjectModels.ResponseModels.ChatCompletionCreateResponse>? completionResult, CancellationToken cancellationToken)
+
+        /// <summary>
+        /// Handles the completion result stream.
+        /// </summary>
+        /// <param name="result">The completion result.</param>
+        /// <param name="cancelToken">The cancellation token.</param>
+        /// <exception cref="Exception">Unknown Error</exception>
+        private async Task HandleCompletionResultStream(
+            IAsyncEnumerable<ChatCompletionCreateResponse> result,
+            CancellationToken cancelToken )
         {
-            MarkdownScrollViewer markdownScrollViewer = null;
-            await Dispatcher.InvokeAsync(() =>
+            MarkdownScrollViewer _markdownScrollViewer = null;
+            await Dispatcher.InvokeAsync( ( ) =>
             {
                 try
                 {
-
-                    var foundButtons = new List<System.Windows.Controls.Button>();
-                    foreach (var child in GetAllChildren(MessagesPanel))
+                    var _foundButtons = new List<Button>( );
+                    foreach( var _child in GetAllChildren( MessagesPanel ) )
                     {
-                        if (child is System.Windows.Controls.Button button && (string)button.Tag == "RegenerateButton")
+                        if( _child is Button _button
+                            && ( string )_button.Tag == "RegenerateButton" )
                         {
-                            button.Visibility = Visibility.Collapsed;
+                            _button.Visibility = Visibility.Collapsed;
                         }
                     }
 
-                    var messageElement = CreateMessageElement(userMessage, isUser: true, isLastMessage: false);
-                    MessagesPanel.Children.Add(messageElement);
-
-                    if (binaryImage != null)
+                    var _messageElement = CreateMessageElement( _userMessage, true, false );
+                    MessagesPanel.Children.Add( _messageElement );
+                    if( _binaryImage != null )
                     {
-                        var imageString = Convert.ToBase64String(binaryImage);
-                        var messageElementImage = CreateMessageElement(userMessage, isUser: false, isLastMessage: false, imageString);
-                        MessagesPanel.Children.Add(messageElementImage);
+                        var _imageString = Convert.ToBase64String( _binaryImage );
+                        var _messageElementImage =
+                            CreateMessageElement( _userMessage, false, false, _imageString );
+
+                        MessagesPanel.Children.Add( _messageElementImage );
                     }
 
-                    FrameworkElement assistantMessageElement = null;
-
-                    assistantMessageElement = CreateMessageElement("", isUser: false, isLastMessage: true);  
-                    MessagesPanel.Children.Add(assistantMessageElement);
-
-                    var assistantMessageGrid = assistantMessageElement as Grid;
-                    if (assistantMessageGrid != null)
+                    FrameworkElement _assistantMessageElement = null;
+                    _assistantMessageElement = CreateMessageElement( "", false, true );
+                    MessagesPanel.Children.Add( _assistantMessageElement );
+                    var _assistantMessageGrid = _assistantMessageElement as Grid;
+                    if( _assistantMessageGrid != null )
                     {
-                        foreach (var child in assistantMessageGrid.Children)
+                        for( var _index = 0; _index < _assistantMessageGrid.Children.Count; _index++ )
                         {
-                            if (child is MarkdownScrollViewer)
+                            var _child = _assistantMessageGrid.Children[ _index ];
+                            if( _child is MarkdownScrollViewer )
                             {
-                                markdownScrollViewer = child as MarkdownScrollViewer;
-                                markdownScrollViewer.Document.LineHeight = 1.0;
+                                _markdownScrollViewer = _child as MarkdownScrollViewer;
+                                _markdownScrollViewer.Document.LineHeight = 1.0;
                                 break;
                             }
                         }
                     }
                 }
-                catch (Exception ex)
+                catch( Exception ex )
                 {
-                    throw new Exception($"{ex.Message}");
+                    throw new Exception( $"{ex.Message}" );
                 }
-            });
+            } );
 
-            var resultText = "";
+            var _resultText = "";
             try
             {
-                await foreach (var completion in completionResult.WithCancellation(cancellationToken))
+                await foreach( var _completion in result.WithCancellation( cancelToken ) )
                 {
-                    if (completion.Successful)
+                    if( _completion.Successful )
                     {
-                        var firstChoice = completion.Choices.FirstOrDefault();
-                        if (firstChoice == null)
+                        var _firstChoice = _completion.Choices.FirstOrDefault( );
+                        if( _firstChoice == null )
                         {
                             continue;
                         }
-                        resultText = firstChoice.Message.Content;
-                        await Dispatcher.InvokeAsync(() =>
+
+                        _resultText = _firstChoice.Message.Content;
+                        await Dispatcher.InvokeAsync( ( ) =>
                         {
-                            responseText += $"{resultText}";
-                            markdownScrollViewer.Markdown += resultText;
-                            markdownScrollViewer.Document.FontSize = Properties.Settings.Default.FontSize;
-                            FlushWindowsMessageQueue();  
-                        });
+                            _responseText += $"{_resultText}";
+                            _markdownScrollViewer.Markdown += _resultText;
+                            _markdownScrollViewer.Document.FontSize = Settings.Default.FontSize;
+                            FlushWindowsMessageQueue( );
+                        } );
                     }
                     else
                     {
-                        if (completion.Error == null)
+                        if( _completion.Error == null )
                         {
-                            throw new Exception("Unknown Error");
+                            throw new Exception( "Unknown Error" );
                         }
-                        resultText = $"{completion.Error.Code}: {completion.Error.Message}";
-                        ModernWpf.MessageBox.Show($"{completion.Error.Code}: {completion.Error.Message}");
-                        resultFlg = false;
+
+                        _resultText = $"{_completion.Error.Code}: {_completion.Error.Message}";
+                        MessageBox.Show( $"{_completion.Error.Code}: {_completion.Error.Message}" );
+                        _resultFlg = false;
                     }
                 }
             }
-            catch (OperationCanceledException) { }
+            catch( OperationCanceledException ) { }
 
-            Debug.Print("----- Conversation History -----");
-            tempMessages.Add(ChatMessage.FromAssistant(responseText));
-            foreach (var item in tempMessages)
+            Debug.Print( "----- Conversation History -----" );
+            _tempMessages.Add( ChatMessage.FromAssistant( _responseText ) );
+            foreach( var _item in _tempMessages )
             {
-                Debug.Print($"{item.Role}: {item.Content}");
+                Debug.Print( $"{_item.Role}: {_item.Content}" );
             }
 
-            await Dispatcher.InvokeAsync(() =>
+            await Dispatcher.InvokeAsync( ( ) =>
             {
-                ForTokenCalc.responseToken = responseText;
-
-                if (resultFlg)
+                ForTokenCalc.ResponseToken = _responseText;
+                if( _resultFlg )
                 {
-                    CaluculateTokenUsage();
-                }
-                if (AppSettings.NoticeFlgSetting && resultFlg)
-                {
-                    new ToastContentBuilder()
-                        .AddText("️AI responded back.")
-                        .Show();
+                    CaluculateTokenUsage( );
                 }
 
-                if (alertFlg && Properties.Settings.Default.LastAlertDate != todayString)
+                if( AppSettings.NoticeFlgSetting && _resultFlg )
                 {
-                    var result = ModernWpf.MessageBox.Show(
-                        $"Daily token usage of {dailyTotal} exceeds the threshold of {Properties.Settings.Default.dailyTokenThreshold}! Do not show alerts for today again?",
-                        "Token Usage Alert",
-                    MessageBoxButton.YesNo, MessageBoxImage.Question);
-                    if (result == MessageBoxResult.Yes)
+                    new ToastContentBuilder( ).AddText( "️AI responded back." ).Show( );
+                }
+
+                if( _alertFlg && Settings.Default.LastAlertDate != _todayString )
+                {
+                    var _result = MessageBox.Show(
+                        $"Daily token usage of {_dailyTotal} exceeds the threshold of {Settings.Default.dailyTokenThreshold}! Do not show alerts for today again?",
+                        "Token Usage Alert", MessageBoxButton.YesNo, MessageBoxImage.Question );
+
+                    if( _result == MessageBoxResult.Yes )
                     {
-                        Properties.Settings.Default.LastAlertDate = todayString;
-                        Properties.Settings.Default.Save();
+                        Settings.Default.LastAlertDate = _todayString;
+                        Settings.Default.Save( );
                     }
                 }
 
-                Reset();
-            });
+                Reset( );
+            } );
         }
-        private void CaluculateTokenUsage()
+
+        /// <summary>
+        /// Caluculates the token usage.
+        /// </summary>
+        private void CaluculateTokenUsage( )
         {
-            var conversationResultTokens = TokenizerGpt3.Encode(ForTokenCalc.oldConversationsToken);
-            var instructionTokens = TokenizerGpt3.Encode(ForTokenCalc.systemPromptToken);
-            var userTokens = TokenizerGpt3.Encode(ForTokenCalc.userPromptToken);
-            var responseTokens = TokenizerGpt3.Encode(ForTokenCalc.responseToken);
-            var inputTokens = conversationResultTokens.Count() + instructionTokens.Count() + userTokens.Count();
-            var outputTokens = responseTokens.Count();
-            var totalTokens = inputTokens + outputTokens;
-            var tooltip = "";
-            tooltip += $"Conversation History Tokens : {conversationResultTokens.Count().ToString("N0")}\r\n";
-            tooltip += $"System Prompt Tokens : {instructionTokens.Count().ToString("N0")}\r\n";
-            tooltip += $"User Message Tokens : {userTokens.Count().ToString("N0")}\r\n";
-            tooltip += $"AI Response Tokens : {responseTokens.Count().ToString("N0")}\r\n";
-            tooltip += $"Total Tokens : {totalTokens.ToString("N0")}";
-            TokensLabel.Content = totalTokens.ToString("N0");
-            TokensLabel.ToolTip = tooltip;
+            var _conversationResultTokens =
+                TokenizerGpt3.Encode( ForTokenCalc.OldConversationsToken );
 
-            if (ConversationListBox.SelectedIndex != -1)
+            var _instructionTokens = TokenizerGpt3.Encode( ForTokenCalc.SystemPromptToken );
+            var _userTokens = TokenizerGpt3.Encode( ForTokenCalc.UserPromptToken );
+            var _responseTokens = TokenizerGpt3.Encode( ForTokenCalc.ResponseToken );
+            var _inputTokens = _conversationResultTokens.Count( ) + _instructionTokens.Count( )
+                + _userTokens.Count( );
+
+            var _outputTokens = _responseTokens.Count( );
+            var _totalTokens = _inputTokens + _outputTokens;
+            var _tooltip = "";
+            _tooltip +=
+                $"Conversation History Tokens : {_conversationResultTokens.Count( ).ToString( "N0" )}\r\n";
+
+            _tooltip +=
+                $"System Prompt Tokens : {_instructionTokens.Count( ).ToString( "N0" )}\r\n";
+
+            _tooltip += $"User Message Tokens : {_userTokens.Count( ).ToString( "N0" )}\r\n";
+            _tooltip += $"AI Response Tokens : {_responseTokens.Count( ).ToString( "N0" )}\r\n";
+            _tooltip += $"Total Tokens : {_totalTokens.ToString( "N0" )}";
+            TokensLabel.Content = _totalTokens.ToString( "N0" );
+            TokensLabel.ToolTip = _tooltip;
+            if( ConversationListBox.SelectedIndex != -1 )
             {
-                var selectedConversation = (ConversationHistory)ConversationListBox.SelectedItem;
-                var selectedId = selectedConversation.ID;
+                var _selectedConversation = ( ConversationHistory )ConversationListBox.SelectedItem;
+                var _selectedId = _selectedConversation.ID;
+                var _conversation =
+                    AppSettings.ConversationManager.Histories.FirstOrDefault( c =>
+                        c.ID == _selectedId );
 
-                var conversation = AppSettings.ConversationManager.Histories.FirstOrDefault(c => c.ID == selectedId);
-                if (conversation != null)
+                if( _conversation != null )
                 {
-                    if (binaryImage == null)
+                    if( _binaryImage == null )
                     {
-                        conversation.Messages.Add(ChatMessage.FromUser(userMessage));
+                        _conversation.Messages.Add( ChatMessage.FromUser( _userMessage ) );
                     }
                     else
                     {
-                        conversation.Messages.Add(ChatMessage.FromUser(
-                            new List<MessageContent>
-                            {
-                                MessageContent.TextContent(userMessage),
-                                MessageContent.ImageBinaryContent(binaryImage, "png")
-                            }
-                        ));
+                        _conversation.Messages.Add( ChatMessage.FromUser( new List<MessageContent>
+                        {
+                            MessageContent.TextContent( _userMessage ),
+                            MessageContent.ImageBinaryContent( _binaryImage, "png" )
+                        } ) );
                     }
-                    conversation.Messages.Add(ChatMessage.FromAssistant(responseText));
+
+                    _conversation.Messages.Add( ChatMessage.FromAssistant( _responseText ) );
                 }
-                RefreshConversationList();  
+
+                RefreshConversationList( );
             }
-            if (ConversationListBox.SelectedIndex == -1)
+
+            if( ConversationListBox.SelectedIndex == -1 )
             {
-                var cleanedUserMessage = userMessage.Replace("\n", "").Replace("\r", "");
-                var title = "";
-                if (AppSettings.UseTitleGenerationSetting)
+                var _cleanedUserMessage = _userMessage.Replace( "\n", "" ).Replace( "\r", "" );
+                var _title = "";
+                if( AppSettings.UseTitleGenerationSetting )
                 {
-                    if (!string.IsNullOrEmpty(generatedTitle))
+                    if( !string.IsNullOrEmpty( _generatedTitle ) )
                     {
-                        title = generatedTitle;
+                        _title = _generatedTitle;
                     }
                     else
                     {
-                        title = "generating...";
-                        titleGenerating = true;
+                        _title = "generating...";
+                        _titleGenerating = true;
                     }
                 }
                 else
                 {
-                    title = cleanedUserMessage.Length > 20 ? cleanedUserMessage.Substring(0, 20) + "..." : cleanedUserMessage;
+                    _title = _cleanedUserMessage.Length > 20
+                        ? _cleanedUserMessage.Substring( 0, 20 ) + "..."
+                        : _cleanedUserMessage;
                 }
 
-                ConversationHistory newHistory;
-                if (binaryImage == null)
+                ConversationHistory _newHistory;
+                if( _binaryImage == null )
                 {
-                    newHistory = new ConversationHistory()
+                    _newHistory = new ConversationHistory( )
                     {
-                        Title = title,
-                        Messages = new ObservableCollection<ChatMessage>()
+                        Title = _title,
+                        Messages = new ObservableCollection<ChatMessage>( )
                         {
-                            ChatMessage.FromUser(userMessage),
-                            ChatMessage.FromAssistant(responseText)
+                            ChatMessage.FromUser( _userMessage ),
+                            ChatMessage.FromAssistant( _responseText )
                         }
                     };
                 }
                 else
                 {
-                    newHistory = new ConversationHistory()
+                    _newHistory = new ConversationHistory( )
                     {
-                        Title = title,
-                        Messages = new ObservableCollection<ChatMessage>()
+                        Title = _title,
+                        Messages = new ObservableCollection<ChatMessage>( )
                         {
-                            ChatMessage.FromUser(
-                            new List<MessageContent>
-                                {
-                                    MessageContent.TextContent(userMessage),
-                                    MessageContent.ImageBinaryContent(binaryImage, "png")
-                                }
-                            ),
-                            ChatMessage.FromAssistant(responseText)
+                            ChatMessage.FromUser( new List<MessageContent>
+                            {
+                                MessageContent.TextContent( _userMessage ),
+                                MessageContent.ImageBinaryContent( _binaryImage, "png" )
+                            } ),
+                            ChatMessage.FromAssistant( _responseText )
                         }
                     };
                 }
-                AppSettings.ConversationManager.Histories.Add(newHistory);
 
-                if (titleGenerating)
+                AppSettings.ConversationManager.Histories.Add( _newHistory );
+                if( _titleGenerating )
                 {
-                    newId = newHistory.ID;
+                    _newId = _newHistory.ID;
                 }
 
-                RefreshConversationList();  
+                RefreshConversationList( );
                 ConversationListBox.SelectedIndex = 0;
             }
 
-            var model = AppSettings.ModelSetting != "" ? AppSettings.ModelSetting : AppSettings.DeploymentIdSetting;
-            AddTokenUsage(totalTokens, inputTokens, outputTokens, model, AppSettings.ProviderSetting);
+            var _model = AppSettings.ModelSetting != ""
+                ? AppSettings.ModelSetting
+                : AppSettings.DeploymentIdSetting;
+
+            AddTokenUsage( _totalTokens, _inputTokens, _outputTokens, _model,
+                AppSettings.ProviderSetting );
         }
-        private void AddTokenUsage(int totalToken, int inputTokens, int outputTokens, string model, string provider)
+
+        /// <summary>
+        /// Adds the token usage.
+        /// </summary>
+        /// <param name="totalToken">The total token.</param>
+        /// <param name="inputTokens">The input tokens.</param>
+        /// <param name="outputTokens">The output tokens.</param>
+        /// <param name="model">The model.</param>
+        /// <param name="provider">The provider.</param>
+        private void AddTokenUsage( int totalToken, int inputTokens, int outputTokens,
+            string model, string provider )
         {
-            var rowCount = AppSettings.TokenUsageSetting.GetLength(0);
-            var colCount = AppSettings.TokenUsageSetting.GetLength(1);
-            if (AppSettings.TokenUsageSetting == null || rowCount == 0 || colCount == 0)
+            var _rowCount = AppSettings.TokenUsageSetting.GetLength( 0 );
+            var _colCount = AppSettings.TokenUsageSetting.GetLength( 1 );
+            if( AppSettings.TokenUsageSetting == null
+                || _rowCount == 0
+                || _colCount == 0 )
             {
-                var temp = new string[0, 5];
-                AppSettings.TokenUsageSetting = temp;
+                var _temp = new string[ 0, 5 ];
+                AppSettings.TokenUsageSetting = _temp;
             }
 
-            var oldTokenUsage = AppSettings.TokenUsageSetting;  
-            var rows = oldTokenUsage.GetLength(0);  
-            var cols = oldTokenUsage.GetLength(1);  
-            var newTokenUsage = new string[rows, cols + 2];
-            for (var i = 0; i < rows; i++)
+            var _oldTokenUsage = AppSettings.TokenUsageSetting;
+            var _rows = _oldTokenUsage.GetLength( 0 );
+            var _cols = _oldTokenUsage.GetLength( 1 );
+            var _newTokenUsage = new string[ _rows, _cols + 2 ];
+            for( var _i = 0; _i < _rows; _i++ )
             {
-                for (var j = 0; j < cols; j++)
+                for( var _j = 0; _j < _cols; _j++ )
                 {
-                    newTokenUsage[i, j] = oldTokenUsage[i, j];
+                    _newTokenUsage[ _i, _j ] = _oldTokenUsage[ _i, _j ];
                 }
-                newTokenUsage[i, cols] = "0";
-                newTokenUsage[i, cols + 1] = "0";
+
+                _newTokenUsage[ _i, _cols ] = "0";
+                _newTokenUsage[ _i, _cols + 1 ] = "0";
             }
 
-            todayString = DateTime.Today.ToString("yyyy/MM/dd");
-            var tokenUsage = AppSettings.TokenUsageSetting;
-            var tokenUsageCount = tokenUsage.GetLength(0);
-            dailyTotal = 0;
-
-            var todayTokenUsageExist = false;
-            for (var i = 0; i < tokenUsageCount; i++)
+            _todayString = DateTime.Today.ToString( "yyyy/MM/dd" );
+            var _tokenUsage = AppSettings.TokenUsageSetting;
+            var _tokenUsageCount = _tokenUsage.GetLength( 0 );
+            _dailyTotal = 0;
+            var _todayTokenUsageExist = false;
+            for( var _i = 0; _i < _tokenUsageCount; _i++ )
             {
-                if (tokenUsage[i, 0] == todayString)
+                if( _tokenUsage[ _i, 0 ] == _todayString )
                 {
-                    dailyTotal += int.Parse(tokenUsage[i, 3]);
-                    dailyTotal += totalToken;
-                    if (tokenUsage[i, 1] == provider && tokenUsage[i, 2] == model)
+                    _dailyTotal += int.Parse( _tokenUsage[ _i, 3 ] );
+                    _dailyTotal += totalToken;
+                    if( _tokenUsage[ _i, 1 ] == provider
+                        && _tokenUsage[ _i, 2 ] == model )
                     {
                         {
-                            tokenUsage[i, 3] = (int.Parse(tokenUsage[i, 3]) + totalToken).ToString();
-                            tokenUsage[i, 4] = (int.Parse(tokenUsage[i, 4]) + inputTokens).ToString();
-                            tokenUsage[i, 5] = (int.Parse(tokenUsage[i, 5]) + outputTokens).ToString();
-                            todayTokenUsageExist = true;
+                            _tokenUsage[ _i, 3 ] =
+                                ( int.Parse( _tokenUsage[ _i, 3 ] ) + totalToken ).ToString( );
+
+                            _tokenUsage[ _i, 4 ] =
+                                ( int.Parse( _tokenUsage[ _i, 4 ] ) + inputTokens ).ToString( );
+
+                            _tokenUsage[ _i, 5 ] =
+                                ( int.Parse( _tokenUsage[ _i, 5 ] ) + outputTokens ).ToString( );
+
+                            _todayTokenUsageExist = true;
                         }
                     }
                 }
             }
-            if (!todayTokenUsageExist)
-            {
-                tokenUsage = ResizeArray(tokenUsage, tokenUsageCount + 1, 6);
-                tokenUsage[tokenUsageCount, 0] = todayString;
-                tokenUsage[tokenUsageCount, 1] = provider;
-                tokenUsage[tokenUsageCount, 2] = model;
-                tokenUsage[tokenUsageCount, 3] = totalToken.ToString();
-                tokenUsage[tokenUsageCount, 4] = inputTokens.ToString();
-                tokenUsage[tokenUsageCount, 5] = outputTokens.ToString();
-                dailyTotal += totalToken;
-            }
-            AppSettings.TokenUsageSetting = tokenUsage;
-            Properties.Settings.Default.TokenUsage = SerializeArray(AppSettings.TokenUsageSetting);
-            Properties.Settings.Default.Save();
 
-            alertFlg = false;
-            if (dailyTotal > Properties.Settings.Default.dailyTokenThreshold)
+            if( !_todayTokenUsageExist )
             {
-                alertFlg = true;
+                _tokenUsage = ResizeArray( _tokenUsage, _tokenUsageCount + 1, 6 );
+                _tokenUsage[ _tokenUsageCount, 0 ] = _todayString;
+                _tokenUsage[ _tokenUsageCount, 1 ] = provider;
+                _tokenUsage[ _tokenUsageCount, 2 ] = model;
+                _tokenUsage[ _tokenUsageCount, 3 ] = totalToken.ToString( );
+                _tokenUsage[ _tokenUsageCount, 4 ] = inputTokens.ToString( );
+                _tokenUsage[ _tokenUsageCount, 5 ] = outputTokens.ToString( );
+                _dailyTotal += totalToken;
+            }
+
+            AppSettings.TokenUsageSetting = _tokenUsage;
+            Settings.Default.TokenUsage = SerializeArray( AppSettings.TokenUsageSetting );
+            Settings.Default.Save( );
+            _alertFlg = false;
+            if( _dailyTotal > Settings.Default.dailyTokenThreshold )
+            {
+                _alertFlg = true;
             }
         }
-        public static string[,] ResizeArray(string[,] originalArray, int newRowCount, int newColCount)
+
+        /// <summary>
+        /// Resizes the array.
+        /// </summary>
+        /// <param name="originalArray">The original array.</param>
+        /// <param name="newRowCount">The new row count.</param>
+        /// <param name="newColCount">The new col count.</param>
+        /// <returns></returns>
+        public static string[ , ] ResizeArray( string[ , ] originalArray, int newRowCount,
+            int newColCount )
         {
-            var originalRowCount = originalArray.GetLength(0);
-            var originalColCount = originalArray.GetLength(1);
-
-            var newArray = new string[newRowCount, newColCount];
-
-            for (var i = 0; i < Math.Min(originalRowCount, newRowCount); i++)
+            var _originalRowCount = originalArray.GetLength( 0 );
+            var _originalColCount = originalArray.GetLength( 1 );
+            var _newArray = new string[ newRowCount, newColCount ];
+            for( var _i = 0; _i < Math.Min( _originalRowCount, newRowCount ); _i++ )
             {
-                for (var j = 0; j < Math.Min(originalColCount, newColCount); j++)
+                for( var _j = 0; _j < Math.Min( _originalColCount, newColCount ); _j++ )
                 {
-                    newArray[i, j] = originalArray[i, j];
+                    _newArray[ _i, _j ] = originalArray[ _i, _j ];
                 }
             }
 
-            return newArray;
+            return _newArray;
         }
-        public async Task GenerateTitleAsync(string userMessage)
+
+        /// <summary>
+        /// Generates the title asynchronous.
+        /// </summary>
+        /// <param name="userMessage">The user message.</param>
+        public async Task GenerateTitleAsync( string userMessage )
         {
             try
             {
-                Debug.WriteLine($"GenerateTitleAsync started on thread ID: {Thread.CurrentThread.ManagedThreadId}");
+                Debug.WriteLine(
+                    $"GenerateTitleAsync started on thread ID: {Thread.CurrentThread.ManagedThreadId}" );
 
-                var configName = AppSettings.ModelForTitleGenerationSetting;
-                var rows = AppSettings.ConfigDataTable.Select("ConfigurationName = '" + configName + "'");
-                var ProviderSetting = rows[0]["Provider"].ToString();
-                var ModelSetting = rows[0]["Model"].ToString();
-                var ApiKeySetting = rows[0]["APIKey"].ToString();
-                var DeploymentIdSetting = rows[0]["DeploymentId"].ToString();
-                var BaseDomainSetting = rows[0]["BaseDomain"].ToString();
-                var ApiVersionSetting = rows[0]["ApiVersion"].ToString();
-                float TemperatureSetting;
-                int MaxTokensSetting;
-                if (string.IsNullOrEmpty(rows[0]["Temperature"].ToString()) == false)
+                var _configName = AppSettings.ModelForTitleGenerationSetting;
+                var _rows =
+                    AppSettings.ConfigDataTable.Select(
+                        "ConfigurationName = '" + _configName + "'" );
+
+                var _providerSetting = _rows[ 0 ][ "Provider" ].ToString( );
+                var _modelSetting = _rows[ 0 ][ "Model" ].ToString( );
+                var _apiKeySetting = _rows[ 0 ][ "APIKey" ].ToString( );
+                var _deploymentIdSetting = _rows[ 0 ][ "DeploymentId" ].ToString( );
+                var _baseDomainSetting = _rows[ 0 ][ "BaseDomain" ].ToString( );
+                var _apiVersionSetting = _rows[ 0 ][ "ApiVersion" ].ToString( );
+                float _temperatureSetting;
+                int _maxTokensSetting;
+                if( string.IsNullOrEmpty( _rows[ 0 ][ "Temperature" ].ToString( ) ) == false )
                 {
-                    TemperatureSetting = float.Parse(rows[0]["Temperature"].ToString());
+                    _temperatureSetting = float.Parse( _rows[ 0 ][ "Temperature" ].ToString( ) );
                 }
                 else
                 {
-                    TemperatureSetting = 1;
+                    _temperatureSetting = 1;
                 }
-                if (string.IsNullOrEmpty(rows[0]["MaxTokens"].ToString()) == false)
+
+                if( string.IsNullOrEmpty( _rows[ 0 ][ "MaxTokens" ].ToString( ) ) == false )
                 {
-                    MaxTokensSetting = int.Parse(rows[0]["MaxTokens"].ToString());
+                    _maxTokensSetting = int.Parse( _rows[ 0 ][ "MaxTokens" ].ToString( ) );
                 }
                 else
                 {
-                    MaxTokensSetting = 2048;
+                    _maxTokensSetting = 2048;
                 }
 
-                var openAiService = CreateOpenAiService(ProviderSetting
-                                                        , ModelSetting
-                                                        , ApiKeySetting
-                                                        , BaseDomainSetting
-                                                        , DeploymentIdSetting
-                                                        , ApiVersionSetting);
+                var _openAiService = CreateOpenAiService( _providerSetting, _modelSetting,
+                    _apiKeySetting, _baseDomainSetting, _deploymentIdSetting, _apiVersionSetting );
 
-                var messages = new List<ChatMessage>();
-                messages.Add(ChatMessage.FromUser(userMessage));
-
-                var completionResult = await openAiService.ChatCompletion.CreateCompletion(new ChatCompletionCreateRequest()
+                var _messages = new List<ChatMessage>
                 {
-                    Messages = messages,
-                    Temperature = TemperatureSetting,
-                    MaxTokens = MaxTokensSetting
-                });
-                HandleCompletionResultForTitle(completionResult);
+                    ChatMessage.FromUser( userMessage )
+                };
 
-                var model = ModelSetting != "" ? ModelSetting : DeploymentIdSetting;
-                var userMessageTokens = TokenizerGpt3.Encode(userMessage);
-                var responseTokens = TokenizerGpt3.Encode(generatedTitle);
-                var totalTokens = userMessageTokens.Count() + responseTokens.Count();
-                AddTokenUsage(totalTokens, userMessageTokens.Count(), responseTokens.Count(), model, ProviderSetting);
-
-                if (titleGenerating)
-                {
-                    var historyToUpdate = AppSettings.ConversationManager.Histories.FirstOrDefault(history => history.ID == newId);
-                    if (historyToUpdate != null)
+                var _completionResult = await _openAiService.ChatCompletion.CreateCompletion(
+                    new ChatCompletionCreateRequest( )
                     {
-                        historyToUpdate.Title = generatedTitle;
+                        Messages = _messages,
+                        Temperature = _temperatureSetting,
+                        MaxTokens = _maxTokensSetting
+                    } );
+
+                HandleCompletionResultForTitle( _completionResult );
+                var _model = _modelSetting != ""
+                    ? _modelSetting
+                    : _deploymentIdSetting;
+
+                var _userMessageTokens = TokenizerGpt3.Encode( userMessage );
+                var _responseTokens = TokenizerGpt3.Encode( _generatedTitle );
+                var _totalTokens = _userMessageTokens.Count( ) + _responseTokens.Count( );
+                AddTokenUsage( _totalTokens, _userMessageTokens.Count( ), _responseTokens.Count( ),
+                    _model, _providerSetting );
+
+                if( _titleGenerating )
+                {
+                    var _historyToUpdate =
+                        AppSettings.ConversationManager.Histories.FirstOrDefault( history =>
+                            history.ID == _newId );
+
+                    if( _historyToUpdate != null )
+                    {
+                        _historyToUpdate.Title = _generatedTitle;
                     }
-                    await Dispatcher.InvokeAsync(() =>
+
+                    await Dispatcher.InvokeAsync( ( ) =>
                     {
-                        RefreshConversationList();
-                    });
+                        RefreshConversationList( );
+                    } );
                 }
             }
-            catch (Exception ex)
+            catch( Exception ex )
             {
-                await Dispatcher.InvokeAsync(() =>
+                await Dispatcher.InvokeAsync( ( ) =>
                 {
-                    ModernWpf.MessageBox.Show(ex.Message);
-                });
+                    MessageBox.Show( ex.Message );
+                } );
             }
         }
-        private void HandleCompletionResultForTitle(OpenAI.ObjectModels.ResponseModels.ChatCompletionCreateResponse? completionResult)
+
+        /// <summary>
+        /// Handles the completion result for title.
+        /// </summary>
+        /// <param name="completionResult">The completion result.</param>
+        /// <exception cref="Exception">
+        /// Unknown Error
+        /// or
+        /// Title generation Error: {completionResult.Error.Message}
+        /// </exception>
+        private void HandleCompletionResultForTitle( ChatCompletionCreateResponse completionResult )
         {
-            if (completionResult.Successful)
+            if( completionResult.Successful )
             {
-                generatedTitle = completionResult.Choices.First().Message.Content;
-                Debug.Print("===== Generated Title =====");
-                Debug.Print(generatedTitle);
-                Debug.Print("===========================");
+                _generatedTitle = completionResult.Choices.First( ).Message.Content;
+                Debug.Print( "===== Generated Title =====" );
+                Debug.Print( _generatedTitle );
+                Debug.Print( "===========================" );
             }
             else
             {
-                generatedTitle = "Error!";
-                if (completionResult.Error == null)
+                _generatedTitle = "Error!";
+                if( completionResult.Error == null )
                 {
-                    throw new Exception("Unknown Error");
+                    throw new Exception( "Unknown Error" );
                 }
-                else if (completionResult.Error.Message != null)
+                else if( completionResult.Error.Message != null )
                 {
-                    throw new Exception($"Title generation Error: {completionResult.Error.Message}");
+                    throw new Exception(
+                        $"Title generation Error: {completionResult.Error.Message}" );
                 }
             }
         }

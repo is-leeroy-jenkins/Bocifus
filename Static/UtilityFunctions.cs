@@ -1,4 +1,43 @@
-﻿using System;
+﻿// ******************************************************************************************
+//     Assembly:                Bocifus
+//     Author:                  Terry D. Eppler
+//     Created:                 11-05-2024
+// 
+//     Last Modified By:        Terry D. Eppler
+//     Last Modified On:        11-05-2024
+// ******************************************************************************************
+// <copyright file="UtilityFunctions.cs" company="Terry D. Eppler">
+//   Bocifus is an open source windows (wpf) application that interacts with OpenAI GPT-3.5 Turbo API
+//   based on NET6 and written in C-Sharp.
+// 
+//    Copyright ©  2020-2024 Terry D. Eppler
+// 
+//    Permission is hereby granted, free of charge, to any person obtaining a copy
+//    of this software and associated documentation files (the “Software”),
+//    to deal in the Software without restriction,
+//    including without limitation the rights to use,
+//    copy, modify, merge, publish, distribute, sublicense,
+//    and/or sell copies of the Software,
+//    and to permit persons to whom the Software is furnished to do so,
+//    subject to the following conditions:
+// 
+//    The above copyright notice and this permission notice shall be included in all
+//    copies or substantial portions of the Software.
+// 
+//    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+//    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//    FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+//    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+//    DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+//    ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+//    DEALINGS IN THE SOFTWARE.
+// 
+//    You can contact me at:  terryeppler@gmail.com or eppler.terry@epa.gov
+// </copyright>
+// <summary>
+//   UtilityFunctions.cs
+// </summary>
+// ******************************************************************************************
 
 namespace Bocifus
 {
@@ -22,47 +61,68 @@ namespace Bocifus
     using ModernWpf.Controls;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
+    using System;
+    using Properties;
+    using MessageBox = ModernWpf.MessageBox;
 
-    internal class UtilityFunctions
+    /// <summary>
+    /// 
+    /// </summary>
+    public class UtilityFunctions
     {
-        public static string[] SetupInstructionComboBox()
+        /// <summary>
+        /// Setups the instruction ComboBox.
+        /// </summary>
+        /// <returns></returns>
+        public static string[ ] SetupInstructionComboBox( )
         {
-            var instructionList = AppSettings.InstructionListSetting?.Cast<string>().Where((s, i) => i % 2 == 0).ToArray();
-            if (instructionList != null)
+            var _instructionList = AppSettings.InstructionListSetting?.Cast<string>( )
+                ?.Where( ( s, i ) => i % 2 == 0 )?.ToArray( );
+
+            if( _instructionList != null )
             {
-                Array.Resize(ref instructionList, instructionList.Length + 1);
-                instructionList[instructionList.Length - 1] = "";
-                return instructionList;
+                Array.Resize( ref _instructionList, _instructionList.Length + 1 );
+                _instructionList[ _instructionList.Length - 1 ] = "";
+                return _instructionList;
             }
+
             return null;
         }
-        public static void InitializeConfigDataTable()
+
+        /// <summary>
+        /// Initializes the configuration data table.
+        /// </summary>
+        public static void InitializeConfigDataTable( )
         {
-            if (AppSettings.ConfigDataTable == null)
+            if( AppSettings.ConfigDataTable == null )
             {
-                var ds = new DataSet();
-                AppSettings.ConfigDataTable = new DataTable();
-                AppSettings.ConfigDataTable.Columns.Add("ConfigurationName", typeof(string));
-                AppSettings.ConfigDataTable.Columns.Add("Provider", typeof(string));
-                AppSettings.ConfigDataTable.Columns.Add("Model", typeof(string));
-                AppSettings.ConfigDataTable.Columns.Add("APIKey", typeof(string));
-                AppSettings.ConfigDataTable.Columns.Add("DeploymentId", typeof(string));
-                AppSettings.ConfigDataTable.Columns.Add("BaseDomain", typeof(string));
-                AppSettings.ConfigDataTable.Columns.Add("ApiVersion", typeof(string));
-                AppSettings.ConfigDataTable.Columns.Add("Temperature", typeof(string));
-                AppSettings.ConfigDataTable.Columns.Add("MaxTokens", typeof(string));
-                AppSettings.ConfigDataTable.Columns.Add("Vision", typeof(bool));
-                ds.Tables.Add(AppSettings.ConfigDataTable);
+                var _ds = new DataSet( );
+                AppSettings.ConfigDataTable = new DataTable( );
+                AppSettings.ConfigDataTable.Columns.Add( "ConfigurationName", typeof( string ) );
+                AppSettings.ConfigDataTable.Columns.Add( "Provider", typeof( string ) );
+                AppSettings.ConfigDataTable.Columns.Add( "Model", typeof( string ) );
+                AppSettings.ConfigDataTable.Columns.Add( "APIKey", typeof( string ) );
+                AppSettings.ConfigDataTable.Columns.Add( "DeploymentId", typeof( string ) );
+                AppSettings.ConfigDataTable.Columns.Add( "BaseDomain", typeof( string ) );
+                AppSettings.ConfigDataTable.Columns.Add( "ApiVersion", typeof( string ) );
+                AppSettings.ConfigDataTable.Columns.Add( "Temperature", typeof( string ) );
+                AppSettings.ConfigDataTable.Columns.Add( "MaxTokens", typeof( string ) );
+                AppSettings.ConfigDataTable.Columns.Add( "Vision", typeof( bool ) );
+                _ds.Tables.Add( AppSettings.ConfigDataTable );
             }
         }
-        public static void InitialColorSet()
+
+        /// <summary>
+        /// Initials the color set.
+        /// </summary>
+        public static void InitialColorSet( )
         {
-            var theme = Properties.Settings.Default.Theme;
-            if (theme == "Dark")
+            var _theme = Settings.Default.Theme;
+            if( _theme == "Dark" )
             {
                 ThemeManager.Current.ApplicationTheme = ApplicationTheme.Dark;
             }
-            else if (theme == "Light")
+            else if( _theme == "Light" )
             {
                 ThemeManager.Current.ApplicationTheme = ApplicationTheme.Light;
             }
@@ -71,385 +131,453 @@ namespace Bocifus
                 ThemeManager.Current.ApplicationTheme = null;
             }
 
-            var accentColor = Properties.Settings.Default.AccentColor;
-            if (accentColor == "Default" || accentColor == "")
+            var _accentColor = Settings.Default.AccentColor;
+            if( _accentColor == "Default"
+                || _accentColor == "" )
             {
                 ThemeManager.Current.AccentColor = null;
             }
             else
             {
-                var color = (Color)ColorConverter.ConvertFromString(accentColor);
-                ThemeManager.Current.AccentColor = color;
+                var _color = ( Color )ColorConverter.ConvertFromString( _accentColor );
+                ThemeManager.Current.AccentColor = _color;
             }
         }
-        public static void EnsureColumnsForType(DataTable dataTable, Type type)
+
+        /// <summary>
+        /// Ensures the type of the columns for.
+        /// </summary>
+        /// <param name="dataTable">The data table.</param>
+        /// <param name="type">The type.</param>
+        public static void EnsureColumnsForType( DataTable dataTable, Type type )
         {
-            foreach (var propertyInfo in type.GetProperties())
+            foreach( var _propertyInfo in type.GetProperties( ) )
             {
-                if (!dataTable.Columns.Contains(propertyInfo.Name))
+                if( !dataTable.Columns.Contains( _propertyInfo.Name ) )
                 {
-                    var columnType = Nullable.GetUnderlyingType(propertyInfo.PropertyType) ?? propertyInfo.PropertyType;
-                    var column = new DataColumn(propertyInfo.Name, columnType);
+                    var _columnType = Nullable.GetUnderlyingType( _propertyInfo.PropertyType )
+                        ?? _propertyInfo.PropertyType;
 
-                    if (columnType == typeof(string))
+                    var _column = new DataColumn( _propertyInfo.Name, _columnType );
+                    if( _columnType == typeof( string ) )
                     {
-                        column.DefaultValue = "";
+                        _column.DefaultValue = "";
                     }
-                    else if (columnType == typeof(bool))
+                    else if( _columnType == typeof( bool ) )
                     {
-                        column.DefaultValue = false;
+                        _column.DefaultValue = false;
                     }
 
-                    dataTable.Columns.Add(column);
+                    dataTable.Columns.Add( _column );
                 }
             }
         }
-        public static void ShowMessagebox(string title, string content)
+
+        /// <summary>
+        /// Shows the messagebox.
+        /// </summary>
+        /// <param name="title">The title.</param>
+        /// <param name="content">The content.</param>
+        public static void ShowMessagebox( string title, string content )
         {
-            var window = new Messagebox(title, content);
-            window.Owner = Application.Current.Windows.OfType<MainWindow>().FirstOrDefault();
-            window.ShowDialog();
+            var _window = new Messagebox( title, content );
+            _window.Owner = Application.Current.Windows.OfType<MainWindow>( ).FirstOrDefault( );
+            _window.ShowDialog( );
         }
-        public static Storyboard CreateOpacityAnimation(DependencyObject target)
+
+        /// <summary>
+        /// Creates the opacity animation.
+        /// </summary>
+        /// <param name="target">The target.</param>
+        /// <returns></returns>
+        public static Storyboard CreateOpacityAnimation( DependencyObject target )
         {
-            var animation = new DoubleAnimation
+            var _animation = new DoubleAnimation
             {
                 From = 1.0,
                 To = 0.5,
-                Duration = TimeSpan.FromSeconds(1),  
-                AutoReverse = true,   
-                RepeatBehavior = RepeatBehavior.Forever  
-            };
-
-            Storyboard.SetTarget(animation, target);
-            Storyboard.SetTargetProperty(animation, new PropertyPath("Opacity"));
-
-            var storyboard = new Storyboard();
-            storyboard.Children.Add(animation);
-
-            return storyboard;
-        }
-        public static Storyboard CreateTextColorAnimation(TextBox textBox, out Color initialColor)
-        {
-            initialColor = (textBox.Foreground as SolidColorBrush).Color;
-
-            var startColor = initialColor;
-            startColor.A = (byte)(255 * 0.5);
-
-            var animation = new ColorAnimation
-            {
-                From = initialColor,
-                To = startColor,
-                Duration = TimeSpan.FromSeconds(1),
+                Duration = TimeSpan.FromSeconds( 1 ),
                 AutoReverse = true,
                 RepeatBehavior = RepeatBehavior.Forever
             };
 
-            Storyboard.SetTarget(animation, textBox);
-            Storyboard.SetTargetProperty(animation, new PropertyPath("Foreground.Color"));
-
-            var storyboard = new Storyboard();
-            storyboard.Children.Add(animation);
-
-            return storyboard;
+            Storyboard.SetTarget( _animation, target );
+            Storyboard.SetTargetProperty( _animation, new PropertyPath( "Opacity" ) );
+            var _storyboard = new Storyboard( );
+            _storyboard.Children.Add( _animation );
+            return _storyboard;
         }
-        public static void AnimateButtonOpacityToOriginal(Button button, double originalOpacity, TimeSpan duration)
+
+        /// <summary>
+        /// Creates the text color animation.
+        /// </summary>
+        /// <param name="textBox">The text box.</param>
+        /// <param name="initialColor">The initial color.</param>
+        /// <returns></returns>
+        public static Storyboard CreateTextColorAnimation( TextBox textBox, out Color initialColor )
+        {
+            initialColor = ( textBox.Foreground as SolidColorBrush ).Color;
+            var _startColor = initialColor;
+            _startColor.A = ( byte )( 255 * 0.5 );
+            var _animation = new ColorAnimation
+            {
+                From = initialColor,
+                To = _startColor,
+                Duration = TimeSpan.FromSeconds( 1 ),
+                AutoReverse = true,
+                RepeatBehavior = RepeatBehavior.Forever
+            };
+
+            Storyboard.SetTarget( _animation, textBox );
+            Storyboard.SetTargetProperty( _animation, new PropertyPath( "Foreground.Color" ) );
+            var _storyboard = new Storyboard( );
+            _storyboard.Children.Add( _animation );
+            return _storyboard;
+        }
+
+        /// <summary>
+        /// Animates the button opacity to original.
+        /// </summary>
+        /// <param name="button">The button.</param>
+        /// <param name="originalOpacity">The original opacity.</param>
+        /// <param name="duration">The duration.</param>
+        public static void AnimateButtonOpacityToOriginal( Button button, double originalOpacity,
+            TimeSpan duration )
         {
             button.Opacity = 1.0;
-            var opacityAnimation = new DoubleAnimation
+            var _opacityAnimation = new DoubleAnimation
             {
                 To = originalOpacity,
                 Duration = duration,
                 FillBehavior = FillBehavior.Stop
             };
-            opacityAnimation.Completed += (s, e) =>
+
+            _opacityAnimation.Completed += ( s, e ) =>
             {
-                button.Opacity = originalOpacity;   
+                button.Opacity = originalOpacity;
             };
 
-            button.BeginAnimation(Button.OpacityProperty, opacityAnimation);
+            button.BeginAnimation( UIElement.OpacityProperty, _opacityAnimation );
         }
-        public static string SerializeArray(string[,] array)
+
+        /// <summary>
+        /// Serializes the array.
+        /// </summary>
+        /// <param name="array">The array.</param>
+        /// <returns></returns>
+        public static string SerializeArray( string[ , ] array )
         {
-            return JsonConvert.SerializeObject(array);
+            return JsonConvert.SerializeObject( array );
         }
-        public static string[,] DeserializeArray(string serializedArray)
+
+        /// <summary>
+        /// Deserializes the array.
+        /// </summary>
+        /// <param name="serializedArray">The serialized array.</param>
+        /// <returns></returns>
+        public static string[ , ] DeserializeArray( string serializedArray )
         {
-            if (serializedArray == "" || serializedArray == null)
+            if( serializedArray == ""
+                || serializedArray == null )
             {
-                return new string[0, 0];
+                return new string[ 0, 0 ];
             }
             else
             {
-                return JsonConvert.DeserializeObject<string[,]>(serializedArray);
+                return JsonConvert.DeserializeObject<string[ , ]>( serializedArray );
             }
         }
-        public static string SerializeDataTable(DataTable dataTable)
+
+        /// <summary>
+        /// Serializes the data table.
+        /// </summary>
+        /// <param name="dataTable">The data table.</param>
+        /// <returns></returns>
+        public static string SerializeDataTable( DataTable dataTable )
         {
-            if (dataTable == null)
+            if( dataTable == null )
             {
                 return "";
             }
-            using (var stream = new MemoryStream())
-            {
-                var formatter = new BinaryFormatter();
-                formatter.Serialize(stream, dataTable);
-                return Convert.ToBase64String(stream.ToArray());
-            }
+
+            using var _stream = new MemoryStream( );
+            var _formatter = new BinaryFormatter( );
+            _formatter.Serialize( _stream, dataTable );
+            return Convert.ToBase64String( _stream.ToArray( ) );
         }
-        public static DataTable DeserializeDataTable(string serializedDataTable)
+
+        /// <summary>
+        /// Deserializes the data table.
+        /// </summary>
+        /// <param name="serializedDataTable">The serialized data table.</param>
+        /// <returns></returns>
+        public static DataTable DeserializeDataTable( string serializedDataTable )
         {
-            if (serializedDataTable == "" || serializedDataTable == null)
+            if( serializedDataTable == ""
+                || serializedDataTable == null )
             {
                 return null;
             }
-            using (var stream = new MemoryStream(Convert.FromBase64String(serializedDataTable)))
-            {
-                var formatter = new BinaryFormatter();
-                return (DataTable)formatter.Deserialize(stream);
-            }
+
+            using var _stream = new MemoryStream( Convert.FromBase64String( serializedDataTable ) );
+            var _formatter = new BinaryFormatter( );
+            return ( DataTable )_formatter.Deserialize( _stream );
         }
-        public static void CopyTextFromMessageGrid(Grid grid)
+
+        /// <summary>
+        /// Copies the text from message grid.
+        /// </summary>
+        /// <param name="grid">The grid.</param>
+        public static void CopyTextFromMessageGrid( Grid grid )
         {
-            foreach (var child in grid.Children)
+            foreach( var _child in grid.Children )
             {
-                if (child is TextBox textBox)
+                if( _child is TextBox _textBox )
                 {
-                    Clipboard.SetText(textBox.Text);
+                    Clipboard.SetText( _textBox.Text );
                     break;
                 }
-                else if (child is MarkdownScrollViewer markdownScrollViewer)
+                else if( _child is MarkdownScrollViewer _markdownScrollViewer )
                 {
-                    Clipboard.SetText(markdownScrollViewer.Markdown);
+                    Clipboard.SetText( _markdownScrollViewer.Markdown );
                     break;
                 }
             }
         }
-        public static void TranslateTextFromMessageGrid(Grid grid, object selectedItem)
+
+        /// <summary>
+        /// Translates the text from message grid.
+        /// </summary>
+        /// <param name="grid">The grid.</param>
+        /// <param name="selectedItem">The selected item.</param>
+        public static void TranslateTextFromMessageGrid( Grid grid, object selectedItem )
         {
-            foreach (var child in grid.Children)
+            foreach( var _child in grid.Children )
             {
-                if (child is TextBox textBox)
+                if( _child is TextBox _textBox )
                 {
-                    UtilityFunctions.TranslateText(textBox, selectedItem);
+                    TranslateText( _textBox, selectedItem );
                 }
-                else if (child is MarkdownScrollViewer markdownScrollViewer)
+                else if( _child is MarkdownScrollViewer _markdownScrollViewer )
                 {
-                    UtilityFunctions.TranslateText(markdownScrollViewer, selectedItem);
+                    TranslateText( _markdownScrollViewer, selectedItem );
                 }
             }
         }
-        public static async void TranslateText(object target, object selectedItem)
+
+        /// <summary>
+        /// Translates the text.
+        /// </summary>
+        /// <param name="target">The target.</param>
+        /// <param name="selectedItem">The selected item.</param>
+        public static async void TranslateText( object target, object selectedItem )
         {
-            var mainWindow = (MainWindow)Application.Current.MainWindow;
-            Storyboard? animation = null;
-            if (target is TextBox textBox)
+            var _mainWindow = ( MainWindow )Application.Current.MainWindow;
+            Storyboard _animation = null;
+            if( target is TextBox _textBox )
             {
                 try
                 {
-                    animation = UtilityFunctions.CreateOpacityAnimation(textBox);
-                    animation.Begin();
+                    _animation = CreateOpacityAnimation( _textBox );
+                    _animation.Begin( );
+                    var _beforeText = _textBox.Text;
+                    var _translatedText = await _mainWindow.TranslateApiRequestAsync( _beforeText,
+                        AppSettings.FromTranslationLanguage );
 
-                    var beforeText = textBox.Text;
-                    var translatedText = await mainWindow.TranslateAPIRequestAsync(beforeText, AppSettings.FromTranslationLanguage);
-                    translatedText = translatedText.TrimEnd('\r', '\n');
+                    _translatedText = _translatedText.TrimEnd( '\r', '\n' );
+                    _textBox.Text = _translatedText;
+                    var _messageboxResult = MessageBox.Show(
+                        "Would you like the translation results to be reflected in the existing conversation history?",
+                        "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question );
 
-                    textBox.Text = translatedText;
-
-                    var messageboxResult = ModernWpf.MessageBox.Show("Would you like the translation results to be reflected in the existing conversation history?",
-                                       "Confirmation",
-                                       MessageBoxButton.YesNo,
-                                       MessageBoxImage.Question);
-
-                    if (messageboxResult == MessageBoxResult.Yes)
+                    if( _messageboxResult == MessageBoxResult.Yes )
                     {
-                        if (selectedItem is ConversationHistory targetConversation)
+                        if( selectedItem is ConversationHistory _targetConversation )
                         {
-                            foreach (var message in targetConversation.Messages)
+                            foreach( var _message in _targetConversation.Messages )
                             {
-                                (string user, string image) result = UtilityFunctions.ExtractUserAndImageFromMessage(message.Content);
+                                (string user, string image) _result =
+                                    ExtractUserAndImageFromMessage( _message.Content );
 
-                                if (result.user == beforeText)
+                                if( _result.user == _beforeText )
                                 {
-                                    message.Content = translatedText;
+                                    _message.Content = _translatedText;
                                     break;
                                 }
                             }
                         }
                     }
                 }
-                catch (Exception ex)
+                catch( Exception ex )
                 {
-                    ModernWpf.MessageBox.Show(ex.Message);
+                    MessageBox.Show( ex.Message );
                 }
                 finally
                 {
-                    animation?.Stop();
-                    textBox.Opacity = 1.0;
+                    _animation?.Stop( );
+                    _textBox.Opacity = 1.0;
                 }
             }
-            else if (target is MarkdownScrollViewer markdownScrollViewer)
+            else if( target is MarkdownScrollViewer _markdownScrollViewer )
             {
                 try
                 {
-                    animation = UtilityFunctions.CreateOpacityAnimation(markdownScrollViewer);
-                    animation.Begin();
+                    _animation = CreateOpacityAnimation( _markdownScrollViewer );
+                    _animation.Begin( );
+                    var _beforeText = _markdownScrollViewer.Markdown;
+                    var _translatedText = await TranslateTextWithCodeBlocks( _beforeText );
+                    _translatedText = _translatedText.TrimEnd( '\r', '\n' );
+                    _translatedText = Regex.Replace( _translatedText, @"(\d+\.)\s*(\S)", "$1 $2" );
+                    _markdownScrollViewer.Markdown = _translatedText;
+                    var _messageboxResult = MessageBox.Show(
+                        "Would you like the translation results to be reflected in the existing conversation history?",
+                        "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question );
 
-                    var beforeText = markdownScrollViewer.Markdown;
-                    var translatedText = await UtilityFunctions.TranslateTextWithCodeBlocks(beforeText);
-                    translatedText = translatedText.TrimEnd('\r', '\n');
-                    translatedText = Regex.Replace(translatedText, @"(\d+\.)\s*(\S)", "$1 $2");
-
-                    markdownScrollViewer.Markdown = translatedText;
-
-                    var messageboxResult = ModernWpf.MessageBox.Show("Would you like the translation results to be reflected in the existing conversation history?",
-                                       "Confirmation",
-                                       MessageBoxButton.YesNo,
-                                       MessageBoxImage.Question);
-
-                    if (messageboxResult == MessageBoxResult.Yes)
+                    if( _messageboxResult == MessageBoxResult.Yes )
                     {
-                        if (selectedItem is ConversationHistory targetConversation)
+                        if( selectedItem is ConversationHistory _targetConversation )
                         {
-                            foreach (var message in targetConversation.Messages)
+                            foreach( var _message in _targetConversation.Messages )
                             {
-                                (string user, string image) result = UtilityFunctions.ExtractUserAndImageFromMessage(message.Content);
+                                (string user, string image) _result =
+                                    ExtractUserAndImageFromMessage( _message.Content );
 
-                                if (result.user == beforeText)
+                                if( _result.user == _beforeText )
                                 {
-                                    message.Content = translatedText;
+                                    _message.Content = _translatedText;
                                     break;
                                 }
                             }
                         }
                     }
                 }
-                catch (Exception ex)
+                catch( Exception ex )
                 {
-                    ModernWpf.MessageBox.Show(ex.Message);
+                    MessageBox.Show( ex.Message );
                 }
                 finally
                 {
-                    animation?.Stop();
-                    markdownScrollViewer.Opacity = ThemeManager.Current.ActualApplicationTheme == ModernWpf.ApplicationTheme.Dark ? 0.9 : 1;
+                    _animation?.Stop( );
+                    _markdownScrollViewer.Opacity = ThemeManager.Current.ActualApplicationTheme
+                        == ApplicationTheme.Dark
+                            ? 0.9
+                            : 1;
                 }
             }
         }
 
-        static async Task<string> TranslateTextWithCodeBlocks(string markdownText)
+        /// <summary>
+        /// Translates the text with code blocks.
+        /// </summary>
+        /// <param name="markdownText">The markdown text.</param>
+        /// <returns></returns>
+        private static async Task<string> TranslateTextWithCodeBlocks( string markdownText )
         {
-            var regex = new Regex(@"(```\w*\s[\s\S]*?```)");
-            var matches = regex.Matches(markdownText);
-            var lastPos = 0;
-            var translatedText = new StringBuilder();
-
-            foreach (Match match in matches)
+            var _regex = new Regex( @"(```\w*\s[\s\S]*?```)" );
+            var _matches = _regex.Matches( markdownText );
+            var _lastPos = 0;
+            var _translatedText = new StringBuilder( );
+            foreach( Match _match in _matches )
             {
-                var textToTranslate = markdownText.Substring(lastPos, match.Index - lastPos);
-                var translatedSegment = await UtilityFunctions.TranslateTextAsync(textToTranslate);
-                translatedText.Append(translatedSegment);
-
-                translatedText.Append(match.Value);
-                lastPos = match.Index + match.Length;
+                var _textToTranslate = markdownText.Substring( _lastPos, _match.Index - _lastPos );
+                var _translatedSegment = await TranslateTextAsync( _textToTranslate );
+                _translatedText.Append( _translatedSegment );
+                _translatedText.Append( _match.Value );
+                _lastPos = _match.Index + _match.Length;
             }
 
-            if (lastPos < markdownText.Length)
+            if( _lastPos < markdownText.Length )
             {
-                var remainingText = markdownText.Substring(lastPos);
-                var translatedRemaining = await UtilityFunctions.TranslateTextAsync(remainingText);
-                translatedText.Append(translatedRemaining);
+                var _remainingText = markdownText.Substring( _lastPos );
+                var _translatedRemaining = await TranslateTextAsync( _remainingText );
+                _translatedText.Append( _translatedRemaining );
             }
 
-            return translatedText.ToString();
+            return _translatedText.ToString( );
         }
 
-        static async Task<string> TranslateTextAsync(string text)
+        /// <summary>
+        /// Translates the text asynchronous.
+        /// </summary>
+        /// <param name="text">The text.</param>
+        /// <returns></returns>
+        private static async Task<string> TranslateTextAsync( string text )
         {
-            var mainWindow = (MainWindow)Application.Current.MainWindow;
-            if (string.IsNullOrWhiteSpace(text))
+            var _mainWindow = ( MainWindow )Application.Current.MainWindow;
+            if( string.IsNullOrWhiteSpace( text ) )
+            {
                 return text;
+            }
 
-            return await mainWindow.TranslateAPIRequestAsync(text, AppSettings.FromTranslationLanguage);
+            return await _mainWindow.TranslateApiRequestAsync( text,
+                AppSettings.FromTranslationLanguage );
         }
-        public static IEnumerable<DependencyObject> GetAllChildren(DependencyObject parent)
+
+        /// <summary>
+        /// Gets all children.
+        /// </summary>
+        /// <param name="parent">The parent.</param>
+        /// <returns></returns>
+        public static IEnumerable<DependencyObject> GetAllChildren( DependencyObject parent )
         {
-            for (var i = 0; i < VisualTreeHelper.GetChildrenCount(parent); i++)
+            for( var _i = 0; _i < VisualTreeHelper.GetChildrenCount( parent ); _i++ )
             {
-                var child = VisualTreeHelper.GetChild(parent, i);
-                yield return child;
-                foreach (var grandChild in UtilityFunctions.GetAllChildren(child))
+                var _child = VisualTreeHelper.GetChild( parent, _i );
+                yield return _child;
+                foreach( var _grandChild in GetAllChildren( _child ) )
                 {
-                    yield return grandChild;
+                    yield return _grandChild;
                 }
             }
         }
-        public static (string userMessage, string image) ExtractUserAndImageFromMessage(string message)
+
+        /// <summary>
+        /// Extracts the user and image from message.
+        /// </summary>
+        /// <param name="message">The message.</param>
+        /// <returns></returns>
+        public static (string userMessage, string image) ExtractUserAndImageFromMessage(
+            string message )
         {
-            JToken token;
+            JToken _token;
             try
             {
-                token = JToken.Parse(message);
-                if (token.Type != JTokenType.Array)
+                _token = JToken.Parse( message );
+                if( _token.Type != JTokenType.Array )
                 {
-                    token = null;
+                    _token = null;
                 }
             }
-            catch (Exception)
+            catch( Exception )
             {
-                token = null;
+                _token = null;
             }
-            var user = "";
-            var image = "";
-            if (token != null)   
+
+            var _user = "";
+            var _image = "";
+            if( _token != null )
             {
-                var items = token.ToObject<List<VisionUserContentItem>>();
-                foreach (var item in items)
+                var _items = _token.ToObject<List<VisionUserContentItem>>( );
+                foreach( var _item in _items )
                 {
-                    if (item.type == "text")
+                    if( _item.type == "text" )
                     {
-                        user = item.text;
+                        _user = _item.text;
                     }
-                    if ((item.type == "image_url" || item.type == "image") && item.image_url?.url != null)
+
+                    if( ( _item.type == "image_url" || _item.type == "image" )
+                        && _item.image_url?.url != null )
                     {
-                        image = item.image_url.url;
+                        _image = _item.image_url.url;
                     }
                 }
             }
-            else    
+            else
             {
-                user = message;
+                _user = message;
             }
 
-            return (user, image);
-        }
-    }
-    public class FavoriteToSymbolConverter : IValueConverter
-    {
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            var isFavorite = value is bool && (bool)value;
-            var symbol = isFavorite ? Symbol.Favorite : Symbol.OutlineStar;
-
-            return new SymbolIcon
-            {
-                Symbol = symbol,
-            };
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            throw new NotImplementedException();
-        }
-    }
-    public class ContentToVisibilityConverter : IValueConverter
-    {
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            return string.IsNullOrEmpty(value as string) ? Visibility.Collapsed : Visibility.Visible;
-        }
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            throw new NotImplementedException();
+            return ( _user, _image );
         }
     }
 }

@@ -10,7 +10,7 @@
     xmlns:wpf="clr-namespace:Syncfusion.Themes.FluentDark.WPF;assembly=Syncfusion.Themes.FluentDark.WPF">
 
 
-    <!--*********************************************** METRO TEXTBOX *****************************************************-->
+    <!--  *********************************************** METRO TEXTBOX *****************************************************  -->
 
     <Style
         x:Key="MetroTextBoxStyle"
@@ -34,14 +34,23 @@
                 <Setter Property="Background" Value="{DynamicResource ControlHoverBrush}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource LightBlueBrush}" />
                 <Setter Property="Foreground" Value="{DynamicResource WhiteForeground}" />
+                <Setter Property="FontWeight" Value="Bold" />
             </Trigger>
 
             <Trigger Property="IsMouseOver" Value="False">
                 <Setter Property="Background" Value="{DynamicResource ControlInteriorBrush}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource BlueBorderBrush}" />
                 <Setter Property="Foreground" Value="{DynamicResource WhiteForeground}" />
+                <Setter Property="FontWeight" Value="Normal" />
             </Trigger>
 
+
+            <Trigger Property="IsFocused" Value="True">
+                <Setter Property="Background" Value="{DynamicResource BlackBackground}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource BlueBorderBrush}" />
+                <Setter Property="Foreground" Value="{DynamicResource WhiteForeground}" />
+                <Setter Property="FontWeight" Value="Normal" />
+            </Trigger>
 
         </Style.Triggers>
 

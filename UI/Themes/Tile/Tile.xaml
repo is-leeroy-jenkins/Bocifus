@@ -5,7 +5,7 @@
     xmlns:sync="http://schemas.syncfusion.com/wpf"
     xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
 
-    <!--*********************************************** MetroTile *****************************************************-->
+    <!--  *********************************************** MetroTile *****************************************************  -->
 
     <Style TargetType="{x:Type b:MetroTile}">
 
@@ -25,12 +25,14 @@
                 <Setter Property="Background" Value="{DynamicResource BlueBackground}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource LightBlueBrush}" />
                 <Setter Property="Foreground" Value="{DynamicResource WhiteForeground}" />
+                <Setter Property="FontWeight" Value="Bold" />
             </Trigger>
 
             <Trigger Property="IsMouseOver" Value="False">
                 <Setter Property="Background" Value="{DynamicResource ControlBackground}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource ControlBackground}" />
                 <Setter Property="Foreground" Value="{DynamicResource LightBlueBrush}" />
+                <Setter Property="FontWeight" Value="Normal" />
             </Trigger>
 
 

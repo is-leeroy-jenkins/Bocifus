@@ -24,8 +24,8 @@ namespace Bocifus
         {
             InitializeComponent();
             OkButton.Focus();
-            this.Title = title;
-            this.MaxWidth = SystemParameters.PrimaryScreenWidth * 0.8;
+            Title = title;
+            MaxWidth = SystemParameters.PrimaryScreenWidth * 0.8;
             ContentLabel.Style = (Style)Application.Current.FindResource("NoBorderTextBoxStyle");
             ContentLabel.Text = content;
         }
@@ -33,8 +33,8 @@ namespace Bocifus
         {
             InitializeComponent();
             OkButton.Focus();
-            this.Title = title;
-            this.MaxWidth = SystemParameters.PrimaryScreenWidth * 0.8;
+            Title = title;
+            MaxWidth = SystemParameters.PrimaryScreenWidth * 0.8;
             ContentLabel.Style = (Style)Application.Current.FindResource("NoBorderTextBoxStyle");
             ContentLabel.Text = content;
             Numberbox.Visibility = Visibility.Visible;
@@ -54,7 +54,7 @@ namespace Bocifus
         {
             if (e.Key == Key.Escape)
             {
-                this.Close();
+                Close();
             }
         }
     }

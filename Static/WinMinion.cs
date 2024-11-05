@@ -72,7 +72,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                WinMinion.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -95,7 +95,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                WinMinion.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -118,7 +118,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                WinMinion.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -141,7 +141,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                WinMinion.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -164,7 +164,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                WinMinion.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -187,7 +187,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                WinMinion.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -210,7 +210,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                WinMinion.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -233,7 +233,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                WinMinion.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -256,7 +256,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                WinMinion.Fail( ex );
+                Fail( ex );
             }
         }
 

@@ -10,7 +10,12 @@
                 <ResourceDictionary Source="/UI/Themes/ListView/ListView.xaml" />
                 <ResourceDictionary Source="/UI/Themes/TextBox/TextBox.xaml" />
                 <ResourceDictionary Source="/UI/Themes/ComboBox/ComboBox.xaml" />
+                <ResourceDictionary Source="/UI/Themes/ComboBox/MetroComboBox.xaml" />
                 <ResourceDictionary Source="/UI/Themes/Button/Button.xaml" />
+                <ResourceDictionary Source="/UI/Themes/RadioButton/RadioButton.xaml" />
+                <ResourceDictionary Source="/UI/Themes/RichTextBox/RichTextBox.xaml" />
+                <ResourceDictionary Source="/UI/Themes/RichTextBox/MetroRichTextBox.xaml" />
+                <ResourceDictionary Source="/UI/Themes/Tile/Tile.xaml" />
         </ResourceDictionary.MergedDictionaries>
 
 </ResourceDictionary>

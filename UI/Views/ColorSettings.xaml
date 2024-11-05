@@ -4,14 +4,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
-        xmlns:local="clr-namespace:Bocifus"
+        xmlns:b="clr-namespace:Bocifus"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:ui="http://schemas.modernwpf.com/2019"
         Width="350"
         Height="500"
         fw:PointerTracker.Enabled="True"
         AcrylicWindowStyle="NoIcon"
-        BorderBrush="{DynamicResource SystemAltHighColor}"
+        BorderBrush="{DynamicResource BlueBorderBrush}"
         Closing="OnWindowClosing"
         KeyDown="OnWindowKeyDown"
         ResizeMode="NoResize"
@@ -50,6 +50,7 @@
                         BasedOn="{StaticResource DefaultRadioButtonStyle}"
                         TargetType="RadioButton">
                         <Setter Property="GroupName" Value="AccentColor" />
+                        <Setter Property="Foreground" Value="{StaticResource WhiteForeground}" />
                 </Style>
         </Window.Resources>
 
@@ -66,15 +67,18 @@
                                 Margin="10,0,10,0"
                                 Style="{StaticResource TitleTextBlockStyle}"
                                 Text="Theme" />
-                        <RadioButton x:Name="ThemeSystem"
+                        <RadioButton
+                                x:Name="ThemeSystem"
                                 Margin="10,0,10,0"
                                 Content="Using Windows Themes"
                                 Style="{StaticResource ThemeRadioStyle}" />
-                        <RadioButton x:Name="ThemeLight"
+                        <RadioButton
+                                x:Name="ThemeLight"
                                 Margin="10,0,10,0"
                                 Content="Light"
                                 Style="{StaticResource ThemeRadioStyle}" />
-                        <RadioButton x:Name="ThemeDark"
+                        <RadioButton
+                                x:Name="ThemeDark"
                                 Margin="10,0,10,0"
                                 Content="Dark"
                                 Style="{StaticResource ThemeRadioStyle}" />
@@ -83,21 +87,24 @@
                         <TextBlock
                                 Margin="10,0,10,0"
                                 FontSize="24"
-                                Style="{StaticResource TitleTextBlockStyle}"
+                                Style="{DynamicResource TitleTextBlockStyle}"
                                 Text="AccentColor" />
-                        <RadioButton x:Name="AccentColorSystem"
+                        <RadioButton
+                                x:Name="AccentColorSystem"
                                 Margin="10,0,10,0"
                                 Checked="OnAccentColorSystemChecked"
                                 Content="Use windows accent color"
                                 GroupName="AccentColor"
-                                Style="{StaticResource AccentColorRadioStyle}" />
-                        <RadioButton x:Name="AccentColorSet"
+                                Style="{DynamicResource AccentColorRadioStyle}" />
+                        <RadioButton
+                                x:Name="AccentColorSet"
                                 Margin="10,0,10,0"
                                 Checked="OnAccentColorSetChecked"
                                 Content="Specify accent color"
                                 GroupName="AccentColor"
-                                Style="{StaticResource AccentColorRadioStyle}" />
-                        <ListBox x:Name="AccentColorList"
+                                Style="{DynamicResource AccentColorRadioStyle}" />
+                        <ListBox
+                                x:Name="AccentColorList"
                                 Height="180"
                                 Margin="10,0,10,0"
                                 d:ItemsSource="{d:SampleData ItemCount=5}"
@@ -105,7 +112,7 @@
                                 SelectionChanged="OnAccentColorListSelectionChanged">
                                 <ListBox.ItemContainerStyle>
                                         <Style
-                                                BasedOn="{StaticResource DefaultListBoxItemStyle}"
+                                                BasedOn="{StaticResource ListBoxItemStyle}"
                                                 TargetType="ListBoxItem">
                                                 <Setter Property="Height" Value="32" />
                                                 <Setter Property="HorizontalContentAlignment" Value="Stretch" />
@@ -125,7 +132,8 @@
                                 </ListBox.Background>
                         </ListBox>
                 </StackPanel>
-                <Button x:Name="OkButton"
+                <Button
+                        x:Name="OkButton"
                         Grid.Row="2"
                         Width="120"
                         Height="30"

@@ -79,7 +79,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                DataMinion.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -108,7 +108,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                DataMinion.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -133,7 +133,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                DataMinion.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -158,7 +158,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                DataMinion.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -183,7 +183,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                DataMinion.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -210,7 +210,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                DataMinion.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -234,7 +234,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                DataMinion.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -259,7 +259,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                DataMinion.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -286,7 +286,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                DataMinion.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -311,7 +311,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                DataMinion.Fail( ex );
+                Fail( ex );
             }
         }
 
@@ -338,7 +338,7 @@ namespace Bocifus
             }
             catch( Exception ex )
             {
-                DataMinion.Fail( ex );
+                Fail( ex );
             }
         }
 

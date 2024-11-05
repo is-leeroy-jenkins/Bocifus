@@ -9,7 +9,7 @@
     xmlns:theme="clr-namespace:Syncfusion.Themes.FluentDark.WPF"
     xmlns:wpf="clr-namespace:Syncfusion.Themes.FluentDark.WPF;assembly=Syncfusion.Themes.FluentDark.WPF">
 
-    <!--*********************************************** METRO RICHTEXTBOX *****************************************************-->
+    <!--  *********************************************** METRO RICHTEXTBOX *****************************************************  -->
 
     <Style
         x:Key="MetroRichTextBoxStyle"
@@ -27,6 +27,24 @@
         <Setter Property="Margin" Value="1" />
         <Setter Property="FontFamily" Value="Roboto" />
         <Setter Property="FontSize" Value="12" />
+
+
+        <Style.Triggers>
+
+            <Trigger Property="IsFocused" Value="True">
+                <Setter Property="Background" Value="{DynamicResource BlackBackground}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource SteelBlueBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource WhiteForeground}" />
+            </Trigger>
+
+            <Trigger Property="IsFocused" Value="False">
+                <Setter Property="Background" Value="{DynamicResource ControlInteriorBrush}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource ControlInteriorBrush}" />
+                <Setter Property="Foreground" Value="{DynamicResource LightBlueBrush}" />
+            </Trigger>
+
+
+        </Style.Triggers>
 
     </Style>
 

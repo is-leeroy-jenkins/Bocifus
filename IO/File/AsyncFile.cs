@@ -103,7 +103,7 @@ namespace Bocifus
                 catch( IOException ex )
                 {
                     _async.SetException( ex );
-                    AsyncPathBase.Fail( ex );
+                    Fail( ex );
                     return default( Task<bool> );
                 }
             }
@@ -141,7 +141,7 @@ namespace Bocifus
                 }
                 catch( IOException ex )
                 {
-                    AsyncPathBase.Fail( ex );
+                    Fail( ex );
                     return default( Task<IList<FileInfo>> );
                 }
             }
@@ -165,7 +165,7 @@ namespace Bocifus
             catch( Exception ex )
             {
                 _async.SetException( ex );
-                AsyncPathBase.Fail( ex );
+                Fail( ex );
                 return default( Task<DirectoryInfo> );
             }
         }
@@ -192,7 +192,7 @@ namespace Bocifus
             catch( Exception ex )
             {
                 _async.SetException( ex );
-                AsyncPathBase.Fail( ex );
+                Fail( ex );
                 return default( Task<FileInfo> );
             }
         }
@@ -223,7 +223,7 @@ namespace Bocifus
             catch( Exception ex )
             {
                 _async.SetException( ex );
-                AsyncPathBase.Fail( ex );
+                Fail( ex );
                 return default( Task<string> );
             }
         }
@@ -256,7 +256,7 @@ namespace Bocifus
             catch( Exception ex )
             {
                 _async.SetException( ex );
-                AsyncPathBase.Fail( ex );
+                Fail( ex );
                 _stream?.Close( );
                 return _async.Task;
             }
@@ -308,7 +308,7 @@ namespace Bocifus
             }
             catch( IOException ex )
             {
-                AsyncPathBase.Fail( ex );
+                Fail( ex );
                 return string.Empty;
             }
         }

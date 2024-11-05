@@ -20,6 +20,7 @@ using static Bocifus.MainWindow;
 
 namespace Bocifus
 {
+    using System.Windows.Controls.Primitives;
     using Model;
 
     public partial class Table
@@ -27,9 +28,9 @@ namespace Bocifus
         public ConversationHistory UpdatedConversationHistory { get; private set; }
         public class DataTableItem
         {
-            public string? Role { get; set; }
-            public string? Content { get; set; }
-            public string? ImageUrl { get; set; }
+            public string Role { get; set; }
+            public string Content { get; set; }
+            public string ImageUrl { get; set; }
         }
         public class ViewModel
         {
@@ -44,7 +45,7 @@ namespace Bocifus
         {
             InitializeComponent();
             viewModel = new ViewModel();
-            this.DataContext = viewModel;
+            DataContext = viewModel;
             viewModel.ComboBoxItems.Add("user");
             viewModel.ComboBoxItems.Add("assistant");
 
@@ -121,7 +122,7 @@ namespace Bocifus
         }
         private void dataGrid_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e)
         {
-            ((DataGridTextColumn)e.Column).EditingElementStyle = (Style)this.Resources["editingTextBoxStyle"];
+            ((DataGridTextColumn)e.Column).EditingElementStyle = (Style)Resources["editingTextBoxStyle"];
         }
         private void editingTextBox_KeyDown(object sender, KeyEventArgs e)
         {
@@ -138,7 +139,7 @@ namespace Bocifus
         {
             if (DataTable.Columns.Count > 0)
             {
-                DataTable.Columns[1].SetValue(DataGridTextColumn.ElementStyleProperty, new Style(typeof(TextBlock))
+                DataTable.Columns[1].SetValue(DataGridBoundColumn.ElementStyleProperty, new Style(typeof(TextBlock))
                 {
                     Setters = {
                         new Setter(TextBlock.TextWrappingProperty, TextWrapping.Wrap),
@@ -160,7 +161,7 @@ namespace Bocifus
                     Mode = BindingMode.OneWay,
                     Source = viewModel
                 };
-                comboBoxFactory.SetBinding(ComboBox.ItemsSourceProperty, itemsSourceBinding);
+                comboBoxFactory.SetBinding(ItemsControl.ItemsSourceProperty, itemsSourceBinding);
 
                 var selectedItemBinding = new Binding
                 {
@@ -168,9 +169,9 @@ namespace Bocifus
                     Mode = BindingMode.TwoWay,
                     UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged
                 };
-                comboBoxFactory.SetValue(ComboBox.SelectedItemProperty, selectedItemBinding);
+                comboBoxFactory.SetValue(Selector.SelectedItemProperty, selectedItemBinding);
 
-                comboBoxFactory.SetValue(ComboBox.WidthProperty, 100.0);
+                comboBoxFactory.SetValue(WidthProperty, 100.0);
 
                 var cellTemplate = new DataTemplate();
                 cellTemplate.VisualTree = comboBoxFactory;
@@ -276,8 +277,8 @@ namespace Bocifus
         }
         private void AcrylicWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            this.Height = this.Owner.Height;
-            this.Top = this.Owner.Top;
+            Height = Owner.Height;
+            Top = Owner.Top;
         }
         private void PreviewMouseWheel(object sender, MouseWheelEventArgs e)
         {

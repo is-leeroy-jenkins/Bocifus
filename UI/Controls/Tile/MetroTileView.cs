@@ -128,7 +128,7 @@ namespace Bocifus
             : base( )
         {
             // Control Properties
-            SetResourceReference( MetroTileView.StyleProperty, typeof( TileViewControl ) );
+            SetResourceReference( StyleProperty, typeof( TileViewControl ) );
             Width = 400;
             Height = 400;
             FontSize = 12;

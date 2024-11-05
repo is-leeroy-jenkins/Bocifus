@@ -1,16 +1,17 @@
-﻿using ModernWpf;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Input;
-using System.Windows.Media;
-using static Bocifus.MainWindow;
+﻿
 
 namespace Bocifus
 {
+    using ModernWpf;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Reflection;
+    using System.Windows;
+    using System.Windows.Controls;
+    using System.Windows.Input;
+    using System.Windows.Media;
+
     public partial class ColorSettings
     {
         public static IReadOnlyList<string> KnownColorNames { get; } =
@@ -28,7 +29,7 @@ namespace Bocifus
         public ColorSettings()
         {
             InitializeComponent();
-            this.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+            WindowStartupLocation = WindowStartupLocation.CenterOwner;
 
             if (ThemeManager.Current.AccentColor != null)
             {
@@ -128,7 +129,7 @@ namespace Bocifus
             DialogResult = true;
         }
 
-        private void OnWindowKeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        private void OnWindowKeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Escape)
             {
