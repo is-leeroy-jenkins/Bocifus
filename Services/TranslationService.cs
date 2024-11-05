@@ -86,23 +86,23 @@ namespace Bocifus
                     throw new Exception( "Translate API URL is not set." );
                 }
 
-                using var client = new HttpClient( );
+                using var _client = new HttpClient( );
                 try
                 {
-                    var content = new FormUrlEncodedContent( new[ ]
+                    var _content = new FormUrlEncodedContent( new[ ]
                     {
                         new KeyValuePair<string, string>( "text", inputText ),
                         new KeyValuePair<string, string>( "target_lang", targetLang )
                     } );
 
-                    client.DefaultRequestHeaders.Add( "Authorization",
+                    _client.DefaultRequestHeaders.Add( "Authorization",
                         $"DeepL-Auth-Key {AppSettings.TranslationApiKeyDeepL}" );
 
-                    var response = await client.PostAsync( AppSettings.TranslationApiUrlDeepL,
-                        content );
+                    var _response = await _client.PostAsync( AppSettings.TranslationApiUrlDeepL,
+                        _content );
 
-                    var responseBody = await response.Content.ReadAsStringAsync( );
-                    var json = JObject.Parse( responseBody );
+                    var _responseBody = await _response.Content.ReadAsStringAsync( );
+                    var json = JObject.Parse( _responseBody );
                     return json[ "translations" ][ 0 ][ "text" ].ToString( );
                 }
                 catch( Exception ex )
@@ -122,15 +122,15 @@ namespace Bocifus
                     throw new Exception( "Translate API URL is not set." );
                 }
 
-                using var client =
+                using var _client =
                     TranslationClient.CreateFromApiKey( AppSettings.TranslationApiKeyGoogle );
 
                 try
                 {
-                    var translationResult = await client.TranslateTextAsync( inputText,
+                    var _translationResult = await _client.TranslateTextAsync( inputText,
                         targetLang, model: TranslationModel.NeuralMachineTranslation );
 
-                    return translationResult.TranslatedText;
+                    return _translationResult.TranslatedText;
                 }
                 catch( Exception ex )
                 {

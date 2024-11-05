@@ -60,10 +60,12 @@ namespace Bocifus
     /// <seealso cref="T:System.Windows.Markup.IComponentConnector" />
     /// <seealso cref="T:System.Windows.Markup.IStyleConnector" />
     [ SuppressMessage( "ReSharper", "ClassCanBeSealed.Global" ) ]
+    [ SuppressMessage( "ReSharper", "PossibleNullReferenceException" ) ]
     public partial class TokenUsageWindow
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="TokenUsageWindow"/> class.
+        /// Initializes a new instance of the
+        /// <see cref="TokenUsageWindow"/> class.
         /// </summary>
         public TokenUsageWindow( )
         {
@@ -126,7 +128,8 @@ namespace Bocifus
         /// Called when [window key down].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="KeyEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="KeyEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnWindowKeyDown( object sender, KeyEventArgs e )
         {
             if( e.Key == Key.Escape )
@@ -139,7 +142,8 @@ namespace Bocifus
         /// Called when [okay button click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnOkayButtonClick( object sender, RoutedEventArgs e )
         {
             DialogResult = true;
@@ -149,7 +153,8 @@ namespace Bocifus
         /// Called when [alert setting button click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnAlertSettingButtonClick( object sender, RoutedEventArgs e )
         {
             var _msg = "You will be alerted when daily token usage exceeds this threshold.";
@@ -172,7 +177,8 @@ namespace Bocifus
         /// Called when [calculate button click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnCalculateButtonClick( object sender, RoutedEventArgs e )
         {
             var _button = sender as Button;

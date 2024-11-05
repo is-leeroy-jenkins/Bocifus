@@ -35,12 +35,24 @@
             CanUserResizeRows="False"
             IsReadOnly="True">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Date}" Header="Date" />
-                <DataGridTextColumn Binding="{Binding Provider}" Header="Provider" />
-                <DataGridTextColumn Binding="{Binding GptVersion}" Header="Model" />
-                <DataGridTextColumn Binding="{Binding TotalTokenUsage}" Header="Total Tokens" />
-                <DataGridTextColumn Binding="{Binding InputTokenUsage}" Header="Input Tokens" />
-                <DataGridTextColumn Binding="{Binding OutputTokenUsage}" Header="Output Tokens" />
+                <DataGridTextColumn
+                    Binding="{Binding Date}"
+                    Header="Date" />
+                <DataGridTextColumn
+                    Binding="{Binding Provider}"
+                    Header="Provider" />
+                <DataGridTextColumn
+                    Binding="{Binding GptVersion}"
+                    Header="Model" />
+                <DataGridTextColumn
+                    Binding="{Binding TotalTokenUsage}"
+                    Header="Total Tokens" />
+                <DataGridTextColumn
+                    Binding="{Binding InputTokenUsage}"
+                    Header="Input Tokens" />
+                <DataGridTextColumn
+                    Binding="{Binding OutputTokenUsage}"
+                    Header="Output Tokens" />
                 <DataGridTemplateColumn Header="">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
@@ -93,6 +105,8 @@
         </StackPanel>
     </Grid>
     <fw:AcrylicWindow.Background>
-        <SolidColorBrush Opacity="0.3" Color="{DynamicResource SystemChromeLowColor}" />
+        <SolidColorBrush
+            Opacity="0.3"
+            Color="{DynamicResource SystemChromeLowColor}" />
     </fw:AcrylicWindow.Background>
 </fw:AcrylicWindow>

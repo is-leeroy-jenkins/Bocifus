@@ -47,12 +47,7 @@ namespace Bocifus
     using Microsoft.Win32;
     using ModernWpf;
     using ModernWpf.Controls;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Linq;
-    using OpenAI.ObjectModels.RequestModels;
     using OpenAI.Tokenizer.GPT3;
-    using Model;
-    using SourceChord.FluentWPF;
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
@@ -64,7 +59,6 @@ namespace Bocifus
     using System.IO;
     using System.Linq;
     using System.Text;
-    using System.Text.Json;
     using System.Text.RegularExpressions;
     using System.Threading;
     using System.Windows;
@@ -73,12 +67,9 @@ namespace Bocifus
     using System.Windows.Data;
     using System.Windows.Documents;
     using System.Windows.Input;
-    using System.Windows.Input.Manipulations;
     using System.Windows.Media;
     using System.Windows.Media.Animation;
     using System.Windows.Media.Imaging;
-    using System.Windows.Shapes;
-    using Bocifus;
     using ICSharpCode.AvalonEdit.Rendering;
     using Properties;
     using Syncfusion.SfSkinManager;
@@ -97,6 +88,7 @@ namespace Bocifus
     /// <seealso cref="T:System.Windows.Markup.IComponentConnector" />
     /// <seealso cref="T:System.Windows.Markup.IStyleConnector" />
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
+    [ SuppressMessage( "ReSharper", "FieldCanBeMadeReadOnly.Global" ) ]
     public partial class MainWindow : IDisposable
     {
         /// <summary>
@@ -1556,7 +1548,7 @@ namespace Bocifus
         /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void OnTranslationApiMenuItemClick( object sender, RoutedEventArgs e )
         {
-            var _window = new TranslationApiSettingWindow( );
+            var _window = new TranslationSettingWindow( );
             _window.Owner = this;
             _window.ShowDialog( );
         }
