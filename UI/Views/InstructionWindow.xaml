@@ -1,5 +1,5 @@
 ﻿<fw:AcrylicWindow
-    x:Class="Bocifus.InstructionSettingWindow"
+    x:Class="Bocifus.InstructionWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -13,7 +13,7 @@
     fw:PointerTracker.Enabled="True"
     AcrylicWindowStyle="NoIcon"
     BorderBrush="{StaticResource BlueBorderBrush}"
-    KeyDown="Window_KeyDown"
+    KeyDown="OnWindowKeyDown"
     ShowInTaskbar="False"
     WindowStartupLocation="CenterOwner"
     mc:Ignorable="d">
@@ -59,7 +59,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     fw:RevealElement.BorderRadius="2"
-                    Click="AddButton_Click"
+                    Click="OnAddButtonClick"
                     FontSize="16"
                     Style="{StaticResource ButtonRevealStyle}">
                     <ui:SymbolIcon Symbol="Add" />
@@ -73,7 +73,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     fw:RevealElement.BorderRadius="2"
-                    Click="RemoveButton_Click"
+                    Click="OnRemoveButtonClick"
                     FontSize="16"
                     Style="{StaticResource ButtonRevealStyle}">
                     <ui:SymbolIcon Symbol="Remove" />
@@ -85,8 +85,8 @@
                 Width="170"
                 MinWidth="150"
                 Margin="10,10,5,0"
-                KeyDown="InstructionListBox_KeyDown"
-                SelectionChanged="ListView_SelectionChanged" />
+                KeyDown="OnInstructionListBoxKeyDown"
+                SelectionChanged="OnListViewSelectionChanged" />
         </Grid>
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
@@ -102,7 +102,7 @@
                     x:Name="InstructionTextBox"
                     MinWidth="150"
                     ui:ControlHelper.PlaceholderText="Title"
-                    KeyDown="TextBox_KeyDown">
+                    KeyDown="OnTextBoxKeyDown">
                     <TextBox.Background>
                         <SolidColorBrush
                             Opacity="0.5"
@@ -117,7 +117,7 @@
                 ui:ControlHelper.PlaceholderText="System Prompt Content"
                 AcceptsReturn="True"
                 AcceptsTab="True"
-                KeyDown="TextBox_KeyDown"
+                KeyDown="OnTextBoxKeyDown"
                 TextWrapping="Wrap">
                 <TextBox.Background>
                     <SolidColorBrush
@@ -144,7 +144,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Top"
                     fw:RevealElement.BorderRadius="2"
-                    Click="SaveButton_Click"
+                    Click="OnSaveButtonClick"
                     Content="Save"
                     FontSize="16"
                     Style="{StaticResource ButtonRevealStyle}">
@@ -169,7 +169,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Top"
                     fw:RevealElement.BorderRadius="2"
-                    Click="CloseButton_Click"
+                    Click="OnCloseButtonClick"
                     Content="Close"
                     FontSize="16"
                     Style="{StaticResource ButtonRevealStyle}" />
@@ -185,7 +185,7 @@
                     VerticalAlignment="Top"
                     VerticalContentAlignment="Center"
                     fw:RevealElement.BorderRadius="2"
-                    Click="ExportButton_Click"
+                    Click="OnExportButtonClick"
                     FontSize="16"
                     Style="{StaticResource ButtonRevealStyle}"
                     ToolTip="Outputs instructions as a JSON file.">
@@ -203,7 +203,7 @@
                     VerticalAlignment="Top"
                     VerticalContentAlignment="Center"
                     fw:RevealElement.BorderRadius="2"
-                    Click="ImportButton_Click"
+                    Click="OnImportButtonClick"
                     FontSize="16"
                     Style="{StaticResource ButtonRevealStyle}"
                     ToolTip="Select a JSON file to import.">

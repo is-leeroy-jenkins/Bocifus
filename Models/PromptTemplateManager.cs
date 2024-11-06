@@ -117,8 +117,11 @@ namespace Bocifus
         {
             var item = (PromptTemplate)((Button)sender).DataContext;
 
-            var dialog = new PromptTemplateInput(item);
-            dialog.Owner = this;
+            var dialog = new PromptTemplateInput(item)
+            {
+                Owner = this
+            };
+
             if (dialog.ShowDialog() == true)
             {
                 var newTemplate = dialog.Result;
@@ -142,8 +145,11 @@ namespace Bocifus
         }
         private void NewTemplateButton_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new PromptTemplateInput();
-            dialog.Owner = this;
+            var dialog = new PromptTemplateInput
+            {
+                Owner = this
+            };
+
             if (dialog.ShowDialog() == true)
             {
                 var newTemplate = dialog.Result;

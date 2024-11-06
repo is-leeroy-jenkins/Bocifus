@@ -1,10 +1,10 @@
 ﻿// ******************************************************************************************
 //     Assembly:                Bocifus
 //     Author:                  Terry D. Eppler
-//     Created:                 11-02-2024
+//     Created:                 11-05-2024
 // 
 //     Last Modified By:        Terry D. Eppler
-//     Last Modified On:        11-02-2024
+//     Last Modified On:        11-05-2024
 // ******************************************************************************************
 // <copyright file="MainWindow.xaml.cs" company="Terry D. Eppler">
 //   Bocifus is an open source windows (wpf) application that interacts with OpenAI GPT-3.5 Turbo API
@@ -181,7 +181,8 @@ namespace Bocifus
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="MainWindow"/> class.
+        /// Initializes a new instance of the
+        /// <see cref="MainWindow"/> class.
         /// </summary>
         public MainWindow( )
         {
@@ -231,6 +232,42 @@ namespace Bocifus
                 else
                 {
                     Dispatcher.BeginInvoke( action );
+                }
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Begins the initialize.
+        /// </summary>
+        private void Busy( )
+        {
+            try
+            {
+                lock( _entry )
+                {
+                    _busy = true;
+                }
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Ends the initialize.
+        /// </summary>
+        private void Chill( )
+        {
+            try
+            {
+                lock( _entry )
+                {
+                    _busy = false;
                 }
             }
             catch( Exception ex )
@@ -310,15 +347,15 @@ namespace Bocifus
         /// <summary>
         /// Refreshes the conversation list.
         /// </summary>
-        public void RefreshConversationList()
+        public void RefreshConversationList( )
         {
             var _collectionViewSource =
-                FindResource("SortedConversations") as CollectionViewSource;
+                FindResource( "SortedConversations" ) as CollectionViewSource;
 
-            if(_collectionViewSource != null)
+            if( _collectionViewSource != null )
             {
                 _collectionViewSource.Source = AppSettings.ConversationManager.Histories;
-                _collectionViewSource.View.Refresh();
+                _collectionViewSource.View.Refresh( );
             }
         }
 
@@ -522,22 +559,22 @@ namespace Bocifus
         /// </summary>
         /// <param name="filterText">The filter text.</param>
         /// <param name="isFilteringByFavorite">The is filtering by favorite.</param>
-        private void ApplyFilter(string filterText, bool? isFilteringByFavorite = null)
+        private void ApplyFilter( string filterText, bool? isFilteringByFavorite = null )
         {
             var _collectionViewSource =
-                FindResource("SortedConversations") as CollectionViewSource;
+                FindResource( "SortedConversations" ) as CollectionViewSource;
 
-            if(_collectionViewSource != null)
+            if( _collectionViewSource != null )
             {
                 _collectionViewSource.View.Filter = item =>
                 {
                     var _conversationHistory = item as ConversationHistory;
-                    if(_conversationHistory != null)
+                    if( _conversationHistory != null )
                     {
-                        var _matchesTextFilter = string.IsNullOrEmpty(filterText)
-                            || _conversationHistory.Messages.Any(message =>
-                                message.Content.Contains(filterText,
-                                    StringComparison.OrdinalIgnoreCase));
+                        var _matchesTextFilter = string.IsNullOrEmpty( filterText )
+                            || _conversationHistory.Messages.Any( message =>
+                                message.Content.Contains( filterText,
+                                    StringComparison.OrdinalIgnoreCase ) );
 
                         var _matchesFavoriteFilter = isFilteringByFavorite == null
                             || isFilteringByFavorite.Value == false || _conversationHistory.Favorite
@@ -549,7 +586,7 @@ namespace Bocifus
                     return false;
                 };
 
-                _collectionViewSource.View.Refresh();
+                _collectionViewSource.View.Refresh( );
             }
         }
 
@@ -557,45 +594,45 @@ namespace Bocifus
         /// Copies the markdown table to clipboard.
         /// </summary>
         /// <param name="markdownText">The markdown text.</param>
-        public static void CopyMarkdownTableToClipboard(string markdownText)
+        public static void CopyMarkdownTableToClipboard( string markdownText )
         {
-            var _lines = markdownText.Split(new[]
+            var _lines = markdownText.Split( new[ ]
             {
                 '\n'
-            }, StringSplitOptions.RemoveEmptyEntries);
+            }, StringSplitOptions.RemoveEmptyEntries );
 
-            var _tableData = new List<List<string>>();
-            foreach(var _line in _lines)
+            var _tableData = new List<List<string>>( );
+            foreach( var _line in _lines )
             {
-                if(!_line.StartsWith("|"))
+                if( !_line.StartsWith( "|" ) )
                 {
                     continue;
                 }
 
-                if(_line.Contains("---"))
+                if( _line.Contains( "---" ) )
                 {
                     continue;
                 }
 
-                var _row = _line.Trim('|').Split('|').Select(s => s.Trim()).ToList();
-                _tableData.Add(_row);
+                var _row = _line.Trim( '|' ).Split( '|' ).Select( s => s.Trim( ) ).ToList( );
+                _tableData.Add( _row );
             }
 
-            if(_tableData.Count > 0)
+            if( _tableData.Count > 0 )
             {
-                var _stringBuilder = new StringBuilder();
-                foreach(var _row in _tableData)
+                var _stringBuilder = new StringBuilder( );
+                foreach( var _row in _tableData )
                 {
-                    _stringBuilder.AppendLine(string.Join("\t", _row));
+                    _stringBuilder.AppendLine( string.Join( "\t", _row ) );
                 }
 
-                Clipboard.SetText(_stringBuilder.ToString());
+                Clipboard.SetText( _stringBuilder.ToString( ) );
                 Console.WriteLine(
-                    "Table data has been copied to the clipboard. You can now paste it into Excel.");
+                    "Table data has been copied to the clipboard. You can now paste it into Excel." );
             }
             else
             {
-                Console.WriteLine("No table data found in the markdown text.");
+                Console.WriteLine( "No table data found in the markdown text." );
             }
         }
 
@@ -606,10 +643,10 @@ namespace Bocifus
         /// <returns>
         ///   <c>true</c> if [is markdown table] [the specified text]; otherwise, <c>false</c>.
         /// </returns>
-        private static bool IsMarkdownTable(string text)
+        private static bool IsMarkdownTable( string text )
         {
             var _pattern = @"^\|.*\|\s*\n\|\s*[-:]+\s*\|";
-            return Regex.IsMatch(text, _pattern, RegexOptions.Multiline);
+            return Regex.IsMatch( text, _pattern, RegexOptions.Multiline );
         }
 
         /// <summary>
@@ -619,22 +656,22 @@ namespace Bocifus
         /// <returns>
         ///   <c>true</c> if the specified text contains japanese; otherwise, <c>false</c>.
         /// </returns>
-        public static bool ContainsJapanese(string text)
+        public static bool ContainsJapanese( string text )
         {
-            return text.Any(c =>
-                (c >= 0x3040 && c <= 0x30FF) || (c >= 0x4E00 && c <= 0x9FAF)
-                || (c >= 0xFF66 && c <= 0xFF9D));
+            return text.Any( c =>
+                ( c >= 0x3040 && c <= 0x30FF ) || ( c >= 0x4E00 && c <= 0x9FAF )
+                || ( c >= 0xFF66 && c <= 0xFF9D ) );
         }
 
         /// <summary>
         /// Shows the mermaid preview.
         /// </summary>
         /// <param name="mermaidCode">The mermaid code.</param>
-        private void ShowMermaidPreview(string mermaidCode)
+        private void ShowMermaidPreview( string mermaidCode )
         {
             string _theme;
             string _backgroundColor;
-            if(ThemeManager.Current.ActualApplicationTheme == ApplicationTheme.Dark)
+            if( ThemeManager.Current.ActualApplicationTheme == ApplicationTheme.Dark )
             {
                 _theme = "dark";
                 _backgroundColor = "#333";
@@ -661,12 +698,12 @@ namespace Bocifus
 </body>
 </html>";
 
-            var _previewWindow = new WebBrowserPreview(_htmlContent);
+            var _previewWindow = new WebBrowserPreview( _htmlContent );
             var _parentCenterX = Left + Width / 2;
             var _parentCenterY = Top + Height / 2;
             _previewWindow.Left = _parentCenterX - _previewWindow.Width / 2;
             _previewWindow.Top = _parentCenterY - _previewWindow.Height / 2;
-            _previewWindow.Show();
+            _previewWindow.Show( );
         }
 
         /// <summary>
@@ -676,14 +713,14 @@ namespace Bocifus
         /// <returns>
         ///   <c>true</c> if [is mermaid code] [the specified text]; otherwise, <c>false</c>.
         /// </returns>
-        public static bool IsMermaidCode(string text)
+        public static bool IsMermaidCode( string text )
         {
-            if(string.IsNullOrEmpty(text))
+            if( string.IsNullOrEmpty( text ) )
             {
                 return false;
             }
 
-            var _patterns = new[]
+            var _patterns = new[ ]
             {
                 @"^\s*graph\s+(?:TB|BT|RL|LR|TD|DT)\s*",
                 @"^\s*sequenceDiagram\s*",
@@ -698,15 +735,15 @@ namespace Bocifus
                 @"^\s*flowchart\s+(?:TB|BT|RL|LR)\s*"
             };
 
-            var _firstLine = text.Split(new[]
+            var _firstLine = text.Split( new[ ]
             {
                 '\n'
-            }, StringSplitOptions.RemoveEmptyEntries)[0];
+            }, StringSplitOptions.RemoveEmptyEntries )[ 0 ];
 
-            foreach(var _pattern in _patterns)
+            foreach( var _pattern in _patterns )
             {
-                if(Regex.IsMatch(_firstLine, _pattern,
-                    RegexOptions.IgnoreCase | RegexOptions.Multiline))
+                if( Regex.IsMatch( _firstLine, _pattern,
+                    RegexOptions.IgnoreCase | RegexOptions.Multiline ) )
                 {
                     return true;
                 }
@@ -723,8 +760,11 @@ namespace Bocifus
         private ContextMenu CreateContextMenu( string paragraphText = null )
         {
             var _contextMenu = new ContextMenu( );
-            var _copyTextMenuItem = new MenuItem( );
-            _copyTextMenuItem.Icon = new SymbolIcon( Symbol.Copy );
+            var _copyTextMenuItem = new MenuItem
+            {
+                Icon = new SymbolIcon( Symbol.Copy )
+            };
+
             _contextMenu.Opened += ( s, e ) =>
                 UpdateMenuItemButtonContent( _contextMenu.PlacementTarget, _copyTextMenuItem );
 
@@ -788,12 +828,18 @@ namespace Bocifus
 
             _contextMenu.Items.Add( _copyTextMenuItem );
             _contextMenu.Items.Add( new Separator( ) );
-            var _currentFontSizeMenuItem = new MenuItem( );
-            _currentFontSizeMenuItem.Icon = new SymbolIcon( Symbol.FontSize );
-            _currentFontSizeMenuItem.Header = $"Font Size: {Settings.Default.FontSize}pt";
+            var _currentFontSizeMenuItem = new MenuItem
+            {
+                Icon = new SymbolIcon( Symbol.FontSize ),
+                Header = $"Font Size: {Settings.Default.FontSize}pt"
+            };
+
             _contextMenu.Items.Add( _currentFontSizeMenuItem );
-            var _increaseFontSizeMenuItem = new MenuItem( );
-            _increaseFontSizeMenuItem.Icon = new SymbolIcon( Symbol.FontIncrease );
+            var _increaseFontSizeMenuItem = new MenuItem
+            {
+                Icon = new SymbolIcon( Symbol.FontIncrease )
+            };
+
             var _increaseFontSizeButton = new Button
             {
                 Content = "Increase Font Size",
@@ -807,8 +853,11 @@ namespace Bocifus
             _increaseFontSizeMenuItem.Click += ( s, e ) =>
                 SetFontSize( Settings.Default.FontSize + 1, _currentFontSizeMenuItem );
 
-            var _decreaseFontSizeMenuItem = new MenuItem( );
-            _decreaseFontSizeMenuItem.Icon = new SymbolIcon( Symbol.FontDecrease );
+            var _decreaseFontSizeMenuItem = new MenuItem
+            {
+                Icon = new SymbolIcon( Symbol.FontDecrease )
+            };
+
             var _decreaseFontSizeButton = new Button
             {
                 Content = "Decrease Font Size",
@@ -824,10 +873,10 @@ namespace Bocifus
 
             var _defaultFontSizeMenuItem = new MenuItem
             {
-                Header = "Default Font Size"
+                Header = "Default Font Size",
+                Icon = new SymbolIcon( Symbol.Refresh )
             };
 
-            _defaultFontSizeMenuItem.Icon = new SymbolIcon( Symbol.Refresh );
             var _defaultFontSizeButton = new Button
             {
                 Content = "Default Font Size",
@@ -842,12 +891,18 @@ namespace Bocifus
             _currentFontSizeMenuItem.Items.Add( _increaseFontSizeMenuItem );
             _currentFontSizeMenuItem.Items.Add( _decreaseFontSizeMenuItem );
             _currentFontSizeMenuItem.Items.Add( _defaultFontSizeMenuItem );
-            var _currentFontWeightMenuItem = new MenuItem( );
-            _currentFontWeightMenuItem.Icon = new SymbolIcon( Symbol.Font );
-            _currentFontWeightMenuItem.Header = $"Font Weight: {Settings.Default.FontWeight}";
+            var _currentFontWeightMenuItem = new MenuItem
+            {
+                Icon = new SymbolIcon( Symbol.Font ),
+                Header = $"Font Weight: {Settings.Default.FontWeight}"
+            };
+
             _contextMenu.Items.Add( _currentFontWeightMenuItem );
-            var _increaseFontWeightMenuItem = new MenuItem( );
-            _increaseFontWeightMenuItem.Icon = new SymbolIcon( Symbol.FontIncrease );
+            var _increaseFontWeightMenuItem = new MenuItem
+            {
+                Icon = new SymbolIcon( Symbol.FontIncrease )
+            };
+
             var _increaseFontWeightButton = new Button
             {
                 Content = "Increase Font Weight",
@@ -861,8 +916,11 @@ namespace Bocifus
             _increaseFontWeightMenuItem.Click += ( s, e ) =>
                 SetFontWeight( Settings.Default.FontWeight + 50, _currentFontWeightMenuItem );
 
-            var _decreaseFontWeightMenuItem = new MenuItem( );
-            _decreaseFontWeightMenuItem.Icon = new SymbolIcon( Symbol.FontDecrease );
+            var _decreaseFontWeightMenuItem = new MenuItem
+            {
+                Icon = new SymbolIcon( Symbol.FontDecrease )
+            };
+
             var _decreaseFontWeightButton = new Button
             {
                 Content = "Decrease Font Weight",
@@ -878,10 +936,10 @@ namespace Bocifus
 
             var _defaultFontWeightMenuItem = new MenuItem
             {
-                Header = "Default Font Weight"
+                Header = "Default Font Weight",
+                Icon = new SymbolIcon( Symbol.Refresh )
             };
 
-            _defaultFontWeightMenuItem.Icon = new SymbolIcon( Symbol.Refresh );
             var _defaultFontWeightButton = new Button
             {
                 Content = "Default Font Weight",
@@ -960,8 +1018,11 @@ namespace Bocifus
                 && IsMermaidCode( paragraphText ) )
             {
                 _contextMenu.Items.Add( new Separator( ) );
-                var _mermaidMenuItem = new MenuItem( );
-                _mermaidMenuItem.Icon = new SymbolIcon( Symbol.AllApps );
+                var _mermaidMenuItem = new MenuItem
+                {
+                    Icon = new SymbolIcon( Symbol.AllApps )
+                };
+
                 var _mermaidTextAndCloseMenu = ( ) =>
                 {
                     OnMermaidPreviewContextMenuClick( paragraphText );
@@ -977,8 +1038,11 @@ namespace Bocifus
                 && IsMarkdownTable( paragraphText ) )
             {
                 _contextMenu.Items.Add( new Separator( ) );
-                var _copyTableMenuItem = new MenuItem( );
-                _copyTableMenuItem.Icon = new SymbolIcon( Symbol.Copy );
+                var _copyTableMenuItem = new MenuItem
+                {
+                    Icon = new SymbolIcon( Symbol.Copy )
+                };
+
                 var _copyTableAndCloseMenu = ( ) =>
                 {
                     CopyMarkdownTableToClipboard( paragraphText );
@@ -988,8 +1052,11 @@ namespace Bocifus
                 _copyTableMenuItem.Click += ( s, e ) => _copyTableAndCloseMenu( );
                 _copyTableMenuItem.Header = "Copy Table to Clipboard";
                 _contextMenu.Items.Add( _copyTableMenuItem );
-                var _exportCsvMenuItem = new MenuItem( );
-                _exportCsvMenuItem.Icon = new SymbolIcon( Symbol.Download );
+                var _exportCsvMenuItem = new MenuItem
+                {
+                    Icon = new SymbolIcon( Symbol.Download )
+                };
+
                 var _exportCsvAndCloseMenu = ( ) =>
                 {
                     OnExportCsvContextMenuClick( paragraphText );
@@ -1009,28 +1076,28 @@ namespace Bocifus
         /// </summary>
         /// <param name="target">The target.</param>
         /// <param name="menuItem">The menu item.</param>
-        private void UpdateMenuItemButtonContent(object target, MenuItem menuItem)
+        private void UpdateMenuItemButtonContent( object target, MenuItem menuItem )
         {
             var _headerText = "Copy All Text";
-            if(target is TextBox _textBox
-                && !string.IsNullOrEmpty(_textBox.SelectedText))
+            if( target is TextBox _textBox
+                && !string.IsNullOrEmpty( _textBox.SelectedText ) )
             {
                 _headerText = "Copy Selected Text";
             }
-            else if(target is MarkdownScrollViewer _markdownScrollViewer)
+            else if( target is MarkdownScrollViewer _markdownScrollViewer )
             {
-                var _selectedTextRange = new TextRange(_markdownScrollViewer.Selection.Start,
-                    _markdownScrollViewer.Selection.End);
+                var _selectedTextRange = new TextRange( _markdownScrollViewer.Selection.Start,
+                    _markdownScrollViewer.Selection.End );
 
-                if(!string.IsNullOrEmpty(_selectedTextRange.Text))
+                if( !string.IsNullOrEmpty( _selectedTextRange.Text ) )
                 {
                     _headerText = "Copy Selected Text";
                 }
                 else
                 {
-                    var _mousePos = Mouse.GetPosition(_markdownScrollViewer);
-                    var _hitVisual = _markdownScrollViewer.InputHitTest(_mousePos) as Visual;
-                    if(_hitVisual is TextView _editor)
+                    var _mousePos = Mouse.GetPosition( _markdownScrollViewer );
+                    var _hitVisual = _markdownScrollViewer.InputHitTest( _mousePos ) as Visual;
+                    if( _hitVisual is TextView _editor )
                     {
                         _headerText = "Copy Code Block Text";
                     }
@@ -1040,11 +1107,11 @@ namespace Bocifus
                     }
                 }
             }
-            else if(target is TextView _textView)
+            else if( target is TextView _textView )
             {
-                var _mousePos = Mouse.GetPosition(_textView);
-                var _hitVisual = _textView.InputHitTest(_mousePos) as Visual;
-                if(_hitVisual is TextView _editor)
+                var _mousePos = Mouse.GetPosition( _textView );
+                var _hitVisual = _textView.InputHitTest( _mousePos ) as Visual;
+                if( _hitVisual is TextView _editor )
                 {
                     _headerText = "Copy Code Block Text";
                 }
@@ -1060,20 +1127,20 @@ namespace Bocifus
         /// <summary>
         /// Updates the UI based on vision.
         /// </summary>
-        private void UpdateUIBasedOnVision()
+        private void UpdateUIBasedOnVision( )
         {
-            if(ConfigurationComboBox.SelectedItem == null)
+            if( ConfigurationComboBox.SelectedItem == null )
             {
                 return;
             }
 
-            var _selectedConfigName = ConfigurationComboBox.SelectedItem.ToString();
-            var _row = AppSettings.ConfigDataTable.AsEnumerable().FirstOrDefault(x =>
-                x.Field<string>("ConfigurationName") == _selectedConfigName);
+            var _selectedConfigName = ConfigurationComboBox.SelectedItem.ToString( );
+            var _row = AppSettings.ConfigDataTable.AsEnumerable( ).FirstOrDefault( x =>
+                x.Field<string>( "ConfigurationName" ) == _selectedConfigName );
 
-            if(_row != null)
+            if( _row != null )
             {
-                _visionEnabled = _row.Field<bool>("Vision");
+                _visionEnabled = _row.Field<bool>( "Vision" );
             }
 
             AttachFileButton.Visibility = _visionEnabled
@@ -1085,15 +1152,16 @@ namespace Bocifus
                 ? 35
                 : 10;
 
-            UserTextBox.Padding = new Thickness(_leftPadding, _currentPadding.Top,
-                _currentPadding.Right, _currentPadding.Bottom);
+            UserTextBox.Padding = new Thickness( _leftPadding, _currentPadding.Top,
+                _currentPadding.Right, _currentPadding.Bottom );
         }
 
         /// <summary>
         /// Called when [main window loaded].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnMainWindowLoaded( object sender, RoutedEventArgs e )
         {
             var _collectionViewSource =
@@ -1134,7 +1202,8 @@ namespace Bocifus
         /// Called when [window closing].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="CancelEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="CancelEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnWindowClosing( object sender, CancelEventArgs e )
         {
             AppSettings.PromptTemplateGridRowHeighSetting = PromptTemplateGridRow.ActualHeight;
@@ -1145,7 +1214,8 @@ namespace Bocifus
         /// <summary>
         /// Raises the <see cref="E:System.Windows.Window.Closing" /> event.
         /// </summary>
-        /// <param name="e">A <see cref="T:System.ComponentModel.CancelEventArgs" /> that contains the event data.</param>
+        /// <param name="e">A <see cref="T:System.ComponentModel.CancelEventArgs" />
+        /// that contains the event data.</param>
         protected override void OnClosing( CancelEventArgs e )
         {
             SaveWindowBounds( );
@@ -1156,14 +1226,18 @@ namespace Bocifus
         /// Called when [window key down].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="KeyEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="KeyEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnWindowKeyDown( object sender, KeyEventArgs e )
         {
             if( e.Key == Key.F2 )
             {
                 var _currentText = UserTextBox.Text;
-                var _window = new LargeUserTextInput( _currentText );
-                _window.Owner = this;
+                var _window = new LargeUserTextInput( _currentText )
+                {
+                    Owner = this
+                };
+
                 _window.ShowDialog( );
                 UserTextBox.Focus( );
             }
@@ -1178,7 +1252,8 @@ namespace Bocifus
         /// Called when [acrylic window preview key down].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="KeyEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="KeyEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnAcrylicWindowPreviewKeyDown( object sender, KeyEventArgs e )
         {
             if( e.Key == Key.N
@@ -1196,10 +1271,11 @@ namespace Bocifus
                     var _documentsPath =
                         Environment.GetFolderPath( Environment.SpecialFolder.MyDocuments );
 
-                    MessageBox.Show(
-                        "Saved to " + _documentsPath + @"\Bocifus\ConversationHistory" + "\r\n"
-                        + _documentsPath + @"\Bocifus\PromptTemplate", "Information",
-                        MessageBoxButton.OK, MessageBoxImage.Information );
+                    var _msg = "Saved to " + _documentsPath + @"\Bocifus\ConversationHistory"
+                        + "\r\n" + _documentsPath + @"\Bocifus\PromptTemplate";
+
+                    MessageBox.Show( _msg, "Information", MessageBoxButton.OK, 
+                        MessageBoxImage.Information );
 
                     e.Handled = true;
                 }
@@ -1251,7 +1327,8 @@ namespace Bocifus
         /// Called when [user text box key down].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="KeyEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="KeyEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnUserTextBoxKeyDown( object sender, KeyEventArgs e )
         {
             if( e.Key == Key.Enter
@@ -1285,7 +1362,8 @@ namespace Bocifus
         /// Called when [execute button click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnExecButtonClick( object sender, RoutedEventArgs e )
         {
             if( !string.IsNullOrWhiteSpace( UserTextBox.Text ) )
@@ -1303,7 +1381,8 @@ namespace Bocifus
         /// Called when [cancel button click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnCancelButtonClick( object sender, RoutedEventArgs e )
         {
             _cancellationTokenSource?.Cancel( );
@@ -1313,7 +1392,8 @@ namespace Bocifus
         /// Called when [assistant message grid mouse enter].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="MouseEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="MouseEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnAssistantMessageGridMouseEnter( object sender, MouseEventArgs e )
         {
             if( _isProcessing )
@@ -1326,7 +1406,8 @@ namespace Bocifus
         /// Called when [assistant message grid mouse leave].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="MouseEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="MouseEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnAssistantMessageGridMouseLeave( object sender, MouseEventArgs e )
         {
             CancelButton.Visibility = Visibility.Collapsed;
@@ -1336,7 +1417,8 @@ namespace Bocifus
         /// Called when [user text box text changed].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="TextChangedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="TextChangedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnUserTextBoxTextChanged( object sender, TextChangedEventArgs e )
         {
             var _tokens = TokenizerGpt3.Encode( UserTextBox.Text );
@@ -1348,7 +1430,8 @@ namespace Bocifus
         /// Called when [user text box size changed].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="SizeChangedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="SizeChangedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnUserTextBoxSizeChanged( object sender, SizeChangedEventArgs e )
         {
             if( UserTextBox.ActualHeight >= UserTextBox.MaxHeight )
@@ -1365,7 +1448,8 @@ namespace Bocifus
         /// Called when [notice toggle switch toggled].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnNoticeToggleSwitchToggled( object sender, RoutedEventArgs e )
         {
             AppSettings.NoticeFlgSetting = NoticeToggleSwitch.IsOn;
@@ -1375,7 +1459,8 @@ namespace Bocifus
         /// Called when [tokens label mouse left button down].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="MouseButtonEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="MouseButtonEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnTokensLabelMouseLeftButtonDown( object sender, MouseButtonEventArgs e )
         {
             UtilityFunctions.ShowMessagebox( "Tokens", TokensLabel.ToolTip.ToString( ) );
@@ -1385,7 +1470,8 @@ namespace Bocifus
         /// Called when [configuration ComboBox selection changed].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="SelectionChangedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="SelectionChangedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnConfigurationComboBoxSelectionChanged( object sender,
             SelectionChangedEventArgs e )
         {
@@ -1402,7 +1488,8 @@ namespace Bocifus
         /// Called when [system prompt ComboBox selection changed].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="SelectionChangedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="SelectionChangedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnSystemPromptComboBoxSelectionChanged( object sender,
             SelectionChangedEventArgs e )
         {
@@ -1432,7 +1519,8 @@ namespace Bocifus
         /// Called when [system prompt combo box2 selection changed].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="SelectionChangedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="SelectionChangedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnSystemPromptComboBox2SelectionChanged( object sender,
             SelectionChangedEventArgs e )
         {
@@ -1457,7 +1545,8 @@ namespace Bocifus
         /// Called when [user text box mouse wheel].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="MouseWheelEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="MouseWheelEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnUserTextBoxMouseWheel( object sender, MouseWheelEventArgs e )
         {
             if( Keyboard.Modifiers == ModifierKeys.Control )
@@ -1479,11 +1568,15 @@ namespace Bocifus
         /// Called when [token usage mouse left button down].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="MouseButtonEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="MouseButtonEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnTokenUsageMouseLeftButtonDown( object sender, MouseButtonEventArgs e )
         {
-            var _window = new TokenUsageWindow( );
-            _window.Owner = this;
+            var _window = new TokenUsageWindow
+            {
+                Owner = this
+            };
+
             _window.ShowDialog( );
         }
 
@@ -1491,11 +1584,15 @@ namespace Bocifus
         /// Called when [configuration setting button click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnConfigurationSettingButtonClick( object sender, RoutedEventArgs e )
         {
-            var _window = new ConfigSettingWindow( );
-            _window.Owner = this;
+            var _window = new ConfigSettingWindow
+            {
+                Owner = this
+            };
+
             _window.ShowDialog( );
             ConfigurationComboBox.ItemsSource = AppSettings.ConfigDataTable.AsEnumerable( )
                 .Select( x => x.Field<string>( "ConfigurationName" ) ).ToList( );
@@ -1507,16 +1604,20 @@ namespace Bocifus
         /// Called when [instruction setting button click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnInstructionSettingButtonClick( object sender, RoutedEventArgs e )
         {
-            var _window = new InstructionSettingWindow( AppSettings.InstructionListSetting );
-            _window.Owner = this;
+            var _window = new InstructionWindow( AppSettings.InstructionListSetting )
+            {
+                Owner = this
+            };
+
             var _result = ( bool )_window.ShowDialog( );
             if( _result )
             {
                 AppSettings.InstructionListSetting = _result
-                    ? _window.inputResult
+                    ? _window.InputResult
                     : null;
 
                 var _instructionList = AppSettings.InstructionListSetting?.Cast<string>( )
@@ -1533,11 +1634,15 @@ namespace Bocifus
         /// Called when [color menu item click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnColorMenuItemClick( object sender, RoutedEventArgs e )
         {
-            var _window = new ColorSettings( );
-            _window.Owner = this;
+            var _window = new ColorSettings
+            {
+                Owner = this
+            };
+
             _window.ShowDialog( );
         }
 
@@ -1545,11 +1650,15 @@ namespace Bocifus
         /// Called when [translation API menu item click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> i
+        /// nstance containing the event data.</param>
         private void OnTranslationApiMenuItemClick( object sender, RoutedEventArgs e )
         {
-            var _window = new TranslationSettingWindow( );
-            _window.Owner = this;
+            var _window = new TranslationWindow
+            {
+                Owner = this
+            };
+
             _window.ShowDialog( );
         }
 
@@ -1557,11 +1666,15 @@ namespace Bocifus
         /// Called when [title generation menu item click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnTitleGenerationMenuItemClick( object sender, RoutedEventArgs e )
         {
-            var _window = new TitleGenerationSettings( );
-            _window.Owner = this;
+            var _window = new TitleGenerationSettings
+            {
+                Owner = this
+            };
+
             _window.ShowDialog( );
         }
 
@@ -1572,8 +1685,11 @@ namespace Bocifus
         /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void OnVersionInformationMenuItemClick( object sender, RoutedEventArgs e )
         {
-            var _window = new VersionWindow( );
-            _window.Owner = this;
+            var _window = new VersionWindow
+            {
+                Owner = this
+            };
+
             _window.ShowDialog( );
         }
 
@@ -1699,7 +1815,7 @@ namespace Bocifus
                 _element = VisualTreeHelper.GetParent( _element ) as UIElement;
                 if( _element is ScrollViewer _scrollViewer )
                 {
-                    var _delta = _scrollViewer.VerticalOffset - ( e.Delta / 3 );
+                    var _delta = _scrollViewer.VerticalOffset - e.Delta / 3;
                     _scrollViewer.ScrollToVerticalOffset( _delta );
                     e.Handled = true;
                     return;
@@ -1936,8 +2052,11 @@ namespace Bocifus
             }
 
             var _currentTitle = _itemToDelete.Title;
-            var _editWindow = new TitleEditWindow( _currentTitle );
-            _editWindow.Owner = this;
+            var _editWindow = new TitleEditWindow( _currentTitle )
+            {
+                Owner = this
+            };
+
             if( _editWindow.ShowDialog( ) == true )
             {
                 var _newTitle = _editWindow.NewTitle;
@@ -2143,11 +2262,12 @@ namespace Bocifus
         /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void OnSelectFileClick( object sender, RoutedEventArgs e )
         {
-            var _openFileDialog = new OpenFileDialog( );
-            _openFileDialog.Filter =
-                "Image files (*.png;*.jpeg;*.jpg;*.webp;*.gif)|*.png;*.jpeg;*.jpg;*.webp;*.gif";
+            var _openFileDialog = new OpenFileDialog
+            {
+                Filter = "Image files (*.png;*.jpeg;*.jpg;*.webp;*.gif)|*.png;*.jpeg;*.jpg;*.webp;*.gif",
+                Multiselect = false
+            };
 
-            _openFileDialog.Multiselect = false;
             if( _openFileDialog.ShowDialog( ) == true )
             {
                 _imageFilePath = _openFileDialog.FileName;
@@ -2222,8 +2342,11 @@ namespace Bocifus
         private void OnShowLargeTextInputWindowButtonClick( object sender, RoutedEventArgs e )
         {
             var _currentText = UserTextBox.Text;
-            var _window = new LargeUserTextInput( _currentText );
-            _window.Owner = this;
+            var _window = new LargeUserTextInput( _currentText )
+            {
+                Owner = this
+            };
+
             _window.ShowDialog( );
             UserTextBox.Focus( );
         }
@@ -2449,10 +2572,10 @@ namespace Bocifus
         /// associated with freeing, releasing,
         /// or resetting unmanaged resources.
         /// </summary>
-        public void Dispose()
+        public void Dispose( )
         {
-            Dispose(true);
-            GC.SuppressFinalize(this);
+            Dispose( true );
+            GC.SuppressFinalize( this );
         }
 
         /// <summary>
@@ -2462,12 +2585,12 @@ namespace Bocifus
         /// to release both managed
         /// and unmanaged resources;
         /// <c>false</c> to release only unmanaged resources.</param>
-        protected virtual void Dispose(bool disposing)
+        protected virtual void Dispose( bool disposing )
         {
-            if(disposing)
+            if( disposing )
             {
-                SfSkinManager.Dispose(this);
-                _timer?.Dispose();
+                SfSkinManager.Dispose( this );
+                _timer?.Dispose( );
             }
         }
 

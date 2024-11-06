@@ -53,7 +53,7 @@ namespace Bocifus
     /// TranslateAPISettingWindow.xaml
     /// </summary>
     [ SuppressMessage( "ReSharper", "FieldCanBeMadeReadOnly.Local" ) ]
-    public partial class TranslationSettingWindow
+    public partial class TranslationWindow
     {
         /// <summary>
         /// The main window
@@ -62,9 +62,9 @@ namespace Bocifus
 
         /// <summary>
         /// Initializes a new instance of the
-        /// <see cref="TranslationSettingWindow"/> class.
+        /// <see cref="TranslationWindow"/> class.
         /// </summary>
-        public TranslationSettingWindow( )
+        public TranslationWindow( )
         {
             InitializeComponent( );
             TranslationApiProviderComboBox.Items.Add( "DeepL" );

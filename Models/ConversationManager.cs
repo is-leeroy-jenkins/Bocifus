@@ -161,8 +161,11 @@ namespace Bocifus
                 return;
             }
 
-            var _window = new Table( _targetConversation );
-            _window.Owner = Application.Current.Windows.OfType<MainWindow>( ).FirstOrDefault( );
+            var _window = new Table( _targetConversation )
+            {
+                Owner = Application.Current.Windows.OfType<MainWindow>( ).FirstOrDefault( )
+            };
+
             var _result = ( bool )_window.ShowDialog( );
             if( _result )
             {
@@ -225,8 +228,11 @@ namespace Bocifus
                 _accentColor = SystemParameters.WindowGlassColor;
             }
 
-            var _accentColorBrush = new SolidColorBrush( ( Color )_accentColor );
-            _accentColorBrush.Opacity = 0.3;
+            var _accentColorBrush = new SolidColorBrush( ( Color )_accentColor )
+            {
+                Opacity = 0.3
+            };
+
             var _messageGrid = new Grid
             {
                 ColumnDefinitions =
@@ -400,26 +406,27 @@ namespace Bocifus
             else if( !isUser
                 && visionImage == null )
             {
-                var _markDownScrollViewer = new MarkdownScrollViewer( );
-                _markDownScrollViewer.MarkdownStyle =
-                    ( Style )Application.Current.FindResource( "MdXamlStyle" );
-
-                _markDownScrollViewer.Engine.DisabledContextMenu = true;
-                _markDownScrollViewer.UseSoftlineBreakAsHardlineBreak = true;
-                _markDownScrollViewer.UseDarkThemeSyntaxHighlighting =
-                    ThemeManager.Current.ActualApplicationTheme == ApplicationTheme.Dark;
-
-                _markDownScrollViewer.Markdown = messageContent;
-                _markDownScrollViewer.Opacity = _opacity;
-                _markDownScrollViewer.SelectionBrush =
-                    new SolidColorBrush( ThemeManager.Current.ActualAccentColor );
-
-                _markDownScrollViewer.Padding = new Thickness( 12, 10, 12, 10 );
-                _markDownScrollViewer.HorizontalContentAlignment = HorizontalAlignment.Left;
-                _markDownScrollViewer.Document.FontSize = Settings.Default.FontSize;
-                _markDownScrollViewer.Document.FontFamily = new FontFamily( "Yu Gothic UI" );
-                _markDownScrollViewer.Document.FontWeight =
-                    FontWeight.FromOpenTypeWeight( Settings.Default.FontWeight );
+                var _markDownScrollViewer = new MarkdownScrollViewer
+                {
+                    MarkdownStyle = ( Style )Application.Current.FindResource( "MdXamlStyle" ),
+                    Engine =
+                    {
+                        DisabledContextMenu = true
+                    },
+                    UseSoftlineBreakAsHardlineBreak = true,
+                    UseDarkThemeSyntaxHighlighting = ThemeManager.Current.ActualApplicationTheme == ApplicationTheme.Dark,
+                    Markdown = messageContent,
+                    Opacity = _opacity,
+                    SelectionBrush = new SolidColorBrush( ThemeManager.Current.ActualAccentColor ),
+                    Padding = new Thickness( 12, 10, 12, 10 ),
+                    HorizontalContentAlignment = HorizontalAlignment.Left,
+                    Document =
+                    {
+                        FontSize = Settings.Default.FontSize,
+                        FontFamily = new FontFamily( "Yu Gothic UI" ),
+                        FontWeight = FontWeight.FromOpenTypeWeight( Settings.Default.FontWeight )
+                    }
+                };
 
                 _markDownScrollViewer.ContextMenuOpening += OnMarkdownScrollContextMenuOpening;
 

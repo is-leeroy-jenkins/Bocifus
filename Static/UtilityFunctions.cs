@@ -180,8 +180,11 @@ namespace Bocifus
         /// <param name="content">The content.</param>
         public static void ShowMessagebox( string title, string content )
         {
-            var _window = new Messagebox( title, content );
-            _window.Owner = Application.Current.Windows.OfType<MainWindow>( ).FirstOrDefault( );
+            var _window = new Messagebox( title, content )
+            {
+                Owner = Application.Current.Windows.OfType<MainWindow>( ).FirstOrDefault( )
+            };
+
             _window.ShowDialog( );
         }
 

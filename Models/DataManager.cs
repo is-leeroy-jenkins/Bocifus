@@ -60,10 +60,13 @@ namespace Bocifus
         {
             var _documentsPath = Environment.GetFolderPath( Environment.SpecialFolder.MyDocuments );
             var _dataDirectory =
-                Path.Combine( _documentsPath, "OpenAIOnWPF", "ConversationHistory" );
+                Path.Combine( _documentsPath, "Bocifus", "ConversationHistory" );
 
-            var _manager = new ConversationManager( );
-            _manager.Histories = new ObservableCollection<ConversationHistory>( );
+            var _manager = new ConversationManager
+            {
+                Histories = new ObservableCollection<ConversationHistory>( )
+            };
+
             Directory.CreateDirectory( _dataDirectory );
             var _files = Directory.GetFiles( _dataDirectory, "Conversation_*.json" );
             for( var _i = 0; _i < _files.Length; _i++ )
@@ -88,7 +91,7 @@ namespace Bocifus
         {
             var _documentsPath = Environment.GetFolderPath( Environment.SpecialFolder.MyDocuments );
             var _dataDirectory =
-                Path.Combine( _documentsPath, "OpenAIOnWPF", "ConversationHistory" );
+                Path.Combine( _documentsPath, "Bocifus", "ConversationHistory" );
 
             Directory.CreateDirectory( _dataDirectory );
             foreach( var _file in Directory.EnumerateFiles( _dataDirectory, "*.json" ) )
@@ -120,7 +123,7 @@ namespace Bocifus
         public static void SavePromptTemplateAsJson( PromptTemplateManager manager )
         {
             var _documentsPath = Environment.GetFolderPath( Environment.SpecialFolder.MyDocuments );
-            var _dataDirectory = Path.Combine( _documentsPath, "OpenAIOnWPF", "PromptTemplate" );
+            var _dataDirectory = Path.Combine( _documentsPath, "Bocifus", "PromptTemplate" );
             Directory.CreateDirectory( _dataDirectory );
             foreach( var _file in Directory.EnumerateFiles( _dataDirectory, "*.json" ) )
             {
@@ -151,9 +154,12 @@ namespace Bocifus
         public static PromptTemplateManager LoadPromptTemplateFromJson( )
         {
             var _documentsPath = Environment.GetFolderPath( Environment.SpecialFolder.MyDocuments );
-            var _dataDirectory = Path.Combine( _documentsPath, "OpenAIOnWPF", "PromptTemplate" );
-            var _manager = new PromptTemplateManager( );
-            _manager.Templates = new ObservableCollection<PromptTemplate>( );
+            var _dataDirectory = Path.Combine( _documentsPath, "Bocifus", "PromptTemplate" );
+            var _manager = new PromptTemplateManager
+            {
+                Templates = new ObservableCollection<PromptTemplate>( )
+            };
+
             Directory.CreateDirectory( _dataDirectory );
             var _files = Directory.GetFiles( _dataDirectory, "PromptTemplate_*.json" );
             for( var _index = 0; _index < _files.Length; _index++ )

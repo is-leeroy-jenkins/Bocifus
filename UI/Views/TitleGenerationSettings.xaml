@@ -12,10 +12,10 @@
     Height="700"
     HorizontalContentAlignment="Center"
     AcrylicWindowStyle="NoIcon"
-    BorderBrush="{DynamicResource SystemAltHighColor}"
-    Closing="Window_Closing"
-    KeyDown="Window_KeyDown"
-    Loaded="Window_Loaded"
+    BorderBrush="{StaticResource BlueBorderBrush}"
+    Closing="OnWindowClosing"
+    KeyDown="OnWindowKeyDown"
+    Loaded="OnWindowLoaded"
     ShowInTaskbar="False"
     WindowStartupLocation="CenterOwner"
     mc:Ignorable="d">
@@ -41,6 +41,7 @@
                 <ui:ToggleSwitch
                     x:Name="EnableToggleSwitch"
                     HorizontalAlignment="Left"
+                    Foreground="{StaticResource LightBlueBrush}"
                     OffContent="Not Use"
                     OnContent="Use" />
                 <TextBlock
@@ -85,7 +86,7 @@
                 Padding="10,5,20,5"
                 AcceptsReturn="True"
                 AcceptsTab="True"
-                PreviewMouseWheel="PromptTextBox_PreviewMouseWheel"
+                PreviewMouseWheel="OnPromptTextBoxPreviewMouseWheel"
                 TextWrapping="Wrap"
                 VerticalScrollBarVisibility="Auto">
                 <TextBox.Background>
@@ -106,7 +107,7 @@
                     MinWidth="60"
                     Padding="0,0,0,0"
                     HorizontalAlignment="Right"
-                    Click="OkButton_Click"
+                    Click="OnOkButtonClick"
                     Content="Save"
                     Style="{StaticResource AccentButtonStyle}" />
                 <Button
@@ -116,8 +117,9 @@
                     MinWidth="60"
                     Padding="0,0,0,0"
                     HorizontalAlignment="Right"
-                    Click="CancelButton_Click"
-                    Content="Cancel" />
+                    Click="OnCancelButtonClick"
+                    Content="Cancel" 
+                    Style="{StaticResource AccentButtonStyle}" />
             </Grid>
         </Grid>
     </Grid>

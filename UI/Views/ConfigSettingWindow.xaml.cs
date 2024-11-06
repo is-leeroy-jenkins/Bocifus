@@ -50,14 +50,21 @@ namespace Bocifus
     using System.Diagnostics.CodeAnalysis;
     using System.IO;
     using System.Linq;
+    using System.Threading;
     using System.Windows;
     using System.Windows.Controls;
     using System.Windows.Forms;
     using System.Windows.Input;
     using System.Windows.Media;
+    using ToastNotifications;
+    using ToastNotifications.Lifetime;
+    using ToastNotifications.Messages;
+    using ToastNotifications.Position;
+    using Application = System.Windows.Application;
     using HorizontalAlignment = System.Windows.HorizontalAlignment;
     using KeyEventArgs = System.Windows.Input.KeyEventArgs;
     using MessageBox = ModernWpf.MessageBox;
+    using Timer = System.Windows.Forms.Timer;
 
     /// <inheritdoc />
     /// <summary>
@@ -68,6 +75,46 @@ namespace Bocifus
     public partial class ConfigSettingWindow
     {
         /// <summary>
+        /// The busy
+        /// </summary>
+        private protected bool _busy;
+
+        /// <summary>
+        /// The path
+        /// </summary>
+        private protected object _entry = new object( );
+
+        /// <summary>
+        /// The seconds
+        /// </summary>
+        private protected int _seconds;
+
+        /// <summary>
+        /// The time
+        /// </summary>
+        private protected int _time;
+
+        /// <summary>
+        /// The timer
+        /// </summary>
+        private protected Timer _timer;
+
+        /// <summary>
+        /// The timer
+        /// </summary>
+        private protected TimerCallback _timerCallback;
+
+        /// <summary>
+        /// The status update
+        /// </summary>
+        private protected Action _statusUpdate;
+
+        /// <summary>
+        /// The theme
+        /// </summary>
+        private protected readonly DarkMode _theme = new DarkMode( );
+
+        /// <summary>
         /// Initializes a new instance of the
         /// <see cref="ConfigSettingWindow"/> class.
         /// </summary>
@@ -75,12 +122,18 @@ namespace Bocifus
         {
             InitializeComponent( );
             ConfigListBox.ContextMenu = new ContextMenu( );
-            var _upSwap = new MenuItem( );
-            _upSwap.Header = "⬆";
+            var _upSwap = new MenuItem
+            {
+                Header = "⬆"
+            };
+
             _upSwap.Click += OnUpSwapClick;
             _upSwap.HorizontalAlignment = HorizontalAlignment.Center;
-            var _downSwap = new MenuItem( );
-            _downSwap.Header = "⬇";
+            var _downSwap = new MenuItem
+            {
+                Header = "⬇"
+            };
+
             _downSwap.Click += OnDownSwapClick;
             _downSwap.HorizontalAlignment = HorizontalAlignment.Center;
             ConfigListBox.ContextMenu.Items.Add( _upSwap );
@@ -130,13 +183,183 @@ namespace Bocifus
                 ConfigListBox.Items.Add( _row[ "ConfigurationName" ] );
             }
 
-            var _datarow = AppSettings.ConfigDataTable
-                .AsEnumerable( )
+            var _datarow = AppSettings.ConfigDataTable.AsEnumerable( )
                 .Where( a => a.Field<string>( 0 ) == AppSettings.SelectConfigSetting )
                 .FirstOrDefault( );
 
             var _index = AppSettings.ConfigDataTable.Rows.IndexOf( _datarow );
             ConfigListBox.SelectedIndex = _index;
+        }
+
+        /// <summary>
+        /// Gets a value indicating whether this instance is busy.
+        /// </summary>
+        /// <value>
+        /// <c> true </c>
+        /// if this instance is busy; otherwise,
+        /// <c> false </c>
+        /// </value>
+        public bool IsBusy
+        {
+            get
+            {
+                lock( _entry )
+                {
+                    return _busy;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Invokes if needed.
+        /// </summary>
+        /// <param name="action">The action.</param>
+        private void InvokeIf( Action action )
+        {
+            try
+            {
+                ThrowIf.Null( action, nameof( action ) );
+                if( Dispatcher.CheckAccess( ) )
+                {
+                    action?.Invoke( );
+                }
+                else
+                {
+                    Dispatcher.BeginInvoke( action );
+                }
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Invokes if.
+        /// </summary>
+        /// <param name="action">The action.</param>
+        private void InvokeIf( Action<object> action )
+        {
+            try
+            {
+                ThrowIf.Null( action, nameof( action ) );
+                if( Dispatcher.CheckAccess( ) )
+                {
+                    action?.Invoke( null );
+                }
+                else
+                {
+                    Dispatcher.BeginInvoke( action );
+                }
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Begins the initialize.
+        /// </summary>
+        private void Busy( )
+        {
+            try
+            {
+                lock( _entry )
+                {
+                    _busy = true;
+                }
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Ends the initialize.
+        /// </summary>
+        private void Chill( )
+        {
+            try
+            {
+                lock( _entry )
+                {
+                    _busy = false;
+                }
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Creates a notifier.
+        /// </summary>
+        /// <returns>
+        /// Notifier
+        /// </returns>
+        private Notifier CreateNotifier( )
+        {
+            try
+            {
+                var _position = new PrimaryScreenPositionProvider( Corner.BottomRight, 10, 10 );
+                var _lifeTime = new TimeAndCountBasedLifetimeSupervisor( TimeSpan.FromSeconds( 5 ),
+                    MaximumNotificationCount.UnlimitedNotifications( ) );
+
+                return new Notifier( _cfg =>
+                {
+                    _cfg.LifetimeSupervisor = _lifeTime;
+                    _cfg.PositionProvider = _position;
+                    _cfg.Dispatcher = Application.Current.Dispatcher;
+                } );
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+                return default( Notifier );
+            }
+        }
+
+        /// <summary>
+        /// Sends the notification.
+        /// </summary>
+        /// <param name="message">The message.</param>
+        private void SendNotification( string message )
+        {
+            try
+            {
+                ThrowIf.Null( message, nameof( message ) );
+                var _notification = CreateNotifier( );
+                _notification.ShowInformation( message );
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
+        }
+
+        /// <summary>
+        /// Shows the splash message.
+        /// </summary>
+        /// <param name="message">The message.</param>
+        private void SendMessage( string message )
+        {
+            try
+            {
+                ThrowIf.Null( message, nameof( message ) );
+                var _splash = new SplashMessage( message )
+                {
+                    Owner = this
+                };
+
+                _splash.Show( );
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+            }
         }
 
         /// <summary>
@@ -407,17 +630,20 @@ namespace Bocifus
                 var _items = new List<ModelList>( );
                 foreach( DataRow _row in AppSettings.ConfigDataTable.Rows )
                 {
-                    var _item = new ModelList( );
-                    _item.ConfigurationName = _row[ "ConfigurationName" ].ToString( );
-                    _item.Provider = _row[ "Provider" ].ToString( );
-                    _item.Model = _row[ "Model" ].ToString( );
-                    _item.ApiKey = _row[ "APIKey" ].ToString( );
-                    _item.DeploymentId = _row[ "DeploymentId" ].ToString( );
-                    _item.BaseDomain = _row[ "BaseDomain" ].ToString( );
-                    _item.ApiVersion = _row[ "ApiVersion" ].ToString( );
-                    _item.Temperature = _row[ "Temperature" ].ToString( );
-                    _item.MaxTokens = _row[ "MaxTokens" ].ToString( );
-                    _item.Vision = Convert.ToBoolean( _row[ "Vision" ].ToString( ) );
+                    var _item = new ModelList
+                    {
+                        ConfigurationName = _row[ "ConfigurationName" ].ToString( ),
+                        Provider = _row[ "Provider" ].ToString( ),
+                        Model = _row[ "Model" ].ToString( ),
+                        ApiKey = _row[ "APIKey" ].ToString( ),
+                        DeploymentId = _row[ "DeploymentId" ].ToString( ),
+                        BaseDomain = _row[ "BaseDomain" ].ToString( ),
+                        ApiVersion = _row[ "ApiVersion" ].ToString( ),
+                        Temperature = _row[ "Temperature" ].ToString( ),
+                        MaxTokens = _row[ "MaxTokens" ].ToString( ),
+                        Vision = Convert.ToBoolean( _row[ "Vision" ].ToString( ) )
+                    };
+
                     _items.Add( _item );
                 }
 
@@ -620,6 +846,17 @@ namespace Bocifus
             }
 
             ConfigurationNameTextBox.Focus( );
+        }
+
+        /// <summary>
+        /// Fails the specified ex.
+        /// </summary>
+        /// <param name="ex">The ex.</param>
+        private protected void Fail( Exception ex )
+        {
+            var _error = new ErrorWindow( ex );
+            _error?.SetText( );
+            _error?.ShowDialog( );
         }
     }
 }
