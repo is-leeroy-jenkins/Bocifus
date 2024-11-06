@@ -72,7 +72,9 @@ namespace Bocifus
     /// <seealso cref="T:SourceChord.FluentWPF.AcrylicWindow" />
     /// <seealso cref="T:System.Windows.Markup.IComponentConnector" />
     [ SuppressMessage( "ReSharper", "ClassCanBeSealed.Global" ) ]
-    public partial class ConfigSettingWindow
+    [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
+    [ SuppressMessage( "ReSharper", "FieldCanBeMadeReadOnly.Global" ) ]
+    public partial class ConfigurationWindow
     {
         /// <summary>
         /// The busy
@@ -116,9 +118,9 @@ namespace Bocifus
 
         /// <summary>
         /// Initializes a new instance of the
-        /// <see cref="ConfigSettingWindow"/> class.
+        /// <see cref="ConfigurationWindow"/> class.
         /// </summary>
-        public ConfigSettingWindow( )
+        public ConfigurationWindow( )
         {
             InitializeComponent( );
             ConfigListBox.ContextMenu = new ContextMenu( );

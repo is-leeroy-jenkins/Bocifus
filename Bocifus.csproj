@@ -444,7 +444,7 @@
     <Compile Update="UI\Views\WebBrowserPreview.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UI\Views\TitleGenerationSettings.xaml.cs">
+    <Compile Update="UI\Views\TitleGenerationWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="UI\Views\PromptTemplateInput.xaml.cs">

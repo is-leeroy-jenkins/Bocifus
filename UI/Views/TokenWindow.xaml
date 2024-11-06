@@ -1,5 +1,5 @@
 ﻿<fw:AcrylicWindow
-    x:Class="Bocifus.TokenUsageWindow"
+    x:Class="Bocifus.TokenWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -16,11 +16,28 @@
     fw:AcrylicWindow.Enabled="True"
     fw:PointerTracker.Enabled="True"
     AcrylicWindowStyle="NoIcon"
-    BorderBrush="{DynamicResource SystemAltHighColor}"
+    BorderBrush="{StaticResource BlueBorderBrush}"
     KeyDown="OnWindowKeyDown"
     ShowInTaskbar="False"
     WindowStartupLocation="CenterOwner"
     mc:Ignorable="d">
+
+    <!--  ************************************* RESOURCES ******************************  -->
+
+    <fw:AcrylicWindow.Resources>
+
+        <Style TargetType="ToolTip">
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
+            <Setter Property="Background" Value="{StaticResource BlackBackground}" />
+            <Setter Property="Foreground" Value="{StaticResource LightBlueBrush}" />
+        </Style>
+
+    </fw:AcrylicWindow.Resources>
+
+    <!--  ****************************** LAYOUT ***********************************  -->
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />

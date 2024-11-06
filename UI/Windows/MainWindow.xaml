@@ -26,7 +26,7 @@
     TintOpacity="0.7"
     mc:Ignorable="d">
 
-    <!--***********************************************************RESOURCES****************************************************-->
+    <!--  ******************************************* RESOURCES ************************************************  -->
 
     <Window.Resources>
 
@@ -63,7 +63,7 @@
 
     </Window.Resources>
 
-    <!--******************************************** Context Menu ******************************************-->
+    <!--  ******************************************** Context Menu ******************************************  -->
 
     <Window.ContextMenu>
         <ContextMenu x:Name="MainWindowContextMenu">
@@ -167,7 +167,7 @@
         </ContextMenu>
     </Window.ContextMenu>
 
-    <!--***********************************************************LAYOUT****************************************************-->
+    <!--  ***********************************************************LAYOUT****************************************************  -->
 
     <Grid>
         <Grid.RowDefinitions>
@@ -727,7 +727,7 @@
                                 HorizontalAlignment="Stretch"
                                 fw:RevealElement.BorderRadius="4"
                                 Background="#33808080"
-                                Click="NewTemplateButton_Click"
+                                Click="OnNewTemplateButtonClick"
                                 Content="+ New template"
                                 FontSize="14"
                                 Style="{StaticResource ButtonRevealStyle}" />
@@ -736,9 +736,9 @@
                                 Grid.Row="1"
                                 d:ItemsSource="{d:SampleData ItemCount=5}"
                                 ItemsSource="{Binding Source={StaticResource SortedPromptTemplates}}"
-                                MouseLeave="PromptTemplateListBox_MouseLeave"
+                                MouseLeave="OnPromptTemplateListBoxMouseLeave"
                                 ScrollViewer.VerticalScrollBarVisibility="Auto"
-                                SelectionChanged="PromptTemplateListBox_SelectionChanged">
+                                SelectionChanged="OnPromptTemplateListBoxSelectionChanged">
                                 <ListBox.ItemContainerStyle>
                                     <Style
                                         BasedOn="{StaticResource ListBoxItemStyle}"
@@ -746,7 +746,7 @@
                                         <Setter Property="Height" Value="40" />
                                         <EventSetter
                                             Event="MouseEnter"
-                                            Handler="PromptTemplateListBoxItem_MouseEnter" />
+                                            Handler="OnPromptTemplateListBoxItemMouseEnter" />
                                     </Style>
                                 </ListBox.ItemContainerStyle>
                                 <ListBox.Background>
@@ -814,7 +814,7 @@
                                                 VerticalAlignment="Center"
                                                 fw:RevealElement.BorderRadius="4"
                                                 Background="Transparent"
-                                                Click="PromptTemplateSortUpButton_Click"
+                                                Click="OnPromptTemplateSortUpButtonClick"
                                                 Content="△"
                                                 Opacity="0.6">
                                                 <Button.Style>
@@ -842,7 +842,7 @@
                                                 VerticalAlignment="Center"
                                                 fw:RevealElement.BorderRadius="4"
                                                 Background="Transparent"
-                                                Click="PromptTemplateSortDownButton_Click"
+                                                Click="OnPromptTemplateSortDownButtonClick"
                                                 Content="▽"
                                                 Opacity="0.6">
                                                 <Button.Style>
@@ -870,7 +870,7 @@
                                                 VerticalAlignment="Center"
                                                 fw:RevealElement.BorderRadius="4"
                                                 Background="Transparent"
-                                                Click="PromptTemplateEditButton_Click"
+                                                Click="OnPromptTemplateEditButtonClick"
                                                 Opacity="0.6">
                                                 <Button.Style>
                                                     <Style
@@ -897,7 +897,7 @@
                                                 Padding="-10,-10,-10,-10"
                                                 VerticalAlignment="Center"
                                                 fw:RevealElement.BorderRadius="4"
-                                                Click="PromptTemplateInsertButton_Click"
+                                                Click="OnPromptTemplateInsertButtonClick"
                                                 Opacity="0.8">
                                                 <Button.Style>
                                                     <Style

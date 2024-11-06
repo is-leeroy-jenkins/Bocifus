@@ -18,20 +18,21 @@
     WindowStartupLocation="CenterOwner"
     mc:Ignorable="d">
 
-    <!--***********************************************************RESOURCES****************************************************-->
+    <!--  ************************************* RESOURCES ******************************  -->
 
-    <Window.Resources>
+    <fw:AcrylicWindow.Resources>
+
         <Style TargetType="ToolTip">
             <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Margin" Value="10" />
             <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
             <Setter Property="Background" Value="{StaticResource BlackBackground}" />
             <Setter Property="Foreground" Value="{StaticResource LightBlueBrush}" />
         </Style>
-    </Window.Resources>
 
+    </fw:AcrylicWindow.Resources>
 
-    <!--***********************************************************LAYOUT****************************************************-->
-
+    <!--  ****************************** LAYOUT ***********************************  -->
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -97,7 +98,9 @@
             <StackPanel
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center">
-                <Label Content="Title" />
+                <Label
+                    Content="Title"
+                    Foreground="{StaticResource LightBlueBrush}" />
                 <TextBox
                     x:Name="InstructionTextBox"
                     MinWidth="150"
@@ -106,7 +109,7 @@
                     <TextBox.Background>
                         <SolidColorBrush
                             Opacity="0.5"
-                            Color="{DynamicResource SystemChromeLowColor}" />
+                            Color="{StaticResource ControlInteriorColor}" />
                     </TextBox.Background>
                 </TextBox>
             </StackPanel>

@@ -43,7 +43,6 @@ namespace Bocifus
 {
     using System.Collections.Generic;
     using System.Data;
-    using System.Globalization;
     using System.IO;
     using System.Linq;
     using System.Runtime.Serialization.Formatters.Binary;
@@ -52,22 +51,22 @@ namespace Bocifus
     using System.Threading.Tasks;
     using System.Windows;
     using System.Windows.Controls;
-    using System.Windows.Data;
     using System.Windows.Media;
     using System.Windows.Media.Animation;
     using MdXaml;
     using Model;
     using ModernWpf;
-    using ModernWpf.Controls;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
     using System;
+    using System.Diagnostics.CodeAnalysis;
     using Properties;
     using MessageBox = ModernWpf.MessageBox;
 
     /// <summary>
     /// 
     /// </summary>
+    [ SuppressMessage( "ReSharper", "ClassNeverInstantiated.Global" ) ]
     public class UtilityFunctions
     {
         /// <summary>

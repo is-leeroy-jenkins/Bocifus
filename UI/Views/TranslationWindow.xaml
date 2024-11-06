@@ -19,6 +19,24 @@
     WindowStartupLocation="CenterOwner"
     WindowStyle="ToolWindow"
     mc:Ignorable="d">
+
+    <!--  ******************************* RESOURCES ***********************************  -->
+
+    <fw:AcrylicWindow.Resources>
+
+        <Style TargetType="ToolTip">
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
+            <Setter Property="Background" Value="{StaticResource BlackBackground}" />
+            <Setter Property="Foreground" Value="{StaticResource LightBlueBrush}" />
+        </Style>
+
+    </fw:AcrylicWindow.Resources>
+
+
+    <!--  ******************************* LAYOUT ***********************************  -->
+
     <Grid Margin="10,0,10,10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />

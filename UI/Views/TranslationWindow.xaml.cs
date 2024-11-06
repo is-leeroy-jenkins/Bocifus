@@ -53,6 +53,7 @@ namespace Bocifus
     /// TranslateAPISettingWindow.xaml
     /// </summary>
     [ SuppressMessage( "ReSharper", "FieldCanBeMadeReadOnly.Local" ) ]
+    [ SuppressMessage( "ReSharper", "ClassCanBeSealed.Global" ) ]
     public partial class TranslationWindow
     {
         /// <summary>

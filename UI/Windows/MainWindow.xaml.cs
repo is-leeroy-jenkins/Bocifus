@@ -1572,7 +1572,7 @@ namespace Bocifus
         /// instance containing the event data.</param>
         private void OnTokenUsageMouseLeftButtonDown( object sender, MouseButtonEventArgs e )
         {
-            var _window = new TokenUsageWindow
+            var _window = new TokenWindow
             {
                 Owner = this
             };
@@ -1588,7 +1588,7 @@ namespace Bocifus
         /// instance containing the event data.</param>
         private void OnConfigurationSettingButtonClick( object sender, RoutedEventArgs e )
         {
-            var _window = new ConfigSettingWindow
+            var _window = new ConfigurationWindow
             {
                 Owner = this
             };
@@ -1670,7 +1670,7 @@ namespace Bocifus
         /// instance containing the event data.</param>
         private void OnTitleGenerationMenuItemClick( object sender, RoutedEventArgs e )
         {
-            var _window = new TitleGenerationSettings
+            var _window = new TitleGenerationWindow
             {
                 Owner = this
             };

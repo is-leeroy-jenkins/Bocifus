@@ -61,13 +61,13 @@ namespace Bocifus
     /// <seealso cref="T:System.Windows.Markup.IStyleConnector" />
     [ SuppressMessage( "ReSharper", "ClassCanBeSealed.Global" ) ]
     [ SuppressMessage( "ReSharper", "PossibleNullReferenceException" ) ]
-    public partial class TokenUsageWindow
+    public partial class TokenWindow
     {
         /// <summary>
         /// Initializes a new instance of the
-        /// <see cref="TokenUsageWindow"/> class.
+        /// <see cref="TokenWindow"/> class.
         /// </summary>
-        public TokenUsageWindow( )
+        public TokenWindow( )
         {
             InitializeComponent( );
             var _savedTokenUsage = UtilityFunctions.DeserializeArray( Settings.Default.TokenUsage );
@@ -188,8 +188,6 @@ namespace Bocifus
 
             var _output =
                 ( _dataContext as TokenUsageDisplayItem ).OutputTokenUsage.Replace( ",", "" );
-
-            ;
         }
     }
 }

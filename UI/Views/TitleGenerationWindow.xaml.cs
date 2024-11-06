@@ -44,6 +44,7 @@ namespace Bocifus
     using System.ComponentModel;
     using Model;
     using System.Data;
+    using System.Diagnostics.CodeAnalysis;
     using System.Globalization;
     using System.Linq;
     using System.Threading;
@@ -57,12 +58,14 @@ namespace Bocifus
     /// </summary>
     /// <seealso cref="T:SourceChord.FluentWPF.AcrylicWindow" />
     /// <seealso cref="T:System.Windows.Markup.IComponentConnector" />
-    public partial class TitleGenerationSettings
+    [ SuppressMessage( "ReSharper", "ClassCanBeSealed.Global" ) ]
+    public partial class TitleGenerationWindow
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="TitleGenerationSettings"/> class.
+        /// Initializes a new instance of the
+        /// <see cref="TitleGenerationWindow"/> class.
         /// </summary>
-        public TitleGenerationSettings( )
+        public TitleGenerationWindow( )
         {
             InitializeComponent( );
             var cultures = CultureInfo.GetCultures( CultureTypes.NeutralCultures );
