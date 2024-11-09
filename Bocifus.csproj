@@ -441,19 +441,19 @@
     <Compile Update="SubWindow\TokenCalculator.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UI\Views\WebBrowserPreview.xaml.cs">
+    <Compile Update="UI\Views\Windows\BrowserWindow\WebBrowserWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UI\Views\TitleGenerationWindow.xaml.cs">
+    <Compile Update="UI\Views\Windows\TitleGenerationWIndow\TitleGenerationWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UI\Views\PromptTemplateInput.xaml.cs">
+    <Compile Update="UI\Views\Windows\PromptWindow\PromptInputWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UI\Views\LargeUserTextInput.xaml.cs">
+    <Compile Update="UI\Views\Windows\TextInputWindow\TextInputWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UI\Views\VersionWindow.xaml.cs">
+    <Compile Update="UI\Views\Windows\VersionWindow\VersionWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

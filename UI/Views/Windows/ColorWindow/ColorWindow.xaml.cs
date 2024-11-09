@@ -48,11 +48,17 @@ namespace Bocifus
     using System.Diagnostics.CodeAnalysis;
     using System.Linq;
     using System.Reflection;
+    using System.Threading;
     using System.Windows;
     using System.Windows.Controls;
     using System.Windows.Input;
     using System.Windows.Media;
     using Properties;
+    using Syncfusion.SfSkinManager;
+    using ToastNotifications;
+    using ToastNotifications.Lifetime;
+    using ToastNotifications.Messages;
+    using ToastNotifications.Position;
     using ElementTheme = SourceChord.FluentWPF.ElementTheme;
     using ResourceDictionaryEx = SourceChord.FluentWPF.ResourceDictionaryEx;
 
@@ -63,8 +69,48 @@ namespace Bocifus
     /// <seealso cref="T:System.Windows.Markup.IComponentConnector" />
     /// <seealso cref="T:System.Windows.Markup.IStyleConnector" />
     [ SuppressMessage( "ReSharper", "PossibleNullReferenceException" ) ]
-    public partial class ColorSettings
+    public partial class ColorWindow
     {
+        /// <summary>
+        /// The busy
+        /// </summary>
+        private protected bool _busy;
+
+        /// <summary>
+        /// The path
+        /// </summary>
+        private protected object _entry = new object();
+
+        /// <summary>
+        /// The seconds
+        /// </summary>
+        private protected int _seconds;
+
+        /// <summary>
+        /// The time
+        /// </summary>
+        private protected int _time;
+
+        /// <summary>
+        /// The timer
+        /// </summary>
+        private protected Timer _timer;
+
+        /// <summary>
+        /// The timer
+        /// </summary>
+        private protected TimerCallback _timerCallback;
+
+        /// <summary>
+        /// The status update
+        /// </summary>
+        private protected Action _statusUpdate;
+
+        /// <summary>
+        /// The theme
+        /// </summary>
+        private protected readonly DarkMode _theme = new DarkMode();
+
         /// <summary>
         /// Gets the known color names.
         /// </summary>
@@ -77,9 +123,9 @@ namespace Bocifus
             .ToArray( );
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ColorSettings"/> class.
+        /// Initializes a new instance of the <see cref="ColorWindow"/> class.
         /// </summary>
-        public ColorSettings( )
+        public ColorWindow( )
         {
             InitializeComponent( );
             WindowStartupLocation = WindowStartupLocation.CenterOwner;
@@ -145,12 +191,165 @@ namespace Bocifus
         /// </value>
         public static bool OkFlg { get; set; }
 
+
+        /// <summary>
+        /// Invokes if needed.
+        /// </summary>
+        /// <param name="action">The action.</param>
+        private void InvokeIf(Action action)
+        {
+            try
+            {
+                ThrowIf.Null(action, nameof(action));
+                if(Dispatcher.CheckAccess())
+                {
+                    action?.Invoke();
+                }
+                else
+                {
+                    Dispatcher.BeginInvoke(action);
+                }
+            }
+            catch(Exception ex)
+            {
+                Fail(ex);
+            }
+        }
+
+        /// <summary>
+        /// Invokes if.
+        /// </summary>
+        /// <param name="action">The action.</param>
+        private void InvokeIf(Action<object> action)
+        {
+            try
+            {
+                ThrowIf.Null(action, nameof(action));
+                if(Dispatcher.CheckAccess())
+                {
+                    action?.Invoke(null);
+                }
+                else
+                {
+                    Dispatcher.BeginInvoke(action);
+                }
+            }
+            catch(Exception ex)
+            {
+                Fail(ex);
+            }
+        }
+
+        /// <summary>
+        /// Begins the initialize.
+        /// </summary>
+        private void Busy()
+        {
+            try
+            {
+                lock(_entry)
+                {
+                    _busy = true;
+                }
+            }
+            catch(Exception ex)
+            {
+                Fail(ex);
+            }
+        }
+
+        /// <summary>
+        /// Ends the initialize.
+        /// </summary>
+        private void Chill()
+        {
+            try
+            {
+                lock(_entry)
+                {
+                    _busy = false;
+                }
+            }
+            catch(Exception ex)
+            {
+                Fail(ex);
+            }
+        }
+
+        /// <summary>
+        /// Creates a notifier.
+        /// </summary>
+        /// <returns>
+        /// Notifier
+        /// </returns>
+        private Notifier CreateNotifier()
+        {
+            try
+            {
+                var _position = new PrimaryScreenPositionProvider(Corner.BottomRight, 10, 10);
+                var _lifeTime = new TimeAndCountBasedLifetimeSupervisor(TimeSpan.FromSeconds(5),
+                    MaximumNotificationCount.UnlimitedNotifications());
+
+                return new Notifier(_cfg =>
+                {
+                    _cfg.LifetimeSupervisor = _lifeTime;
+                    _cfg.PositionProvider = _position;
+                    _cfg.Dispatcher = Application.Current.Dispatcher;
+                });
+            }
+            catch(Exception ex)
+            {
+                Fail(ex);
+                return default(Notifier);
+            }
+        }
+
+        /// <summary>
+        /// Sends the notification.
+        /// </summary>
+        /// <param name="message">The message.</param>
+        private void SendNotification(string message)
+        {
+            try
+            {
+                ThrowIf.Null(message, nameof(message));
+                var _notification = CreateNotifier();
+                _notification.ShowInformation(message);
+            }
+            catch(Exception ex)
+            {
+                Fail(ex);
+            }
+        }
+
+        /// <summary>
+        /// Shows the splash message.
+        /// </summary>
+        /// <param name="message">The message.</param>
+        private void SendMessage(string message)
+        {
+            try
+            {
+                ThrowIf.Null(message, nameof(message));
+                var _splash = new SplashMessage(message)
+                {
+                    Owner = this
+                };
+
+                _splash.Show();
+            }
+            catch(Exception ex)
+            {
+                Fail(ex);
+            }
+        }
+
         /// <summary>
         /// Themes the load.
         /// </summary>
-        private void ThemeLoad( )
+        private void LoadTheme( )
         {
-            var _theme = new ResourceDictionary( );
+            var _item = new ResourceDictionary( );
             var _themeSource = "Dark";
             if( ThemeManager.Current.ApplicationTheme == ApplicationTheme.Light )
             {
@@ -160,15 +359,16 @@ namespace Bocifus
             var _url =
                 $"pack://application:,,,/ModernWpf;component/ThemeResources/{_themeSource}.xaml";
 
-            _theme.Source = new Uri( _url );
-            Application.Current.Resources.MergedDictionaries.Add( _theme );
+            _item.Source = new Uri( _url );
+            Application.Current.Resources.MergedDictionaries.Add( _item );
         }
 
         /// <summary>
         /// Called when [window closing].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="System.ComponentModel.CancelEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="System.ComponentModel.CancelEventArgs"/>
+        /// instance containing the event data.</param>
         protected virtual void OnWindowClosing( object sender, CancelEventArgs e )
         {
             if( OkFlg == false )
@@ -202,7 +402,7 @@ namespace Bocifus
                 ResourceDictionaryEx.GlobalTheme = null;
             }
 
-            ThemeLoad( );
+            LoadTheme( );
         }
 
         /// <summary>
@@ -261,7 +461,7 @@ namespace Bocifus
         {
             ThemeManager.Current.AccentColor = null;
             AccentColorList.IsEnabled = false;
-            ThemeLoad( );
+            LoadTheme( );
         }
 
         /// <summary>
@@ -272,7 +472,7 @@ namespace Bocifus
         private void OnAccentColorSetChecked( object sender, RoutedEventArgs e )
         {
             AccentColorList.IsEnabled = true;
-            ThemeLoad( );
+            LoadTheme( );
         }
 
         /// <summary>
@@ -285,7 +485,46 @@ namespace Bocifus
             var _selection = AccentColorList?.SelectedValue?.ToString( );
             var _color = ( Color )ColorConverter.ConvertFromString( _selection );
             ThemeManager.Current.AccentColor = _color;
-            ThemeLoad( );
+            LoadTheme( );
+        }
+
+        /// <inheritdoc />
+        /// <summary>
+        /// Performs application-defined tasks
+        /// associated with freeing, releasing,
+        /// or resetting unmanaged resources.
+        /// </summary>
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        /// <summary>
+        /// Releases unmanaged and - optionally - managed resources.
+        /// </summary>
+        /// <param name="disposing"><c>true</c>
+        /// to release both managed
+        /// and unmanaged resources;
+        /// <c>false</c> to release only unmanaged resources.</param>
+        protected virtual void Dispose(bool disposing)
+        {
+            if(disposing)
+            {
+                SfSkinManager.Dispose(this);
+                _timer?.Dispose();
+            }
+        }
+
+        /// <summary>
+        /// Fails the specified ex.
+        /// </summary>
+        /// <param name="ex">The ex.</param>
+        private protected void Fail(Exception ex)
+        {
+            var _error = new ErrorWindow(ex);
+            _error?.SetText();
+            _error?.ShowDialog();
         }
     }
 }

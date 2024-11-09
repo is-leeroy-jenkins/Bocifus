@@ -474,7 +474,8 @@ namespace Bocifus
             UtilityFunctions.EnsureColumnsForType( AppSettings.ConfigDataTable,
                 typeof( ModelList ) );
 
-            ConfigurationComboBox.ItemsSource = AppSettings.ConfigDataTable.AsEnumerable( )
+            ConfigurationComboBox.ItemsSource = AppSettings.ConfigDataTable
+                .AsEnumerable( )
                 .Select( x => x.Field<string>( "ConfigurationName" ) ).ToList( );
 
             ConfigurationComboBox.Text = AppSettings.SelectConfigSetting;
@@ -698,7 +699,7 @@ namespace Bocifus
 </body>
 </html>";
 
-            var _previewWindow = new WebBrowserPreview( _htmlContent );
+            var _previewWindow = new WebBrowserWindow( _htmlContent );
             var _parentCenterX = Left + Width / 2;
             var _parentCenterY = Top + Height / 2;
             _previewWindow.Left = _parentCenterX - _previewWindow.Width / 2;
@@ -1211,6 +1212,7 @@ namespace Bocifus
             SettingsManager.SaveSettings( );
         }
 
+        /// <inheritdoc />
         /// <summary>
         /// Raises the <see cref="E:System.Windows.Window.Closing" /> event.
         /// </summary>
@@ -1233,7 +1235,7 @@ namespace Bocifus
             if( e.Key == Key.F2 )
             {
                 var _currentText = UserTextBox.Text;
-                var _window = new LargeUserTextInput( _currentText )
+                var _window = new TextInputWindow( _currentText )
                 {
                     Owner = this
                 };
@@ -1638,7 +1640,7 @@ namespace Bocifus
         /// instance containing the event data.</param>
         private void OnColorMenuItemClick( object sender, RoutedEventArgs e )
         {
-            var _window = new ColorSettings
+            var _window = new ColorWindow
             {
                 Owner = this
             };
@@ -1682,7 +1684,8 @@ namespace Bocifus
         /// Called when [version information menu item click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnVersionInformationMenuItemClick( object sender, RoutedEventArgs e )
         {
             var _window = new VersionWindow
@@ -1697,7 +1700,8 @@ namespace Bocifus
         /// Called when [resize thumb drag delta].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="DragDeltaEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="DragDeltaEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnResizeThumbDragDelta( object sender, DragDeltaEventArgs e )
         {
             UserTextBox.Height = Math.Max( UserTextBox.ActualHeight + e.VerticalChange,
@@ -1708,7 +1712,8 @@ namespace Bocifus
         /// Called when [user text box mouse down].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="MouseButtonEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="MouseButtonEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnUserTextBoxMouseDown( object sender, MouseButtonEventArgs e )
         {
             Keyboard.ClearFocus( );
@@ -1719,7 +1724,8 @@ namespace Bocifus
         /// Called when [message grid size changed].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="SizeChangedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="SizeChangedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnMessageGridSizeChanged( object sender, SizeChangedEventArgs e )
         {
             if( sender is Grid _messageGrid )
@@ -1806,7 +1812,8 @@ namespace Bocifus
         /// Called when [mouse wheel preview].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="MouseWheelEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="MouseWheelEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnMouseWheelPreview( object sender, MouseWheelEventArgs e )
         {
             var _element = sender as UIElement;
@@ -1827,7 +1834,8 @@ namespace Bocifus
         /// Called when [message scroll viewer scroll changed].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="ScrollChangedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="ScrollChangedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnMessageScrollViewerScrollChanged( object sender, ScrollChangedEventArgs e )
         {
             var _isAtBottom = MessageScrollViewer.VerticalOffset
@@ -1842,7 +1850,8 @@ namespace Bocifus
         /// Called when [bottom scroll button click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnBottomScrollButtonClick( object sender, RoutedEventArgs e )
         {
             MessageScrollViewer.ScrollToBottom( );
@@ -1852,7 +1861,8 @@ namespace Bocifus
         /// Called when [message scroll viewer preview key down].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="KeyEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="KeyEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnMessageScrollViewerPreviewKeyDown( object sender, KeyEventArgs e )
         {
             if( ( e.Key == Key.G && Keyboard.IsKeyDown( Key.LeftShift ) )
@@ -1937,7 +1947,8 @@ namespace Bocifus
         /// Called when [open sytem prompt window button click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnOpenSytemPromptWindowButtonClick( object sender, RoutedEventArgs e )
         {
             if( SystemPromptGridColumn.Width.Value > 0 )
@@ -1980,7 +1991,8 @@ namespace Bocifus
         /// Called when [system prompt contents text box text changed].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="TextChangedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="TextChangedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnSystemPromptContentsTextBoxTextChanged( object sender,
             TextChangedEventArgs e )
         {
@@ -1991,7 +2003,8 @@ namespace Bocifus
         /// Called when [new chat button click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnNewChatButtonClick( object sender, RoutedEventArgs e )
         {
             MessagesPanel.Children.Clear( );
@@ -2009,7 +2022,8 @@ namespace Bocifus
         /// Called when [conversation delete button click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnConversationDeleteButtonClick( object sender, RoutedEventArgs e )
         {
             ConversationHistory _itemToDelete = null;
@@ -2037,7 +2051,8 @@ namespace Bocifus
         /// Called when [conversation title edit button click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnConversationTitleEditButtonClick( object sender, RoutedEventArgs e )
         {
             ConversationHistory _itemToDelete = null;
@@ -2068,7 +2083,8 @@ namespace Bocifus
         /// Called when [conversation ListBox context menu preview key down].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="KeyEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="KeyEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnConversationListBoxContextMenuPreviewKeyDown( object sender, KeyEventArgs e )
         {
             if( e.Key == Key.F )
@@ -2091,7 +2107,8 @@ namespace Bocifus
         /// Called when [conversation favorite button click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnConversationFavoriteButtonClick( object sender, RoutedEventArgs e )
         {
             ConversationHistory _item = null;
@@ -2112,7 +2129,8 @@ namespace Bocifus
         /// Called when [conversation ListBox more button click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnConversationListBoxMoreButtonClick( object sender, RoutedEventArgs e )
         {
             var _button = sender as Button;
@@ -2144,7 +2162,8 @@ namespace Bocifus
         /// Called when [translate button click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private async void OnTranslateButtonClick( object sender, RoutedEventArgs e )
         {
             Storyboard _animation = null;
@@ -2178,7 +2197,8 @@ namespace Bocifus
         /// Called when [filter text box text changed].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="TextChangedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="TextChangedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnFilterTextBoxTextChanged( object sender, TextChangedEventArgs e )
         {
             _isFiltering = true;
@@ -2191,7 +2211,8 @@ namespace Bocifus
         /// Called when [toggle filter button click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnToggleFilterButtonClick( object sender, RoutedEventArgs e )
         {
             FilterTextBox.Visibility = FilterTextBox.Visibility == Visibility.Visible
@@ -2342,7 +2363,7 @@ namespace Bocifus
         private void OnShowLargeTextInputWindowButtonClick( object sender, RoutedEventArgs e )
         {
             var _currentText = UserTextBox.Text;
-            var _window = new LargeUserTextInput( _currentText )
+            var _window = new TextInputWindow( _currentText )
             {
                 Owner = this
             };

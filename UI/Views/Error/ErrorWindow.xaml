@@ -21,13 +21,14 @@
     WindowStyle="None"
     mc:Ignorable="d">
 
-    <!--************************************************* RESOURCES  ***************************************-->
+    <!--  ************************************************* RESOURCES  ***************************************  -->
 
     <Window.Resources>
 
 
         <Style TargetType="ToolTip">
             <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Margin" Value="10" />
             <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
             <Setter Property="Background" Value="{StaticResource BlackBackground}" />
             <Setter Property="Foreground" Value="{StaticResource LightBlueBrush}" />
@@ -35,7 +36,7 @@
 
 
     </Window.Resources>
-    <!--************************************************* LAYOUT  ***************************************-->
+    <!--  ************************************************* LAYOUT  ***************************************  -->
 
     <Canvas x:Name="ErrorCanvas">
         <b:MetroImage

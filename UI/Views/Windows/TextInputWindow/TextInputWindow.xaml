@@ -1,5 +1,5 @@
 ﻿<fw:AcrylicWindow
-    x:Class="Bocifus.LargeUserTextInput"
+    x:Class="Bocifus.TextInputWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -13,27 +13,26 @@
     HorizontalContentAlignment="Center"
     AcrylicWindowStyle="NoIcon"
     BorderBrush="{StaticResource BlueBorderBrush}"
-    Closing="Window_Closing"
-    KeyDown="Window_KeyDown"
-    Loaded="Window_Loaded"
+    Closing="OnWindowClosing"
+    KeyDown="OnWindowKeyDown"
+    Loaded="OnWindowLoaded"
     ShowInTaskbar="False"
     WindowStartupLocation="CenterOwner"
     mc:Ignorable="d">
 
-    <!--***********************************************************RESOURCES****************************************************-->
+    <!--  ***********************************************************RESOURCES****************************************************  -->
 
     <Window.Resources>
         <Style TargetType="ToolTip">
             <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Margin" Value="10" />
             <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
             <Setter Property="Background" Value="{StaticResource BlackBackground}" />
             <Setter Property="Foreground" Value="{StaticResource LightBlueBrush}" />
         </Style>
     </Window.Resources>
 
-
-    <!--***********************************************************LAYOUT****************************************************-->
-
+    <!--  ***********************************************************LAYOUT****************************************************  -->
 
     <Grid Margin="10">
         <Grid.RowDefinitions>
@@ -46,13 +45,13 @@
             Margin="0,0,0,10"
             AcceptsReturn="True"
             AcceptsTab="True"
-            PreviewMouseWheel="UserLargeTextBox_PreviewMouseWheel"
+            PreviewMouseWheel="OnUserLargeTextBoxPreviewMouseWheel"
             TextWrapping="Wrap"
             VerticalScrollBarVisibility="Auto">
             <TextBox.Background>
                 <SolidColorBrush
                     Opacity="0.5"
-                    Color="{DynamicResource SystemChromeLowColor}" />
+                    Color="{StaticResource ControlInteriorColor}" />
             </TextBox.Background>
         </TextBox>
         <Grid
@@ -68,7 +67,7 @@
                 Height="32"
                 MinWidth="60"
                 HorizontalAlignment="Right"
-                Click="OkButton_Click"
+                Click="OnOkButtonClick"
                 Content="OK"
                 Style="{StaticResource AccentButtonStyle}" />
             <Button
@@ -78,7 +77,8 @@
                 Height="32"
                 MinWidth="60"
                 HorizontalAlignment="Right"
-                Click="CancelButton_Click"
+                Style="{StaticResource AccentButtonStyle}"
+                Click="OnCancelButtonClick"
                 Content="Cancel" />
         </Grid>
     </Grid>

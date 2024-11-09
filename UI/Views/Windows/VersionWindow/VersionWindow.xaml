@@ -13,7 +13,7 @@
     HorizontalContentAlignment="Center"
     AcrylicWindowStyle="NoIcon"
     BorderBrush="{DynamicResource BlueBorderBrush}"
-    KeyDown="Window_KeyDown"
+    KeyDown="OnWindowKeyDown"
     ResizeMode="NoResize"
     ShowInTaskbar="False"
     WindowStartupLocation="CenterOwner"
@@ -33,15 +33,16 @@
         </Grid.RowDefinitions>
         <Image Source="/Resources/Assets/image/OpenAI.png" />
         <Label
-            x:Name="lblQuestion"
+            x:Name="LblQuestion"
             Grid.Column="1"
             Margin="10,0,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
-            Content="OpenAIOnWPF"
-            FontSize="20" />
+            Content="Bocifus"
+            FontSize="20"
+            Foreground="{DynamicResource LightBlueBrush}" />
         <TextBlock
             x:Name="VersionText"
             Grid.Row="1"
@@ -52,11 +53,12 @@
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             FontSize="14"
-            MouseLeftButtonDown="VersionText_MouseLeftButtonDown"
+            MouseLeftButtonDown="OnVersionTextMouseLeftButtonDown"
             Text="Version:"
-            TextWrapping="Wrap" />
+            TextWrapping="Wrap"
+            Foreground="{DynamicResource LightBlueBrush}" />
         <TextBlock
-            x:Name="githubURLText"
+            x:Name="GithubUrlText"
             Grid.Row="1"
             Grid.Column="1"
             Width="280"
@@ -67,9 +69,10 @@
             VerticalAlignment="Top"
             Background="Transparent"
             FontSize="14"
-            MouseLeftButtonDown="githubURLText_MouseLeftButtonDown"
-            Text="https://github.com/yt3trees/OpenAIOnWPF"
-            TextWrapping="Wrap" />
+            MouseLeftButtonDown="OnGithubUrlTextMouseLeftButtonDown"
+            Text="https://github.com/is-leeroy-jenkins/Bocifus"
+            TextWrapping="Wrap"
+            Foreground="{DynamicResource LightBlueBrush}" />
         <Button
             x:Name="OkButton"
             Grid.Row="1"
@@ -79,7 +82,7 @@
             Padding="5,5,5,5"
             HorizontalAlignment="Right"
             VerticalAlignment="Bottom"
-            Click="OkButton_Click"
+            Click="OnOkButtonClick"
             Content="_OK"
             IsDefault="True"
             Style="{StaticResource AccentButtonStyle}" />

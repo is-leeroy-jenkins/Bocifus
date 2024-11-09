@@ -51,11 +51,13 @@ namespace Bocifus
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using System.ComponentModel;
+    using System.Diagnostics.CodeAnalysis;
     using System.IO;
     using System.Linq;
     using System.Text.Encodings.Web;
     using System.Text.Json;
     using System.Text.Unicode;
+    using System.Threading;
     using System.Windows;
     using System.Windows.Controls;
     using System.Windows.Data;
@@ -63,6 +65,7 @@ namespace Bocifus
     using System.Windows.Input;
     using System.Windows.Media;
     using ModernWpf.Controls;
+    using Syncfusion.SfSkinManager;
     using Application = System.Windows.Application;
     using Binding = System.Windows.Data.Binding;
     using ComboBox = System.Windows.Controls.ComboBox;
@@ -70,33 +73,79 @@ namespace Bocifus
     using KeyEventArgs = System.Windows.Input.KeyEventArgs;
     using MessageBox = ModernWpf.MessageBox;
     using TextBox = System.Windows.Controls.TextBox;
+    using Timer = System.Windows.Forms.Timer;
 
     /// <summary>
-    /// 
     /// </summary>
     /// <seealso cref="SourceChord.FluentWPF.AcrylicWindow" />
     /// <seealso cref="System.Windows.Markup.IComponentConnector" />
     /// <seealso cref="System.Windows.Markup.IStyleConnector" />
-    public partial class Table
+    [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
+    public partial class TableWindow : IDisposable
     {
         /// <summary>
-        /// Gets the updated conversation history.
+        /// The busy
         /// </summary>
-        /// <value>
-        /// The updated conversation history.
-        /// </value>
-        public ConversationHistory UpdatedConversationHistory { get; private set; }
+        private protected bool _busy;
+
+        /// <summary>
+        /// The path
+        /// </summary>
+        private protected object _entry = new object( );
+
+        /// <summary>
+        /// The seconds
+        /// </summary>
+        private protected int _seconds;
+
+        /// <summary>
+        /// The time
+        /// </summary>
+        private protected int _time;
+
+        /// <summary>
+        /// The timer
+        /// </summary>
+        private protected Timer _timer;
+
+        /// <summary>
+        /// The timer
+        /// </summary>
+        private protected TimerCallback _timerCallback;
+
+        /// <summary>
+        /// The status update
+        /// </summary>
+        private protected Action _statusUpdate;
+
+        /// <summary>
+        /// The theme
+        /// </summary>
+        private protected readonly DarkMode _theme = new DarkMode( );
 
         /// <summary>
         /// The view model
         /// </summary>
-        private ViewModel _viewModel;
+        private protected ViewModel _viewModel;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Table"/> class.
+        /// The updated conversation history
+        /// </summary>
+        private protected ConversationHistory _updatedConversationHistory;
+
+        /// <summary>
+        /// Initializes a new instance of the
+        /// <see cref="TableWindow"/> class.
+        /// </summary>
+        public TableWindow( )
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TableWindow"/> class.
         /// </summary>
         /// <param name="conversationHistory">The conversation history.</param>
-        public Table( ConversationHistory conversationHistory )
+        public TableWindow( ConversationHistory conversationHistory )
         {
             InitializeComponent( );
             _viewModel = new ViewModel( );
@@ -145,10 +194,48 @@ namespace Bocifus
         }
 
         /// <summary>
+        /// Gets a value indicating whether this instance is busy.
+        /// </summary>
+        /// <value>
+        /// <c> true </c>
+        /// if this instance is busy; otherwise,
+        /// <c> false </c>
+        /// </value>
+        public bool IsBusy
+        {
+            get
+            {
+                lock(_entry)
+                {
+                    return _busy;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets the updated conversation history.
+        /// </summary>
+        /// <value>
+        /// The updated conversation history.
+        /// </value>
+        public ConversationHistory UpdatedConversationHistory
+        {
+            get
+            {
+                return _updatedConversationHistory;
+            }
+            set
+            {
+                _updatedConversationHistory = value;
+            }
+        }
+
+        /// <summary>
         /// Called when [save button click].
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/>
+        /// instance containing the event data.</param>
         private void OnSaveButtonClick( object sender, RoutedEventArgs e )
         {
             var _list = ( ObservableCollection<DataTableItem> )DataTable.ItemsSource;
@@ -515,6 +602,45 @@ namespace Bocifus
 
                 SetHistoryCountButton.Content = _convos;
             }
+        }
+
+        /// <inheritdoc />
+        /// <summary>
+        /// Performs application-defined tasks
+        /// associated with freeing, releasing,
+        /// or resetting unmanaged resources.
+        /// </summary>
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        /// <summary>
+        /// Releases unmanaged and - optionally - managed resources.
+        /// </summary>
+        /// <param name="disposing"><c>true</c>
+        /// to release both managed
+        /// and unmanaged resources;
+        /// <c>false</c> to release only unmanaged resources.</param>
+        protected virtual void Dispose(bool disposing)
+        {
+            if(disposing)
+            {
+                SfSkinManager.Dispose(this);
+                _timer?.Dispose();
+            }
+        }
+
+        /// <summary>
+        /// Fails the specified ex.
+        /// </summary>
+        /// <param name="ex">The ex.</param>
+        private protected void Fail(Exception ex)
+        {
+            var _error = new ErrorWindow(ex);
+            _error?.SetText();
+            _error?.ShowDialog();
         }
     }
 }

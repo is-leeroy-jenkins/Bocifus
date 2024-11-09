@@ -161,7 +161,7 @@ namespace Bocifus
                 return;
             }
 
-            var _window = new Table( _targetConversation )
+            var _window = new TableWindow( _targetConversation )
             {
                 Owner = Application.Current.Windows.OfType<MainWindow>( ).FirstOrDefault( )
             };

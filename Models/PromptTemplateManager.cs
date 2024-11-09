@@ -42,9 +42,7 @@
 namespace Bocifus
 {
     using Model;
-    using Model;
     using System;
-    using System.Data;
     using System.Linq;
     using System.Windows;
     using System.Windows.Controls;
@@ -58,7 +56,7 @@ namespace Bocifus
     /// <seealso cref="System.IDisposable" />
     /// <seealso cref="System.Windows.Markup.IComponentConnector" />
     /// <seealso cref="System.Windows.Markup.IStyleConnector" />
-    public partial class MainWindow
+    public partial class MainWindow 
     {
         /// <summary>
         /// Called when [prompt template ListBox selection changed].
@@ -209,7 +207,7 @@ namespace Bocifus
         private void OnPromptTemplateEditButtonClick( object sender, RoutedEventArgs e )
         {
             var item = ( PromptTemplate )( ( Button )sender ).DataContext;
-            var dialog = new PromptTemplateInput( item )
+            var dialog = new PromptInputWindow( item )
             {
                 Owner = this
             };
@@ -241,7 +239,7 @@ namespace Bocifus
         /// instance containing the event data.</param>
         private void OnNewTemplateButtonClick( object sender, RoutedEventArgs e )
         {
-            var dialog = new PromptTemplateInput
+            var dialog = new PromptInputWindow
             {
                 Owner = this
             };

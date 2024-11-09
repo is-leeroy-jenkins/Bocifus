@@ -9,7 +9,7 @@
     xmlns:mdsvg="clr-namespace:MdXaml.Svg;assembly=MdXaml.Svg"
     xmlns:mdxam="clr-namespace:MdXaml;assembly=MdXaml"
     xmlns:ui="http://schemas.modernwpf.com/2019"
-    StartupUri="/UI/Windows/MainWindow.xaml">
+    StartupUri="/UI/Views/Windows/MainWindow.xaml">
 
     <!--  ****************************************  RESOURCES  *******************************************  -->
 
@@ -94,8 +94,7 @@
                 x:Key="NoBorderTextBoxStyle"
                 BasedOn="{StaticResource DefaultTextBoxStyle}"
                 TargetType="{x:Type TextBox}">
-                <Setter Property="Background" Value="{StaticResource ControlInteriorBrush}" />
-                <Setter Property="BorderBrush" Value="{StaticResource ControlInteriorBrush}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource ControlInteriorBrush}" />
                 <Setter Property="CaretBrush" Value="{DynamicResource SystemBaseHighColorBrush}" />
                 <Setter Property="BorderThickness" Value="0" />
                 <Setter Property="IsTabStop" Value="False" />
@@ -186,7 +185,7 @@
                     <Style TargetType="Run">
                         <Style.Triggers>
                             <Trigger Property="Tag" Value="CodeSpan">
-                                <Setter Property="FontFamily" Value="Roboto-Regular" />
+                                <Setter Property="FontFamily" Value="Roboto" />
                                 <Setter Property="Background" Value="{DynamicResource SystemListLowColorBrush}" />
                             </Trigger>
                         </Style.Triggers>
