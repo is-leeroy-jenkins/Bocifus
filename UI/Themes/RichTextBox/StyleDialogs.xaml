@@ -47,7 +47,7 @@
                                     Padding="0,5"
                                     HorizontalAlignment="Left"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=StylesDialogGeneralHeader}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     TabIndex="0" />
                                 <ListBox
@@ -58,7 +58,7 @@
                                     Height="169"
                                     HorizontalAlignment="Left"
                                     BorderThickness="1"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     ScrollViewer.VerticalScrollBarVisibility="Auto" />
                                 <StackPanel
@@ -72,7 +72,7 @@
                                         Height="24"
                                         HorizontalAlignment="Center"
                                         Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=New}"
-                                        FontFamily="Roboto-Regular"
+                                        FontFamily="Roboto"
                                         FontSize="11" />
                                     <Button
                                         x:Name="PART_ModifyButton"
@@ -81,7 +81,7 @@
                                         Margin="0,12"
                                         HorizontalAlignment="Center"
                                         Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=Modify}"
-                                        FontFamily="Roboto-Regular"
+                                        FontFamily="Roboto"
                                         FontSize="11" />
                                 </StackPanel>
                             </Grid>
@@ -150,7 +150,7 @@
                                     Padding="0,2,0,2"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=StyleDialogGeneralHeader}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     Foreground="{StaticResource WhiteForeground}" />
                                 <Label
@@ -159,7 +159,7 @@
                                     Padding="0,2,0,2"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=StyleDialogName}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11" />
                                 <TextBox
                                     x:Name="PART_StyleName"
@@ -170,7 +170,7 @@
                                     Padding="1,1,1,1"
                                     HorizontalAlignment="Left"
                                     Focusable="True"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11" />
                                 <Label
                                     Grid.Row="6"
@@ -178,7 +178,7 @@
                                     Padding="0,2,0,2"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=StyleDialogBasedOn}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11" />
                                 <StackPanel
                                     Grid.Row="8"
@@ -190,7 +190,7 @@
                                         Margin="0"
                                         Padding="4,2,2,2"
                                         HorizontalAlignment="Left"
-                                        FontFamily="Roboto-Regular"
+                                        FontFamily="Roboto"
                                         FontSize="11"
                                         SelectedIndex="0" />
                                 </StackPanel>
@@ -200,7 +200,7 @@
                                     Padding="0,2,0,2"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=StyleDialogStyleType}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11" />
                                 <StackPanel
                                     Grid.Row="4"
@@ -211,7 +211,7 @@
                                         Height="24"
                                         Padding="4,2,2,2"
                                         HorizontalAlignment="Left"
-                                        FontFamily="Roboto-Regular"
+                                        FontFamily="Roboto"
                                         FontSize="11"
                                         ItemsSource="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=StyleTypeCollection}"
                                         SelectedIndex="1" />
@@ -222,7 +222,7 @@
                                     Padding="0,2,0,2"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=StyleDialogFollowingParagraph}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11" />
                                 <StackPanel
                                     Grid.Row="8"
@@ -233,7 +233,7 @@
                                         Height="24"
                                         Padding="4,2,2,2"
                                         HorizontalAlignment="Left"
-                                        FontFamily="Roboto-Regular"
+                                        FontFamily="Roboto"
                                         FontSize="11"
                                         SelectedIndex="0" />
                                 </StackPanel>
@@ -267,7 +267,7 @@
                                     Grid.Column="0"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=StyleDialogFormattingHeader}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     Foreground="{TemplateBinding Foreground}" />
                                 <StackPanel
@@ -279,7 +279,7 @@
                                         Height="24"
                                         Padding="4,2,2,2"
                                         HorizontalAlignment="Left"
-                                        FontFamily="Roboto-Regular"
+                                        FontFamily="Roboto"
                                         FontSize="11"
                                         IsEditable="True"
                                         SelectedIndex="0"
@@ -293,7 +293,7 @@
                                         Width="69"
                                         Height="24"
                                         Padding="4,2,2,2"
-                                        FontFamily="Roboto-Regular"
+                                        FontFamily="Roboto"
                                         FontSize="11"
                                         IsEditable="True"
                                         SelectedIndex="0"
@@ -784,7 +784,7 @@
                                             Padding="4,2,2,2"
                                             HorizontalAlignment="Left"
                                             HorizontalContentAlignment="Left"
-                                            FontFamily="Roboto-Regular"
+                                            FontFamily="Roboto"
                                             FontSize="11"
                                             IconHeight="0"
                                             IconWidth="0"
@@ -813,7 +813,7 @@
                                             HorizontalAlignment="Right"
                                             VerticalAlignment="Center"
                                             Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=DialogBoxOk}"
-                                            FontFamily="Roboto-Regular"
+                                            FontFamily="Roboto"
                                             FontSize="11"
                                             IsDefault="True"
                                             TabIndex="10" />
@@ -826,7 +826,7 @@
                                             HorizontalAlignment="Right"
                                             VerticalAlignment="Center"
                                             Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=DialogBoxCancel}"
-                                            FontFamily="Roboto-Regular"
+                                            FontFamily="Roboto"
                                             FontSize="11"
                                             TabIndex="11" />
                                     </StackPanel>

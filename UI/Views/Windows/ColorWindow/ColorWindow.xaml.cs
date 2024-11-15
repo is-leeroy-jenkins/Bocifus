@@ -144,24 +144,24 @@ namespace Bocifus
             BefAccent = ThemeManager.Current.AccentColor;
             if( ThemeManager.Current.ApplicationTheme == ApplicationTheme.Dark )
             {
-                ThemeDark.IsChecked = true;
+                DarkThemeRadioButton.IsChecked = true;
             }
             else if( ThemeManager.Current.ApplicationTheme == ApplicationTheme.Light )
             {
-                ThemeLight.IsChecked = true;
+                LightThemeRadioButton.IsChecked = true;
             }
             else
             {
-                ThemeSystem.IsChecked = true;
+                ThemeSystemRadioButton.IsChecked = true;
             }
 
             if( ThemeManager.Current.AccentColor == null )
             {
-                AccentColorSystem.IsChecked = true;
+                SystemAccentRadioButton.IsChecked = true;
             }
             else
             {
-                AccentColorSet.IsChecked = true;
+                SetColorAccentRadioButton.IsChecked = true;
                 AccentColorList.SelectedItem = Settings.Default.AccentColorName;
                 AccentColorList.ScrollIntoView( AccentColorList.SelectedItem );
             }
@@ -386,12 +386,12 @@ namespace Bocifus
         private void OnThemeRadioButtonClick( object sender, RoutedEventArgs e )
         {
             var _ctrl = sender as Control;
-            if( _ctrl == ThemeLight )
+            if( _ctrl == LightThemeRadioButton )
             {
                 ThemeManager.Current.ApplicationTheme = ApplicationTheme.Light;
                 ResourceDictionaryEx.GlobalTheme = ElementTheme.Light;
             }
-            else if( _ctrl == ThemeDark )
+            else if( _ctrl == DarkThemeRadioButton )
             {
                 ThemeManager.Current.ApplicationTheme = ApplicationTheme.Dark;
                 ResourceDictionaryEx.GlobalTheme = ElementTheme.Dark;

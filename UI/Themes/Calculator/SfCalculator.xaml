@@ -451,7 +451,7 @@
         <Setter Property="Background" Value="{StaticResource ControlInteriorBrush}" />
         <Setter Property="Foreground" Value="{StaticResource WhiteForeground}" />
         <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
-        <Setter Property="FontFamily" Value="Roboto-Regular" />
+        <Setter Property="FontFamily" Value="Roboto" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="Template">
             <Setter.Value>

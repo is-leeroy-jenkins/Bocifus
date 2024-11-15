@@ -23,7 +23,7 @@
         <Setter Property="Foreground" Value="{StaticResource WhiteForeground}" />
         <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />
         <Setter Property="FontWeight" Value="Normal" />
-        <Setter Property="FontFamily" Value="Roboto-Regular" />
+        <Setter Property="FontFamily" Value="Roboto" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="SelectionBrush" Value="{StaticResource SteelBlueBackground}" />
         <Setter Property="ContextMenu" Value="{StaticResource RichTextBoxAdvContextMenu}" />

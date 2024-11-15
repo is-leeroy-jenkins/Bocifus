@@ -657,7 +657,7 @@
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=DialogBoxOk}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     IsDefault="True"
                                     TabIndex="11" />
@@ -670,7 +670,7 @@
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=DialogBoxCancel}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     TabIndex="13" />
                             </StackPanel>
@@ -828,7 +828,7 @@
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=DialogBoxOk}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     IsDefault="True"
                                     TabIndex="10" />
@@ -841,7 +841,7 @@
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=DialogBoxCancel}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     TabIndex="11" />
                             </StackPanel>
@@ -904,7 +904,7 @@
                                 Padding="0"
                                 VerticalAlignment="Center"
                                 Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=TableDialogDefaultCellMargin}"
-                                FontFamily="Roboto-Regular"
+                                FontFamily="Roboto"
                                 FontSize="11"
                                 Foreground="{TemplateBinding Foreground}" />
                             <StackPanel
@@ -915,7 +915,7 @@
                                     Padding="0,5,0,5"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=TopMargin}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     Foreground="{TemplateBinding Foreground}" />
                                 <shared:UpDown
@@ -924,7 +924,7 @@
                                     Height="25"
                                     Margin="0,0,5,5"
                                     Padding="0,1,1,2"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     MaxValue="2112"
                                     MinValue="0"
@@ -939,7 +939,7 @@
                                     Padding="0,5,0,5"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=LeftMargin}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     Foreground="{TemplateBinding Foreground}" />
                                 <shared:UpDown
@@ -948,7 +948,7 @@
                                     Height="25"
                                     Margin="0,0,5,5"
                                     Padding="0,1,1,2"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     MaxValue="2112"
                                     MinValue="0"
@@ -963,7 +963,7 @@
                                     Padding="0,5,0,5"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=BottomMargin}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     Foreground="{TemplateBinding Foreground}" />
                                 <shared:UpDown
@@ -972,7 +972,7 @@
                                     Height="25"
                                     Margin="0,0,5,5"
                                     Padding="0,1,1,2"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     MaxValue="2112"
                                     MinValue="0"
@@ -987,7 +987,7 @@
                                     Padding="0,5,0,5"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=RightMargin}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     Foreground="{TemplateBinding Foreground}" />
                                 <shared:UpDown
@@ -996,7 +996,7 @@
                                     Height="25"
                                     Margin="0,0,5,5"
                                     Padding="0,1,1,2"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     MaxValue="2112"
                                     MinValue="0"
@@ -1011,7 +1011,7 @@
                                 Padding="1,5,1,5"
                                 VerticalAlignment="Center"
                                 Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=TableDialogDefaultCellSpacing}"
-                                FontFamily="Roboto-Regular"
+                                FontFamily="Roboto"
                                 FontSize="11"
                                 Foreground="{TemplateBinding Foreground}" />
                             <CheckBox
@@ -1021,7 +1021,7 @@
                                 Margin="0,0,5,5"
                                 Padding="4,2,2,2"
                                 Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=TableDialogAllowCellSpacing}"
-                                FontFamily="Roboto-Regular"
+                                FontFamily="Roboto"
                                 FontSize="11"
                                 IsChecked="{Binding AllowCellSpacing, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" />
                             <shared:UpDown
@@ -1033,7 +1033,7 @@
                                 Height="24"
                                 Margin="0,0,1,5"
                                 Padding="0,0,2,2"
-                                FontFamily="Roboto-Regular"
+                                FontFamily="Roboto"
                                 FontSize="11"
                                 IsEnabled="{Binding AllowCellSpacing, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
                                 MaxValue="264"
@@ -1057,7 +1057,7 @@
                                 Padding="1,0,5,5"
                                 VerticalAlignment="Center"
                                 Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=TableOptionsDialogOptions}"
-                                FontFamily="Roboto-Regular"
+                                FontFamily="Roboto"
                                 FontSize="11"
                                 Foreground="{TemplateBinding Foreground}" />
                             <CheckBox
@@ -1066,7 +1066,7 @@
                                 Grid.ColumnSpan="7"
                                 Padding="4,2,2,2"
                                 Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=TableOptionsDialogAllowAutoFit}"
-                                FontFamily="Roboto-Regular"
+                                FontFamily="Roboto"
                                 FontSize="11"
                                 IsChecked="{Binding AllowAutoFit, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" />
                         </Grid>
@@ -1093,7 +1093,7 @@
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=DialogBoxOk}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     IsDefault="True"
                                     TabIndex="8" />
@@ -1106,7 +1106,7 @@
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=DialogBoxCancel}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     TabIndex="9" />
                             </StackPanel>
@@ -1161,7 +1161,7 @@
                             <Label
                                 VerticalAlignment="Center"
                                 Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=BordersShadingDialogBorders}"
-                                FontFamily="Roboto-Regular"
+                                FontFamily="Roboto"
                                 FontSize="11"
                                 Foreground="{StaticResource WhiteForeground}" />
                             <Grid
@@ -1189,7 +1189,7 @@
                                     <Label
                                         HorizontalAlignment="Left"
                                         Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=BordersShadingDialogSetting}"
-                                        FontFamily="Roboto-Regular"
+                                        FontFamily="Roboto"
                                         FontSize="11" />
                                     <StackPanel
                                         Grid.Row="2"
@@ -1222,7 +1222,7 @@
                                             Padding="0"
                                             VerticalAlignment="Center"
                                             Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=BordersShadingDialogNoBorder}"
-                                            FontFamily="Roboto-Regular"
+                                            FontFamily="Roboto"
                                             FontSize="11"
                                             Foreground="{TemplateBinding Foreground}" />
                                     </StackPanel>
@@ -1257,7 +1257,7 @@
                                             Padding="0"
                                             VerticalAlignment="Center"
                                             Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=BordersShadingDialogBoxBorder}"
-                                            FontFamily="Roboto-Regular"
+                                            FontFamily="Roboto"
                                             FontSize="11"
                                             Foreground="{TemplateBinding Foreground}" />
                                     </StackPanel>
@@ -1292,7 +1292,7 @@
                                             Padding="0"
                                             VerticalAlignment="Center"
                                             Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=BordersShadingDialogAllBorder}"
-                                            FontFamily="Roboto-Regular"
+                                            FontFamily="Roboto"
                                             FontSize="11"
                                             Foreground="{TemplateBinding Foreground}" />
                                     </StackPanel>
@@ -1327,7 +1327,7 @@
                                             Padding="0"
                                             VerticalAlignment="Center"
                                             Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=BordersShadingDialogCustomBorder}"
-                                            FontFamily="Roboto-Regular"
+                                            FontFamily="Roboto"
                                             FontSize="11"
                                             Foreground="{TemplateBinding Foreground}" />
                                     </StackPanel>
@@ -1352,7 +1352,7 @@
                                         Grid.Row="2"
                                         Padding="0"
                                         Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=BordersShadingDialogStyle}"
-                                        FontFamily="Roboto-Regular"
+                                        FontFamily="Roboto"
                                         FontSize="11" />
                                     <ComboBox
                                         Grid.Row="4"
@@ -1367,7 +1367,7 @@
                                         Grid.Row="6"
                                         Padding="0"
                                         Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=BordersShadingDialogWidth}"
-                                        FontFamily="Roboto-Regular"
+                                        FontFamily="Roboto"
                                         FontSize="11" />
                                     <shared:UpDown
                                         Grid.Row="8"
@@ -1383,7 +1383,7 @@
                                         Grid.Row="10"
                                         Padding="0"
                                         Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=BordersShadingDialogColor}"
-                                        FontFamily="Roboto-Regular"
+                                        FontFamily="Roboto"
                                         FontSize="11" />
                                     <tools_controls_shared:ColorPickerPalette
                                         x:Name="PART_BorderColorPicker"
@@ -1406,7 +1406,7 @@
                                     </Grid.RowDefinitions>
                                     <Label
                                         Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=BordersShadingDialogPreview}"
-                                        FontFamily="Roboto-Regular"
+                                        FontFamily="Roboto"
                                         FontSize="11" />
                                     <Grid Grid.Row="2">
                                         <Grid.RowDefinitions>
@@ -1642,7 +1642,7 @@
                             Grid.ColumnSpan="2"
                             VerticalAlignment="Center"
                             Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=BordersShadingDialogShading}"
-                            FontFamily="Roboto-Regular"
+                            FontFamily="Roboto"
                             FontSize="11"
                             Foreground="{TemplateBinding Foreground}" />
                         <Grid
@@ -1658,7 +1658,7 @@
                                 <Label
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=BordersShadingDialogFill}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     Foreground="{TemplateBinding Foreground}" />
                                 <tools_controls_shared:ColorPickerPalette
@@ -1680,7 +1680,7 @@
                                     Margin="0"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=BordersShadingDialogApplyTo}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     Foreground="{TemplateBinding Foreground}" />
                                 <ComboBox
@@ -1713,7 +1713,7 @@
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=DialogBoxOk}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     IsDefault="True"
                                     TabIndex="9" />
@@ -1726,7 +1726,7 @@
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=DialogBoxCancel}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     TabIndex="10" />
                             </StackPanel>
@@ -1832,7 +1832,7 @@
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=DialogBoxOk}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     IsDefault="True"
                                     TabIndex="3" />
@@ -1845,7 +1845,7 @@
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=DialogBoxCancel}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     TabIndex="4" />
                             </StackPanel>

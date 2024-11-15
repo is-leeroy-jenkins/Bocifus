@@ -84,7 +84,7 @@
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=DialogBoxOk}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     IsDefault="True"
                                     TabIndex="2" />
@@ -97,7 +97,7 @@
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=DialogBoxCancel}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     TabIndex="3" />
                             </StackPanel>
@@ -222,7 +222,7 @@
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=DialogBoxOk}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     IsDefault="True"
                                     TabIndex="4" />
@@ -235,7 +235,7 @@
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Center"
                                     Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=DialogBoxCancel}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     TabIndex="5" />
                             </StackPanel>
@@ -290,7 +290,7 @@
                                                 Margin="0,0,0,5"
                                                 HorizontalAlignment="Left"
                                                 VerticalAlignment="Center"
-                                                FontFamily="Roboto-Regular"
+                                                FontFamily="Roboto"
                                                 FontSize="11"
                                                 Foreground="{StaticResource WhiteForeground}"
                                                 Text="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=FindReplaceDialogFindText}" />
@@ -299,7 +299,7 @@
                                                 Width="355"
                                                 Height="24"
                                                 Padding="1"
-                                                FontFamily="Roboto-Regular"
+                                                FontFamily="Roboto"
                                                 FontSize="11"
                                                 SnapsToDevicePixels="true"
                                                 TabIndex="1" />
@@ -313,7 +313,7 @@
                                                 Margin="0,0,0,5"
                                                 HorizontalAlignment="Left"
                                                 VerticalAlignment="Center"
-                                                FontFamily="Roboto-Regular"
+                                                FontFamily="Roboto"
                                                 FontSize="11"
                                                 Foreground="{StaticResource WhiteForeground}"
                                                 Text="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=FindReplaceDialogReplaceText}" />
@@ -322,7 +322,7 @@
                                                 Width="355"
                                                 Height="24"
                                                 Padding="1"
-                                                FontFamily="Roboto-Regular"
+                                                FontFamily="Roboto"
                                                 FontSize="11"
                                                 SnapsToDevicePixels="true"
                                                 TabIndex="3" />
@@ -352,7 +352,7 @@
                                                     Grid.Row="1"
                                                     Grid.Column="1"
                                                     Margin="-4,0,0,0"
-                                                    FontFamily="Roboto-Regular"
+                                                    FontFamily="Roboto"
                                                     FontSize="11"
                                                     FontWeight="Normal"
                                                     Foreground="{StaticResource WhiteForeground}"
@@ -403,7 +403,7 @@
                                                         Grid.Row="1"
                                                         Grid.Column="1"
                                                         Margin="-4,0,0,0"
-                                                        FontFamily="Roboto-Regular"
+                                                        FontFamily="Roboto"
                                                         FontSize="11"
                                                         FontWeight="Normal"
                                                         Foreground="{StaticResource WhiteForeground}"
@@ -422,21 +422,21 @@
                                                 x:Name="PART_MatchCaseCheckBox"
                                                 Grid.Row="2"
                                                 Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=FindReplaceDialogMatchCase}"
-                                                FontFamily="Roboto-Regular"
+                                                FontFamily="Roboto"
                                                 FontSize="11"
                                                 TabIndex="9" />
                                             <CheckBox
                                                 x:Name="PART_MatchWordCheckBox"
                                                 Grid.Row="4"
                                                 Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=FindReplaceDialogWholeWord}"
-                                                FontFamily="Roboto-Regular"
+                                                FontFamily="Roboto"
                                                 FontSize="11"
                                                 TabIndex="10" />
                                             <CheckBox
                                                 x:Name="PART_MatchExpressionCheckBox"
                                                 Grid.Row="6"
                                                 Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=FindReplaceDialogRegularExpression}"
-                                                FontFamily="Roboto-Regular"
+                                                FontFamily="Roboto"
                                                 FontSize="11"
                                                 TabIndex="11" />
                                         </Grid>
@@ -476,7 +476,7 @@
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Center"
                                         Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=FindReplaceDialogReplace}"
-                                        FontFamily="Roboto-Regular"
+                                        FontFamily="Roboto"
                                         FontSize="11"
                                         TabIndex="4"
                                         Visibility="Collapsed" />
@@ -489,7 +489,7 @@
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Center"
                                         Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=FindReplaceDialogReplaceAll}"
-                                        FontFamily="Roboto-Regular"
+                                        FontFamily="Roboto"
                                         FontSize="11"
                                         TabIndex="5"
                                         Visibility="Collapsed" />
@@ -507,7 +507,7 @@
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Center"
                                         Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=FindReplaceDialogFindNext}"
-                                        FontFamily="Roboto-Regular"
+                                        FontFamily="Roboto"
                                         FontSize="11"
                                         IsDefault="True"
                                         TabIndex="6" />
@@ -520,7 +520,7 @@
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Center"
                                         Content="{resources:RichTextBoxAdvLocalizationResourceExtension ResourceName=DialogBoxCancel}"
-                                        FontFamily="Roboto-Regular"
+                                        FontFamily="Roboto"
                                         FontSize="11"
                                         TabIndex="7" />
                                 </StackPanel>

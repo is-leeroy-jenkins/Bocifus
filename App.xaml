@@ -139,7 +139,7 @@
                         <Setter Property="Foreground" Value="{mde:Alpha Foreground, 1, TargetType={x:Type mdxam:MarkdownScrollViewer}}" />
                         <Setter Property="Background" Value="{mde:Alpha Foreground, 0.0800, TargetType={x:Type mdxam:MarkdownScrollViewer}}" />
                         <Setter Property="SyntaxHighlighting" Value="{mde:SyntaxHighlightWrapper TargetType={x:Type mdxam:MarkdownScrollViewer}}" />
-                        <Setter Property="FontFamily" Value="Roboto-Regular" />
+                        <Setter Property="FontFamily" Value="Roboto" />
                         <Setter Property="HorizontalScrollBarVisibility" Value="Auto" />
                         <Setter Property="VerticalScrollBarVisibility" Value="Auto" />
                         <Setter Property="Padding" Value="5,0,5,0" />
@@ -164,7 +164,7 @@
                             </Trigger>
 
                             <Trigger Property="Tag" Value="CodeBlock">
-                                <Setter Property="FontFamily" Value="Roboto-Regular" />
+                                <Setter Property="FontFamily" Value="Roboto" />
                                 <Setter Property="FontSize" Value="11.9" />
                                 <Setter Property="Background" Value="{mde:Alpha Foreground, 0.0800, TargetType={x:Type mdxam:MarkdownScrollViewer}}" />
                                 <Setter Property="Padding" Value="20,10" />

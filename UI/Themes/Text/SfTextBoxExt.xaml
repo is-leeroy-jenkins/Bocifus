@@ -80,7 +80,7 @@
                         Content="{TemplateBinding Watermark}"
                         ContentTemplate="{TemplateBinding WatermarkTemplate}"
                         ContentTemplateSelector="{TemplateBinding WatermarkTemplateSelector}"
-                        FontFamily="Roboto-Regular"
+                        FontFamily="Roboto"
                         FontSize="11"
                         FontStretch="{TemplateBinding FontStretch}"
                         FontStyle="{TemplateBinding FontStyle}"
@@ -252,7 +252,7 @@
                                     Content="{TemplateBinding Watermark}"
                                     ContentTemplate="{TemplateBinding WatermarkTemplate}"
                                     ContentTemplateSelector="{TemplateBinding WatermarkTemplateSelector}"
-                                    FontFamily="Roboto-Regular"
+                                    FontFamily="Roboto"
                                     FontSize="11"
                                     FontStretch="{TemplateBinding FontStretch}"
                                     FontStyle="{TemplateBinding FontStyle}"
@@ -394,7 +394,7 @@
         <Setter Property="HighlightedTextColor" Value="{StaticResource WhiteForeground}" />
         <Setter Property="SelectionBrush" Value="{StaticResource BlueBorderBrush}" />
         <Setter Property="FontSize" Value="11" />
-        <Setter Property="FontFamily" Value="Roboto-Regular" />
+        <Setter Property="FontFamily" Value="Roboto" />
         <Setter Property="FontWeight" Value="Normal" />
         <Setter Property="Background" Value="{StaticResource ControlInteriorBrush}" />
         <Setter Property="BorderBrush" Value="{StaticResource BlueBorderBrush}" />

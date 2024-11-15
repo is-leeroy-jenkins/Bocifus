@@ -20,7 +20,7 @@
     WindowStyle="ToolWindow"
     mc:Ignorable="d">
 
-    <!--  ***********************************************************RESOURCES****************************************************  -->
+    <!--***********************************************************RESOURCES****************************************************-->
 
     <Window.Resources>
         <Style TargetType="ToolTip">
@@ -46,12 +46,13 @@
         </Style>
 
         <Style
-            x:Key="AccentColorRadioStyle"
+            x:Key="AccentColorRadioButtonStyle"
             BasedOn="{StaticResource DefaultRadioButtonStyle}"
             TargetType="RadioButton">
             <Setter Property="GroupName" Value="AccentColor" />
-            <Setter Property="Foreground" Value="{StaticResource WhiteForeground}" />
+            <Setter Property="Foreground" Value="{StaticResource LightBlueBrush}" />
         </Style>
+
     </Window.Resources>
 
     <!--  ***********************************************************LAYOUT****************************************************  -->
@@ -69,17 +70,18 @@
                 Text="Theme"
                 Foreground="{DynamicResource BlueBorderBrush}" />
             <RadioButton
-                x:Name="ThemeSystem"
+                x:Name="ThemeSystemRadioButton"
                 Margin="10,0,10,0"
                 Content="Using Windows Themes"
-                Foreground="{DynamicResource LightBlueBrush}" />
+                BorderBrush="{StaticResource BlueBorderBrush}"
+                Foreground="{DynamicResource LightBlueBrush}" IsChecked="False" OverridesDefaultStyle="True" />
             <RadioButton
-                x:Name="ThemeLight"
+                x:Name="LightThemeRadioButton"
                 Margin="10,0,10,0"
                 Content="Light"
                 Foreground="{DynamicResource LightBlueBrush}" />
             <RadioButton
-                x:Name="ThemeDark"
+                x:Name="DarkThemeRadioButton"
                 Margin="10,0,10,0"
                 Content="Dark"
                 Foreground="{DynamicResource LightBlueBrush}" />
@@ -87,25 +89,25 @@
         <StackPanel Grid.Row="1">
             <TextBlock
                 Margin="10,0,10,0"
-                FontSize="24"
+                FontSize="22"
                 Style="{DynamicResource TitleTextBlockStyle}"
                 Text="AccentColor"
                 Foreground="{DynamicResource BlueBorderBrush}" />
             <RadioButton
-                x:Name="AccentColorSystem"
+                x:Name="SystemAccentRadioButton"
                 Margin="10,0,10,0"
                 Checked="OnAccentColorSystemChecked"
                 Content="Use windows accent color"
                 GroupName="AccentColor"
-                Style="{DynamicResource AccentColorRadioStyle}"
+                Style="{DynamicResource AccentColorRadioButtonStyle}"
                 Foreground="{DynamicResource LightBlueBrush}" />
             <RadioButton
-                x:Name="AccentColorSet"
+                x:Name="SetColorAccentRadioButton"
                 Margin="10,0,10,0"
                 Checked="OnAccentColorSetChecked"
                 Content="Specify accent color"
                 GroupName="AccentColor"
-                Style="{DynamicResource AccentColorRadioStyle}"
+                Style="{DynamicResource AccentColorRadioButtonStyle}"
                 Foreground="{DynamicResource LightBlueBrush}" />
             <ListBox
                 x:Name="AccentColorList"
