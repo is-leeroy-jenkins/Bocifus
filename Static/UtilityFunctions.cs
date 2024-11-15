@@ -76,7 +76,8 @@ namespace Bocifus
         public static string[ ] SetupInstructionComboBox( )
         {
             var _instructionList = AppSettings.InstructionListSetting?.Cast<string>( )
-                ?.Where( ( s, i ) => i % 2 == 0 )?.ToArray( );
+                ?.Where( ( s, i ) => i % 2 == 0 )
+                ?.ToArray( );
 
             if( _instructionList != null )
             {
@@ -295,6 +296,7 @@ namespace Bocifus
         /// </summary>
         /// <param name="dataTable">The data table.</param>
         /// <returns></returns>
+        [ Obsolete( "Obsolete" ) ]
         public static string SerializeDataTable( DataTable dataTable )
         {
             if( dataTable == null )
@@ -313,6 +315,7 @@ namespace Bocifus
         /// </summary>
         /// <param name="serializedDataTable">The serialized data table.</param>
         /// <returns></returns>
+        [ Obsolete( "Obsolete" ) ]
         public static DataTable DeserializeDataTable( string serializedDataTable )
         {
             if( serializedDataTable == ""
@@ -388,9 +391,11 @@ namespace Bocifus
 
                     _translatedText = _translatedText.TrimEnd( '\r', '\n' );
                     _textBox.Text = _translatedText;
-                    var _messageboxResult = MessageBox.Show(
-                        "Would you like the translation results to be reflected in the existing conversation history?",
-                        "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question );
+                    var _question =
+                        "Would you like the translation results to be reflected in the existing conversation history?";
+
+                    var _messageboxResult = MessageBox.Show( _question, "Confirmation", 
+                        MessageBoxButton.YesNo, MessageBoxImage.Question );
 
                     if( _messageboxResult == MessageBoxResult.Yes )
                     {

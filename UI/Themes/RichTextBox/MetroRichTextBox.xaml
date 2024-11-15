@@ -13,7 +13,7 @@
 
     <Style
         x:Key="MetroRichTextBoxStyle"
-        TargetType="{x:Type b:MetroRichText}">
+        TargetType="{x:Type b:MetroRichTextBox}">
         <Setter Property="Background" Value="{DynamicResource ControlInteriorBrush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource BlueBorderBrush}" />
         <Setter Property="Foreground" Value="{DynamicResource WhiteForeground}" />

@@ -20,7 +20,7 @@
     WindowStyle="ToolWindow"
     mc:Ignorable="d">
 
-    <!--***********************************************************RESOURCES****************************************************-->
+    <!--******************************************   RESOURCES *************************************************-->
 
     <Window.Resources>
         <Style TargetType="ToolTip">
@@ -30,6 +30,9 @@
             <Setter Property="Background" Value="{StaticResource BlackBackground}" />
             <Setter Property="Foreground" Value="{StaticResource LightBlueBrush}" />
         </Style>
+
+
+    <!--******************************************  STYLES *************************************************-->
 
         <Style TargetType="ui:ToggleSwitch">
             <Setter Property="Margin" Value="0,5" />
@@ -68,47 +71,48 @@
                 Margin="10,0,10,0"
                 Style="{StaticResource TitleTextBlockStyle}"
                 Text="Theme"
-                Foreground="{DynamicResource BlueBorderBrush}" />
+                Foreground="{StaticResource BlueBorderBrush}" />
             <RadioButton
                 x:Name="ThemeSystemRadioButton"
                 Margin="10,0,10,0"
                 Content="Using Windows Themes"
-                BorderBrush="{StaticResource BlueBorderBrush}"
-                Foreground="{DynamicResource LightBlueBrush}" IsChecked="False" OverridesDefaultStyle="True" />
+                Style="{StaticResource DefaultRadioButtonStyle}"
+                IsChecked="False" 
+                OverridesDefaultStyle="True" />
             <RadioButton
                 x:Name="LightThemeRadioButton"
                 Margin="10,0,10,0"
                 Content="Light"
-                Foreground="{DynamicResource LightBlueBrush}" />
+                Style="{StaticResource DefaultRadioButtonStyle}" />
             <RadioButton
                 x:Name="DarkThemeRadioButton"
                 Margin="10,0,10,0"
                 Content="Dark"
-                Foreground="{DynamicResource LightBlueBrush}" />
+                Style="{StaticResource DefaultRadioButtonStyle}" />
         </StackPanel>
         <StackPanel Grid.Row="1">
             <TextBlock
                 Margin="10,0,10,0"
                 FontSize="22"
-                Style="{DynamicResource TitleTextBlockStyle}"
+                Style="{StaticResource TitleTextBlockStyle}"
                 Text="AccentColor"
-                Foreground="{DynamicResource BlueBorderBrush}" />
+                Foreground="{StaticResource BlueBorderBrush}" />
+
             <RadioButton
                 x:Name="SystemAccentRadioButton"
                 Margin="10,0,10,0"
                 Checked="OnAccentColorSystemChecked"
                 Content="Use windows accent color"
                 GroupName="AccentColor"
-                Style="{DynamicResource AccentColorRadioButtonStyle}"
-                Foreground="{DynamicResource LightBlueBrush}" />
+                Style="{StaticResource AccentColorRadioButtonStyle}" />
+
             <RadioButton
                 x:Name="SetColorAccentRadioButton"
                 Margin="10,0,10,0"
                 Checked="OnAccentColorSetChecked"
                 Content="Specify accent color"
-                GroupName="AccentColor"
-                Style="{DynamicResource AccentColorRadioButtonStyle}"
-                Foreground="{DynamicResource LightBlueBrush}" />
+                Style="{StaticResource AccentColorRadioButtonStyle}"/>
+
             <ListBox
                 x:Name="AccentColorList"
                 Height="180"
@@ -158,6 +162,6 @@
     <fw:AcrylicWindow.Background>
         <SolidColorBrush
             Opacity="0.3"
-            Color="{DynamicResource SystemChromeLowColor}" />
+            Color="{StaticResource SystemChromeLowColor}" />
     </fw:AcrylicWindow.Background>
 </fw:AcrylicWindow>

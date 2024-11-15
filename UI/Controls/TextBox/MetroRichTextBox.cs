@@ -6,7 +6,7 @@
 //     Last Modified By:        Terry D. Eppler
 //     Last Modified On:        11-15-2024
 // ******************************************************************************************
-// <copyright file="MetroTextBox.cs" company="Terry D. Eppler">
+// <copyright file="MetroRichTextBox.cs" company="Terry D. Eppler">
 //    Bocifus is an open source windows (wpf) application for interacting with OpenAI GPT
 //    that is based on NET 7 and written in C-Sharp.
 // 
@@ -35,7 +35,7 @@
 //    You can contact me at:  terryeppler@gmail.com or eppler.terry@epa.gov
 // </copyright>
 // <summary>
-//   MetroTextBox.cs
+//   MetroRichTextBox.cs
 // </summary>
 // ******************************************************************************************
 
@@ -44,21 +44,19 @@ namespace Bocifus
     using System;
     using System.Diagnostics.CodeAnalysis;
     using System.Windows;
-    using System.Windows.Media;
-    using Syncfusion.Windows.Controls.Input;
+    using Syncfusion.Windows.Controls.RichTextBoxAdv;
 
     /// <inheritdoc />
     /// <summary>
     /// </summary>
-    /// <seealso cref="T:Syncfusion.Windows.Controls.Input.SfTextBoxExt" />
+    /// <seealso cref="T:Syncfusion.Windows.Controls.RichTextBoxAdv.SfRichTextBoxAdv" />
     [ SuppressMessage( "ReSharper", "UnusedType.Global" ) ]
+    [ SuppressMessage( "ReSharper", "InconsistentNaming" ) ]
     [ SuppressMessage( "ReSharper", "FieldCanBeMadeReadOnly.Local" ) ]
     [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
-    [ SuppressMessage( "ReSharper", "InconsistentNaming" ) ]
     [ SuppressMessage( "ReSharper", "FieldCanBeMadeReadOnly.Global" ) ]
-    [ SuppressMessage( "ReSharper", "MemberCanBeProtected.Global" ) ]
-    [ SuppressMessage( "ReSharper", "MemberCanBeInternal" ) ]
-    public class MetroTextBox : SfTextBoxExt
+    [ SuppressMessage( "ReSharper", "ClassNeverInstantiated.Global" ) ]
+    public class MetroRichTextBox : SfRichTextBoxAdv
     {
         /// <summary>
         /// The theme
@@ -68,20 +66,22 @@ namespace Bocifus
         /// <inheritdoc />
         /// <summary>
         /// Initializes a new instance of the
-        /// <see cref="T:Bocifus.MetroTextBox" /> class.
+        /// <see cref="T:Bocifus.MetroRichTextBox" /> class.
         /// </summary>
-        public MetroTextBox( )
+        public MetroRichTextBox( )
             : base( )
         {
-            SetResourceReference( StyleProperty, typeof( SfTextBoxExt ) );
-            Width = 100;
-            Height = 24;
+            SetResourceReference( StyleProperty, typeof( SfRichTextBoxAdv ) );
             FontFamily = _theme.FontFamily;
             FontSize = _theme.FontSize;
+            Width = 200;
+            Height = 100;
             Padding = new Thickness( 1 );
+            BorderThickness = _theme.BorderThickness;
+            Padding = _theme.Padding;
             Background = _theme.ControlBackground;
             Foreground = _theme.LightBlueBrush;
-            BorderBrush = _theme.BorderBrush;
+            BorderBrush = _theme.LightBlueBrush;
             SelectionBrush = _theme.SteelBlueBrush;
             HorizontalAlignment = HorizontalAlignment.Stretch;
             VerticalAlignment = VerticalAlignment.Stretch;
@@ -101,9 +101,12 @@ namespace Bocifus
         {
             try
             {
-                Background = _theme.DarkBlueBrush;
-                BorderBrush = _theme.LightBlueBrush;
-                Foreground = _theme.WhiteForeground;
+                if( sender is MetroRichTextBox _textBox )
+                {
+                    _textBox.Background = _theme.DarkBlueBrush;
+                    _textBox.BorderBrush = _theme.LightBlueBrush;
+                    _textBox.Foreground = _theme.WhiteForeground;
+                }
             }
             catch( Exception ex )
             {
@@ -121,9 +124,12 @@ namespace Bocifus
         {
             try
             {
-                Background = _theme.ControlInterior;
-                BorderBrush = _theme.SteelBlueBrush;
-                Foreground = _theme.LightBlueBrush;
+                if( sender is MetroRichTextBox _textBox )
+                {
+                    _textBox.Background = _theme.ControlInterior;
+                    _textBox.BorderBrush = _theme.SteelBlueBrush;
+                    _textBox.Foreground = _theme.LightBlueBrush;
+                }
             }
             catch( Exception ex )
             {

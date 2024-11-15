@@ -6,7 +6,7 @@
 //     Last Modified By:        Terry D. Eppler
 //     Last Modified On:        11-15-2024
 // ******************************************************************************************
-// <copyright file="MetroText.cs" company="Terry D. Eppler">
+// <copyright file="DataTableSerializer.cs" company="Terry D. Eppler">
 //    Bocifus is an open source windows (wpf) application for interacting with OpenAI GPT
 //    that is based on NET 7 and written in C-Sharp.
 // 
@@ -35,52 +35,83 @@
 //    You can contact me at:  terryeppler@gmail.com or eppler.terry@epa.gov
 // </copyright>
 // <summary>
-//   MetroText.cs
+//   DataTableSerializer.cs
 // </summary>
 // ******************************************************************************************
 
 namespace Bocifus
 {
     using System;
-    using System.Diagnostics.CodeAnalysis;
-    using System.Windows.Controls;
-    using System.Windows.Media;
+    using System.Data;
+    using System.IO;
+    using System.Text;
+    using System.Xml.Serialization;
 
-    /// <inheritdoc />
     /// <summary>
+    /// 
     /// </summary>
-    /// <seealso cref="T:System.Windows.Controls.TextBlock" />
-    [ SuppressMessage( "ReSharper", "UnusedType.Global" ) ]
-    [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
-    [ SuppressMessage( "ReSharper", "InconsistentNaming" ) ]
-    public class MetroText : TextBlock
+    public class DataTableSerializer
     {
         /// <summary>
-        /// The dark
-        /// </summary>
-        private protected readonly DarkMode _theme = new DarkMode( );
-
-        /// <inheritdoc />
-        /// <summary>
         /// Initializes a new instance of the
-        /// <see cref="T:Badger.MetroTextBlock" /> class.
+        /// <see cref="DataTableSerializer"/> class.
         /// </summary>
-        public MetroText( )
-            : base( )
+        public DataTableSerializer( )
         {
-            Background = _theme.TransparentBrush;
-            Foreground = _theme.BorderBrush;
-            FontSize = 12;
-            FontFamily = new FontFamily( "Roboto Regular" );
         }
 
         /// <summary>
-        /// Fails the specified _ex.
+        /// Serializes the specified data table.
         /// </summary>
-        /// <param name="_ex">The _ex.</param>
-        private protected void Fail( Exception _ex )
+        /// <param name="dataTable">The data table.</param>
+        /// <returns></returns>
+        public string Serialize( DataTable dataTable )
         {
-            var _error = new ErrorWindow( _ex );
+            try
+            {
+                ThrowIf.Null( dataTable, nameof( dataTable ) );
+                using var _stream = new MemoryStream( );
+                var _serializer = new XmlSerializer( typeof( DataTable ) );
+                _serializer.Serialize( _stream, dataTable );
+                return Convert.ToBase64String( _stream.ToArray( ) );
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+                return string.Empty;
+            }
+        }
+
+        /// <summary>
+        /// Deserializes the specified serialized data table.
+        /// </summary>
+        /// <param name="serializedDataTable">The serialized data table.</param>
+        /// <returns></returns>
+        public DataTable Deserialize( string serializedDataTable )
+        {
+            try
+            {
+                ThrowIf.Empty( serializedDataTable, nameof( serializedDataTable ) );
+                using var _stream =
+                    new MemoryStream( Convert.FromBase64String( serializedDataTable ) );
+
+                var _serializer = new XmlSerializer( typeof( DataTable ) );
+                return ( DataTable )_serializer.Deserialize( _stream );
+            }
+            catch( Exception ex )
+            {
+                Fail( ex );
+                return default( DataTable );
+            }
+        }
+
+        /// <summary>
+        /// Fails the specified ex.
+        /// </summary>
+        /// <param name="ex">The ex.</param>
+        private protected void Fail( Exception ex )
+        {
+            var _error = new ErrorWindow( ex );
             _error?.SetText( );
             _error?.ShowDialog( );
         }

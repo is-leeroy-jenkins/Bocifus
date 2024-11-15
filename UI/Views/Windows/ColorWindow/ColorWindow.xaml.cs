@@ -69,6 +69,7 @@ namespace Bocifus
     /// <seealso cref="T:System.Windows.Markup.IComponentConnector" />
     /// <seealso cref="T:System.Windows.Markup.IStyleConnector" />
     [ SuppressMessage( "ReSharper", "PossibleNullReferenceException" ) ]
+    [ SuppressMessage( "ReSharper", "MemberCanBePrivate.Global" ) ]
     public partial class ColorWindow
     {
         /// <summary>
@@ -79,7 +80,7 @@ namespace Bocifus
         /// <summary>
         /// The path
         /// </summary>
-        private protected object _entry = new object();
+        private protected object _entry = new object( );
 
         /// <summary>
         /// The seconds
@@ -109,7 +110,7 @@ namespace Bocifus
         /// <summary>
         /// The theme
         /// </summary>
-        private protected readonly DarkMode _theme = new DarkMode();
+        private protected readonly DarkMode _theme = new DarkMode( );
 
         /// <summary>
         /// Gets the known color names.
@@ -138,7 +139,7 @@ namespace Bocifus
                 var _color = ThemeManager.Current.ActualAccentColor;
             }
 
-            OkFlg = false;
+            OkayFlag = false;
             AccentColorList.ItemsSource = KnownColorNames;
             BefTheme = ThemeManager.Current.ApplicationTheme;
             BefAccent = ThemeManager.Current.AccentColor;
@@ -189,25 +190,24 @@ namespace Bocifus
         /// <value>
         ///   <c>true</c> if [ok FLG]; otherwise, <c>false</c>.
         /// </value>
-        public static bool OkFlg { get; set; }
-
+        public static bool OkayFlag { get; set; }
 
         /// <summary>
         /// Invokes if needed.
         /// </summary>
         /// <param name="action">The action.</param>
-        private void InvokeIf(Action action)
+        private void InvokeIf( Action action )
         {
             try
             {
-                ThrowIf.Null(action, nameof(action));
-                if(Dispatcher.CheckAccess())
+                ThrowIf.Null(action, nameof( action ) );
+                if( Dispatcher.CheckAccess( ) )
                 {
-                    action?.Invoke();
+                    action?.Invoke( );
                 }
                 else
                 {
-                    Dispatcher.BeginInvoke(action);
+                    Dispatcher.BeginInvoke( action );
                 }
             }
             catch(Exception ex)
@@ -282,7 +282,7 @@ namespace Bocifus
         /// <returns>
         /// Notifier
         /// </returns>
-        private Notifier CreateNotifier()
+        private Notifier CreateNotifier( )
         {
             try
             {
@@ -371,7 +371,7 @@ namespace Bocifus
         /// instance containing the event data.</param>
         protected virtual void OnWindowClosing( object sender, CancelEventArgs e )
         {
-            if( OkFlg == false )
+            if( OkayFlag == false )
             {
                 ThemeManager.Current.ApplicationTheme = BefTheme;
                 ThemeManager.Current.AccentColor = BefAccent;
@@ -412,7 +412,7 @@ namespace Bocifus
         /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void OnOkButtonClick( object sender, RoutedEventArgs e )
         {
-            OkFlg = true;
+            OkayFlag = true;
             if( ThemeManager.Current.ApplicationTheme == ApplicationTheme.Dark )
             {
                 Settings.Default.Theme = "Dark";

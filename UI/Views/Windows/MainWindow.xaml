@@ -1000,6 +1000,7 @@
                         AcceptsReturn="True"
                         AcceptsTab="True"
                         TextChanged="OnSystemPromptContentsTextBoxTextChanged"
+                        Foreground="{StaticResource LightBlueBrush}"
                         TextWrapping="Wrap">
                         <TextBox.Background>
                             <SolidColorBrush
