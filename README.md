@@ -41,15 +41,15 @@
 - [x] Written in C#
 - [x] Windows 10/11
 
-## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/documentation.png) Documentation
+## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/master/Resources/Assets/GitHubImages/documentation.png)  Documentation
 
-- [User Guide](Resources/Github/Users.md) - how to use Bocifus.
-- [Compilation Guide](Resources/Github/Compilation.md) - instructions on how to compile Bocifus.
-- [Configuration Guide](Resources/Github/Configuration.md) - information for the Bocifus configuration file. 
-- [Distribution Guide](Resources/Github/Distribution.md) -  distributing Bocifus.
+- [User Guide](https://github.com/is-leeroy-jenkins/Bocifus/tree/master/Resources/Github/Users.md) - how to use Bocifus.
+- [Compilation Guide](https://github.com/is-leeroy-jenkins/Bocifus/tree/master/Resources/Github/Compilation.md) - instructions on how to compile Bocifus.
+- [Configuration Guide](https://github.com/is-leeroy-jenkins/Bocifus/tree/master/Resources/Github/Configuration.md) - information for the Bocifus configuration file. 
+- [Distribution Guide](https://github.com/is-leeroy-jenkins/Bocifus/tree/master/Resources/Github/Distribution.md) -  distributing Bocifus.
 
 
-## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/csharp.png)  Code
+## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/master/Resources/Assets/GitHubImages/csharp.png)  Code
 
 - Bocifus supports 'AnyCPU' as well as x86/x64 specific builds
 - [Controls](https://github.com/is-leeroy-jenkins/Bocifus/tree/master/UI/Controls) - controls associated main ui layer and related functionality.
@@ -63,7 +63,7 @@
 - [Static](https://github.com/is-leeroy-jenkins/Bocifus/tree/master/Static) - static types used by Bocifus.
 - [Windows](https://github.com/is-leeroy-jenkins/Bocifus/tree/master/UI/Windows) - window classes
 
-## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/edit.png)  Dependencies
+## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/system_requirements.png)  Dependencies
 Here are the key dependencies of this project:
 - [**Betalgo.OpenAI** ](https://github.com/betalgo/openai)
 - [**ModernWpf**](https://github.com/Kinnara/ModernWpf)
@@ -83,18 +83,10 @@ https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/DemoImag
 ## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/epa.png)  Prompts
 https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/DemoImages/57471763/1057896a-3f72-495c-9db7-68223e5d1136
 
-## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/edit.png)  Extras
+## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/icons8-layers-30.png)  Extras
 - For people whose native language is not English.
 - English is said to be the most accurate. Use this if you want to interact with the AI in English.
 - Requires DeepLearning or Google's translation API.
-
-## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/master/Resources/Assets/GitHubImages/documentation.png)  Documentation
-
-- [User Guide](https://github.com/is-leeroy-jenkins/Bocifus/tree/master/Resources/Github/Users.md) - how to use Bocifus.
-- [Compilation Guide](https://github.com/is-leeroy-jenkins/Bocifus/tree/master/Resources/Github/Compilation.md) - instructions on how to compile Bocifus.
-- [Configuration Guide](https://github.com/is-leeroy-jenkins/Bocifus/tree/master/Resources/Github/Configuration.md) - information for the Bocifus configuration file. 
-- [Distribution Guide](https://github.com/is-leeroy-jenkins/Bocifus/tree/master/Resources/Github/Distribution.md) -  distributing Bocifus.
-
 
 ## 📦 Download
 
@@ -103,7 +95,7 @@ Pre-built and binaries (setup, portable and archive) are available on the with i
 
 
 
-## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/master/Resources/Assets/GitHubImages/tools.png) Build
+## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/tools.png) Build
 
 - [x] VisualStudio 2022
 - [x] Based on .NET8 and WPF
