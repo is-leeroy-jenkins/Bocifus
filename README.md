@@ -41,7 +41,7 @@
 - [x] Written in C#
 - [x] Windows 10/11
 
-## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/master/Resources/Assets/GitHubImages/documentation.png)  Documentation
+## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/documentation.png)  Documentation
 
 - [User Guide](https://github.com/is-leeroy-jenkins/Bocifus/tree/master/Resources/Github/Users.md) - how to use Bocifus.
 - [Compilation Guide](https://github.com/is-leeroy-jenkins/Bocifus/tree/master/Resources/Github/Compilation.md) - instructions on how to compile Bocifus.
@@ -77,7 +77,7 @@ Here are the key dependencies of this project:
 OpenAI or AzureOpenAI APIs are available.
 <img src="https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/DemoImages/57471763/fc457b14-f563-4551-aadb-dffa1c89c316" width="100%" />
 
-## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/features.png)  History
+## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/github.png)  History
 https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/DemoImages/57471763/d7bcb773-9832-44cc-8a97-a3a13e6f8c18
 
 ## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/epa.png)  Prompts
