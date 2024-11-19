@@ -9,7 +9,7 @@
 
 ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/DemoImages/Bocifus.png)
 
-## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/master/Resources/Assets/GitHubImages/features.png) Features
+## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/features.png) Features
 
 - A simple application for interacting with the OpenAI API written in C#
 - An open source tool for connecting and interacting through a single, windows interface!
