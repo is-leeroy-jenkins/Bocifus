@@ -49,7 +49,7 @@
 - [Distribution Guide](https://github.com/is-leeroy-jenkins/Bocifus/tree/master/Resources/Github/Distribution.md) -  distributing Bocifus.
 
 
-## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/master/Resources/Assets/GitHubImages/csharp.png)  Code
+## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/csharp.png)  Code
 
 - Bocifus supports 'AnyCPU' as well as x86/x64 specific builds
 - [Controls](https://github.com/is-leeroy-jenkins/Bocifus/tree/master/UI/Controls) - controls associated main ui layer and related functionality.
@@ -69,11 +69,11 @@ Here are the key dependencies of this project:
 - [**ModernWpf**](https://github.com/Kinnara/ModernWpf)
 - [**FluentWPF**](https://github.com/sourcechord/FluentWPF)
 
-## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/features.png)  Examples
+## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/openai.png)  Examples
 
 ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/DemoImages/OpenAIOnWPF.gif)
 
-## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/baby.png)  Configurations
+## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/administrative-tools.png)  Configurations
 OpenAI or AzureOpenAI APIs are available.
 <img src="https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/DemoImages/57471763/fc457b14-f563-4551-aadb-dffa1c89c316" width="100%" />
 
