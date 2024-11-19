@@ -175,7 +175,7 @@ Bocifus uses the following projects and libraries. Please consider supporting th
 | [Syncfusion.UI.WPF.NET 24.1.41](https://www.nuget.org/packages/Syncfusion.UI.WPF.NET)          | Syncfusion WPF Controls is a library of 100+ WPF UI components and file formats to build modern WPF applications.                              |
 
 
-## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/master/Resources/Assets/GitHubImages/signature.png)  Code Signing 
+## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/signature.png)  Code Signing 
 
 Bocifus uses free code signing provided by [SignPath.io](https://signpath.io/) and a free code signing certificate
 from [SignPath Foundation](https://signpath.org/).
@@ -185,7 +185,7 @@ Build artifacts are automatically sent to [SignPath.io](https://signpath.io/) vi
 The signed binaries are then uploaded to the [GitHub releases](https://github.com/is-leeroy-jenkins/Bocifus/releases) page.
 
 
-## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/master/Resources/Assets/GitHubImages/web.png) Privacy Policy
+## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/guidance.png) Privacy Policy
 
 This program will not transfer any information to other networked systems unless specifically requested by the user or the person installing or operating it.
 
