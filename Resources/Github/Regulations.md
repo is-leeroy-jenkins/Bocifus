@@ -1,5 +1,5 @@
 ![](https://github.com/is-leeroy-jenkins/Bubba/blob/master/Resources/Assets/GitHubImages/congress.png) Regulations
-## Bubba's AI layer provides access to the OpenAI VectorStores and Files
+## Bocifus' AI layer provides access to the OpenAI VectorStores and Files
 
 ## Federal Regulations
  
