@@ -63,10 +63,10 @@
 - [Static](https://github.com/is-leeroy-jenkins/Bocifus/tree/master/Static) - static types used by Bocifus.
 - [Windows](https://github.com/is-leeroy-jenkins/Bocifus/tree/master/UI/Windows) - window classes
 
-## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/openai.png)  Machine Learning 
+## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/openai.png) OpenAI Vector Stores
 
-- [Federal Appropriations](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Github/Appropriations.md) - federal funding data available for fine-tuning learning models
-- [Federal Regulations](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Github/Regulations.md) - regulatory data available for fine-tuning learning models
+- [Federal Appropriations](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Github/Appropriations.md) - vectorized dataset of federal appropriations available for fine-tuning learning models
+- [Federal Regulations](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Github/Regulations.md) - vectorized dataset of federal finance regulations available for fine-tuning learning models
 
 
 ## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/system_requirements.png)  Dependencies
