@@ -64,10 +64,25 @@
 - [Static](https://github.com/is-leeroy-jenkins/Bocifus/tree/master/Static) - static types used by Bocifus.
 - [Windows](https://github.com/is-leeroy-jenkins/Bocifus/tree/master/UI/Windows) - window classes
 
-## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/openai.png) OpenAI 
 
-- [Federal Appropriations](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Github/Appropriations.md) - vectorized dataset of federal appropriations available for fine-tuning machine learning models
-- [Federal Regulations](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Github/Regulations.md) - vectorized dataset of federal finance regulations available for fine-tuning machine learning models
+## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/openai.png)  Generative AI
+
+> Vectorization is the process of converting textual data into numerical vectors and is a process that is usually applied once the text is cleaned.
+> It can help improve the execution speed and reduce the training time of your code. Bubba provides the following vector stores on the OpenAI platform to support environmental data analysis with machine-learning
+
+- #### [Federal Appropriations](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Github/Appropriations.md) - vectorized data set of federal appropriations available for fine-tuning learning models
+- #### [Federal Regulations](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Github/Regulations.md) - vectorized dat aset of federal, financial regulations available for fine-tuning learning models
+
+> Bocifus incorporates machine learning and artificial intelligence algorithms to extract insights from large datasets.
+> This includes the use of vector embeddings and predictive modeling to forecast contaminant spread and resource optimization to allocate resources effectively during emergencies
+
+- #### Example gpt-4o-mini run
+## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/Bubba.gif)
+
+> Bocifus incorporates machine learning and artificial intelligence algorithms to extract insights from large datasets.
+This includes the use of vector embeddings and predictive modeling to forecast contaminant spread and resource optimization to allocate resources effectively during emergencies.
+Badger interacts with pre-trained Large Language Models (LLMs) like GPT-4o and o1-mini  to enhance its analytical capabilities.
+Users leverage LLMs for rapid information retrieval from vast datasets, automated report generation, and potentially even expert consultation
 
 
 ## ![](https://github.com/is-leeroy-jenkins/Bocifus/blob/main/Resources/Assets/GitHubImages/system_requirements.png)  Dependencies
