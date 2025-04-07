@@ -1,0 +1,1245 @@
+CIRCULAR A-94 
+
+ 
+
+ 
+
+GUIDELINES AND DISCOUNT RATES 
+
+ 
+
+FOR BENEFIT-COST ANALYSIS OF FEDERAL PROGRAMS 
+
+
+ CIRCULAR NO. A-94 
+(Transmittal Memo No.64) 
+MEMORANDUM FOR HEADS OF EXECUTIVE DEPARTMENTS AND ESTABLISHMENTS 
+SUBJECT: Guidelines and Discount Rates for Benefit-Cost Analysis 
+of Federal Programs 
+Table of Contents Page 
+1. Purpose .................................................... 1 
+2. Rescission ................................................... 2 
+3. Authority .................................................... 2 
+4. Scope .................................................... 2 
+5. General Principles ........................................... 3 
+a. Net Present Value and Related Outcome Measures 
+b. Cost-Effectiveness Analysis 
+c. Elements of Benefit-Cost or Cost-Effectiveness 
+Analysis 
+6. Identifying and Measuring Benefits and Costs ................. 5 
+a. Identifying Benefits and Costs 
+b. Measuring Benefits and Costs 
+7. Treatment of Inflation ....................................... 6 
+a. Real or Nominal Values 
+b. Recommended Inflation Assumption 
+8. Discount Rate Policy ......................................... 7 
+a. Real versus Nominal Discount Rates 
+b. Public Investment and Regulatory Analyses 
+c. Cost-Effectiveness, Lease-Purchase, Internal 
+Government Investment, and Asset Sale Analyses 
+9. Treatment of Uncertainty ..................................... 10 
+a. Characterizing Uncertainty 
+b. Expected Values 
+c. Sensitivity Analysis 
+d. Other Adjustments for Uncertainty 
+10. Incidence and Distributional Effects ......................... 11 
+a. Alternative Classifications 
+b. Economic Incidence 
+11. Special Guidance for Public Investment Analysis .............. 12 
+a. Analysis of Excess Burdens 
+b. Exceptions 
+12. Special Guidance for Regulatory Impact Analysis .............. 12 
+13. Special Guidance for Lease-Purchase Analysis ................. 12 
+a. Coverage 
+b. Required Justification for Leases 
+c. Analytical Requirements and Definitions 
+14. Related Guidance ............................................. 16 
+15. Implementation ............................................... 16 
+16. Effective Date ............................................... 16 
+17. Interpretation ............................................... 16 
+Appendix A: Definitions of Terms .................................. 17 
+Appendix B: Additional Guidance for Discounting ................... 20 
+Appendix C: Discount Rates for Cost-Effectiveness, Lease- 
+Purchase, and Related Analyses .................... 22 
+
+ 
+
+1. Purpose. The goal of this Circular is to promote efficient resource 
+allocation through well-informed decision-making by the Federal Government. It 
+
+
+provides general guidance for conducting benefit-cost and cost-effectiveness 
+analyses. It also provides specific guidance on the discount rates to be used in 
+evaluating Federal programs whose benefits and costs are distributed over time. 
+The general guidance will serve as a checklist of whether an agency has 
+considered and properly dealt with all the elements for sound benefit-cost and 
+cost-effectiveness analyses. 
+2. Rescission. This Circular replaces and rescinds Office of Management and 
+Budget (OMB) Circular No. A-94, "Discount Rates to Be Used in Evaluating 
+Time-Distributed Costs and Benefits," dated March 27, 1972, and Circular No. 
+A-104, "Evaluating Leases of Capital Assets," dated June 1, 1986, which has been 
+rescinded. Lease-purchase analysis is only appropriate after a decision has been 
+made to acquire the services of an asset. Guidance for lease- purchase analysis 
+is provided in Section 8.c.(2) and Section 13. 
+3. Authority. This Circular is issued under the authority of 31 U.S.C. 
+Section 1111 and the Budget and Accounting Act of 1921, as amended. 
+4. Scope. This Circular does not supersede agency practices which are 
+prescribed by or pursuant to law, Executive Order, or other relevant circulars. 
+The Circular's guidelines are suggested for use in the internal planning of 
+Executive Branch agencies. The guidelines must be followed in all analyses 
+submitted to OMB in support of legislative and budget-programs in compliance with 
+OMB Circulars No. A-11, "Preparation and Submission of Annual Budget Estimates," 
+and No. A-19, "Legislative Coordination and Clearance." These guidelines must 
+also be followed in providing estimates submitted to OMB in compliance with 
+Executive Order No. 12291, "Federal Regulation," and the President's April 29, 
+1992 memorandum requiring benefit-cost analysis for certain legislative 
+proposals. 
+a. Aside from the exceptions listed below, the guidelines in this Circular 
+apply to any analysis used to support Government decisions to initiate, 
+renew, or expand programs or projects which would result in a series of 
+measurable benefits or costs extending for three or more years into the 
+future. The Circular applies specifically to: 
+(1) Benefit-cost or cost-effectiveness analysis of Federal programs or 
+policies. 
+(2) Regulatory impact analysis. 
+(3) Analysis of decisions whether to lease or purchase. 
+(4) Asset valuation and sale analysis. 
+b. Specifically exempted from the scope of this Circular are decisions 
+concerning: 
+(1) Water resource projects (guidance for which is the approved Economic 
+and Environmental Principles and Guidelines for Water and Related 
+Land Resources Implementation Studies). 
+
+
+ (2) The acquisition of commercial-type services by Government or 
+contractor operation (guidance for which is OMB Circular No. A-76). 
+(3) Federal energy management programs (guidance for which can be found 
+in the Federal Register of January 25, 1990, and November 20, 1990). 
+c. This Circular applies to all agencies of the Executive Branch of the 
+Federal Government. It does not apply to the Government of the District 
+of Columbia or to non-Federal recipients of loans, contracts or grants. 
+Recipients are encouraged, however, to follow the guidelines provided here 
+when preparing analyses in support of Federal activities. 
+d. For small projects which share similar characteristics, agencies are 
+encouraged to conduct generic studies and to avoid duplication of effort 
+in carrying out economic analysis. 
+5. General Principles. Benefit-cost analysis is recommended as 
+the technique to use in a formal economic analysis of government programs or 
+projects. Cost-effectiveness analysis is a less comprehensive technique, but it 
+can be appropriate when the benefits from competing alternatives are the same or 
+where a policy decision has been made that the benefits must be provided. 
+(Appendix A provides a glossary of technical terms used in this Circular; 
+technical terms are italicized when they first appear.) 
+a. Net Present Value and Related Outcome Measures,. The standard criterion 
+for deciding whether a government program can be justified on economic 
+principles is net present value -- the discounted monetized value of 
+expected net benefits (i.e., benefits minus costs). Net present value is 
+computed by assigning monetary values to benefits and costs, discounting 
+future benefits and costs using an appropriate discount rate, and 
+subtracting the sum total of discounted costs from the sum total of 
+discounted benefits. Discounting benefits and costs transforms gains and 
+losses occurring in different time periods to a common unit of 
+measurement. Programs with positive net present value increase social 
+resources and are generally preferred. Programs with negative net present 
+value should generally be avoided. (Section 8 considers discounting issues 
+in more detail.) 
+Although net present value is not always computable (and it does not 
+usually reflect effects on income distribution), efforts to measure it can 
+produce useful insights even when the monetary values of some benefits or 
+costs cannot be determined. In these cases: 
+(1) A comprehensive enumeration of the different types of benefits and 
+costs, monetized or not, can be helpful in identifying the full 
+range of program effects. 
+(2) Quantifying benefits and costs is worthwhile, even when it is not 
+feasible to assign monetary values; physical measurements may be 
+possible and useful. 
+
+ 
+
+
+Other summary effectiveness measures can provide useful supplementary 
+information to net present value, and analysts are encouraged to report 
+them also. Examples include the number of injuries prevented per dollar 
+of cost (both measured in present value terms) or a project's internal 
+rate of return. 
+b. Cost-Effectiveness Analysis. A program is cost-effective if, on the basis 
+of life cycle cost analysis of competing alternatives, it is determined to 
+have the lowest costs expressed in present value terms for a given amount 
+of benefits. Cost-effectiveness analysis is appropriate whenever it is 
+unnecessary or impractical to consider the dollar value of the benefits 
+provided by the alternatives under consideration. This is the case 
+whenever (i) each alternative has the same annual benefits expressed in 
+monetary terms; or (ii) each alternative has the same annual affects, but 
+dollar values cannot be assigned to their benefits. Analysis of 
+alternative defense systems often falls in this category. 
+Cost-effectiveness analysis can also be used to compare programs with 
+identical costs but differing benefits. In this case, the decision 
+criterion is the discounted present value of benefits. The alternative 
+program with the largest benefits would normally be favored. 
+c. Elements of Benefit-Cost or Cost-Effectiveness Analysis. 
+(1) Policy Rationale. The rationale for the Government program being 
+examined should be clearly stated in the analysis. Programs may be 
+justified on efficiency grounds where they address market failure, 
+such as public goods and externalities. They may also be justified 
+where they improve the efficiency of the Government's internal 
+operations, such as cost-saving investments. 
+(2) Explicit Assumptions. Analyses should be explicit about the 
+underlying assumptions used to arrive at estimates of future 
+benefits and costs. In the case of public health programs, for 
+example, it may be necessary to make assumptions about the number of 
+future beneficiaries, the intensity of service, and the rate of 
+increase in medical prices. The analysis should include a statement 
+of the assumptions, the rationale behind them, and a review of their 
+strengths and weaknesses. Key data and results, such as 
+year-by-year estimates of benefits and costs, should be reported to 
+promote independent analysis and review. 
+(3) Evaluation of Alternatives. Analyses should also consider 
+alternative means of achieving program objectives by examining 
+different program scales, different methods of provision, and 
+different degrees of government involvement. For example, in 
+evaluating a decision to acquire a capital asset, the analysis 
+should generally consider: (i) doing nothing; (ii) direct purchase; 
+(iii) upgrading, renovating, sharing, or converting existing 
+government property; or (iv) leasing or contracting for services. 
+
+
+(4) Verification. Retrospective studies to determine whether 
+anticipated benefits and costs have been realized are potentially 
+valuable. Such studies can be used to determine necessary 
+
+
+corrections in existing programs, and to improve future estimates of 
+benefits and costs in these programs or related ones. 
+Agencies should have a plan for periodic, results-oriented 
+evaluation of program effectiveness. They should also discuss the 
+results of relevant evaluation studies when proposing 
+reauthorizations or increased program funding. 
+6. Identifying and Measuring Benefits and Costs. Analyses should include 
+comprehensive estimates of the expected benefits and costs to society based on 
+established definitions and practices for program and policy evaluation. Social 
+net benefits, and not the benefits and costs to the Federal Government, should be 
+the basis for evaluating government programs or policies that have effects on 
+private citizens or other levels of government. Social benefits and costs can 
+differ from private benefits and costs as measured in the marketplace because of 
+imperfections arising from: (i) external economies or diseconomies where actions 
+by one party impose benefits or costs on other groups that are not compensated in 
+the market place; (ii) monopoly power that distorts the relationship between 
+marginal costs and market prices; and (iii) taxes or subsidies. 
+a. Identifying Benefits and Costs. Both intangible and tangible benefits and 
+costs should be recognized. The relevant cost concept is broader than 
+private-sector production and compliance costs or government cash 
+expenditures. Costs should reflect the opportunity cost of any resources 
+used, measured by the return to those resources in their most productive 
+application elsewhere. Below are some guidelines to consider when 
+identifying benefits and costs. 
+(1) Incremental Benefits and Costs. Calculation of net present value 
+should be based on incremental benefits and costs. Sunk costs and 
+realized benefits should be ignored. Past experience is relevant 
+only in helping to estimate what the value of future benefits and 
+costs might be. Analyses should take particular care to identify 
+the extent to which a policy such as a subsidy program promotes 
+substitutes for activities of a similar nature that would occur 
+without the policy. Either displaced activities should be 
+explicitly recorded as costs or only incremental gains should be 
+recorded as benefits of the policy. 
+(2) Interactive Effects. Possible interactions between the benefits and 
+costs being analyzed and other government activities should be 
+considered. For example, policies affecting agricultural output 
+should reflect real economic values, as opposed to subsidized 
+prices. 
+(3) International Effects. Analyses should focus on benefits and costs 
+accruing to the citizens of the United States in determining net 
+present value. Where programs or projects have effects outside the 
+United States, these effects should be reported separately. 
+
+ 
+
+(4) Transfers. There are no economic gains from a pure transfer payment 
+because the benefits to those who receive such a transfer are 
+matched by the costs borne by those who pay for it. Therefore, 
+transfers should be excluded from the calculation of net present 
+
+
+value. Transfers that arise as a result of the program or project 
+being analyzed should be identified as such, however, and their 
+distributional effects discussed. It should also be recognized that 
+a transfer program may have benefits that are less than the 
+program's real economic costs due to inefficiencies that can arise 
+in the program's delivery of benefits and financing. 
+b. Measuring Benefits and Costs. The principle of willingness-to-pay 
+provides an aggregate measure of what individuals are willing to forego to 
+obtain a given benefit. Market prices provide an invaluable starting 
+point for measuring willingness-to-pay, but prices sometimes do not 
+adequately reflect the true value of a good to society. Externalities, 
+monopoly power, and taxes or subsidies can distort market prices. 
+Taxes, for example, usually create an excess burden that represents a net 
+loss to society. (The appropriate method for recognizing this excess 
+burden in public investment analyses is discussed in Section 11.) In 
+other cases, market prices do not exist for a relevant benefit or cost. 
+When market prices are distorted or unavailable, other methods of valuing 
+benefits may have to be employed. Measures derived from actual market 
+behavior are preferred when they are available. 
+(1) Inframarginal Benefits and Costs. Consumers would generally be 
+willing to pay more than the market price rather than go entirely 
+without a good they consume. The economist's concept of consumer 
+surplus measures the extra value consumers derive from their 
+consumption compared with the value measured at market prices. When 
+it can be determined, consumer surplus provides the best measure of 
+the total benefit to society from a government program or project. 
+Consumer surplus can sometimes be calculated by using econometric 
+methods to estimate consumer demand. 
+(2) Indirect Measures of Benefits and Costs. Willingness-to-pay can 
+sometimes be estimated indirectly through changes in land values, 
+variations in wage rates, or other methods. Such methods are most 
+reliable when they are based on actual market transactions. 
+Measures should be consistent with basic economic principles and 
+should be replicable. 
+(3) Multiplier Effects. Generally, analyses should treat resources as 
+if they were likely to be fully employed. Employment or output 
+multipliers that purport to measure the secondary effects of 
+government expenditures on employment and output should not be 
+included in measured social benefits or costs. 
+7. Treatment of Inflation. Future inflation is highly uncertain. Analysts 
+should avoid having to make an assumption about the general rate of inflation 
+whenever possible. 
+
+ 
+
+a. Real or Nominal Values. Economic analyses are often most readily 
+accomplished using real or constant-dollar values, i.e., by measuring 
+benefits and costs in units of stable purchasing power. (Such estimates 
+may reflect expected future changes in relative prices, however, where 
+
+
+there is a reasonable basis for estimating such changes.) Where future 
+benefits and costs are given in nominal terms, i.e., in terms of the 
+future purchasing power of the dollar, the analysis should use these 
+values rather than convert them to constant dollars as, for example, in 
+the case of lease-purchase analysis. 
+Nominal and real values must not be combined in the same analysis. 
+Logical consistency requires that analysis be conducted either in constant 
+dollars or in terms of nominal values. This may require converting some 
+nominal values to real values, or vice versa. 
+b. Recommended Inflation Assumption. When a general inflation assumption is 
+needed, the rate of increase in the Gross Domestic Product deflator from 
+the Administration's economic assumptions for the period of the analysis 
+is recommended. For projects or programs that extend beyond the six-year 
+budget horizon, the inflation assumption can be extended by using the 
+inflation rate for the sixth year of the budget forecast. The 
+Administration's economic forecast is updated twice annually, at the time 
+the budget is published in January or February and at the time of the 
+Mid-Session Review of the Budget in July. Alternative inflation 
+estimates, based on credible private sector forecasts, may be used for 
+sensitivity analysis. 
+8. Discount Rate Policy. In order to compute net present value, it is 
+necessary to discount future benefits and costs. This discounting reflects the 
+time value of money. Benefits and costs are worth more if they are experienced 
+sooner. All future benefits and costs, including nonmonetized benefits and 
+costs, should be discounted. The higher the discount rate, the lower is the 
+present value of future cash flows. For typical investments, with costs 
+concentrated in early periods and benefits following in later periods, raising 
+the discount rate tends to reduce the net present value. (Technical guidance on 
+discounting and a table of discount factors are provided in Appendix B.) 
+a. Real versus Nominal Discount Rates. The proper discount rate to use 
+depends on whether the benefits and costs are measured in real or nominal 
+terms. 
+(1) A real discount rate that has been adjusted to eliminate the effect 
+of expected inflation should be used to discount constant-dollar or 
+real benefits and costs. A real discount rate can be approximated 
+by subtracting expected inflation from a nominal interest rate. 
+(2) A nominal discount rate that reflects expected inflation should be 
+used to discount nominal benefits and costs. Market interest rates 
+are nominal interest rates in this sense. 
+b. Public Investment and Regulatory Analyses. The guidance in this section 
+applies to benefit-cost analyses of public investments and regulatory 
+programs that provide benefits and costs to the general public. Guidance 
+related to cost-effectiveness analysis of internal planning decisions of 
+the Federal Government is provided in Section 8.c. 
+
+ 
+
+
+In general, public investments and regulations displace both private 
+investment and consumption. To account for this displacement and to 
+promote efficient investment and regulatory policies, the following 
+guidance should be observed. 
+(1) Base-Case Analysis. Constant-dollar benefit-cost analyses of 
+proposed investments and regulations should report net present value 
+and other outcomes determined using a real discount rate of 7 
+percent. This rate approximates the marginal pretax rate of return 
+on an average investment in the private sector in recent years. 
+Significant changes in this rate will be reflected in future updates 
+of this Circular. 
+(2) Other Discount Rates. Analyses should show the sensitivity of the 
+discounted net present value and other outcomes to variations in the 
+discount rate. The importance of these alternative calculations 
+will depend on the specific economic characteristics of the program 
+under analysis. For example, in analyzing a regulatory proposal 
+whose main cost is to reduce business investment, net present value 
+should also be calculated using a higher discount rate than 7 
+percent. 
+Analyses may include among the reported outcomes the internal rate 
+of return implied by the stream of benefits and costs. The internal 
+rate of return is the discount rate that sets the net present value 
+of the program or project to zero. While the internal rate of 
+return does not generally provide an acceptable decision criterion, 
+it does provide useful information, particularly when budgets are 
+constrained or there is uncertainty about the appropriate discount 
+rate. 
+(3) Using the shadow price of capital to value benefits and costs is the 
+analytically preferred means of capturing the effects of government 
+projects on resource allocation in the private sector. To use this 
+method accurately, the analyst must be able to compute how the 
+benefits and costs of a program or project affect the allocation of 
+private consumption and investment. OMB concurrence is required if 
+this method is used in place of the base case discount rate. 
+c. Cost-Effectiveness, Lease-Purchase, Internal Government Investment, and 
+Asset Sales Analyses. The Treasury's borrowing rates should be used as 
+discount rates in the following cases: 
+
+
+(1) Cost-Effectiveness Analysis. Analyses that involve constant-dollar 
+costs should use the real Treasury borrowing rate on marketable 
+securities of comparable maturity to the period of analysis. This 
+rate is computed using the Administration's economic assumptions for 
+the budget, which are published in January of each year. A table of 
+discount rates based on the expected interest rates for the first 
+year of the budget forecast is presented in Appendix C of this 
+Circular. Appendix C is updated annually and is available upon 
+request from OMB. Real Treasury rates are obtained by removing 
+expected inflation over the period of analysis from nominal Treasury 
+interest rates. (Analyses that involve nominal costs should use 
+
+
+nominal Treasury rates for discounting, as described in the 
+following paragraph.) 
+(2) Lease-Purchase Analysis. Analyses of nominal lease payments should 
+use the nominal Treasury borrowing rate on marketable securities of 
+comparable maturity to the period of analysis. Nominal Treasury 
+borrowing rates should be taken from the economic assumptions for 
+the budget. A table of discount rates based on these assumptions is 
+presented in Appendix C of this Circular, which is updated annually. 
+(Constant dollar lease-purchase analyses should use the real 
+Treasury borrowing rate, described in the preceding paragraph.) 
+(3) Internal Government Investments. Some Federal investments provide 
+"internal" benefits which take the form of increased Federal 
+revenues or decreased Federal costs. An example would be an 
+investment in an energy-efficient building system that reduces 
+Federal operating costs. Unlike the case of a Federally funded 
+highway (which provides "external" benefits to society as a whole), 
+it is appropriate to calculate such a project's net present value 
+using a comparable-maturity Treasury rate as a discount rate. The 
+rate used may be either nominal or real, depending on how benefits 
+and costs are measured. 
+Some Federal activities provide a mix of both Federal cost savings 
+and external social benefits. For example, Federal investments in 
+information technology can produce Federal savings in the form of 
+lower administrative costs and external social benefits in the form 
+of faster claims processing. The net present value of such 
+investments should be evaluated with the 7 percent real discount 
+rate discussed in Section 8.b. unless the analysis is able to 
+allocate the investment's costs between provision of Federal cost 
+savings and external social benefits. Where such an allocation is 
+possible, Federal cost savings and their associated investment costs 
+may be discounted at the Treasury rate, while the external social 
+benefits and their associated investment costs should be discounted 
+at the 7 percent real rate. 
+(4) Asset Sale Analysis. Analysis of possible asset sales should 
+reflect the following: 
+(a) The net present value to the Federal Government of holding an 
+asset is best measured by discounting its future earnings 
+stream using a Treasury rate. The rate used may be either 
+nominal or real, depending on how earnings are measured. 
+
+
+(b) Analyses of government asset values should explicitly deduct 
+the cost of expected defaults or delays in payment from 
+projected cash flows, along with government administrative 
+costs. Such analyses should also consider explicitly the 
+probabilities of events that would cause the asset to become 
+nonfunctional, impaired or obsolete, as well as probabilities 
+of events that would increase asset value. 
+
+(c) Analyses of possible asset sales should assess the gain in 
+social efficiency that can result when a government asset is 
+subject to market discipline and private incentives. Even 
+
+
+though a government asset may be used more efficiently in the 
+private sector, potential private-sector purchasers will 
+generally discount such an asset's earnings at a rate in 
+excess of the Treasury rate, in part, due to the cost of 
+bearing risk. When there is evidence that government assets 
+can be used more efficiently in the private sector, valuation 
+analyses for these assets should include sensitivity 
+comparisons that discount the returns from such assets with 
+the rate of interest earned by assets of similar riskiness in 
+the private sector. 
+9. Treatment of Uncertainty. Estimates of benefits and costs are typically 
+uncertain because of imprecision in both underlying data and modeling 
+assumptions. Because such uncertainty is basic to many analyses, its effects 
+should be analyzed and reported. Useful information in such a report would 
+include the key sources of uncertainty; expected value estimates of outcomes; the 
+sensitivity of results to important sources of uncertainty; and where possible, 
+the probability distributions of benefits, costs, and net benefits. 
+a. Characterizing Uncertainty. Analyses should attempt to characterize the 
+sources and nature of uncertainty. Ideally, probability distributions of 
+potential benefits, costs, and net benefits should be presented. It 
+should be recognized that many phenomena that are treated as deterministic 
+or certain are, in fact, uncertain. In analyzing uncertain data, 
+objective estimates of probabilities should be used whenever possible. 
+Market data, such as private insurance payments or interest rate 
+differentials, may be useful in identifying and estimating relevant risks. 
+Stochastic simulation methods can be useful for analyzing such phenomena 
+and developing insights into the relevant probability distributions. In 
+any case, the basis for the probability distribution assumptions should be 
+reported. Any limitations of the analysis because of uncertainty or 
+biases surrounding data or assumptions should be discussed. 
+b. Expected Values. The expected values of the distributions of benefits, 
+costs and net benefits can be obtained by weighting each outcome by its 
+probability of occurrence, and then summing across all potential outcomes. 
+If estimated benefits, costs and net benefits are characterized by point 
+estimates rather than as probability distributions, the expected value (an 
+unbiased estimate) is the appropriate estimate for use. 
+Estimates that differ from expected values (such as worst-case estimates) 
+may be provided in addition to expected values, but the rationale for such 
+estimates must be clearly presented. For any such estimate, the analysis 
+should identify the nature and magnitude of any bias. For example, 
+studies of past activities have documented tendencies for cost growth 
+beyond initial expectations; analyses should consider whether past 
+experience suggests that initial estimates of benefits or costs are 
+optimistic. 
+
+ 
+
+c. Sensitivity Analysis. Major assumptions should be varied and net present 
+value and other outcomes recomputed to determine how sensitive outcomes 
+are to changes in the assumptions. The assumptions that deserve the most 
+attention will depend on the dominant benefit and cost elements and the 
+
+
+areas of greatest uncertainty of the program being analyzed. For example, 
+in analyzing a retirement program, one would consider changes in the 
+number of beneficiaries, future wage growth, inflation, and the discount 
+rate. In general, sensitivity analysis should be considered for estimates 
+of: (i) benefits and costs; (ii) the discount rate; (iii) the general 
+inflation rate; and (iv) distributional assumptions. Models used in the 
+analysis should be well documented and, where possible, available to 
+facilitate independent review. 
+d. Other Adjustments for Uncertainty. The absolute variability of a risky 
+outcome can be much less significant than its correlation with other 
+significant determinants of social welfare, such as real national income. 
+In general, variations in the discount rate are not the appropriate 
+method of adjusting net present value for the special risks of particular 
+projects. In some cases, it may be possible to estimate 
+certainty-equivalents which involve adjusting uncertain expected values to 
+account for risk. 
+10. Incidence and Distributional Effects. The principle of maximizing net 
+present value of benefits is based on the premise that gainers could fully 
+compensate the losers and still be better off. The presence or absence of such 
+compensation should be indicated in the analysis. When benefits and costs have 
+significant distributional effects, these effects should be analyzed and 
+discussed, along with the analysis of net present value. (This will not usually 
+be the case for cost-effectiveness analysis where the scope of government 
+activity is not changing.) 
+a. Alternative Classification. Distributional effects may be analyzed by 
+grouping individuals or households according to income class (e.g., income 
+quintiles), geographical region, or demographic group (e.g., age). Other 
+classifications, such as by industry or occupation, may be appropriate in 
+some circumstances. 
+Analysis should aim at identifying the relevant gainers and losers from 
+policy decisions. Effects on the preexisting assignment of property 
+rights by the program under analysis should be reported. Where a policy 
+is intended to benefit a specified subgroup of the population, such as the 
+poor, the analysis should consider how effective the policy is in reaching 
+its targeted group. 
+b. Economic Incidence. Individuals or households are the ultimate recipients 
+of income; business enterprises are merely intermediaries. Analyses of 
+distribution should identify economic incidence, or how costs and benefits 
+are ultimately borne by households or individuals. 
+
+
+Determining economic incidence can be difficult because benefits and costs 
+are often redistributed in unintended and unexpected ways. For example, a 
+subsidy for the production of a commodity will usually raise the incomes 
+of the commodity's suppliers, but it can also benefit consumers of the 
+commodity through lower prices and reduce the incomes for suppliers of 
+competing products. A subsidy also raises the value of specialized 
+resources used in the production of the subsidized commodity. As the 
+
+
+subsidy is incorporated in asset values, its distributional effects can 
+change. 
+
+ 
+11. Special Guidance for Public Investment. This guidance applies only to 
+public investments with social benefits apart from decreased Federal costs. It 
+is not required for cost-effectiveness or lease-purchase analyses. Because taxes 
+generally distort relative prices, they impose a burden in excess of the revenues 
+they raise. Recent studies of the U.S. tax system suggest a range of values for 
+the marginal excess burden, of which a reasonable estimate is 25 cents per dollar 
+of revenue. 
+a. Analysis of Excess Burdens. The presentation of results for public 
+investments that are not justified on cost-saving grounds should include a 
+supplementary analysis with a 25 percent excess burden. Thus, in such 
+analyses, costs in the form of public expenditures should be multiplied by 
+a factor of 1.25 and net present value recomputed. 
+b. Exceptions. Where specific information clearly suggests that the excess 
+burden is lower (or higher) than 25 percent, analyses may use a different 
+figure. When a different figure is used, an explanation should be 
+provided for it. An example of such an exception is an investment funded 
+by user charges that function like market prices; in this case, the excess 
+burden would be zero. Another example would be a project that provides 
+both cost savings to the Federal Government and external social benefits. 
+If it is possible to make a quantitative determination of the portion of 
+this project's costs that give rise to Federal savings, that portion of 
+the costs may be exempted from multiplication by the factor of 1.25. 
+12. Special Guidance for Regulatory Impact Analysis. Additional guidance for 
+analysis of regulatory policies is provided in Regulatory Program of the United 
+States Government which is published annually by OMB. (See "Regulatory Impact 
+Analysis Guidance," Appendix V of Regulatory Program of the United States 
+Government for April 1, 1991 to March 31, 1992.) 
+13. Special Guidance for Lease-Purchase Analysis. The special guidance in 
+this section does not apply to the decision to acquire the use of an asset. In 
+deciding that, the agency should conduct a benefit-cost analysis, if possible. 
+Only after the decision to acquire the services of an asset has been made is 
+there a need to analyze the decision whether to lease or purchase. 
+a. Coverage. The Circular applies only when both of the following tests of 
+applicability are satisfied: 
+(1) The lease-purchase analysis concerns a capital asset, 
+(including durable goods, equipment, buildings, facilities, 
+installations, or land) which: 
+(a) Is leased to the Federal Government for a term of three or 
+more years; or, 
+
+
+
+(b) Is new, with an economic life of less than three years, and 
+leased to the Federal Government for a term of 75 percent or 
+more of the economic life of the asset; or, 
+
+ 
+(c) Is built for the express purpose of being leased to the 
+Federal Government; or, 
+(d) Is leased to the Federal Government and clearly has no 
+alternative commercial use (e.g., a special- purpose 
+government installation). 
+(2) The lease-purchase analysis concerns a capital asset or a group of 
+related assets whose total fair market value exceeds $1 million. 
+b. Required Justification for Leases. All leases of capital assets must be 
+justified as preferable to direct government purchase and ownership. This 
+can be done in one of three ways: 
+(1) By conducting a separate lease-purchase analysis. This is the only 
+acceptable method for major acquisitions. A lease represents a 
+major acquisition if: 
+(a) The acquisition represents a separate line-item in the 
+agency's budget; 
+(b) The agency or OMB determines the acquisition is a major one; 
+or 
+(c) The total purchase price of the asset or group of assets to be 
+leased would exceed $500 million. 
+(2) By conducting periodic lease-purchase analyses of recurrent 
+decisions to lease similar assets used for the same general purpose. 
+Such analyses would apply to the entire class of assets. OMB 
+approval should be sought in determining the scope of any such 
+generic analysis. 
+(3) By adopting a formal policy for smaller leases and submitting that 
+policy to the OMB for approval. Following such a policy should 
+generally result in the same lease- purchase decisions as would 
+conducting separate lease- purchase analyses. Before adopting the 
+policy, it should be demonstrated that: 
+(a) The leases in question would generally result in substantial 
+savings to the Government that could not be realized on a 
+purchase; 
+(b) The leases are so small or so short-term as to make separate 
+lease-purchase analysis impractical; and 
+(c) Leases of different types are scored consistently with the 
+instructions in Appendices B and C of OMB Circular No. A-11. 
+
+
+
+c. Analytical Requirements and Definitions. Whenever a Federal agency needs 
+to acquire the use of a capital asset, it should do so in the way that is 
+least expensive for the Government as a whole. 
+
+ 
+(1) Life-Cycle Cost. Lease-purchase analyses should compare the net 
+discounted present value of the life-cycle cost of leasing with the 
+full costs of buying or constructing an identical asset. The full 
+costs of buying include the asset's purchase price plus the net 
+discounted present value of any relevant ancillary services 
+connected with the purchase. (Guidance on the discount rate to use 
+for lease-purchase analysis is in Section 8.c.) 
+(2) Economic Life. For purposes of lease-purchase analysis, the 
+economic life of an asset is its remaining or productive lifetime. 
+It begins when the asset is acquired and ends when the asset is 
+retired from service. The economic life is frequently not the same 
+as the useful life for tax purposes. 
+(3) Purchase Price. The purchase price of the asset for purposes of 
+lease-purchase analysis is its fair market value, defined as the 
+price a willing buyer could reasonably expect to pay a willing 
+seller in a competitive market to acquire the asset. 
+(a) In the case of property that is already owned by the Federal 
+Government or that has been donated or acquired by 
+condemnation, an imputed purchase price should be estimated. 
+(Guidance on making imputations is provided in Section 
+13.c.(6).) 
+(b) If public land is used for the site of the asset, the imputed 
+market value of the land should be added to the purchase 
+price. 
+(c) The asset's estimated residual value, as of the end of the 
+period of analysis, should be subtracted from its purchase 
+price. (Guidance on estimating residual value is provided in 
+Section 13.c.(7).) 
+(4) Taxes. In analyzing the cost of a lease, the normal payment of 
+taxes on the lessor's income from the lease should not be subtracted 
+from the lease costs since the normal payment of taxes will also be 
+reflected in the purchase cost. The cost to the Treasury of special 
+tax benefits, if any, associated with the lease should be added to 
+the cost of the lease. Examples of such tax benefits might include 
+highly accelerated depreciation allowances or tax-free financing. 
+(5) Ancillary Services. If the terms of the lease include ancillary 
+services provided by the lessor, the present value of the cost of 
+obtaining these services separately should be added to the purchase 
+price. Such costs may be excluded if they are estimated to be the 
+same for both lease and purchase alternatives or too small to affect 
+the comparison. Examples of ancillary services include: 
+
+
+
+(a) All costs associated with acquiring the property and preparing 
+it for use, including construction, installation, site, 
+design, and management costs. 
+
+
+(b) Repair and improvement costs (if included in lease payments). 
+(c) Operation and maintenance costs (if included in lease 
+payments). 
+(d) Imputed property taxes (excluding foreign property taxes on 
+overseas acquisitions except where actually paid). The 
+imputed taxes approximate the costs of providing municipal 
+services such as water, sewage, and police and fire 
+protection. (See Section (6) below.) 
+(e) Imputed insurance premiums. (See Section (6) below.) 
+(6) Estimating Imputed Costs. Certain costs associated with the Federal 
+purchase of an asset may not involve a direct monetary payment. 
+Some of these imputed costs may be estimated as follows. 
+(a) Purchase Price. An imputed purchase price for an asset that 
+is already owned by the Federal Government or which has been 
+acquired by donation or condemnation should be based on the 
+fair market value of similar properties that have been traded 
+on commercial markets in the same or similar localities. The 
+same method should be followed in estimating the imputed value 
+of any Federal land used as a site for the asset. 
+(b) Property Taxes. Imputed property taxes may be estimated in 
+two ways. 
+(i) Determine the property tax rate and assessed (taxable) 
+value for comparable property in the intended locality. 
+If there is no basis on which to estimate future 
+changes in tax rates or assessed values, the first-year 
+tax rate and assessed value (inflation adjusted for each 
+subsequent year) can be applied to all years. Multiply 
+the assessed value by the tax rate to determine the 
+annual imputation for property taxes. 
+(ii) As an alternative to step (i) above, obtain an estimate 
+of the current local effective property tax rate from 
+the Building Owners and Managers Association's Regional 
+Exchange Reports. Multiply the fair market value of the 
+government-owned property (inflation adjusted for each 
+year) by the effective tax rate. 
+(c) Insurance Premiums. Determine local estimates of standard 
+commercial coverage for similar property from the Building 
+Owners and Managers Association's Regional Exchange Reports. 
+
+
+(7) Residual Value. A property's residual value is an estimate of the 
+price that the property could be sold for at the end of the period 
+
+
+of the lease-purchase analysis, measured in discounted present value 
+terms. 
+
+
+(a) The recommended way to estimate residual value is to determine 
+what similar, comparably aged property is currently selling 
+for in commercial markets. 
+(b) Alternatively, book estimates of the resale value of used 
+property may be available from industry or government sources. 
+(c) Assessed values of similar, comparably aged properties 
+determined for property tax purposes may also be used. 
+(8) Renewal Options. In determining the term of a lease, all renewal 
+options shall be added to the initial lease period. 
+14. Related Guidance. 
+a. OMB Circular No. A-11, "Preparation and Submission of Annual Budget 
+Estimates." 
+b. OMB Circular No. A-19, "Legislative Coordination and Clearance." 
+c. OMB Circular No. A-70, "Federal Credit Policy." 
+d. OMB Circular No. A-76, "Performance of Commercial Activities." 
+e. OMB Circular No. A-109, "Policies to Be Followed in the Acquisition of 
+Major Systems." 
+f. OMB Circular No. A-130, "Management of Federal Information Resources." 
+9. "Joint OMB and Treasury Guidelines to the Department of Defense Covering 
+Lease or Charter Arrangements for Aircraft and Naval Vessels." 
+h. Executive Order 12291, "Federal Regulation." 
+i. "Regulatory Impact Analysis Guidance," in Regulatory Program of the United 
+States Government. 
+j. "Federal Energy Management and Planning Programs; Life Cycle Cost 
+Methodology and Procedures," Federal Register, Vol. 55, No. 17, January 
+25, 1990, and Vol. 55, No. 224, November 20, 1990. 
+k. Presidential Memorandum of April 29, 1992, "Benefits and Costs of 
+Legislative Proposals." 
+15. Implementation. Economic analyses submitted to OMB will be 
+reviewed for conformity with Items 5 to 13 in this Circular, through the Circular 
+No. A-11 budget justification and submission process, and Circular No. A-19, 
+legislative review process. 
+16. Effective Date. This Circular is effective immediately. 
+
+
+17. Interpretation. Questions concerning interpretation of this Circular 
+should be addressed to the Office of Economic Policy, Office of Management and 
+Budget (202-395-5873) or, in the case of regulatory issues and analysis, to the 
+Office of Information and Regulatory Affairs (202-395-4852). 
+
+
+ APPENDIX A 
+DEFINITION OF TERMS 
+Benefit-Cost Analysis -- A systematic quantitative method of assessing the 
+desirability of government projects or policies when it is important to take a 
+long view of future effects and a broad view of possible side-effects. 
+Capital Asset -- Tangible property, including durable goods, equipment, 
+buildings, installations, and land. 
+Certainty-Equivalent -- A certain (i.e., nonrandom) outcome that an individual 
+values equally to an uncertain outcome. For a riskaverse individual, the 
+certainty-equivalent for an uncertain set of benefits may be less than the 
+mathematical expectation of the outcome; for example, an individual may value a 
+50-50 chance of winning $100 or $0 as only $45. Analogously, a risk-averse 
+individual may have a certainty-equivalent for an uncertain set of costs that is 
+larger in magnitude than the mathematical expectation of costs. 
+Cost-Effectiveness -- A systematic quantitative method for comparing the costs of 
+alternative means of achieving the same stream of benefits or a given objective. 
+Consumer Surplus -- The maximum sum of money a consumer would be willing to pay 
+to consume a given amount of a good, less the amount actually paid. It is 
+represented graphically by the area between the demand curve and the price line 
+in a diagram representing the consumer's demand for the good as a function of its 
+price. 
+Discount Rate -- The interest rate used in calculating the present value of 
+expected yearly benefits and costs. 
+Discount Factor -- The factor that translates expected benefits or costs in any 
+given future year into present value terms. The discount factor is equal to 1/(1 
++ i)t where i is the interest rate and t is the number of years from the date of 
+initiation for the program or policy until the given future year. 
+Excess Burden -- Unless a tax is imposed in the form of a lump sum unrelated to 
+economic activity, such as a head tax, it will affect economic decisions on the 
+margin. Departures from economic efficiency resulting from the distorting effect 
+of taxes are called excess burdens because they disadvantage society without 
+adding to Treasury receipts. This concept is also sometimes referred to as 
+deadweight loss. 
+External Economy or Diseconomy -- A direct effect, either positive or negative, 
+on someone's profit or welfare arising as a byproduct of some other person's or 
+firm's activity. Also referred to as neighborhood or spillover effects, or 
+externalities for short. 
+Incidence -- The ultimate distributional effect of a tax, expenditure, or 
+regulatory program. 
+
+ 
+
+Inflation -- The proportionate rate of change in the general price level, as 
+opposed to the proportionate increase in a specific price. Inflation is usually 
+
+
+measured by a broad-based price index, such as the implicit deflator for Gross 
+Domestic Product or the Consumer Price Index. 
+Internal Rate of Return -- The discount rate that sets the net present value of 
+the stream of net benefits equal to zero. The internal rate of return may have 
+multiple values when the stream of net benefits alternates from negative to 
+positive more than once. 
+Life Cycle Cost -- The overall estimated cost for a particular program 
+alternative over the time period corresponding to the life of the program, 
+including direct and indirect initial costs plus any periodic or continuing costs 
+of operation and maintenance. 
+Multiplier -- The ratio between the direct effect on output or employment and the 
+full effect, including the effects of second order rounds or spending. 
+Multiplier effects greater than 1.0 require the existence of involuntary 
+unemployment. 
+Net Present Value -- The difference between the discounted present value of 
+benefits and the discounted present value of costs. 
+Nominal Values -- Economic units measured in terms of purchasing power of the 
+date in question. A nominal value reflects the effects of general price 
+inflation. 
+Nominal Interest Rate -- An interest rate that is not adjusted to remove the 
+effects of actual or expected inflation. Market interest rates are generally 
+nominal interest rates. 
+Opportunity Cost -- The maximum worth of a good or input among possible 
+alternative uses. 
+Real or Constant Dollar Values -- Economic units measured in terms of constant 
+purchasing power. A real value is not affected by general price inflation. Real 
+values can be estimated by deflating nominal values with a general price index, 
+such as the implicit deflator for Gross Domestic Product or the Consumer Price 
+Index. 
+Real Interest Rate -- An interest rate that has been adjusted to remove the 
+effect of expected or actual inflation. Real interest rates can be approximated 
+by subtracting the expected or actual inflation rate from a nominal interest 
+rate. (A precise estimate can be obtained by dividing one plus the nominal 
+interest rate by one plus the expected or actual inflation rate, and subtracting 
+one from the resulting quotient.) 
+Relative Price -- A price ratio between two goods as, for example, the ratio of 
+the price of energy to the price of equipment. 
+
+
+Shadow Price -- An estimate of what the price of a good or input would be in the 
+absence of market distortions, such as externalities or taxes. For example, the 
+shadow price of capital is the present value of the social returns to capital 
+(before corporate income taxes) measured in units of consumption. 
+
+
+Sunk Cost -- A cost incurred in the past that will not be affected by any present 
+or future decision. Sunk costs should be ignored in determining whether a new 
+investment is worthwhile. 
+Transfer Payment -- A payment of money or goods. A pure transfer is unrelated to 
+the provision of any goods or services in exchange. Such payments alter the 
+distribution of income, but do not directly affect the allocation of resources on 
+the margin. 
+Treasury Rates -- Rates of interest on marketable Treasury debt. Such debt is 
+issued in maturities ranging from 91 days to 30 years. 
+
+
+Willingness to Pay -- The maximum amount an individual would be willing to give 
+up in order to secure a change in the provision of a good or service. 
+
+
+ APPENDIX B 
+ADDITIONAL GUIDANCE FOR DISCOUNTING 
+1. Sample Format for Discounting Deferred Costs and Benefits 
+Assume a 10-year program which will commit the Government to the stream of real 
+(or constant-dollar) expenditures appearing in column (2) of the table below and 
+which will result in a series of real benefits appearing in column (3). The 
+discount factor for a 7 percent discount rate is shown in column (4). The 
+present value cost for each of the 10 years is calculated by multiplying column 
+(2) by column (4); the present value benefit for each of the 10 years is 
+calculated by multiplying column (3) by column (4). The present values of costs 
+and benefits are presented in columns (5) and (6) respectively. 
+
+ 
+Year since 
+initiation, 
+renewal or 
+expansion 
+(1) 
+
+ 
+Expected 
+yearly 
+cost 
+(2) 
+
+ 
+Expected 
+yearly 
+benefit 
+(3) 
+
+ 
+Discount 
+factors 
+for 7% 
+(4) 
+
+ 
+Present 
+value of 
+costs 
+Col. 2 x 
+Col. 4 
+(5) 
+
+ 
+Present 
+value of 
+benefits 
+Col. 3 x 
+Col. 4 
+(6) 
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+1 
+
+ 
+$10.00 
+
+ 
+$ 0.00 
+
+ 
+0.9346 
+
+ 
+$ 9.35 
+
+ 
+$ 0.00 
+
+ 
+2 
+
+ 
+20.00 
+
+ 
+0.00 
+
+ 
+0.8734 
+
+ 
+17.47 
+
+ 
+0.00 
+
+ 
+3 
+
+ 
+30.00 
+
+ 
+5.00 
+
+ 
+0.8163 
+
+ 
+24.49 
+
+ 
+4.08 
+
+ 
+4 
+
+ 
+30.00 
+
+ 
+10.00 
+
+ 
+0.7629 
+
+ 
+22.89 
+
+ 
+7.63 
+
+ 
+5 
+
+ 
+20.00 
+
+ 
+30.00 
+
+ 
+0.7130 
+
+ 
+14.26 
+
+ 
+21.39 
+
+ 
+6 
+
+ 
+10.00 
+
+ 
+40.00 
+
+ 
+0.6663 
+
+ 
+6.66 
+
+ 
+26.65 
+
+ 
+7 
+
+ 
+5.00 
+
+ 
+40.00 
+
+ 
+0.6227 
+
+ 
+3.11 
+
+ 
+24.91 
+
+ 
+8 
+
+ 
+5.00 
+
+ 
+40.00 
+
+ 
+0.5820 
+
+ 
+2.91 
+
+ 
+23.28 
+
+ 
+9 
+
+ 
+5.00 
+
+ 
+40.00 
+
+ 
+0.5439 
+
+ 
+2.72 
+
+ 
+21.76 
+
+ 
+10 
+
+ 
+5.00 
+
+ 
+25.00 
+
+ 
+0.5083 
+
+ 
+2.54 
+
+ 
+12.71 
+
+ 
+Total 
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+$106.40 
+
+ 
+$142.41 
+
+
+
+ 
+NOTE: The discount factor is calculated as 1/(1 + i)t where i is the interest 
+rate (.07) and t is the year. 
+The sum of column (5) is the total present value of costs and the sum of column 
+(6) is the total present value of benefits. Net present value is $36.01, the 
+difference between the sum of discounted benefits and the sum of discounted 
+costs. 
+2. End-of-Year and Mid-Year Discount Factors 
+
+ 
+
+The discount factors presented in the table above are calculated on the implicit 
+assumption that costs and benefits occur as lump sums at year-end. When costs 
+and benefits occur in a steady stream, applying mid-year discount factors is more 
+
+
+appropriate. For instance, the first cost in the table may be estimated to occur 
+after six months, rather than at the end of one year to approximate better a 
+steady stream of costs and benefits occurring over the first year. Similarly, it 
+may be assumed that all other costs and benefits are advanced six months to 
+approximate better a continuing steady flow. 
+The present values of costs and benefits computed from the table above can be 
+converted to a mid-year discounting basis by multiplying them by 1.0344 (the 
+square root of 1.07). Thus, if the above example were converted to a mid-year 
+basis, the present value of costs would be $110.06, the present value of benefits 
+would be $147.31, and the net present value would be $37.25. 
+3. Illustrative Discount Factors for Discount Rate 
+of 7 percent 
+Year since Beginning- 
+Initiation, Year-end Mid-year of-year 
+Renewal or Discount Discount Discount 
+Expansion Factors Factors Factors 
+1 0.9346 0.9667 1.0000 
+2 0.8734 0.9035 0.9346 
+3 0.8163 0.8444 0.8734 
+4 0.7629 0.7891 0.8163 
+5 0.7130 0.7375 0.7629 
+6 0.6663 0.6893 0.7130 
+7 0.6227 0.6442 0.6663 
+8 0.5820 0.6020 0.6227 
+9 0.5439 0.5626 0.5820 
+10 0.5083 0.5258 0.5439 
+11 0.4751 0.4914 0.5083 
+12 0.4440 0.4593 0.4751 
+13 0.4150 0.4292 0.4440 
+14 0.3878 0.4012 0.4150 
+15 0.3624 0.3749 0.3878 
+16 0.3387 0.3504 0.3624 
+17 0.3166 0.3275 0.3387 
+18 0.2959 0.3060 0.3166 
+19 0.2765 0.2860 0.2959 
+20 0.2584 0.2673 0.2765 
+21 0.2415 0.2498 0.2584 
+22 0.2257 0.2335 0.2415 
+23 0.2109 0.2182 0.2257 
+24 0.1971 0.2039 0.2109 
+25 0.1842 0.1906 0.1971 
+26 0.1722 0.1781 0.1842 
+27 0.1609 0.1665 0.1722 
+28 0.1504 0.1556 0.1609 
+29 0.1406 0.1454 0.1504 
+
+ 30 0.1314 0.1359 0.1406 
+
+

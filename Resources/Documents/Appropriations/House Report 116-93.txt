@@ -1,0 +1,273 @@
+[House Report 116-93]
+[From the U.S. Government Publishing Office]
+
+
+116th Congress   }                                              {  Report
+                          HOUSE OF REPRESENTATIVES
+ 1st Session     }                                              {  116-93
+
+======================================================================
+
+
+
+ 
+  STRENGTHENING LOCAL TRANSPORTATION SECURITY CAPABILITIES ACT OF 2019
+
+                                _______
+                                
+
+  May 30, 2019.--Committed to the Committee of the Whole House on the 
+              State of the Union and ordered to be printed
+
+                                _______
+                                
+
+ Mr. Thompson of Mississippi, from the Committee on Homeland Security, 
+                        submitted the following
+
+                              R E P O R T
+
+                        [To accompany H.R. 2539]
+
+    The Committee on Homeland Security, to whom was referred 
+the bill (H.R. 2539) to require the Secretary of Homeland 
+Security to prioritize the assignment of certain officers and 
+intelligence analysts from the Transportation Security 
+Administration and the Office of Intelligence and Analysis of 
+the Department of Homeland Security to locations with 
+participating State, local, and regional fusion centers in 
+jurisdictions with a high-risk surface transportation asset in 
+order to enhance the security of such assets, including by 
+improving timely sharing of classified information regarding 
+terrorist and other threats, and for other purposes, having 
+considered the same, report favorably thereon without amendment 
+and recommend that the bill do pass.
+
+                                CONTENTS
+
+                                                                   Page
+Purpose and Summary..............................................     2
+ Background and Need for Legislation.............................     2
+ Hearings........................................................     2
+ Committee Consideration.........................................     3
+ Committee Votes.................................................     3
+ Committee Oversight Findings....................................     3
+ C.B.O. Estimate, New Budget Authority, Entitlement Authority, 
+  and Tax Expenditures...........................................     4
+ Federal Mandates Statement......................................     4
+ Statement of General Performance Goals and Objectives...........     4
+ Duplicative Federal Programs....................................     4
+ Congressional Earmarks, Limited Tax Benefits, and Limited Tariff 
+  Benefits.......................................................     4
+ Federal Mandates Statement......................................     4
+ Advisory Committee Statement....................................
+ Applicability to Legislative Branch.............................
+ Section-by-Section Analysis of the Legislation..................     4
+
+                          PURPOSE AND SUMMARY
+
+    The purpose of H.R. 2539, the Strengthening Local 
+Transportation Security Capabilities Act of 2019, is to improve 
+threat information sharing and law enforcement training for 
+surface transportation security. This bill requires the 
+Secretary of the Department of Homeland Security (DHS) to 
+prioritize the assignment of officers and intelligence analysts 
+from the Transportation Security Administration (TSA) and the 
+DHS Office of Intelligence and Analysis (I&A) to fusion centers 
+in jurisdictions with high-risk surface transportation assets, 
+in order to participate in the generation and dissemination of 
+intelligence products, and to make security clearances 
+available to appropriate stakeholders. This bill also enables 
+the Secretary to develop a training program through the Federal 
+Law Enforcement Training Centers (FLETC) to enhance the 
+protection, preparedness, and response capabilities of law 
+enforcement agencies for terrorism incidents at surface 
+transportation assets.
+
+                  BACKGROUND AND NEED FOR LEGISLATION
+
+    In the surface transportation sector, State and local law 
+enforcement, as well as owners and operators of transportation 
+assets, play a major role in securing the traveling public. A 
+common complaint from stakeholders is that TSA and other 
+Federal government partners do not provide sufficient 
+information for them to adequately prepare for threats. Much of 
+the needed information is classified, and many stakeholders 
+lack the necessary security clearances to receive such 
+information. Introduced by Nanette Barragan (D-CA), H.R. 2539 
+seeks to address these issues by increasing information sharing 
+and making security clearances available to appropriate 
+stakeholders.
+    Additionally, this bill seeks to assist surface 
+transportation asset owners and operators to secure their 
+systems by developing a training program for law enforcement 
+with a focus on surface transportation threats. It is 
+imperative that TSA collaborate with both public and private 
+stakeholders in order to sufficiently overcome the unique 
+challenges to securing surface transportation. This bill will 
+ensure that TSA improves its relationships with transportation 
+facility stakeholders, as well as state and local law 
+enforcement.
+
+                                HEARINGS
+
+    The Committee did not hold a legislative hearing on H.R. 
+2539 in the 116th Congress. However, this legislation was 
+informed by a joint Subcommittee on Transportation and Maritime 
+Security and Subcommittee on Cybersecurity, Infrastructure 
+Protection, and Innovation hearing on February 22, 2019, 
+entitled, ``Securing U.S. Surface Transportation from Cyber 
+Attacks.'' The Subcommittees received testimony from Ms. Sonya 
+Proctor, Director of Surface Division, Office of Security 
+Policy and Industry Engagement, TSA; Mr. Bob Kolasky, Director 
+of National Risk Management Center, Cybersecurity and 
+Infrastructure Security Agency; Mr. James Lewis, Senior Vice 
+President and Director, Technology Policy Program, Center for 
+Strategic & International Studies; Ms. Rebecca Gagliostro, 
+Director of Security, Reliability and Resilience, Interstate 
+Natural Gas Association of America; Mr. Erik Robert Olson, Vice 
+President, Rail Security Alliance; and Mr. John Hultquist, 
+Director of Intelligence Analysis, FireEye.
+    This legislation was also informed by a joint Subcommittee 
+on Transportation and Protective Security and Subcommittee on 
+Emergency Preparedness, Response, and Communications hearing on 
+January 30, 2018 entitled ``Securing our Surface Transportation 
+Systems: Examining the Department of Homeland Security's Role 
+in Surface Transportation Technologies.'' The Subcommittee 
+received testimony from Ms. Sonya Proctor, Director of Surface 
+Division, Office of Security Policy and Industry Engagement, 
+Transportation Security Administration; Mr. Robert Pryor, 
+Director of Intermodal Division, Office of Requirements and 
+Capabilities Analysis, Transportation Security Administration; 
+Mr. Donald E. Roberts, Program Manager of Explosive Threat 
+Detection, Explosives Division, Homeland Security Advanced 
+Research Projects Agency, DHS Science and Technology 
+Directorate; and Mr. Brian Michael Jenkins, Director, National 
+Transportation Security Center of Excellence, Mineta 
+Transportation Institute.
+    Finally, this legislation was also informed by a 
+Subcommittee on Transportation and Protective Security hearing 
+on November 28, 2017 entitled ``Securing Public Areas of 
+Transportation Systems: Stakeholder Perspectives.'' The 
+Subcommittee received testimony from Mr. Charles Cunningham, 
+Director of Homeland Security and Emergency Management, 
+Delaware River Port Authority (DRPA) Public Safety/PATCO; Mr. 
+Thomas J. Nestel, III, Chief of Transit Police, Southeastern 
+Pennsylvania Transportation Authority (SEPTA); Mr. Douglas 
+Lemanowicz, Lieutenant of Special Operations Section, New 
+Jersey State Police; and Mr. Christopher Trucillo, Chief of 
+Transit Police, New Jersey Transit.
+
+                        COMMITTEE CONSIDERATION
+
+    The Committee met on May 15, 2019, with a quorum being 
+present, to consider H.R. 2539 and ordered the measure to be 
+reported to the House with a favorable recommendation, without 
+amendment, by unanimous consent.
+
+                            COMMITTEE VOTES
+
+    Clause 3(b) of rule XIII of the Rules of the House of 
+Representatives requires the Committee to list the recorded 
+votes on the motion to report legislation and amendments 
+thereto.
+    No recorded votes were requested during consideration of 
+H.R. 2539.
+
+                      COMMITTEE OVERSIGHT FINDINGS
+
+    In compliance with clause 3(c)(1) of rule XIII of the Rules 
+of the House of Representatives, the Committee advises that the 
+findings and recommendations of the Committee, based on 
+oversight activities under clause 2(b)(1) of rule X of the 
+Rules of the House of Representatives, are incorporated in the 
+descriptive portions of this report.
+
+CONGRESSIONAL BUDGET OFFICE ESTIMATE NEW BUDGET AUTHORITY, ENTITLEMENT 
+                    AUTHORITY, AND TAX EXPENDITURES
+
+    With respect to the requirements of clause 3(c)(2) of rule 
+XIII of the Rules of the House of Representatives and section 
+308(a) of the Congressional Budget Act of 1974 and with respect 
+to requirements of clause (3)(c)(3) of rule XIII of the Rules 
+of the House of Representatives and section 402 of the 
+Congressional Budget Act of 1974, the Committee has requested 
+but not received a cost estimate for this bill from the 
+Director of Congressional Budget Office.
+    The Committee has requested but not received from the 
+Director of the Congressional Budget Office a statement as to 
+whether this bill contains any new budget authority, spending 
+authority, credit authority, or an increase or decrease in 
+revenues or tax expenditures.
+
+                       FEDERAL MANDATES STATEMENT
+
+    An estimate of Federal mandates prepared by the Director of 
+the Congressional Budget Office pursuant to section 423 of the 
+Unfunded Mandates Reform Act was not made available to the 
+Committee in time for the filing of this report. The Chairman 
+of the Committee shall cause such estimate to be printed in the 
+Congressional Record upon its receipt by the Committee.
+
+                      DUPLICATIVE FEDERAL PROGRAMS
+
+    Pursuant to clause 3(c) of rule XIII, the Committee finds 
+that H.R. 2539 does not contain any provision that establishes 
+or reauthorizes a program known to be duplicative of another 
+Federal program.
+
+                    PERFORMANCE GOALS AND OBJECTIVES
+
+    The Committee states that pursuant to clause 3(c)(4) of 
+rule XIII of the Rules of the House of Representatives, H.R. 
+2539 seeks to improve threat information sharing and law 
+enforcement training for transportation security.
+
+                          ADVISORY ON EARMARKS
+
+    In compliance with rule XXI of the Rules of the House of 
+Representatives, this bill, as reported, contains no 
+congressional earmarks, limited tax benefits, or limited tariff 
+benefits as defined in clause 9(d), 9(e), or 9(f) of the rule 
+XXI.
+
+             SECTION-BY-SECTION ANALYSIS OF THE LEGISLATION
+
+Section 1. Short title
+
+    This section provides that this bill may be cited as the 
+``Strengthening Local Transportation Security Capabilities Act 
+of 2019''.
+
+Sec. 2. Definitions
+
+    This section defines the terms used in this act including: 
+``public and private sector stakeholders'' and ``surface 
+transportation asset''.
+
+Sec. 3. Threat information sharing
+
+    This section requires the DHS Secretary to prioritize the 
+locations of officers and intelligence analysts to 
+jurisdictions that have a high-risk surface transportation 
+asset in order to enhance the security of such assets and 
+improve timely information sharing regarding terrorist threats. 
+These locations are jurisdictions with participating State, 
+local, and regional fusion centers.
+    Additionally, this section requires these officers and 
+analysts to participate in generating and disseminating 
+transportation security intelligence products that have an 
+emphasis on threats to surface transportation.
+    Further, this section permits the Secretary to allow access 
+to the application process for security clearances for 
+individuals that would foster greater information sharing 
+regarding threats to surface transportation.
+
+Sec. 4. Local law enforcement security training
+
+    This section permits the Secretary to develop a training 
+program through the Federal Law Enforcement Training Centers to 
+enhance the capabilities of law enforcement agencies with 
+respect to terrorism and other events at surface transportation 
+sites. Additionally, this section outlines the requirements of 
+the training program, should the Secretary develop it.

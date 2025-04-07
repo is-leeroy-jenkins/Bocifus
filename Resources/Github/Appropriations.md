@@ -1,15 +1,16 @@
 ![](https://github.com/is-leeroy-jenkins/Bubba/blob/master/Resources/Assets/GitHubImages/Appropriation.png)
-## Bocifus' AI layer provides access to the OpenAI VectorStores and Files
 
 
-## Bodcifus' AI layer provides access to the OpenAI VectorStores for fine-tuning using the OpenAI API
 
-### ![](https://github.com/is-leeroy-jenkins/Bubba/blob/master/Resources/Assets/GitHubImages/Appropriation.png)Federal Appropriations
+## Bubba's AI layer provides access to the OpenAI VectorStores for fine-tuning using the OpenAI API
+
+### Federal Appropriations
 
 
 |               Public Law                     |           Explanatory Statement       |	  	Appropriation Title			                                                  |   
 | -------------------------------------------- | --------------------------------------|----------------------------------------------------------------------------------------------------------|
-		P.L. 104-134			   H. Rpt. 104-537				 Omnibus Consolidated Rescissions and Appropriations Act
+		P.L. 103-333	                   H. Rpt. 103-533 	                         Omnibus Appropriations Act, 1995
+                P.L. 104-134			   H. Rpt. 104-537				 Omnibus Consolidated Rescissions and Appropriations Act
 		P.L. 104-208			   H. Rpt. 104-863 			         Omnibus Consolidated Appropriations Act, 1997
 		P.L. 105-277			   H. Rpt. 105-825				 Omnibus Consolidated and Emergency Supplemental Appropriations Act
 		P.L. 105-277 			   H. Rpt. 106-110 			         Omnibus Consolidated and Emergency Supplemental Appropriations Act

@@ -1,0 +1,327 @@
+ECONOMY ACT AGREEMENTS 
+FOR 
+PURCHASING GOODS OR SERVICES 
+
+1. Description and Requirements. 
+The Economy Act of 1932, as amended, 31 U.S.C. § 1535, permits Federal Government agencies 
+to purchase goods or services from other Federal Government agencies or other major 
+organizational units within the same agency. An Economy Act purchase is permitted only if: (1) 
+amounts for the purchase are actually available, (2) the purchase is in the best interest of the 
+Government, (3) the ordered goods or services cannot be provided by contract from a 
+commercial enterprise, i.e., the private sector, as conveniently or cheaply as could be by the 
+Government, and (4) the agency or unit to fill the order is able to provide or get by contract the 
+ordered goods or services. 
+
+The Federal Acquisition Regulations (FAR), 48 CFR 17.5 provides further requirements for 
+Economy Act agreements. The FAR provides that an order cannot be placed under the Economy 
+Act if a more specific statutory authority exists. Purchases pursuant to the Economy Act are not 
+exempt from the requirements of 48 CFR 7.3, “Contractor Versus Government Performance.” 
+Thus, OMB Circular A-76 applies to Economy Act agreements. 
+
+Economy Act agreement must achieve full cost recovery, and there is no law permits a waiver of 
+this full cost recovery requirement. Full cost recovery includes direct and indirect costs. 
+Further, the Economy Act does not allow a Federal agency or unit to receive a profit when 
+providing goods or services. 
+
+The FAR states that Economy Act orders must include (1) a description of the supplies or 
+services required; (2) delivery requirements; (3) a funds citation; (4) a payment provision ; and 
+
+(5) acquisition authority as may be appropriate. 
+Further, each Economy Act order shall be supported by a Determination and Finding (D&F). 
+The D&F shall state that: (1) Use of an interagency acquisition is in the best interest of the 
+Government; and (2) the supplies or services cannot be obtained as conveniently or 
+economically by contracting directly with a private source. If the Economy Act order requires 
+contracting action by the servicing agency, the D&F shall also include a statement that at least 
+one of the following circumstances is applicable: (1) The acquisition will appropriately be made 
+under an existing contract of the servicing agency, entered into before placement of the order, to 
+meet the requirements of the servicing agency for the same or similar supplies or services; (2) 
+the servicing agency has capabilities or expertise to enter into a contract for such supplies or 
+services which is not available within the requesting agency; or (3) The servicing agency is 
+specifically authorized by law or regulation to purchase such supplies or services on behalf of 
+other agencies. 
+
+The D&F must be approved by a contracting officer of the requesting agency with authority to 
+contract for the supplies or services to be ordered, or by another official designated by the 
+agency head, except that, if the servicing agency is not covered by the FAR, approval of the 
+D&F may not be delegated below the senior procurement executive of the requesting agency 
+
+
+OMB Rules for Intragovernmental Transactions; Economy Act Agreements 
+
+In November, 2006, OMB issued rules on what needs to be in agreements involving the transfer 
+of funds between agencies. These rules require that certain financial info be included, as well as 
+special provisions addressing termination costs and dispute resolution. 
+
+All Economy Act agreements must now include the following financial data for both agencies in 
+an intragovernmental transaction: 
+
+Treasury Account Symbol (TAS), also referred to as the appropriation code 
+
+Business Partner Network (BPN) No. (DUNS# should be used. The DUNS # is necessary in 
+order to register the BPN.) 
+
+Business Event Type Code - (BETC) - Generally the codes used will be DISB (for gross 
+disbursement) or COLL (for offsetting collection) depending on whether you are the requesting 
+or servicing agency. This link contains information on the BETC: 
+http://www.fms.treas.gov/gwa/factsheet_betc.html 
+
+In addition, OMB is requiring new cancellation and dispute resolution provisions, which must be 
+incorporated into the agreement; see sections 8 and 9. 
+
+
+2. Model Economy Act Agreement. 
+MEMORANDUM OF UNDERSTANDING 
+
+PURSUANT TO 
+THE ECONOMY ACT 
+THROUGH WHICH 
+
+[name of your operating unit] 
+
+U.S. DEPARTMENT OF COMMERCE 
+IS PURCHASING 
+
+[state what you are purchasing] 
+
+FROM 
+
+[name of other agency] 
+
+Agreement No.___ 
+
+[Note: This format is for use only to order goods or services from another Federal agency.] 
+
+
+2 
+
+1. PARTIES AND PURPOSE 
+This Memorandum of Understanding (MOU) establishes an agreement between the [name of 
+DOC office], U.S. Department of Commerce (DOC) and [name of other agency] through which 
+[name of DOC office] will pay [name of other agency] for [provide a general description of the 
+good/service for which DOC is paying]. 
+
+2. BACKGROUND 
+[Provide background information which addresses why we are requesting the goods/services.] 
+
+3. AUTHORITY 
+The authorities for DOC and [name of other agency] to enter into this agreement are: 
+
+(1) the Economy Act, 31 U.S.C. § 1535, which provides that an agency may place an order with 
+a major organizational unit within the same agency or another agency for goods or services if: 
+A) amounts are available; 
+(B) the ordering agency decides the order is in the best interest of the United States 
+Government; 
+(C) the agency to fill the order is able to provide or get by contract the ordered goods or 
+services; and 
+(D) the agency decides ordered goods or services cannot be provided by contract as 
+conveniently or cheaply by a commercial enterprise (payments must be made on the basis 
+of the actual cost of goods or services provided); and 
+(2) [set forth your operating unit’s legal authority under which it is making the purchase for 
+goods/or services, i.e., the programmatic authority to which the purchase is related]. 
+4. ECONOMY ACT FINDINGS 
+As set forth in the attached “Determinations and Findings Pursuant to 48 CFR 17.503,” [name 
+of DOC office] warrants that sufficient funding amounts are available, that this agreement is in 
+the best interest of the United States Government, and that the services requested cannot be 
+provided by contract as conveniently or cheaply by a commercial enterprise. 
+
+[Pursuant to 48 CFR 17.503, if the Economy Act order requires contracting action by the 
+servicing agency, there also must be a determination that at least one of the following 
+circumstances is applicable: 
+
+(1) The acquisition will appropriately be made under an existing contract of the 
+servicing agency, entered into before placement of the order, to meet the requirements 
+
+3 
+
+of the servicing agency for the same or similar supplies or services; 
+
+(2) the servicing agency has capabilities or expertise to enter into a contract for such 
+supplies or services which is not available within the requesting agency; or 
+(3) the servicing agency is specifically authorized by law or regulation to purchase 
+such supplies or services on behalf of other agencies. 
+Accordingly, if the order requires such contract action, the agreement also must include a 
+statement such as: “[Name of DOC office] warrants [choose one of the above 3 situations 
+which applies].”] 
+
+[Name of other agency] warrants that it is able to provide or get by contract the requested 
+services. [If the agreement requires contracting action by the servicing agency, the agreement 
+must also include the following sentence: [Name of other agency] warrants that it has adequate 
+statutory authority for the contractual action and will comply fully with the competition 
+requirements of part 6 of the Federal Acquisition Regulations as well as all other legal or 
+regulatory requirements applicable to the contract.]1 
+
+5. TERMS AND CONDITIONS 
+[State the terms and conditions of the agreement, i.e., what it is specifically that you are 
+purchasing, delivery requirements, and the amount that the other party will receive as 
+payment. The goods/services ordered must further the mission of the Department.] 
+
+[Orders that would divide the costs of goods or services among agencies participating in events 
+such as conferences, etc., on a basis other than each agency paying only for what it receives 
+are not appropriate. You should discuss such an arrangement with the General Law Division 
+(202-482-5391) prior to drafting an agreement.] 
+
+6. TRANSFER OF FUNDS 
+[Explain the details of how DOC will pay for the goods/services, e.g., whether payments will be 
+monthly, quarterly, etc. or in advance if required by the servicing agency.] 
+
+The appropriation out of which [name of DOC office] will pay for these services is: 
+________________. These funds expire on [state the date on which the funds expire].2 
+
+This amount will be deobligated to the extent that the servicing agency has not incurred 
+obligations before the end of the period of availability of that appropriation. [NOTE: the 
+
+1 Note: if the servicing agency is not subject to the FAR, contact the General Law 
+Division for further advice in drafting the agreement. 
+
+2 However, if the funds are “no year” funds, state that DOC is using “no year” funds for 
+the purchase. 
+
+
+4 
+
+servicing agency may ask for advance payment for all of part of the estimated costs of 
+furnishing the supplies or services, or payment may be made after the supplies and services 
+have been furnished. Under no circumstances will the amount paid be more than the actual 
+costs of the goods or services.] 
+
+[NOTE: Include the appropriation code and all appropriate codes and numbers as described 
+above in the introductory notes.] 
+
+7. CONTACT 
+The contacts of each part to this agreement are: 
+
+[Name of DOC contact] 
+
+[title of DOC contact] 
+
+[Address of DOC contact person] 
+
+phone:[phone number of DOC contact person] 
+
+fax : [fax number of DOC contact person] 
+
+E-mail: [E-mail address of DOC contact person] 
+
+[Name of other party’s contact person] 
+
+[title of other party’s contact person] 
+
+[address of other party’s contact person] 
+
+phone:[phone number of other party’s contact person] 
+
+fax : [fax number of other party’s contact person] 
+
+E-mail: [E-mail address of other party’s contact person] 
+
+The parties agree that if there is a change regarding the information in this section, the party 
+making the change will notify the other party in writing of such change. 
+
+8. DURATION OF AGREEMENT, AMENDMENTS AND MODIFICATIONS 
+This agreement will become effective when signed by all parties. The agreement will terminate 
+on [date], but may be amended at any time by mutual consent of the parties. [NOTE: If the 
+agreement will last longer than 3 years, the following sentence should be included in the 
+agreement: “The parties will review this agreement at least once every three years to 
+determine whether it should be revised, renewed, or canceled.”] 
+
+Any party may terminate this agreement by providing ___ days written notice to the other party. 
+This agreement is subject to the availability of funds. 
+
+[Add Cancellation Provision per OMB Requirements:] 
+
+"If [buyer] cancels the order, [seller] is authorized to collect costs incurred prior to cancellation 
+of the order plus any termination costs, up to the total payment amount provided for under this 
+agreement." 
+
+
+5 
+
+9. RESOLUTION OF DISAGREEMENTS 
+Nothing herein is intended to conflict with current DOC or [name of other agency] directives. If 
+the terms of this agreement are inconsistent with existing directives of either of the agencies 
+entering into this agreement, then those portions of this agreement which are determined to be 
+inconsistent shall be invalid, but the remaining terms and conditions not affected by the 
+inconsistency shall remain in full force and effect. At the first opportunity for review of the 
+agreement, all necessary changes will be accomplished either by an amendment to this 
+agreement or by entering into a new agreement, whichever is deemed expedient to the interest of 
+both parties. 
+
+[Add Dispute Resolution Provision per OMB Requirements:] 
+
+"Disputes shall be resolved pursuant to applicable provisions of the Business Rules for 
+Intragovernmental Transactions delineated in the Treasury Financial Manual, Vol. 1, Bulletin 
+2007-03, Section VII (Resolving Intragovernmental Disputes and Major Differences)." 
+
+[signature--must be an official with
+
+ authority to sign Economy Act Agreements] 
+[typed name] 
+[typed title] 
+[typed office at DOC] 
+
+U.S. Department of Commerce 
+[typed address] 
+
+[date] 
+
+[signature of person who has authority to
+
+ commit other party to the Economy Act Agreement] 
+[typed name] 
+[typed title] 
+[typed name of other agency] 
+[typed address of other agency] 
+
+[date] 
+
+Attachment 
+
+
+6 
+
+DETERMINATIONS AND FINDINGS 
+PURSUANT TO 48 CFR 17.503 
+
+[Name of DOC office] warrants: 
+
+_____ that sufficient funding amounts are available; 
+
+_____ that this agreement is in the best interest of the United States Government; and 
+
+_____ that the services requested cannot be provided by contract as conveniently or 
+cheaply by a commercial enterprise. [NOTE: place a check in each space for 
+each finding to indicate it has been substantiated.] 
+
+It has been determined that this Economy Act order: 
+
+_____ does not require contracting action by the servicing agency; or 
+
+_____ does require contracting action by the servicing agency and that one of the 
+following circumstances exists: 
+
+_____ the acquisition will appropriately be made under an existing contract of 
+the servicing agency, entered into before placement of the order, to meet 
+the requirements of the servicing agency for the same or similar supplies 
+or services; 
+
+_____ the servicing agency has capabilities or expertise to enter into a contract 
+for such supplies or services which is not available within the requesting 
+agency; or 
+
+_____ the servicing agency is specifically authorized by law or regulation, i.e., 
+[set forth the citation for the law or regulation], to purchase such 
+supplies or services on behalf of other agencies. [NOTE: place a check 
+in each space above that applies.] 
+
+[name of DOC official who has authority 
+to sign this D&F, i.e., either a contracting 
+officer or other official designated by the 
+agency to sign the D&F]3 
+[title and office] 
+
+U.S. Department of Commerce 
+Date:____________ 
+3 If the servicing agency is not covered by the Federal Acquisition Regulations, approval 
+of the D&F may not be delegated below the senior procurement executive of the Department. 
+
+

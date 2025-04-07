@@ -1,0 +1,904 @@
+[House Report 118-83]
+[From the U.S. Government Publishing Office]
+
+
+118th Congress    }                                     {      Report
+                        HOUSE OF REPRESENTATIVES
+ 1st Session      }                                     {      118-83
+
+======================================================================
+
+
+
+ 
+              SEPARATION OF POWERS RESTORATION ACT OF 2023
+
+                                _______
+                                
+
+  June 1, 2023.--Committed to the Committee of the Whole House on the 
+              State of the Union and ordered to be printed
+
+                                _______
+                                
+
+    Mr. Jordan, from the Committee on the Judiciary, submitted the 
+                               following
+
+                              R E P O R T
+
+                             together with
+
+                             MINORITY VIEWS
+
+                        [To accompany H.R. 288]
+
+    The Committee on the Judiciary, to whom was referred the 
+bill (H.R. 288) to amend title 5, United States Code, to 
+clarify the nature of judicial review of agency interpretations 
+of statutory and regulatory provisions, having considered the 
+same, reports favorably thereon with an amendment and 
+recommends that the bill as amended do pass.
+
+                                CONTENTS
+
+                                                                   Page
+Purpose and Summary..............................................     2
+Background and Need for the Legislation..........................     2
+Hearings.........................................................     5
+Committee Consideration..........................................     5
+Committee Votes..................................................     5
+Committee Oversight Findings.....................................     9
+New Budget Authority and Tax Expenditures........................     9
+Congressional Budget Office Cost Estimate........................     9
+Committee Estimate of Budgetary Effects..........................     9
+Duplication of Federal Programs..................................     9
+Performance Goals and Objectives.................................     9
+Advisory on Earmarks.............................................    10
+Federal Mandates Statement.......................................    10
+Advisory Committee Statement.....................................    10
+Applicability to Legislative Branch..............................    10
+Section-by-Section Analysis......................................    10
+Changes in Existing Law Made by the Bill, as Reported............    10
+Minority Views...................................................    11
+
+    The amendment is as follows:
+      Strike all that follows after the enacting clause and 
+insert the following:
+
+SECTION 1. SHORT TITLE.
+
+  This Act may be cited as the ``Separation of Powers Restoration Act 
+of 2023'' or ``SOPRA''.
+
+SEC. 2. JUDICIAL REVIEW OF STATUTORY AND REGULATORY INTERPRETATIONS.
+
+  Section 706 of title 5, United States Code, is amended--
+          (1) by striking ``To the extent necessary'' and inserting 
+        ``(a) To the extent necessary'';
+          (2) by striking ``decide all relevant questions of law, 
+        interpret constitutional and statutory provisions, and'';
+          (3) by inserting after ``of the terms of an agency action'' 
+        the following ``and decide de novo all relevant questions of 
+        law, including the interpretation of constitutional and 
+        statutory provisions, and rules made by agencies. 
+        Notwithstanding any other provision of law, this subsection 
+        shall apply in any action for judicial review of agency action 
+        authorized under any provision of law. No law may exempt any 
+        such civil action from the application of this section except 
+        by specific reference to this section''; and
+          (4) by striking ``The reviewing court shall--'' and inserting 
+        the following:
+  ``(b) The reviewing court shall--''.
+
+                          Purpose and Summary
+
+    H.R. 288, the Separation of Powers Restoration Act of 2023 
+or ``SOPRA,'' introduced by Rep. Scott Fitzgerald (R-WI), 
+amends the Administrative Procedure Act to legislatively 
+override the Chevron, U.S.A., Inc. v. Natural Resources Defense 
+Council,\1\ Auer v. Robbins,\2\ Kisor v. Wilkie,\3\ and 
+Skidmore v. Swift & Co.\4\ judicial deference doctrines and 
+requires courts to decide de novo all questions of law, 
+including the interpretation of statutes, rules, and guidance.
+---------------------------------------------------------------------------
+    \1\467 U.S. 837 (1984).
+    \2\519 U.S. 452 (1997).
+    \3\588 U.S. ------, 139 S. Ct. 2400 (2019).
+    \4\323 U.S. 134 (1944).
+---------------------------------------------------------------------------
+
+                Background and Need for the Legislation
+
+
+ I. THE ADMINISTRATIVE PROCEDURE ACT AND JUDICIAL DEFERENCE TO AGENCIES
+
+    The Administrative Procedure Act (APA) requires that courts 
+reviewing agency actions ``shall decide all relevant questions 
+of law, interpret constitutional and statutory provisions, and 
+. . . hold unlawful and set aside agency . . . conclusions 
+found to be . . . not in accordance with law.''\5\ As provided 
+by the statute, this scheme is consistent with the bedrock 
+principle that ``[i]t is emphatically the province and duty of 
+the judicial department to say what the law is.''\6\
+---------------------------------------------------------------------------
+    \5\5 U.S.C. Sec. 706.
+    \6\Marbury v. Madison, 5 U.S. 137, 177 (1803).
+---------------------------------------------------------------------------
+    However, a series of Supreme Court decisions have turned 
+the APA's statutory scheme--and the Constitution's separation 
+of powers--on its head. When applicable, these cases require 
+courts to enforce an agency's ``reasonable'' interpretation of 
+the law--regardless of ``whether the agency has the correct 
+interpretation''--instead of saying what the law actually 
+is.\7\ For example, the Court's decision in Chevron, U.S.A., 
+Inc. v. Nat. Res. Def. Council, Inc. requires courts to 
+``defer[] to administrative interpretations'' of ambiguous 
+statutes rather than to exercise their independent judgment as 
+to statutory meaning.\8\ Similarly, its decisions in Auer v. 
+Robbins\9\ and Kisor v. Wilkie require courts to ``[d]efer[] to 
+reasonable agency interpretations of ambiguous rules'' instead 
+of determining what those rules actually provide.\10\ Further, 
+the Court's decision in Skidmore v. Swift & Co. may require 
+courts to defer even to persuasive agency ``rulings, 
+interpretations and opinions''--i.e., guidance documents that 
+have neither been passed by Congress nor subjected to the APA's 
+notice-and-comment procedures.\11\
+---------------------------------------------------------------------------
+    \7\Reining in the Administrative State: Reclaiming Congress's 
+Legislative Power: Hearing Before the Subcomm. on the Administrative 
+State, Regulatory Reform, and Antitrust of the H. Comm. on the 
+Judiciary, 118th Cong. 1 (2023) (statement of Allyson N. Ho, Partner, 
+Gibson, Dunn & Crutcher LLP).
+    \8\467 U.S. 837, 844 (1984).
+    \9\519 U.S. 452 (1997).
+    \10\588 U.S.------, 139 S. Ct. 2400, 2422 (2019).
+    \11\323 U.S.134, 140 (1944).
+---------------------------------------------------------------------------
+    As Justice Neil Gorsuch explained on behalf of himself and 
+Justice Clarence Thomas in a concurring opinion in Kisor, the 
+effect of these judicial deference doctrines is ``systematic 
+judicial bias in favor of the federal government, the most 
+powerful of parties, and against everyone else.''\12\ 
+Representative Hageman amplified this concern during the 
+Committee's consideration of this bill:
+---------------------------------------------------------------------------
+    \12\Kisor, 588 U.S.------, 139S. Ct. at 2425 (Gorsuch, J., 
+concurring).
+
+          Judicial deference is a harmful doctrine placing the 
+        American people at a distinct disadvantage in court 
+        when going up against what has become an all too 
+        powerful administrative state. . . .
+          It also undermines the very purpose of judicial 
+        review by creating systemic judicial bias in favor of 
+        administrative agencies, which at this point in time 
+        have become far too powerful and far too dictatorial in 
+        their actions. . . .
+          [W]hat the deference doctrine actually does is it 
+        places the thumb on the scale of the administrative 
+        agency against the citizens of this country, the exact 
+        opposite of what is the foundation of America and what 
+        is the foundation of our form of government.\13\
+---------------------------------------------------------------------------
+    \13\Markup of H.R.288 Before the H. Comm. on the Judiciary, 118th 
+Cong. 376:8,694-395:9,139.
+
+    Further, deference to the administrative state reduces 
+incentives for legislative compromise and promotes 
+instability--and therefore illegitimacy--in the law.\14\ Former 
+United States Solicitor General Paul Clement remarked in May 
+2023:
+---------------------------------------------------------------------------
+    \14\See The Federalist No. 78 (Alexander Hamilton) (``To avoid an 
+arbitrary discretion in the courts, it is indispensable that they 
+should be bound down by strict rules and precedents. . . .'').
+
+        If you ask yourself, ``why is it that Congress passes 
+        less and less major legislation each year?,'' I think 
+        that a large share of the blame actually goes to the 
+        administrative state and the Chevron doctrine. And the 
+        reason, I think, is straightforward. I mean, the way 
+        you used to get legislation passed is you'd get some 
+        kind of legislative compromise between folks on the 
+        right and folks on the left. . . . Well, with the 
+        Chevron doctrine and the ability of agencies to 
+        essentially take anything that looks like an ambiguity 
+        and do rulemaking, the reason you don't get compromise, 
+        in my view, is that at any given time, about half the 
+        people in Congress can get their friends in the 
+        executive branch to do what they want just through an 
+        administrative rule. So why compromise? If you can get 
+        the immediate objective through an administrative rule, 
+        why compromise for a long-term solution that's in 
+        legislation?
+          And then of course that creates the other dynamic, 
+        which is the fundamental law and some of the most 
+        important issues in our society changes every four 
+        years, or at least every time there is a new 
+        administration. Because instead of having a compromise 
+        law that becomes the law of the land across 
+        administrations, you have a rule that's over here in 
+        one administration and then it flips all the way to the 
+        other side in the next administration.\15\
+---------------------------------------------------------------------------
+    \15\ Paul D. Clement, Remarks at the Republican National Lawyers 
+Association 2023 National Policy Conference (May 12, 2023).
+
+    More fundamentally, the judicial deference doctrines 
+infringe upon the constitutional separation of powers and 
+reduce the accountability of government to the American people. 
+Deference gives federal agencies ``broad authority to 
+essentially write a regulation that has the force of law'' and 
+allows them to ``step[] into the role that Congress has--not 
+the executive.''\16\ Further, as Justice Antonin Scalia once 
+explained, it ``violate[s] a fundamental principle of 
+separation of powers'' for ``the power to write a law and the 
+power to interpret it [to] rest in the same hands''--as it does 
+when courts defer to agency interpretations of their own rules 
+and guidance.\17\ In addition, increasing the power of the 
+administrative state further removes and insulates policymakers 
+from electoral accountability because, unlike Congress and the 
+President, federal ``agencies are not directly accountable to 
+the people.''\18\
+---------------------------------------------------------------------------
+    \16\See Ho, supra note 7, at 2.
+    \17\Decker v. Nw. Env't Def. Ctr., 568 U.S. 597, 619 (2013) 
+(Scalia, J., concurring).
+    \18\Chevron, 467 U.S. at 865.
+---------------------------------------------------------------------------
+
+              II. THE SEPARATION OF POWERS RESTORATION ACT
+
+    The Separation of Powers Restoration Act (SOPRA) is a good 
+step toward remedying the foregoing problems that have been 
+caused by the administrative state's ambition and encroachment. 
+The bill would amend the APA to expressly require courts to 
+``decide de novo all relevant questions of law, including the 
+interpretation of constitutional and statutory provisions, and 
+rules made by agencies.''\19\ This standard would restore the 
+courts' role as the branch that interprets the law under the 
+Constitution and the APA. The bill would ``level the playing 
+field'' for Americans in litigation against their 
+government.\20\ It will promote better legislative outcomes and 
+stability in the law. Most significantly, SOPRA would help to 
+restore the constitutional separation of powers between the 
+legislative, executive, and judicial branches; enhance the 
+electrical accountability of policymakers; and reduce the power 
+of the administrative state.
+---------------------------------------------------------------------------
+    \19\SOPRA, H.R. 288, 118th Cong. Sec. 2 (2023).
+    \20\Markup of H.R. 288 Before the H. Comm. on the Judiciary, supra 
+note 13, at 376:8,709.
+---------------------------------------------------------------------------
+    SOPRA would legislatively override the Chevron doctrine of 
+judicial deference to agency interpretations of ambiguous 
+statutes. The bill expressly requires courts to review de 
+novo--i.e., without deference--agency interpretations of 
+statutes. Similarly, SOPRA would overrule the Auer-Kisor 
+doctrine of judicial deference to agency interpretations of 
+ambiguous rules.
+    Moreover, SOPRA would repeal the Skidmore doctrine of 
+judicial deference to persuasive agency guidance. The bill 
+expressly applies de novo review to ``all relevant questions of 
+law,'' which include the interpretation of guidance.\21\ 
+Further, the definition of rule under the APA includes both 
+``interpretative rules'' and ``general statements of policy''--
+i.e., agency guidance documents.\22\ As Representative Hageman 
+explained the bill's intention: ``Because guidance is by 
+definition intended to guide something related to a statute or 
+regulation it must also be subject to de novo review under this 
+bill's language The judicial de novo review of all relevant 
+questions of law includes questions of law surrounding agency 
+guidance.''\23\
+---------------------------------------------------------------------------
+    \21\ SOPRA, H.R. 288, 118th Cong. Sec. 2 (2023).
+    \22\5 U.S.C. Sec. 553(b)(3)(A); see Chrysler, 441 U.S. at 302 n. 
+31; Perezv. Mortg. Bankers Ass'n, 575 U.S. 92, 96 (2015) (``Not all 
+`rules' must be issued through the notice-and-comment process,'' and 
+``the notice-and-comment requirement `does not apply' to 
+`interpretative rules [or] general statements of policy.''')
+    \23\Markup of H.R. 288 Before the H. Comm. on the Judiciary, supra 
+note 13, at 376:8,713-378:8,745.
+---------------------------------------------------------------------------
+
+                                Hearings
+
+    For the purposes of clause 3(c)(6)(A) of House rule XIII, 
+the following hearing was used to develop H.R. 288: ``Reining 
+in the Administrative State: Reclaiming Congress's Legislative 
+Power,'' a hearing held on March 10, 2023, before the 
+Subcommittee on the Administrative State, Regulatory Reform, 
+and Antitrust. The Committee heard testimony from the following 
+witnesses:
+           Allyson N. Ho, Partner and Co-Chair of 
+        Appellate and Constitutional Law, Gibson, Dunn & 
+        Crutcher LLP;
+           Jonathan Wolfson, Chief Legal Officer and 
+        Policy Director, Cicero Institute;
+           Ryan Cleckner, Co-Founder, Gun University 
+        LLC and Owner, Law office of Ryan M. Cleckner; and
+           Emily Hammond, Professor, George Washington 
+        University Law School.
+    The hearing addressed the growth of the administrative 
+state and the effect of judicial deference doctrines on the 
+separation of powers.
+
+                        Committee Consideration
+
+    On May 10, 2023, the Committee met in open session and 
+ordered the bill, H.R. 288, favorably reported with an 
+amendment in the nature of a substitute, by a roll call vote of 
+15 to 5, a quorum being present.
+
+                            Committee Votes
+
+    In compliance with clause 3(b) of House rule XIII, the 
+following roll call votes occurred during the Committee's 
+consideration of H.R. 288:
+    1. Vote on Amendment #1 to H.R. 288 ANS, offered by Mr. 
+Schiff, failed 5-15
+    2. Vote on Amendment #2 to H.R. 288 ANS, offered by Mr. 
+Nadler, failed 5-15
+    3. Vote on favorably reporting H.R. 288, as amended, passed 
+15-5
+
+[GRAPHIC(S) NOT AVAILABLE IN TIFF FORMAT]
+
+                      Committee Oversight Findings
+
+    In compliance with clause 3(c)(1) of House rule XIII, the 
+Committee advises that the findings and recommendations of the 
+Committee, based on oversight activities under clause 2(b)(1) 
+of rule X of the Rules of the House of Representatives, are 
+incorporated in the descriptive portions of this report.
+
+               New Budget Authority and Tax Expenditures
+
+    With respect to the requirements of clause 3(c)(2) of rule 
+XIII of the Rules of the House of Representatives and section 
+308(a) of the Congressional Budget Act of 1974 and with respect 
+to the requirements of clause 3(c)(3) of rule XIII of the Rules 
+of the House of Representatives and section 402 of the 
+Congressional Budget Act of 1974, the Committee has requested 
+but not received a cost estimate for this bill from the 
+Director of the Congressional Budget Office. The Committee has 
+requested but not received from the Director of the 
+Congressional Budget Office a statement as to whether this bill 
+contains any new budget authority, spending authority, credit 
+authority, or an increase or decrease in revenues or tax 
+expenditures. The Chairman of the Committee shall cause such 
+estimate and statement to be printed in the Congressional 
+Record upon its receipt by the Committee.
+
+               Congressional Budget Office Cost Estimate
+
+    With respect to the requirement of clause 3(c)(3) of rule 
+XIII of the Rules of the House of Representatives, a cost 
+estimate provided by the Congressional Budget Office pursuant 
+to section 402 of the Congressional Budget Act of 1974 was not 
+made available to the Committee in time for the filing of this 
+report. The Chairman of the Committee shall cause such estimate 
+to be printed in the Congressional Record upon its receipt by 
+the Committee.
+
+                Committee Estimate of Budgetary Effects
+
+    With respect to the requirements of clause 3(d)(1) of rule 
+XIII of the Rules of the House of Representatives, the 
+Committee adopts as its own the cost estimate prepared by the 
+Director of the Congressional Budget Office pursuant to section 
+402 of the Congressional Budget Act of 1974.
+
+                    Duplication of Federal Programs
+
+    Pursuant to clause 3(c)(5) of House rule XIII, no provision 
+of H.R. 288 establishes or reauthorizes a program of the 
+federal government known to be duplicative of another federal 
+program.
+
+                    Performance Goals and Objectives
+
+    The Committee states that pursuant to clause 3(c)(4) of 
+House rule XIII, H.R. 288 would amend the Administrative 
+Procedure Act to legislatively override the Chevron, U.S.A., 
+Inc. v. Natural Resources Defense Council, Auer v. Robbins, 
+Kisor v. Wilkie, and Skidmore v. Swift & Co. judicial deference 
+doctrines and require courts to decide de novo all questions of 
+law, including the interpretation of statutes, rules, and 
+guidance.
+
+                          Advisory on Earmarks
+
+    In accordance with clause 9 of House rule XXI, H.R. 288 
+does not contain any congressional earmarks, limited tax 
+benefits, or limited tariff benefits as defined in clauses 
+9(d), 9(e), or 9(f) of House Rule XXI.
+
+                       Federal Mandates Statement
+
+    An estimate of federal mandates prepared by the Director of 
+the Congressional Budget office pursuant to section 423 of the 
+Unfunded Mandates Reform Act was not made available to the 
+Committee in time for the filing of this report. The Chairman 
+of the Committee shall cause such estimate to be printed in the 
+Congressional Record upon its receipt by the Committee.
+
+                      Advisory Committee Statement
+
+    No advisory committees within the meaning of section 5(b) 
+of the Federal Advisory Committee Act were created by this 
+legislation.
+
+                  Applicability to Legislative Branch
+
+    The Committee finds that the legislation does not relate to 
+the terms and conditions of employment or access to public 
+services or accommodations within the meaning of section 
+102(b)(3) of the Congressional Accountability Act (Pub. L. 104-
+1).
+
+                      Section-by-Section Analysis
+
+    Section 1. Short Title. This section sets forth the short 
+title of the bill as the ``Separation of Powers Restoration Act 
+of 2023.''
+    Section 2. Judicial Review of Statutory and Regulatory 
+Interpretations. This section amends the Administrative 
+Procedure Act to provide that courts shall decide de novo all 
+relevant questions of law, including the interpretation of 
+constitutional and statutory provisions and rules made by 
+agencies.
+
+         Changes in Existing Law Made by the Bill, as Reported
+
+  In compliance with clause 3(e) of rule XIII of the Rules of 
+the House of Representatives, changes in existing law made by 
+the bill, as reported, are shown as follows (existing law 
+proposed to be omitted is enclosed in black brackets, new 
+matter is printed in italics, and existing law in which no 
+change is proposed is shown in roman):
+
+                      TITLE 5, UNITED STATES CODE
+
+
+
+           *       *       *       *       *       *       *
+PART I--THE AGENCIES GENERALLY
+
+           *       *       *       *       *       *       *
+
+
+CHAPTER 7--JUDICIAL REVIEW
+
+           *       *       *       *       *       *       *
+
+
+Sec. 706. Scope of review
+
+  [To the extent necessary] (a) To the extent necessary  to 
+decision and when presented, the reviewing court shall [decide 
+all relevant questions of law, interpret constitutional and 
+statutory provisions, and] determine the meaning or 
+applicability of the terms of an agency action and decide de 
+novo all relevant questions of law, including the 
+interpretation of constitutional and statutory provisions, and 
+rules made by agencies. Notwithstanding any other provision of 
+law, this subsection shall apply in any action for judicial 
+review of agency action authorized under any provision of law. 
+No law may exempt any such civil action from the application of 
+this section except by specific reference to this section. [The 
+reviewing court shall--]
+  (b) The reviewing court shall-- 
+          (1) compel agency action unlawfully withheld or 
+        unreasonably delayed; and
+          (2) hold unlawful and set aside agency action, 
+        findings, and conclusions found to be--
+                  (A) arbitrary, capricious, an abuse of 
+                discretion, or otherwise not in accordance with 
+                law;
+                  (B) contrary to constitutional right, power, 
+                privilege, or immunity;
+                  (C) in excess of statutory jurisdiction, 
+                authority, or limitations, or short of 
+                statutory right;
+                  (D) without observance of procedure required 
+                by law;
+                  (E) unsupported by substantial evidence in a 
+                case subject to sections 556 and 557 of this 
+                title or otherwise reviewed on the record of an 
+                agency hearing provided by statute; or
+                  (F) unwarranted by the facts to the extent 
+                that the facts are subject to trial de novo by 
+                the reviewing court.
+In making the foregoing determinations, the court shall review 
+the whole record or those parts of it cited by a party, and due 
+account shall be taken of the rule of prejudicial error.
+
+                             Minority Views
+
+
+                            I. INTRODUCTION
+
+    H.R. 288, the ``Separation of Powers Restoration Act'' or 
+``SOPRA,'' represents another effort by Republicans to 
+dismantle the administrative state by modifying the scope of 
+judicial review for agency actions by authorizing courts to 
+decide de novo (i.e., without giving deference to the agency's 
+interpretation) all relevant questions of law, including (1) 
+rules made by agencies, and (2) constitutional and statutory 
+provisions. Effectively, this bill eliminates the decades-old 
+precedent set by Chevron U.S.A., Inc. v. Natural Resources 
+Defense Council, Inc.\1\ in which the courts use a legal test 
+to decide when the court should defer to the agency's answer or 
+interpretation of statutory authority. In short, the doctrine 
+of ``Chevron deference'' holds that judicial deference to an 
+agency's interpretation is appropriate as long as it is not 
+unreasonable, and Congress has spoken directly to the precise 
+issue at question. Although the courts have eroded the doctrine 
+of Chevron deference somewhat in recent years, it remains an 
+important tenet of administrative law.
+---------------------------------------------------------------------------
+    \1\468 U.S. 837 (1984).
+---------------------------------------------------------------------------
+    Among its many flaws, SOPRA would encourage judicial 
+activism by requiring judges to second-guess the carefully 
+crafted regulations from agencies. The bill would also make the 
+rulemaking process even more time-consuming and costly by 
+forcing agencies to adopt even more detailed factual records 
+and explanations to withstand judicial scrutiny, thus delaying 
+the finalization of critical, and possibly lifesaving, 
+regulations. By requiring this deeper report, the agency 
+rulemaking process would be skewed in favor of those with 
+significant resources as they have an edge against smaller 
+groups to overwhelm the process with possibly bogus reports, 
+paperwork, demands, and litigation.
+    Along with Democrats, who were united in opposition to 
+SOPRA, Rep. Matt Gatez (R-FL) spoke in opposition to the bill, 
+arguing that judicial deference to the executive has deep roots 
+in our country and that to undermine this precedent would mean 
+that we are opening the doors to judicial activism and policy 
+making from the bench.
+    During markup, Rep. Adam Schiff (D-CA) offered an amendment 
+that would prohibit the law from taking effect until the 
+Judicial Conference certifies to Congress that each court of 
+the U.S. has a code of conduct in effect. This amendment was 
+defeated along party lines. Rep. Nadler (D-NY) offered an 
+amendment to exclude the FDA from the bill, which was also 
+defeated along party lines.
+
+                              II. CONCERNS
+
+    Most administrative law scholars reject the need for a 
+legislative override of judicial deference because it would 
+make the rulemaking process more costly and time-consuming by 
+forcing agencies to adopt more detailed factual records and 
+explanations, effectively imposing more procedural requirements 
+on agency rulemaking.\2\ This cumulative burden would have the 
+effect of further ossifying the rulemaking process or 
+dissuading agencies from undertaking rulemakings altogether.\3\ 
+Accordingly, the Coalition for Sensible Safeguards (CSS)--a 
+coalition of more than 160 consumer, labor, scientific, 
+research, faith, community, environmental, small business, good 
+government, public health and public interest groups--opposes 
+SORPA.\4\
+---------------------------------------------------------------------------
+    \2\ABA Sec. of Admin. L. & Reg. Prac., Comments on H.R. 3010, the 
+Regulatory Accountability Act of 2011, 64 Admin. L. Rev. 619, 667 
+(2012) (``Debate on these principles continues, but the prevailing 
+system works reasonably well, and no need for legislative intervention 
+to revise these principles is apparent.''); see Letter from Anna 
+Shavers, Chair, ABA Section of Administrative Law and Regulatory 
+Practice, to Sens. Carper and Coburn on S. 1029, the Regulatory 
+Accountability Act of 2013, at 17, http://www.americanbar.org/content/
+dam/aba/administrative/administrative_law/
+s_1029_comments_dec_2014.authcheckdam.pdf (discussing reform of 
+judicial deference to interpretations of rules); see Letter from 84 
+administrative law academics to H. Judiciary Comm. Chair Bob Goodlatte 
+(R-VA) and H. Judiciary Comm. Ranking Member John Conyers, Jr. (D-MI), 
+2 (Jan. 12, 2015) (on file with the H. Comm. on the Judiciary, 
+Democratic staff).
+    \3\See id.
+    \4\The Separation of Powers Restoration Act, Coalition for Sensible 
+Safeguards, https://sensiblesafeguards.org/issues/separation-powers-
+restoration-act/ (last visited May 31, 2023).
+---------------------------------------------------------------------------
+    Heightened judicial review would also increase the risk of 
+judicial activism by allowing generalist courts to supplant the 
+expertise of Federal agencies with their views. Finally, as a 
+general matter, administrative law experts believe that there 
+is no need to amend fundamentally the Administrative Procedure 
+Act (APA), including its treatment of judicial review.\5\ They 
+argue that the APA's drafters were not unlike those of the 
+Constitution in that they had great foresight in making the APA 
+flexible and broad enough so that it is able to fit changing 
+times.\6\ The APA has served, and should continue to serve, as 
+``a kind of Constitution for administrative agencies and the 
+affected public--flexible enough to accommodate the variety of 
+agencies operating under it and the changes in modern 
+life.''\7\
+---------------------------------------------------------------------------
+    \5\See Sidney A. Shapiro, A Delegation Theory of the APA, 10 Admin. 
+L.J. Am. U. 89, 89 (1996).
+    \6\See id.
+    \7\Letter from 84 administrative law academics to H. Judiciary 
+Comm. Chair Bob Goodlatte (R-VA) and H. Judiciary Comm. Ranking Member 
+John Conyers, Jr. (D-MI), 2 (Jan. 12, 2015) (on file with the H. Comm. 
+on the Judiciary, Democratic staff).
+---------------------------------------------------------------------------
+    Since the late 1980's, administrative law scholars have 
+complained that heightened scrutiny of agency rulemaking has 
+played a major role in regulatory ossification and avoidance 
+(i.e., dissuading agencies from pursuing regulations in the 
+first place).\8\ For example, Professor Richard Pierce of the 
+George Washington University Law School contends that ``the 
+judicial branch is responsible for most of the ossification of 
+the rulemaking process.''\9\ He further notes that enhanced 
+judicial review may have the effect of rewriting the statutory 
+requirements under the APA for informal rulemaking, and could 
+even invalidate roughly half of rules on appeal.\10\
+---------------------------------------------------------------------------
+    \8\Richard J. Pierce, Jr., Two Problems in Administrative Law: 
+Political Polarity on the District of Columbia Circuit and Judicial 
+Deterrence of Agency Rulemaking, 1988 Duke L.J. 300, 309 (1988) 
+(``Courts also have diminished agency interest in systematic 
+policymaking by imposing requirements that agencies `find' unfindable 
+facts and support those findings with unattainable evidence.''). 
+Richard J. Pierce, Jr., Seven Ways to Deossify Agency Rulemaking, 47 
+Admin. L. Rev. 59, 61 (1995) (``Many agencies avoid rulemaking because 
+of the fear that after years of effort and expenditure of millions of 
+dollars, a rule will be struck down by the courts on judicial 
+review.''). For additional background on regulatory ossification, see 
+generally Brian J. Shearer, Outfoxing Alaska Hunters: How Arbitrary and 
+Capricious Review of Changing Regulatory Interpretations Can More 
+Efficiently Police Agency Discretion, 62 Am. U. L. Rev. 167, 169-70 
+(2012) (``The [ossification] theory contends that rulemaking has become 
+increasingly burdensome for agencies due to congressionally-imposed and 
+judicially-fabricated procedures.'').
+    \9\Richard J. Pierce, Jr., Seven Ways to Deossify Agency 
+Rulemaking, 47 Admin. L. Rev. 59, 65 (1995).
+    \10\Id.
+---------------------------------------------------------------------------
+    The non-partisan Congressional Research Service (CRS) also 
+observes that enhanced judicial review may skew the agency fact 
+finding process in favor of those with the resources to shape 
+the agency record by making it more lengthy and costly.\11\ CRS 
+warns that enhanced judicial review ``will cause delay, 
+complexity, and uncertainty in the administrative process which 
+may be seen to have its most severe and direct impact on the 
+ability of public interest representatives to effectively 
+participate in the process.''\12\
+---------------------------------------------------------------------------
+    \11\Morton Rosenberg, The Future of Public Participation in 
+Informal Agency Rulemaking Under Pending Regulatory Reform Proposals, 
+Cong. Research Serv. Report for Congress 47-47 (1982).
+    \12\Id. at 44.
+---------------------------------------------------------------------------
+    In addition, enhanced judicial review could affect public 
+participation in the rulemaking process in other ways, 
+including how agency officials conduct proceedings in 
+anticipation of review, as well as the increased judicial 
+activism that the reform would spur, where individuals have 
+little role in private litigation.\13\ Furthermore, parties 
+that oppose a rule could create additional costs and delay in 
+the rulemaking process by increasing the number of appeals of 
+agency determinations.\14\
+---------------------------------------------------------------------------
+    \13\Id.
+    \14\Id.
+---------------------------------------------------------------------------
+    Eliminating judicial deference may also incentivize 
+judicial activism by allowing a reviewing court to substitute 
+its policy preferences for those of the agency.\15\ Rather than 
+deferring to agencies' substantive expertise, enhanced judicial 
+review would enable generalist courts to make policy by 
+applying their policy preferences to their review of an agency 
+rule, whether they do so consciously or not. Activist judges, 
+however, lack the political accountability and expertise of 
+agencies.\16\ As Professor Pierce notes, courts lacked explicit 
+authority to review most agency rulemaking until the late 
+Nineteenth century.\17\ Over the past century, however, the 
+Supreme Court has routinely held that it is the ``exclusive 
+province of the Congress not only to formulate legislative 
+policies and mandate programs and projects, but also to 
+establish their relative priority for the Nation.''\18\ The 
+Court emphatically made this point in Chevron:
+---------------------------------------------------------------------------
+    \15\Id. at 48-51.
+    \16\Id; Henry P. Monaghan, Marbury and the Administrative State, 83 
+Colum. L. Rev. 1, 14 (1983) (``But whatever the logic of the Marbury 
+argument or the wisdom of strong judicial control of administrative 
+law-making, the Marshall court itself gave early sanction to deference 
+principles.''); Ronald M. Levin, Identifying Questions of Law in 
+Administrative Law, 74 Geo. L.J. 1, 18 (1985) (``Marbury does not make 
+clear whether the exercise of independent judicial judgment to keep 
+agencies within statutory bounds is constitutionally indispensable.'').
+    \17\The Chevron Doctrine: Constitutional and Statutory Questions in 
+Judicial Deference to Agencies: Hearing Before the Subcomm. on 
+Regulatory Reform, Commercial and Antitrust Law of the H. Comm. on the 
+Judiciary, 114th Cong. 4 (2016) (statement of Prof. Richard Pierce) 
+(``Until late in the Nineteenth century, courts could not and did not 
+review the vast majority of agency actions. The Supreme Court held that 
+courts lacked the power to review exercises of executive branch 
+discretion. A court could review an action taken by the executive 
+branch (or a refusal to act) only in the rare case in which a statute 
+compelled an agency to act in a particular manner. In that situation, 
+the court was simply requiring the agency to take a non-discretionary 
+ministerial action.'') [hereinafter House Hearing].
+    \18\See Tennessee Valley Auth. v. Hill, 437 U.S. 153, 194 (1978) 
+(``Once Congress, exercising its delegated powers, has decided the 
+order of priorities in a given area, it is for the Executive to 
+administer the laws and for the courts to enforce them when enforcement 
+is sought.'').
+
+          Judges are not experts in the field, and are not part 
+        of either political branch of the Government. . . . In 
+        contrast, an agency to which Congress has delegated 
+        policy-making responsibilities may, within the limits 
+        of that delegation, properly rely upon the incumbent 
+        administration's views of wise policy to inform its 
+        judgments. While agencies are not directly accountable 
+        to the people, the Chief Executive is, and it is 
+        entirely appropriate for this political branch of the 
+        Government to make such policy choices--resolving the 
+        competing interests which Congress itself either 
+        inadvertently did not resolve, or intentionally left to 
+        be resolved by the agency charged with the 
+        administration of the statute in light of everyday 
+        realities.\19\
+---------------------------------------------------------------------------
+    \19\Chevron, U.S.A., Inc. v. Nat. Res. Def. Council, Inc., 467 U.S. 
+837, 865 (1984).
+
+    Lastly, H.R. 288 is a solution to a non-existent problem. 
+Notwithstanding the debate surrounding deference 
+principles,\20\ the American Bar Association (ABA) 
+Administrative Law Section has clarified that judicial review 
+remains ``relatively stable'' today, combining the features of 
+Chevron deference with the careful scrutiny of the hard-look 
+doctrine:
+---------------------------------------------------------------------------
+    \20\Hearing on H.R. 3438, the ``Require Evaluation before 
+Implementing Executive Wishlists Act of 2015;'' and, H.R.2631, the 
+``Regulatory Predictability for Business Growth Act of 2015'' Before 
+the Subcomm. on Regulatory Reform, Commercial and Antitrust Law of the 
+H. Comm. on the Judiciary, 114th Cong. (2015) (statement of William 
+Funk, Lewis & Clark Distinguished Professor of Law, Lewis & Clark Law 
+School) (``The cases explaining when Chevron deference should apply are 
+confusing, and even experts and Supreme Court justices do not seem to 
+agree on what the test is.'').
+
+          Judicial review of agency decisionmaking today is 
+        relatively stable, combining principles of restraint 
+        with the careful scrutiny that goes by the nickname 
+        ``hard look review.'' Since the time of such landmark 
+        decisions as Chevron and State Farm (and, of course, 
+        for decades prior to their issuance), courts have 
+        striven to work out principles that are intended to 
+        calibrate the extent to which they will accept, or at 
+        least give weight to, decisions by federal 
+        administrative agencies. Debate on these principles 
+        continues, but the prevailing system works reasonably 
+        well, and no need for legislative intervention to 
+        revise these principles is apparent.\21\
+---------------------------------------------------------------------------
+    \21\ABA Sec. of Admin. L. & Reg. Prac., Comments on H.R. 3010, the 
+Regulatory Accountability Act of 2011, 64 Admin. L. Rev. 619, 667 
+(2012).
+
+    Professor Levin similarly notes that agencies succeed on 
+appeal in roughly 70% of cases regardless of whether the court 
+applies Chevron or hard-look review, suggesting that many other 
+factors ultimately affect the outcome of a court's review.\22\
+---------------------------------------------------------------------------
+    \22\Examining the Proper Role of Judicial Review in the Federal 
+Regulatory Process: Hearing Before the Subcomm. on Regulatory Affairs 
+and Fed. Management of the S. Comm. on Homeland Security and Government 
+Affairs, 114th Cong. 38 (2015) (statement of Prof. Ron Levin), at 41 
+https://www.gpo.gov/fdsys/pkg/CHRG-114shrg94906/pdf/CHRG-
+114shrg94906.pdf [hereinafter Senate hearing]; see also Richard J. 
+Pierce, Jr., & Joshua Weiss, An Empirical Study of Judicial Review of 
+Agency Interpretations of Agency Rules, 63 Admin. L. Rev. 515, 515 
+(2011).
+---------------------------------------------------------------------------
+    Judicial deference to agency rulemaking is also 
+constitutionally sound. As the Chevron Court observed, the 
+Constitution does not endow federal judges with policymaking 
+authority:
+
+          When a challenge to an agency construction of a 
+        statutory provision, fairly conceptualized, really 
+        centers on the wisdom of the agency's policy, rather 
+        than whether it is a reasonable choice within a gap 
+        left open by Congress, the challenge must fail. In such 
+        a case, federal judges--who have no constituency--have 
+        a duty to respect legitimate policy choices made by 
+        those who do. The responsibilities for assessing the 
+        wisdom of such policy choices and resolving the 
+        struggle between competing views of the public interest 
+        are not judicial ones: ``Our Constitution vests such 
+        responsibilities in the political branches.''\23\
+---------------------------------------------------------------------------
+    \23\Chevron, U.S.A., Inc. v. Nat. Res. Def. Council, Inc., 467 U.S. 
+837, 866 (1984).
+
+    The body of precedent surrounding judicial deference 
+already allows for checks on executive abuses; ending this 
+tradition would raise countervailing separation of powers 
+---------------------------------------------------------------------------
+concerns, as Professor Levin explains:
+
+          The Court has developed a sophisticated, though 
+        always evolving, body of precedents in order to 
+        calibrate the complex relationship between courts and 
+        agencies. These precedents do provide for a check on 
+        executive abuses, but they also reflect a wise 
+        recognition that judges do not have a monopoly on 
+        wisdom, especially in regard to the specialized 
+        problems that arise in the interpretation of 
+        regulations. . . . elimination of all judicial 
+        deference . . . may raise countervailing separation of 
+        powers concerns of its own. It brings to mind the 
+        reasoning of the Chevron opinion, in which Justice 
+        Stevens cautioned the courts against being too quick to 
+        substitute their judgments for those of politically 
+        accountable administrators.\24\
+---------------------------------------------------------------------------
+    \24\Senate Hearing, supra note 21, at 48 (statement of Prof. Ron 
+Levin).
+
+    Furthermore, Congress has historically yielded to the 
+expertise of the executive branch. Professor Sidney Shapiro, a 
+leading administrative law expert, explains that ``it is 
+difficult for legislators to resolve the policy and political 
+conflicts produced by most reform proposals,'' while delegation 
+enabled agencies to ``fine-tune procedures in different 
+institutional settings and to make incremental changes more 
+easily than if legislation was necessary.''\25\ Professor 
+Pierce has similarly cautioned against the legislative reform 
+of the Chevron doctrine:
+---------------------------------------------------------------------------
+    \25\Sidney A. Shapiro, A Delegation Theory of the APA, 10 Admin. 
+L.J. Am. U. 89, 109 (1996).
+
+          I do not see any opportunity for Congress to make 
+        beneficial changes in this area of law by statute at 
+        present. The courts have ample discretion to make any 
+        needed changes or clarifications in this area of law 
+        without any changes in the statutes that now govern 
+        this area of law. Courts are in the best position 
+        institutionally to make the kinds of changes in legal 
+        doctrines that would have a realistic chance of 
+        improving the legal framework within which agencies 
+        make rules and the quality and timeliness of the 
+        resulting rules.\26\
+---------------------------------------------------------------------------
+    \26\House Hearing, supra note 16, at 9 (statement of Prof. Richard 
+Pierce).
+---------------------------------------------------------------------------
+
+                            III. CONCLUSION
+
+    SOPRA represents the latest step in the Republicans' 
+decades-long attack on the regulatory process, trying to add 
+hurdle after hurdle to the rulemaking process to prevent 
+regulations, including those that protect public health and 
+safety, from taking effect. H.R. 288 would undermine decades-
+old Supreme Court precedent and allow for policy making from 
+the bench as judges would be statutorily prevented from 
+granting deference to agencies' decisionmaking. Instead of 
+deferring to the expert, deliberate, and carefully crafted 
+rules made by our agencies, the bill would instead allow for 
+judges to substitute their own decisionmaking for that of the 
+informed agency. The bill would also create more opportunities 
+for corporate interests to skew the rulemaking process and 
+judicial review of that process in their favor. Finally, the 
+bill would create more cost and delay in agency rulemaking, 
+thus undermining the many economic benefits regulations bring 
+and delaying critical rules and regulations.
+    For all of these reasons, I dissent and urge all of my 
+colleagues to oppose this legislation.
+                                            Jerrold Nadler,
+                                                    Ranking Member.
+
+                                  [all]

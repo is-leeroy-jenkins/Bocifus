@@ -1,0 +1,3478 @@
+SECTION 120—APPORTIONMENT PROCESS 
+
+ 
+
+Table of Contents 
+
+ 
+
+Introduction to Apportionments 
+
+120.1 What is an apportionment? 
+
+120.2 What terms and concepts should I understand to work with apportionments? 
+
+120.3 Are apportionments made at the Treasury appropriation fund symbol (TAFS) level? 
+
+120.4 What TAFSs are required to be apportioned? 
+
+120.5 What TAFSs are exempt from apportionment? 
+
+120.6 Can a portion of my TAFS be exempt from apportionment? 
+
+120.7 Do I need to submit an apportionment every fiscal year for TAFSs that are multi-year/no-
+year? 
+
+120.8 Can I incur obligations without an apportionment? 
+
+120.9 Can I use an apportionment to resolve legal issues about the availability of funds? 
+
+ 
+
+What is in an Apportionment? 
+
+120.10 How is the apportionment organized? 
+
+120.11 Why is the Budgetary Resources section needed? 
+
+120.12 After OMB approves an apportionment, can I obligate against all budgetary resources? 
+
+120.13 What is the format of the Applications of Budgetary Resources section and what categories 
+does OMB use to apportion funds? 
+
+120.14 What is the format of the Guaranteed Loan Levels and Applications section? 
+
+120.15 What other kinds of information may an apportionment include? 
+
+ 
+
+Preparing the Apportionment Request 
+
+120.16 How can I submit an apportionment request? 
+
+120.17 Is there a standard, set number of lines to show in an apportionment request? 
+
+120.18 What header information at the top of the apportionment must I complete? 
+
+120.19 What do I put in each column of the apportionment request? 
+
+120.20 Do I need to follow special conventions to show the portion of discretionary balances in 
+split accounts (TAFSs with both mandatory and discretionary funds)? 
+
+120.21 Can I use amounts that include decimal points or cents in an apportionment? 
+
+120.22 Should I use a specific numeric format in the Excel file that holds my request? 
+
+120.23 When are apportionments due at OMB for a new fiscal year? 
+
+120.24 When is the apportionment system open for a new fiscal year? 
+
+120.25 Can I combine TAFSs on a single apportionment? 
+
+120.26 Should I assemble apportionment requests for multiple TAFSs in a single package or file? 
+
+120.27 Can I cross-check information in the Budgetary Resources section? 
+
+120.28 Who can approve the apportionment request for the agency? 
+
+120.29 Who is responsible for preparing the apportionment request for allocation (parent/child) 
+accounts? 
+
+ 
+
+Submitting Apportionment Requests 
+
+120.30 How do I submit apportionment requests to OMB? 
+
+120.31 What functions will I perform using the apportionment system? 
+
+120.32 How do I gain access to the apportionment system? 
+
+120.33 Are there situations when I would not use the apportionment system? 
+
+ 
+
+ 
+
+
+ 
+
+Table of Contents—Continued 
+
+ 
+
+Footnotes to Apportionments 
+
+120.34 What are apportionment footnotes (and footnote indicators)? 
+
+120.35 Do footnotes starting with the letter A correspond to Category A apportioned amounts 
+while those starting with the letter B relate to Category B apportioned amounts? 
+
+120.36 Will footnotes and additional tabs/attachments become part of the apportionment? 
+
+120.37 What footnotes are required for agencies to include in their apportionment requests? 
+
+120.38 Are there footnotes that are automatically applied to annual and multi-year 
+apportionments? 
+
+ 
+
+Approving Apportionment Requests 
+
+120.39 How will OMB indicate its approval of an apportionment? 
+
+120.40 When can I expect OMB to approve my first apportionment request for the fiscal year? 
+
+120.41 In the case of newly enacted full-year appropriations, am I under an automatic 
+apportionment until OMB approves my first full-year enacted apportionment request? 
+
+ 
+
+After You Have Received Your Approved Apportionment 
+
+120.42 How should I execute the apportionment? 
+
+120.43 What if I think that I may have obligated more than the amounts apportioned? 
+
+120.44 Must I control funds below the apportionment level? 
+
+120.45 How should I allot once I receive an apportionment? 
+
+120.46 How do I treat anticipated budgetary resources that are apportioned in the current fiscal 
+year but not yet realized, and do I need to reapportion them once realized? 
+
+120.47 What is the relationship between the apportionment and the Funds Control System? 
+
+ 
+
+Changes to Previously Approved Apportionments for the Current Fiscal Year 
+
+120.48 What types of situations could require me to request a new apportionment? 
+
+120.49 What adjustments can I make without submitting a reapportionment request? 
+
+120.50 What other types of adjustments can I request OMB to allow me to make without 
+submitting a new apportionment request? 
+
+120.51 What is the status of previously approved apportionments when a new apportionment is 
+approved in the same fiscal year? 
+
+ 
+
+Apportionments by Time Period 
+
+120.52 Will OMB apportion funds into future fiscal years? 
+
+120.53 How do I present deferrals or proposed rescissions on my request? 
+
+120.54 Can OMB reapportion a past period? 
+
+120.55 Do unobligated resources apportioned in earlier time periods of the same fiscal year remain 
+available? 
+
+120.56 Must I request that funds apportioned in one fiscal year be apportioned in the next fiscal 
+year if the funds were not obligated and remain available? 
+
+120.57 What is the status of approved apportionments from a previous fiscal year on 
+apportionments in the current fiscal year? 
+
+120.58 How does the last approved apportionment govern the actions a TAFS takes when the 
+TAFS enters the expired phase? 
+
+ 
+
+ 
+
+
+Table of Contents—Continued 
+
+ 
+
+Apportionments Affected by a Continuing Resolution (CR) 
+
+120.59 During a CR, what happens to TAFSs that were apportioned before the start of a fiscal year 
+(e.g., no-year TAFSs)? 
+
+120.60 After a CR has been replaced by a full-year enacted appropriation, what do I show in the 
+Previous Approved column?' 
+
+120.61 After a short-term CR has been replaced by a full-year enacted appropriation, what do I 
+show in the Agency Request column? 
+
+120.62 What do I do if the full-year enacted appropriation changes the period of availability of 
+funds apportioned under a short-term CR? 
+
+ 
+
+What Other Important Things Do I Need to Know About Apportionments 
+
+120.63 What types of resources are apportioned by OMB? 
+
+120.64 Are all apportionments based on authority to incur obligations? 
+
+120.65 How do I treat extensions of the availability of unobligated balances in an apportionment? 
+
+ 
+
+Handling Deficiencies in Apportionments 
+
+120.66 When do I submit requests anticipating the need for the Congress to enact supplemental 
+budget authority? 
+
+ 
+
+Program Reporting Categories 
+
+120.67 What is the purpose of program reporting categories? 
+
+120.68 Do my estimates of program reporting category obligations limit the amount I can obligate? 
+
+120.69 What do OMB and the agency need to do to start using program reporting categories? 
+
+120.70 How do I fill in the program reporting category tab? 
+
+120.71 Why does OMB send the names of program reporting categories and Category B projects 
+to Treasury for use in GTAS? 
+
+ 
+
+Exhibits—Sample Formats 
+
+https://community-dc.max.gov/x/N4RNlg 
+
+ 
+
+Ex–120A Program Reporting Categories Format 
+
+ 
+
+When Your Appropriations are Enacted in a Timely Manner 
+
+Ex–120B One-Year Appropriation⎯First Apportionment for the Current Fiscal Year 
+
+Ex–120C No-Year Appropriation⎯First Apportionment for the Current Fiscal Year 
+
+Ex–120D No-Year Appropriation—Reapportionment 
+
+ 
+
+When You Operate Under a Continuing Resolution 
+
+Ex–120E One-Year Appropriations Under Continuing Resolution 
+
+Ex–120F Appropriations and Unobligated Balances Under a Continuing Resolution 
+
+Ex–120G Apportionment Following a Continuing Resolution (No-Year TAFS) 
+
+Ex–120H Apportionment Following a Continuing Resolution (Annual TAFS, Category A) 
+
+ 
+
+When You Encounter Unusual Circumstances 
+
+Ex–120I Public Enterprise (Revolving) or Intragovernmental (Revolving) Fund— 
+Reapportionment 
+
+ 
+
+ 
+
+
+Table of Contents—Continued 
+
+ 
+
+Ex–120J Trust Fund Limitation 
+
+Ex–120K Negative Amount Due to Reduced Unobligated Balance 
+
+Ex–120L Apportionments in Future Fiscal Years for Multi-Year Accounts 
+
+Ex–120M Trust Fund with Contract Authority, Appropriation to Liquidate Contract Authority, 
+
+ and Obligation Limitation 
+
+Ex–120N Trust Fund (or Special Fund) with Collections Precluded from Obligation 
+
+Ex–120O Allocation Transfer Apportionment Format, Apportioning Programs 
+
+Ex–120P Allocation Transfer Apportionment Format, Apportioning Parent and Child 
+
+Ex–120Q Allocation Transfer Apportionment Format, Child Only 
+
+Ex–120R Allocation Transfer Apportionment Format, Parent Only 
+
+Ex–120S Sequester Apportionment 
+
+Ex–120T Appropriations with Different Periods of Availability Executed by Non-Expenditure 
+Transfer 
+
+Ex–120U Rescissions and Reappropriations of Unobligated Balances as of September 30th 
+
+Ex–120V Initial Apportionment of an Appropriation Reduced by Offsetting Collections and 
+Receipts 
+
+Ex-120W Apportionment of an Appropriation Reduced by Offsetting Collections and 
+Receipts during CR period to invoke term and condition of the CR (section 123.10) 
+
+ 
+
+Summary of Changes 
+
+ 
+
+Clarifies guidance on display of the previous approved column for an account specific apportionment 
+made during a CR period for an account that also receives an automatic apportionment (section 
+120.37). 
+
+ 
+
+Allows agencies to reflect 30-day automatically apportioned funds as they would be apportioned 
+normally (either Category A or Category B) without OMB concurrence (section 120.41). 
+
+ 
+
+Updates list of situations that could require a reapportionment request to include a scenario where a 
+TAFS needs to increase an indefinite appropriation but the previously approved apportionment did 
+not include an "A" footnote providing automatic apportionment authority (section 120.48). 
+
+ 
+
+Provides link (in Table of Contents above) to view Excel versions of section 120 Exhibits on OMB 
+MAX Community (Exhibits 120A-W). 
+
+ 
+
+Updates section 120 Exhibits throughout to more consistently follow section 120 guidance (Exhibits 
+120A-W). 
+
+ 
+
+Provides an example of how to show an account-specific apportionment to account for a term and 
+condition of the CR (Exhibit 120W). 
+
+ 
+
+INTRODUCTION TO APPORTIONMENTS 
+
+120.1 What is an apportionment? 
+
+ 
+
+An apportionment is an OMB-approved plan to use budgetary resources (31 U.S.C. 1513(b); Executive 
+Order (E.O.) 6166, as amended by E.O. 12608). It typically limits the obligations you may incur for 
+specified time periods, programs, activities, projects, objects, or any combination thereof. An 
+
+
+apportionment is legally binding, and obligations and expenditures (disbursements) that exceed an 
+apportionment are a violation of, and are subject to reporting under, the Antideficiency Act (31 U.S.C. 
+1517(a)(1), (b)). See section 145 for more on reporting violations of the Antideficiency Act. 
+
+120.2 What terms and concepts should I understand to work with apportionments? 
+
+ 
+
+Account-specific apportionments are approved by an OMB Deputy Associate Director (or designee) or an 
+OMB official that has been delegated apportionment authority and typically include specific amounts. They 
+are in contrast to automatic apportionments, described below. 
+
+ 
+
+A Treasury Appropriation Fund Symbol (TAFS) has adjustment authority if OMB has approved an 
+apportionment with a footnote in the Application of Budgetary Resources section (footnote indicator that 
+starts with A) describing what new or additional resources are automatically apportioned without the need 
+for OMB to approve a new apportionment and a YES is in the Line Split column of the adjustment authority 
+line (AdjAut). For instance, OMB may provide adjustment authority for cases where actual earned 
+reimbursements exceed the estimate on the apportionment. For more on adjustment authority, see sections 
+120.49 and 120.50. 
+
+ 
+
+The Antideficiency Act prohibits Federal employees from obligating or disbursing amounts in excess of an 
+appropriation, an apportionment (or in its absence), an allotment, a suballotment or any other subdivisions 
+of funds that are identified in your agency's administrative control of funds. For more on the Antideficiency 
+Act, see section 145. 
+
+ 
+
+An amount is apportioned for obligation in the current fiscal year when it appears on the Category A, 
+Category B, or Category AB lines. Amounts apportioned for obligation in future fiscal years appear on the 
+Category C lines. The Application of Budgetary Resources section also includes lines for amounts that are 
+exempt from apportionment or not apportioned for either current or future fiscal years. 
+
+ 
+
+An automatic apportionment is approved by the OMB Director in the form of a Bulletin or provision in 
+Circular A-11, and typically describes a formula that agencies will use to calculate apportioned amounts. 
+An automatic apportionment is in contrast to the account-specific apportionments, described above, which 
+typically include specific amounts, and which are approved by an OMB Deputy Associate Director (or 
+designee) or an OMB official that has been delegated apportionment authority. 
+
+ 
+
+Carryover amounts are unobligated balances that are available from the prior fiscal year(s) in multi-year 
+and no-year accounts. See section 120.23 regarding the submission, for OMB approval, of requests for the 
+apportionment of carryover amounts. Pursuant to sections 120.7 and 120.56, carryover amounts are 
+automatically apportioned at zero until an account-specific apportionment is issued for such amounts. 
+
+ 
+
+Category A, Category B, Category AB or Category C—Apportioned amounts appear on different groups 
+of lines in the Application of Budgetary Resources section of an apportionment. Amounts are identified in 
+an apportionment: 
+
+ 
+
+• by time (Category A); 
+
+
+ 
+
+• by program, project, or activity (Category B); 
+
+
+ 
+
+• by a combination of program, project, or activity and time period (Category AB); or 
+
+
+ 
+
+• for future years (only for multi-year/no-year accounts) (Category C). 
+
+
+ 
+
+You must report obligations to Treasury with the same categories as used on the apportionment. 
+
+
+Exception apportionment is a colloquial term that describes a type of account-specific apportionment that 
+can be issued for operations under a continuing resolution (CR), in lieu of the OMB-issued automatic 
+apportionment. This excludes account-specific written apportionments for an anomaly provided in the CR. 
+OMB approves exception apportionment requests only in extraordinary circumstances. See section 123.9 
+for additional guidance. 
+
+ 
+
+Footnotes provide additional information and direction beyond the line stubs and dollar amounts. See 
+section 120.34 for more information. 
+
+ 
+
+Impoundment—Pursuant to the Impoundment Control Act, apportionments may also set aside all or a 
+portion of the amounts available for obligation. 
+
+ 
+
+• Amounts deferred through the apportionment process are those portions of the total amounts 
+available for obligation that are specifically set aside as temporarily not available until released by 
+OMB. 
+
+
+ 
+
+• Amounts withheld pending rescission are those portions that are set aside pending the enactment 
+of legislation reducing the authority to obligate such funds. 
+
+
+ 
+
+For further information on deferrals and rescissions, including the difference between an impoundment and 
+a cancellation proposed by the President, see section 112. 
+
+ 
+
+The line split column allows you to provide information about a line or to distinguish between two or more 
+budgetary resource amounts that you would otherwise put on a single line. For more details on line splits, 
+see section 120.19. 
+
+ 
+
+Memo obligations are amounts obligated during the current fiscal year at the time the apportionment request 
+is prepared. The date of the obligations is at the top of the column. 
+
+ 
+
+Program reporting category—Agencies and OMB will work together to determine the program reporting 
+categories (if any, section 120.67) under which the agencies will report their obligations in their SF 133 
+Reports on Budget Execution and Budgetary Resources (see section 130). Program reporting categories 
+should be based on elements that agencies track in their financial systems. Though you are encouraged to 
+use program reporting categories, there are some cases where OMB and agencies will choose not to use 
+any. 
+
+ 
+
+The program reporting categories are not used to apportion funds and are not subject to the Antideficiency 
+Act (Appendix G). 
+
+ 
+
+Reapportionments are made when you need to make changes to the previously approved apportionment for 
+the current year (section 120.48). For example, you should request a reapportionment when approved 
+apportionments are no longer appropriate or applicable because the amounts available for obligation have 
+increased or unforeseen events have occurred. 
+
+ 
+
+The Treasury Appropriation Fund Symbol (TAFS) combines the Treasury agency or department code, the 
+Federal account symbol, and the period of availability of the resources in the account (section 20.3). The 
+period of availability may be annual, multi-year, or no-year (section 20.4(c)). Annual TAFSs have funds 
+that are available for obligation for no longer than one fiscal year. Multi-year TAFSs have funds that are 
+available for a specified period of time in excess of one fiscal year. No-year TAFSs have funds that are 
+available until expended. See section 20.4 for more details. 
+
+ 
+
+
+The Department of the Treasury's list of account symbols may be found here: 
+http://fiscal.treasury.gov/fsreports/ref/fastbook/fastbook_home.htm. 
+
+120.3 Are apportionments made at the Treasury appropriation fund symbol (TAFS) level? 
+
+ 
+
+Yes, apportionments are only made at the TAFS level. See section 20.11 for more details on TAFSs. For 
+cases of allocation transfers, see section 120.29. 
+
+120.4 What TAFSs are required to be apportioned? 
+
+ 
+
+All TAFSs are required to be apportioned, except in the case of a TAFS that is in its entirety exempt from 
+apportionment. See section 120.6 for a TAFS that is partially exempt from apportionment. 
+
+ 
+
+OMB is required to post all approved apportionment documents on a public website. Those apportionments 
+can be found here: https://apportionment-public.max.gov/. 
+
+120.5 What TAFSs are exempt from apportionment? 
+
+ 
+
+The following types of TAFSs are exempt from apportionment: 
+
+ 
+
+• TAFSs specifically exempted from apportionment by 31 U.S.C. 1511(b) or other laws. 
+
+
+ 
+
+• TAFSs for which budgetary resources: 
+
+
+ 
+
+ have expired and therefore the expired TAFS cannot be reapportioned in the expired 
+phase (in this case, the last apportionment during the unexpired phase applies); 
+
+
+ 
+
+ have been fully obligated before the beginning of the fiscal year; or 
+
+
+ 
+
+ are available only for transfer to other TAFSs (unless OMB determines otherwise), 
+which can include TAFSs where the sole purpose of the TAFSs is to effectuate an 
+expenditure transfer between fund types (e.g., between Federal funds and trust funds) 
+(see below for additional information). 
+
+
+ 
+
+Because transfer-only TAFSs that require expenditure transfers (due to crossing Federal fund group to a 
+trust fund) involve an obligation, you must request a letter from your OMB Deputy Associate Director for 
+proper funds control documentation that the TAFS is exempt from apportionment because the funds are 
+available only for transfer to other TAFSs. 
+
+ 
+
+• TAFSs of the following types, which the OMB Director may exempt from apportionment pursuant 
+to 31 U.S.C. 1516: 
+
+
+ 
+
+ Trust funds or working funds if an expenditure from the fund has no significant effect 
+on the financial operations of the United States Government; 
+
+
+ 
+
+ Management funds (Treasury TAFSs with the symbols 3900–3999); 
+
+
+ 
+
+ Payment of claims, judgments, refunds, and drawbacks; 
+
+
+ 
+
+ Payment under private relief acts and other laws that require payment to a designated 
+payee in the total amount provided in such acts; 
+
+
+ 
+
+
+ Foreign currency fund TAFSs (unless OMB requests), section 120.63; 
+
+
+ 
+
+ Interest on, or retirement of, the public debt; and 
+
+
+ 
+
+ Items the President has determined to be of a confidential nature for apportionment 
+and budget execution purposes. 
+
+
+ 
+
+In order to request that the OMB Director exempt a TAFS from apportionment pursuant to 31 U.S.C. 1516, 
+you must send in a formal request with the justification. Your OMB Deputy Associate Director (DAD) or 
+an OMB official that has been delegated apportionment authority will formally notify you in writing about 
+your exemption request. Memoranda that the DAD or delegated official provides to the agency providing 
+an exemption will also be posted within the apportionment system. 
+
+ 
+
+If your exemption request is pursuant to 31 U.S.C. 1516 and specifically for a trust fund or working funds 
+with expenditures that do not have significant effect on the financial operations of the United States 
+Government, your request needs to demonstrate that fact using historical information such as the magnitude 
+of the gifts and donations funding compared to the overall size of the agency's budget, the pattern of 
+obligations in that fund, etc. 
+
+ 
+
+To see a list of TAFSs that are exempt from apportionment, a report is available through the apportionment 
+system. 
+
+120.6 Can a portion of my TAFS be exempt from apportionment? 
+
+ 
+
+Yes, in a very limited number of cases, only a portion of the budgetary resources for a TAFS must be 
+apportioned. In these cases, agencies must show the full amount of budgetary resources—both exempt 
+from apportionment and non-exempt—in the Budgetary Resources section and show the amounts subject 
+to apportionment on apportioned lines, and the amounts not subject to apportionment on Line 6183, Exempt 
+from apportionment in the Application of Budgetary Resources section. 
+
+120.7 Do I need to submit an apportionment every fiscal year for TAFSs that are multi-year/no-
+year? 
+
+ 
+
+Yes. Multi-year/no-year TAFSs with unexpired budgetary resources available for obligation MUST be 
+apportioned every fiscal year, unless exempt under section 120.5. See also section 120.56. 
+
+120.8 Can I incur obligations without an apportionment? 
+
+ 
+
+No, an obligation cannot be incurred without an OMB approved apportionment (account-specific or 
+automatic), except when the relevant account, from which the amounts are being obligated, is exempt from 
+apportionment. The Antideficiency Act (section 145) prohibits the incurring of obligations that exceed the 
+approved apportionment amount (including, e.g., purchase services or merchandise). See section 145 for 
+specifics on the Antideficiency Act. 
+
+120.9 Can I use an apportionment to resolve legal issues about the availability of funds? 
+
+ 
+
+No. The apportionment of funds is not a means for resolving any question dealing with the legality of the 
+amounts available by law or the legality of using funds for the purpose for which they are apportioned. Any 
+question as to the legality of the amounts available by law, or the legality of using funds for a particular 
+purpose, must be resolved through agency legal channels. Importantly, OMB's approval of an 
+apportionment request does not reflect OMB's concurrence with an agency's legal position. 
+
+ 
+
+
+WHAT IS IN AN APPORTIONMENT? 
+
+120.10 How is the apportionment organized? 
+
+ 
+
+The top of the apportionment shows the name and account number of the TAFS being apportioned, and 
+often includes other descriptive information, e.g., agency name, bureau name, budget account name and 
+number. 
+
+ 
+
+The apportionment always includes two sections: Budgetary Resources and Application of Budgetary 
+Resources. The Budgetary Resources section always appears toward the top of the apportionment, and 
+must show all budgetary resources available to the TAFS (e.g., appropriations, reductions, non-expenditure 
+transfers). The Application of Budgetary Resources shows apportioned amounts, which are legal limits that 
+restrict how much an agency can obligate, when it can obligate, and what projects, programs, and activities 
+it can obligate for. 
+
+ 
+
+Apportionments for guaranteed loan accounts include a third section, Guaranteed Loan Levels and 
+Applications. 
+
+ 
+
+Each section of an apportionment includes line numbers and descriptions of all pertinent amounts. See 
+Appendix F1 for a complete list of line numbers and detail descriptions for each line. 
+
+120.11 Why is the Budgetary Resources section needed? 
+
+ 
+
+The Budgetary Resources section is necessary for several reasons. 
+
+ 
+
+• First, it provides sufficient detail for OMB to see what level of funding is coming into the TAFS 
+and therefore available to be apportioned. In many cases, apportioned amounts tie back to amounts 
+on specific budgetary resource lines. 
+
+
+ 
+
+• Second, budgetary resource lines on apportionments match the lines used in the President's Budget 
+Program and Financing schedule and SF 133 Report on Budget Execution and Budgetary 
+Resources. The reason that these three presentations use the same line numbers is to facilitate 
+comparisons that provide agencies and OMB with a basis to know they are looking at the right 
+numbers. In addition, the Budget Enforcement Act (BEA) category (i.e., discretionary or 
+mandatory) information in this section is provided to the Treasury Department to facilitate agency 
+reporting of BEA information in budget execution reports. 
+
+
+ 
+
+• Third, the apportionment is the first step in a fiscal year's budget execution process, and provides 
+the basis for agencies to post information in their funds control and financial systems. 
+
+
+120.12 After OMB approves an apportionment, can I obligate against all budgetary resources? 
+
+ 
+
+Not necessarily. You should not obligate until apportioned amounts have been allotted in accordance with 
+your agency's OMB-approved funds control regulations (see section 150, Administrative Control of Funds). 
+There are other circumstances in which you cannot obligate funds following an apportionment. For 
+example, you cannot obligate against anticipated resources. You must wait until the resources are realized 
+before incurring obligations. Additionally, in some cases, a footnote to the apportionment will state that 
+amounts are apportioned, but are only available for obligation when specified events occur (such as an 
+agency taking certain action). 
+
+
+120.13 What is the format of the Application of Budgetary Resources section and what categories 
+does OMB use to apportion funds? 
+
+ 
+
+OMB usually uses one of four categories to apportion budgetary resources in a TAFS. 
+
+ 
+
+Category A apportions budgetary resources by fiscal quarters, e.g., quarter one (October 1 through 
+December 31) and quarter two (January 1 through March 31). Lines 6001 through 6004 are used for 
+quarters one through four, respectively. 
+
+ 
+
+Category B apportions budgetary resources by program, project, activities, objects or a combination of these 
+categories. Lines 6011 through 6110 are used for Category B apportioned amounts. One TAFS can 
+potentially have dozens of Category B apportionments, each pertaining to specific activities, projects, and 
+so on. There are also cases when it makes programmatic sense for OMB to use a single, Category B 
+apportionment for a given TAFS. 
+
+ 
+
+Category AB apportions budgetary resources by a combination of fiscal quarters and projects. You may 
+use Lines 6111 through 6159 to apportion in this manner. See section 8 of Appendix F for a full list of line 
+numbers and descriptions. 
+
+ 
+
+Category C apportions budgetary resources in multi-year and no-year TAFSs into future fiscal years. Lines 
+6170 thru 6173 are used for Category C apportioned amounts. (Note: Category C amounts that OMB 
+apportions in one year are not available for you to obligate against in the following year. For these amounts 
+to be available, OMB must approve a new request in the following year that apportions these amounts on 
+Category A, B, or AB lines.) See section 120.52 for additional information. 
+
+ 
+
+Apportionments may include a combination of categories. 
+
+ 
+
+In some cases (uncommon), resources in the Budgetary Resources section are not apportioned. In such 
+cases, the non-apportioned budgetary resources are shown using one of four apportionment lines — 
+
+ 
+
+(1) 6180, Withheld pending rescission (rarely used), 
+
+
+ 
+
+(2) 6181, Deferred (rarely used), 
+
+
+ 
+
+(3) 6182, Unapportioned balance of a revolving fund, and 
+
+
+ 
+
+(4) 6183, Exempt from apportionment (uncommon, and used in TAFSs with both budgetary resources 
+subject to and exempt from apportionment — at the bottom of the section on the Application of 
+Budgetary Resources). 
+
+
+ 
+
+Agencies must report obligations to Treasury (GTAS) using the same level of specificity as appears on the 
+apportioned section of your most recent approved apportionment. For instance, if OMB uses a single 
+Category B project with five program reporting categories, you must report obligations for each program 
+reporting category. Likewise, if OMB uses ten Category B projects and you incur obligations for each of 
+these projects, your GTAS submission and SF 133 budget execution report must show obligations for each 
+of these ten Category B projects and continue to report them in the expired phase. 
+
+120.14 What is the format of the Guaranteed Loan Levels and Applications section? 
+
+ 
+
+An apportionment for guaranteed loan financing accounts can have a third section, Guaranteed Loan Levels 
+and Applications section. This section shows limitations on loan levels by program level either from the 
+current year and/or unused from prior year(s), and the application of the program level by quarter, risk 
+
+
+category, or a combination. The total of the limitation on loan levels by program level should equal the 
+total of the application of the program levels. 
+
+120.15 What other kinds of information may an apportionment include? 
+
+ 
+
+Many kinds of additional information can be integrated into an apportionment request. Here are some 
+examples. 
+
+ 
+
+Allocations. The allocations tab (if required by your RMO examiner) includes a list of all transfer allocation 
+(or children) accounts that are expected to receive a non-expenditure transfer of funds from the parent TAFS 
+being apportioned. The allocation accounts are subject to the Antideficiency Act. Unless OMB separately 
+apportions an allocation account after apportioning the parent account, the allocation account must follow 
+all apportioned amounts, footnotes, and other guidance of the parent account (see section 120.29 for more 
+details). 
+
+ 
+
+Footnotes. Footnotes appear on one of three tabs: "Previously Approved Footnotes," "Agency Footnotes," 
+and "OMB Footnotes." Footnotes on the OMB Action column in the Application of Budgetary Resources 
+section (footnote indicator starts with A) are subject to the Antideficiency Act. See section 120.34 for 
+additional information on footnotes. 
+
+ 
+
+Program Reporting Categories. When used, these identify the level of detail that an agency must use in 
+reporting its obligations on SF 133 budget execution reports. These appear on the PgmCat tab in the 
+apportionment request. These are not subject to the Antideficiency Act. See section 120.67 for additional 
+information on program reporting categories. 
+
+ 
+
+System-generated reports. When agencies validate requests, the apportionment system sometimes creates 
+reports showing latest SF 133 versus the apportionment request; warrants; and non-expenditure transfers. 
+These reports are not subject to the Antideficiency Act. 
+
+ 
+
+Additional tabs. Apportionments are almost always prepared, submitted and approved in Excel files. 
+Certain tabs in the Excel file house the apportionment request or footnotes. Others are reserved for other 
+specific kinds of information. Agencies may also use additional tabs as attachments to the apportionment. 
+Tabs in the Excel file are only subject to the Antideficiency Act if specifically referenced in a footnote in 
+the OMB Action column of the Application of Budgetary Resources section of the apportionment (see 
+section 120.36). 
+
+ 
+
+Attachments. Attachments may include Word, PDF, or Excel files with a wide range of information that 
+pertains to the apportionment request, but that is not included in the Excel file containing the request. These 
+attachments are subject to the Antideficiency Act only if they are specifically referenced in a footnote in 
+the OMB Action column of the Application of Budgetary Resources section of the apportionment (see 
+section 120.36). 
+
+ 
+
+PREPARING THE APPORTIONMENT REQUEST 
+
+120.16 How can I submit an apportionment request? 
+
+ 
+
+The vast majority of apportionments are submitted by agencies and approved by OMB using OMB's secure, 
+web-based apportionment system. When questions or issues arise using the system, please send the Excel 
+file you are working with and a brief description of the issue to "apportionment@omb.eop.gov." Please 
+direct questions of a substantive nature to your OMB representative. 
+
+ 
+
+
+In a limited number of cases necessitated by extenuating circumstances, OMB may approve an 
+apportionment by e-mail or other non-system methods consistent with 31 U.S.C. 1513. Once the 
+extenuating circumstances have passed (or sooner if possible), agencies and OMB should process these 
+same requests using the apportionment system. 
+
+120.17 Is there a standard, set number of lines to show in an apportionment request? 
+
+ 
+
+No. While the format of the request is fixed and uses specific columns to hold certain kinds of information, 
+the number of lines used for a given TAFS varies considerably. The apportionment system allows you to 
+pick from more than 125 different budgetary resource lines, but agencies will only want to show amounts 
+on a few of these lines for any given TAFS. For example, a TAFS with only an annual appropriation may 
+just use one budgetary resource line. 
+
+ 
+
+The system provides significant flexibility to allow agencies to put in other lines with zero amounts. For 
+instance, an apportionment for a given TAFS might show all discretionary appropriations lines, but no 
+mandatory appropriations lines. Agencies must work closely with their OMB representatives in determining 
+which budgetary resource lines to show with zero amounts (e.g., post short-term continuing resolution, see 
+section 120.62). 
+
+ 
+
+Appendix F1 shows all possible line choices that are available in the apportionment system. 
+
+120.18 What header information at the top of the apportionment must I complete? 
+
+ 
+
+The header must provide the fiscal year for the apportionment and a public law (if no public law is available 
+right after the enactment of the bill, the H.R. number is acceptable). The public law reference may be 
+descriptive if there are multiple public laws covered by the apportionment or if the annual appropriations 
+act is not enacted. Some examples are: 
+
+ 
+
+• Funds provided by Public Law N/A – Carryover 
+
+
+ 
+
+• Funds provided by Public Law N/A – Multiple 
+
+
+120.19 What do I put in each column of the apportionment request? 
+
+ 
+
+TAFS. TAFS information appears in columns A through F of apportionment requests. The columns show: 
+Treasury agency; period of availability (FY1 and FY2); and allocation account and sub-account, if 
+applicable. For presentation purposes, these columns are often hidden. You can unhide these columns if 
+necessary. As part of validating requests or sending requests, the system checks that these columns are 
+filled out properly; if they are not, the system provides an error message. 
+
+ 
+
+The apportionment system will only accept apportionments that use the three-digit CGAC agency codes 
+(see Appendix C for a listing). For these apportionments, each TAFS code will appear in a single cell, and 
+columns A through F will no longer be dedicated to showing that information. 
+
+ 
+
+Line numbers. Appendix F1 shows a complete list of line numbers and descriptions. 
+
+ 
+
+Line splits. You must provide line split in the following cases: 
+
+ 
+
+• The IterNo (Iteration Number) line shows the number of times OMB has approved (apportioned) 
+an apportionment for a given TAFS in a fiscal year. No action is necessary if you use the Create 
+Template function in the apportionment system as a starting point for preparing your requests. The 
+
+
+
+apportionment system automatically puts in the Iteration Number in the line split column, as well 
+as puts the last approval date in the line stub column. 
+
+
+ 
+
+• The RptCat line indicates whether the TAFS uses Program Reporting Categories (section 120.67). 
+Use "YES" or "NO", as appropriate, for the line split column. 
+
+
+ 
+
+• The AdjAut line indicates whether OMB has approved a footnote in the Application of Budgetary 
+Resources section (footnote indicator that starts with A) on the apportionment that allows specific 
+types of adjustments to be made without submitting a reapportionment request. Use "YES" or 
+"NO", as appropriate, for the line split column. (See section 120.50) 
+
+
+ 
+
+• Line 1000 shows unobligated balances. For unobligated balances in no-year and multi-year TAFSs 
+with both mandatory and discretionary funding, you must use a line split that starts with the letter 
+"D" to show the portion of the balances that are discretionary. To distinguish between estimated 
+and actual balances, use line splits of "E" to show estimated balances or "A" to show actual 
+balances. Use "DE" or "DA" to indicate estimated from actual discretionary balances, respectively, 
+and use "ME" and "MA" to indicate estimated from actual mandatory balances (section 120.20). 
+
+
+ 
+
+You may use the line splits to distinguish between two or more amounts that you would otherwise put on a 
+single line. For example, you may use line splits to distinguish between two or more sources of collections, 
+to distinguish between unobligated balances from reimbursable authority versus direct appropriations, or 
+even to distinguish sequestration amounts on an apportionment. 
+
+ 
+
+You cannot use line number splits for the Application of Budgetary Resources section. 
+
+ 
+
+Previous Approved Column. 
+
+ 
+
+• Leave the column blank for the first request you submit for a given fiscal year. See exhibits 120C, 
+and 120D, and 120F for examples of an annual (one-year) appropriation, a no-year appropriation, 
+and appropriations provided by a continuing resolution. 
+
+
+ 
+
+• Include amounts from the "OMB Action" column of the previously approved apportionment within 
+the same fiscal year. This includes any adjustments under sections 120.49 or unless your RMO 
+determines any other adjustment authority granted to you by OMB in writing (section 120.50). 
+
+
+ 
+
+• When appropriations are enacted following one or more CRs, include the amounts from the last CR 
+in this column (see section 120.60) unless otherwise required by your RMO. 
+
+
+ 
+
+• For reapportionment requests add the indicator, e.g., A1, B1\B2, which indicates that a footnote(s) 
+appears on the previous approved footnote worksheet tab. If your earlier apportionment had 
+footnotes, the worksheet tab will be automatically populated by the apportionment system. 
+
+
+ 
+
+Agency Request Column. 
+
+ 
+
+• Include the amounts you are requesting in this column. 
+
+
+ 
+
+• Include an indicator, e.g., A1, B1, which indicates that a footnote appears on the agency footnote 
+tab. See section 120.34 for more information on footnotes. 
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+OMB Action Column. 
+
+ 
+
+• The apportionment system places formulas in the OMB Action column to set it equal to the Agency 
+Request column. OMB will adjust the OMB Action values as necessary when reviewing and 
+approving your request. 
+
+
+ 
+
+• Include an indicator, e.g., A1, B1, which indicates that a footnote appears on the approved footnote 
+tab. The footnotes in the OMB Footnote column override all other footnotes. 
+
+
+ 
+
+Memo Obligations Column. 
+
+ 
+
+• Include memorandum obligations in this column. Also include the date of the obligations using 
+the MM-DD-YYYY format on the RptCat row. The memo obligations support your 
+reapportionment request. 
+
+
+120.20 Do I need to follow special conventions to show the portion of discretionary balances in split 
+accounts (TAFSs with both mandatory and discretionary funds)? 
+
+ 
+
+Yes. For unobligated balances in no-year and multi-year TAFSs with both mandatory and discretionary 
+funding (split accounts), you must show the discretionary portion of the balances by using a line split that 
+starts with the letter "D" and you must show the mandatory portion of the balances by using a line split that 
+starts with the letter "M". You will do this solely on Line 1000, Unobligated balance, brought forward, 
+Oct. 1. You must also change the Line Stub to start with the word Discretionary, e.g., Discretionary 
+Unobligated balance, brought forward, Oct. 1 or Mandatory Unobligated balance, brought forward, Oct. 1, 
+as appropriate. Many agencies use line splits of "E" or "A" to distinguish Estimated from Actual balances, 
+respectively. In these cases, you would use "DE" or "DA" to indicate estimated from actual discretionary 
+balances, respectively and you would use "ME" or "MA" to indicate estimated from actual mandatory 
+balances, respectively. 
+
+120.21 Can I use amounts that include decimal points or cents in an apportionment? 
+
+ 
+
+No. You must round all amounts up to a dollar in apportionment requests. In addition, you may not round 
+amounts to thousands. When you round up, the delta between the actual cents and the amount apportioned 
+is not available for obligation and your funds control system must reflect that. Additionally, you should 
+add a "B" footnote on line 1920 of the Budgetary Resource section of the apportionment to indicate that 
+rounding has occurred and, therefore, rounded amounts on the apportionment will not match amounts 
+reported on the SF 133 which are reported to the penny. Here is an example of such a footnote: 
+
+ 
+
+"Pursuant to section 120.21 of OMB Circular A-11, one or more lines in the Budgetary Resources section 
+may be rounded up. As a result, those rounded lines will not match the actuals reported on the SF 133. 
+Agency will ensure that its funds control system will only allot actuals." 
+
+120.22 Should I use a specific numeric format in the Excel file that holds my request? 
+
+ 
+
+Yes, you must use whole numbers (decimal points are not permitted) or blanks in numeric columns. 
+Numeric columns include the Previous Approved Amount, Agency Request, OMB Action, and 
+Memorandum Obligations columns. Numbers (including zero) must be formatted using the number format 
+with thousands separator (a comma), and with a leading negative sign (-). You cannot use asterisk, special 
+characters, or letters in numeric columns of any apportionment request. Further, you cannot format a 
+number, zero or otherwise, to appear as an asterisk or other special character. There is a single exception: 
+in the memorandum obligations column only, you may use a date format on the RptCat line. 
+
+
+120.23 When are apportionments due at OMB for a new fiscal year? 
+
+ 
+
+If ... 
+
+Then, submit your first apportionment request by... 
+
+Any part of the budgetary resources for a TAFS is not 
+determined by current action of the Congress (such as 
+permanent appropriations, public enterprise and other 
+revolving funds subject to apportionment, 
+reimbursements and other income, and balances of 
+prior year budget authority) 
+
+August 21, as required by 31 U.S.C. 1513(b) 
+
+All or any part of the budgetary resources for a TAFS 
+are determined by current action of the Congress 
+
+August 21, or within 10 calendar days after the 
+enactment of the appropriation or substantive acts 
+providing new budget authority (i.e., authorization 
+bills), whichever is later 
+
+
+
+ 
+
+After August 21, OMB requires an explanation for any delayed initial apportionment requests in accounts 
+with budgetary resources not dependent on current action of the Congress. 
+
+ 
+
+We encourage you to begin preparation of apportionments and related materials as soon as the House and 
+Senate have reached agreement on funding levels. In this way, you can make a timely submission of your 
+request to OMB, and OMB can have adequate time for its review. 
+
+120.24 When is the apportionment system open for a new fiscal year? 
+
+ 
+
+The apportionment system will open to agencies to start preparing requests no later than August 1 (or the 
+following business day). Agencies can submit their requests starting August 8. 
+
+120.25 Can I combine TAFSs on a single apportionment? 
+
+ 
+
+No. From time to time, agencies ask whether they can combine (or "roll-up") the amounts from two or 
+more TAFSs, and submit an apportionment for this single "combined" TAFSs (e.g., miscellaneous 
+accounts). Agencies may not do this because the apportionments must tie back to the statutory authority, 
+which explicitly makes distinctions between accounts and defines the period of availability of the funds in 
+the accounts. These are generally the same pieces of information that distinguish one TAFS from another. 
+
+120.26 Should I assemble apportionment requests for multiple TAFSs in a single package or file? 
+
+ 
+
+Yes, unless your OMB representative determines otherwise. To the extent practical, submit apportionment 
+requests for each independent agency, departmental bureau, or similar subdivision together. 
+
+120.27 Can I cross-check information in the Budgetary Resources section? 
+
+ 
+
+Yes. You can cross-check information in certain cases against the President's Budget or the most recent SF 
+133 Reports. In addition, for general fund TAFSs, you should check that appropriations and warrants by 
+Treasury (if any) are consistent and you can check that actual non-expenditure transfers match transfers 
+processed at Treasury. See https://community-dc.max.gov/x/v5Bwkg. 
+
+120.28 Who can approve the apportionment request for the agency? 
+
+ 
+
+Agencies must use appropriate internal controls in preparing apportionment requests, and specifically 
+ensure that the agency official with authority to review and approve the request has done so. The approving 
+
+
+official at the agency is not required to sign the request that is sent to OMB, but may do so if required by 
+the agency's internal controls or if requested by the OMB examining division. OMB's apportionment 
+system does not accommodate electronic signatures of agency officials. 
+
+120.29 Who is responsible for preparing the apportionment request for allocation (parent/child) 
+accounts? 
+
+ 
+
+Allocation accounts involve both a "parent" appropriation and a "child" recipient of budgetary resources 
+via an allocation non-expenditure transfer. For instance, if an appropriation is enacted to the Funds 
+Appropriated to the President's International Military Education and Training account (11-1081 /X), and a 
+subsequent allocation is made to the Department of the Army (Treasury agency 21), then the allocation 
+non-expenditure transfer from 11-1081 /X to Army would be as follows: 11-1081 /X transfer to 21-11-
+1081 /X. 
+
+ 
+
+Unless OMB determines otherwise, the agency that receives the appropriation to be allocated (the "parent") 
+should submit a single, consolidated apportionment request that encompasses both the parent TAFS and all 
+the allocated recipient "child" agencies and/or bureau TAFSs (see exhibit 120P for an example that uses 
+different lines to distinguish between the parent and children on the apportionment). Additionally, 
+allocation transfers are normally apportioned at the same category level as the parent account (e.g., Category 
+A, B, AB, or C). The agency administering the parent TAFS will indicate to the receiving agency what 
+portion of the consolidated apportionment is transferred to the allocation TAFSs. 
+
+ 
+
+Allocation account apportionments, however, can be done in different ways. See exhibit 120R for an 
+example of a parent-only allocation apportionment and exhibit 120Q for an example of a child-only 
+allocation transfer apportionment. 
+
+ 
+
+The parent agency must ensure that the recipients are provided the approved apportionment request on a 
+timely basis. Obligations incurred for the program as a whole are limited by the approved apportionment. 
+Receiving agencies will be responsible for keeping obligations within the amount so specified in the 
+apportionment or to the amount transferred to it from the parent. 
+
+ 
+
+Allocation worksheets are no longer required if you are using allocations on the apportionment. 
+
+ 
+
+In order for the transfers to crosswalk correctly in the SF 133 and President's Budget, please ensure that 
+both the parent and child use the appropriate USSGL for allocation transfers 
+(http://www.fms.treas.gov/ussgl/index.html). 
+
+ 
+
+SUBMITTING APPORTIONMENT REQUESTS 
+
+120.30 How do I submit apportionment requests to OMB? 
+
+ 
+
+Agencies will typically use OMB's web-based apportionment system to submit their apportionment requests 
+to OMB (see section 120.32 for getting permission in the system to send). In those circumstances when 
+you are unable to use the web-based system, e-mail the Excel file containing your request to your OMB 
+representative. You will almost always be required to send OMB an electronic copy of the apportionment 
+request. In some cases, the OMB representative may request you to provide a hard copy of the signed 
+request. 
+
+ 
+
+ 
+
+
+120.31 What functions will I perform using the apportionment system? 
+
+ 
+
+OMB's web-based apportionment system is the primary system agencies will use to prepare, submit, and 
+run reports on their apportionment requests. Staffers with authority to use the system may use the 
+Support\Links tab to find detailed guidance on using the system. 
+
+ 
+
+Below is a brief overview of the major functions. 
+
+ 
+
+(a) Create template 
+
+ 
+
+Use the Create Template screen to get a starting point for your request. If you are only creating one TAFS, 
+the data entry screen is the best starting point. If the TAFS you are working with has already been 
+apportioned in the fiscal year for which you are submitting a request, the system will create a properly 
+formatted Excel file with the most recently approved information in the Previous Approved column. If the 
+TAFS has not yet been apportioned or has never been apportioned, you can draw source data from a 
+previous fiscal year and/or a different TAFS to provide a starting point for your request. 
+
+ 
+
+(b) Validate 
+
+ 
+
+After you have created a template and updated it to reflect the proper information for your request, use the 
+Validate Request screen to do two things: check for any math or formatting errors, and if there are no errors, 
+create a new file that is ready to be submitted to OMB. This file will have several Excel tabs that were not 
+in your original template. It will have the tab called Appor_Req_to_OMB with the primary apportionment 
+information. It will have a tab to hold any footnotes that OMB may wish to include with the apportionment. 
+If any of the TAFSs in your file have warrants, transfers, or SF 133 data (excluding parent or child allocation 
+accounts) for the fiscal year of your requests, the validated file will also have tabs to display these items. 
+You will need to download and save this file wherever you keep your apportionment files. 
+
+ 
+
+(c) Send 
+
+ 
+
+If your agency administrator has given you the ability to send requests, you can use the Send tab to send 
+files to OMB, or in some cases, to send files to a central office in your agency that will approve requests 
+and send them to OMB. 
+
+ 
+
+(d) Run reports 
+
+ 
+
+At any time, you can go to the Run Reports tab to find information associated with your apportionment 
+request, including the latest approved amounts, the latest submission and approval dates, etc. 
+
+120.32 How do I gain access to the apportionment system? 
+
+ 
+
+The apportionment system can be found here: https://apportionment.max.gov. 
+
+ 
+
+In order to use the apportionment system to prepare requests and run reports, you must have a MAX User 
+ID and your agency administrator must add you to one or more apportionment groups. Your administrator 
+may also choose to give you the ability to submit requests to OMB. 
+
+ 
+
+You can register for a MAX User ID here: https://portal.max.gov/portal/main/displayRegistrationForm. 
+
+You can find your agency administrator here: https://portal.max.gov/home/sa/findAgencyAdminForm. 
+
+ 
+
+
+120.33 Are there situations when I would not use the apportionment system? 
+
+ 
+
+In limited circumstances, OMB may apportion using a letter apportionment. Additionally, during a 
+continuing resolution period, OMB will sometimes apportion certain types of budgetary resources, such as 
+spending authority from offsetting collections, using a blanket written letter apportionment in addition to 
+the OMB CR Bulletin. Consult your OMB representative for more information. 
+
+ 
+
+FOOTNOTES TO APPORTIONMENTS 
+
+120.34 What are apportionment footnotes (and footnote indicators)? 
+
+ 
+
+The request tab of an apportionment includes columns for previous approved amounts, agency request, and 
+OMB action. Next to each of these columns, in turn, is a column for a footnote indicator. The use of a 
+footnote indicator on the request tab, e.g., A1, B1, indicates that one or more footnotes are associated with 
+that line. 
+
+ 
+
+Footnotes appear as textual descriptions on specific tabs in the apportionment file, and typically provide 
+additional information or direction associated with one or more lines on the request. A request includes 
+separate footnote tabs associated with amounts in the previously approved request column, agency requests 
+column, and OMB Action column. Footnotes are divided into two basic groups: footnotes for apportioned 
+amounts (in the Application of Budgetary Resources section), and informational footnotes for budgetary 
+resources. 
+
+ 
+
+Footnotes for Apportioned Amounts (Application of Budgetary Resources section). Each footnote indicator 
+in this section begins with the letter A. These footnotes are associated with one or more lines in the 
+Application of Budgetary Resources section (the bottom section of the apportionment, OMB action 
+column), have legal effect, and are subject to the Antideficiency Act. For example, a footnote may allow 
+for an upward adjustment of budgetary resources in excess of amounts prescribed in section 120.49 without 
+the need for further action by OMB. 
+
+ 
+
+Footnotes for Budgetary Resources (Budgetary Resources section). Each footnote indicator in this section 
+begins with the letter B. These footnotes are informational and are associated with one or more lines in the 
+Budgetary Resources section (the top section of the apportionment). For example, a footnote may identify 
+the source of offsetting collections or explain the basis for amounts on a recovery line. Because these 
+footnotes are not in the Application of Budgetary Resources section (e.g., apportioned), they have no legal 
+effect. 
+
+ 
+
+Indicators for footnotes. Footnotes are designated (indicated) through a letter/number combination. Each 
+footnote indicator starts with a letter A or B (A for apportioned amounts in the application of budgetary 
+resource section; B for budgetary resource), which is followed by a one- or two-digit number: e.g., B1. If 
+a single line has more than one footnote, separate the indicators with commas: A1, A2, A3. 
+
+ 
+
+You can find more detailed implementation guidance in OMB's secure, web-based apportionment system 
+under the "Open Support \ Links" tab in navigation menu. 
+
+120.35 Do footnotes starting with the letter A correspond to Category A apportioned amounts while 
+those starting with the letter B relate to Category B apportioned amounts? 
+
+ 
+
+No. Footnote indicators associated with lines in the Budgetary Resources section start with the letter B. 
+Footnote indicators associated with lines in the Application of Budgetary Resources section (apportioned 
+
+
+amounts) start with the letter A (irrespective of whether apportioned amounts are Category A, B, AB, 
+or C). 
+
+120.36 Will footnotes and additional tabs/attachments become part of the apportionment? 
+
+ 
+
+Yes, but they will only be subject to the Antideficiency Act if they are specifically referenced in a footnote 
+in the OMB Action column of the Application of Budgetary Resources section of the apportionment. 
+
+ 
+
+It is no longer necessary to include a footnote stating that attachments not referenced in the apportionment 
+are not subject to the Antideficiency Act. 
+
+120.37 What footnotes are required for agencies to include in their apportionment requests? 
+
+ 
+
+There is no universal requirement to include footnotes in an apportionment request, except for those 
+required after a short-term CR (see section 120.60). Many apportionments are approved without footnotes. 
+Here are examples of cases when you use footnotes: 
+
+ 
+
+• If you submit an apportionment request and OMB included footnotes in the OMB Footnotes tab of 
+the last approved apportionment, the previously approved footnote indicators must appear in the 
+Prev Footnote column and the text must appear in the Previously Approved Footnotes tab. 
+
+
+ 
+
+• If a particular TAFS has a standard footnote year after year, retain it in your apportionment request 
+unless you have consulted with OMB. 
+
+
+ 
+
+• Include any footnotes your OMB examining division has specifically directed you to include. 
+
+
+ 
+
+• Unless OMB determines otherwise, when amounts are automatically apportioned (as specified in 
+sections 120.49, 120.50 (if applicable) or section 185.20) and there is a subsequent need for 
+reapportionment, show automatically apportioned amounts in the previously approved column. 
+Include a footnote noting where changes have been previously made as automatic apportionments. 
+
+
+ 
+
+• During a CR period, if you are reapportioning an account that has budgetary resources provided by 
+other Acts (e.g., unobligated balances, spending authority from offsetting collections, etc.) and a 
+CR Bulletin, you do not need to show the automatically apportioned amounts in the previously 
+approved column. However, you must continue the footnote provided in section 123.17. Please see 
+section 120.59 for more details. 
+
+
+120.38 Are there footnotes that are automatically applied to annual and multi-year apportionments? 
+
+ 
+
+Yes. The following footnote is automatically apportioned for all annual and/or multi-year TAFS that may 
+need to liquidate obligations that were incurred against canceled appropriations: 
+
+ 
+
+"Pursuant to 31 U.S.C. 1553(b), not to exceed one percent of the total appropriations for this account is 
+apportioned for the purpose of paying legitimate obligations related to canceled appropriations." 
+
+ 
+
+Written apportionments should no longer include this footnote. 
+
+ 
+
+ 
+
+ 
+
+
+APPROVING APPORTIONMENT REQUESTS 
+
+120.39 How will OMB indicate its approval of an apportionment? 
+
+ 
+
+When OMB approves an apportionment through the apportionment system, you will receive an e-mail with 
+the approved Excel file attached. The e-mail will be from 'apportionment@omb.gov,' and the subject line 
+will include the words 'Approved Apportionment.' 
+
+ 
+
+• The Excel file will include a tab called 'Approval Info,' which shows the name, title, and digital 
+signature imprint of the OMB official who approved the apportionment, as well as other pertinent 
+information. 
+o The official who approves the apportionment may affix her or his electronic signature to 
+the request; or 
+o The official approving a request may sign a paper copy in ink and instruct a staffer to put 
+a digitized picture of the official's signature (along with a note saying which staffer affixed 
+the signature) on the apportionment. 
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+In some cases, the 'Approval Info' tab may not be present. In those cases, OMB will e-mail or fax a hard 
+copy of the apportionment that displays the signature of the approving OMB official. 
+
+ 
+
+The Excel file is locked, and should be opened in read-only mode. OMB maintains a copy of the approved 
+apportionment in its secure, web-based system. OMB also maintains the signed-in-ink apportionment in 
+those cases when a designated staffer affixes an official's digitized signature to the apportionment. As OMB 
+continues to transition from using ink signatures to using digital authoritative marks, you may receive 
+apportionments that have been approved using either method. 
+
+ 
+
+OMB may also choose to indicate its approval of an apportionment in other ways, including by letter, 
+telephone, hard copy, or other method that is appropriate to the particular circumstance. For instance, in 
+rare circumstances where you need to obligate against a submitted reapportionment as soon as possible, 
+you do not have to wait to receive the signed apportionment in the system before obligating if OMB has 
+notified you that your reapportionment has already been approved. 
+
+ 120.40 When can I expect OMB to approve my first apportionment request for the fiscal year? 
+
+ 
+
+If a TAFS has any budgetary resources that are not determined by current actions of the Congress (e.g., 
+permanent appropriations, carryover of unobligated balances, anticipated collections), OMB will notify you 
+of the action taken on your first apportionment request for the fiscal year by September 10, as required by 
+law (for requests submitted by the August 21 deadline specified by law). For TAFSs that have budgetary 
+resources solely as a result of current action by the Congress (e.g., TAFSs where the only budgetary 
+resource is a discretionary appropriation), OMB will notify you of the action taken on your request by 
+September 10 for requests submitted by August 21 or within 30 calendar days after the approval of the act 
+providing new budget authority, whichever is later. 
+
+120.41 In the case of newly enacted full-year appropriations, am I under an automatic 
+apportionment until OMB approves my first full-year enacted apportionment request? 
+
+ 
+
+Yes. Under this section, newly enacted full-year appropriations, including supplemental appropriations for 
+the current year, are automatically apportioned the pro-rata share (1/365th for each day, 1/366th for a leap-
+year) of the current year's enacted appropriation level. 
+
+ 
+
+
+Once a full-year appropriations Act is enacted, and if the Act was preceded by a short-term continuing 
+resolution (CR), the automatic apportionment provided by the OMB CR Bulletin is no longer in effect; 
+however, the amounts apportioned remain in effect even if the President enacts the full-year appropriation 
+bill prior to the end of the short-term CR period. 
+
+ 
+
+For example, a CR ending November 15th would result in a pro-rata amount of 12.60% (46 days/365 days, 
+non-leap year) apportioned. If the CR is extended through December 20th an additional 9.59% (35 days/365 
+days) would be apportioned, bringing the total percentage of the rate of operations apportioned to 22.19% 
+since October 1st. If full-year appropriations are enacted on December 15th (before the end of the CR 
+period), on December 15th you are automatically apportioned the 30 days' worth of the enacted full year 
+appropriation (30 days/365 days = 8.22%) pursuant to the automatic authority provided by this section. 
+Therefore, from October 1st through January 15th you have been apportioned a total of 30.41%, 22.19% of 
+the rate for operations provided by the short-term CR from the OMB CR Bulletin plus 8.22% of the final 
+appropriated amount pursuant to this section. 
+
+ 
+
+The automatic apportionment does not apply to any budgetary resource provided by authorizing legislation 
+or by reauthorizations that affect appropriated resources, such as the Farm Bill or surface transportation 
+reauthorizations. Additionally, pursuant to sections 120.7 and 120.56, automatic apportionment does not 
+apply to carryover amounts, which are automatically apportioned at zero until an account-specific 
+apportionment is approved for such amounts. 
+
+ 
+
+Pending OMB's approval of the first written account-specific apportionment request for full-year enacted 
+appropriations for the current fiscal year, agencies are automatically apportioned 30-calendar days of funds 
+calculated using the above rate. Note that the pro-rata share calculation does not include rescissions and 
+other transactions used to calculate the pro-rata share pursuant to the OMB CR Bulletin. The 30-calendar 
+days begin on the date of enactment of a full-year appropriation, except for after a lapse in appropriations 
+(see below). If OMB has not approved a request on the 30th calendar day after enactment, agencies are 
+automatically apportioned another 30 calendar days of funds using the above rate. This repeats until an 
+account-specific apportionment is approved. Once a written account-specific apportionment is approved 
+by OMB, the automatic apportionment ceases to remain in effect. 
+
+ 
+
+If an agency has not yet submitted its first written account-specific apportionment request to OMB within 
+the first 30-day automatic apportionment period, the agency must provide an explanation of the delay to its 
+OMB representative. 
+
+ 
+
+Under this automatic apportionment, funds are apportioned as "lump-sum". Agencies have the flexibility 
+to record the "lump-sum" as either Category A or Category B, whichever is applicable to the account. If the 
+funds are Category A, the "lump-sum" is automatically apportioned to the quarter in which the full year 
+appropriation is enacted. If the funds are Category B, the "lump-sum" is automatically apportioned as a 
+single Category B line. Additionally, all of the footnotes and conditions placed on prior year apportionments 
+or last-approved apportionments remain in effect. This guidance applies strictly to all budgetary resources 
+provided by annual full-year appropriations bills, including supplemental appropriations for the current 
+year, and not other budgetary resources. 
+
+ 
+
+For accounts that have appropriations language with permissive carveouts ("up to" or "not more than" or 
+"not to exceed") for a specific amount with a different period of availability (POA) than the main 
+appropriation, the automatic apportionment applies to the main appropriation and not to the carveout 
+amount. Under this scenario the agency must execute a non-expenditure transfer to move the carveout 
+amount and then process an account-specific apportionment to obligate those specific transferred resources. 
+See Exhibit 120T for further guidance on how to prepare the apportionment in these scenarios. 
+
+ 
+
+
+After a lapse in appropriations, the automatic apportionment of full-year appropriations is in effect the day 
+the lapse occurred, not the date the President enacts the full-year appropriation. This situation only applies 
+when a full-year appropriation follows a lapse in appropriations. 
+
+ 
+
+If the full-year enacted appropriations are preceded by a short-term continuing resolution, see sections 
+120.60 and 120.62 for further guidance on how to reflect the previous approved column on your first written 
+account-specific apportionment request. 
+
+AFTER YOU HAVE RECEIVED YOUR APPROVED APPORTIONMENT 
+
+120.42 How should I execute the apportionment? 
+
+ 
+
+You must execute your programs as apportioned and in accordance with all applicable laws. The 
+authorization and / or appropriation language describes the purpose of the program(s) the TAFS will carry 
+out, and may include guidance for you to follow in executing these programs. 
+
+ 
+
+Your apportionment dictates how you must execute programs and control funds. You may only obligate 
+funds within: 
+
+ 
+
+• budgetary resources apportioned and realized; 
+
+
+ 
+
+• amounts apportioned by fiscal quarter (Category A); 
+
+
+ 
+
+• amounts apportioned by program, project, or activity (Category B); 
+
+
+ 
+
+• amounts apportioned by fiscal quarters and programs, projects, or activities (Category AB); and 
+
+
+ 
+
+• guidance provided in OMB approved footnotes in the Application of Budgetary Resources section. 
+
+
+120.43 What if I think that I may have obligated more than the amounts apportioned? 
+
+ 
+
+You may have violated the Antideficiency Act (31 U.S.C. 1517(a)(1)). See section 145. 
+
+120.44 Must I control funds below the apportionment level? 
+
+ 
+
+Yes. Your agency's fund control regulations, as approved by OMB, dictate how you must control funds. 
+See section 150. 
+
+120.45 How should I allot once I receive an apportionment? 
+
+ 
+
+The agency system of administrative control of funds must be designed to keep obligations and expenditures 
+from exceeding apportionments and allotments or from exceeding budgetary resources available for 
+obligation, whichever is smaller, so as to avoid Antideficiency Act violations. See section 150. 
+
+120.46 How do I treat anticipated budgetary resources that are apportioned in the current fiscal 
+year but not yet realized, and do I need to reapportion them once realized? 
+
+ 
+
+Even when anticipated budgetary resources have been apportioned in the current fiscal year, you may not 
+obligate against these resources before the resources have been realized (and, thus, you may not obligate 
+against the resources in an amount that exceeds the amount that has been realized). For example, if OMB 
+has apportioned anticipated budget authority from the agency's collection of user fees, you may not obligate 
+
+
+against those user fees until you have collected them (and, thus, you may not incur obligations that exceed 
+the amounts that have been collected). This guidance also applies to anticipated non-expenditure transfers 
+of budgetary resources. The transferred resources cannot be obligated against until Treasury Fiscal Service 
+has processed a non-expenditure transfer document and the resources are in the receiving account. 
+
+ 
+
+Apportioned anticipated budgetary resources, once realized, do not need to be reapportioned unless the 
+amount realized exceeds the conditions on the total amount apportioned (see section 120.49). However, 
+this only applies during the current fiscal year. For instance, if you had anticipated resources apportioned 
+in the prior fiscal year for a reimbursable agreement but it was not realized, you will need to reapportion 
+those anticipated resources in the next fiscal year. 
+
+120.47 What is the relationship between the apportionment and the Funds Control System? 
+
+ 
+
+The agency's system of administrative control of funds (see section 150 and Appendix H) should be 
+designed to keep obligations from exceeding apportioned amounts, allotments, suballotments, and other 
+administrative subdivisions of funds. This funds-control system also should be designed to keep obligations 
+from exceeding budgetary resources that have been realized, and should be able to track obligations by 
+program reporting categories used in the apportionment. 
+
+ 
+
+The funds-control system must track obligations to make sure obligated levels do not exceed: 
+
+ 
+
+• budgetary resources apportioned; 
+
+
+ 
+
+• amounts provided by fiscal quarter in Category A; 
+
+
+ 
+
+• amounts provided by program in Category B; 
+
+
+ 
+
+• amounts provided by program in Category AB; and 
+
+
+ 
+
+• other restrictions placed in OMB approved footnotes in the Application of Budgetary Resources 
+section. 
+
+
+ 
+
+If the funds-control system cannot provide this control, the agency must develop other methods to perform 
+this function, e.g., developing monitoring reports. 
+
+ 
+
+Since footnotes are not often implemented in an agency's financial system, the agency's budget, finance, 
+and procurement staff need to be aware of and understand the directions and restrictions provided in 
+footnotes. 
+
+ 
+
+Your agency's accounting system must fully support the funds-control system (see Appendix H). 
+
+ 
+
+CHANGES TO PREVIOUSLY APPROVED APPORTIONMENTS FOR 
+THE CURRENT FISCAL YEAR 
+
+120.48 What types of situations could require me to request a new apportionment? 
+
+ 
+
+Submit a reapportionment request to OMB when: 
+
+ 
+
+• Your budgetary resources have increased since your previous apportionment for the fiscal year 
+(e.g., actual reimbursements differ significantly from estimates, newly enacted legislation provides 
+more resources); 
+
+
+
+• You want to obligate against the increased resources in the same fiscal year; 
+
+
+ 
+
+• The increase is not covered by the exceptions in sections 120.49 or 120.50 (if applicable); 
+
+
+ 
+
+• Your obligations against an indefinite appropriation for the remainder of the fiscal year are 
+expected to exceed the amount estimated on the latest approved apportionment and the latest 
+approved apportionment does not include an “A” footnote in the OMB Action column that 
+automatically apportions the necessary increase in budgetary resources; or 
+
+
+ 
+
+• Programmatic changes result in a need for an adjustment in the apportionment. 
+
+
+ 
+
+In order to allow time for action by OMB, submit such requests well in advance of the time that the revised 
+amounts, to be apportioned, are needed for obligation (an apportionment for a specific time period, such as 
+for a specific quarter of the current fiscal year, may not be changed after the end of that period). 
+
+ 
+
+When emergencies, such as those involving the safety of human life or the protection of property, require 
+immediate action, you may request, and OMB may approve, a reapportionment by e-mail or other non-
+web-based apportionment system methods (section 120.16). As soon thereafter as it is practical, submit 
+apportionment requests reflecting such action. 
+
+ 
+
+For credit program and financing TAFSs, submit an apportionment request for subsidy reestimates at the 
+beginning of each fiscal year (starting with the fiscal year following the year in which a disbursement is 
+made) as long as the loans are outstanding (see sections 185.17 and 185.18). Also submit an apportionment 
+request for subsidy modifications when the modification is approved by OMB (see section 185.21). Credit 
+program and financing TAFSs are also subject to the standard reapportionment requirements described 
+above (see sections 185.14 through 185.21 for further guidance on apportioning credit accounts). 
+
+ 
+
+Submit an apportionment request within 10 calendar days after enactment of an appropriation, substantive 
+act providing budget authority, where such authority is enacted after the first apportionment for the year 
+has been made (except as specified in section 120.49). We encourage you to begin preparation of 
+apportionments and related materials as soon as the House and Senate have reached agreement on funding 
+levels. 
+
+ 
+
+In some cases, you will need to submit your first apportionment request before the unobligated balance 
+brought forward has been precisely determined. If the unobligated balance brought forward, as shown on 
+the latest approved apportionment schedule, is larger than the unobligated balance at the end of the 
+preceding year, as reported on the final SF 133 for that year, and the difference is larger than the amount 
+specified in section 120.49, OMB must approve the apportionment request before you can obligate the 
+additional funds. 
+
+120.49 What adjustments can I make without submitting a reapportionment request? 
+
+ 
+
+After the first apportionment for the fiscal year, downward adjustments of any amount to budgetary 
+resources, including anticipated amounts, do not need to be reapportioned, unless specifically required by 
+OMB or, at the agency's discretion, for funds control purposes. However, if the decrease applies to amounts 
+apportioned in Category C, and as a result you need to increase the amounts apportioned to Category B(s) 
+or current Cat A or A/B(s) lines, you will have to submit a reapportionment to reflect the reallocation from 
+Category C. Apportioned anticipated budgetary resources, once realized in the current fiscal year of the 
+apportionment, do not need to be reapportioned unless the amount realized exceeds the conditions on the 
+total amount apportioned, as noted below. 
+
+ 
+
+
+Although an apportionment is not required to execute a non-expenditure transfer out of a TAFS, for funds 
+control purposes a reapportionment should follow shortly after such a transfer is executed to reflect the non-
+expenditure transfer and reduce the budgetary resources of the giving account accordingly. 
+
+ 
+
+After the first apportionment for the fiscal year, unless OMB determines otherwise, you may adjust 
+apportioned amounts upwards without submitting a reapportionment request by up to $400,000 or two 
+percent of the amount of total budgetary resources, whichever is lower, to reflect: 
+
+ 
+
+• Upward adjustments in the amount of unobligated balances brought forward; 
+
+
+ 
+
+• Increases in amounts of budget authority transfers or balance transfers; or 
+
+
+ 
+
+• Increases in amounts of actual budgetary resources that are realized above anticipated amounts. 
+
+
+ 
+
+You may only adjust apportioned amounts when OMB apportions either a single program, project, or 
+activity (Category B) or, if the total amount is apportioned, by quarter (Category A or Category AB). When 
+amounts are apportioned by quarter, you must adjust the apportioned amounts in the quarter that is current 
+when you record the resource. For example, if anticipated collections were apportioned in the third quarter 
+but the increased amount above the anticipated collections (still within the lower of $400,000 or two 
+percent) were not realized until the fourth quarter; record the resource in the fourth quarter, not the third. 
+This guidance is not applicable when your resources are apportioned pursuant to an automatic 
+apportionment. In those cases, you record the automatic apportionment of those resources in the quarter in 
+which they are realized. 
+
+ 
+
+If only the name of your apportioned account and/or bureau has changed, you do not need to submit a 
+reapportionment to OMB. 
+
+ 
+
+In credit financing TAFSs, additional amounts for the payment of interest to Treasury are automatically 
+apportioned (section 185.19) if the amounts needed exceed your estimate on the most recent approved 
+apportionment. 
+
+ 
+
+You cannot make any upward adjustments under this section (downward adjustments are not affected) when 
+OMB apportions funds for two or more categories on the same apportionment, such as Category A and 
+Category B, or Category A and Category AB, or two or more Category Bs, etc. In these types of apportioned 
+TAFSs, you must submit a reapportionment request to OMB or otherwise have prior OMB approval (e.g., 
+through an OMB footnote in the Application of Budgetary Resources section that starts with the indicator 
+of A) to adjust apportioned amounts upward. 
+
+ 
+
+Apportionments are not required for transactions to send funds back to the Treasury, such as closing an 
+account. 
+
+120.50 What other types of adjustments can I request OMB to allow me to make without submitting 
+a new apportionment request? 
+
+ 
+
+You may make other specific types of adjustments to apportionments without submitting a reapportionment 
+request if specified in a footnote in the Application of Budgetary Resources section (footnote indicator 
+starts with letter A) on the most recently approved apportionment or otherwise approved in writing by 
+OMB. For example, OMB may include on an approved apportionment a footnote (with a corresponding 
+YES in the Line Split column of the Adjustment Authority Provided row) which states that, to the extent 
+provided in law, actual earned reimbursements are automatically apportioned without further OMB action. 
+
+ 
+
+
+In order to facilitate OMB approval of your apportionment request, your apportionment request must 
+indicate that you have previously received, or are requesting, OMB approval to use this authority. 
+
+120.51 What is the status of previously approved apportionments when a new apportionment is 
+approved in the same fiscal year? 
+
+ 
+
+Each new apportionment in a fiscal year supersedes previous apportionment actions taken earlier that year. 
+
+ 
+
+APPORTIONMENTS BY TIME PERIOD 
+
+120.52 Will OMB apportion funds into future fiscal years? 
+
+ 
+
+Yes. OMB will sometimes apportion multi-year/no-year funds into future fiscal years using a Category C. 
+OMB cannot apportion annual funds into a future fiscal year. 
+
+ 
+
+The Congress appropriates funds on a multi-year and no-year basis with the expectation that the funds will 
+be obligated over more than one fiscal year. OMB will apportion these TAFSs beyond the current fiscal 
+year where financial requirements are known in advance and it makes programmatic sense to do so. 
+
+ 
+
+When you plan to obligate amounts appropriated in a no-year or multi-year TAFSs over more than one 
+fiscal year, make sure that the apportionment request shows the full amount appropriated and available for 
+obligation in the current fiscal year. The request must also include planned obligations for the current year 
+and amounts planned for obligation in future fiscal years. 
+
+ 
+
+Note: apportionments last no longer than one fiscal year. Funds must be apportioned at the beginning of 
+each fiscal year in accordance with sections 120.7 and 120.56. 
+
+120.53 When do I use lines 6180 (withheld pending rescission) or 6181 (deferred)? 
+
+ 
+
+Do not use these lines on your apportionment without first consulting with your OMB representative. These 
+lines are used to reflect a proposed rescission or deferral under the authority of the Impoundment Control 
+Act of 1974. If these lines are used on your apportionment, you must submit a rescission or deferral report 
+that outlines the reasons for and the effects of the proposed action. See section 112 for further information 
+on the use of these lines and preparing rescission and deferral reports. 
+
+120.54 Can OMB reapportion a past period? 
+
+ 
+
+No. Apportionments are never subject to change after the period for which the apportionment was made 
+(e.g., a prior fiscal year or a past quarter time period in the current fiscal year). 
+
+ 
+
+For apportionments with Category A amounts, once funds are apportioned, the apportionment cannot be 
+retroactively changed to show a different apportioned amount if that quarter has passed. For instance, if 
+your first quarter apportioned amount was overestimated but in a subsequent quarter the realized actuals 
+were much lower than the estimated amount, you would do the following on the reapportionment: 
+
+ 
+
+• First quarter apportioned amount remains as previously apportioned; 
+
+
+ 
+
+• Current quarter (i.e., second, third or fourth) reflect a negative amount so as to net to the correct 
+total amount that needs to be reapportioned. 
+
+
+ 
+
+See exhibit 120K for an example. 
+
+
+Here are examples of where OMB is not reapportioning a past period: apportionments that simply reflect a 
+past automatic apportionment on a subsequent account-specific apportionment, such as the initial account-
+specific apportionment following a continuing resolution (because the apportionment was in fact in effect 
+during the past quarter time period); or where budget authority has been expressly appropriated to cover 
+prior obligations. 
+
+ 
+
+See section 120.41 for additional guidance about the automatic apportionment of budgetary resources when 
+a full-year appropriations Act follows a lapse in appropriations. 
+
+120.55 Do unobligated resources apportioned in earlier time periods of the same fiscal year 
+remain available? 
+
+ 
+
+Yes. When budgetary resources are apportioned for time periods of less than a fiscal year (e.g., fiscal 
+quarters), any apportioned amounts that have not been obligated at the end of any period will remain 
+available for obligation through the remainder of the current fiscal year without being reapportioned, unless 
+otherwise specified on the apportionment. However, this rule does not apply to unobligated balances 
+apportioned during a short-term continuing resolution that is followed immediately by a lapse in 
+appropriations (see section 123.16). 
+
+120.56 Must I request that funds apportioned in one fiscal year be apportioned in the next fiscal 
+year if the funds were not obligated and remain available? 
+
+ 
+
+Yes. When budgetary resources remain available (unexpired) beyond the end of a fiscal year, you must 
+submit a new apportionment request for the upcoming fiscal year. You cannot incur obligations in any year 
+absent an approved apportionment for that year. For instance, if OMB apportioned $1 million for a no-year 
+TAFSs in FY 2018 and you obligated no funds, you must still submit an FY 2019 request and receive OMB 
+approval of that request before incurring obligations in FY 2019. Until you receive an account-specific 
+apportionment from OMB, the amount of carryover apportioned is zero dollars. In addition, apportioned 
+anticipated or estimated resources are not available for obligation until the resources are realized. 
+
+120.57 What is the status of approved apportionments from a previous fiscal year on apportionments 
+in the current fiscal year? 
+
+ 
+
+New apportionment action for a fiscal year is independent of all apportionment actions of the previous year, 
+including the apportionment of amounts under Category C in the previous fiscal year. 
+
+120.58 How does the last approved apportionment govern the actions a TAFS takes when the TAFS 
+enters the expired phase? 
+
+ 
+
+Every annual and multi-year TAFSs, as well as some no-year TAFSs, has a finite period of time to incur 
+an obligation; this is called the unexpired phase. OMB only apportions TAFSs in the unexpired phase. 
+
+ 
+
+When shifting to the expired phase, a TAFS can only make adjustments to obligations made in the unexpired 
+phase. Activity in the expired phase of a TAFS is governed by the last approved apportionment, including 
+apportioned footnotes in the OMB Action column of the Application of Budgetary Resources section. 
+
+ 
+
+In some instances, there may be a subset of resources in a no-year TAFS that are no longer available for 
+new obligations. This does not impact the phase (e.g.., expired or unexpired) of the entire TAFS. 
+
+ 
+
+
+APPORTIONMENTS AFFECTED BY A CONTINUING RESOLUTION (CR) 
+
+120.59 During a CR, what happens to TAFSs that were apportioned before the start of a fiscal year 
+(e.g., no-year TAFSs)? 
+
+ 
+
+When budgetary resources (e.g., unobligated balances, spending authority from offsetting collections, 
+anticipated transfers) are apportioned prior to the start of a fiscal year, those apportionments remain in effect 
+even if a CR is enacted, unless otherwise directed by OMB. 
+
+ 
+
+However, you must submit a new apportionment request to OMB if: 
+
+ 
+
+• The CR changes the funding level or alters the program mix that OMB apportioned (e.g., the 
+Congress rescinds unobligated balances during the CR period or zero-funds a program that OMB 
+previously apportioned); or 
+
+
+ 
+
+• Changes occur that affect the budgetary resources apportioned as described in sections 120.48 
+through 120.50 (e.g., actual reimbursements differ significantly from estimates). 
+
+
+ 
+
+The automatic apportionment approved by OMB after enactment of a short-term CR (OMB CR Bulletin) 
+covers only the budgetary resources provided by the short-term CR. Some TAFSs may receive funds 
+provided by the CR in addition to budgetary resources provided by other acts. These TAFSs receive both 
+the automatic apportionment for the CR funds and any budgetary resources apportioned before the start of 
+the fiscal year (e.g., unobligated balance carried forward). 
+
+ 
+
+If you chose to seek reapportionment of the TAFS during the CR period and you and the RMO agree not 
+to reflect the amounts from the CR in the reapportionment, then you must include a footnote in the 
+reapportionment to indicate that the account is also receiving apportioned resources from the CR. See 
+section 123.17 for the footnote language. 
+
+120.60 After a CR has been replaced by a full-year enacted appropriation, what do I show in the 
+Previous Approved column? 
+
+ 
+
+Unless otherwise requested by your RMO, in the Previous Approved column, show all budgetary resources 
+and apportioned amounts since the start of the fiscal year through the last day of the CR (in accordance with 
+the most recent OMB CR Bulletin on the "Apportionment of the Continuing Resolution(s) for Fiscal Year 
+20XX") plus the amounts automatically apportioned pursuant to section 120.41. For example, amounts on 
+line 1100, discretionary appropriations, should show the short-term CR's calculated rate for operations. 
+Additionally, a footnote on line 1134 Appropriations precluded from obligation (or line 1135 for a special 
+or trust fund TAFS), should state the following: "Amount on line 1134 (or line 1135) has been adjusted 
+pursuant to OMB CR Bulletin XX-XX and Circular A-11 section 120.41." (see exhibit 120G). For instance, 
+if budgetary resources such as unobligated balances were apportioned by OMB and the TAFS also received 
+automatically apportioned CR funds via the OMB CR Bulletin(s) and section 120.41, you must show both 
+types of budgetary resources on your apportionment request. 
+
+ 
+
+If you were apportioned under the CR with a POA that was changed in the full-year enacted appropriations, 
+see section 120.62 for further apportionment guidance. 
+
+120.61 After a short-term CR has been replaced by a full-year enacted appropriation, what do I 
+show in the agency request column? 
+
+ 
+
+In the agency request column, show all budgetary resources and application of budgetary resources for the 
+entire fiscal year, beginning from the start of the fiscal year. See section 120.54 and exhibit 120G. See 
+
+
+Exhibit 120H if you received OMB concurrence during the short-term CR period to record your lump-sum 
+automatic apportionment as Category A. 
+
+ 
+
+Note that while an account is under the automatic apportionment authority in section 120.41, GTAS 
+reporting will not show any amounts on line 1134 unlike the previously approved column of the first 
+apportionment post-CR. Instead, GTAS will report those amounts on line 2403 in the Status of Budgetary 
+Resources section of a SF 133. 
+
+120.62 What do I do if the full-year enacted appropriation changes the period of availability of funds 
+apportioned under a short-term CR? 
+
+ 
+
+If the POA of funds under a short-term CR was changed by the full-year enacted appropriations, you must 
+submit two account-specific apportionments. Under the short-term CR, you were apportioned for that 
+specific POA and all obligations were valid; however, the CR states that expenditures made pursuant to the 
+CR shall be charged to the applicable appropriation, fund, or authorization whenever a bill in which such 
+applicable appropriation, fund, or authorization is contained is enacted into law. 
+
+ 
+
+In the situation where the entire POA of the TAFS changed in the final bill, you must prepare the following 
+apportionments. In this scenario the CR POA was annual and the final enacted appropriation POA was 
+multi-year. 
+
+ 
+
+• For the POA that was under the CR, you will reflect "0" on lines 1100 discretionary appropriation 
+and 1134 appropriation excluded from obligation (or 1135 for special and trust funds) and place 
+the following "A" footnote on line 6190 total budgetary resources available in the previously 
+approved column only: 
+
+
+ 
+
+ "Under the FY 2020 short-term continuing resolution (CR) (P.L. XXX-XXX, as 
+amended) this account was appropriated as an annual TAFS (put TAFS number here) 
+and was apportioned by OMB Bulletin 19-XX. The full-year FY 2020 appropriation 
+(P.L. XXX-XXX) enacted the funding within a multi-year TAFS (put TAFS number 
+here) and was automatically apportioned via OMB Circular A-11 section 120.41. 
+Pursuant to section XXX (check CR for actual section number, e.g., 105) of the FY 
+2020 CR, any obligations/outlays made with the previous annual appropriation shall 
+now be redistributed (or recasted) to the new multi-year TAFS (put TAFS number 
+here)." 
+
+
+ 
+
+• For the POA that is enacted in the full-year bill, you will reflect the CR (lines 1100 discretionary 
+appropriations and 1134 appropriation excluded from obligation or 1135 for special or trust funds) 
+in the previous approved column (see section 120.60 for "B" footnote on line 1134 or 1135) and 
+place the following "A" footnote on line 6190 total budgetary resources available: 
+
+
+ 
+
+ "Under the FY 2020 short-term continuing resolution (CR) (P.L. XXX-XXX, as 
+amended) this account was appropriated as an annual TAFS (put TAFS number here) 
+and was apportioned by OMB Bulletin 19-XX. The full-year 2020 appropriation (P.L. 
+XXX-XXX) enacted the funding within this multi-year TAFS (put TAFS number here) 
+and was automatically apportioned via OMB Circular A-11 section 120.41. Pursuant 
+to section XXX (check CR for actual section number, e.g., 105) of the FY 2020 CR, 
+any obligations/outlays made with the previous annual appropriation shall now be 
+redistributed (or recasted) to this new multi-year TAFS (put TAFS number here)." 
+
+
+ 
+
+There may be cases where the POA is only changed partially by the full-year enacted appropriations bill. 
+If this occurs, please contact your OMB representative for guidance. 
+
+
+WHAT OTHER IMPORTANT THINGS DO I NEED TO KNOW ABOUT APPORTIONMENTS? 
+
+120.63 What types of resources are apportioned by OMB? 
+
+ 
+
+The following resources are apportioned by OMB: 
+
+ 
+
+• Budgetary resources; 
+
+
+ 
+
+• Non-budgetary resources (such as foreign currency, quotas, etc.); and 
+
+
+ 
+
+• An agency's other authority (pursuant to statutory authority) in whatever form it may take. 
+
+
+120.64 Are all apportionments based on authority to incur obligations? 
+
+ 
+
+OMB usually apportions the budgetary resources of a TAFS with respect to the authority to incur new 
+obligations. 
+
+ 
+
+However, OMB may apportion budgetary resources on a pre-obligation basis, such as "commitments," 
+which, if used, are made before obligations are incurred. If OMB apportions on a basis other than 
+obligations, you should continue to include your usual obligations in the GTAS system, but in addition, you 
+must report a GTAS footnote regarding the status of the non-obligation apportioned items, i.e., footnote the 
+amount of "commitments" incurred against the amount shown on the apportionment. 
+
+120.65 How do I treat extensions of the availability of unobligated balances in an apportionment? 
+
+ 
+
+Reappropriations (see section 20.4(h)) are recorded on lines 1105 Discretionary Reappropriation or 1204 
+Mandatory Reappropriation. For example, an apportionment for FY 2019 should reflect an estimate of the 
+amount to be reappropriated from the estimated expiring FY 2018 balances. A reapportionment may be 
+required after the actual amount of the expiring balances is known. You may wish to reflect these amounts 
+on either lines 1134 Discretionary appropriations precluded from obligation (use for only general fund 
+TAFS; use line 1135 for special or trust fund TAFS) or 1235 Mandatory appropriations precluded from 
+obligation, until an appropriate time after the required reprogramming notice has been transmitted to the 
+Congress. 
+
+ 
+
+Balance transfer amounts from expired to unexpired funds, are reflected on line 1012 Unobligated balance 
+transfers between expired and unexpired accounts. 
+
+ 
+
+HANDLING DEFICIENCIES IN APPORTIONMENTS 
+
+120.66 When and how do I submit apportionments anticipating the need for the Congress to enact 
+supplemental budget authority? 
+
+ 
+
+Submit requests anticipating the need for the Congress to enact supplemental budget authority only under 
+exceptional circumstances as authorized by law. The Antideficiency Act (31 U.S.C. 1515) permits 
+apportionments to be made on such a deficient-rate basis that indicates the need for the Congress to enact 
+supplemental budget authority only when: 
+
+ 
+
+• Laws enacted after submission to the Congress of the estimates for an appropriation require an 
+expenditure beyond administrative control. 
+
+
+ 
+
+ 
+
+
+• Emergencies arise involving: 
+
+
+ 
+
+ (1) the safety of human life; 
+
+
+ 
+
+ (2) the protection of property; or 
+
+
+ 
+
+ (3) the immediate welfare of individuals in cases where an appropriation that would 
+allow the United States to pay, or contribute to, amounts required to be paid to 
+individuals in specific amounts fixed by law or under formulas prescribed by law, is 
+insufficient. 
+
+
+ 
+
+When you submit a requested apportionment that indicates a necessity for the enactment of supplemental 
+appropriations, include the following notation on the apportionment request: 
+
+ 
+
+"This apportionment request indicates a necessity for a supplemental appropriation now estimated at 
+$_____________." 
+
+ 
+
+Submit the apportionment request to OMB along with your agency head's determination of the reasons for 
+a deficiency apportionment, as required by law (31 U.S.C. 1515). The statement of necessity will read as 
+follows: 
+
+ 
+
+"I hereby determine that it is necessary to request apportionment of the appropriation '(appropriation title)' 
+on a basis that indicates the necessity for a supplemental estimate of appropriations, because .... [cite one 
+of the allowable reasons mentioned above]." 
+
+ 
+
+Usually, you will reflect the need for a supplemental appropriation in quarterly apportionments by making 
+the request for the fourth quarter less than the amount that will be required. For apportionments by 
+activities, verify that the amount requested for each activity provides for continuing that activity until the 
+supplemental appropriation is expected to be enacted and become available. OMB approval of requests for 
+a deficiency apportionment allows the agency to operate at a deficient rate of operations, but does not 
+authorize the agency to exceed the total amount of the existing appropriation and of the resources that OMB 
+has apportioned within a TAFS. 
+
+ 
+
+Fully justify the amount of any anticipated supplemental appropriation. Action on the apportionment 
+request does not commit OMB to the amount of the supplemental appropriation that will be recommended 
+subsequently to the President or transmitted to the Congress. 
+
+ 
+
+A deficiency apportionment cannot be requested to provide obligational authority in the event of a lapse of 
+appropriations. The obligational authority for such a circumstance is provided by 31 U.S.C. 1342, and is 
+automatically apportioned via section 124.5. 
+
+ 
+
+PROGRAM REPORTING CATEGORIES 
+
+120.67 What is the purpose of program reporting categories? 
+
+ 
+Program reporting categories show how agencies will report obligations on their SF 133 Reports on Budget 
+Execution and Budgetary Resources (see section 130). Absent program reporting categories, agencies 
+report obligations on their SF 133 reports in accordance with their approved apportionments. For instance, 
+if OMB uses a single Category B project on the apportionment and does not use program reporting 
+categories, the SF 133 report will show obligations on a single line. 
+
+ 
+
+
+You should use program reporting categories when you want obligations reported at a more detailed and 
+programmatically meaningful manner than the apportioned lines would otherwise result in. If program 
+reporting categories were used in the case above, the SF 133 report would show obligations on two or (most 
+likely) more lines. For instance, if a Department of the Interior account had a single Category B project but 
+program categories for maintaining land resources and protecting endangered species, the 
+SF 133 report would distinguish obligations by these categories. While program reporting categories result 
+in more detailed reporting on obligations, they do not control what the agency can obligate for these 
+categories. 
+
+ 
+
+Most TAFSs do not use program reporting categories. 
+
+120.68 Do my estimates of program reporting category obligations limit the amount I can obligate? 
+
+ 
+
+No. Program reporting categories are not used to apportion funds, and are not subject to the Antideficiency 
+Act. 
+
+120.69 What do OMB and the agency need to do to start using program reporting categories? 
+
+ 
+
+OMB and agencies work together to determine what program reporting categories agencies will report 
+upon. Program reporting categories should be based on elements that agencies track in their financial 
+systems. In some cases, you may choose to report upon the same programs that appear in the Program and 
+Financing Schedule of the President's Budget. 
+
+ 
+
+Because the level of reporting is lower level than the apportionment categories, program reporting 
+categories should be identified in advance of the beginning of a fiscal year if at all possible, and in advance 
+of the time that agencies produce their first apportionment requests for the year. The reason is that agencies 
+need time to place entries in their financial systems to allow them to track these program categories 
+throughout the year. One reason is that large numbers of staff including timekeepers, procurement staff, 
+administrative officers, and others need to document the new program reporting categories, and train 
+program office staff on how to use the new categories. In addition, agencies may need time to update their 
+systems to extract the data. 
+
+120.70 How do I fill in the program reporting category tab? 
+
+ 
+
+The apportionment user's guide that appears on the support\links tab of the apportionment system describes 
+how to fill in the program reporting category tab. The URL for the apportionment system is: 
+
+https://apportionment.max.gov. 
+
+120.71 Why does OMB send the names of program reporting categories and Category B projects to 
+Treasury for use in GTAS? 
+
+ 
+
+OMB sends program reporting categories from approved apportionments to the Treasury Department's 
+Bureau of the Fiscal Service, which operates the GTAS system that agencies use to report their SF 133 
+budget execution information. When reporting their obligations, GTAS provides agencies with the list of 
+program reporting categories to report upon; these are the same program reporting categories that OMB 
+provides from the apportionment attachments. 
+
+ 
+
+For those TAFSs that use Category B projects but do not use program reporting categories, OMB sends 
+Fiscal Service the list of Category B projects for use in GTAS reporting. 
+
+ 
+
+OMB sends this information to Fiscal Service so OMB can use automated tools to align program reporting 
+categories and Category B projects on the apportionments to the budget execution reports. 
+
+
+ 
+
+ 
+
+Program Reporting Category Projected, Annual Obligations 
+080X130960011Salaries400,000080X130960012All Other80,000080 Cat A, Sub-total480,000080X130960113Research -- Air8,880,000080X130960114Research -- Water4,000,000080X130960115Research -- All OtherN/A080 Research, Sub-total12,880,000080X130960126Development -- Air5,450,000080X130960127Development -- Water4,000,000080X130960128Development -- All OtherN/ADevelopment, Sub-total9,450,000Note: Program reporting categories are not used to apportion funds, and are not subject to 31 USC 1517.
+PROGRAM REPORTING CATEGORIES FORMATProgram Reporting CategoriesAgency IdentifierAvailability TypeBeginning POAEnding POASF 132 LineReport Cat No.
+Main AccountNote how the program reporting categories relate to 
+apportioned amounts in Exhibit 120D's Office of the 
+Secretary apportionment. 
+When the Report Cat No has a number 
+between 1 -100, the stub will be sent to 
+the GTAS system for use in budget 
+execution reporting. 
+You may also include additional rows 
+where the Report Cat No is blank. In this 
+example, these rows serve as sub-totals.
+Do not use program reporting categories that are 
+identical to Category B projects. The simple rule is 
+that you use two or more reporting categories for 
+each Cat B project.
+Check with OMB on 
+whether you need to put in 
+projected, annual 
+obligations.
+Note also that the amounts in 
+this column do not need to 
+add to the total amount on 
+the apportioned lines. 
+
+
+Line NoLine 
+SplitLine DescriptionPrevious 
+ApprovedPrev FootnoteAgency 
+RequestAgency FootnoteOMB 
+ActionOMB FootnoteMemo ObligationsDepartment of GovernmentBureau: Office of the SecretaryAccount: Salaries and Expenses (003-04-1109)
+TAFS: 080-20xx-20xx-0137 
+IterNo1Last Approved Apportionment: N/A, First Request of yearRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1100BA: Disc: Appropriation7,400,0007,400,0001130BA: Disc: Appropriations permanently reduced-1,000-1,0001840BA: Mand: Spending auth:Antic colls, reimbs, other403,000403,0001920Total budgetary resources avail (disc. and mand.)07,802,0007,802,00060011st quarter1,952,0001,952,00060022nd quarter1,950,0001,950,00060033rd quarter1,950,0001,950,00060044th quarter1,825,0001,825,0006011Prairie Restoration Fund125,000A1125,000A16190Total budgetary resources available07,802,0007,802,000Exhibit Notes:
+1)
+2) 
+Funds provided by Public Law XXX-XXXPer section 120.41, newly enacted appropriations are automatically apportioned for a temporary period. If you choose to leave the previous approved column 
+blank and were under an automatic apportionment(s), then state so in an "A" footnote on line 6190 in in that column.
+FY 20xx ApportionmentOne-Year Appropriation—First Apportionment for the Current Fiscal YearThis exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1.
+Display the text of any 
+footnotes in a separate 
+tab in your Excel file.
+Identify in the header the law(s) 
+providing the budget authority. 
+On the initial apportionment, 
+this line entry represents the 
+amount of appropriations 
+becoming available on or after 
+October 1 of the fiscal year for 
+which the apportionment is 
+submitted. 
+The inclusion of estimates in 
+determining the amounts 
+available for apportionment 
+does not authorize you to 
+obligate amounts anticipated for 
+the rest of the year (see section 
+145.6).
+This entry includes any funds 
+not available for obligation 
+pursuant to a specific provision 
+in law. Identify the public law 
+containing the restriction in a 
+"B" footnote. 31 U.S.C 1512 
+and the Impoundment Control 
+Act are not valid authorizing 
+citations.
+The total amount on line 1920 
+must equal the total amount on 
+line 6190.
+Leave the "Previous 
+Approved" column blank on 
+the first apportionment of the 
+Include an estimate of all amounts you 
+anticipate will become available under 
+existing law in the fiscal year for which 
+the schedule is submitted. Do not include 
+anticipated unenacted supplemental 
+appropriations and rescission proposals.
+If you leave "Previous Approved" 
+column blank on initial 
+apportionments but were under 
+automatic apportionment(s), then 
+state so in an "A" footnote on line 
+6190 of the "Previous Approved" 
+column.
+
+
+Line NoLine 
+SplitLine DescriptionPrevious 
+ApprovedPrev FootnoteAgency RequestAgency FootnoteOMB ActionOMB FootnoteMemo ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: R & D (003-04-1109)
+TAFS: 080-X-1309IterNo1Last Approved Apportionment: N/A, First Request of yearRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1000DEUnob Bal: Brought forward, Oct 11,180,0001,180,000[line split = E for estimate]
+[line split = A for actual balance]
+1061Unob Bal: Antic recov of prior year unpd and pd obl150,000150,0001100BA: Disc: Appropriation 25,000,00025,000,00017401BA: Disc: Spending auth:Antic colls, reimbs, other300,000300,00017402BA: Disc: Spending auth:Antic colls, reimbs, other100,000100,0001920Total budgetary resources avail (disc. and mand.)026,730,00026,730,00060011st quarter120,000120,00060022nd quarter120,000120,00060033rd quarter120,000120,00060044th quarter120,000120,0006011Research12,800,00012,800,0006012Development of Products9,450,0009,450,0006170CY+14,000,000A24,000,000A26190Total budgetary resources available026,730,00026,730,000Exhibit Notes:
+1)
+2)
+Funds provided by Public Law XXX-XXXFY 20xx ApportionmentNo-Year Appropriation—First Apportionment for the Current Fiscal YearPer section 120.41, newly enacted appropriations are automatically apportioned for a temporary period. If you choose to leave the previous approved column 
+blank and were under an automatic apportionment(s), then state so in an "A" footnote on line 6190 in in that column.
+This exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1.
+If the account must be apportioned before the actual 
+unobligated balance is known, enter an estimated 
+amount on this line. Type 'E' in the line split 
+column. If adjustments are subsequently required, 
+submit a reapportionment, except as provided in 
+section 120.49.
+Include only amounts 
+expected to be received 
+and to become available 
+without further 
+congressional action.
+Display the text of any 
+footnotes in a separate tab 
+in your Excel file.
+Use this line to report expected cancellations or 
+downward adjustments of prior year unpaid and paid 
+obligations reported in prior years for unexpired 
+accounts.
+No-year and multi-year TAFS can have apportioned 
+amounts in future fiscal years (Category C). When 
+using line 6170, provide the future fiscal years.
+Identify in the header the law(s) 
+providing the budget authority. 
+If you leave "Previous 
+Approved" column blank on 
+initial apportionments but were 
+under automatic 
+apportionment(s), then state so in 
+an "A" footnote on line 6190.
+
+
+ Line NoLine 
+SplitLine DescriptionPrevious ApprovedPrev FootnoteAgency RequestAgency FootnoteOMB ActionOMB FootnoteMemo ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: R & D (003-04-1109)
+TAFS: 080-X-1309IterNo2Last Approved Apportionment: 9/10/CYRptCatNOReporting CategoriesAdjAutYESAdjustment Authority provided1000DEUnob Bal: Brought forward, Oct 11,298,000DA[line split = DE for estimated balances of discretionary]1,610,0001,610,000[line split = DA for actual balance of discretionary]
+1061Unob Bal: Antic recov of prior year unpd/pd obl150,000150,000150,0001100BA: Disc: Appropriation 25,000,00025,000,00025,000,0001130BA: Disc: Appropriations permanently reduced-200,000-200,0001700BA: Disc: Spending auth: Collected95,00095,00017401BA: Disc: Spending auth:Antic colls, reimbs, other300,000205,000205,00017402BA: Disc: Spending auth:Antic colls, reimbs, other100,000100,000100,000 
+1920Total budgetary resources avail (disc. and mand.)26,848,00026,960,00026,960,00060011st quarter120,000 120,000120,00036,00060022nd quarter120,000 120,000120,00060033rd quarter120,000 120,000120,00060044th quarter120,000 120,000120,0006011Research16,800,00012,880,00012,880,0006012Development of Products9,568,0009,600,0009,600,0001,348,2506170CY +14,000,0004,000,0006190Total budgetary resources available26,848,00026,960,000A126,960,000A1Exhibit Notes:
+1)
+2)
+3)Exhibit 130C illustrates the SF 133 for this account.
+No-Year Appropriation—ReapportionmentFY 20xx ApportionmentUnless OMB determines otherwise, when amounts are automatically apportioned (see section 120.50), and there is a subsequent need for reapportionment, reflect 
+adjustments previously made as automatic apportionments in the "Previous Approved" column. In such cases, footnote what changes were automatically apportioned.
+This exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1. 
+Funds provided by Public Law XXX-XXXDisplay the text of any footnotes 
+in a separate tab in your Excel 
+file.
+No-year and multi-year TAFS can have apportioned amounts 
+in future fiscal years (Category C). When using line 6170, 
+provide the future fiscal years.
+On a reapportionment, 
+this entry will include 
+enacted appropriations, 
+amounts certified by 
+Treasury warrant of 
+indefinite appropriations, 
+any enacted 
+supplemental 
+appropriation, and any 
+appropriated receipts in 
+special and trust funds. 
+See Appendix F for 
+applicable line numbers.
+If you need to reapportion after 
+final unobligated balances are 
+determined, change the line split 
+from E to A. For more information 
+about when a reapportionment is 
+necessary, please see section 
+120.49.
+Anticipated 
+resources should 
+be adjusted to 
+actual resources on 
+subsequent 
+apportionments.
+Identify in the header the law(s) 
+providing the budget authority. 
+
+
+ Line NoLine 
+SplitLine DescriptionPrevious 
+ApprovedPrev FootnoteAgency 
+RequestAgency FootnoteOMB ActionOMB FootnoteMemo ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: Salaries and Expenses (003-04-1109)
+TAFS: 080-20xx-20xx-0137IterNo1Last Approved Apportionment: N/A, First Request of yearRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1100BA: Disc: Appropriation24,000,000B124,000,000B11134BA: Disc: Appropriations precluded from obligation-22,030,000B2-22,030,000B21740BA: Disc: Spending auth:Antic colls, reimbs, other1,348,2601,348,260 
+1920Total budgetary resources avail (disc. and mand.)03,318,2603,318,26060011st quarter1,348,260A31,348,260A360022nd quarter0060033rd quarter0060044th quarter006011Lump Sum1,970,0001,970,0006190Total budgetary resources available03,318,2603,318,260Exhibit Notes:
+1)
+2)
+One-Year Appropriations Under Continuing Resolution (CR)
+FY 20xx ApportionmentGenerally, the OMB CR Bulletin will automatically apportion funds made available by a CR without requiring you to submit an account-specitic apportionment 
+request (see section 123.3, 120.59). However, you may submit, or OMB may require you to submit a request.
+This exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1.
+Funds provided by Public Law XXX-XXXDisplay the text of any 
+footnotes in a separate 
+tab in your Excel file.
+Identify in the header the law(s) providing the budget authority. If a 
+CR is extended multiple times, include the citation of first CR "as 
+amended" (not the subsequent amendments). However, if a new, 
+separate CR is passed (e.g. after a lapse in appropriations), cite the 
+new CR as well as the first CR.
+Note that funds made available by the continuing resolution 
+($24,000,000 -$22,030,000) are all apportioned as lump sum 
+by the OMB short-term CR apportionment bulletin. 
+You can either show the lump-sum amount in Cat B (as shown 
+on line 6011) OR if you typically apportion Cat A, the entire 
+lump-sum amount in the first quarter (line 6001). If the short-
+term CR gets extended and enacted in a subsequent quarter, 
+you would reflect the additive amount as lump-sum in the 
+quarter current at that time.
+For a short-term CR, show 
+the amount of BA that is 
+currently not provided 
+under the given time 
+period of the CR as a 
+negative on line 1134 (for 
+special or trust fund TAFS, 
+you must use line 1135). 
+(See section 123.2 for 
+guidance.)
+Even though a short-term CR is for part 
+of a fiscal year, you still show the total 
+annualized level (i.e., rate for operations) 
+provided by the CR on line 1100 (not the 
+pro-rata share apportioned for the time 
+period of the CR).
+
+ 
+
+ 
+
+
+ Line NoLine 
+SplitLine DescriptionPrevious ApprovedPrev FootnoteAgency RequestAgency FootnoteOMB ActionOMB FootnoteMemo ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: R & D (003-04-1109)
+TAFS: 080-X-1200IterNo2Last Approved Apportionment: 9/10/CY11/30/2018RptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1000DEUnob Bal: Brought forward, Oct 150,689,324DA[line split = DE for estimate of discretionary balances]60,000,00060,000,000[line split = DA for actual discretionary balances]
+1100BA: Disc: Appropriation 24,000,00024,000,0001134BA: Disc: Appropriations precluded from obligation-22,030,000-22,030,0001700BA: Disc: Spending auth: Collected1,5001,50017401BA: Disc: Spending auth:Antic colls, reimbs, other1,000,7601,000,2601,000,26017402BA: Disc: Spending auth:Antic colls, reimbs, other349,000348,000348,000 
+1920Total budgetary resources avail (disc. and mand.)52,039,08463,319,76063,319,76060011st quarter13,009,771 22,320,44722,320,44760022nd quarter13,009,771 13,009,77113,009,77160033rd quarter13,009,771 13,009,77113,009,77160044th quarter13,009,771 13,009,77113,009,7716011Lump Sum1,970,0001,970,0001,425,5556190Total budgetary resources available52,039,084A163,319,76063,319,760Footnote A1: In addition to the amounts apportioned above, this account also received funds pursuant to Public Law XXX-XXX as automatically apportioned via OMB Bulletin XX-XX.
+Exhibit Notes:
+1)
+2)
+3)
+Appropriations and Unobligated Balances Under a Continuing Resolution (CR)
+You must submit a reapportionment request showing the final determination of unobligated balances to OMB as soon as it becomes known unless the amount is 
+automatically apportioned by section 120.49. If you need to submit a reapportionment post October 1 and you do not reflect the amounts automatically apportioned by 
+the OMB CR Bulletin, then you must footnote the apportionment accordingly (see section 123.18).
+Generally, the OMB CR Bulletin will automatically apportion funds made available by a CR without requiring you to submit an account-specific apportionment request 
+(see section 123.3, 120.59). However, you may submit, or OMB may require you to submit a request.
+FY 20xx ApportionmentThis exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1. 
+Funds provided by Public Law XXX-XXXIdentify in the header the law(s) providing the budget 
+authority.
+If you need to reapportion after final unobligated 
+balances are determined, change the line split from E to 
+A. For more information about when a reapportionment 
+is necessary, please see section 120.49.
+For a short-term CR, show 
+the amount of BA that is 
+currently not provided 
+under the given time period 
+of the CR as a negative on 
+line 1134 (for special or 
+trust fund TAFS, you must 
+use line 1135). (See 
+section 123.2 for 
+guidance.)
+Even though a short-term 
+CR is for part of a fiscal 
+year, you still show the 
+total annualized level 
+(e.g., rate for operations) 
+provided by the CR on 
+line 1100 (not the pro-rata 
+share apportioned for the 
+time period of the CR).
+Change the line split from 
+DE to DA when the final 
+determination of 
+unobligated balances is 
+reported. If the amount 
+on this line does not agree 
+with the amounts: (a) 
+reported on the final SF 
+133 of the preceding year; 
+(b) reported to the 
+Treasury for inclusion in 
+theTreasury Combined 
+Statement Appendix; or 
+(c) presented in the 
+Budget Appendix as a past 
+year actual amount, 
+footnote line 1000 to 
+explain the difference.
+Lines 1700 and 1740, as 
+well as the 
+memorandum entry on 
+obligations,
+should reflect the 
+amount shown on the 
+latest SF133 if more 
+recent figures are not 
+available. The period 
+covered by such 
+amounts should be 
+indicated in a footnote 
+and the "Memo 
+Obligations" column.
+Amounts in the "Previous 
+Approved" column are 
+amounts from the initial 
+apportionment approved 
+before October 1 of the 
+applicable FY.
+Agency requested/OMB approved 
+reapportionment of the increased 
+unobligated balances (+$9,310,676) 
+in the first quarter. 
+If the request/approval was in the 
+second quarter, increase would have 
+to show on line 6002 since OMB 
+can never reapportion a past period.
+The CR lump sum can be 
+apportioned as either Cat A 
+or Cat B depending on 
+agency need. Please see 
+section 123.4 for more 
+information.
+
+ 
+
+
+ Line NoLine 
+SplitLine DescriptionPrevious 
+ApprovedPrev FootnoteAgency RequestAgency FootnoteOMB ActionOMB FootnoteMemo 
+ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: R & D (003-04-1109)
+TAFS: 080-X-1200IterNo2Last Approved Apportionment: 9/10/CYRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1000DEUnob Bal: Brought forward, Oct 160,000,000DA[line split = DE for estimates of discretionary balances]46,000,00046,000,000[line split = DA for actual discretionary balances]
+1100BA: Disc: Appropriation 24,000,00025,000,00025,000,0001134BA: Disc: Appropriations precluded from obligation-22,030,000B1001700BA: Disc: Spending auth: Collected1,5002,0002,00017401BA: Disc: Spending auth:Antic colls, reimbs, other1,000,2601,000,2601,000,26017402BA: Disc: Spending auth:Antic colls, reimbs, other348,000178,000178,000 
+1920Total budgetary resources avail (disc. and mand.)63,319,76072,180,26072,180,26060011st quarter22,320,44722,320,44722,320,44760022nd quarter13,009,7716,009,7716,009,77160033rd quarter13,009,7716,009,7716,009,77160044th quarter13,009,77113,009,77113,009,7716011Lump Sum1,970,00024,830,50024,830,5006190Total budgetary resources available63,319,76072,180,26072,180,260Footnote B1: Amount on line 1134 has been adjusted pursuant to OMB Bulletin XX-XX and A-11 section 120.41.
+Exhibit Notes:
+1)
+2)
+3)See section 120.60 for additional detail on what to show in the "Previous Approved" column post CR.
+Consult your RMO for B1 footnote language if you received an account-specific apportionment during the short-term CR.
+Apportionment Following a Continuing Resolution (CR) (No-Year TAFS)
+FY 20xx ApportionmentThis exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1.
+Funds provided by Public Law XXX-XXXIdentify in the header the law(s) providing the budget 
+authority. Note: you can choose to reference Public Law 
+number of the CR or both the CR and any appropriation 
+laws.
+Scenario 1 (Category B lump-sum):
+If you choose to lump-sum Cat B amounts automatically 
+apportioned pursuant to the OMB CR Bulletin and A-11 
+section 120.41, it will all show on line 6011.
+Scenario 2 (Category A lump-sum): 
+If you choose to record amounts automatically apportioned 
+pursuant to the OMB CR Bulletin as Cat A, you show the 
+amounts from the Bulletin all in 1st quarter, line 6001. 
+Scenario 3If the short -term CR is extended, the lump-sum from the 
+Bulletin will be shown as follows:
+Cat B: additive to line 6011Cat A: in the quarter current at the time of the enactment of 
+the CR extension(s) (e.g., if extended in the second quarter, 
+automatically apportioned amounts are shown in the second 
+quarter, line 6002). See section 120.55Post short-term CR: adjust line 1134 in the previous approved 
+column to reflect the automatically apportioned amounts from 
+both the Bulletin and A-11 section 120.41 and reflect it in the 
+manner described in scenario 3.
+Requirement 
+for line 1134 
+(or line 1135 
+for special or 
+trust fund 
+TAFS)--see 
+footnote 
+language 
+below.
+In the 
+previous 
+approved 
+column, line 
+1100 is equal 
+to the rate for 
+operations 
+from the 
+short-term 
+CR, not the 
+NOTE:
+This exhibit reflects the cumulative amounts from the initial 
+apportionment (budgetary resources not determined by the current 
+action of the Congress, section 120.23) approved prior to October 1 
+and the automatic apportionments provided by the OMB CR 
+Bulletin and section 120.41.
+
+ 
+
+ 
+
+
+Line NoLine 
+SplitLine DescriptionPrevious 
+ApprovedPrev FootnoteAgency RequestAgency FootnoteOMB ActionOMB FootnoteMemo 
+ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: R & D (003-04-1109)
+TAFS: 080-2019-2019-1200IterNo2Last Approved Apportionment: 9/10/CYRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1100BA: Disc: Appropriation 24,000,00025,000,00025,000,0001134BA: Disc: Appropriations precluded from obligation-10,504,200B100 
+1920Total budgetary resources avail (disc. and mand.)13,495,80025,000,00025,000,00060011st quarter7,036,8007,036,8007,036,80060022nd quarter4,404,0004,404,0004,404,00060033rd quarter2,055,0007,806,7007,806,70060044th quarter5,752,5005,752,5006190Total budgetary resources available13,495,80025,000,00025,000,000Footnote B1: Amount on line 1134 has been adjusted pursuant to OMB Bulletin XX-XX and A-11 section 120.41.
+Exhibit Notes:
+1)
+2)
+3)See section 120.60 for additional detail on what to show in the "Previous Approved" column post CR.
+Apportionment Following a Continuing Resolution (CR) (Annual TAFS, Category A)
+FY 20xx ApportionmentFunds provided by Public Law XXX-XXXThis exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1.
+Consult your RMO is you received an account-specific written apportionment during the short-term CR for B1 footnote language.
+Identify in the header the law(s) providing the budget 
+authority. Note: you can choose to reference Public Law 
+number of the CR or both the CR and any appropriation 
+laws.
+Scenario Category A lump-sum in 1st quarter: 
+If you choose to record amounts automatically apportioned 
+pursuant to the OMB CR Bulletin as Cat A, you show the 
+amounts from the Bulletin all in 1st quarter, line 6001. Assume 
+that the CR is through January 15th and that 29.32% of the rate 
+for operations is automatically apportioned.
+Scenario: CR is extended in the 2nd quarterAssume the CR is extended on January 7th (2nd quarter) and 
+runs through March 23rd. An additional 18.35% of the rate for 
+operations is automatically apportioned in the 2nd quarter as a 
+lump-sum.
+Scenario: full-year bill is enacted in the 3rd quarter, 
+application of A-11 section 120.41:
+Post short-term CR: adjust line 1134 in the previous approved 
+column to reflect the automatically apportioned amounts from 
+both the OMB Bulletin and A-11 section 120.41 and reflect it in 
+the manner described in scenario above. Assume the full-year 
+bill is enacted on March 21st (third quarter) and put the amount 
+apportioned from A-11 section 120.41 in the third quarter 
+(lump-sum).
+Requirement for 
+line 1134 (or line 
+1135 for special or 
+trust funds)--see 
+footnote language 
+below.
+In the previous 
+approved column, 
+line 1100 is equal 
+to the rate for 
+operations from 
+the short-term 
+CR, not the 
+enacted full-year 
+appropriation.
+NOTE:
+This exhibit reflects the automatic apportionments provided by the 
+OMB CR Bulletin and section 120.41.
+See note 4 below for special and/or trust fund TAFS.
+Note: since 
+full-year 
+appropriations 
+were in the 
+third quarter, 
+you must keep 
+amounts 
+apportioned in 
+first and 
+second quarters 
+the same (see 
+section 
+120.55).
+In Agency Request/OMB Action 
+columns line 1100 reflects the full-
+year enacted appropriation
+
+
+Line NoLine SplitLine DescriptionPrevious 
+ApprovedPrev FootnoteAgency RequestAgency FootnoteOMB ActionOMB FootnoteMemo 
+ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: R & D (003-04-1109)
+TAFS: 080-X-4321IterNo2Last Approved Apportionment: 9/10/CYRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1000DEUnob Bal: Brought forward, Oct 183,584,884DA[line split = DE for estimate of discretionary balances]83,583,73883,583,738[line split = DA for actual discretionary balances]
+1023Unob Bal: Applied to repay debt-20,756,800-20,756,800-20,756,8001100BA: Disc: Appropriation 4,100,0004,100,0004,100,00017001BA: Disc: Spending auth: Collected8,000,0008,000,00017002BA: Disc: Spending auth: Collected8,189,5008,189,5001740BA: Disc: Spending auth:Antic colls, reimbs, other69,806,30054,616,80054,616,8001920Total budgetary resources avail (disc. and mand.)136,734,384137,733,238137,733,23860011st quarter550,000 550,000550,0001,965,42560022nd quarter650,000 650,000650,00060033rd quarter625,000 625,000625,00060044th quarter609,600 609,600609,6006011Management services23,202,00023,202,00023,202,0006,190,6256012Sales program11,834,00011,834,00011,834,0002,012,7906013Power program20,980,60020,980,60020,980,6005,125,6306182Unapportioned balance of revolving fund7828318479,282,038A179,282,038A16190Total budgetary resources available136,734,384137,733,238137,733,238Exhibit Notes:
+1)
+2)
+3)
+• Line 1023 includes estimates for the year of repayments of principal.
+4)Exhibit 130E illustrates the SF 133 for this account.
+For revolving funds with indefinite borrowing authority :
+• Line 1740 includes any credits or payments anticipated to be received.
+If you don't know the amount of the unobligated balance brought forward at the time you must submit an apportionment request for an account, 
+show an estimated amount on line 1000, and submit a reapportionment form if adjustments are required, except as specified in section 120.49.
+This exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1.
+Public Enterprise (Revolving) or Intragovernmental (Revolving) Fund - ReapportionmentFY 20xx Apportionment 
+Funds provided by Public Law XXX-XXXDisplay the text of any footnotes 
+in a separate tab in your Excel 
+file.
+Change the line split from DE to 
+DA whenever you reapportion after 
+the final determination of 
+unobligated balance.
+Identify in the header the law(s) 
+providing the budget authority. 
+Note: For 
+Cat A you 
+fill in the 
+memo 
+obligations 
+in the quarter 
+in which the 
+obligations 
+were 
+incurred
+
+
+ Line NoLine 
+SplitLine DescriptionPrevious 
+ApprovedPrev FootnoteAgency 
+RequestAgency FootnoteOMB ActionOMB FootnoteMemo 
+ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: R & D (003-04-8109)
+TAFS: 080-20xx-20xx-8004IterNo2Last Approved Apportionment: 9/10/CYRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1201BA: Mand: Appropriation (special or trust Fund)9,000,0009,000,000B19,000,000B11920Total budgetary resources avail (disc. and mand.)9,000,0009,000,0009,000,0006011Management services1,500,0001,500,0001,500,000500,0006012Sales program7,500,0007,500,0007,500,0002,003,4566190Total budgetary resources available9,000,0009,000,0009,000,000Exhibit Notes:
+1)
+Trust Fund LimitationFY 20xx ApportionmentThis exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1.
+Funds provided by Public Law N/AInclude reference to law(s) that establish 
+the limitation authority in a footnote. 
+Display the text of any footnotes in a 
+separate tab in your Excel file.
+
+ 
+
+
+ Line NoLine 
+SplitLine DescriptionPrevious 
+ApprovedPrev FootnoteAgency 
+RequestAgency FootnoteOMB ActionOMB FootnoteMemo ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: R & D (003-04-1109)
+TAFS: 080-X-4321IterNo2Last Approved Apportionment: 9/10/CYRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1000DEUnob Bal: Brought forward, Oct 11,180,000 
+DAUnob Bal: Brought forward, Oct 1410,000 410,000 
+[line split = DE for estimate of discretionary balances]
+[line split = DA for actual discretionary balances]
+1021Unob Bal: Recov of prior year unpd obl150,000 150,000 150,000 
+1700BA: Disc: Spending auth: Collected86,000 86,000 
+1701BA: Disc: Spending auth: Chng uncoll pymts Fed src9,000 9,000 
+1740BA: Disc: Spending auth:Antic colls, reimbs, other400,000 145,000 B1145,000 B11920Total budgetary resources avail (disc. and mand.)1,730,000800,000800,00060011st quarter432,500432,500432,500250,00060022nd quarter432,500-32,500-32,50060033rd quarter432,500200,000200,00060044th quarter432,500200,000200,0006190Total budgetary resources available1,730,000800,000800,000Exhibit Notes:
+1)
+2)Apportionments previously established are not subject to change after the close of the period for which the apportionment is made (section 120.54).
+Negative Amount Due to Reduced Unobligated BalanceFY 20xx ApportionmentThis exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1.
+Funds provided by Public Law N/AWhen you need to 
+reduce the 
+cumulative amount 
+apportioned through 
+the current period, 
+revise the amount 
+apportioned for the 
+current period to a 
+negative amount.
+Assuming that 1st quarter 
+obligations were $250,000 in 
+this example, then the 2nd 
+quarter apportioned amount 
+would be $150,000 (432,500 
+apportioned less 250,000 
+obligated plus -32,500 
+apportioned).
+
+
+ Current year's Apportionment:
+Line NoLine 
+SplitLine DescriptionPrevious 
+ApprovedPrev FootnoteAgency 
+RequestAgency FootnoteOMB ActionOMB FootnoteMemo ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: R & D (003-04-1109)
+TAFS: 80-20xx-20xx+1-4321IterNo1Last Approved Apportionment: N/A, First Request of yearRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1100BA: Disc: Appropriation100,000 100,000 
+1920Total budgetary resources avail (disc. and mand.)0100,000100,00060011st quarter12,50012,50060022nd quarter12,50012,50060033rd quarter12,50012,50060044th quarter12,50012,5006170FY 20xx+150,00050,0006190Total budgetary resources available0100,000100,000Next year's apportionment:
+Line NoLine 
+SplitBureau/ Account Title / Cat B Stub / Line SplitPrevious 
+ApprovedPrev FootnoteAgency 
+RequestAgency FootnoteOMB ActionOMB FootnoteMemo ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: R & D (003-04-1109)
+TAFS: 80-4321 20xx/20xx+1IterNo1Last Approved Apportionment: N/A, First Request of yearRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1000DAUnob Bal: Brought forward, Oct 152,000 52,000 
+[line split = DE for estimate of discretionary balances]
+[line split = DA for actual discretionary balances]
+1061Anticipated recoveries of prior year unpaid and paid obligations5,000 5,000 
+1920Total budgetary resources avail (disc. and mand.)057,00057,00060011st quarter13,00013,00060022nd quarter13,00013,00060033rd quarter13,00013,00060044th quarter18,00018,0006190Total budgetary resources available057,00057,000Exhibit Notes:
+1)
+2)Apportionments previously established are not subject to change after the close of the period for which the apportionment is made (section 120.54).
+Apportionments in Future Fiscal Years for Multi-Year Accounts (Category C)
+FY 20xx ApportionmentFunds provided by Public Law N/AThis exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1.
+FY 20xx+1 ApportionmentFunds provided by Public Law N/AThe planned use of 
+appropriations in year 1.
+Includes the full 
+amount appropriatedThe planned use of 
+appropriations in year 2 
+assuming there's no 
+programmatic need in 
+first year.
+The planned use of 
+appropriations in year 2.
+Includes the $50,000 
+planned to be obligated in 
+year 2 plus $2,000 not 
+obligated in year 1.
+Identify in the header the law(s) 
+providing the budget authority. 
+
+
+ Line NoLine SplitLine DescriptionPrevious 
+ApprovedPrev FootnoteAgency RequestAgency FootnoteOMB ActionOMB FootnoteMemo 
+ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: R & D (003-04-8109)
+TAFS: 080-X-8004IterNo2Last Approved Apportionment: 9/10/CYRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1100BA: Disc: Appropriation 90,00090,0001138BA: Disc: Approps applied to liq contract auth-90,000-90,0001600BA: Mand: Contract authority 100,000100,000100,0001622BA: Mand: Contract auth: Precluded from ob (lim)-10,000-10,0001920Total budgetary resources avail (disc. and mand.)100,00090,00090,00060011st quarter25,000 25,00025,00060022nd quarter25,000 20,00020,00060033rd quarter25,000 25,00025,00060044th quarter25,000 20,000A120,0006190Total budgetary resources available100,00090,00090,000Exhibit Notes:
+1)
+2)
+3)
+This example assumes that the authorizing legislation provides $100,000 in contract authority that was apportioned in the initial apportionment for the year. Subsequently, 
+the appropriation act provided $90,000 in an appropriation to liquidate contract authority and limited obligations from the contract authority to $90,000.
+This exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1.
+Trust Fund with Contract Authority, Appropriation to Liquidate Contract Authority, and Obligation LimitationFY 2011 ApportionmentThis example assumes that the contract authority that cannot be obligated is available to be obligated in the succeeding fiscal year. This is an obligation 
+limitation.
+Funds provided by Public Law N/ADisplay the text of any 
+footnotes in a separate tab 
+in your Excel file.
+The appropriation to liquidate contract 
+authority is included on line 1100 and is 
+subtracted on line 1138 because it cannot 
+be used to make new obligations.
+Identify in the header the law(s) providing 
+the budget authority. 
+
+ 
+
+
+ Line NoLine SplitLine DescriptionPrevious 
+ApprovedPrev FootnoteAgency RequestAgency FootnoteOMB ActionOMB FootnoteMemo 
+ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: R & D (003-04-8109)
+TAFS: 080-X-8004IterNo1Last Approved Apportionment: N/A, First Request of yearRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1201BA: Mand: Appropriation (special or trust fund)30,00030,0001234BA: Mand: Appropriations precluded from obligation-70,000-70,0001250BA: Mand: Anticipated appropriation160,000160,0001920Total budgetary resources avail (disc. and mand.)120,000120,0006011Payment of Benefits120,000A1120,0006190Total budgetary resources available120,000120,000Exhibit Notes:
+1)
+2)
+3)
+Trust Fund (or Special Fund) with Collections Precluded from ObligationFY 20xx ApportionmentSee exhibit 130J for a display of the treatment of this account on the SF 133 during the year and on September 30.
+This exhibit only reflects lines that contain values. For a full listing of all lines, please Appendix F1.
+This example assumes that the authorizing legislation makes all receipts available until expended. However, the same law permits obligations only for 
+benefits. The estimate of benefits to be paid is less than the current receipts. In this case, include all estimated current receipts on line 1250 (include 
+actual collections on line 1201). Include, as a negative, the amount not needed to cover current obligations on line 1234. Do not include prior year 
+collections that are not needed to incur current obligations on the apportionment or the SF 133.
+Funds provided by Public Law N/ADisplay the text of any 
+footnotes in a separate tab in 
+your Excel file.
+In this example, the amount on line 1201 equals one-
+quarter of the estimated annual obligations. This amount 
+is derived from prior year collections and is used to fund 
+obligations and outlays until current year collections are 
+received.
+The amount on line 1234 equals the excess of current 
+year receipts over the anticipated obligations ($40 
+thousand) plus the amount on line 1201 ($30 thousand).
+Identify in the header the law(s) 
+providing the budget authority. 
+
+ 
+
+ 
+
+
+ Line NoLine SplitLine DescriptionPrevious 
+ApprovedPrev FootnoteAgency 
+RequestAgency FootnoteOMB ActionOMB FootnoteMemo 
+ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: R & D (003-04-1309)
+TAFS: 080-X-1309IterNo1Last Approved Apportionment: N/A, First Request of yearRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1100BA: Disc: Appropriation 10,000,00010,000,0001151C1BA: Disc: Anticipated nonexpenditure transfers of Approps to 019-080X1309-1,000,000-1,000,0001151C2BA: Disc: Anticipated nonexpenditure transfers of Approps to 020-080X1309-2,000,000-2,000,0001151C1BA: Disc: Anticipated nonexpenditure transfers of Approps from 080X13091,000,0001,000,0001151C2BA: Disc: Anticipated nonexpenditure transfers of Approps from0 80X13092,000,0002,000,0001920Total budgetary resources avail (disc. and mand.)10,000,00010,000,0006011Program A5,500,0005,500,0006012Program B2,000,0002,000,0006013Program C2,500,0002,500,0006190Total budgetary resources available10,000,00010,000,000Exhibit Notes:
+1)
+Allocation Transfer Apportionment Format, Apportioning ProgramsThis exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1.
+FY 20xx ApportionmentFunds provided by Public Law N/AThe Budgetary Resources section reflects the 
+accounting steps of both the parent an the 
+children. The net effect is to show the 
+resources available for obligation for the entire 
+TAFS. 
+Note: In order for the transfers to crosswalk 
+correctly in the SF 133 and President's Budget, 
+please ensure that both the parent and child use 
+the appropriate USSGL for allocation transfers 
+https://tfm.fiscal.treasury.gov/v1/supplements/ussgl.html. 
+
+ 
+
+
+Line NoLine 
+SplitLine DescriptionPrevious 
+ApprovedPrev FootnoteAgency RequestAgency FootnoteOMB ActionOMB FootnoteMemo 
+ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: R & D (003-04-1309)
+TAFS: 080-X-1309 
+IterNo1Last Approved Apportionment: N/A, First Request of yearRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1000PUnob Bal: Brought forward, Oct 1 (parent, 080X1309)750,000750,0001000C1Unob Bal: Brought forward, Oct 1 (child, 019-080X1309)500,000500,0001100BA: Disc: Appropriation 10,000,00010,000,0001151C1BA: Disc: Anticipated nonexpenditure transfers of Approps to 019-080X1309-1,000,000-1,000,0001151C2BA: Disc: Anticipated nonexpenditure transfers of Approps to 012-080X1309-2,000,000-2,000,0001151PBA: Disc: Anticipated nonexpenditure transfers of Approps from 080X13091,000,0001,000,0001151PBA: Disc: Anticipated nonexpenditure transfers of Approps from 080X13092,000,0002,000,0001920Total budgetary resources avail (disc. and mand.)11,250,00011,250,0006111Parent - 1st quarter3,750,0003,750,0006112State FA (019-080X1309) - 1st quarter1,000,0001,000,0006113Agric. (012-080X1309) - 1st quarter500,000500,0006124Parent - 2nd quarter4,000,0004,000,0006125State FA (019-080X1309) - 2nd quarter500,000500,0006126Agric. (012-080X1309) - 2nd quarter1,500,0001,500,0006190Total budgetary resources available11,250,00011,250,000Exhibit Notes:
+1)This exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1.
+Allocation Transfer Apportionment Format, Apportioning Parent and ChildFunds provided by Public Law N/AFY 20xx ApportionmentIdentify in the header the 
+law(s) providing the 
+budget authority.
+The Budgetary Resources section reflects the 
+accounting steps of both the parent an the 
+children. The net effect is to show the resources 
+available for obligation for the 
+entre TAFS.
+Note: In order for the transfers to crosswalk 
+correctly in the SF 133 and President's Budget, 
+please ensure that both the parent and child use 
+the appropriate USSGL for allocation transfers 
+https://tfm.fiscal.treasury.gov/v1/supplements/ussgl.html. 
+Please note that in this scenario the parent apportions both 
+the parent and the children (019-080X1309, 012-
+080X1309) and separately identifies the children in the 
+application of budgetary resources section.
+An apportionment for a parent/child does NOT have to 
+separately identify the children in the application of 
+budgetary resources section of the apportionment (e.g., 
+PPA could be apportioned as separate category B lines).
+In the application of budgetary resources 
+section of the apportionment only Cat AB 
+is shown.
+Same concept applies to using separate 
+Cat B lines to reflect parent and child 
+apportioned amounts separately.
+
+
+ Line NoLine SplitLine DescriptionPrevious 
+ApprovedPrev FootnoteAgency RequestAgency FootnoteOMB ActionOMB FootnoteMemo 
+ObligationsAgency: Department of State AffairsBureau: Office of the ComptrollerAccount: R & D (003-04-1309)
+TAFS: 019-080-1309 /XIterNo1Last Approved Apportionment: N/A, First Request of yearRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1000Unob Bal: Brought forward, Oct 1500,000500,0001151BA: Disc: Anticipated nonexpenditure transfers of Approps from 080X130912,000,000B112,000,000B11920Total budgetary resources avail (disc. and mand.)12,500,00012,500,0006011Country A activities3,000,0003,000,0006012Country B activities1,500,0001,500,0006014Country C activities3,500,0003,500,0006170Unallocated activities - available CY+14,500,000A14,500,000A16190Total budgetary resources available12,500,00012,500,000Exhibit Notes:
+1)
+Allocation Transfer Apportionment Format, Child OnlyFY 20xx ApportionmentFunds provided by Public Law N/AThis exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1.
+B1 footnote: Allocation transfer from parent agency, Department of Government.
+Identify in the header the 
+law(s) providing the 
+budget authority.
+For a few allocation arrangements, the Parent has delegated the 
+apportionment responsibility to its children. 
+Note: In order for the transfers to crosswalk correctly in the SF 
+133 and President's Budget, please ensure that both the parent 
+and child use the appropriate USSGL for allocation transfers 
+https://tfm.fiscal.treasury.gov/v1/supplements/ussgl.html.
+
+ 
+
+
+ Line NoLine SplitLine DescriptionPrevious 
+ApprovedPrev FootnoteAgency 
+RequestAgency FootnoteOMB ActionOMB FootnoteMemo 
+ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: R & D (003-04-1309)
+TAFS: 080-X-1309IterNo1Last Approved Apportionment: N/A, First Request of yearRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1000Unob Bal: Brought forward, Oct 1750,000750,0001100BA: Disc: Appropriation 10,000,00010,000,0001151BA: Disc: Anticipated nonexpenditure transfers of Approps to other accounts-3,000,000-3,000,0001920Total budgetary resources avail (disc. and mand.)7,750,0007,750,00060011st quarter3,750,0003,750,00060022nd quarter4,000,0004,000,0006190Total budgetary resources available7,750,0007,750,000Exhibit Notes:
+1)This exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1.
+Allocation Transfer Apportionment Format, Parent OnlyFY 20xx ApportionmentFunds provided by Public Law N/AIdentify in the header 
+the law(s) providing the 
+budget authority.
+The Budgetary presentation reflects the accounting 
+steps for the parent only so the net effect is to 
+show the resources available for obligation for the 
+parent.
+Note: In order for the transfers to crosswalk 
+correctly in the SF 133 and President's Budget, 
+please ensure that both the parent and child use the 
+appropriate USSGL for allocation transfers 
+https://tfm.fiscal.treasury.gov/v1/supplements/ussgl.html. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+Line NoLine SplitLine DescriptionPrevious 
+ApprovedPrev FootnoteAgency RequestAgency FootnoteOMB ActionOMB FootnoteMemo 
+ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: Research and Development (003-00-0001)
+Treas Account: Research and DevelopmentTAFS: 099-X-0001IterNo2Last Approved Apportionment: 20xx-09-10RptCatNOReporting CategoriesAdjAutNOAdjustment Authority providedBudgetary resources1000DEDiscretionary Estimated - Unob Bal: Brought forward, Oct 13,000,0001000DADiscretionary Actual - Unob Bal: Brought forward, Oct 13,100,0003,100,0001000MEMandatory Estimated - Unob Bal: Brought forward, Oct 12,400,0001000MAMandatory Actual - Unob Bal: Brought forward, Oct 12,500,0002,500,0001700BA: Disc: Spending auth: Collected700,000700,0001740BA: Disc: Spending auth:Antic colls, reimbs, other2,700,0002,000,0002,000,0001800BA: Mand: Spending auth: Collected500,000500,0001802SEQBA: Mand: Spending auth: Previously unavailable140,000B1140,000B1140,000B11823SEQBA: Mand: Spending auth: New\Unob bal temp reduced-210,000-210,000-210,0001840BA: Mand: Spending auth:Antic colls, reimbs, other3,000,0002,500,0002,500,0001920Total budgetary resources avail (disc. and mand.)11,030,00011,230,00011,230,000Application of Budgetary Resources6011Development6,066,5006,176,5006,176,5006011Research4,963,5005,053,5005,053,5006190Total budgetary resources available11,030,00011,230,00011,230,000Exhibit Notes:
+1)
+Sequester ApportionmentThis exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1.
+Amountssequestered in 
+the previous year that 
+have been determined to 
+be available in the current 
+year ("pop-up")
+Amounts 
+sequestered 
+in the 
+current year
+
+
+ Initial Apportionment for Total Appropriation:
+Line NoLine 
+SplitBureau/ Account Title / Cat B Stub / Line SplitPrevious 
+ApprovedPrev FootnoteAgency RequestAgency FootnoteOMB ActionOMB FootnoteMemo ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: R & D (003-04-1109)
+TAFS: 080-20xx-20xx-4321IterNo1Last Approved Apportionment: N/A, First Request of yearRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1100BA: Disc: Appropriation100,000,000100,000,0001151BA: Disc: Anticipated non-expenditure transfers of appropriations-10,000,000-10,000,0001920Total budgetary resources avail (disc. and mand.)090,000,00090,000,00060011st quarter25,000,00025,000,00060022nd quarter15,000,00015,000,00060033rd quarter25,000,00025,000,00060044th quarter25,000,00025,000,0006190Total budgetary resources available090,000,00090,000,000Initial Apportionment for Different Period of Availability:
+Line NoLine 
+SplitLine DescriptionPrevious 
+ApprovedPrev FootnoteAgency RequestAgency FootnoteOMB ActionOMB FootnoteMemo ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: R & D (003-04-1109)
+TAFS: 080-X-4321IterNo1Last Approved Apportionment: N/A, First Request of yearRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1151BA: Disc: Anticipated non-expenditure transfers of appropriations10,000,00010,000,0001920Total budgetary resources avail (disc. and mand.)010,000,00010,000,00060022nd quarter5,000,0005,000,00060033rd quarter5,000,0005,000,0006190Total budgetary resources available010,000,00010,000,000Exhibit Notes:
+1)
+2)
+This exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1.
+See Section 3 of Appendix F for additional guidance.
+Appropriations with Different Periods of Availability Executed by Non-Expenditure TransferFY 20xx ApportionmentFunds provided by Public Law N/AFY 20xx ApportionmentFunds provided by Public Law N/ALine 1100 should match the 
+total appropriation, including 
+the amount provided for the 
+different TAFS.
+If $10m is not needed in the 
+extended/different TAFS, 
+submit a reapportionment 
+request to transfer the funds 
+back to the original TAFS using 
+lines 1151/1120. A 
+reapportionment will also be 
+needed for the original TAFS.
+Identify in the header the law(s) providing the 
+budget authority. 
+A non-expenditure 
+transfer document must 
+be processed to move 
+funds to the different 
+TAFS specified in the 
+language.
+This scenario reflects how to apportion accounts where the appropriation is 
+available for one year (or for a fixed amount of time) and the law permits 
+"not to exceed", "up to", or "no more than" a specific amount to be available 
+for a longer period of time or until expended.
+Example: 
+"For necessary expenses of XXX, $100 million, of which not to exceed $10 
+million may be available until expended for the acquisition of XXX...."
+
+
+ Apportionment of Rescinded Amounts as of September 30thLine NoLine 
+SplitLine DescriptionPrevious 
+ApprovedPrev FootnoteAgency 
+RequestAgency FootnoteOMB ActionOMB FootnoteMemo ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: R & D (003-04-1109)
+TAFS: 080-20xx-20xx-4321IterNo1Last Approved Apportionment: N/A, First Request of yearRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1100BA: Disc: Appropriation900,000900,0001130BA: Disc: Appropriations permanently reduced-100,000-100,0001920Total budgetary resources avail (disc. and mand.)0800,000800,00060011st quarter225,000225,00060022nd quarter225,000225,00060033rd quarter225,000225,00060044th quarter125,000125,0006190Total budgetary resources available0800,000800,000Apportionment of the Rescinded Amount that is Reappropriated as of September 30thLine NoLine 
+SplitLine DescriptionPrevious 
+ApprovedPrev FootnoteAgency 
+RequestAgency FootnoteOMB ActionOMB FootnoteMemo ObligationsAgency: Department of GovernmentBureau: Office of the SecretaryAccount: R & D (003-04-1109)
+TAFS: 080-20xx-20xx-4321IterNo1Last Approved Apportionment: N/A, First Request of yearRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1100BA: Disc: Appropriation100,000 100,000 
+1920Total budgetary resources avail (disc. and mand.)0100,000100,00060011st quarter100,000100,0006190Total budgetary resources available0100,000100,000Exhibit Notes:
+1)This exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1.
+Rescissions and Reappropriations of Unobligated Balances as of September 30thFY 20xx ApportionmentFunds provided by Public Law N/AFY 20xx+1 ApportionmentFunds provided by Public Law N/AAmount of 
+unobligated 
+balances as of 
+September 30thAmount of the rescinded 
+unobligated balances that 
+is reappropriatedIdentify in the header the law(s) 
+providing the budget authority. 
+This scenario reflects how to apportion TAFS with language that rescinds 
+unobligated balances as of September 30th and reappropriates them to be 
+available for anadditional fiscal year. This language may also have a 
+provision that if enacted after September 30th the language shall apply as if it 
+were in effect on September 30th.
+Example: 
+"The remaining unobligated balances as of September 30 XXXX, from 
+amounts made available for the Office of the Secretary, R&D account, are 
+hereby permanently rescinded and an amount of additional new budget 
+authority equivalent to the amount rescinded is hereby appropriated on 
+September 30 XXXX to remain available until September 30 XXXX+1,......"
+
+
+ Line NoLine SplitLine DescriptionPrevious 
+ApprovedPrev FootnoteAgency RequestAgency FootnoteOMB ActionOMB FootnoteMemo 
+ObligationsAgency: Department of State AffairsBureau: Office of the ComptrollerAccount: R & D (003-04-1309)
+TAFS: 019-080-X-1309IterNo1Last Approved Apportionment: N/A, First Request of yearRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1100BA: Disc: Appropriation 65,000,00065,000,00065,000,00001134BA: Disc: Appropriations precluded from obligation-43,452,500001153BA: Disc: Antic redc to apprp by offst coll/recpt-61,000,000-61,000,00001740BA: Disc: Spending auth: Antic colls, reimbs, other61,000,00061,000,00001920Total budgetary resources avail (disc. and mand.)21,547,50065,000,00065,000,00060011st quarter21,547,50021,547,50021,547,50060022nd quarter10,952,50010,952,50060033rd quarter16,250,00016,250,00060044th quarter16,250,00016,250,0006190Total budgetary resources available21,547,50065,000,00065,000,000Exhibit Notes:
+1)
+2)For additional guidance on how to capture the latest budget execution data, see A-11 exhibit 130J.
+Initial Apportionment of an Appropriation Reduced by Offsetting Collections and ReceiptsFY 20xx ApportionmentFunds provided by Public Law N/AThis exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1.
+Identify in the header the 
+law(s) providing the 
+budget authority.
+On the reapportionment after enactment of a full year appropriation, 
+the amount appropriated ($65m) is reduced on line 1153 by the 
+amount of estimated offsetting collections on line 1740 so as to result 
+in an estimated general fund appropriation of $4m. 
+Reapportionments should reflect amounts on lines 1100, 1137, 1153, 
+1700, and 1740 of the latest SF 133.
+Sample appropriations language:
+For expenses necessary for the ..., $65,000,000, to remain available until 
+expended: Provided, That the sum herein appropriated from the general 
+fund shall be reduced as such offsetting collections are received during 
+fiscal year 20XX, so as to result in a final fiscal year 20XX appropriation 
+from the general fund estimated at $4,000,000. 
+For the previously approved column, assume the account 
+received an automatic apportionment during a CR that was in 
+effect through December 30 and the account also received an 
+automatic 30-day apportionment pursuant to section 120.41 of 
+A-11 on December 30, and both current and prior year 
+enacted language is the same. The pro-rata share of the up-
+front appropriation is $16,204,500 (91 days / 365 days = 
+24.93%, 24.93% of $65,000,000 = $16,204,500) and the 
+automatic 30-day apportionment is $5,343,000 (30 days / 365 
+days = 8.22%, 8.22% of $65,000,000 = $5,343,000).
+
+ 
+
+ 
+
+
+ 
+
+ 
+
+ 
+Line NoLine SplitLine DescriptionPrevious ApprovedPrev FootnoteAgency RequestAgency FootnoteOMB ActionOMB FootnoteMemo ObligationsAgency: Department of State AffairsBureau: Office of the ComptrollerAccount: R & D (003-04-1309)
+TAFS: 019-080-X-1309IterNo1Last Approved Apportionment: N/A, First Request of yearRptCatNOReporting CategoriesAdjAutNOAdjustment Authority provided1100BA: Disc: Appropriation 8,000,0008,000,0008,000,0001134BA: Disc: Appropriations precluded from obligation-5,282,400-5,282,400-5,282,4001153BA: Disc: Antic redc to apprp by offst coll/recpt001740BA: Disc: Spending auth: Antic colls, reimbs, other1,000,0001,000,0001920Total budgetary resources avail (disc. and mand.)2,717,6003,717,6003,717,60060011st quarter2,717,6002,717,6002,717,60060022nd quarter1,000,0001,000,00060033rd quarter060044th quarter06190Total budgetary resources available2,717,6003,717,6003,717,600Exhibit Notes:
+1)
+2)
+3)The previous approved column reflects an automatic apportionment of 25% of the pro-rata share plus an estimated $2 million in excess fees collected during the CR period.
+4)The full-year bill was enacted after the first quarter and language did not change.
+For additional guidance on how to capture the latest budget execution data, see A-11 exhibit 130J.
+Apportionment of an Appropriation Reduced by Offsetting Collections and Receipts during CR period to invoke term and condition of the CR (section 123.10)
+FY 20xx ApportionmentFunds provided by Public Law N/AThis exhibit only reflects lines that contain values. For a full listing of all lines, please see Appendix F1.
+Identify in the header the 
+law(s) providing the 
+budget authority.
+Sample appropriations language:
+For expenses necessary expensesto carry out....., $8,000,000, to remain available until 
+expended: Provided, That the sum herein appropriated from the general fund shall be 
+reduced as such offsetting collections under such section XXX are received during fiscal 
+year 20XX, ....so as to result in a final fiscal year 20XX appropriation from the general 
+fund estimated at not more than $0: Providedfurther, That to the extent such offsetting 
+collectionss received in fiscal year XXXX exceed $8,000,000, those execess amounts 
+shall remain available until expended.....
+For the previously approved column, assume the account 
+received an automatic apportionment during a CR lasting 
+through February 1st (124 days / 365 days = 33.97%). 
+Pursuant to the guidance in A-11 section 123.10, agency came 
+in for an account-specific apportionment in January for an 
+expected $1 million to be collected above the $8 million in 
+statutue.
+
+

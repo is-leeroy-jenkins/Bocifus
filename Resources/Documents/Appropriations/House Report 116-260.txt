@@ -1,0 +1,1176 @@
+[House Report 116-260]
+[From the U.S. Government Publishing Office]
+
+
+116th Congress }                                            { Report
+                        HOUSE OF REPRESENTATIVES
+ 1st Session   }                                            { 116-260
+
+======================================================================
+
+ 
+        PREVENTING ONLINE SALES OF E-CIGARETTES TO CHILDREN ACT
+
+                                _______
+                                
+
+October 28, 2019.--Committed to the Committee of the Whole House on the 
+              State of the Union and ordered to be printed
+
+                                _______
+                                
+
+    Mr. Nadler, from the Committee on the Judiciary, submitted the 
+                               following
+
+                              R E P O R T
+
+                        [To accompany H.R. 3942]
+
+    The Committee on the Judiciary, to whom was referred the 
+bill (H.R. 3942) to apply requirements relating to delivery 
+sales of cigarettes to delivery sales of electronic nicotine 
+delivery systems, and for other purposes, having considered the 
+same, report favorably thereon without amendment and recommend 
+that the bill do pass.
+
+                                CONTENTS
+
+                                                                   Page
+Purpose and Summary..............................................     1
+Background and Need for the Legislation..........................     2
+Hearings.........................................................     4
+Committee Consideration..........................................     4
+Committee Votes..................................................     4
+Committee Oversight Findings.....................................     4
+New Budget Authority and Tax Expenditures and Congressional 
+  Budget Office Cost Estimate....................................     4
+Duplication of Federal Programs..................................     4
+Performance Goals and Objectives.................................     5
+Advisory on Earmarks.............................................     5
+Section-by-Section Analysis......................................     5
+Changes in Existing Law Made by the Bill, as Reported............     5
+
+                          Purpose and Summary
+
+    H.R. 3942, the ``Preventing Online Sales of E-Cigarettes to 
+Children Act'' would amend current law to tackle problems that 
+have arisen from the online sale of e-cigarettes. Specifically, 
+the bill would amend the Jenkins Act to extend the statute that 
+regulates the ``delivery sale'' of cigarettes to minors to 
+cover e-cigarettes, broadly defined.\1\
+---------------------------------------------------------------------------
+    \1\Pub. L. No. 81-363, 63 Stat. 884 (1949), as amended by the 
+Prevent All Cigarette Trafficking Act, or ``PACT Act,'' Pub. L. No. 
+111-154, 124 Stat. 1087 (2010).
+---------------------------------------------------------------------------
+
+                Background and Need for the Legislation
+
+    Excise taxes are imposed on the sale of tobacco products at 
+the federal, state, and local levels.\2\ The Jenkins Act 
+regulates sales of tobacco products via interstate shipment. 
+Congress passed the Act in 1949 in part to reduce state tax 
+losses resulting from tax arbitrage through mail order 
+interstate cigarette sales.\3\ The Act requires an interstate 
+cigarette retailer to register with states in which it 
+advertises or sells cigarettes and to file a report with the 
+state tax administrator providing the quantity of cigarettes 
+sold to a customer, as well as the customer's name and 
+address.\4\ Violation of the Act is a federal felony punishable 
+by up to three years in prison.\5\
+---------------------------------------------------------------------------
+    \2\U.S. Dep't of Just., Off. of the Inspector Gen., Report Number 
+I-2009-005, The Bureau of Alcohol, Tobacco, Firearms and Explosives' 
+Efforts to Prevent the Diversion of Tobacco, at i (2009), available at 
+https://www.oversight.gov/report/doj/review-bureau-alcohol-tobacco-
+firearms-and-explosives-efforts-prevent-diversion-tobacco.
+    \3\City of New York v. Smoke-Spirits.com, 541 F.3d 425, 433 (2d 
+Cir. 2008), rev'd sub nom. Hemi Group v. City of New York, 559 U.S. 1 
+(2010).
+    \4\15 U.S.C. Sec. 376 (2019).
+    \5\15 U.S.C. Sec. 377 (2019).
+---------------------------------------------------------------------------
+    Starting in the mid-1990s, the Internet became a popular 
+shopping destination for cigarette buyers because of the 
+ability to evade regulation. A 1997 survey identified 13 online 
+cigarette vendors.\6\ A decade later, that number had 
+multiplied to over 700.\7\ To address issues pertaining to 
+internet sales of cigarettes, Congress enacted the PACT Act.
+---------------------------------------------------------------------------
+    \6\Kurt M. Ribisi, et al., Are the Sales Practices of Cigarette 
+Vendors Good Enough to Prevent Sales to Minors?, Am. J. Pub. Health 
+940-941 (June 2002) (citation omitted).
+    \7\Christopher Banthin, Tobacco Control Legal Consortium, Public 
+Health Policy for Internet Cigarette Retailers, at 1 (2006).
+---------------------------------------------------------------------------
+    The PACT Act became law in 2010 with broad bipartisan 
+support. It passed the Senate by unanimous consent\8\ and then 
+the House by a vote of 387 to 25.\9\ The PACT Act was enacted 
+to help deal with problems stemming from the internet sales of 
+cigarettes. There were two principal problems with these 
+sales--deficiencies in verifying the age of purchasers to 
+prevent underage sales and evasion of state and local taxes on 
+the sales. The PACT Act addressed each of these problems. It 
+required internet sellers of cigarettes to ensure that delivery 
+agents checked identification in person on the delivery of the 
+product.\10\ It also required internet sellers to collect and 
+remit state and local taxes on their sales of cigarettes.\11\ 
+In addition, the PACT Act increased the penalty for violation 
+of the Jenkins Act from a misdemeanor with a statutory maximum 
+of six months to a felony punishable by up to three years in 
+prison.\12\ The PACT Act also added civil penalties.\13\ The 
+PACT Act also made it possible to levy criminal fines under 
+title 18,\14\ in addition to any civil penalties.\15\
+---------------------------------------------------------------------------
+    \8\156 Cong. Rec. S1480-S1487 (daily ed. Mar. 11, 2010).
+    \9\See http://clerk.house.gov/evs/2010/roll124.xml.
+    \10\PACT Act, 124 Stat. 1091-92, Sec. 2A (codified at 15 U.S.C. 
+Sec. 376a(b)(4)).
+    \11\PACT Act, 124 Stat. 1093, Sec. 2A (codified at 15 U.S.C. 
+Sec. 376a(d)).
+    \12\PACT Act, 124 Stat. 1100, Sec. 3 (codified at 15 U.S.C. 
+Sec. 377(a)(1)) (``Except as provided in paragraph (2), whoever 
+knowingly violates this chapter shall be imprisoned not more than 3 
+years, fined under title 18, or both.'')
+    \13\PACT Act, 124 Stat. 1100-01, Sec. 3 (codified at 15 U.S.C. 
+Sec. 377). In the case of a delivery seller, civil penalties are the 
+greater of $5,000 (for a first violation) or $10,000 (for subsequent 
+violations), or 2% of the gross sales of cigarettes or smokeless 
+tobacco of the delivery seller during the 1-year period ending on the 
+date of the violation. 15 U.S.C. Sec. 377(b)(1)(A). In the case of a 
+common carrier or other delivery service, $2,500 for a first violation, 
+$5,000 for any violation within 1 year of a prior violation. 15 U.S.C. 
+Sec. 377(b)(1)(B).
+    \14\See 15 U.S.C. Sec. 377(a)(1).
+    \15\15 U.S.C. Sec. 377(b)(2) (``A civil penalty . . . shall be 
+imposed in addition to any criminal penalty . . . and any other 
+damages, equitable relief, or injunctive relief awarded by the court, 
+including the payment of any unpaid taxes to the appropriate Federal, 
+State, local or tribal governments.'')
+---------------------------------------------------------------------------
+    The market for tobacco products has changed since enactment 
+of the PACT Act in 2010 and there are particular concerns about 
+the growing use of e-cigarettes among young people. According 
+to the Centers for Disease Control and Prevention (CDC), e-
+cigarettes have been the most commonly used tobacco product 
+among youth since 2014.\16\ The Surgeon General has concluded 
+that e-cigarette use among youth and young adults is a public 
+health concern; exposure to nicotine during adolescence can 
+cause addiction and can harm the developing adolescent 
+brain.\17\ The 2018 National Youth Tobacco Survey (NYTS)\18\ 
+found an alarming surge in the use of e-cigarettes by youth in 
+just one year: between 2017 and 2018, there was a 78% increase 
+in e-cigarette use among high school students and a 48% 
+increase among middle school students.\19\ This increase is 
+likely a result of the recent popularity of e-cigarettes shaped 
+like a USB flash drive; these products can be used discreetly, 
+have a high nicotine content, and come in flavors that appeal 
+to young people.\20\ Of the 5 million youth who used any 
+tobacco product in 2018, over 3.6 million youth used e-
+cigarettes in 2018.\21\
+---------------------------------------------------------------------------
+    \16\See Karen A. Cullen et al., Ctrs. for Disease Control & 
+Prevention, Notes from the Field: Use of Electronic Cigarettes and Any 
+Tobacco Product Among Middle and High School Students--United States, 
+2011-2018, Morbidity and Mortality Weekly Report (Nov. 16, 2018), 
+available at https://www.cdc.gov/mmwr/volumes/67/wr/mm6745a5.htm.
+    \17\See U.S. Dep't Health & Human Svcs., Ctrs. for Disease Control 
+& Prevention, E-Cigarette Use Among Youth and Young Adults: A Report of 
+the Surgeon General (2016), at 5.
+    \18\The National Youth Tobacco Survey is a cross-sectional, 
+voluntary, school-based, self-administered, pencil-and-paper survey of 
+middle school and high school students. Id.
+    \19\See U.S. Food & Drug Admin., Youth Tobacco Use: Results from 
+the National Youth Tobacco Survey, available at https://www.fda.gov/
+tobacco-products/youth-and-tobacco/youth-tobacco-use-results-national-
+youth-tobacco-survey#2.
+    \20\Cullen, et al. supra note 19.
+    \21\See id.
+---------------------------------------------------------------------------
+    Alarmingly, in the summer of 2019, doctors began to see 
+hundreds of cases where patients--often previously healthy 
+young adults--showed up in emergency rooms, suddenly stricken 
+with dangerous respiratory damage. As of October 1, 2019, 1,080 
+lung injury cases associated with using e-cigarette or vaping 
+products had been reported to the CDC from 48 states and one 
+U.S. territory.\22\ Eighteen deaths have been confirmed in 15 
+states.\23\
+---------------------------------------------------------------------------
+    \22\Ctrs. for Disease Control & Prevention, Outbreak of Lung Injury 
+Associated with E-Cigarette Use, or Vaping (Oct. 3, 2019), available at 
+https://www.cdc.gov/tobacco/basic_information/e-cigarettes/severe-lung-
+disease.html.
+    \23\Id.
+---------------------------------------------------------------------------
+    Data from the CDC, as well as the Food and Drug 
+Administration and the National Institutes of Health, suggest 
+that an overwhelming majority of young people who use e-
+cigarettes do not get them from brick and mortar retail 
+establishments.\24\ Given the evidence that internet e-
+cigarette vendors do not reliably screen underage purchasers, 
+this data suggests that many young people purchase these 
+products online. Curbing internet sales is, therefore, one way 
+for Congress to address the prevalent use of e-cigarettes by 
+young people. Because the Jenkins Act regulates the delivery 
+sale of cigarettes to minors--and the PACT Act extended the 
+Jenkins Act to cover Internet sales--the amendments proposed by 
+H.R. 3942 are an appropriate and effective vehicle to extend 
+coverage of the Jenkins Act to regulating the delivery sale of 
+e-cigarettes.
+---------------------------------------------------------------------------
+    \24\See Laura Kann, et al. Ctrs. for Disease Control & Prevention, 
+Youth Risk Behavior Surveillance--United States, 2017, Morbidity and 
+Mortality Weekly Report (Jun 15, 2018), available at https://
+www.cdc.gov/mmwr/volumes/67/ss/ss6708a1.htm (among the students who 
+used ``electronic vapor products,'' only 13.6% had usually gotten their 
+products by buying them in a store during the 30 days before the 
+survey); U.S. Food & Drug Admin. and Nat'l Insts. of Health, Population 
+Assessment of Tobacco and Health (PATH) Study, DS3002 Wave 3: Youth/
+Parent Questionnaire Data [Public-Use Files (ICPSR 36498)] (Sep. 28, 
+2018), available at https://www.icpsr.umich.edu/icpsrweb/NAHDAP/
+studies/36498/datadocumentation# (question R03_YV1118: In past 30 days, 
+how you usually got your own [electronic nicotine products/cartridges/
+e-liquid]; answer: 86.1% of respondents did not get them from a store).
+---------------------------------------------------------------------------
+
+                                Hearings
+
+    The Committee held no hearings on H.R. 3942.
+
+                        Committee Consideration
+
+    On Tuesday, October 16, 2019, the Committee met in open 
+session and ordered H.R. 3942 favorably reported by a voice 
+vote, a quorum being present.
+
+                            Committee Votes
+
+    Clause 3(b) of rule XIII of the Rules of the House of 
+Representatives is inapplicable because no recorded votes were 
+taken regarding this legislation.
+
+                      Committee Oversight Findings
+
+    In compliance with clause 3(c)(1) of rule XIII of the Rules 
+of the House of Representatives, the Committee advises that the 
+findings and recommendations of the Committee, based on 
+oversight activities under clause 2(b)(1) of rule X of the 
+Rules of the House of Representatives, are incorporated in the 
+descriptive portions of this report.
+
+  New Budget Authority and Tax Expenditures and Congressional Budget 
+                          Office Cost Estimate
+
+    With respect to the requirements of clause 3(c)(2) of rule 
+XIII of the Rules of the House of Representatives and section 
+308(a) of the Congressional Budget Act of 1974 and with respect 
+to requirements of clause (3)(c)(3) of rule XIII of the Rules 
+of the House of Representatives and section 402 of the 
+Congressional Budget Act of 1974, the Committee has requested 
+but not received a cost estimate for this Report from the 
+Director of the Congressional Budget Office. The Committee has 
+requested but not received from the Director of the 
+Congressional Budget Office a statement as to whether this 
+Report contains any new budget authority, spending authority, 
+credit authority, or an increase or decrease in revenues or tax 
+expenditures.
+
+                    Duplication of Federal Programs
+
+    No provision of H.R. 3942 establishes or reauthorizes a 
+program of the federal government known to be duplicative of 
+another federal program, a program that was included in any 
+report from the Government Accountability Office to Congress 
+pursuant to section 21 of Public Law 111-139, or a program 
+related to a program identified in the most recent Catalog of 
+Federal Domestic Assistance.
+
+                    Performance Goals and Objectives
+
+    The Committee states that pursuant to clause 3(c)(4) of 
+rule XIII of the Rules of the House of Representatives, H.R. 
+3942 would amend the statute that regulates the ``delivery 
+sale'' of cigarettes to minors to cover e-cigarettes, thereby 
+protecting the health and safety of minors.
+
+                          Advisory on Earmarks
+
+    In accordance with clause 9 of rule XXI of the Rules of the 
+House of Representatives, H.R. 3942 does not contain any 
+congressional earmarks, limited tax benefits, or limited tariff 
+benefits as defined in clause 9(d), 9(e), or 9(f) of rule XXI.
+
+                      Section-by-Section Analysis
+
+    The following discussion describes the bill as reported by 
+the Committee.
+    Sec. 1. Short title. Section 1 sets forth the short title 
+of the bill as the ``Preventing Online Sales of E-Cigarettes to 
+Children Act.''
+    Sec 2. Amendments to the Jenkins Act. Section 2 would amend 
+the Jenkins Act by redefining the term ``cigarette'' to include 
+``an electronic nicotine delivery system.'' Section 2 would 
+further define ``electronic nicotine delivery system'' as a 
+``any electronic device that, through an aerosolized solution, 
+delivers nicotine, flavor, or any other substance to the user 
+inhaling the device and includes e-cigarettes, e-hookahs, e-
+cigars, vape pens, advanced refillable personal vaporizers, 
+electronic pipes,'' and any component thereof. Section 2 
+includes exceptions for products approved by the FDA for sale 
+as tobacco cessation products or for other therapeutic 
+purposes, and marketed and sold solely for such purposes. 
+Section 2 would also mandate that any seller shipping a package 
+containing cigarettes or smokeless tobacco include on any bill 
+of lading and on the outside of the shipping package a label 
+stating that the contents may include nicotine. Section 2 would 
+take effect 90 days after the date of enactment of the bill.
+    Sec 3. Nonmailability of Electronic Nicotine Delivery 
+Systems. Section 3 would direct the U.S. Postal Service to 
+promulgate regulations to clarify the applicability of the 
+prohibition on mailing cigarettes under 18 U.S.C. Sec. 1716E to 
+electronic nicotine delivery systems. Section 3 would make 18 
+U.S.C. Sec. 1716E applicable to electronic nicotine delivery 
+systems on and after the date the U.S. Postal Service 
+promulgates these regulations.
+
+         Changes in Existing Law Made by the Bill, as Reported
+
+  In compliance with clause 3(e) of rule XIII of the Rules of 
+the House of Representatives, changes in existing law made by 
+the bill, H.R. 3942, as reported, are shown as follows:
+
+         Changes in Existing Law Made by the Bill, as Reported
+
+  In compliance with clause 3(e) of rule XIII of the Rules of 
+the House of Representatives, changes in existing law made by 
+the bill, as reported, are shown as follows (existing law 
+proposed to be omitted is enclosed in black brackets, new 
+matter is printed in italic, and existing law in which no 
+change is proposed is shown in roman):
+
+                        ACT OF OCTOBER 19, 1949
+
+     AN ACT To assist States in collecting sales and use taxes on 
+                              cigarettes.
+
+SECTION 1. DEFINITIONS.
+
+   As used in this Act, the following definitions apply:
+          (1) Attorney general.--The term ``attorney general'', 
+        with respect to a State, means the attorney general or 
+        other chief law enforcement officer of the State.
+          (2) Cigarette.--
+                  (A) In general.--The term ``cigarette''--
+                          (i) has the meaning given that term 
+                        in section 2341 of title 18, United 
+                        States Code; and
+                          (ii) [includes roll-your-own tobacco] 
+                        includes--
+                                  (I) roll-your-own tobacco  
+                                (as defined in section 5702 of 
+                                the Internal Revenue Code of 
+                                1986)[.]; and
+                                  (II) an electronic nicotine 
+                                delivery system.
+                  (B) Exception.--The term ``cigarette'' does 
+                not include a cigar (as defined in section 5702 
+                of the Internal Revenue Code of 1986).
+          (3) Common carrier.--The term ``common carrier'' 
+        means any person (other than a local messenger service 
+        or the United States Postal Service) that holds itself 
+        out to the general public as a provider for hire of the 
+        transportation by water, land, or air of merchandise 
+        (regardless of whether the person actually operates the 
+        vessel, vehicle, or aircraft by which the 
+        transportation is provided) between a port or place and 
+        a port or place in the United States.
+          (4) Consumer.--The term ``consumer''--
+                  (A) means any person that purchases 
+                cigarettes or smokeless tobacco; and
+                  (B) does not include any person lawfully 
+                operating as a manufacturer, distributor, 
+                wholesaler, or retailer of cigarettes or 
+                smokeless tobacco.
+          (5) Delivery sale.--The term ``delivery sale'' means 
+        any sale of cigarettes or smokeless tobacco to a 
+        consumer if--
+                  (A) the consumer submits the order for the 
+                sale by means of a telephone or other method of 
+                voice transmission, the mails, or the Internet 
+                or other online service, or the seller is 
+                otherwise not in the physical presence of the 
+                buyer when the request for purchase or order is 
+                made; or
+                  (B) the cigarettes or smokeless tobacco are 
+                delivered to the buyer by common carrier, 
+                private delivery service, or other method of 
+                remote delivery, or the seller is not in the 
+                physical presence of the buyer when the buyer 
+                obtains possession of the cigarettes or 
+                smokeless tobacco.
+          (6) Delivery seller.--The term ``delivery seller'' 
+        means a person who makes a delivery sale.
+          (7) Electronic nicotine delivery system.--The term 
+        ``electronic nicotine delivery system''-- 
+                  (A) means any electronic device that, through 
+                an aerosolized solution, delivers nicotine, 
+                flavor, or any other substance to the user 
+                inhaling from the device;
+                  (B) includes--
+                          (i) an e-cigarette;
+                          (ii) an e-hookah;
+                          (iii) an e-cigar;
+                          (iv) a vape pen;
+                          (v) an advanced refillable personal 
+                        vaporizer;
+                          (vi) an electronic pipe; and
+                          (vii) any component, liquid, part, or 
+                        accessory of a device described in 
+                        subparagraph (A), without regard to 
+                        whether the component, liquid, part, or 
+                        accessory is sold separately from the 
+                        device; and
+                  (C) does not include a product that is--
+                          (i) approved by the Food and Drug 
+                        Administration for--
+                                  (I) sale as a tobacco 
+                                cessation product; or
+                                  (II) any other therapeutic 
+                                purpose; and
+                          (ii) marketed and sold solely for a 
+                        purpose described in clause (i).
+          [(7)] (8) Indian country.--The term ``Indian 
+        country''--
+                  (A) has the meaning given that term in 
+                section 1151 of title 18, United States Code, 
+                except that within the State of Alaska that 
+                term applies only to the Metlakatla Indian 
+                Community, Annette Island Reserve; and
+                  (B) includes any other land held by the 
+                United States in trust or restricted status for 
+                one or more Indian tribes.
+          [(8)] (9) Indian tribe.--The term ``Indian tribe'', 
+        ``tribe'', or ``tribal'' refers to an Indian tribe as 
+        defined in section 4(e) of the Indian Self-
+        Determination and Education Assistance Act (25 U.S.C. 
+        450b(e)) or as listed pursuant to section 104 of the 
+        Federally Recognized Indian Tribe List Act of 1994 (25 
+        U.S.C. 479a-1).
+          [(9)] (10) Interstate commerce.--
+                  (A) In general.--The term ``interstate 
+                commerce'' means commerce between a State and 
+                any place outside the State, commerce between a 
+                State and any Indian country in the State, or 
+                commerce between points in the same State but 
+                through any place outside the State or through 
+                any Indian country.
+                  (B) Into a state, place, or locality.--A 
+                sale, shipment, or transfer of cigarettes or 
+                smokeless tobacco that is made in interstate 
+                commerce, as defined in this paragraph, shall 
+                be deemed to have been made into the State, 
+                place, or locality in which such cigarettes or 
+                smokeless tobacco are delivered.
+          [(10)] (11) Person.--The term ``person'' means an 
+        individual, corporation, company, association, firm, 
+        partnership, society, State government, local 
+        government, Indian tribal government, governmental 
+        organization of such a government, or joint stock 
+        company.
+          [(11)] (12) State.--The term ``State'' means each of 
+        the several States of the United States, the District 
+        of Columbia, the Commonwealth of Puerto Rico, or any 
+        territory or possession of the United States.
+          [(12)] (13) Smokeless tobacco.--The term ``smokeless 
+        tobacco'' means any finely cut, ground, powdered, or 
+        leaf tobacco, or other product containing tobacco, that 
+        is intended to be placed in the oral or nasal cavity or 
+        otherwise consumed without being combusted.
+          [(13)] (14) Tobacco tax administrator.--The term 
+        ``tobacco tax administrator'' means the State, local, 
+        or tribal official duly authorized to collect the 
+        tobacco tax or administer the tax law of a State, 
+        locality, or tribe, respectively.
+          [(14)] (15) Use.--The term ``use'' includes the 
+        consumption, storage, handling, or disposal of 
+        cigarettes or smokeless tobacco.
+
+           *       *       *       *       *       *       *
+
+
+SEC. 2A. DELIVERY SALES.
+
+  (a) In General.--With respect to delivery sales into a 
+specific State and place, each delivery seller shall comply 
+with--
+          (1) the shipping requirements set forth in subsection 
+        (b);
+          (2) the recordkeeping requirements set forth in 
+        subsection (c);
+          (3) all State, local, tribal, and other laws 
+        generally applicable to sales of cigarettes or 
+        smokeless tobacco as if the delivery sales occurred 
+        entirely within the specific State and place, including 
+        laws imposing--
+                  (A) excise taxes;
+                  (B) licensing and tax-stamping requirements;
+                  (C) restrictions on sales to minors; and
+                  (D) other payment obligations or legal 
+                requirements relating to the sale, 
+                distribution, or delivery of cigarettes or 
+                smokeless tobacco; and
+          (4) the tax collection requirements set forth in 
+        subsection (d).
+  (b) Shipping and Packaging.--
+          (1) Required statement.--For any shipping package 
+        containing cigarettes or smokeless tobacco, the 
+        delivery seller shall include on the bill of lading, if 
+        any, and on the outside of the shipping package, on the 
+        same surface as the delivery address, a clear and 
+        conspicuous statement providing as follows: 
+        ``CIGARETTES/NICOTINE/SMOKELESS TOBACCO: FEDERAL LAW 
+        REQUIRES THE PAYMENT OF ALL APPLICABLE EXCISE TAXES, 
+        AND COMPLIANCE WITH APPLICABLE LICENSING AND TAX-
+        STAMPING OBLIGATIONS''.
+          (2) Failure to label.--Any shipping package described 
+        in paragraph (1) that is not labeled in accordance with 
+        that paragraph shall be treated as nondeliverable 
+        matter by a common carrier or other delivery service, 
+        if the common carrier or other delivery service knows 
+        or should know the package contains cigarettes or 
+        smokeless tobacco. If a common carrier or other 
+        delivery service believes a package is being submitted 
+        for delivery in violation of paragraph (1), it may 
+        require the person submitting the package for delivery 
+        to establish that it is not being sent in violation of 
+        paragraph (1) before accepting the package for 
+        delivery. Nothing in this paragraph shall require the 
+        common carrier or other delivery service to open any 
+        package to determine its contents.
+          (3) Weight restriction.--A delivery seller shall not 
+        sell, offer for sale, deliver, or cause to be delivered 
+        in any single sale or single delivery any cigarettes or 
+        smokeless tobacco weighing more than 10 pounds.
+          (4) Age verification.--
+                  (A) In general.--A delivery seller who mails 
+                or ships tobacco products--
+                          (i) shall not sell, deliver, or cause 
+                        to be delivered any tobacco products to 
+                        a person under the minimum age required 
+                        for the legal sale or purchase of 
+                        tobacco products, as determined by the 
+                        applicable law at the place of 
+                        delivery;
+                          (ii) shall use a method of mailing or 
+                        shipping that requires--
+                                  (I) the purchaser placing the 
+                                delivery sale order, or an 
+                                adult who is at least the 
+                                minimum age required for the 
+                                legal sale or purchase of 
+                                tobacco products, as determined 
+                                by the applicable law at the 
+                                place of delivery, to sign to 
+                                accept delivery of the shipping 
+                                container at the delivery 
+                                address; and
+                                  (II) the person who signs to 
+                                accept delivery of the shipping 
+                                container to provide proof, in 
+                                the form of a valid, 
+                                government-issued 
+                                identification bearing a 
+                                photograph of the individual, 
+                                that the person is at least the 
+                                minimum age required for the 
+                                legal sale or purchase of 
+                                tobacco products, as determined 
+                                by the applicable law at the 
+                                place of delivery; and
+                          (iii) shall not accept a delivery 
+                        sale order from a person without--
+                                  (I) obtaining the full name, 
+                                birth date, and residential 
+                                address of that person; and
+                                  (II) verifying the 
+                                information provided in 
+                                subclause (I), through the use 
+                                of a commercially available 
+                                database or aggregate of 
+                                databases, consisting primarily 
+                                of data from government 
+                                sources, that are regularly 
+                                used by government and 
+                                businesses for the purpose of 
+                                age and identity verification 
+                                and authentication, to ensure 
+                                that the purchaser is at least 
+                                the minimum age required for 
+                                the legal sale or purchase of 
+                                tobacco products, as determined 
+                                by the applicable law at the 
+                                place of delivery.
+                  (B) Limitation.--No database being used for 
+                age and identity verification under 
+                subparagraph (A)(iii) shall be in the 
+                possession or under the control of the delivery 
+                seller, or be subject to any changes or 
+                supplementation by the delivery seller.
+  (c) Records.--
+          (1) In general.--Each delivery seller shall keep a 
+        record of any delivery sale, including all of the 
+        information described in section 2(a)(2), organized by 
+        the State, and within the State, by the city or town 
+        and by zip code, into which the delivery sale is so 
+        made.
+          (2) Record retention.--Records of a delivery sale 
+        shall be kept as described in paragraph (1) until the 
+        end of the 4th full calendar year that begins after the 
+        date of the delivery sale.
+          (3) Access for officials.--Records kept under 
+        paragraph (1) shall be made available to tobacco tax 
+        administrators of the States, to local governments and 
+        Indian tribes that apply local or tribal taxes on 
+        cigarettes or smokeless tobacco, to the attorneys 
+        general of the States, to the chief law enforcement 
+        officers of the local governments and Indian tribes, 
+        and to the Attorney General of the United States in 
+        order to ensure the compliance of persons making 
+        delivery sales with the requirements of this Act.
+  (d) Delivery.--
+          (1) In general.--Except as provided in paragraph (2), 
+        no delivery seller may sell or deliver to any consumer, 
+        or tender to any common carrier or other delivery 
+        service, any cigarettes or smokeless tobacco pursuant 
+        to a delivery sale unless, in advance of the sale, 
+        delivery, or tender--
+                  (A) any cigarette or smokeless tobacco excise 
+                tax that is imposed by the State in which the 
+                cigarettes or smokeless tobacco are to be 
+                delivered has been paid to the State;
+                  (B) any cigarette or smokeless tobacco excise 
+                tax that is imposed by the local government of 
+                the place in which the cigarettes or smokeless 
+                tobacco are to be delivered has been paid to 
+                the local government; and
+                  (C) any required stamps or other indicia that 
+                the excise tax has been paid are properly 
+                affixed or applied to the cigarettes or 
+                smokeless tobacco.
+          (2) Exception.--Paragraph (1) does not apply to a 
+        delivery sale of smokeless tobacco if the law of the 
+        State or local government of the place where the 
+        smokeless tobacco is to be delivered requires or 
+        otherwise provides that delivery sellers collect the 
+        excise tax from the consumer and remit the excise tax 
+        to the State or local government, and the delivery 
+        seller complies with the requirement.
+  (e) List of Unregistered or Noncompliant Delivery Sellers.--
+          (1) In general.--
+                  (A) Initial list.--Not later than 90 days 
+                after this subsection goes into effect under 
+                the Prevent All Cigarette Trafficking Act of 
+                2009, the Attorney General of the United States 
+                shall compile a list of delivery sellers of 
+                cigarettes or smokeless tobacco that have not 
+                registered with the Attorney General of the 
+                United States pursuant to section 2(a), or that 
+                are otherwise not in compliance with this Act, 
+                and--
+                          (i) distribute the list to--
+                                  (I) the attorney general and 
+                                tax administrator of every 
+                                State;
+                                  (II) common carriers and 
+                                other persons that deliver 
+                                small packages to consumers in 
+                                interstate commerce, including 
+                                the United States Postal 
+                                Service; and
+                                  (III) any other person that 
+                                the Attorney General of the 
+                                United States determines can 
+                                promote the effective 
+                                enforcement of this Act; and
+                          (ii) publicize and make the list 
+                        available to any other person engaged 
+                        in the business of interstate 
+                        deliveries or who delivers cigarettes 
+                        or smokeless tobacco in or into any 
+                        State.
+                  (B) List contents.--To the extent known, the 
+                Attorney General of the United States shall 
+                include, for each delivery seller on the list 
+                described in subparagraph (A)--
+                          (i) all names the delivery seller 
+                        uses or has used in the transaction of 
+                        its business or on packages delivered 
+                        to customers;
+                          (ii) all addresses from which the 
+                        delivery seller does or has done 
+                        business, or ships or has shipped 
+                        cigarettes or smokeless tobacco;
+                          (iii) the website addresses, primary 
+                        e-mail address, and phone number of the 
+                        delivery seller; and
+                          (iv) any other information that the 
+                        Attorney General of the United States 
+                        determines would facilitate compliance 
+                        with this subsection by recipients of 
+                        the list.
+                  (C) Updating.--The Attorney General of the 
+                United States shall update and distribute the 
+                list described in subparagraph (A) at least 
+                once every 4 months, and may distribute the 
+                list and any updates by regular mail, 
+                electronic mail, or any other reasonable means, 
+                or by providing recipients with access to the 
+                list through a nonpublic website that the 
+                Attorney General of the United States regularly 
+                updates.
+                  (D) State, local, or tribal additions.--The 
+                Attorney General of the United States shall 
+                include in the list described in subparagraph 
+                (A) any noncomplying delivery sellers 
+                identified by any State, local, or tribal 
+                government under paragraph (6), and shall 
+                distribute the list to the attorney general or 
+                chief law enforcement official and the tax 
+                administrator of any government submitting any 
+                such information, and to any common carriers or 
+                other persons who deliver small packages to 
+                consumers identified by any government pursuant 
+                to paragraph (6).
+                  (E) Accuracy and completeness of list of 
+                noncomplying delivery sellers.--In preparing 
+                and revising the list described in subparagraph 
+                (A), the Attorney General of the United States 
+                shall--
+                          (i) use reasonable procedures to 
+                        ensure maximum possible accuracy and 
+                        completeness of the records and 
+                        information relied on for the purpose 
+                        of determining that a delivery seller 
+                        is not in compliance with this Act;
+                          (ii) not later than 14 days before 
+                        including a delivery seller on the 
+                        list, make a reasonable attempt to send 
+                        notice to the delivery seller by 
+                        letter, electronic mail, or other means 
+                        that the delivery seller is being 
+                        placed on the list, which shall cite 
+                        the relevant provisions of this Act and 
+                        the specific reasons for which the 
+                        delivery seller is being placed on the 
+                        list;
+                          (iii) provide an opportunity to the 
+                        delivery seller to challenge placement 
+                        on the list;
+                          (iv) investigate each challenge 
+                        described in clause (iii) by contacting 
+                        the relevant Federal, State, tribal, 
+                        and local law enforcement officials, 
+                        and provide the specific findings and 
+                        results of the investigation to the 
+                        delivery seller not later than 30 days 
+                        after the date on which the challenge 
+                        is made; and
+                          (v) if the Attorney General of the 
+                        United States determines that the basis 
+                        for including a delivery seller on the 
+                        list is inaccurate, based on incomplete 
+                        information, or cannot be verified, 
+                        promptly remove the delivery seller 
+                        from the list as appropriate and notify 
+                        each appropriate Federal, State, 
+                        tribal, and local authority of the 
+                        determination.
+                  (F) Confidentiality.--The list described in 
+                subparagraph (A) shall be confidential, and any 
+                person receiving the list shall maintain the 
+                confidentiality of the list and may deliver the 
+                list, for enforcement purposes, to any 
+                government official or to any common carrier or 
+                other person that delivers tobacco products or 
+                small packages to consumers. Nothing in this 
+                section shall prohibit a common carrier, the 
+                United States Postal Service, or any other 
+                person receiving the list from discussing with 
+                a listed delivery seller the inclusion of the 
+                delivery seller on the list and the resulting 
+                effects on any services requested by the listed 
+                delivery seller.
+          (2) Prohibition on delivery.--
+                  (A) In general.--Commencing on the date that 
+                is 60 days after the date of the initial 
+                distribution or availability of the list 
+                described in paragraph (1)(A), no person who 
+                receives the list under paragraph (1), and no 
+                person who delivers cigarettes or smokeless 
+                tobacco to consumers, shall knowingly complete, 
+                cause to be completed, or complete its portion 
+                of a delivery of any package for any person 
+                whose name and address are on the list, 
+                unless--
+                          (i) the person making the delivery 
+                        knows or believes in good faith that 
+                        the item does not include cigarettes or 
+                        smokeless tobacco;
+                          (ii) the delivery is made to a person 
+                        lawfully engaged in the business of 
+                        manufacturing, distributing, or selling 
+                        cigarettes or smokeless tobacco; or
+                          (iii) the package being delivered 
+                        weighs more than 100 pounds and the 
+                        person making the delivery does not 
+                        know or have reasonable cause to 
+                        believe that the package contains 
+                        cigarettes or smokeless tobacco.
+                  (B) Implementation of updates.--Commencing on 
+                the date that is 30 days after the date of the 
+                distribution or availability of any updates or 
+                corrections to the list described in paragraph 
+                (1)(A), all recipients and all common carriers 
+                or other persons that deliver cigarettes or 
+                smokeless tobacco to consumers shall be subject 
+                to subparagraph (A) in regard to the 
+                corrections or updates.
+          (3) Exemptions.--
+                  (A) In general.--Subsection (b)(2) and any 
+                requirements or restrictions placed directly on 
+                common carriers under this subsection, 
+                including subparagraphs (A) and (B) of 
+                paragraph (2), shall not apply to a common 
+                carrier that--
+                          (i) is subject to a settlement 
+                        agreement described in subparagraph 
+                        (B); or
+                          (ii) if a settlement agreement 
+                        described in subparagraph (B) to which 
+                        the common carrier is a party is 
+                        terminated or otherwise becomes 
+                        inactive, is administering and 
+                        enforcing policies and practices 
+                        throughout the United States that are 
+                        at least as stringent as the agreement.
+                  (B) Settlement agreement.--A settlement 
+                agreement described in this subparagraph--
+                          (i) is a settlement agreement 
+                        relating to tobacco product deliveries 
+                        to consumers; and
+                          (ii) includes--
+                                  (I) the Assurance of 
+                                Discontinuance entered into by 
+                                the Attorney General of New 
+                                York and DHL Holdings USA, Inc. 
+                                and DHL Express (USA), Inc. on 
+                                or about July 1, 2005, the 
+                                Assurance of Discontinuance 
+                                entered into by the Attorney 
+                                General of New York and United 
+                                Parcel Service, Inc. on or 
+                                about October 21, 2005, and the 
+                                Assurance of Compliance entered 
+                                into by the Attorney General of 
+                                New York and Federal Express 
+                                Corporation and FedEx Ground 
+                                Package Systems, Inc. on or 
+                                about February 3, 2006, if each 
+                                of those agreements is honored 
+                                throughout the United States to 
+                                block illegal deliveries of 
+                                cigarettes or smokeless tobacco 
+                                to consumers; and
+                                  (II) any other active 
+                                agreement between a common 
+                                carrier and a State that 
+                                operates throughout the United 
+                                States to ensure that no 
+                                deliveries of cigarettes or 
+                                smokeless tobacco shall be made 
+                                to consumers or illegally 
+                                operating Internet or mail-
+                                order sellers and that any such 
+                                deliveries to consumers shall 
+                                not be made to minors or 
+                                without payment to the States 
+                                and localities where the 
+                                consumers are located of all 
+                                taxes on the tobacco products.
+          (4) Shipments from persons on list.--
+                  (A) In general.--If a common carrier or other 
+                delivery service delays or interrupts the 
+                delivery of a package in the possession of the 
+                common carrier or delivery service because the 
+                common carrier or delivery service determines 
+                or has reason to believe that the person 
+                ordering the delivery is on a list described in 
+                paragraph (1)(A) and that clauses (i), (ii), 
+                and (iii) of paragraph (2)(A) do not apply--
+                          (i) the person ordering the delivery 
+                        shall be obligated to pay--
+                                  (I) the common carrier or 
+                                other delivery service as if 
+                                the delivery of the package had 
+                                been timely completed; and
+                                  (II) if the package is not 
+                                deliverable, any reasonable 
+                                additional fee or charge levied 
+                                by the common carrier or other 
+                                delivery service to cover any 
+                                extra costs and inconvenience 
+                                and to serve as a disincentive 
+                                against such noncomplying 
+                                delivery orders; and
+                          (ii) if the package is determined not 
+                        to be deliverable, the common carrier 
+                        or other delivery service shall offer 
+                        to provide the package and its contents 
+                        to a Federal, State, or local law 
+                        enforcement agency.
+                  (B) Records.--A common carrier or other 
+                delivery service shall maintain, for a period 
+                of 5 years, any records kept in the ordinary 
+                course of business relating to any delivery 
+                interrupted under this paragraph and provide 
+                that information, upon request, to the Attorney 
+                General of the United States or to the attorney 
+                general or chief law enforcement official or 
+                tax administrator of any State, local, or 
+                tribal government.
+                  (C) Confidentiality.--Any person receiving 
+                records under subparagraph (B) shall--
+                          (i) use the records solely for the 
+                        purposes of the enforcement of this Act 
+                        and the collection of any taxes owed on 
+                        related sales of cigarettes and 
+                        smokeless tobacco; and
+                          (ii) keep confidential any personal 
+                        information in the records not 
+                        otherwise required for such purposes.
+          (5) Preemption.--
+                  (A) In general.--No State, local, or tribal 
+                government, nor any political authority of 2 or 
+                more State, local, or tribal governments, may 
+                enact or enforce any law or regulation relating 
+                to delivery sales that restricts deliveries of 
+                cigarettes or smokeless tobacco to consumers by 
+                common carriers or other delivery services on 
+                behalf of delivery sellers by--
+                          (i) requiring that the common carrier 
+                        or other delivery service verify the 
+                        age or identity of the consumer 
+                        accepting the delivery by requiring the 
+                        person who signs to accept delivery of 
+                        the shipping container to provide 
+                        proof, in the form of a valid, 
+                        government-issued identification 
+                        bearing a photograph of the individual, 
+                        that the person is at least the minimum 
+                        age required for the legal sale or 
+                        purchase of tobacco products, as 
+                        determined by either State or local law 
+                        at the place of delivery;
+                          (ii) requiring that the common 
+                        carrier or other delivery service 
+                        obtain a signature from the consumer 
+                        accepting the delivery;
+                          (iii) requiring that the common 
+                        carrier or other delivery service 
+                        verify that all applicable taxes have 
+                        been paid;
+                          (iv) requiring that packages 
+                        delivered by the common carrier or 
+                        other delivery service contain any 
+                        particular labels, notice, or markings; 
+                        or
+                          (v) prohibiting common carriers or 
+                        other delivery services from making 
+                        deliveries on the basis of whether the 
+                        delivery seller is or is not identified 
+                        on any list of delivery sellers 
+                        maintained and distributed by any 
+                        entity other than the Federal 
+                        Government.
+                  (B) Relationship to other laws.--Except as 
+                provided in subparagraph (C), nothing in this 
+                paragraph shall be construed to nullify, 
+                expand, restrict, or otherwise amend or 
+                modify--
+                          (i) section 14501(c)(1) or 
+                        41713(b)(4) of title 49, United States 
+                        Code;
+                          (ii) any other restrictions in 
+                        Federal law on the ability of State, 
+                        local, or tribal governments to 
+                        regulate common carriers; or
+                          (iii) any provision of State, local, 
+                        or tribal law regulating common 
+                        carriers that is described in section 
+                        14501(c)(2) or 41713(b)(4)(B) of title 
+                        49 of the United States Code.
+                  (C) State laws prohibiting delivery sales.--
+                          (i) In general.--Except as provided 
+                        in clause (ii), nothing in the Prevent 
+                        All Cigarette Trafficking Act of 2009, 
+                        the amendments made by that Act, or in 
+                        any other Federal statute shall be 
+                        construed to preempt, supersede, or 
+                        otherwise limit or restrict State laws 
+                        prohibiting the delivery sale, or the 
+                        shipment or delivery pursuant to a 
+                        delivery sale, of cigarettes or other 
+                        tobacco products to individual 
+                        consumers or personal residences.
+                          (ii) Exemptions.--No State may 
+                        enforce against a common carrier a law 
+                        prohibiting the delivery of cigarettes 
+                        or other tobacco products to individual 
+                        consumers or personal residences 
+                        without proof that the common carrier 
+                        is not exempt under paragraph (3) of 
+                        this subsection.
+          (6) State, local, and tribal additions.--
+                  (A) In general.--Any State, local, or tribal 
+                government shall provide the Attorney General 
+                of the United States with--
+                          (i) all known names, addresses, 
+                        website addresses, and other primary 
+                        contact information of any delivery 
+                        seller that--
+                                  (I) offers for sale or makes 
+                                sales of cigarettes or 
+                                smokeless tobacco in or into 
+                                the State, locality, or tribal 
+                                land; and
+                                  (II) has failed to register 
+                                with or make reports to the 
+                                respective tax administrator as 
+                                required by this Act, or that 
+                                has been found in a legal 
+                                proceeding to have otherwise 
+                                failed to comply with this Act; 
+                                and
+                          (ii) a list of common carriers and 
+                        other persons who make deliveries of 
+                        cigarettes or smokeless tobacco in or 
+                        into the State, locality, or tribal 
+                        land.
+                  (B) Updates.--Any government providing a list 
+                to the Attorney General of the United States 
+                under subparagraph (A) shall also provide 
+                updates and corrections every 4 months until 
+                such time as the government notifies the 
+                Attorney General of the United States in 
+                writing that the government no longer desires 
+                to submit information to supplement the list 
+                described in paragraph (1)(A).
+                  (C) Removal after withdrawal.--Upon receiving 
+                written notice that a government no longer 
+                desires to submit information under 
+                subparagraph (A), the Attorney General of the 
+                United States shall remove from the list 
+                described in paragraph (1)(A) any persons that 
+                are on the list solely because of the prior 
+                submissions of the government of the list of 
+                the government of noncomplying delivery sellers 
+                of cigarettes or smokeless tobacco or a 
+                subsequent update or correction by the 
+                government.
+          (7) Deadline to incorporate additions.--The Attorney 
+        General of the United States shall--
+                  (A) include any delivery seller identified 
+                and submitted by a State, local, or tribal 
+                government under paragraph (6) in any list or 
+                update that is distributed or made available 
+                under paragraph (1) on or after the date that 
+                is 30 days after the date on which the 
+                information is received by the Attorney General 
+                of the United States; and
+                  (B) distribute any list or update described 
+                in subparagraph (A) to any common carrier or 
+                other person who makes deliveries of cigarettes 
+                or smokeless tobacco that has been identified 
+                and submitted by a government pursuant to 
+                paragraph (6).
+          (8) Notice to delivery sellers.--Not later than 14 
+        days before including any delivery seller on the 
+        initial list described in paragraph (1)(A), or on an 
+        update to the list for the first time, the Attorney 
+        General of the United States shall make a reasonable 
+        attempt to send notice to the delivery seller by 
+        letter, electronic mail, or other means that the 
+        delivery seller is being placed on the list or update, 
+        with that notice citing the relevant provisions of this 
+        Act.
+          (9) Limitations.--
+                  (A) In general.--Any common carrier or other 
+                person making a delivery subject to this 
+                subsection shall not be required or otherwise 
+                obligated to--
+                          (i) determine whether any list 
+                        distributed or made available under 
+                        paragraph (1) is complete, accurate, or 
+                        up-to-date;
+                          (ii) determine whether a person 
+                        ordering a delivery is in compliance 
+                        with this Act; or
+                          (iii) open or inspect, pursuant to 
+                        this Act, any package being delivered 
+                        to determine its contents.
+                  (B) Alternate names.--Any common carrier or 
+                other person making a delivery subject to this 
+                subsection--
+                          (i) shall not be required to make any 
+                        inquiries or otherwise determine 
+                        whether a person ordering a delivery is 
+                        a delivery seller on the list described 
+                        in paragraph (1)(A) who is using a 
+                        different name or address in order to 
+                        evade the related delivery 
+                        restrictions; and
+                          (ii) shall not knowingly deliver any 
+                        packages to consumers for any delivery 
+                        seller on the list described in 
+                        paragraph (1)(A) who the common carrier 
+                        or other delivery service knows is a 
+                        delivery seller who is on the list and 
+                        is using a different name or address to 
+                        evade the delivery restrictions of 
+                        paragraph (2).
+                  (C) Penalties.--Any common carrier or person 
+                in the business of delivering packages on 
+                behalf of other persons shall not be subject to 
+                any penalty under section 14101(a) of title 49, 
+                United States Code, or any other provision of 
+                law for--
+                          (i) not making any specific delivery, 
+                        or any deliveries at all, on behalf of 
+                        any person on the list described in 
+                        paragraph (1)(A);
+                          (ii) refusing, as a matter of regular 
+                        practice and procedure, to make any 
+                        deliveries, or any deliveries in 
+                        certain States, of any cigarettes or 
+                        smokeless tobacco for any person or for 
+                        any person not in the business of 
+                        manufacturing, distributing, or selling 
+                        cigarettes or smokeless tobacco; or
+                          (iii) delaying or not making a 
+                        delivery for any person because of 
+                        reasonable efforts to comply with this 
+                        Act.
+                  (D) Other limits.--Section 2 and subsections 
+                (a), (b), (c), and (d) of this section shall 
+                not be interpreted to impose any 
+                responsibilities, requirements, or liability on 
+                common carriers.
+  (f) Presumption.--For purposes of this Act, a delivery sale 
+shall be deemed to have occurred in the State and place where 
+the buyer obtains personal possession of the cigarettes or 
+smokeless tobacco, and a delivery pursuant to a delivery sale 
+is deemed to have been initiated or ordered by the delivery 
+seller.
+
+           *       *       *       *       *       *       *

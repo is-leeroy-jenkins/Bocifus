@@ -1,0 +1,479 @@
+[House Report 115-31]
+[From the U.S. Government Publishing Office]
+
+
+115th Congress    }                                   {         Report
+                        HOUSE OF REPRESENTATIVES
+ 1st Session      }                                   {         115-31
+
+======================================================================
+
+ 
+TO REQUIRE THE ADMINISTRATOR OF THE FEDERAL EMERGENCY MANAGEMENT AGENCY 
+  TO SUBMIT A REPORT REGARDING CERTAIN PLANS REGARDING ASSISTANCE TO 
+APPLICANTS AND GRANTEES DURING THE RESPONSE TO AN EMERGENCY OR DISASTER
+
+                                _______
+                                
+
+ March 9, 2017.--Committed to the Committee of the Whole House on the 
+              State of the Union and ordered to be printed
+
+                                _______
+                                
+
+ Mr. Shuster, from the Committee on Transportation and Infrastructure, 
+                        submitted the following
+
+                              R E P O R T
+
+                        [To accompany H.R. 1117]
+
+      [Including cost estimate of the Congressional Budget Office]
+
+    The Committee on Transportation and Infrastructure, to whom 
+was referred the bill (H.R. 1117) to require the Administrator 
+of the Federal Emergency Management Agency to submit a report 
+regarding certain plans regarding assistance to applicants and 
+grantees during the response to an emergency or disaster, 
+having considered the same, report favorably thereon with an 
+amendment and recommend that the bill as amended do pass.
+
+                                CONTENTS
+
+                                                                   Page
+Purpose of Legislation...........................................     2
+Background and Need for Legislation..............................     2
+Hearings.........................................................     4
+Legislative History and Consideration............................     5
+Committee Votes..................................................     5
+Committee Oversight Findings.....................................     6
+New Budget Authority and Tax Expenditures........................     6
+Congressional Budget Office Cost Estimate........................     6
+Performance Goals and Objectives.................................     7
+Advisory of Earmarks.............................................     7
+Duplication of Federal Programs..................................     7
+Disclosure of Directed Rule Makings..............................     7
+Federal Mandate Statement........................................     7
+Preemption Clarification.........................................     8
+Advisory Committee Statement.....................................     8
+Applicability of Legislative Branch..............................     8
+Section-by-Section Analysis of Legislation.......................     8
+Changes in Existing Law Made by the Bill, as Reported............     8
+    The amendment is as follows:
+  Strike all after the enacting clause and insert the 
+following:
+
+SECTION 1. ACTION PLAN TO IMPROVE FIELD TRANSITION.
+
+  (a) In General.--Not later than 90 days after the date of enactment 
+of this Act, the Administrator of the Federal Emergency Management 
+Agency (FEMA) shall report to the Committee on Transportation and 
+Infrastructure of the House of Representatives and the Committee on 
+Homeland Security and Governmental Affairs of the Senate regarding the 
+plans the agency will undertake to provide the following:
+          (1) Consistent guidance to applicants on FEMA disaster 
+        funding procedures during the response to an emergency or 
+        disaster.
+          (2) Appropriate record maintenance and transfer of documents 
+        to new teams during staff transitions.
+          (3) Accurate assistance to applicants and grantees to ease 
+        the administrative burden throughout the process of obtaining 
+        and monitoring assistance.
+  (b) Maintaining Records.--The report shall also include a plan for 
+implementing operating procedures and document retention requirements 
+to ensure the maintenance of appropriate records throughout the 
+lifecycle of the emergency or disaster.
+  (c) New Technologies.--Finally, the report shall identify new 
+technologies that further aid the disaster workforce in partnering with 
+State, local, and tribal governments and private nonprofits in the wake 
+of a disaster or emergency to educate, assist, and inform applicants on 
+the status of their emergency or disaster assistance applications and 
+projects.
+
+                         PURPOSE OF LEGISLATION
+
+    H.R. 1117, as amended, would require the Administrator of 
+the Federal Emergency Management Agency (FEMA) to submit a 
+report regarding the development of an action plan relating to 
+guidance provided to disaster assistance applicants and 
+grantees, the transition of field personnel, maintenance of 
+records, and the use of technology to facilitate the delivery 
+of assistance and ease the administrative burden.
+
+                  BACKGROUND AND NEED FOR LEGISLATION
+
+Federal Emergency Management Agency: History
+
+    FEMA was established in 1979 by Executive Order 12148 by 
+President Jimmy Carter in response to a number of massive 
+disasters in the 1960's and 1970's. As a result of states 
+trying to manage these disasters, the National Governors 
+Association and others made a proposal to streamline and cut 
+the number of agencies states were required to work with 
+following a disaster. Prior to the creation of FEMA, the 
+federal government's emergency response mechanisms were 
+scattered among many agencies throughout government. The 
+creation of FEMA helped to centralize these authorities and the 
+coordination of the federal government's response to a 
+disaster. The Disaster Relief Act of 1974 (P.L. 93-288), which 
+constituted the statutory authority for most federal disaster 
+response activities, especially of FEMA, was later amended by 
+the Robert T. Stafford Disaster Relief and Emergency Assistance 
+Act, also known as the Stafford Act (P.L. 100-707).
+    Following more than two decades as an independent agency, 
+the Homeland Security Act of 2002 (P.L. 107-296) created the 
+Department of Homeland Security (DHS), placed FEMA within DHS, 
+and FEMA's functions were dispersed among various offices and 
+directorates within DHS. In 2006, following Hurricanes Katrina 
+and Rita and the subsequent intensive Congressional 
+investigations and oversight, Congress enacted the Post-Katrina 
+Emergency Management Reform Act of 2006 (PKEMRA) (P.L. 109-
+295), which addresses key response roles and authorities and 
+put FEMA back together again within DHS. PKEMRA authorized the 
+National Preparedness System and FEMA for the first time in 
+legislation. Most recently, Congress enacted the Sandy Recovery 
+Improvement Act (SRIA) (P.L. 113-2), on January 29, 2013, in 
+the wake of Hurricane Sandy's impact to the East Coast. SRIA 
+provided additional authorities to expedite and streamline 
+Hurricane Sandy recovery efforts, reduce costs, and improve the 
+effectiveness of several disaster assistance programs 
+authorized by the Stafford Act.
+
+Disaster response and recovery
+
+    When the President declares a major disaster or emergency, 
+the official declaration triggers certain federal response 
+authorities and financial disaster assistance. In particular, 
+when a declaration is made, the President is authorized to 
+direct any federal agency, with or without reimbursement, to 
+assist state, tribal, and local governments and protect life 
+and property. FEMA is responsible for coordinating federal 
+agency response and ensuring the necessary federal capabilities 
+are deployed at the appropriate place and time in support of 
+state, tribal, and local response efforts. In addition, FEMA 
+provides direct support and financial assistance to states, 
+tribes, and local governments and individuals as authorized 
+under the Stafford Act.
+    A significant portion of FEMA's response and recovery 
+capabilities resides in its Reservist\1\ workforce and Cadre of 
+On-Call Response/Recovery Employees (COREs).\2\ FEMA Reservist 
+and CORE personnel predominantly makes up FEMA's ``disaster 
+workforce,'' providing services at FEMA headquarters, regional 
+offices, and disaster Joint Field Offices, in the immediate 
+lead-up to, during, and after an emergency or major disaster.
+---------------------------------------------------------------------------
+    \1\FEMA Reservists are a type of Incident Management responder, 
+hired under the Stafford Act as temporary, intermittent employees. They 
+are a significant FEMA Incident Management work component, staffing 
+Joint Field Offices and other activities. These employees, when listed 
+as available, can deploy to perform disaster field activities directly 
+related to specific disasters, emergencies, projects, or activities of 
+a non-continuous nature. Reservists are a necessary augmentation of 
+permanent full-time staffing. (Source: https://www.fema.gov/reservist-
+program)
+    \2\FEMA CORE employees are hired under the Stafford Act to work for 
+a specific, limited period and function. FEMA CORE employees may be 
+renewed if there is ongoing disaster work and funding is available. 
+(Source: https://careers.fema.gov/cadre-call-responserecovery)
+---------------------------------------------------------------------------
+
+H.R. 1117 improving field transitions and requiring consistent guidance
+
+    Despite disaster investigations, multiple Office of 
+Inspector General and General Accountability Office reports, 
+and amended legislative authorities, the Committee continues to 
+hear about challenges with FEMA's disaster workforce. State, 
+tribal, and local emergency managers raise concerns about 
+frequent turnover, the loss of paperwork, and inconsistent 
+guidance which results in project delays, increased 
+administrative expenses, frustration, and, in the worst-cases, 
+the loss of recovery funds that are ultimately recouped by 
+FEMA.
+    FEMA has implemented several new technologies for its full-
+time managers and staff, but it does not appear that the same 
+efforts have been undertaken for field and temporary disaster 
+response and recovery personnel and its disaster workforce. 
+H.R. 1117, as amended, requires the Administrator to develop an 
+action plan for issuing consistent guidance to applicants, 
+ensuring the maintenance of appropriate records, and easing the 
+administrative burden of obtaining and monitoring assistance 
+from FEMA. FEMA must articulate an action plan for implementing 
+proper operating procedures and document retention requirements 
+in the field to ensure the maintenance of appropriate records 
+throughout the lifecycle of the disaster. Finally, FEMA must 
+identify new technologies that would further aid the disaster 
+workforce in partnering with state, local and tribal 
+governments and private non-profits in the wake of a disaster 
+or emergency.
+    In August of 2013, central Missouri experienced flooding, 
+straight line winds, and storms and consequently, received a 
+federal disaster declaration. In the years that have followed, 
+recovery has been slowed by numerous, unorganized transitions 
+of FEMA personnel, lost paperwork by FEMA personnel, and 
+conflicting information from state and federal officials. 
+Several major recovery projects still continue to languish. The 
+intent of the requirements in this bill is to improve the 
+efficiency of response and recovery operations and to improve 
+the interaction between FEMA and state, tribal, and local 
+grantees.
+    In recent storms, including Hurricane Matthew and flooding 
+and tornadoes, the Committee is aware of challenges related to 
+guidance provided to local governments on debris removal, 
+emergency protective measures, and the construction of 
+temporary facilities. Specifically, the lack of consistent 
+guidance and direction given to communities on debris removal 
+continues to be cited as a significant obstacle to recovery. 
+The Agency's report should include how FEMA will provide 
+detailed, consistent guidance to applicants and sub-applicants 
+at each stage of a disaster, from initial response to recovery, 
+to speed community recovery and improve the efficiency of the 
+delivery of disaster assistance.
+    The Committee expects the report to detail how the Agency 
+will provide consistent guidance and accurate information 
+following a disaster. Specifically, it should address how FEMA 
+will improve disaster field operations and staff transitions 
+by:
+     Providing consistent guidance to applicants on 
+FEMA disaster funding procedures during the response to an 
+emergency or disaster, including debris removal, emergency 
+protective measures and temporary structures.
+     Conducting appropriate record maintenance and 
+transfer of documents to new teams during staff transitions.
+     Providing accurate assistance to applicants and 
+grantees to ease the administrative burden throughout the 
+process of obtaining and monitoring assistance.
+     Implementing operating procedures and document 
+retention requirements to ensure the maintenance of appropriate 
+records throughout the lifecycle of the disaster.
+     Identifying new technologies that further aid the 
+disaster workforce in partnering with State, local, and tribal 
+governments and private nonprofits in the wake of a disaster to 
+educate, assist, and inform applicants on the status of their 
+disaster assistance applications.
+
+                                HEARINGS
+
+    The Subcommittee on Economic Development, Public Buildings, 
+and Emergency Management, held the following hearings and 
+roundtable discussions on subjects related to matters contained 
+in H.R. 1117, as amended, during the 114th Congress:
+    ``Rebuilding after the Storm: Lessening Impacts and 
+Speeding Recovery'' held on January 27, 2015. The purpose of 
+the hearing was to launch an assessment of the rising costs of 
+disasters, the cost effectiveness of disaster assistance, 
+strategies to reduce disaster losses, and the appropriate roles 
+of government and the private sector, and to consider reforms 
+to save lives through improved alert and warning systems and 
+search and rescue.
+    ``What is Driving the Increasing Costs and Rising Losses 
+from Disasters?'' held on March 18, 2015. The purpose of the 
+roundtable was to examine and discuss data related to disaster 
+costs, the trends observed over time, and the projections for 
+the future given the policies in place today.
+    ``The State of Pennsylvania and FEMA Region III are Leaders 
+in Mitigating Disaster Costs and Losses'' held on May 28, 2015. 
+The purpose of the roundtable was to examine disaster costs and 
+losses, focus on hazards impacting Pennsylvania and the region, 
+and identify best practices for mitigating and avoiding 
+disaster impacts.
+    ``Federal Disaster Assistance: Roles, Programs and 
+Coordination'' held on June 17, 2015. The purpose of the 
+roundtable was to examine and discuss federal disaster 
+assistance programs, the requirements and effectiveness of 
+those programs, and coordination among various agencies and 
+stakeholders.
+    ``Controlling the Rising Cost of Federal Responses to 
+Disaster'' held on May 12, 2016. The purpose of the hearing was 
+to begin exploring potential solutions and the principles that 
+should be driving solutions to lower the overall costs of 
+disasters and to help avoid devastating losses.
+
+                 LEGISLATIVE HISTORY AND CONSIDERATION
+
+    On February 16, 2017, Representative Vicky Hartzler (R-MO) 
+introduced H.R. 1117, a bill to require the Administrator of 
+the Federal Emergency Management Agency to submit a report on 
+certain plans regarding assistance to applicants and grantees 
+during the response to an emergency or disaster.
+    On February 28, 2017, the Committee on Transportation and 
+Infrastructure met in open session to consider H.R. 1117. The 
+Committee considered and adopted one amendment by voice vote--a 
+technical amendment offered by Subcommittee Chairman Lou 
+Barletta (R-PA). The Committee ordered the bill, as amended, 
+reported favorably to the House by voice vote with a quorum 
+present.
+
+                            COMMITTEE VOTES
+
+    Clause 3(b) of rule XIII of the Rules of the House of 
+Representatives requires each committee report to include the 
+total number of votes cast for and against on each record vote 
+on a motion to report and on any amendment offered to the 
+measure or matter, and the names of those members voting for 
+and against. There were no recorded votes taken in connection 
+with consideration of H.R. 1117, as amended, or ordering the 
+measure reported. A motion to order H.R. 1117, as amended, 
+reported favorably to the House was agreed to by voice vote 
+with a quorum present.
+
+                      COMMITTEE OVERSIGHT FINDINGS
+
+    With respect to the requirements of clause 3(c)(1) of rule 
+XIII of the Rules of the House of Representatives, the 
+Committee's oversight findings and recommendations are 
+reflected in this report.
+
+               NEW BUDGET AUTHORITY AND TAX EXPENDITURES
+
+    Clause 3(c)(2) of rule XIII of the Rules of the House of 
+Representatives does not apply where a cost estimate and 
+comparison prepared by the Director of the Congressional Budget 
+Office under section 402 of the Congressional Budget Act of 
+1974 has been timely submitted prior to the filing of the 
+report and is included in the report. Such a cost estimate is 
+included in this report.
+
+               CONGRESSIONAL BUDGET OFFICE COST ESTIMATE
+
+    With respect to the requirement of clause 3(c)(3) of rule 
+XIII of the Rules of the House of Representatives and section 
+402 of the Congressional Budget Act of 1974, the Committee has 
+received the enclosed cost estimate for H.R. 1117, as amended, 
+from the Director of the Congressional Budget Office:
+                                     U.S. Congress,
+                               Congressional Budget Office,
+                                     Washington, DC, March 6, 2017.
+Hon. Bill Shuster,
+Chairman, Committee on Transportation and Infrastructure,
+House of Representatives, Washington, DC.
+    Dear Mr. Chairman: The Congressional Budget Office has 
+prepared the enclosed cost estimate for H.R. 1117, a bill to 
+require the Administrator of the Federal Emergency Management 
+Agency to submit a report regarding certain plans regarding 
+assistance to applicants and grantees during the response to an 
+emergency or disaster.
+    If you wish further details on this estimate, we will be 
+pleased to provide them. The CBO staff contact is Robert Reese.
+            Sincerely,
+                                                        Keith Hall.
+    Enclosure.
+
+H.R. 1117--A bill to require the Administrator of the Federal Emergency 
+        Management Agency to submit a report regarding certain plans 
+        regarding assistance to applicants and grantees during the 
+        response to an emergency or disaster
+
+    H.R. 1117 would require the Federal Emergency Management 
+Agency (FEMA) to submit a report to the Congress on the 
+agency's plans to provide consistent and accurate guidance and 
+assistance to applicants for disaster funding. The bill also 
+would require FEMA to include in the report a plan to 
+effectively maintain records related to disaster funding and to 
+identify technologies that would assist individuals, 
+organizations, and communities when recovering from major 
+disasters.
+    Based on information provided by FEMA, CBO estimates that 
+implementing H.R. 1117 would cost less than $500,000 in 2018; 
+such spending would be subject to the availability of 
+appropriated funds.
+    Enacting H.R. 1117 would not affect direct spending or 
+revenues; therefore, pay-as-you-go procedures do not apply. CBO 
+estimates that enacting H.R. 1117 would not increase net direct 
+spending or on-budget deficits in any of the four consecutive 
+10-year periods beginning in 2028.
+    H.R. 1117 contains no intergovernmental or private-sector 
+mandates as defined in the Unfunded Mandates Reform Act and 
+would impose no costs on state, local, or tribal governments.
+    The CBO staff contact for this estimate is Robert Reese. 
+The estimate was approved by H. Samuel Papenfuss, Deputy 
+Assistant Director for Budget Analysis.
+
+                    PERFORMANCE GOALS AND OBJECTIVES
+
+    With respect to the requirement of clause 3(c)(4) of rule 
+XIII of the Rules of the House of Representatives, the 
+performance goal and objective of this legislation, as amended, 
+is to require the Administrator of the FEMA to submit a report 
+regarding the development of an action plan relating to 
+guidance provided to disaster assistance applicants and 
+grantees, the transition of field personnel, record maintenance 
+and the use of technology to facilitate the delivery of 
+assistance and ease the administrative burden.
+
+                          ADVISORY OF EARMARKS
+
+    Pursuant to clause 9 of rule XXI of the Rules of the House 
+of Representatives, the Committee is required to include a list 
+of congressional earmarks, limited tax benefits, or limited 
+tariff benefits as defined in clause 9(e), 9(f), and 9(g) of 
+rule XXI of the Rules of the House of Representatives. No 
+provision in the bill, as amended, includes an earmark, limited 
+tax benefit, or limited tariff benefit under clause 9(e), 9(f), 
+or 9(g) of rule XXI.
+
+                    DUPLICATION OF FEDERAL PROGRAMS
+
+    Pursuant to clause 3(c)(5) of rule XIII of the Rules of the 
+House of Representatives, the Committee finds that no provision 
+of H.R. 1117, as amended, establishes or reauthorizes a program 
+of the federal government known to be duplicative of another 
+federal program, a program that was included in any report from 
+the Government Accountability Office to Congress pursuant to 
+section 21 of Public Law 111-139, or a program related to a 
+program identified in the most recent Catalog of Federal 
+Domestic Assistance.
+
+                  DISCLOSURE OF DIRECTED RULE MAKINGS
+
+    Pursuant to section 3(i) of H. Res. 5, 115th Cong. (2017), 
+the Committee finds that enacting H.R. 1117, as amended, does 
+not direct the completion of a specific rule making within the 
+meaning of section 551 of title 5, United States Code.
+
+                       FEDERAL MANDATE STATEMENT
+
+    The Committee adopts as its own the estimate of federal 
+mandates prepared by the Director of the Congressional Budget 
+Office pursuant to section 423 of the Unfunded Mandates Reform 
+Act (Public Law 104-4).
+
+                        PREEMPTION CLARIFICATION
+
+    Section 423 of the Congressional Budget Act of 1974 
+requires the report of any Committee on a bill or joint 
+resolution to include a statement on the extent to which the 
+bill or joint resolution is intended to preempt state, local, 
+or tribal law. The Committee states that H.R. 1117, as amended, 
+does not preempt any state, local, or tribal law.
+
+                      ADVISORY COMMITTEE STATEMENT
+
+    No advisory committees within the meaning of section 5(b) 
+of the Federal Advisory Committee Act are created by this 
+legislation.
+
+                  APPLICABILITY OF LEGISLATIVE BRANCH
+
+    The Committee finds that the legislation, as amended, does 
+not relate to the terms and conditions of employment or access 
+to public services or accommodations within the meaning of 
+section 102(b)(3) of the Congressional Accountability Act 
+(Public Law 104-1).
+
+               SECTION-BY-SECTION ANALYSIS OF LEGISLATION
+
+Section 1. Action plan to improve field transition
+
+    Section 1 requires the Administrator of FEMA to provide a 
+plan for the development of consistent guidance to applicants 
+on FEMA disaster funding, the maintenance of records and 
+transfer of information, relieving administrative burdens, and 
+the implementation of new technology tools during disaster 
+response and recovery operations in the field.
+
+         CHANGES IN EXISTING LAW MADE BY THE BILL, AS REPORTED
+
+    H.R. 1117, as amended, makes no changes in existing law.
+
+                                  [all]

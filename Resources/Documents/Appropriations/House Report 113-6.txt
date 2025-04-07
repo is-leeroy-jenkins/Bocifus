@@ -1,0 +1,658 @@
+[House Report 113-6]
+[From the U.S. Government Publishing Office]
+
+
+113th Congress                                                   Report
+                        HOUSE OF REPRESENTATIVES
+ 1st Session                                                      113-6
+======================================================================
+ 
+              HYDROPOWER REGULATORY EFFICIENCY ACT OF 2013
+
+                                _______
+                                
+
+February 4, 2013.--Committed to the Committee of the Whole House on the 
+              State of the Union and ordered to be printed
+
+                                _______
+                                
+
+  Mr. Upton, from the Committee on Energy and Commerce, submitted the 
+                               following
+
+                              R E P O R T
+
+                        [To accompany H.R. 267]
+
+      [Including cost estimate of the Congressional Budget Office]
+
+    The Committee on Energy and Commerce, to whom was referred 
+the bill (H.R. 267) to improve hydropower, and for other 
+purposes, having considered the same, report favorably thereon 
+without amendment and recommend that the bill do pass.
+
+                                CONTENTS
+
+                                                                   Page
+Purpose and Summary..............................................     1
+Background and Need for Legislation..............................     2
+Hearings.........................................................     4
+Committee Consideration..........................................     4
+Committee Votes..................................................     4
+Committee Oversight Findings.....................................     5
+Statement of General Performance Goals and Objectives............     5
+New Budget Authority, Entitlement Authority, and Tax Expenditures     5
+Earmark, Limited Tax Benefits, and Limited Tariff Benefits.......     5
+Committee Cost Estimate..........................................     5
+Congressional Budget Office Estimate.............................     5
+Federal Mandates Statement.......................................     6
+Duplication of Federal Programs..................................     6
+Disclosure of Directed Rule Makings..............................     7
+Advisory Committee Statement.....................................     7
+Applicability to Legislative Branch..............................     7
+Section-by-Section Analysis of the Legislation...................     7
+Changes in Existing Law Made by the Bill, as Reported............     8
+
+                          Purpose and Summary
+
+    H.R. 267, the ``Hydropower Regulatory Efficiency Act of 
+2013,'' was introduced by Representative Cathy McMorris Rodgers 
+(together with Representatives DeGette, Dingell, Latta, Lujan, 
+Markey, Matheson, Terry, and Walden) on January 15, 2013. The 
+legislation facilitates the development of new hydropower 
+resources in the United States by streamlining the federal 
+licensing requirements for small hydropower projects and 
+qualifying conduit hydropower facilities. The legislation also 
+requires the Federal Energy Regulatory Commission to study ways 
+to improve federal hydropower licensing for non-powered dams 
+and closed-loop pumped storage facilities.
+
+                  Background and Need for Legislation
+
+    Hydropower is the nation's largest renewable energy 
+generation resource, providing nearly 8 percent of the 
+electricity generated in the United States. Including pumped 
+storage facilities, there are approximately 100,000 megawatts 
+(MW) of current installed hydropower capacity in the United 
+States. The hydropower sector employs approximately 200,000-
+300,000 workers across the United States, and nearly 2,500 U.S. 
+companies participate in the development, licensing, 
+construction, and operation of hydropower projects.\1\
+---------------------------------------------------------------------------
+    \1\National Hydropower Association, ``Job Creation Opportunities in 
+Hydropower,'' Final Report (September 20, 2009), available at: http://
+hydro.org/wp-content/uploads/2010/12/NHA_ JobsStudy_FinalReport.pdf; 
+NHA, ``U.S. Hydropower Supply Chain Snapshot,'' available at: http://
+hydro.org/why-hydro/available/hydropower-supply-chain-snapshot/.
+---------------------------------------------------------------------------
+    Ninety-three percent of U.S. hydroelectric facilities are 
+operated by the private sector, public utilities, and State or 
+local governments.\2\ According to the Federal Energy 
+Regulatory Commission (FERC), which regulates non-Federal 
+projects, these entities operate over 1,650 hydropower 
+facilities in every region of the U.S.\3\ Many of these 
+facilities are much smaller than the large Federal dams 
+typically associated with hydropower. FERC records show that 
+approximately 71% of non-Federal hydropower facilities have a 
+capacity of less than 5 MW, demonstrating the importance of 
+small hydropower projects to the nation's energy portfolio.\4\
+---------------------------------------------------------------------------
+    \2\Idaho National Laboratory, ``A Study of United States 
+Hydroelectric Plant Ownership'' (June 2006), available at: http://
+hydropower.inl.gov/hydrofacts/pdfs/a_study_of_united_ 
+states_hydroelectric_plant_ownership.pdf.
+    \3\See FERC, ``Issued Licenses,'' available at: http://ferc.gov/
+industries/hydropower/gen-info/
+licensing/licenses.xls; and ``Issued Exemptions,'' available at: http:/
+/ferc.gov/industries/
+hydropower/gen-info/licensing/exemptions.xls.
+    \4\See Testimony of Jeff C. Wright, Director, Office of Energy 
+Projects, FERC, before the Subcommittee on Energy and Commerce (May 9, 
+2012).
+---------------------------------------------------------------------------
+
+Hydropower's potential
+
+    Despite abundant resources, the production of electricity 
+from water resources is not fully utilized. With the right 
+Federal policies in place, it may be possible to double 
+hydropower capacity and create thousands of new domestic jobs. 
+For instance, a study completed on behalf of the National 
+Hydropower Association (NHA) concluded that by utilizing 
+currently untapped resources, the United States could add 
+approximately 60,000 MW of new hydropower capacity by 2025, 
+potentially creating as many as 700,000 jobs in the process.\5\
+---------------------------------------------------------------------------
+    \5\National Hydropower Association, ``Job Creation Opportunities in 
+Hydropower,'' Final Report (September 20, 2009), available at: http://
+hydro.org/wp-content/uploads/2010/12/NHA_JobsStudy_FinalReport.pdf; 
+Final Report Update with state breakdowns (April 26, 2010), available 
+at http://hydro.org/wp-content/uploads/2011/02/NHA-Annual-Conf-
+Frantzis-pres-Final-7.pdf.
+---------------------------------------------------------------------------
+    A significant amount of new hydroelectric generation could 
+come from maximizing existing infrastructure, particularly non-
+powered dams. For example, only about 3 percent of the nation's 
+approximately 80,000 dams currently generate hydropower.\6\ The 
+U.S. Department of Energy and Oak Ridge National Laboratory 
+recently released a report identifying 12,000 MW of new 
+hydropower that could be developed at existing non-powered 
+dams.\7\
+---------------------------------------------------------------------------
+    \6\U.S. Army Corps of Engineers, National Inventory of Dams, chart: 
+``Dams by Primary Purpose,'' available at: http://geo.usace.army.mil/
+pgis/f?p=397:5:48574067111801::NO.
+    \7\U.S. Department of Energy, ``An Assessment of Energy Potential 
+at Non-Powered Dams in the United States'' (April 2012), available at: 
+http://www1.eere.energy.gov/water/pdfs/npd_report.pdf.
+---------------------------------------------------------------------------
+    There also is significant growth potential in the small 
+hydropower and conduit power sectors of the industry, as 
+numerous project developers and local governments across the 
+country consider retrofitting local dam infrastructure or 
+investing in irrigation power projects and other conduit 
+applications. For instance, the U.S. Bureau of Reclamation 
+released a study identifying 373 existing canals and conduits 
+that have the combined potential of generating over 365,000 MW-
+hours of additional hydropower annually.\8\
+---------------------------------------------------------------------------
+    \8\U.S. Bureau of Reclamation, ``Site Inventory and Hydropower 
+Energy Assessment of Reclamation Owned Conduits,'' Final Report (March 
+2012), available at: http://www.usbr.gov/power/CanalReport/index.html.
+---------------------------------------------------------------------------
+
+Additional hydropower benefits
+
+    Hydropower is a clean, renewable, and zero-emission 
+electricity source; its utilization currently avoids 225 
+million metric tons of carbon dioxide in the U.S. each year--
+equal to the output of approximately 42 million passenger cars, 
+according to NHA. Hydropower facilities also can provide grid 
+reliability and stability services, such as the ability to 
+quickly meet changing demand in electric load, firming for 
+intermittent variable resources, such as wind and solar, and 
+black start capability in times of an outage.
+
+Regulation of hydropower development
+
+    Hydropower developments face a comprehensive regulatory 
+approval process that involves many participants, including 
+FERC, Federal and State resource agencies, local governments, 
+tribes, non-governmental organizations, and the public. The 
+regulatory process to license and construct a hydropower 
+facility can be considerably longer than the process for other 
+renewable energy resources. For example, FERC's Integrated 
+Licensing Process established specifically for hydropower 
+projects is structured to be completed in 5 years, while the 
+development timeline for wind and solar projects can be as 
+short as 18 to 24 months.
+    Developers of small hydropower projects told the Committee 
+that, due to the lack of economies of scale with smaller 
+projects, the costs associated with the licensing process serve 
+as a financial disincentive to pursue these facilities. In 
+recent years, FERC has taken steps to improve the licensing 
+process of small hydropower projects. However, FERC exemption 
+applications can be lengthy and time consuming to prepare. For 
+very small projects, the cost of FERC compliance can 
+potentially exceed the cost of hydro equipment.
+    According to the Colorado Small Hydro Association, a 
+typical exemption application for a small hydropower system may 
+be on the order of 100 pages, including all the necessary 
+explanatory text, diagrams, maps, letters, and appendices. 
+Compiling all the necessary information can take months, 
+requiring expensive consulting assistance from engineers, 
+attorneys, professionally-licensed surveyors, and environmental 
+consultants. Hiring consultants to complete FERC small hydro 
+exemptions for small projects may typically cost somewhere 
+between $10,000 and $30,000--a price tag that often outweighs 
+the total hydro equipment installation cost for a typical small 
+(1-2 kilowatt) residential micro-hydro system.
+    FERC currently reports 469 proposed projects with pending 
+license and license exemption applications, as well as issued 
+and pending preliminary permits.\9\ This represents nearly 
+60,000 MW in new hydropower capacity pending at FERC.\10\ By 
+improving the hydropower licensing process, H.R. 267 could 
+facilitate the development of many of these and future 
+hydropower projects.
+---------------------------------------------------------------------------
+    \9\These pending projects include all hydropower technologies: 
+conventional, conduit, pumped storage, and new marine hydrokinetic. 
+Arrived at by combining project figures from FERC generated 
+spreadsheets. See ``Pending Licenses, Relicenses and Exemptions'' 
+(total projects: 64 equaling 3,030.350 MW), available at: http://
+ferc.gov/industries/hydropower/gen-info/
+licensing/pending-lre.xls; ``All Issued Preliminary Permits'' (total 
+projects: 316 equaling 52,651.181 MW), available at: http://ferc.gov/
+industries/hydropower/gen-info/licensing/issued-pre-permits.xls; and 
+``All Pending Preliminary Permits'' (total projects 89 equaling 
+6,532.096 MW), available at: http://ferc.gov/industries/hydropower/gen-
+info/licensing/pending-pre-permits.xls.
+    \10\Id.
+---------------------------------------------------------------------------
+
+Previous consideration of the legislation
+
+    Identical legislation--H.R. 5892--was introduced in the 
+House of Representatives during the 112th Congress. The 
+Subcommittee on Energy and Power held a legislative hearing on 
+H.R. 5892, and subsequently, the Subcommittee met in open 
+markup session and favorably reported, by voice vote, H.R. 5892 
+to the full Committee. The full Committee ordered H.R. 5892 
+favorably reported, by voice vote, to the House of 
+Representatives. On July 9, 2012, under suspension of the 
+rules, H.R. 5892 was agreed to by the House by a vote of 372-0.
+
+Supporters of the legislation
+
+    Supporters of the legislation include NHA, American Rivers, 
+the Colorado Small Hydropower Association, and Voith 
+Hydropower.
+
+                                Hearings
+
+    The Committee on Energy and Commerce has not held hearings 
+on the legislation in the 113th Congress.
+
+                        Committee Consideration
+
+    On January 22, 2013, the Committee on Energy and Commerce 
+met in open markup session. No amendments were offered during 
+the markup and the Committee ordered H.R. 267 favorably 
+reported, by unanimous consent, to the House of 
+Representatives.
+
+                            Committee Votes
+
+    Clause 3(b) of rule XIII of the Rules of the House of 
+Representatives requires the Committee to list the record votes 
+on the motion to report legislation and amendments thereto. 
+There were no record votes taken in connection with ordering 
+H.R. 267 reported. A motion by Mr. Upton to order H.R. 267 
+reported to the House, without amendment, was agreed to by 
+unanimous consent.
+
+                      Committee Oversight Findings
+
+    Pursuant to clause 3(c)(1) of rule XIII of the Rules of the 
+House of Representatives, the Committee made oversight findings 
+that are reflected in this report.
+
+         Statement of General Performance Goals and Objectives
+
+    H.R. 267 facilitates the development of new hydropower 
+resources in the United States by streamlining the federal 
+licensing requirements for small hydropower projects and 
+qualifying conduit hydropower facilities. The legislation also 
+requires the Federal Energy Regulatory Commission to study ways 
+to improve federal hydropower licensing for non-powered dams 
+and closed-loop pumped storage facilities.
+
+   New Budget Authority, Entitlement Authority, and Tax Expenditures
+
+    In compliance with clause 3(c)(2) of rule XIII of the Rules 
+of the House of Representatives, the Committee finds that H.R. 
+267, the ``Hydropower Regulatory Efficiency Act of 2013,'' 
+would result in no new or increased budget authority, 
+entitlement authority, or tax expenditures or revenues.
+
+      Earmarks, Limited Tax Benefits, and Limited Tariff Benefits
+
+    In compliance with clause 9(e), 9(f), and 9(g) of rule XXI 
+of the Rules of the House of Representatives, the Committee 
+finds that H.R. 267, the ``Hydropower Regulatory Efficiency Act 
+of 2013,'' contains no earmarks, limited tax benefits, or 
+limited tariff benefits.
+
+                        Committee Cost Estimate
+
+    The Committee adopts as its own the cost estimate prepared 
+by the Director of the Congressional Budget Office pursuant to 
+section 402 of the Congressional Budget Act of 1974.
+
+                  Congressional Budget Office Estimate
+
+    Pursuant to clause 3(c)(3) of rule XIII of the Rules of the 
+House of Representatives, the following is the cost estimate 
+provided by the Congressional Budget Office pursuant to section 
+402 of the Congressional Budget Act of 1974:
+                                                  January 31, 2013.
+Hon. Fred Upton,
+Chairman, Committee on Energy and Commerce,
+House of Representatives, Washington, DC.
+    Dear Mr. Chairman: The Congressional Budget Office has 
+prepared the enclosed cost estimate for H.R. 267, the 
+Hydropower Regulatory Efficiency Act of 2013.
+    If you wish further details on this estimate, we will be 
+pleased to provide them. The CBO staff contact is Megan 
+Carroll.
+            Sincerely,
+                                              Douglas W. Elmendorf.
+    Enclosure.
+
+H.R. 267--Hydropower Regulatory Efficiency Act of 2013
+
+    Under the Federal Power Act, the Federal Energy Regulatory 
+Commission (FERC) issues licenses and regulates hydroelectric 
+facilities, regardless of size. H.R. 267 would amend current 
+law to allow FERC to extend certain permits related to 
+hydroelectric facilities and exempt small hydroelectric 
+facilities with a generating capacity of 10 megawatts or less 
+from FERC's licensing requirements. In addition, the bill would 
+direct the Secretary of Energy to study the feasibility of 
+generating hydroelectric power using water flowing through 
+conduits or at facilities that store water. Finally, the bill 
+would authorize FERC to carry out pilot projects to demonstrate 
+the potential of generating hydroelectric power at nonpowered 
+dams and water-storage facilities.
+    Based on information from FERC and the Department of Energy 
+(DOE), CBO estimates that implementing H.R. 267 would have no 
+significant net impact on the federal budget. CBO anticipates 
+that the proposed changes to FERC's permitting and licensing 
+requirements would reduce the commission's workload. We also 
+estimate that FERC would spend about $1 million on pilot 
+projects authorized under the bill, assuming appropriation of 
+the necessary amounts. However, because FERC recovers 100 
+percent of its costs through user fees, any change in the 
+agency's costs (which are controlled through annual 
+appropriation acts) would be offset by an equal change in fees 
+that the commission charges, resulting in no net change in 
+federal spending. Finally, CBO estimates that any increased 
+costs to DOE to prepare the study that would be required under 
+H.R. 267 would be negligible because the proposed study is 
+similar to ongoing efforts to analyze the potential for 
+developing hydropower resources. Enacting H.R. 267 would not 
+affect direct spending or revenues; therefore, pay-as-you-go 
+procedures do not apply.
+    H.R. 267 contains no intergovernmental or private-sector 
+mandates as defined in the Unfunded Mandates Reform Act and 
+would impose no costs on state, local, or tribal governments.
+    The CBO staff contact for this estimate is Megan Carroll. 
+The estimate was approved by Theresa Gullo, Deputy Assistant 
+Director for Budget Analysis.
+
+                       Federal Mandates Statement
+
+    The Committee adopts as its own the estimate of Federal 
+mandates prepared by the Director of the Congressional Budget 
+Office pursuant to section 423 of the Unfunded Mandates Reform 
+Act.
+
+                    Duplication of Federal Programs
+
+    No provision of H.R. 267 establishes or reauthorizes a 
+program of the Federal Government known to be duplicative of 
+another Federal program, a program that was included in any 
+report from the Government Accountability Office to Congress 
+pursuant to section 21 of Public Law 111-139, or a program 
+related to a program identified in the most recent Catalog of 
+Federal Domestic Assistance.
+
+                  Disclosure of Directed Rule Makings
+
+    The Committee estimates that enacting H.R. 267 does not 
+specifically direct the completion of any specific rule makings 
+within the meaning of 5 U.S.C. 551.
+
+                      Advisory Committee Statement
+
+    No advisory committees within the meaning of section 5(b) 
+of the Federal Advisory Committee Act were created by this 
+legislation.
+
+                  Applicability to Legislative Branch
+
+    The Committee finds that the legislation does not relate to 
+the terms and conditions of employment or access to public 
+services or accommodations within the meaning of section 
+102(b)(3) of the Congressional Accountability Act.
+
+               Section-by-Section Analysis of Legislation
+
+
+Section 1: Short title; table of contents
+
+    Section 1 provides the short title of ``Hydropower 
+Regulatory Efficiency Act of 2013'' and provides a table of 
+contents.
+
+Section 2: Findings
+
+    Section 2 sets forth findings on the potential power 
+generation and economic benefits resulting from increased 
+hydropower development in the United States.
+
+Section 3: Promoting small hydroelectric power projects
+
+    Section 3 increases the licensing exemption threshold for 
+small hydropower projects from 5 megawatts (MW) to 10 MW.
+
+Section 4: Promoting conduit hydropower projects
+
+    Section 4(a) provides that a ``qualifying conduit 
+hydropower facility'' is not required to obtain a FERC license. 
+The term is defined as a hydropower project that (1) uses a 
+non-Federally owned conduit, (2) has an installed capacity of 5 
+MW or less, and (3) does not currently have a license or 
+exemption. An entity proposing to construct a qualifying 
+conduit hydropower facility is required to file a notice of 
+intent with FERC that includes sufficient information to 
+demonstrate that the facility meets the qualifying criteria. If 
+FERC makes an initial determination that the proposed project 
+meets the criteria, it shall publish public notice of the 
+notice of intent to construct the project. If no entity 
+contests that the project meets the criteria within 45 days, 
+the project is deemed to meet the criteria. If an entity 
+contests whether the project meets the criteria, FERC is 
+required to promptly issue a written determination as to 
+whether the facility meets the criteria. Section 4(a) also 
+expands eligibility for the existing conduit exemption to 
+facilities with an installed capacity of up to 40 MW.
+    Section 4(b) makes conforming amendments to section 405 of 
+the Public Utility Regulatory Policies Act of 1978 (16 U.S.C. 
+2705).
+
+Section 5: FERC authority to extend preliminary permit periods
+
+    Section 5 allows FERC to extend the term of a preliminary 
+permit for up to 2 years, for a total of 5 years if FERC finds 
+that the permittee has carried out activities under the permit 
+in good faith and with reasonable diligence.
+
+Section 6: Promoting hydropower development at non-powered dams and 
+        closed-loop pumped storage projects
+
+    Section 6 directs FERC to study the feasibility of 
+establishing a 2-year licensing process for hydropower 
+development at non-powered dams and closed-loop pumped storage 
+projects. The results of the program shall be reported to 
+Congress.
+
+Section 7: DOE study of pumped storage and potential hydropower from 
+        conduits
+
+    Section 7 directs the Secretary of Energy to complete a 
+study of: (1) the technical flexibility and potential of 
+certain new and existing pumped storage facilities to support 
+intermittent renewable generation and provide grid reliability 
+benefits; and (2) the range of opportunities for hydropower 
+from conduits in the United States.
+
+         Changes in Existing Law Made by the Bill, as Reported
+
+  In compliance with clause 3(e) of rule XIII of the Rules of 
+the House of Representatives, changes in existing law made by 
+the bill, as reported, are shown as follows (existing law 
+proposed to be omitted is enclosed in black brackets, new 
+matter is printed in italic, existing law in which no change is 
+proposed is shown in roman):
+
+PUBLIC UTILITY REGULATORY POLICIES ACT OF 1978
+
+           *       *       *       *       *       *       *
+
+
+TITLE IV--SMALL HYDROELECTRIC POWER PROJECTS
+
+           *       *       *       *       *       *       *
+
+
+SEC. 405. SIMPLIFIED AND EXPEDITIOUS LICENSING PROCEDURES.
+
+  (a) * * *
+
+           *       *       *       *       *       *       *
+
+  (d) Exemptions From Licensing Requirements in Certain 
+Cases.--The Commission may in its discretion (by rule or order) 
+grant an exemption in whole or in part from the requirements 
+(including the licensing requirements) of part I of the Federal 
+Power Act to small hydroelectric power projects having a 
+proposed installed capacity of [5,000] 10,000 kilowatts or 
+less, on a case-by-case basis or on the basis of classes or 
+categories of projects, subject to the same limitations (to 
+ensure protection for fish and wildlife as well as other 
+environmental concerns) as those which are set forth in 
+subsections (c) and (d) of section 30 of the Federal Power Act 
+with respect to determinations made and exemptions granted 
+under [subsection (a) of such section 30] subsection (b) of 
+such section 30; and subsections (c) and (d) of such section 30 
+shall apply with respect to actions taken and exemptions 
+granted under this subsection. Except as specifically provided 
+in this subsection, the granting of an exemption to a project 
+under this subsection shall in no case have the effect of 
+waiving or limiting the application (to such project) of the 
+second sentence of subsection (b) of this section.
+
+           *       *       *       *       *       *       *
+
+                              ----------                              
+
+
+                           FEDERAL POWER ACT
+
+PART I
+
+           *       *       *       *       *       *       *
+
+
+  Sec. 5. (a) Each preliminary permit issued under this Part 
+shall be for the sole purpose of maintaining priority of 
+application for a license under the terms of this Act for such 
+period or periods, not exceeding a total of three years, as in 
+the discretion of the Commission may be necessary for making 
+examinations and surveys, for preparing maps, plans, 
+specifications, and estimates, and for making financial 
+arrangements.
+  (b) The Commission may extend the period of a preliminary 
+permit once for not more than 2 additional years beyond the 3 
+years permitted by subsection (a) if the Commission finds that 
+the permittee has carried out activities under such permit in 
+good faith and with reasonable diligence.
+  (c) Each such permit shall set forth the conditions under 
+which priority shall be maintained.
+  (d) Such permits shall not be transferable, and may be 
+canceled by order of the Commission upon failure of permittees 
+to comply with the conditions thereof or for other good cause 
+shown after notice and opportunity for hearing.
+
+           *       *       *       *       *       *       *
+
+  Sec. 30. [(a) Except as provided in subsection (b) or (c), 
+the Commission may grant an exemption in whole or in part from 
+the requirements of this part, including any license 
+requirements contained in this part, to any facility (not 
+including any dam or other impoundment) constructed, operated, 
+or maintained for the generation of electric power which the 
+Commission determines, by rule or order--
+          [(1) is located on non-Federal lands, and
+          [(2) utilizes for such generation only the 
+        hydroelectric potential of a manmade conduit, which is 
+        operated for the distribution of water for 
+        agricultural, municipal, or industrial consumption and 
+        not primarily for the generation of electricity.
+  [(b) The Commission may not grant any exemption under 
+subsection (a) to any facility the installed capacity of which 
+exceeds 15 megawatts (40 megawatts in the case of a facility 
+constructed, operated, and maintained by an agency or 
+instrumentality of a State or local government solely for water 
+supply for municipal purposes).]
+  (a)(1) A qualifying conduit hydropower facility shall not be 
+required to be licensed under this part.
+  (2)(A) Any person, State, or municipality proposing to 
+construct a qualifying conduit hydropower facility shall file 
+with the Commission a notice of intent to construct such 
+facility. The notice shall include sufficient information to 
+demonstrate that the facility meets the qualifying criteria.
+  (B) Not later than 15 days after receipt of a notice of 
+intent filed under subparagraph (A), the Commission shall--
+          (i) make an initial determination as to whether the 
+        facility meets the qualifying criteria; and
+          (ii) if the Commission makes an initial 
+        determination, pursuant to clause (i), that the 
+        facility meets the qualifying criteria, publish public 
+        notice of the notice of intent filed under subparagraph 
+        (A).
+  (C) If, not later than 45 days after the date of publication 
+of the public notice described in subparagraph (B)(ii)--
+          (i) an entity contests whether the facility meets the 
+        qualifying criteria, the Commission shall promptly 
+        issue a written determination as to whether the 
+        facility meets such criteria; or
+          (ii) no entity contests whether the facility meets 
+        the qualifying criteria, the facility shall be deemed 
+        to meet such criteria.
+  (3) For purposes of this section:
+          (A) The term ``conduit'' means any tunnel, canal, 
+        pipeline, aqueduct, flume, ditch, or similar manmade 
+        water conveyance that is operated for the distribution 
+        of water for agricultural, municipal, or industrial 
+        consumption and not primarily for the generation of 
+        electricity.
+          (B) The term ``qualifying conduit hydropower 
+        facility'' means a facility (not including any dam or 
+        other impoundment) that is determined or deemed under 
+        paragraph (2)(C) to meet the qualifying criteria.
+          (C) The term ``qualifying criteria'' means, with 
+        respect to a facility--
+                  (i) the facility is constructed, operated, or 
+                maintained for the generation of electric power 
+                and uses for such generation only the 
+                hydroelectric potential of a non-federally 
+                owned conduit;
+                  (ii) the facility has an installed capacity 
+                that does not exceed 5 megawatts; and
+                  (iii) on or before the date of enactment of 
+                the Hydropower Regulatory Efficiency Act of 
+                2013, the facility is not licensed under, or 
+                exempted from the license requirements 
+                contained in, this part.
+  (b) Subject to subsection (c), the Commission may grant an 
+exemption in whole or in part from the requirements of this 
+part, including any license requirements contained in this 
+part, to any facility (not including any dam or other 
+impoundment) constructed, operated, or maintained for the 
+generation of electric power which the Commission determines, 
+by rule or order--
+          (1) utilizes for such generation only the 
+        hydroelectric potential of a conduit; and
+          (2) has an installed capacity that does not exceed 40 
+        megawatts.
+  (c) In making the determination under [subsection (a)] 
+subsection (b) the Commission shall consult with the United 
+States Fish and Wildlife Service and the State agency 
+exercising administration over the fish and wildlife resources 
+of the State in which the facility is or will be located, in 
+the manner provided by the Fish and Wildlife Coordination Act 
+(16 U.S.C. 661, et seq.), and shall include in any such 
+exemption--
+          (1) * * *
+
+           *       *       *       *       *       *       *
+
+  (d) Any violation of a term or condition of any exemption 
+granted under [subsection (a)] subsection (b) shall be treated 
+as a violation of a rule or order of the Commission under this 
+Act.
+
+           *       *       *       *       *       *       *

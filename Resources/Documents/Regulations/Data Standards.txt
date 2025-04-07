@@ -1,0 +1,459 @@
+FEDERAL SPENDING TRANSPARENCY
+
+DATA STANDARDS
+
+ 
+
+Pursuant to the Digital Accountability and Transparency Act of 2014 (DATA Act), Pub.
+L. No. 113-101, the Office of Management & Budget and the Department of the Treasury identified the following set of Government-wide data standards fromalready established standards for the purpose of public reporting of certain data on Federal funds made available to or expended by Federal agencies and the entitiesthat receive those funds. These standards were identified to achieve the strategicreporting objective required by the law. Additional information about the datareported for these purposes can be found at: www.usaspending.gov.
+Supplemental information related to policy and data alignment, developed by theprocurement community, can be found here.
+
+ 
+
+OMB Memorandum M-17-04 “[finalized] policy decisions made as a result of the establishment of the data definitions and the standards development process”
+located below. To provide full transparency to the public OMB is updating the maxpage to footnote historical references that are no longer accurate. Page lastupdated October 25, 2021.
+
+ 
+
+ 
+
+*New Data Elements added July 13, 2015.
+
+**New Data Elements added August 31, 2015.
+
+^ As of August 2020, OMB has replaced the term “CFDA” with “AssistanceListing" per updates to 2 CFR 200.
+
+^^ As of November 2020, the 2 CFR reference is amended to 2 CFR § 200.1.
+
+ 
+
+Account Level Data Standards
+
+This list of data elements describes the appropriations accounts from whichagencies fund Federal awards.
+
+ 
+
+The DATA Act requirements for data definitions and reporting financial data didnot necessitate developing new definitions, as agencies have collected and reported these data to OMB and Treasury for decades. The definitions for the financial dataelements below were written explicitly to inform the public and others not wellversed in the nuances of the Federal Government's budgeting and accounting laws,
+administrative guidance, operational systems, and audited agency financial systems.
+Agencies will continue to follow the detailed guidance in OMB Circular A-11 andthe Treasury Financial Manual (TFM) in recording financial data in their systems
+
+
+and reporting the same to OMB and Treasury. The data standards below are drawnfrom these more detailed definitions that agencies will continue to follow.
+
+ 
+
+Data Element
+
+Data Definition
+
+AppropriationsAccount
+
+The basic unit of an appropriation generally reflecting eachunnumbered paragraph in an appropriation act. Anappropriation account typically encompasses a number of activities or projects and may be subject to restrictions orconditions applicable to only the account, the appropriationact, titles within an appropriation act, other appropriation acts,
+or the Government as a whole.
+
+ 
+
+An appropriations account is represented by a TAFS createdby Treasury in consultation with OMB.
+
+(defined in OMB Circular A-11)
+
+BudgetAuthorityAppropriated
+
+A provision of law (not necessarily in an appropriations act)
+authorizing an account to incur obligations and to makeoutlays for a given purpose. Usually, but not always, anappropriation provides budget authority.
+
+(defined in OMB Circular A-11)
+
+Object Class
+
+Categories in a classification system that presents obligationsby the items or services purchased by the FederalGovernment. Each specific object class is defined in OMB Circular A-11 § 83.6.
+
+(defined in OMB Circular A-11)
+
+Obligation
+
+Obligation means a legally binding agreement that will resultin outlays, immediately or in the future. When you place anorder, sign a contract, award a grant, purchase a service, ortake other actions that require the Government to makepayments to the public or from one Government account toanother, you incur an obligation. It is a violation of the Antideficiency Act (31 U.S.C. § 1341(a)) to involve the FederalGovernment in a contract or obligation for payment ofmoney before an appropriation is made, unless authorized by law. This means you cannot incur obligations in a vacuum; youincur an obligation against budget authority in a Treasuryaccount that belongs to your agency. It is a violation of theAntideficiency Act to incur an obligation in an amount greaterthan the amount available in the Treasury account that isavailable. This means that the account must have budget
+
+
+
+
+authority sufficient to cover the total of such obligations atthe time the obligation is incurred. In addition, the obligation you incur must conform to other applicable provisions of law,
+and you must be able to support the amounts reported by thedocumentary evidence required by 31 U.S.C. § 1501.
+Moreover, you are required to maintain certifications andrecords showing that the amounts have been obligated (31U.S.C. § 1108). The following subsections provide additional guidance on when to record obligations for the different typesof goods and services or the amount.
+
+ 
+
+Additional detail is provided in Circular A‐11.
+
+Other Budgetary Resources
+
+New borrowing authority, contract authority, and spendingauthority from offsetting collections provided by Congress inan appropriations act or other legislation, or unobligatedbalances of budgetary resources made available in previouslegislation, to incur obligations and to make outlays.
+
+(defined in OMB Circular A-11)
+
+Outlay
+
+Payments made to liquidate an obligation (other than therepayment of debt principal or other disbursements that are"means of financing" transactions). Outlays generally areequal to cash disbursements but also are recorded for cash-
+equivalent transactions, such as the issuance of debentures topay insurance claims, and in a few cases are recorded on anaccrual basis such as interest on public issues of the publicdebt. Outlays are the measure of Government spending.
+
+(defined in OMB Circular A-11)
+
+ProgramActivity
+
+A specific activity or project as listed in the program and financing schedules of the annual budget of the United StatesGovernment.
+
+(defined in OMB Circular A-11)
+
+TreasuryAccountSymbol(excluding sub-
+account)
+
+Treasury Account Symbol: The account identification codesassigned by the Department of the Treasury to individualappropriation, receipt, or other fund accounts. All financialtransactions of the Federal Government are classified by TASfor reporting to the Department of the Treasury and the Office of Management and Budget.
+
+(defined in OMB Circular A-11)
+
+ 
+
+Treasury Appropriation Fund Symbol: The components ofa Treasury Account Symbol — allocation agency, agency, main
+
+
+
+
+account, period of availability and availability type — thatdirectly correspond to an appropriations account establishedby Congress.
+
+(defined in OMB Circular A-11)
+
+UnobligatedBalance
+
+Unobligated balance means the cumulative amount of budgetauthority that remains available for obligation under law inunexpired accounts at a point in time. The term "expired balances available for adjustment only" refers to unobligatedamounts in expired accounts.
+
+ 
+
+Additional detail is provided in Circular A‐11.
+
+
+
+ 
+
+Award Characteristic Data Standards
+
+These data elements describe characteristics that apply to specific financialassistance and/or procurement awards.These data have been established andreported publicly for decades, however, did not use similar terminology in suchreporting, making it difficult for public users to compare and analyze data. Thedefinitions for these shared data elements below were written explicitly for theUSASpending.gov site to inform the public and others not well versed in thenuances of the Federal Government's financial assistance and procurement laws,
+regulations, and operations. To maintain the integrity of the Federal awardingprocesses, agencies will continue to follow the detailed regulatory and policydefinitions and guidance that governs the data when making and management ofawards using Federal tax dollars. 
+
+ 
+
+Data Element
+
+Data Definition
+
+Action Date**
+
+The date the action being reported was issued /
+signed by the Government or a bindingagreement was reached.
+
+Action Type**
+
+Description (and corresponding code) thatprovides information on any changes made to theFederal prime award. There are typically multipleactions for each award.
+
+(Note: This definition encompasses current dataelements "Type of Action" for financialassistance and "Reason for Modification" forprocurement)
+
+Award Description
+
+A brief description of the purpose of the award.
+
+Award Identification (ID)
+Number
+
+The unique identifier of the specific award beingreported, i.e. Federal Award Identification
+
+
+
+
+Number (FAIN) for financial assistance andProcurement Instrument Identifier (PIID) forprocurement.
+
+AwardModification/AmendmentNumber
+
+The identifier of an action being reported thatindicates the specific subsequent change to theinitial award.
+
+Award Type**
+
+Description (and corresponding code) thatprovides information to distinguish type ofcontract, grant, or loan and provides the userwith more granularity into the method ofdelivery of the outcomes.
+
+Business Types**
+
+A collection of indicators of different types ofrecipients based on socio-economic status andorganization / business areas.
+
+Catalog of FederalDomestic Assistance(CFDA) Number**^
+
+The number assigned to a Federal area of workin the Catalog of Federal Domestic Assistance.
+
+Catalog of FederalDomestic Assistance(CFDA) Title**^
+
+The title of the area of work under which theFederal award was funded in the Catalog ofFederal Domestic Assistance.
+
+North AmericanIndustrial ClassificationSystem (NAICS) Code
+
+The identifier that represents the NorthAmerican Industrial Classification System Codeassigned to the solicitation and resulting awardidentifying the industry in which the contractrequirements are normally performed.
+
+North AmericanIndustrial ClassificationSystem (NAICS)
+Description
+
+The title associated with the NAICS Code.
+
+Ordering Period EndDate**
+
+For procurement, the date on which, for theaward referred to by the action being reported,
+no additional orders referring to it may be placed.
+This date applies only to procurement indefinitedelivery vehicles (such as indefinite deliverycontracts or blanket purchase agreements).
+Administrative actions related to this award maycontinue to occur after this date. The period ofperformance end dates for procurement ordersissued under the indefinite delivery vehicle mayextend beyond this date.
+
+
+
+
+Parent AwardIdentification (ID)
+Number
+
+The identifier of the procurement award underwhich the specific award is issued, such as aFederal Supply Schedule. This data elementcurrently applies to procurement actions only.
+
+Period of PerformanceCurrent End Date**
+
+The current date on which, for the awardreferred to by the action being reported, awardeeeffort completes or the award is otherwise ended.
+Administrative actions related to this award maycontinue to occur after this date. This date doesnot apply to procurement indefinite deliveryvehicles under which definitive orders may beawarded.
+
+Period of PerformancePotential End Date**
+
+For procurement, the date on which, for theaward referred to by the action being reported ifall potential pre-determined or pre-negotiatedoptions were exercised, awardee effort iscompleted or the award is otherwise ended.
+Administrative actions related to this award maycontinue to occur after this date. This date doesnot apply to procurement indefinite deliveryvehicles under which definitive orders may beawarded.
+
+Period of PerformanceStart Date**
+
+The date on which, for the award referred to bythe action being reported, awardee effort beginsor the award is otherwise effective.
+
+Primary Place ofPerformance Address**
+
+The address where the predominant performanceof the award will be accomplished. The addressis made up of four components: City, State Code,
+and ZIP+4 or Postal Code.
+
+Primary Place ofPerformanceCongressional District**
+
+U.S. congressional district where the predominantperformance of the award will be accomplished.
+This data element will be derived from thePrimary Place of Performance Address.
+
+Primary Place ofPerformance CountryCode**
+
+Country code where the predominantperformance of the award will be accomplished.
+
+Primary Place ofPerformance CountryName**
+
+Name of the country represented by the countrycode where the predominant performance of theaward will be accomplished.
+
+
+
+
+Record Type**
+
+Code indicating whether an action is anindividual transaction or aggregated. This dataelement applies to financial assistance only.
+
+
+
+ 
+
+Award Amount Data Standards
+
+These data elements describe characteristics that apply to amount information forfinancial assistance and/or procurement awards. These data have been establishedand reported publicly for decades, however, did not use similar terminology in suchreporting, making it difficult for public users to compare and analyze data. Thedefinitions for these shared data elements below were written explicitly for theUSASpending.gov site to inform the public and others not well versed in thenuances of the Federal Government's financial assistance and procurement laws,
+regulations, and operations. 
+
+ 
+
+Data Element
+
+Data Definition
+
+Amount ofAward**
+
+The cumulative amount obligated by the Federal Governmentfor an award, which is calculated by USAspending.gov or asuccessor site.
+
+For procurement and financial assistance awards except loans,
+this is the sum of Federal Action Obligations.
+
+For loans or loan guarantees, this is the Original SubsidyCost.
+
+Current TotalValue ofAward**
+
+For procurement, the total amount obligated to date on acontract, including the base and exercised options.
+
+Federal ActionObligation**
+
+Amount of Federal Government's obligation, de-obligation,
+or liability, in dollars, for an award transaction.
+
+Non-FederalFundingAmount**^^
+
+For financial assistance, the amount of the award funded bynon-Federal source(s), in dollars. Program Income (as definedin 2 C.F.R. § 200.80) is not included until such time thatProgram Income is generated and credited to the agreement.
+
+Potential TotalValue ofAward**
+
+For procurement, the total amount that could be obligated ona contract, if the base and all options are exercised.
+
+
+
+ 
+
+Awardee & Recipient Entity Data Standards
+
+These data elements describe the recipients/awardees of Federal funds.
+
+ 
+
+Data Element
+
+Data Definition
+
+
+
+
+Awardee/RecipientLegal EntityName*
+
+The name of the awardee or recipient that relates to theunique identifier. For U.S. based companies, this name iswhat the business ordinarily files in formation documentswith individual states (when required).
+
+Awardee/RecipientUnique Identifier*
+
+The unique identification number for an awardee orrecipient. Currently the identifier is the 9-digit numberassigned by Dun & Bradstreet referred to as the DUNS®
+number.
+
+HighlyCompensatedOfficer Name
+
+ 
+
+First Name: The first name of an individual identifiedas one of the five most highly compensated"Executives." "Executive" means officers, managingpartners, or any other employees in managementpositions.
+
+ 
+
+Middle Initial: The middle initial of an individualidentified as one of the five most highly compensated"Executives." "Executive" means officers, managingpartners, or any other employees in managementpositions.
+
+ 
+
+Last Name: The last name of an individual identified asone of the five most highly compensated "Executives."
+"Executive" means officers, managing partners, or anyother employees in management positions.
+
+HighlyCompensatedOfficer TotalCompensation
+
+The cash and noncash dollar value earned by the one ofthe five most highly compensated "Executives" duringthe awardee's preceding fiscal year and includes thefollowing (for more information see 17 C.F.R. §
+229.402(c)(2)): salary and bonuses, awards of stock, stockoptions, and stock appreciation rights, earnings forservices under non-equity incentive plans, change inpension value, above-market earnings on deferredcompensation which is not tax qualified, and othercompensation.
+
+Legal EntityAddress
+
+ 
+
+ 
+
+The awardee or recipient's legal business address wherethe office represented by the Unique Entity Identifier (asregistered in the System for Award Management) islocated. In most cases, this should match what the entityhas filed with the State in its organizational documents, ifrequired. The address is made up of five components:
+Address Lines 1 and 2, City, State Code, and ZIP+4 orPostal Code.
+
+
+
+
+Legal EntityCongressionalDistrict
+
+The congressional district in which the awardee orrecipient is located. This is not a required data elementfor non-U.S. addresses.
+
+Legal EntityCountry Code
+
+Code for the country in which the awardee or recipient islocated, using the ISO 3166-1 Alpha-3 GENC Profile,
+and not the codes listed for those territories andpossessions of the United States already identified as"states."
+
+Legal EntityCountry Name
+
+The name corresponding to the Country Code.
+
+Ultimate ParentLegal EntityName*
+
+The name of the ultimate parent of the awardee orrecipient. Currently, the name is from the global parentDUNS® number.
+
+Ultimate ParentUnique Identifier*
+
+The unique identification number for the ultimate parentof an awardee or recipient. Currently the identifier is the9-digit number maintained by Dun & Bradstreet as theglobal parent DUNS® number.
+
+
+
+ 
+
+Awarding Entity Data Standards
+
+These data elements describe the characteristics of the entity that made the award.
+
+ 
+
+Data Element
+
+Data Definition
+
+AwardingAgency Code
+
+A department or establishment of the Government as used inthe Treasury Account Fund Symbol (TAFS).
+
+AwardingAgency Name
+
+The name associated with a department or establishment ofthe Government as used in the Treasury Account FundSymbol (TAFS).
+
+AwardingOffice Code**
+
+Identifier of the level n organization that awarded, executedor is otherwise responsible for the transaction.
+
+AwardingOffice Name**
+
+Name of the level n organization that awarded, executed or isotherwise responsible for the transaction.
+
+Awarding SubTier AgencyCode**
+
+Identifier of the level 2 organization that awarded, executedor is otherwise responsible for the transaction.
+
+Awarding SubTier AgencyName**
+
+Name of the level 2 organization that awarded, executed or isotherwise responsible for the transaction.
+
+
+
+ 
+
+Funding Entity Data Standards
+
+
+These data elements describe the characteristics of the entity that provided thefunding for an award.
+
+ 
+
+Data Element
+
+Data Definition
+
+FundingAgency Code**
+
+The 3-digit CGAC agency code of the department orestablishment of the Government that provided thepreponderance of the funds for an award and/or individualtransactions related to an award.
+
+FundingAgencyName**
+
+Name of the department or establishment of theGovernment that provided the preponderance of the fundsfor an award and/or individual transactions related to anaward.
+
+Funding OfficeCode**
+
+Identifier of the level n organization that provided thepreponderance of the funds obligated by this transaction.
+
+Funding OfficeName**
+
+Name of the level n organization that provided thepreponderance of the funds obligated by this transaction.
+
+Funding SubTier AgencyCode**
+
+Identifier of the level 2 organization that provided thepreponderance of the funds obligated by this transaction.
+
+Funding SubTier AgencyName**
+
+Name of the level 2 organization that provided thepreponderance of the funds obligated by this transaction.
+
+
+
+ 
+
+ 
+
+

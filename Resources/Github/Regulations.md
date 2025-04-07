@@ -1,9 +1,10 @@
-![](https://github.com/is-leeroy-jenkins/Bubba/blob/master/Resources/Assets/GitHubImages/congress.png) Regulations
-## Bocifus' AI layer provides access to the OpenAI VectorStores and Files
+# Bubba's AI layer provides access to the OpenAI VectorStores
 
-## Federal Regulations
+- #### Bubba's AI layer provides access to the OpenAI Large Language models.
+- #### Customized vector stores for fine-tuning custom models in the Budget Execution context
+
+## ![]()Federal Regulations
  
-
 - Federal Trust Fund Accounting Guide
 - Fiscal Responsibility Act
 - Government Auditing Standards

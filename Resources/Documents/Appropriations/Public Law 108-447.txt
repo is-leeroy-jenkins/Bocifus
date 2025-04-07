@@ -1,0 +1,2621 @@
+Public Law 108-447
+108th Congress
+
+                                 An Act
+
+
+.
+  Making appropriations for foreign operations, export financing, and
+related programs for the fiscal year ending September 30, 2005, and for
+         other purposes. <<NOTE: Dec. 8, 2004 -  [H.R. 4818]>>
+
+    Be it enacted by the Senate and House of Representatives of the
+United States of America in Congress assembled, <<NOTE: Consolidated
+Appropriations Act, 2005>>
+
+SECTION 1. SHORT TITLE.
+
+    This Act may be cited as the ``Consolidated Appropriations Act,
+2005''.
+
+				---
+				---
+				---
+[Ed. note: Text omitted.  For full text, see
+http://frwebgate.access.gpo.gov/cgi-bin/getdoc.cgi?dbname=108_cong_public_laws&docid=f:publ447.108]
+
+
+
+    TITLE IX--SATELLITE <<NOTE: Satellite Home Viewer Extension and
+Reauthorization Act of 2004.>> HOME VIEWER EXTENSION AND REAUTHORIZATION
+ACT OF 2004
+
+SECTION 1. SHORT TITLES; TABLE OF CONTENTS.
+
+    (a) Short Titles.--This <<NOTE: 17 USC 101 note.>> title may be
+cited as the ``Satellite Home Viewer Extension and Reauthorization Act
+of 2004'' or the ``W. J. (Billy) Tauzin Satellite Television Act of
+2004''.
+
+    (b) Table of Contents.--The table of contents for this Act is as
+follows:
+
+Sec. 1. Short titles; table of contents.
+
+            TITLE I--STATUTORY LICENSE FOR SATELLITE CARRIERS
+
+Sec. 101. Extension of authority.
+Sec. 102. Reporting of subscribers; significantly viewed and other
+           signals; technical amendments.
+Sec. 103. Statutory license for satellite carriers outside local
+           markets.
+Sec. 104. Statutory license for satellite retransmission of low power
+           television stations.
+Sec. 105. Definitions.
+Sec. 106. Effect on certain proceedings.
+Sec. 107. Statutory license for satellite carriers retransmitting
+           superstation signals to commercial establishments.
+Sec. 108. Expedited consideration of voluntary agreements to provide
+           satellite secondary transmissions to local markets.
+Sec. 109. Study.
+Sec. 110. Additional study.
+Sec. 111. Special rules.
+Sec. 112. Technical amendment.
+
+         TITLE II--FEDERAL COMMUNICATIONS COMMISSION OPERATIONS
+
+Sec. 201. Extension of retransmission consent exemption.
+Sec. 202. Cable/satellite comparability.
+Sec. 203. Carriage of local stations on a single dish.
+Sec. 204. Replacement of distant signals with local signals.
+Sec. 205. Additional notices to subscribers, networks, and stations
+           concerning signal carriage.
+Sec. 206. Privacy rights of satellite subscribers.
+Sec. 207. Reciprocal bargaining obligations.
+Sec. 208. Study of impact on cable television service.
+Sec. 209. Reduction of required tests.
+Sec. 210. Satellite carriage of television stations in noncontiguous
+           States.
+Sec. 211. Carriage of television signals to certain subscribers.
+Sec. 212. Digital transition savings provision.
+Sec. 213. Authorizing broadcast service in unserved areas of Alaska.
+
+[[Page 118 STAT. 3394]]
+
+            TITLE I--STATUTORY LICENSE FOR SATELLITE CARRIERS
+
+SEC. 101. EXTENSION OF AUTHORITY.
+
+    (a) In General.--Section 4(a) of the Satellite Home Viewer Act of
+1994 (17 U.S.C. 119 note; Public Law 103-369; 108 Stat. 3481) is amended
+by striking ``December 31, 2004'' and inserting ``December 31, 2009''.
+    (b) Extension for Certain Subscribers.--Section 119(e) of title 17,
+United States Code, is amended by striking ``December 31, 2004'' and
+inserting ``December 31, 2009''.
+
+SEC. 102. REPORTING OF SUBSCRIBERS; SIGNIFICANTLY VIEWED AND OTHER
+            SIGNALS; TECHNICAL AMENDMENTS.
+
+    Section 119(a) of title 17, United States Code, is amended--
+            (1) in paragraph (1)--
+                    (A) in the paragraph heading, by striking ``and pbs
+                satellite feed'';
+                    (B) in the first sentence, by striking ``(3), (4),
+                and (6)'' and inserting ``(5), (6), and (8)'';
+                    (C) in the first sentence, by striking ``or by the
+                Public Broadcasting Service satellite feed''; and
+                    (D) by striking the second sentence;
+            (2) in paragraph (2)--
+                    (A) in subparagraph (A), by striking ``(3), (4),
+                (5), and (6)'' and inserting ``(5), (6), (7), and (8)'';
+                and
+                    (B) by striking subparagraph (C) and inserting the
+                following:
+                    ``(C) Exceptions.--
+                          ``(i) States <<NOTE: Applicability.>> with
+                      single full-power network station.--In a State in
+                      which there is licensed by the Federal
+                      Communications Commission a single full-power
+                      station that was a network station on January 1,
+                      1995, the statutory license provided for in
+                      subparagraph (A) shall apply to the secondary
+                      transmission by a satellite carrier of the primary
+                      transmission of that station to any subscriber in
+                      a community that is located within that State and
+                      that is not within the first 50 television markets
+                      as listed in the regulations of the Commission as
+                      in effect on such date (47 CFR 76.51).
+                          ``(ii) States <<NOTE: Applicability.>> with
+                      all network stations and superstations in same
+                      local market.--In a State in which all network
+                      stations and superstations licensed by the Federal
+                      Communications Commission within that State as of
+                      January 1, 1995, are assigned to the same local
+                      market and that local market does not encompass
+                      all counties of that State, the statutory license
+                      provided under subparagraph (A) shall apply to the
+                      secondary transmission by a satellite carrier of
+                      the primary transmissions of such station to all
+                      subscribers in the State who reside in a local
+                      market that is within the first 50 major
+                      television markets as listed in the regulations of
+                      the Commission as in effect on such date (section
+                      76.51 of title 47 of the Code of Federal
+                      Regulations).
+
+[[Page 118 STAT. 3395]]
+
+                          ``(iii) Additional stations.--In the case of
+                      that State in which are located 4 counties that--
+                                    ``(I) on January 1, 2004, were in
+                                local markets principally comprised of
+                                counties in another State, and
+                                    ``(II) had a combined total of
+                                41,340 television households, according
+                                to the U.S. Television Household
+                                Estimates by Nielsen Media Research for
+                                2004,
+                      the statutory license provided under subparagraph
+                      (A) shall apply to secondary transmissions by a
+                      satellite carrier to subscribers in any such
+                      county of the primary transmissions of any network
+                      station located in that State, if the satellite
+                      carrier was making such secondary transmissions to
+                      any subscribers in that county on January 1, 2004.
+                          ``(iv)
+                      Certain <<NOTE: Applicability.>> additional
+                      stations.--If 2 adjacent counties in a single
+                      State are in a local market comprised principally
+                      of counties located in another State, the
+                      statutory license provided for in subparagraph (A)
+                      shall apply to the secondary transmission by a
+                      satellite carrier to subscribers in those 2
+                      counties of the primary transmissions of any
+                      network station located in the capital of the
+                      State in which such 2 counties are located, if--
+                                    ``(I) the 2 counties are located in
+                                a local market that is in the top 100
+                                markets for the year 2003 according to
+                                Nielsen Media Research; and
+                                    ``(II) the total number of
+                                television households in the 2 counties
+                                combined did not exceed 10,000 for the
+                                year 2003 according to Nielsen Media
+                                Research.
+                          ``(v) Applicability of royalty rates.--The
+                      royalty rates under subsection (b)(1)(B) apply to
+                      the secondary transmissions to which the statutory
+                      license under subparagraph (A) applies under
+                      clauses (i), (ii), (iii), and (iv).
+                    ``(D) Submission of subscriber lists to networks.--
+                          ``(i) Initial lists.--
+                      A <<NOTE: Deadline.>> satellite carrier that makes
+                      secondary transmissions of a primary transmission
+                      made by a network station pursuant to subparagraph
+                      (A) shall, 90 days after commencing such secondary
+                      transmissions, submit to the network that owns or
+                      is affiliated with the network station--
+                                    ``(I) a list identifying (by name
+                                and address, including street or rural
+                                route number, city, State, and zip code)
+                                all subscribers to which the satellite
+                                carrier makes secondary transmissions of
+                                that primary transmission to subscribers
+                                in unserved households; and
+                                    ``(II) a separate list, aggregated
+                                by designated market area (as defined in
+                                section 122(j)) (by name and address,
+                                including street or rural route number,
+                                city, State, and zip code), which shall
+                                indicate those subscribers being served
+                                pursuant to paragraph (3), relating to
+                                significantly viewed stations.
+
+[[Page 118 STAT. 3396]]
+
+                          ``(ii) Monthly lists.--After the submission of
+                      the initial lists under clause (i), on the 15th of
+                      each month, the satellite carrier shall submit to
+                      the network--
+                                    ``(I) a list identifying (by name
+                                and address, including street or rural
+                                route number, city, State, and zip code)
+                                any persons who have been added or
+                                dropped as subscribers under clause
+                                (i)(I) since the last submission under
+                                clause (i); and
+                                    ``(II) a separate list, aggregated
+                                by designated market area (by name and
+                                street address, including street or
+                                rural route number, city, State, and zip
+                                code), identifying those subscribers
+                                whose service pursuant to paragraph (3),
+                                relating to significantly viewed
+                                stations, has been added or dropped.
+                          ``(iii) Use of subscriber information.--
+                      Subscriber information submitted by a satellite
+                      carrier under this subparagraph may be used only
+                      for purposes of monitoring compliance by the
+                      satellite carrier with this subsection.
+                          ``(iv) Applicability.--The submission
+                      requirements of this subparagraph shall apply to a
+                      satellite carrier only if the network to which the
+                      submissions are to be made places on file with the
+                      Register of Copyrights a document identifying the
+                      name and address of the person to whom such
+                      submissions are to be made. <<NOTE: Public
+                      information. Records.>> The Register shall
+                      maintain for public inspection a file of all such
+                      documents.'';
+            (3) by striking paragraph (8);
+            (4) by redesignating paragraphs (9) through (12) as
+        paragraphs (10) through (13), respectively;
+            (5) by redesignating paragraphs (3) through (7) as
+        paragraphs (5) through (9), respectively;
+            (6) by inserting after paragraph (2) the following:
+            ``(3) Secondary transmissions of significantly viewed
+        signals.--
+                    ``(A) In general.--
+                Notwithstanding <<NOTE: Applicability.>> the provisions
+                of paragraph (2)(B), and subject to subparagraph (B) of
+                this paragraph, the statutory license provided for in
+                paragraphs (1) and (2) shall apply to the secondary
+                transmission of the primary transmission of a network
+                station or a superstation to a subscriber who resides
+                outside the station's local market (as defined in
+                section 122(j)) but within a community in which the
+                signal has been determined by the Federal Communications
+                Commission, to be significantly viewed in such
+                community, pursuant to the rules, regulations, and
+                authorizations of the Federal Communications Commission
+                in effect on April 15, 1976, applicable to determining
+                with respect to a cable system whether signals are
+                significantly viewed in a community.
+                    ``(B) Limitation.--Subparagraph
+                (A) <<NOTE: Applicability.>> shall apply only to
+                secondary transmissions of the primary transmissions of
+                network stations and superstations to subscribers who
+                receive secondary transmissions from a satellite carrier
+                pursuant to the statutory license under section 122.
+                    ``(C) Waiver.--
+
+[[Page 118 STAT. 3397]]
+
+                          ``(i) In general.--
+                      A <<NOTE: Deadlines.>> subscriber who is denied
+                      the secondary transmission of the primary
+                      transmission of a network station under
+                      subparagraph (B) may request a waiver from such
+                      denial by submitting a request, through the
+                      subscriber's satellite carrier, to the network
+                      station in the local market affiliated with the
+                      same network where the subscriber is located. The
+                      network station shall accept or reject the
+                      subscriber's request for a waiver within 30 days
+                      after receipt of the request. If the network
+                      station fails to accept or reject the subscriber's
+                      request for a waiver within that 30-day period,
+                      that network station shall be deemed to agree to
+                      the waiver request. Unless specifically stated by
+                      the network station, a waiver that was granted
+                      before the date of the enactment of the Satellite
+                      Home Viewer Extension and Reauthorization Act of
+                      2004 under section 339(c)(2) of the Communications
+                      Act of 1934 shall not constitute a waiver for
+                      purposes of this subparagraph.
+                          ``(ii) Sunset.--The authority under clause (i)
+                      to grant waivers shall terminate on December 31,
+                      2008, and any such waiver in effect shall
+                      terminate on that date.'';
+            (7) in paragraph (2)(B)(i), by adding at the end the
+        following new sentence: ``The limitation in this clause shall
+        not apply to secondary transmissions under paragraph (3).''.
+
+SEC. 103. STATUTORY LICENSE FOR SATELLITE CARRIERS OUTSIDE LOCAL
+            MARKETS.
+
+    Section 119 of title 17, United States Code, is amended as follows:
+            (1) Subsection (a) is amended by inserting after paragraph
+        (3), as added by section 102 of this Act, the following:
+            ``(4) Statutory license where retransmissions into local
+        market available.--
+                    ``(A) Rules for subscribers to analog signals under
+                subsection (e).--
+                          ``(i) For those receiving distant analog
+                      signals.--In the case of a subscriber of a
+                      satellite carrier who is eligible to receive the
+                      secondary transmission of the primary analog
+                      transmission of a network station solely by reason
+                      of subsection (e) (in this subparagraph referred
+                      to as a `distant analog signal'), and who, as of
+                      October 1, 2004, is receiving the distant analog
+                      signal of that network station, the following
+                      shall apply:
+                                    ``(I) <<NOTE: Applicability.>> In a
+                                case in which the satellite carrier
+                                makes available to the subscriber the
+                                secondary transmission of the primary
+                                analog transmission of a local network
+                                station affiliated with the same
+                                television network pursuant to the
+                                statutory license under section 122, the
+                                statutory license under paragraph (2)
+                                shall apply only to secondary
+                                transmissions by that satellite carrier
+                                to that subscriber of the distant analog
+                                signal of a station affiliated with the
+                                same television network--
+
+[[Page 118 STAT. 3398]]
+
+
+                                        ``(aa) <<NOTE: Deadline.>> if,
+                                        within 60 days after receiving
+                                        the notice of the satellite
+                                        carrier under section 338(h)(1)
+                                        of the Communications Act of
+                                        1934, the subscriber elects to
+                                        retain the distant analog
+                                        signal; but
+                                            ``(bb) only until such time
+                                        as the subscriber elects to
+                                        receive such local analog
+                                        signal.
+
+                                ``(II) <<NOTE: Deadline.>> Notwithstandin
+                                g subclause (I), the statutory license
+                                under paragraph (2) shall not apply with
+                                respect to any subscriber who is
+                                eligible to receive the distant analog
+                                signal of a television network station
+                                solely by reason of subsection (e),
+                                unless the satellite carrier, within 60
+                                days after the date of the enactment of
+                                the Satellite Home Viewer Extension and
+                                Reauthorization Act of 2004, submits to
+                                that television network a list,
+                                aggregated by designated market area (as
+                                defined in section 122(j)(2)(C)), that--
+                                            ``(aa) identifies that
+                                        subscriber by name and address
+                                        (street or rural route number,
+                                        city, State, and zip code) and
+                                        specifies the distant analog
+                                        signals received by the
+                                        subscriber; and
+                                            ``(bb) states, to the best
+                                        of the satellite carrier's
+                                        knowledge and belief, after
+                                        having made diligent and good
+                                        faith inquiries, that the
+                                        subscriber is eligible under
+                                        subsection (e) to receive the
+                                        distant analog signals.
+                          ``(ii) For those not receiving distant analog
+                      signals.--In the case of any subscriber of a
+                      satellite carrier who is eligible to receive the
+                      distant analog signal of a network station solely
+                      by reason of subsection (e) and who did not
+                      receive a distant analog signal of a station
+                      affiliated with the same network on October 1,
+                      2004, the statutory license under paragraph (2)
+                      shall not apply to secondary transmissions by that
+                      satellite carrier to that subscriber of the
+                      distant analog signal of a station affiliated with
+                      the same network.
+                    ``(B) Rules for <<NOTE: Applicability.>> other
+                subscribers.--In the case of a subscriber of a satellite
+                carrier who is eligible to receive the secondary
+                transmission of the primary analog transmission of a
+                network station under the statutory license under
+                paragraph (2) (in this subparagraph referred to as a
+                `distant analog signal'), other than subscribers to whom
+                subparagraph (A) applies, the following shall apply:
+                          ``(i) <<NOTE: Deadline.>> In a case in which
+                      the satellite carrier makes available to that
+                      subscriber, on January 1, 2005, the secondary
+                      transmission of the primary analog transmission of
+                      a local network station affiliated with the same
+                      television network pursuant to the statutory
+                      license under section 122, the statutory license
+                      under paragraph (2) shall apply only to secondary
+                      transmissions by that satellite carrier to that
+                      subscriber of the distant analog signal of a
+                      station affiliated with the same television
+                      network if the subscriber's satellite
+
+[[Page 118 STAT. 3399]]
+
+                      carrier, not later than March 1, 2005, submits to
+                      that television network a list, aggregated by
+                      designated market area (as defined in section
+                      122(j)(2)(C)), that identifies that subscriber by
+                      name and address (street or rural route number,
+                      city, State, and zip code) and specifies the
+                      distant analog signals received by the subscriber.
+                          ``(ii) In a case in which the satellite
+                      carrier does not make available to that
+                      subscriber, on January 1, 2005, the secondary
+                      transmission of the primary analog transmission of
+                      a local network station affiliated with the same
+                      television network pursuant to the statutory
+                      license under section 122, the statutory license
+                      under paragraph (2) shall apply only to secondary
+                      transmissions by that satellite carrier of the
+                      distant analog signal of a station affiliated with
+                      the same network to that subscriber if--
+                                    ``(I) that subscriber seeks to
+                                subscribe to such distant analog signal
+                                before the date on which such carrier
+                                commences to provide pursuant to the
+                                statutory license under section 122 the
+                                secondary transmissions of the primary
+                                analog transmission of stations from the
+                                local market of such local network
+                                station; and
+                                    ``(II) <<NOTE: Deadline.>> the
+                                satellite carrier, within 60 days after
+                                such date, submits to each television
+                                network a list that identifies each
+                                subscriber in that local market provided
+                                such an analog signal by name and
+                                address (street or rural route number,
+                                city, State, and zip code) and specifies
+                                the distant analog signals received by
+                                the subscriber.
+                    ``(C) Future applicability.--The statutory license
+                under paragraph (2) shall not apply to the secondary
+                transmission by a satellite carrier of a primary analog
+                transmission of a network station to a person who--
+                          ``(i) is not a subscriber lawfully receiving
+                      such secondary transmission as of the date of the
+                      enactment of the Satellite Home Viewer Extension
+                      and Reauthorization Act of 2004; and
+                          ``(ii) at the time such person seeks to
+                      subscribe to receive such secondary transmission,
+                      resides in a local market where the satellite
+                      carrier makes available to that person the
+                      secondary transmission of the primary analog
+                      transmission of a local network station affiliated
+                      with the same television network pursuant to the
+                      statutory license under section 122, and such
+                      secondary transmission of such primary
+                      transmission can reach such person.
+                    ``(D) Special <<NOTE: Applicability.>> rules for
+                distant digital signals.--The statutory license under
+                paragraph (2) shall apply to secondary transmissions by
+                a satellite carrier to a subscriber of primary digital
+                transmissions of network stations if such secondary
+                transmissions to such subscriber are permitted under
+                section 339(a)(2)(D) of the Communications Act of 1934,
+                as in effect on the day after the date of the enactment
+                of the Satellite Home Viewer Extension and
+                Reauthorization Act of 2004, except that the reference
+
+[[Page 118 STAT. 3400]]
+
+                to section 73.683(a) of title 47, Code of Federal
+                Regulations, referred to in section 339(a)(2)(D)(i)(I)
+                shall refer to such section as in effect on the date of
+                the enactment of the Satellite Home Viewer Extension and
+                Reauthorization Act of 2004.
+                    ``(E) Other provisions not affected.--This paragraph
+                shall not affect the applicability of the statutory
+                license to secondary transmissions under paragraph (3)
+                or to unserved households included under paragraph (12).
+                    ``(F) Waiver.--A subscriber who is denied the
+                secondary transmission of a network station under
+                subparagraph (C) or (D) may request a waiver from such
+                denial by submitting a request, through the subscriber's
+                satellite carrier, to the network station in the local
+                market affiliated with the same network where the
+                subscriber is located. The
+                network <<NOTE: Deadline.>> station shall accept or
+                reject the subscriber's request for a waiver within 30
+                days after receipt of the request. If the network
+                station fails to accept or reject the subscriber's
+                request for a waiver within that 30-day period, that
+                network station shall be deemed to agree to the waiver
+                request. Unless specifically stated by the network
+                station, a waiver that was granted before the date of
+                the enactment of the Satellite Home Viewer Extension and
+                Reauthorization Act of 2004 under section 339(c)(2) of
+                the Communications Act of 1934 shall not constitute a
+                waiver for purposes of this subparagraph.
+                    ``(G) Available defined.--For purposes of this
+                paragraph, a satellite carrier makes available a
+                secondary transmission of the primary transmission of a
+                local station to a subscriber or person if the satellite
+                carrier offers that secondary transmission to other
+                subscribers who reside in the same zip code as that
+                subscriber or person.''.
+            (2) Subsection (a) is amended by adding at the end the
+        following:
+            ``(14) Waivers.--A subscriber who is denied the secondary
+        transmission of a signal of a network station under subsection
+        (a)(2)(B) may request a waiver from such denial by submitting a
+        request, through the subscriber's satellite carrier, to the
+        network station asserting that the secondary transmission is
+        prohibited. <<NOTE: Deadline.>> The network station shall accept
+        or reject a subscriber's request for a waiver within 30 days
+        after receipt of the request. If a television network station
+        fails to accept or reject a subscriber's request for a waiver
+        within the 30-day period after receipt of the request, that
+        station shall be deemed to agree to the waiver request and have
+        filed such written waiver. Unless specifically stated by the
+        network station, a waiver that was granted before the date of
+        the enactment of the Satellite Home Viewer Extension and
+        Reauthorization Act of 2004 under section 339(c)(2) of the
+        Communications Act of 1934, and that was in effect on such date
+        of enactment, shall constitute a waiver for purposes of this
+        paragraph.''.
+            (3) Subsection (b)(1) is amended by striking subparagraph
+        (B) and inserting the following:
+                    ``(B) a royalty fee for that 6-month period,
+                computed by multiplying the total number of subscribers
+                receiving
+
+[[Page 118 STAT. 3401]]
+
+                each secondary transmission of each superstation or
+                network station during each calendar month by the
+                appropriate rate in effect under this section.''.
+            (4) Subsection (b)(1) is further amended by adding at the
+        end the following flush sentence: ``Notwithstanding the
+        provisions of subparagraph (B), a satellite carrier whose
+        secondary transmissions are subject to statutory licensing under
+        paragraph (1) or (2) of subsection (a) shall have no royalty
+        obligation for secondary transmissions to a subscriber under
+        paragraph (3) of such subsection.''.
+            (5) Subsection (c) is amended to read as follows:
+
+    ``(c) Adjustment of Royalty Fees.--
+            ``(1) Applicability and determination of royalty fees for
+        analog signals.--
+                    ``(A) Initial fee.--The appropriate fee for purposes
+                of determining the royalty fee under subsection
+                (b)(1)(B) for the secondary transmission of the primary
+                analog transmissions of network stations and
+                superstations shall be the appropriate fee set forth in
+                part 258 of title 37, Code of Federal Regulations, as in
+                effect on July 1, 2004, as modified under this
+                paragraph.
+                    ``(B) Fee set <<NOTE: Deadline. Federal
+                Register, publication.>> by voluntary negotiation.--On
+                or before January 2, 2005, the Librarian of Congress
+                shall cause to be published in the Federal Register of
+                the initiation of voluntary negotiation proceedings for
+                the purpose of determining the royalty fee to be paid by
+                satellite carriers for the secondary transmission of the
+                primary analog transmission of network stations and
+                superstations under subsection (b)(1)(B).
+                    ``(C) Negotiations.--Satellite carriers,
+                distributors, and copyright owners entitled to royalty
+                fees under this section shall negotiate in good faith in
+                an effort to reach a voluntary agreement or agreements
+                for the payment of royalty fees. Any such satellite
+                carriers, distributors and copyright owners may at any
+                time negotiate and agree to the royalty fee, and may
+                designate common agents to negotiate, agree to, or pay
+                such fees. If the parties fail to identify common
+                agents, the Librarian of Congress shall do so, after
+                requesting recommendations from the parties to the
+                negotiation proceeding. The parties to each negotiation
+                proceeding shall bear the cost thereof.
+                    ``(D) Agreements binding on parties; filing of
+                agreements; public notice.--(i) Voluntary agreements
+                negotiated at any time in accordance with this paragraph
+                shall be binding upon all satellite carriers,
+                distributors, and copyright owners that
+                a <<NOTE: Regulations. Deadline.>> parties thereto.
+                Copies of such agreements shall be filed with the
+                Copyright Office within 30 days after execution in
+                accordance with regulations that the Register of
+                Copyrights shall prescribe.
+                    ``(ii)(I) <<NOTE: Federal
+                Register, publication. Deadline.>> Within 10 days after
+                publication in the Federal Register of a notice of the
+                initiation of voluntary negotiation proceedings, parties
+                who have reached a voluntary agreement may request that
+                the royalty fees in that agreement be applied to all
+                satellite carriers, distributors, and copyright owners
+                without convening an arbitration proceeding pursuant to
+                subparagraph (E).
+
+[[Page 118 STAT. 3402]]
+
+                    ``(II) Upon receiving a request under subclause (I),
+                the Librarian of Congress shall immediately provide
+                public notice of the royalty fees from the voluntary
+                agreement and afford parties an opportunity to state
+                that they object to those fees.
+                    ``(III) The Librarian shall adopt the royalty fees
+                from the voluntary agreement for all satellite carriers,
+                distributors, and copyright owners without convening an
+                arbitration proceeding unless a party with an intent to
+                participate in the arbitration proceeding and a
+                significant interest in the outcome of that proceeding
+                objects under subclause (II).
+                    ``(E) Period agreement is in effect.--The obligation
+                to pay the royalty fees established under a voluntary
+                agreement which has been filed with the Copyright Office
+                in accordance with this paragraph shall become effective
+                on the date specified in the agreement, and shall remain
+                in effect until December 31, 2009, or in accordance with
+                the terms of the agreement, whichever is later.
+                    ``(F) Fee set by compulsory arbitration.--
+                          ``(i) Notice of <<NOTE: Federal
+                      Register, publication. Deadline.>> initiation of
+                      proceedings.--On or before May 1, 2005, the
+                      Librarian of Congress shall cause notice to be
+                      published in the Federal Register of the
+                      initiation of arbitration proceedings for the
+                      purpose of determining the royalty fee to be paid
+                      for the secondary transmission of primary analog
+                      transmission of network stations and superstations
+                      under subsection (b)(1)(B) by satellite carriers
+                      and distributors
+                                    ``(I) in the absence of a voluntary
+                                agreement filed in accordance with
+                                subparagraph (D) that establishes
+                                royalty fees to be paid by all satellite
+                                carriers and distributors; or
+                                    ``(II) if an objection to the fees
+                                from a voluntary agreement submitted for
+                                adoption by the Librarian of Congress to
+                                apply to all satellite carriers,
+                                distributors, and copyright owners is
+                                received under subparagraph (D) from a
+                                party with an intent to participate in
+                                the arbitration proceeding and a
+                                significant interest in the outcome of
+                                that proceeding.
+                      Such arbitrary proceeding shall be conducted under
+                      chapter 8 as in effect on the day before the date
+                      of the enactment of the Copyright Royalty and
+                      Distribution Act of 2004.
+                          ``(ii) Establishment of royalty fees.--In
+                      determining royalty fees under this subparagraph,
+                      the copyright arbitration royalty panel appointed
+                      under chapter 8, as in effect on the day before
+                      the date of the enactment of the Copyright Royalty
+                      and Distribution Act of 2004 shall establish fees
+                      for the secondary transmissions of the primary
+                      analog transmission of network stations and
+                      superstations that most clearly represent the fair
+                      market value of secondary transmissions, except
+                      that the Librarian of Congress and any copyright
+                      arbitration royalty panel shall adjust those fees
+                      to account for the obligations of the parties
+                      under
+
+[[Page 118 STAT. 3403]]
+
+                      any applicable voluntary agreement filed with the
+                      Copyright Office pursuant to subparagraph (D). In
+                      determining the fair market value, the panel shall
+                      base its decision on economic, competitive, and
+                      programming information presented by the parties,
+                      including--
+                                    ``(I) the competitive environment in
+                                which such programming is distributed,
+                                the cost of similar signals in similar
+                                private and compulsory license
+                                marketplaces, and any special features
+                                and conditions of the retransmission
+                                marketplace;
+                                    ``(II) the economic impact of such
+                                fees on copyright owners and satellite
+                                carriers; and
+                                    ``(III) the impact on the continued
+                                availability of secondary transmissions
+                                to the public.
+                          ``(iii) Period during which decision of
+                      arbitration panel or order of librarian
+                      effective.--The obligation to pay the royalty fee
+                      established under a determination which--
+                                    ``(I) is made by a copyright
+                                arbitration royalty panel in an
+                                arbitration proceeding under this
+                                paragraph and is adopted by the
+                                Librarian of Congress under section
+                                802(f), as in effect on the day before
+                                the date of the enactment of the
+                                Copyright Royalty and Distribution Act
+                                of 2004; or
+                                    ``(II) is established by the
+                                Librarian under section 802(f) as in
+                                effect on the day before such date of
+                                enactment shall be effective as of
+                                January 1, 2005.
+                          ``(iv) Persons subject to royalty fee.--The
+                      royalty fee referred to in (iii) shall be binding
+                      on all satellite carriers, distributors and
+                      copyright owners, who are not party to a voluntary
+                      agreement filed with the Copyright Office under
+                      subparagraph (D).
+            ``(2) Applicability and determination of royalty fees for
+        digital signals.--The process and requirements for establishing
+        the royalty fee payable under subsection (b)(1)(B) for the
+        secondary transmission of the primary digital transmissions of
+        network stations and superstations shall be the same as that set
+        forth in paragraph (1) for the secondary transmission of the
+        primary analog transmission of network stations and
+        superstations, except that--
+                    ``(A) the initial fee under paragraph (1)(A) shall
+                be the rates set forth in section 298.3(b)(1) and (2) of
+                title 37, Code of Federal Regulations, as in effect on
+                the date of the enactment of the Satellite Home Viewer
+                Extension and Reauthorization Act of 2004, reduced by
+                22.5 percent;
+                    ``(B) <<NOTE: Notice. Deadline.>> the notice of
+                initiation of arbitration proceedings required in
+                paragraph (1)(F)(i) shall be published on or before
+                December 31, 2005; and
+                    ``(C) the royalty fees that are established for the
+                secondary transmission of the primary digital
+                transmission of network stations and superstations in
+                accordance with to the procedures set forth in paragraph
+                (1)(F)(iii) and are payable under subsection (b)(1)(B)--
+                          ``(i) shall be reduced by 22.5 percent; and
+
+[[Page 118 STAT. 3404]]
+
+                          ``(ii) shall be adjusted by the Librarian of
+                      Congress on January 1, 2007, and on January 1 of
+                      each year thereafter, to reflect any changes
+                      occurring during the preceding 12 months in the
+                      cost of living as determined by the most recent
+                      Consumer Price Index (for all consumers and items)
+                      published by the Secretary of Labor.''.
+            (6) Subsection (a)(7), as redesignated by section 102(5) of
+        this Act, is amended--
+                    (A) in subparagraph (A), by striking ``who does not
+                reside in an unserved household'' and inserting ``who is
+                not eligible to receive the transmission under this
+                section'';
+                    (B) in subparagraph (B), by striking ``who do not
+                reside in unserved households'' and inserting ``who are
+                not eligible to receive the transmission under this
+                section''; and
+                    (C) in subparagraph (D), by striking ``is for
+                private home viewing to an unserved household'' and
+                inserting ``is to a subscriber who is eligible to
+                receive the secondary transmission under this section''.
+
+SEC. 104. STATUTORY LICENSE FOR SATELLITE RETRANSMISSION OF LOW POWER
+            TELEVISION STATIONS.
+
+    (a) In General.--Section 119(a) of title 17, United States Code (as
+amended by sections 102 and 103 of this Act), is further amended by
+adding at the end the following:
+            ``(15) Carriage of low power television stations.--
+                    ``(A) In general.--
+                Notwithstanding <<NOTE: Applicability.>> paragraph
+                (2)(B), and subject to subparagraphs (B) through (F) of
+                this paragraph, the statutory license provided for in
+                paragraphs (1) and (2) shall apply to the secondary
+                transmission of the primary transmission of a network
+                station or a superstation that is licensed as a low
+                power television station, to a subscriber who resides
+                within the same local market.
+                    ``(B) Geographic limitation.--
+                          ``(i) Network stations.--With respect to
+                      network stations, secondary transmissions provided
+                      for in subparagraph (A) shall be limited to
+                      secondary transmissions to subscribers who--
+                                    ``(I) reside in the same local
+                                market as the station originating the
+                                signal; and
+                                    ``(II) reside within 35 miles of the
+                                transmitter site of such station, except
+                                that in the case of such a station
+                                located in a standard metropolitan
+                                statistical area which has 1 of the 50
+                                largest populations of all standard
+                                metropolitan statistical areas (based on
+                                the 1980 decennial census of population
+                                taken by the Secretary of Commerce), the
+                                number of miles shall be 20.
+                          ``(ii) Superstations.--With respect to
+                      superstations, secondary transmissions provided
+                      for in subparagraph (A) shall be limited to
+                      secondary transmissions to subscribers who reside
+                      in the same local market as the station
+                      originating the signal.
+
+[[Page 118 STAT. 3405]]
+
+                    ``(C) No applicability to repeaters and
+                translators.--Secondary transmissions provided for in
+                subparagraph (A) shall not apply to any low power
+                television station that retransmits the programs and
+                signals of another television station for more than 2
+                hours each day.
+                    ``(D) Royalty fees.--Notwithstanding subsection
+                (b)(1)(B), a satellite carrier whose secondary
+                transmissions of the primary transmissions of a low
+                power television station are subject to statutory
+                licensing under this section shall have no royalty
+                obligation for secondary transmissions to a subscriber
+                who resides within 35 miles of the transmitter site of
+                such station, except that in the case of such a station
+                located in a standard metropolitan statistical area
+                which has 1 of the 50 largest populations of all
+                standard metropolitan statistical areas (based on the
+                1980 decennial census of population taken by the
+                Secretary of Commerce), the number of miles shall be 20.
+                Carriage of a superstation that is a low power
+                television station within the station's local market,
+                but outside of the 35-mile or 20-mile radius described
+                in the preceding sentence, shall be subject to royalty
+                payments under subsection (b)(1)(B).
+                    ``(E) Limitation to subscribers taking local-into-
+                local service.--Secondary transmissions provided for in
+                subparagraph (A) may be made only to subscribers who
+                receive secondary transmissions of primary transmissions
+                from that satellite carrier pursuant to the statutory
+                license under section 122, and only in conformity with
+                the requirements under 340(b) of the Communications Act
+                of 1934, as in effect on the date of the enactment of
+                the Satellite Home Viewer Extension and Reauthorization
+                Act of 2004.''.
+
+SEC. 105. DEFINITIONS.
+
+    Section 119(d) of title 17, United States Code, is amended--
+            (1) in paragraph (2)(A), by striking ``a television
+        broadcast station'' and inserting ``a television station
+        licensed by the Federal Communications Commission'';
+            (2) by amending paragraph (9) to read as follows:
+            ``(9) Superstation.--The term `superstation' means a
+        television station, other than a network station, licensed by
+        the Federal Communications Commission, that is secondarily
+        transmitted by a satellite carrier.'';
+            (3) in paragraph (10)--
+                    (A) in subparagraph (B), by striking ``granted under
+                regulations established under section 339(c)(2) of the
+                Communications Act of 1934'' and inserting ``that meets
+                the standards of subsection (a)(14) whether or not the
+                waiver was granted before the date of the enactment of
+                the Satellite Home Viewer Extension and Reauthorization
+                Act of 2004''; and
+                    (B) in subparagraph (D), by striking ``(a)(11)'' and
+                inserting ``(a)(12)''; and
+            (4) by striking paragraphs (11) and (12) and inserting the
+        following:
+            ``(11) Local market.--The term `local market' has the
+        meaning given such term under section 122(j), except that with
+        respect to a low power television station, the term `local
+
+[[Page 118 STAT. 3406]]
+
+        market' means the designated market area in which the station is
+        located.
+            ``(12) Low power television station.--The term `low power
+        television station' means a low power television as defined
+        under section 74.701(f) of title 47, Code of Federal
+        Regulations, as in effect on June 1, 2004. For purposes of this
+        paragraph, the term `low power television station' includes a
+        low power television station that has been accorded primary
+        status as a Class A television licensee under section 73.6001(a)
+        of title 47, Code of Federal Regulations.
+            ``(13) Commercial establishment.--The term `commercial
+        establishment'--
+                    ``(A) means an establishment used for commercial
+                purposes, such as a bar, restaurant, private office,
+                fitness club, oil rig, retail store, bank or other
+                financial institution, supermarket, automobile or boat
+                dealership, or any other establishment with a common
+                business area; and
+                    ``(B) does not include a multi-unit permanent or
+                temporary dwelling where private home viewing occurs,
+                such as a hotel, dormitory, hospital, apartment,
+                condominium, or prison.''.
+
+SEC. 106. <<NOTE: 17 USC 119 note.>> EFFECT ON CERTAIN PROCEEDINGS.
+
+    Nothing in this title shall modify any remedy imposed on a party
+that is required by the judgment of a court in any action that was
+brought before May 1, 2004, against that party for a violation of
+section 119 of title 17, United States Code.
+
+SEC. 107. STATUTORY LICENSE FOR SATELLITE CARRIERS RETRANSMITTING
+            SUPERSTATION SIGNALS TO COMMERCIAL ESTABLISHMENTS.
+
+    (a) In General.--Section 119 of title 17, United States Code, is
+amended--
+            (1) in subsection (a)(1)--
+                    (A) by inserting ``or for viewing in a commercial
+                establishment'' after ``for private home viewing'' each
+                place it appears; and
+                    (B) by striking ``household'' and inserting
+                ``subscriber'';
+            (2) in subsection (b), by striking ``for private home
+        viewing'' each place it appears;
+            (3) in subsection (d)(1)--
+                    (A) by striking ``for private home viewing''; and
+                    (B) by inserting ``in accordance with the provisions
+                of this section'' before the period;
+            (4) in subsection (d)(6), by inserting ``pursuant to this
+        section'' before the period; and
+            (5) in subsection (d)(8)--
+                    (A) by striking ``who'' and inserting ``or entity
+                that'';
+                    (B) by striking ``for private home viewing''; and
+                    (C) by inserting ``in accordance with the provisions
+                of this section'' before the period.
+
+    (b) Conforming Amendments.--Subsections (a)(4) and (d)(1)(A) of
+section 111 of title 17, United States Code, are each amended by
+striking ``for private home viewing''.
+
+[[Page 118 STAT. 3407]]
+
+SEC. 108. EXPEDITED CONSIDERATION OF VOLUNTARY AGREEMENTS TO PROVIDE
+            SATELLITE SECONDARY TRANSMISSIONS TO LOCAL MARKETS.
+
+    Section 119 of title 17, United States Code, is amended by adding at
+the end the following:
+    ``(f) Expedited Consideration by Justice Department of Voluntary
+Agreements to Provide Satellite Secondary Transmissions to Local
+Markets.--
+            ``(1) In general.--In a <<NOTE: Deadline.>> case in which no
+        satellite carrier makes available, to subscribers located in a
+        local market, as defined in section 122(j)(2), the secondary
+        transmission into that market of a primary transmission of one
+        or more television broadcast stations licensed by the Federal
+        Communications Commission, and two or more satellite carriers
+        request a business review letter in accordance with section 50.6
+        of title 28, Code of Federal Regulations (as in effect on July
+        7, 2004), in order to assess the legality under the antitrust
+        laws of proposed business conduct to make or carry out an
+        agreement to provide such secondary transmission into such local
+        market, the appropriate official of the Department of Justice
+        shall respond to the request no later than 90 days after the
+        date on which the request is received.
+            ``(2) Definition.--For purposes of this subsection, the term
+        `antitrust laws'--
+                    ``(A) has the meaning given that term in subsection
+                (a) of the first section of the Clayton Act (15 U.S.C.
+                12(a)), except that such term includes section 5 of the
+                Federal Trade Commission Act (15 U.S.C. 45) to the
+                extent such section 5 applies to unfair methods of
+                competition; and
+                    ``(B) includes any State law similar to the laws
+                referred to in paragraph (1).''.
+
+SEC. 109. <<NOTE: Deadline. Reports.>> STUDY.
+
+    No later than June 30, 2008, the Register of Copyrights shall report
+to the Committee on the Judiciary of the House of Representatives and
+the Committee on the Judiciary of the Senate the Register's findings and
+recommendations on the operation and revision of the statutory licenses
+under sections 111, 119, and 122 of title 17, United States Code. The
+report shall include, but not be limited to, the following:
+            (1) A comparison of the royalties paid by licensees under
+        such sections, including historical rates of increases in these
+        royalties, a comparison between the royalties under each such
+        section and the prices paid in the marketplace for comparable
+        programming.
+            (2) An analysis of the differences in the terms and
+        conditions of the licenses under such sections, an analysis of
+        whether these differences are required or justified by
+        historical, technological, or regulatory differences that affect
+        the satellite and cable industries, and an analysis of whether
+        the cable or satellite industry is placed in a competitive
+        disadvantage due to these terms and conditions.
+            (3) An analysis of whether the licenses under such sections
+        are still justified by the bases upon which they were originally
+        created.
+            (4) An analysis of the correlation, if any, between the
+        royalties, or lack thereof, under such sections and the fees
+
+[[Page 118 STAT. 3408]]
+
+        charged to cable and satellite subscribers, addressing whether
+        cable and satellite companies have passed to subscribers any
+        savings realized as a result of the royalty structure and
+        amounts under such sections.
+            (5) An analysis of issues that may arise with respect to the
+        application of the licenses under such sections to the secondary
+        transmissions of the primary transmissions of network stations
+        and superstations that originate as digital signals, including
+        issues that relate to the application of the unserved household
+        limitations under section 119 of title 17, United States Code,
+        and to the determination of royalties of cable systems and
+        satellite carriers.
+
+SEC. 110. <<NOTE: Deadline. Reports.>> ADDITIONAL STUDY.
+
+    No later than December 31, 2005, the Register of Copyrights shall
+report to the Committee on the Judiciary of the House of Representatives
+and the Committee on the Judiciary of the Senate the Register's findings
+and recommendations on the following:
+            (1) The extent to which the unserved household limitation
+        for network stations contained in section 119 of title 17,
+        United States Code, has operated efficiently and effectively and
+        has forwarded the goal of title 17, United States Code, to
+        protect copyright owners of over-the-air television programming,
+        including what amendments, if any, are necessary to effectively
+        identify the application of the limitation to individual
+        households to receive secondary transmissions of primary digital
+        transmissions of network stations.
+            (2) The extent to which secondary transmissions of primary
+        transmissions of network stations and superstations under
+        section 119 of title 17, United States Code, harm copyright
+        owners of broadcast programming throughout the United States and
+        the effect, if any, of the statutory license under section 122
+        of title 17, United States Code, in reducing such harm.
+
+SEC. 111. SPECIAL RULES.
+
+    (a) Restrictions on Transmission of Distant Television Stations in
+Areas of Alaska Where Local-Into-Local Service Is Available.--Section
+119(a) of title 17, United States Code, is amended by adding at the end
+thereof the following:
+            ``(16) Restricted transmission of out-of-state distant
+        network signals into certain markets.--
+                    ``(A) Out-of-state network affiliates.--
+                Notwithstanding any other provision of this title, the
+                statutory license in this subsection and subsection (b)
+                shall not apply to any secondary transmission of the
+                primary transmission of a network station located
+                outside of the State of Alaska to any subscriber in that
+                State to whom the secondary transmission of the primary
+                transmission of a television station located in that
+                State is made available by the satellite carrier
+                pursuant to section 122.
+                    ``(B) Exception.--The limitation in subparagraph (A)
+                shall not apply to the secondary transmission of the
+                primary transmission of a digital signal of a network
+                station located outside of the State of Alaska if at the
+                time that the secondary transmission is made, no
+                television station licensed to a community in the State
+                and affiliated with the same network makes primary
+                transmissions of a digital signal.''.
+
+[[Page 118 STAT. 3409]]
+
+    (b) Extra DMA Deemed Local.--Section 122(j)(2) of title 17, United
+States Code, is amended by adding at the end thereof the following:
+                    ``(D) Certain areas outside of any designated market
+                area.--Any census area, borough, or other area in the
+                State of Alaska that is outside of a designated market
+                area, as determined by Nielsen Media Research, shall be
+                deemed to be part of one of the local markets in the
+                State of Alaska. A satellite carrier may determine which
+                local market in the State of Alaska will be deemed to be
+                the relevant local market in connection with each
+                subscriber in such census area, borough, or other
+                area.''.
+
+SEC. 112. TECHNICAL AMENDMENT.
+
+    Section 803(b)(1)(A)(i)(V) of title 17, United States Code, as
+amended by the Copyright Royalty and Distribution Reform Act of 2004, is
+amended by inserting before the period at the end the following: ``,
+except that in the case of proceedings under section 111 that are
+scheduled to commence in 2005, such notice may not be published.
+
+         TITLE II--FEDERAL COMMUNICATIONS COMMISSION OPERATIONS
+
+SEC. 201. EXTENSION OF RETRANSMISSION CONSENT EXEMPTION.
+
+    Section 325(b)(2)(C) of the Communications Act of 1934 (47 U.S.C.
+325(b)(2)(C)) is amended by striking ``December 31, 2004'' and inserting
+``December 31, 2009''.
+
+SEC. 202. CABLE/SATELLITE COMPARABILITY.
+
+    (a) Amendment.--Part I of title III of the Communications Act of
+1934 is amended by inserting after section 339 (47 U.S.C. 339) the
+following new section:
+
+``SEC. 340. <<NOTE: 47 USC 340.>> SIGNIFICANTLY VIEWED SIGNALS PERMITTED
+            TO BE CARRIED.
+
+    ``(a) Significantly Viewed Stations.--In addition to the broadcast
+signals that subscribers may receive under section 338 and 339, a
+satellite carrier is also authorized to retransmit to a subscriber
+located in a community the signal of any station located outside the
+local market in which such subscriber is located, to the extent such
+signal--
+            ``(1) has, before the date of enactment of the Satellite
+        Home Viewer Extension and Reauthorization Act of 2004, been
+        determined by the Federal Communications Commission to be a
+        signal a cable operator may carry as significantly viewed in
+        such community, except to the extent that such signal is
+        prevented from being carried by a cable system in such community
+        under the Commission's network nonduplication and syndicated
+        exclusivity rules; or
+            ``(2) is, after such date of enactment, determined by the
+        Commission to be significantly viewed in such community in
+        accordance with the same standards and procedures concerning
+        shares of viewing hours and audience surveys as are applicable
+
+[[Page 118 STAT. 3410]]
+
+        under the rules, regulations, and authorizations of the
+        Commission to determining with respect to a cable system whether
+        signals are significantly viewed in a community.
+
+    ``(b) Limitations.--
+            ``(1) Analog service <<NOTE: Applicability.>> limited to
+        subscribers taking local-into-local service.--With respect to a
+        signal that originates as an analog signal of a network station,
+        this section shall apply only to retransmissions to subscribers
+        of a satellite carrier who receive retransmissions of a signal
+        that originates as an analog signal of a local network station
+        from that satellite carrier pursuant to section 338.
+            ``(2) Digital <<NOTE: Applicability.>> service
+        limitations.--With respect to a signal that originates as a
+        digital signal of a network station, this section shall apply
+        only if--
+                    ``(A) the subscriber receives from the satellite
+                carrier pursuant to section 338 the retransmission of
+                the digital signal of a network station in the
+                subscriber's local market that is affiliated with the
+                same television network; and
+                    ``(B) either--
+                          ``(i) the retransmission of the local network
+                      station occupies at least the equivalent bandwidth
+                      as the digital signal retransmitted pursuant to
+                      this section; or
+                          ``(ii) the retransmission of the local network
+                      station is comprised of the entire bandwidth of
+                      the digital signal broadcast by such local network
+                      station.
+            ``(3) Limitation not applicable where no network
+        affiliates.--The limitations in paragraphs (1) and (2) shall not
+        prohibit a retransmission under this section to a subscriber
+        located in a local market in which there are no network stations
+        affiliated with the same television network as the station whose
+        signal is being retransmitted pursuant to this section.
+            ``(4) Authority to grant station-specific waivers.--
+        Paragraphs (1) and (2) shall not prohibit a retransmission of a
+        network station to a subscriber if and to the extent that the
+        network station in the local market in which the subscriber is
+        located, and that is affiliated with the same television
+        network, has privately negotiated and affirmatively granted a
+        waiver from the requirements of paragraph (1) and (2) to such
+        satellite carrier with respect to retransmission of the
+        significantly viewed station to such subscriber.
+
+    ``(c) Publication and Modifications of Lists; Regulations.--
+            ``(1) In general.--The Commission shall--
+                    ``(A) <<NOTE: Deadline.>> within 60 days after the
+                date of enactment of the Satellite Home Viewer Extension
+                and Reauthorization Act of 2004--
+                          ``(i) publish a list of the stations that are
+                      eligible for retransmission under subsection
+                      (a)(1) and the communities in which such stations
+                      are eligible for such retransmission; and
+                          ``(ii) commence a rulemaking proceeding to
+                      implement this section by publication of a notice
+                      of proposed rulemaking;
+                    ``(B) adopt rules pursuant to such rulemaking within
+                1 year after such date of enactment.
+            ``(2) Public availability of list.--The Commission shall
+        make readily available to the public in electronic form, on the
+        Internet website of the Commission or other comparable
+
+[[Page 118 STAT. 3411]]
+
+        facility, a list of the stations that are eligible for
+        retransmission under subsection (a) and the communities in which
+        such stations are eligible for
+        such <<NOTE: Deadline.>> retransmission. The Commission shall
+        update such list within 10 business days after the date on which
+        the Commission issues an order making any modification of such
+        stations and communities.
+            ``(3) Modifications.--In addition to cable operators and
+        television broadcast station licensees, the Commission shall
+        permit a satellite carrier to petition for decisions and
+        orders--
+                    ``(A) by which stations may be added to those that
+                are eligible for retransmission under subsection (a),
+                and by which communities may be added in which such
+                stations are eligible for such retransmission; and
+                    ``(B) by which network nonduplication or syndicated
+                exclusivity regulations are applied to the
+                retransmission in accordance with subsection (e).
+
+    ``(d) Effect on Other Obligations and Rights.--
+            ``(1) No effect on carriage obligations.--Carriage of a
+        signal under this section is not mandatory, and any right of a
+        station licensee to have the signal of such station carried
+        under section 338 is not affected by the eligibility of such
+        station to be carried under this section.
+            ``(2) Retransmission consent rights not affected.--The
+        eligibility of the signal of a station to be carried under this
+        section does not affect any right of the licensee of such
+        station to grant (or withhold) retransmission consent under
+        section 325(b)(1).
+
+    ``(e) Network Nonduplication and Syndicated Exclusivity.--
+            ``(1) Not applicable except as provided by commission
+        regulations.--Signals eligible to be carried under this section
+        are not subject to the Commission's regulations concerning
+        network nonduplication or syndicated exclusivity unless,
+        pursuant to regulations adopted by the Commission, the
+        Commission determines to permit network nonduplication or
+        syndicated exclusivity to apply within the appropriate zone of
+        protection.
+            ``(2) Limitation.--Nothing in this subsection or Commission
+        regulations shall permit the application of network
+        nonduplication or syndicated exclusivity regulations to the
+        retransmission of distant signals of network stations that are
+        carried by a satellite carrier pursuant to a statutory license
+        under section 119(a)(2)(A) or (B) of title 17, United States
+        Code, with respect to persons who reside in unserved households,
+        under 119(a)(4)(A), or under section 119(a)(12), of such title.
+
+    ``(f) Enforcement.--
+            ``(1) Orders and damages.--Upon complaint, the Commission
+        shall issue a cease and desist order to any satellite carrier
+        found to have violated this section in carrying any television
+        broadcast station. Such order may, if a complaining station
+        requests damages--
+                    ``(A) provide for the award of damages to a
+                complaining station that establishes that the violation
+                was committed in bad faith, in an amount up to $50 per
+                subscriber, per station, per day of the violation; and
+                    ``(B) provide for the award of damages to a
+                prevailing satellite carrier if the Commission
+                determines that the
+
+[[Page 118 STAT. 3412]]
+
+                complaint was frivolous, in an amount up to $50 per
+                subscriber alleged to be in violation, per station
+                alleged, per day of the alleged violation.
+            ``(2) Commission decision.--
+        The <<NOTE: Deadline.>> Commission shall issue a final
+        determination resolving a complaint brought under this
+        subsection not later than 180 days after the submission of a
+        complaint under this subsection. The Commission may hear
+        witnesses if it clearly appears, based on written filings by the
+        parties, that there is a genuine dispute about material facts.
+        Except as provided in the preceding sentence, the Commission may
+        issue a final ruling based on written filings by the parties.
+            ``(3) Remedies in addition.--The remedies under this
+        subsection are in addition to any remedies available under title
+        17, United States Code.
+            ``(4) No effect on copyright proceedings.--Any
+        determination, action, or failure to act of the Commission under
+        this subsection shall have no effect on any proceeding under
+        title 17, United States Code, and shall not be introduced in
+        evidence in any proceeding under that title. In no instance
+        shall a Commission enforcement proceeding under this subsection
+        be required as a predicate to the pursuit of a remedy available
+        under title 17.
+
+    ``(g) Notices Concerning Significantly Viewed Stations.--Each
+satellite carrier that proposes to commence the retransmission of a
+station pursuant to this section in any local market shall--
+            ``(1) <<NOTE: Deadline.>> not less than 60 days before
+        commencing such retransmission, provide a written notice to any
+        television broadcast station in such local market of such
+        proposal; and
+            ``(2) designate on such carrier's website all significantly
+        viewed signals carried pursuant to section 340 and the
+        communities in which the signals are carried.
+
+    ``(h) Additional Corresponding Changes in Regulations.--
+            ``(1) Community-by-
+        community <<NOTE: Deadline.>> elections.--The Commission shall,
+        no later than October 30, 2005, revise section 76.66 of its
+        regulations (47 CFR 76.66), concerning satellite broadcast
+        signal carriage, to permit (at the next cycle of elections under
+        section 325) a television broadcast station that is located in a
+        local market into which a satellite carrier retransmits a
+        television broadcast station pursuant to section 338, to elect,
+        with respect to such satellite carrier, between retransmission
+        consent pursuant to such section 325 and mandatory carriage
+        pursuant to section 338 separately for each county within such
+        station's local market, if--
+                    ``(A) the satellite carrier has notified the
+                station, pursuant to paragraph (3), that it intends to
+                carry another affiliate of the same network pursuant to
+                this section during the relevant election period in the
+                station's local market; or
+                    ``(B) on the date notification under paragraph (3)
+                was due, the satellite carrier was retransmitting into
+                the station's local market pursuant to this section an
+                affiliate of the same television network.
+            ``(2) Unified negotiations.--In revising its regulations as
+        required by paragraph (1), the Commission shall provide that any
+        such station shall conduct a unified negotiation for the
+
+[[Page 118 STAT. 3413]]
+
+        entire portion of its local market for which retransmission
+        consent is elected.
+            ``(3) Additional provisions.--
+        The <<NOTE: Deadline.>> Commission shall, no later than October
+        30, 2005, revise its regulations to provide the following:
+                    ``(A) Notifications by satellite carrier.--A
+                satellite carrier's retransmission of television
+                broadcast stations pursuant to this section shall be
+                subject to the following limitations:
+                          ``(i) In any local market in which the
+                      satellite carrier provides service pursuant to
+                      section 338 on the date of enactment of the
+                      Satellite Home Viewer Extension and
+                      Reauthorization Act of 2004, the carrier may
+                      notify a television broadcast station in that
+                      market, at least 60 days prior to any date on
+                      which the station must thereafter make an election
+                      under section 76.66 of the Commission's
+                      regulations (47 CFR 76.66), of--
+                                    ``(I) each affiliate of the same
+                                television network that the carrier
+                                reserves the right to retransmit into
+                                that station's local market pursuant to
+                                this section during the next election
+                                cycle under such section of such
+                                regulations; and
+                                    ``(II) for each such affiliate, the
+                                communities into which the satellite
+                                carrier reserves the right to make such
+                                retransmissions.
+                          ``(ii) In any local market in which the
+                      satellite carrier commences service pursuant to
+                      section 338 after the date of enactment of the
+                      Satellite Home Viewer Extension and
+                      Reauthorization Act of 2004, the carrier may
+                      notify a station in that market, at least 60 days
+                      prior to the introduction of such service in that
+                      market, and thereafter at least 60 days prior to
+                      any date on which the station must thereafter make
+                      an election under section 76.66 of the
+                      Commission's regulations (47 CFR 76.66), of each
+                      affiliate of the same television network that the
+                      carrier reserves the right to retransmit into that
+                      station's local market during the next election
+                      cycle under such section of such regulations.
+                          ``(iii) Beginning with the 2005 election
+                      cycle, a satellite carrier may only retransmit
+                      pursuant to this section during the pertinent
+                      election period a signal--
+                                    ``(I) as to which it has provided
+                                the notifications set forth in clauses
+                                (i) and (ii); or
+                                    ``(II) that it was retransmitting
+                                into the local market under this section
+                                as of the date such notifications were
+                                due.
+                    ``(B) Harmonization of elections and retransmission
+                consent agreements.--If a satellite carrier notifies a
+                television broadcast station that it reserves the right
+                to retransmit an affiliate of the same television
+                network during the next election cycle pursuant to this
+                section, the station may choose between retransmission
+                consent and mandatory carriage for any portion of the 3-
+                year election cycle that is not covered by an existing
+                retransmission consent agreement.
+
+[[Page 118 STAT. 3414]]
+
+    ``(i) Definitions.--As used in this section:
+            ``(1) Local market; satellite carrier; subscriber;
+        television broadcast station.--The terms `local market',
+        `satellite carrier', `subscriber', and `television broadcast
+        station' have the meanings given such terms in section 338(k).
+            ``(2) Network station; television network.--The terms
+        `network station' and `television network' have the meanings
+        given such terms in section 339(d).
+            ``(3) Community.--The term `community' means--
+                    ``(A) a county or a cable community, as determined
+                under the rules, regulations, and authorizations of the
+                Commission applicable to determining with respect to a
+                cable system whether signals are significantly viewed;
+                or
+                    ``(B) a satellite community, as determined under
+                such rules, regulations, and authorizations (or
+                revisions thereof) as the Commission may prescribe in
+                implementing the requirements of this section.
+            ``(4) Bandwidth.--The terms `equivalent bandwidth' and
+        `entire bandwidth' shall be defined by the Commission by
+        regulation, except that this paragraph shall not be construed--
+                    ``(A) to prevent a satellite operator from using
+                compression technology;
+                    ``(B) to require a satellite operator to use the
+                identical bandwidth or bit rate as the local or distant
+                broadcaster whose signal it is retransmitting;
+                    ``(C) to require a satellite operator to use the
+                identical bandwidth or bit rate for a local network
+                station as it does for a distant network station;
+                    ``(D) to affect a satellite operator's obligations
+                under subsection (a)(1); or
+                    ``(E) to affect the definitions of `program related'
+                and `primary video'.''.
+
+SEC. 203. CARRIAGE OF LOCAL STATIONS ON A SINGLE DISH.
+
+    (a) Amendments.--Section 338 of the Communications Act of 1934 (47
+U.S.C. 338(d)) is amended--
+            (1) by redesignating subsections (g) and (h) as subsections
+        (j) and (k), respectively; and
+            (2) by inserting after subsection (f) the following new
+        subsection:
+
+    ``(g) Carriage of Local Stations on a Single Dish.--
+            ``(1) Single dish.--Each satellite carrier that retransmits
+        the analog signals of local television broadcast stations in a
+        local market shall retransmit such analog signals in such market
+        by means of a single reception antenna and associated equipment.
+            ``(2) Exception.--If the carrier retransmits signals in the
+        digital television service, the carrier shall retransmit such
+        digital signals in such market by means of a single reception
+        antenna and associated equipment, but such antenna and
+        associated equipment may be separate from the single reception
+        antenna and associated equipment used for analog television
+        service signals.
+            ``(3) Effective date.--The requirements of paragraphs (1)
+        and (2) of this subsection shall apply on and after 18 months
+        after the date of enactment of the Satellite Home Viewer
+        Extension and Reauthorization Act of 2004.
+
+[[Page 118 STAT. 3415]]
+
+            ``(4) Notice of disruptions.--A <<NOTE: Deadline.>> carrier
+        that is providing signals of a local television broadcast
+        station in a local market under this section on the date of
+        enactment of the Satellite Home Viewer Extension and
+        Reauthorization Act of 2004 shall, not later than 15 months
+        after such date of enactment, provide to the licensees for such
+        stations and the carrier's subscribers in such local market a
+        notice that displays prominently and conspicuously a clear
+        statement of--
+                    ``(A) any reallocation of signals between different
+                reception antennas and associated equipment that the
+                carrier intends to make in order to comply with the
+                requirements of this subsection;
+                    ``(B) the need, if any, for subscribers to obtain an
+                additional reception antenna and associated equipment to
+                receive such signals; and
+                    ``(C) any cessation of carriage or other material
+                change in the carriage of signals as a consequence of
+                the requirements of this paragraph.''.
+
+    (b) Conforming Amendments: Commission Enforcement of Section; Low
+Power Television Stations.--
+            (1) Section 338(a) of such Act is amended by striking
+        paragraphs (1) and (2) and inserting the following:
+            ``(1) In general.--Each satellite carrier providing, under
+        section 122 of title 17, United States Code, secondary
+        transmissions to subscribers located within the local market of
+        a television broadcast station of a primary transmission made by
+        that station shall carry upon request the signals of all
+        television broadcast stations located within that local market,
+        subject to section 325(b).
+            ``(2) Remedies for failure to carry.--In addition to the
+        remedies available to television broadcast stations under
+        section 501(f) of title 17, United States Code, the Commission
+        may use the Commission's authority under this Act to assure
+        compliance with the obligations of this subsection, but in no
+        instance shall a Commission enforcement proceeding be required
+        as a predicate to the pursuit of a remedy available under such
+        section 501(f).
+            ``(3) Low power station carriage optional.--No low power
+        television station whose signals are provided under section
+        119(a)(14) of title 17, United States Code, shall be entitled to
+        insist on carriage under this section, regardless of whether the
+        satellite carrier provides secondary transmissions of the
+        primary transmissions of other stations in the same local market
+        pursuant to section 122 of such title, nor shall any such
+        carriage be considered in connection with the requirements of
+        subsection (c) of this section.''.
+            (2) Section 338(c)(1) of such Act is amended by striking
+        ``subsection (a)'' and inserting ``subsection (a)(1)''.
+            (3) Section 338(k) of such Act (as redesignated by
+        subsection (a)(1)) is amended--
+                    (A) by redesignating paragraphs (4) through (7) as
+                paragraphs (5) through (8), respectively; and
+                    (B) by inserting after paragraph (3) the following
+                new paragraph:
+            ``(4) Low power television station.--The term `low power
+        television station' means a low power television station as
+        defined under section 74.701(f) of title 47, Code of Federal
+
+[[Page 118 STAT. 3416]]
+
+        Regulations, as in effect on June 1, 2004. For purposes of this
+        paragraph, the term `low power television station' includes a
+        low power television station that has been accorded primary
+        status as a Class A television licensee under section 73.6001(a)
+        of title 47, Code of Federal Regulations.''.
+
+SEC. 204. REPLACEMENT OF DISTANT SIGNALS WITH LOCAL SIGNALS.
+
+    (a) Replacement.--Section 339(a) of the Communications Act of 1934
+(47 U.S.C. 339(a)) is amended--
+            (1) in paragraph (1), by adding at the end the following new
+        sentence: ``Such two network stations may be comprised of both
+        the analog signal and digital signal of not more than two
+        network stations.'';
+            (2) by redesignating paragraph (2) as paragraph (3);
+            (3) by inserting after paragraph (1) the following new
+        paragraph:
+            ``(2) Replacement of <<NOTE: Applicability.>> distant
+        signals with local signals.--Notwithstanding any other provision
+        of paragraph (1), the following rules shall apply after the date
+        of enactment of the Satellite Home Viewer Extension and
+        Reauthorization Act of 2004:
+                    ``(A) Rules for grandfathered subscribers to analog
+                signals.--
+                          ``(i) For those receiving distant analog
+                      signals.--In the case of a subscriber of a
+                      satellite carrier who is eligible to receive the
+                      analog signal of a network station solely by
+                      reason of section 119(e) of title 17, United
+                      States Code (in this subparagraph referred to as a
+                      `distant analog signal'), and who, as of October
+                      1, 2004, is receiving the distant analog signal of
+                      that network station, the following shall apply:
+                                    ``(I) In a case in which the
+                                satellite carrier makes available to the
+                                subscriber the analog signal of a local
+                                network station affiliated with the same
+                                television network pursuant to section
+                                338, the carrier may only provide the
+                                secondary transmissions of the distant
+                                analog signal of a station affiliated
+                                with the same network to that
+                                subscriber--
+                                            ``(aa)
+                                        if, <<NOTE: Deadline.>> within
+                                        60 days after receiving the
+                                        notice of the satellite carrier
+                                        under section 338(h)(1) of this
+                                        Act, the subscriber elects to
+                                        retain the distant analog
+                                        signal; but
+                                            ``(bb) only until such time
+                                        as the subscriber elects to
+                                        receive such local analog
+                                        signal.
+
+                                ``(II) <<NOTE: Deadline.>> Notwithstandin
+                                g subclause (I), the carrier may not
+                                retransmit the distant analog signal to
+                                any subscriber who is eligible to
+                                receive the analog signal of a network
+                                station solely by reason of section
+                                119(e) of title 17, United States Code,
+                                unless such carrier, within 60 days
+                                after the date of the enactment of the
+                                Satellite Home Viewer Extension and
+                                Reauthorization Act of 2004, submits to
+                                that television network the list and
+                                statement required by subparagraph
+                                (F)(i).
+
+[[Page 118 STAT. 3417]]
+
+                          ``(ii) For those not receiving distant analog
+                      signals.--In the case of any subscriber of a
+                      satellite carrier who is eligible to receive the
+                      distant analog signal of a network station solely
+                      by reason of section 119(e) of title 17, United
+                      States Code, and who did not receive a distant
+                      analog signal of a station affiliated with the
+                      same network on October 1, 2004, the carrier may
+                      not provide the secondary transmissions of the
+                      distant analog signal of a station affiliated with
+                      the same network to that subscriber.
+                    ``(B) Rules
+                for <<NOTE: Applicability. Deadlines.>> other
+                subscribers to analog signals.--In the case of a
+                subscriber of a satellite carrier who is eligible to
+                receive the analog signal of a network station under
+                this section (in this subparagraph referred to as a
+                `distant analog signal'), other than subscribers to whom
+                subparagraph (A) applies, the following shall apply:
+                          ``(i) In a case in which the satellite carrier
+                      makes available to that subscriber, on January 1,
+                      2005, the analog signal of a local network station
+                      affiliated with the same television network
+                      pursuant to section 338, the carrier may only
+                      provide the secondary transmissions of the distant
+                      analog signal of a station affiliate with the same
+                      network to that subscriber if the subscriber's
+                      satellite carrier, not later than March 1, 2005,
+                      submits to that television network the list and
+                      statement required by subparagraph (F)(i).
+                          ``(ii) In a case in which the satellite
+                      carrier does not make available to that
+                      subscriber, on January 1, 2005, the analog signal
+                      of a local network station pursuant to section
+                      338, the carrier may only provide the secondary
+                      transmissions of the distant analog signal of a
+                      station affiliated with the same network to that
+                      subscriber if--
+                                    ``(I) that subscriber seeks to
+                                subscribe to such distant analog signal
+                                before the date on which such carrier
+                                commences to carry pursuant to section
+                                338 the analog signals of stations from
+                                the local market of such local network
+                                station; and
+                                    ``(II) the satellite carrier, within
+                                60 days after such date, submits to each
+                                television network the list and
+                                statement required by subparagraph
+                                (F)(ii).
+                    ``(C) Future applicability.--A satellite carrier may
+                not provide a distant analog signal (within the meaning
+                of subparagraph (A) or (B)) to a person who--
+                          ``(i) is not a subscriber lawfully receiving
+                      such secondary transmission as of the date of the
+                      enactment of the Satellite Home Viewer Extension
+                      and Reauthorization Act of 2004; and
+                          ``(ii) at the time such person seeks to
+                      subscribe to receive such secondary transmission,
+                      resides in a local market where the satellite
+                      carrier makes available to that person the analog
+                      signal of a local network station affiliated with
+                      the same television network pursuant to section
+                      338, and the retransmission of such signal by such
+                      carrier can reach such subscriber.
+                    ``(D) Special rules for distant digital signals.--
+
+[[Page 118 STAT. 3418]]
+
+                          ``(i) Eligibility.--In the case of a
+                      subscriber of a satellite carrier who, with
+                      respect to a local network station--
+                                    ``(I) is a subscriber whose
+                                household is located outside the
+                                coverage area of the analog signal of
+                                such station as predicted by the model
+                                specified in subsection (c)(3) of this
+                                section for the signal intensity
+                                required under section 73.683(a) of
+                                title 47 of the Code of Federal
+                                Regulations, or a successor regulation;
+                                    ``(II) is in an unserved household
+                                as determined under section 119(d)(1)(A)
+                                of title 17, United States Code; or
+                                    ``(III) is, after the date on which
+                                the conditions required by clause (vii)
+                                are met with respect to such station,
+                                determined under clause (vi) of this
+                                subparagraph to be unable to receive a
+                                digital signal of such local network
+                                station that exceeds the signal
+                                intensity standard specified in such
+                                clause;
+                      such subscriber is eligible to receive the digital
+                      signal of a distant network station affiliated
+                      with the same network under this section (in this
+                      subparagraph referred to as a `distant digital
+                      signal') subject to the provisions of this
+                      subparagraph.
+                          ``(ii) Pre-enactment distant digital signal
+                      subscribers.--Any eligible subscriber under this
+                      subparagraph who is a lawful subscriber to such a
+                      distant digital signal as of the date of enactment
+                      of the Satellite Home Viewer Extension and
+                      Reauthorization Act of 2004 may continue to
+                      receive such distant digital signal, whether or
+                      not such subscriber elects to subscribe to local
+                      digital signals.
+                          ``(iii) Local-to-local analog markets.--In a
+                      case in which the satellite carrier makes
+                      available to an eligible subscriber under this
+                      subparagraph the analog signal of a local network
+                      station pursuant to section 338, the carrier may
+                      only provide the distant digital signal of a
+                      station affiliated with the same network to that
+                      subscriber if--
+                                    ``(I) in the case of any local
+                                market in the 48 contiguous States of
+                                the United States, the distant digital
+                                signal is the secondary transmission of
+                                a station whose prime time network
+                                programming is generally broadcast
+                                simultaneously with, or later than, the
+                                prime time network programming of the
+                                affiliate of the same network in the
+                                local market;
+                                    ``(II) in any local market, the
+                                retransmission of the distant digital
+                                signal of the distant station occupies
+                                at least the equivalent bandwidth (as
+                                such term is defined by the Commission
+                                under section 340(h)(4)) as the digital
+                                signal broadcast by such station; and
+                                    ``(III) <<NOTE: Deadlines.>> the
+                                subscriber subscribes to the analog
+                                signal of such local network station
+                                within 60 days after such signal is made
+                                available by the satellite
+
+[[Page 118 STAT. 3419]]
+
+                                carrier, and adds to or replaces such
+                                analog signal with the digital signal
+                                from such local network station within
+                                60 days after such signal is made
+                                available by the satellite carrier,
+                                except that such distant digital signal
+                                may continue to be provided to a
+                                subscriber who cannot be reached by the
+                                satellite transmission of the local
+                                digital signal.
+                          ``(iv) Local-to-local digital markets.--After
+                      the date on which a satellite carrier makes
+                      available the digital signal of a local network
+                      station, the carrier may not offer the distant
+                      digital signal of a network station affiliated
+                      with the same television network to any new
+                      subscriber to such distant digital signal after
+                      such date, except that such distant digital signal
+                      may be provided to a new subscriber who cannot be
+                      reached by the satellite transmission of the local
+                      digital signal.
+                          ``(v) Non-local-to-local markets.--After the
+                      date of enactment of the Satellite Home Viewer
+                      Extension and Reauthorization Act of 2004, if the
+                      satellite carrier does not make available the
+                      digital signal of a local network station in a
+                      local market, the satellite carrier may offer a
+                      new subscriber after such date who is eligible
+                      under this subparagraph a distant digital signal
+                      from a station affiliated with the same network
+                      and, in the case of any local market in the 48
+                      contiguous States of the United States, whose
+                      prime time network programming is generally
+                      broadcast simultaneously with, or later than, the
+                      prime time network programming of the affiliate of
+                      the same network in the local market, except
+                      that--
+                                    ``(I) such carrier may continue to
+                                provide such distant digital signal to
+                                such a subscriber after the date on
+                                which the carrier makes available the
+                                digital signal of a local network
+                                station affiliated with such network
+                                only if such subscriber subscribes to
+                                the digital signal from such local
+                                network station; and
+                                    ``(II) the limitation contained in
+                                subclause (I) of this clause shall not
+                                apply to a subscriber that cannot be
+                                reached by the satellite transmission of
+                                the local digital signal.
+                          ``(vi) Signal testing for digital signals.--
+                                    ``(I) A subscriber shall be eligible
+                                for a distant digital signal under
+                                clause (i)(III) if such subscriber is
+                                determined, based on a test conducted in
+                                accordance with section 73.686(d) of
+                                title 47, Code of Federal Regulations,
+                                or any successor regulation, not to be
+                                able to receive a signal that exceeds
+                                the signal intensity standard in section
+                                73.622(e)(1) of title 47, Code of
+                                Federal Regulations, as in effect on the
+                                date of enactment of the Satellite Home
+                                Viewer Extension and Reauthorization Act
+                                of 2004.
+                                    ``(II) <<NOTE: Deadline.>> Such test
+                                shall be conducted, upon written request
+                                for a digital signal strength test by
+                                the subscriber to the satellite carrier,
+                                within 30 days after the date the
+                                subscriber submits such
+
+[[Page 118 STAT. 3420]]
+
+                                request for the test. Such test shall be
+                                conducted by a qualified and independent
+                                person selected by the satellite carrier
+                                and the network station or stations, or
+                                who has been previously approved by the
+                                satellite carrier and by each affected
+                                network station but not previously
+                                disapproved. A tester may not be so
+                                disapproved for a test after the tester
+                                has commenced such test.
+                                    ``(III) Unless the satellite carrier
+                                and the network station or stations
+                                otherwise agree, the costs of conducting
+                                the test shall be borne as follows:
+                                            ``(aa) If the subscriber is
+                                        not eligible for a distant
+                                        digital signal under clause
+                                        (i)(I) of this subparagraph (by
+                                        reason of being outside of the
+                                        coverage area of the analog
+                                        signal), the satellite carrier
+                                        may request the station licensee
+                                        for a waiver.
+                                            ``(bb) If the licensee
+                                        agrees to a waiver, or fails to
+                                        respond to a waiver request
+                                        within 30 days, the subscriber
+                                        may receive such distant digital
+                                        signal.
+                                            ``(cc) If the licensee
+                                        refuses to grant a waiver, the
+                                        subscriber may request the
+                                        satellite carrier to conduct the
+                                        test.
+                                            ``(dd) If the satellite
+                                        carrier requests the test and--
+
+
+
+                                        `(AA) the station's signal is determined to exceed such signal intensity standard, the
+                                        costs of the test shall be borne by the satellite carrier; and
+
+										`(BB) the station's signal is determined to not exceed such signal intensity standard, the
+										costs of the test shall be borne by the licensee.
+
+                                        ``(ee) <<NOTE: Deadline.>> If
+                                        the satellite carrier does not
+                                        request the test, or fails to
+                                        respond within 30 days, the
+                                        subscriber may request the test
+                                        be conducted under the
+                                        supervision of the carrier, and
+                                        the costs of the test shall be
+                                        borne by the subscriber in
+                                        accordance with regulations
+                                        prescribed by the Commission.
+                                        Such regulations shall also
+                                        require the carrier to notify
+                                        the subscriber of the typical
+                                        costs of such test.
+                          ``(vii) Trigger events for use of testing.--A
+                      subscriber shall not be eligible for a distant
+                      digital signal under clause (i)(III) pursuant to a
+                      test conducted under clause (vii) until--
+                                    ``(I) in the case of a subscriber
+                                whose household is located within the
+                                area predicted to be served (by the
+                                predictive model for analog signals
+                                under subsection (b)(3) of this section)
+                                by the signal of a local network station
+                                and who is seeking a distant digital
+                                signal of a station affiliated with the
+                                same network as that local network
+                                station--
+
+[[Page 118 STAT. 3421]]
+
+                                            ``(aa) April 30, 2006, if
+                                        such local network station is
+                                        within the top 100 television
+                                        markets and--
+
+
+
+                                          `(AA) has received a tentative digital television service channel designation that is the
+                                          same as such station's current digital television service channel; or
+
+										  `(BB) has been found by the Commission to have lost interference protection; or
+
+
+
+                                            ``(bb) July 15, 2007, for
+                                        any other local network
+                                        stations, other than translator
+                                        stations licensed to broadcast
+                                        on the date of enactment of the
+                                        Satellite Home Viewer Extension
+                                        and Reauthorization Act of 2004;
+                                        or
+                                    ``(II) in the case of a translator
+                                station, 1 year after the date on which
+                                the Commission completes all actions
+                                necessary for the allocation and
+                                assignment of digital television
+                                licenses to television translator
+                                stations.
+                          ``(viii) Testing waivers.--Upon request by a
+                      local network station, the Commission may grant a
+                      waiver with respect to such station to the
+                      beginning of testing under clause (vii), and
+                      prohibit subscribers from receiving digital signal
+                      strength testing with respect to such
+                      station. <<NOTE: Deadline.>> Such a request shall
+                      be filed not less than 5 months prior to the
+                      implementation deadline specified in such clause,
+                      and the Commission shall act on such request by
+                      such implementation deadline. Such
+                      a <<NOTE: Expiration date.>> waiver shall expire
+                      at the end of not more than 6 months, except that
+                      a waiver may be renewed upon a proper showing. The
+                      Commission may only grant such a request upon
+                      submission of clear and convincing evidence that
+                      the station's digital signal coverage is limited
+                      due to the unremediable presence of one or more of
+                      the following:
+                                    ``(I) the need for international
+                                coordination or approvals;
+                                    ``(II) clear zoning or environmental
+                                legal impediments;
+                                    ``(III) force majeure;
+                                    ``(IV) the station experiences a
+                                substantial decrease in its digital
+                                signal coverage area due to necessity of
+                                using side-mounted antenna;
+                                    ``(V) substantial technical problems
+                                that result in a station experiencing a
+                                substantial decrease in its coverage
+                                area solely due to actions to avoid
+                                interference with emergency response
+                                providers; or
+                                    ``(VI) no satellite carrier is
+                                providing the retransmission of the
+                                analog signals of local network stations
+                                under section 338 in the local market.
+                      Under no circumstances may such a waiver be based
+                      upon financial exigency.
+
+[[Page 118 STAT. 3422]]
+
+                          ``(ix) Special waiver provision for
+                      translators.--Upon request by a television
+                      translator station, the Commission may grant, for
+                      not more than 3 years, a waiver with respect to
+                      such station to the beginning of testing under
+                      clause (vii), and prohibit subscribers from
+                      receiving digital signal strength testing with
+                      respect to such station, if the Commission
+                      determines that the translator station is not
+                      broadcasting a digital signal due to one or more
+                      of the following:
+                                    ``(I) frequent occurrence of
+                                inclement weather; or
+                                    ``(II) mountainous terrain at the
+                                transmitter tower location.
+                          ``(x) Savings provision.--Nothing in this
+                      subparagraph shall be construed to affect a
+                      satellite carrier's obligations under section 338.
+                          ``(xi) Definition.--For purposes of clause
+                      (viii), the term `emergency response providers'
+                      means Federal, State, or local governmental and
+                      nongovernmental emergency public safety, law
+                      enforcement, fire, emergency response, emergency
+                      medical (including hospital emergency facilities),
+                      and related personnel, organizations, agencies, or
+                      authorities.
+                    ``(E) Authority to grant station-specific waivers.--
+                This paragraph shall not prohibit a retransmission of a
+                distant analog signal or distant digital signal (within
+                the meaning of subparagraph (A), (B), or (D)) of any
+                distant network station to any subscriber to whom the
+                signal of a local network station affiliated with the
+                same network is available, if and to the extent that
+                such local network station has affirmatively granted a
+                waiver from the requirements of this paragraph to such
+                satellite carrier with respect to retransmission of such
+                distant network station to such subscriber.
+                    ``(F) Notices to networks of distant signal
+                subscribers.--
+                          ``(i) <<NOTE: Deadline.>> Within 60 days after
+                      the date of enactment of the Satellite Home Viewer
+                      Extension and Reauthorization Act of 2004, each
+                      satellite carrier that provides a distant signal
+                      of a network station to a subscriber pursuant to
+                      subparagraph (A) or (B)(i) of this paragraph shall
+                      submit to each network--
+                                    ``(I) a list, aggregated by
+                                designated market area, identifying each
+                                subscriber provided such a signal by--
+                                            ``(aa) name;
+                                            ``(bb) address (street or
+                                        rural route number, city, State,
+                                        and zip code); and
+                                            ``(cc) the distant network
+                                        signal or signals received; and
+                                    ``(II) a statement that, to the best
+                                of the carrier's knowledge and belief
+                                after having made diligent and good
+                                faith inquiries, the subscriber is
+                                qualified under the existing law to
+                                receive the distant network signal or
+                                signals pursuant to subparagraph (A) or
+                                (B)(i) of this paragraph.
+
+[[Page 118 STAT. 3423]]
+
+                          ``(ii) <<NOTE: Deadline.>> Within 60 days
+                      after the date a satellite carrier commences to
+                      carry pursuant to section 338 the signals of
+                      stations from a local market, such a satellite
+                      carrier that provides a distant signal of a
+                      network station to a subscriber pursuant to
+                      subparagraph (B)(ii) of this paragraph shall
+                      submit to each network--
+                                    ``(I) a list identifying each
+                                subscriber in that local market provided
+                                such a signal by--
+                                            ``(aa) name;
+                                            ``(bb) address (street or
+                                        rural route number, city, State,
+                                        and zip code); and
+                                            ``(cc) the distant network
+                                        signal or signals received; and
+                                    ``(II) a statement that, to the best
+                                of the carrier's knowledge and belief
+                                after having made diligent and good
+                                faith inquiries, the subscriber is
+                                qualified under the existing law to
+                                receive the distant network signal or
+                                signals pursuant to subparagraph (B)(ii)
+                                of this paragraph.
+                    ``(G) Other provisions not affected.--This paragraph
+                shall not affect the eligibility of a subscriber to
+                receive secondary transmissions under section 340 of
+                this Act or as an unserved household included under
+                section 119(a)(12) of title 17, United States Code.
+                    ``(H) Available defined.--For purposes of this
+                paragraph, a satellite carrier makes available a local
+                signal to a subscriber or person if the satellite
+                carrier offers that local signal to other subscribers
+                who reside in the same zip code as that subscriber or
+                person.''; and
+            (4) in paragraph (3) (as redesignated by paragraph (2) of
+        this subsection), by adding at the end the following: ``, except
+        that paragraph (2)(D) of this subsection, relating to the
+        provision of distant digital signals, shall be enforceable under
+        the provisions of section 340(f)''.
+
+    (b) Study of Digital Strength Testing Procedures.--Section 339(c) of
+such Act (47 U.S.C. 339(c)) is amended by striking paragraph (1) and
+inserting the following:
+            ``(1) Study of digital strength testing procedures.--
+                    ``(A) Study required.--Not <<NOTE: Deadline.>> later
+                than 1 year after the date of the enactment of the
+                Satellite Home Viewer Extension and Reauthorization Act
+                of 2004, the Federal Communications Commission shall
+                complete an inquiry regarding whether, for purposes of
+                identifying if a household is unserved by an adequate
+                digital signal under section 119(d)(10) of title 17,
+                United States Code, the digital signal strength standard
+                in section 73.622(e)(1) of title 47, Code of Federal
+                Regulations, or the testing procedures in section
+                73.686(d) of title 47, Code of Federal Regulations, such
+                statutes or regulations should be revised to take into
+                account the types of antennas that are available to
+                consumers.
+                    ``(B) Study considerations.--In conducting the study
+                under this paragraph, the Commission shall consider
+                whether--
+                          ``(i) to account for the fact that an antenna
+                      can be mounted on a roof or placed in a home and
+                      can be fixed or capable of rotating;
+
+[[Page 118 STAT. 3424]]
+
+                          ``(ii) section 73.686(d) of title 47, Code of
+                      Federal Regulations, should be amended to create
+                      different procedures for determining if the
+                      requisite digital signal strength is present than
+                      for determining if the requisite analog signal
+                      strength is present;
+                          ``(iii) a standard should be used other than
+                      the presence of a signal of a certain strength to
+                      ensure that a household can receive a high-quality
+                      picture using antennas of reasonable cost and ease
+                      of installation;
+                          ``(iv) to develop a predictive methodology for
+                      determining whether a household is unserved by an
+                      adequate digital signal under section 119(d)(10)
+                      of title 17, United States Code;
+                          ``(v) there is a wide variation in the ability
+                      of reasonably priced consumer digital television
+                      sets to receive over-the-air signals, such that at
+                      a given signal strength some may be able to
+                      display high-quality pictures while others cannot,
+                      whether such variation is related to the price of
+                      the television set, and whether such variation
+                      should be factored into setting a standard for
+                      determining whether a household is unserved by an
+                      adequate digital signal; and
+                          ``(vi) to account for factors such as building
+                      loss, external interference sources, or undesired
+                      signals from both digital television and analog
+                      television stations using either the same or
+                      adjacent channels in nearby markets, foliage, and
+                      man-made clutter.
+                    ``(C) Report.--Not later than 1 year after the date
+                of the enactment of the Satellite Home Viewer Extension
+                and Reauthorization Act of 2004, the Federal
+                Communications Commission shall submit to the Committee
+                on Energy and Commerce of the House of Representatives
+                and the Committee on Commerce, Science, and
+                Transportation of the Senate a report containing--
+                          ``(i) the results of the study under this
+                      paragraph; and
+                          ``(ii) recommendations, if any, as to what
+                      changes should be made to Federal statutes or
+                      regulations.''.
+
+SEC. 205. ADDITIONAL NOTICES TO SUBSCRIBERS, NETWORKS, AND STATIONS
+            CONCERNING SIGNAL CARRIAGE.
+
+    Section 338 of the Communications Act of 1934 (47 U.S.C. 338) is
+further amended by inserting after subsection (g) (as added by section
+203) the following new subsection:
+    ``(h) Additional <<NOTE: Deadlines.>> Notices to Subscribers,
+Networks, and Stations Concerning Signal Carriage.--
+            ``(1) Notices to and elections by subscribers concerning
+        grandfathered signals.--Any carrier that provides a distant
+        signal of a network station to a subscriber pursuant section
+        339(a)(2)(A) shall--
+                    ``(A) within 60 days after the local signal of a
+                network station of the same television network is
+                available pursuant to section 338, or within 60 days
+                after the date of enactment of the Satellite Home Viewer
+                Extension and Reauthorization Act of 2004, whichever is
+                later, send a notice to the subscriber--
+
+[[Page 118 STAT. 3425]]
+
+                          ``(i) offering to substitute the local network
+                      signal for the duplicating distant network signal;
+                      and
+                          ``(ii) informing the subscriber that, if the
+                      subscriber fails to respond in 60 days, the
+                      subscriber will lose the distant network signal
+                      but will be permitted to subscribe to the local
+                      network signal; and
+                    ``(B) if the subscriber--
+                          ``(i) elects to substitute such local network
+                      signal within such 60 days, switch such subscriber
+                      to such local network signal within 10 days after
+                      the end of such 60-day period; or
+                          ``(ii) fails to respond within such 60 days,
+                      terminate the distant network signal within 10
+                      days after the end of such 60-day period.
+            ``(2) Notice to station licensees of commencement of local-
+        into-local service.--
+                    ``(A) Notice required.--Within 180 days after the
+                date of enactment of the Satellite Home Viewer Extension
+                and Reauthorization Act of 2004, the Commission shall
+                revise the regulations under this section relating to
+                notice to broadcast station licensees to comply with the
+                requirements of this paragraph.
+                    ``(B) Contents of commencement notice.--The notice
+                required by such regulations shall inform each
+                television broadcast station licensee within any local
+                market in which a satellite carrier proposes to commence
+                carriage of signals of stations from that market, not
+                later than 60 days prior to the commencement of such
+                carriage--
+                          ``(i) of the carrier's intention to launch
+                      local-into-local service under this section in a
+                      local market, the identity of that local market,
+                      and the location of the carrier's proposed local
+                      receive facility for that local market;
+                          ``(ii) of the right of such licensee to elect
+                      carriage under this section or grant
+                      retransmission consent under section 325(b);
+                          ``(iii) that such licensee has 30 days from
+                      the date of the receipt of such notice to make
+                      such election; and
+                          ``(iv) that failure to make such election will
+                      result in the loss of the right to demand carriage
+                      under this section for the remainder of the 3-year
+                      cycle of carriage under section 325.
+                    ``(C) Transmission of notices.--Such regulations
+                shall require that each satellite carrier shall transmit
+                the notices required by such regulation via certified
+                mail to the address for such television station licensee
+                listed in the consolidated database system maintained by
+                the Commission.''.
+
+SEC. 206. PRIVACY RIGHTS OF SATELLITE SUBSCRIBERS.
+
+    (a) Amendment.--Section 338 of the Communications Act of 1934 (47
+U.S.C. 338) is further amended by inserting after subsection (h) (as
+added by section 205) the following new subsection:
+    ``(i) Privacy Rights of Satellite Subscribers.--
+            ``(1) Notice.--At the time of entering into an agreement to
+        provide any satellite service or other service to a subscriber
+
+[[Page 118 STAT. 3426]]
+
+        and at least once a year thereafter, a satellite carrier shall
+        provide notice in the form of a separate, written statement to
+        such subscriber which clearly and conspicuously informs the
+        subscriber of--
+                    ``(A) the nature of personally identifiable
+                information collected or to be collected with respect to
+                the subscriber and the nature of the use of such
+                information;
+                    ``(B) the nature, frequency, and purpose of any
+                disclosure which may be made of such information,
+                including an identification of the types of persons to
+                whom the disclosure may be made;
+                    ``(C) the period during which such information will
+                be maintained by the satellite carrier;
+                    ``(D) the times and place at which the subscriber
+                may have access to such information in accordance with
+                paragraph (5); and
+                    ``(E) the limitations provided by this section with
+                respect to the collection and disclosure of information
+                by a satellite carrier and the right of the subscriber
+                under paragraphs (7) and (9) to enforce such
+                limitations.
+        In <<NOTE: Deadline.>> the case of subscribers who have entered
+        into such an agreement before the effective date of this
+        subsection, such notice shall be provided within 180 days of
+        such date and at least once a year thereafter.
+            ``(2) Definitions.--For purposes of this subsection, other
+        than paragraph (9)--
+                    ``(A) the term `personally identifiable information'
+                does not include any record of aggregate data which does
+                not identify particular persons;
+                    ``(B) the term `other service' includes any wire or
+                radio communications service provided using any of the
+                facilities of a satellite carrier that are used in the
+                provision of satellite service; and
+                    ``(C) the term `satellite carrier' includes, in
+                addition to persons within the definition of satellite
+                carrier, any person who--
+                          ``(i) is owned or controlled by, or under
+                      common ownership or control with, a satellite
+                      carrier; and
+                          ``(ii) provides any wire or radio
+                      communications service.
+            ``(3) Prohibitions.--
+                    ``(A) Consent to collection.--Except as provided in
+                subparagraph (B), a satellite carrier shall not use any
+                facilities used by the satellite carrier to collect
+                personally identifiable information concerning any
+                subscriber without the prior written or electronic
+                consent of the subscriber concerned.
+                    ``(B) Exceptions.--A satellite carrier may use such
+                facilities to collect such information in order to--
+                          ``(i) obtain information necessary to render a
+                      satellite service or other service provided by the
+                      satellite carrier to the subscriber; or
+                          ``(ii) detect unauthorized reception of
+                      satellite communications.
+            ``(4) Disclosure.--
+                    ``(A) Consent to disclosure.--Except as provided in
+                subparagraph (B), a satellite carrier shall not disclose
+
+[[Page 118 STAT. 3427]]
+
+                personally identifiable information concerning any
+                subscriber without the prior written or electronic
+                consent of the subscriber concerned and shall take such
+                actions as are necessary to prevent unauthorized access
+                to such information by a person other than the
+                subscriber or satellite carrier.
+                    ``(B) Exceptions.--A satellite carrier may disclose
+                such information if the disclosure is--
+                          ``(i) necessary to render, or conduct a
+                      legitimate business activity related to, a
+                      satellite service or other service provided by the
+                      satellite carrier to the subscriber;
+                          ``(ii) subject to paragraph (9), made pursuant
+                      to a court order authorizing such disclosure, if
+                      the subscriber is notified of such order by the
+                      person to whom the order is directed;
+                          ``(iii) a disclosure of the names and
+                      addresses of subscribers to any satellite service
+                      or other service, if--
+                                    ``(I) the satellite carrier has
+                                provided the subscriber the opportunity
+                                to prohibit or limit such disclosure;
+                                and
+                                    ``(II) the disclosure does not
+                                reveal, directly or indirectly, the--
+                                            ``(aa) extent of any viewing
+                                        or other use by the subscriber
+                                        of a satellite service or other
+                                        service provided by the
+                                        satellite carrier; or
+                                            ``(bb) the nature of any
+                                        transaction made by the
+                                        subscriber over any facilities
+                                        used by the satellite carrier;
+                                        or
+                          ``(iv) to a government entity as authorized
+                      under chapter 119, 121, or 206 of title 18, United
+                      States Code, except that such disclosure shall not
+                      include records revealing satellite subscriber
+                      selection of video programming from a satellite
+                      carrier.
+            ``(5) Access by subscriber.--A satellite subscriber shall be
+        provided access to all personally identifiable information
+        regarding that subscriber which is collected and maintained by a
+        satellite carrier. Such information shall be made available to
+        the subscriber at reasonable times and at a convenient place
+        designated by such satellite carrier. A satellite subscriber
+        shall be provided reasonable opportunity to correct any error in
+        such information.
+            ``(6) Destruction of information.--A satellite carrier shall
+        destroy personally identifiable information if the information
+        is no longer necessary for the purpose for which it was
+        collected and there are no pending requests or orders for access
+        to such information under paragraph (5) or pursuant to a court
+        order.
+            ``(7) Penalties.--Any person aggrieved by any act of a
+        satellite carrier in violation of this section may bring a civil
+        action in a United States district court. The court may award--
+                    ``(A) actual damages but not less than liquidated
+                damages computed at the rate of $100 a day for each day
+                of violation or $1,000, whichever is higher;
+                    ``(B) punitive damages; and
+
+[[Page 118 STAT. 3428]]
+
+                    ``(C) reasonable attorneys' fees and other
+                litigation costs reasonably incurred.
+        The remedy provided by this subsection shall be in addition to
+        any other lawful remedy available to a satellite subscriber.
+            ``(8) Rule of construction.--Nothing in this title shall be
+        construed to prohibit any State from enacting or enforcing laws
+        consistent with this section for the protection of subscriber
+        privacy.
+            ``(9) Court orders.--Except as provided in paragraph
+        (4)(B)(iv), a governmental entity may obtain personally
+        identifiable information concerning a satellite subscriber
+        pursuant to a court order only if, in the court proceeding
+        relevant to such court order--
+                    ``(A) such entity offers clear and convincing
+                evidence that the subject of the information is
+                reasonably suspected of engaging in criminal activity
+                and that the information sought would be material
+                evidence in the case; and
+                    ``(B) the subject of the information is afforded the
+                opportunity to appear and contest such entity's
+                claim.''.
+
+    (b) Effective Date.--Section 338(i) <<NOTE: 47 USC 338 note.>> of
+the Communications Act of 1934 (47 U.S.C. 338(i)) as amended by
+subsection (a) of this section shall be effective 60 days after the date
+of enactment of this Act.
+
+SEC. 207. RECIPROCAL BARGAINING OBLIGATIONS.
+
+    (a) Amendments.--Section 325(b)(3)(C) of the Communications Act of
+1934 (47 U.S.C. 325(b)(3)(C)) is amended--
+            (1) by striking ``Within 45 days'' and all that follows
+        through ``1999, the'' and inserting ``The'';
+            (2) by striking the second sentence;
+            (3) by striking ``and'' at the end of clause (i);
+            (4) in clause (ii)--
+                    (A) by striking ``January 1, 2006'' and inserting
+                ``January 1, 2010''; and
+                    (B) by striking the period at the end and inserting
+                ``; and''; and
+            (5) by adding at the end the following new clause:
+                          ``(iii) until January 1, 2010, prohibit a
+                      multichannel video programming distributor from
+                      failing to negotiate in good faith for
+                      retransmission consent under this section, and it
+                      shall not be a failure to negotiate in good faith
+                      if the distributor enters into retransmission
+                      consent agreements containing different terms and
+                      conditions, including price terms, with different
+                      broadcast stations if such different terms and
+                      conditions are based on competitive marketplace
+                      considerations.''.
+
+    (b) Deadline.--The <<NOTE: Regulations. 47 USC 325 note.>> Federal
+Communications Commission shall prescribe regulations to implement the
+amendment made by subsection (a)(5) within 180 days after the date of
+enactment of this Act.
+
+SEC. 208. STUDY OF IMPACT ON CABLE TELEVISION SERVICE.
+
+    (a) Study Required.--No <<NOTE: Deadline.>> later than 9 months
+after the date of enactment of the Satellite Home Viewer Extension and
+Reauthorization Act of 2004, the Federal Communications Commission shall
+complete an inquiry regarding the impact on competition in the
+multichannel video programming distribution market of the current
+
+[[Page 118 STAT. 3429]]
+
+retransmission consent, network nonduplication, syndicated exclusivity,
+and sports blackout rules, including the impact of those rules on the
+ability of rural cable operators to compete with direct broadcast
+satellite industry in the provision of digital broadcast television
+signals to consumers. Such report shall include such recommendations for
+changes in any statutory provisions relating to such rules as the
+Commission deems appropriate.
+
+    (b) Report Required.--The Federal Communications Commission shall
+submit a report on the results of the inquiry required by subsection (a)
+to the Committee on Energy and Commerce of the House of Representatives
+and the Committee on Commerce, Science, and Transportation of the Senate
+not later than 9 months after the date of the enactment of this Act.
+
+SEC. 209. REDUCTION OF REQUIRED TESTS.
+
+    Section 339(c)(4) of the Communications Act of 1934 (47 U.S.C.
+339(c)(4)) is amended by inserting after subparagraph (C) the following
+new subparagraphs:
+                    ``(D) Reduction of verification burdens.--Within 1
+                year after the date of enactment of the Satellite Home
+                Viewer Extension and Reauthorization Act of 2004, the
+                Commission shall by rule exempt from the verification
+                requirements of subparagraph (A) any request for a test
+                made by a subscriber to a satellite carrier to whom the
+                retransmission of the signals of local broadcast
+                stations is available under section 338 from such
+                carrier.
+                    ``(E) Exception.--A satellite carrier may refuse to
+                engage in the testing process. If the carrier does so
+                refuse, a subscriber in a local market in which the
+                satellite carrier does not offer the signals of local
+                broadcast stations under section 338 may, at his or her
+                own expense, authorize a signal intensity test to be
+                performed pursuant to the procedures specified by the
+                Commission in section 73.686(d) of title 47, Code of
+                Federal Regulations, by a tester who is approved by the
+                satellite carrier and by each affected network station,
+                or who has been previously approved by the satellite
+                carrier and by each affected network station but not
+                previously disapproved. A tester may not be so
+                disapproved for a test after the tester has commenced
+                such test. The tester <<NOTE: Notice.>> shall give 5
+                business days advance written notice to the satellite
+                carrier and to the affected network station or stations.
+                A signal intensity test conducted in accordance with
+                this subparagraph shall be determinative of the signal
+                strength received at that household for purposes of
+                determining whether the household is capable of
+                receiving a Grade B intensity signal.''.
+
+SEC. 210. SATELLITE CARRIAGE OF TELEVISION STATIONS IN NONCONTIGUOUS
+            STATES.
+
+    Section 338(a) of the Communications Act of 1934 (47 U.S.C. 338(a))
+is amended by adding at the end the following:
+            ``(4) Carriage of <<NOTE: Deadlines.>> signals of local
+        stations in certain markets.--A satellite carrier that offers
+        multichannel video programming distribution service in the
+        United States to more than 5,000,000 subscribers shall (A)
+        within 1 year after the date of the enactment of the Satellite
+        Home Viewer Extension and Reauthorization Act of 2004,
+        retransmit the signals originating as analog signals of each
+        television broadcast station
+
+[[Page 118 STAT. 3430]]
+
+        located in any local market within a State that is not part of
+        the contiguous United States, and (B) within 30 months after
+        such date of enactment retransmit the signals originating as
+        digital signals of each such station. The retransmissions of
+        such stations shall be made available to substantially all of
+        the satellite carrier's subscribers in each station's local
+        market, and the retransmissions of the stations in at least one
+        market in the State shall be made available to substantially all
+        of the satellite carrier's subscribers in areas of the State
+        that are not within a designated market area. The cost to
+        subscribers of such retransmissions shall not exceed the cost of
+        retransmissions of local television stations in other States.
+        Within 1 <<NOTE: Regulations.>> year after the date of enactment
+        of that Act, the Commission shall promulgate regulations
+        concerning elections by television stations in such State
+        between mandatory carriage pursuant to this section and
+        retransmission consent pursuant to section 325(b), which shall
+        take into account the schedule on which local television
+        stations are made available to viewers in such State.''.
+
+SEC. 211. CARRIAGE OF TELEVISION SIGNALS TO CERTAIN SUBSCRIBERS.
+
+     Part I of title III of the Communications Act of 1934 (47 U.S.C.
+301 et seq.) is amended by inserting after section 339 the following:
+
+``SEC. 341. <<NOTE: 47 USC 341.>> CARRIAGE OF TELEVISION SIGNALS TO
+            CERTAIN SUBSCRIBERS.
+
+    ``(a)(1) In General.--A cable operator or satellite carrier may
+elect to retransmit, to subscribers in an eligible county.--
+            ``(A) any television broadcast stations that are located in
+        the State in which the county is located and that any cable
+        operator or satellite carrier was retransmitting to subscribers
+        in the county on January 1, 2004; or
+            ``(B) up to 2 television broadcast stations located in the
+        State in which the county is located, if the number of
+        television broadcast stations that the cable operator or
+        satellite carrier is authorized to carry under paragraph (1) is
+        less than 3.
+
+    ``(2) Deemed Significantly Viewed.--A station described in
+subsection (a) is deemed to be significantly viewed in the eligible
+county within the meaning of section 76.54 of the Commission's
+regulations (47 CFR 76.54).
+    ``(3) Definition of Eligible County.--For purposes of this section,
+the term `eligible county' means any 1 of 4 counties that--
+            ``(A) are all in a single State;
+            ``(B) on January 1, 2004, were each in designated market
+        areas in which the majority of counties were located in another
+        State or States; and
+            ``(C) as a group had a combined total of 41,340 television
+        households according to the U.S. Television Household Estimates
+        by Nielsen Media Research for 2003-2004.
+
+    ``(4) Limitation.--Carriage of a station under this section shall be
+at the option of the cable operator or satellite carrier.
+    ``(b) Certain Markets.--Notwithstanding any other provision of law,
+a satellite carrier may not carry the signal of a television station
+into an adjacent local market that is comprised of only a portion of a
+county, other than to unserved households located in that county.''.
+
+[[Page 118 STAT. 3431]]
+
+SEC. 212. <<NOTE: 47 USC 325 note.>> DIGITAL TRANSITION SAVINGS
+            PROVISION.
+
+    Nothing in the dates by which requirements or other provisions are
+effective under this Act or the amendments made by this Act shall be
+construed--
+            (1) to impair the authority of the Federal Communications
+        Commission to take any action with respect to the transition by
+        television broadcasters to the digital television service; or
+            (2) to require the Commission to take any such action.
+
+SEC. 213. AUTHORIZING BROADCAST SERVICE IN UNSERVED AREAS OF ALASKA.
+
+    Title III of the Communications Act of 1934 is amended as follows:
+            (1) <<NOTE: 47 USC 307.>> In section 307(c)(3)--
+                    (A) by striking ``any hearing'' and inserting ``any
+                administrative or judicial hearing''; and
+                    (B) by inserting ``or section 402'' after ``section
+                405''.
+            (2) In section 307, by adding at the end the following new
+        subsection:
+
+    ``(f) Notwithstanding any other provision of law, (1) any holder of
+a broadcast license may broadcast to an area of Alaska that otherwise
+does not have access to over the air broadcasts via translator,
+microwave, or other alternative signal delivery even if another holder
+of a broadcast license begins broadcasting to such area, (2) any holder
+of a broadcast license who has broadcast to an area of Alaska that did
+not have access to over the air broadcasts via translator, microwave, or
+other alternative signal delivery may continue providing such service
+even if another holder of a broadcast license begins broadcasting to
+such area, and shall not be fined or subject to any other penalty,
+forfeiture, or revocation related to providing such service including
+any fine, penalty, forfeiture, or revocation for continuing to operate
+notwithstanding orders to the contrary.''.
+            (3) In section 312(g), <<NOTE: 47 USC 312.>> by inserting
+        before the period at the end the following: ``, except that the
+        Commission may extend or reinstate such station license if the
+        holder of the station license prevails in an administrative or
+        judicial appeal, the applicable law changes, or for any other
+        reason to promote equity and fairness. Any broadcast license
+        revoked or terminated in Alaska in a proceeding related to
+        broadcasting via translator, microwave, or other alternative
+        signal delivery is reinstated''.
+
+						---
+						---
+						---
+
+[Ed. note: Text omitted. ]
+
+    Approved December 8, 2004.
+
+LEGISLATIVE HISTORY--H.R. 4818 (S. 2812):
+---------------------------------------------------------------------------
+
+HOUSE REPORTS: Nos. 108-599 (Comm. on Appropriations) and 108-792
+(Comm. of Conference).
+SENATE REPORTS: No. 108-346 accompanying S. 2812 (Comm. on
+Appropriations).
+CONGRESSIONAL RECORD, Vol. 150 (2004):
+            July 13, 15, considered and passed House.
+            Sept. 23, considered and passed Senate, amended, in lieu of
+                S. 2812.
+            Nov. 20, House and Senate agreed to conference report.
+WEEKLY COMPILATION OF PRESIDENTIAL DOCUMENTS, Vol. 40 (2004):
+            Dec. 8, Presidential statement.
+
+                                  <all>

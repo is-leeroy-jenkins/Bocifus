@@ -1,0 +1,267 @@
+[House Report 118-42]
+[From the U.S. Government Publishing Office]
+
+
+118th Congress }                                                {  Report
+                        HOUSE OF REPRESENTATIVES
+ 1st Session   }                                                {  118-42
+
+======================================================================
+
+
+
+ 
+            PRECISION AGRICULTURE SATELLITE CONNECTIVITY ACT
+
+                                _______
+                                
+
+ April 25, 2023.--Committed to the Committee of the Whole House on the 
+              State of the Union and ordered to be printed
+
+                                _______
+                                
+
+Mrs. Rodgers of Washington, from the Committee on Energy and Commerce, 
+                        submitted the following
+
+                              R E P O R T
+
+                        [To accompany H.R. 1339]
+
+    The Committee on Energy and Commerce, to whom was referred 
+the bill (H.R. 1339) to require the Federal Communications 
+Commission to review certain rules of the Commission and 
+develop recommendations for rule changes to promote precision 
+agriculture, and for other purposes, having considered the 
+same, reports favorably thereon without amendment and 
+recommends that the bill do pass.
+
+                                CONTENTS
+
+                                                                   Page
+Purpose and Summary..............................................     1
+Background and Need for Legislation..............................     2
+Committee Action.................................................     2
+Committee Votes..................................................     2
+Oversight Findings and Recommendations...........................     5
+New Budget Authority, Entitlement Authority, and Tax Expenditures     5
+Congressional Budget Office Estimate.............................     5
+Federal Mandates Statement.......................................     5
+Statement of General Performance Goals and Objectives............     5
+Duplication of Federal Programs..................................     5
+Related Committee and Subcommittee Hearings......................     5
+Committee Cost Estimate..........................................     6
+Earmark, Limited Tax Benefits, and Limited Tariff Benefits.......     6
+Advisory Committee Statement.....................................     6
+Applicability to Legislative Branch..............................     6
+Section-by-Section Analysis of the Legislation...................     6
+Changes in Existing Law Made by the Bill, as Reported............     7
+
+                          PURPOSE AND SUMMARY
+
+    H.R. 1339 requires the Federal Communications Commission 
+(FCC) to review its rules regarding certain satellite 
+communications services to determine if changes to its rules 
+could promote precision agriculture. If the FCC determines that 
+there are rule changes that could be made under the FCC's 
+existing authority to promote precision agriculture, the FCC 
+must develop recommendations and submit them to Congress within 
+15 months of enactment.
+
+                  BACKGROUND AND NEED FOR LEGISLATION
+
+    Precision agriculture allows for the optimization of crop 
+yield, water usage, and soil sustainability. Unfortunately, 
+many rural communities have little or no connectivity, thereby 
+reducing the ability for many farmers to utilize precision 
+agriculture. Additionally, there are earth exploration and 
+observation services authorized by the FCC that could promote 
+precision agriculture. These satellite technologies offer the 
+opportunity to expand the use of precision agriculture 
+throughout the United States, and this legislation would 
+require the FCC to evaluate its rules to see if there are 
+changes that can be made to promote this deployment.
+
+                            COMMITTEE ACTION
+
+    On February 2, 2023, the Subcommittee on Communications and 
+Technology held a hearing entitled, ``Launching Into the State 
+of the Satellite Marketplace.'' The Subcommittee received 
+testimony from:
+           Tom Stroup, President, Satellite Industry 
+        Association
+           Julie Zoller, Head of Global Regulatory 
+        Affairs, Project Kuiper at Amazon
+           Jennifer A. Manner, Senior Vice President of 
+        Regulatory Affairs, Echostar Corporation
+           Margo Deckard, Co-Founder and Chief 
+        Operating Officer, Lynk Global, Inc.
+           Kari Bingen, Director of the Aerospace 
+        Security Project and Senior Fellow at the International 
+        Security Program, Center for Strategic and 
+        International Studies.
+    On February 8, 2023, the Subcommittee on Communications and 
+Technology held a hearing entitled, ``Liftoff: Unleashing 
+Innovation in Satellite Communications Technologies.'' The 
+Subcommittee received testimony on H.R. 1339 from:
+           David Goldman, Senior Director of Satellite 
+        Policy, SpaceX
+           Peter Davidson, Vice President of Global 
+        Government Affairs & Policy, Intelsat
+           Whitney Q. Lohmeyer, Professor of 
+        Engineering, Olin College of Engineering
+           Danielle Pineres, Vice President of 
+        Regulatory Affairs & Compliance, Planet Labs
+    On March 8, 2023, the Subcommittee on Communications and 
+Technology met in open markup session and forwarded H.R. 1339, 
+without amendment, to the full Committee by a record vote of 27 
+yeas and 0 nays. On March 23, 2023, the full Committee on 
+Energy and Commerce met in open markup session and ordered H.R. 
+1339, without amendment, favorably reported to the House by a 
+record vote of 46 yeas and 0 nays.
+
+                            COMMITTEE VOTES
+
+    Clause 3(b) of rule XIII requires the Committee to list the 
+record votes on the motion to report legislation and amendments 
+thereto. The following reflects the record votes taken during 
+the Committee consideration:
+
+
+                 OVERSIGHT FINDINGS AND RECOMMENDATIONS
+
+    Pursuant to clause 2(b)(1) of rule X and clause 3(c)(1) of 
+rule XIII, the Committee held (a) hearing(s) and made findings 
+that are reflected in this report.
+
+   NEW BUDGET AUTHORITY, ENTITLEMENT AUTHORITY, AND TAX EXPENDITURES
+
+    Pursuant to clause 3(c)(2) of rule XIII, the Committee 
+finds that H.R. 1339 would result in no new or increased budget 
+authority, entitlement authority, or tax expenditures or 
+revenues.
+
+                  CONGRESSIONAL BUDGET OFFICE ESTIMATE
+
+    Pursuant to clause 3(c)(3) of rule XIII, at the time this 
+report was filed, the cost estimate prepared by the Director of 
+the Congressional Budget Office pursuant to section 402 of the 
+Congressional Budget Act of 1974 was not available.
+
+                       FEDERAL MANDATES STATEMENT
+
+    The Committee adopts as its own the estimate of Federal 
+mandates prepared by the Director of the Congressional Budget 
+Office pursuant to section 423 of the Unfunded Mandates Reform 
+Act.
+
+         STATEMENT OF GENERAL PERFORMANCE GOALS AND OBJECTIVES
+
+    Pursuant to clause 3(c)(4) of rule XIII, the general 
+performance goal or objective of this legislation is to require 
+the Federal Communications Commission to review its rules 
+regarding certain satellite communications services to 
+determine whether any changes could be made to promote 
+precision agriculture, and if so, develop and submit 
+recommendations to Congress on the rule changes that could 
+promote precision agriculture.
+
+                    DUPLICATION OF FEDERAL PROGRAMS
+
+    Pursuant to clause 3(c)(5) of rule XIII, no provision of 
+H.R 1339 is known to be duplicative of another Federal program, 
+including any program that was included in a report to Congress 
+pursuant to section 21 of Public Law 111-139 or the most recent 
+Catalog of Federal Domestic Assistance.
+
+              RELATED COMMITTEE AND SUBCOMMITTEE HEARINGS
+
+    Pursuant to clause 3(c)(6) of rule XIII, the following 
+hearings were used to develop or consider H.R. 1339:
+    On February 2, 2023, the Subcommittee on Communications and 
+Technology held a hearing entitled, ``Launching Into the State 
+of the Satellite Marketplace.'' The Subcommittee received 
+testimony from:
+           Tom Stroup, President, Satellite Industry 
+        Association
+           Julie Zoller, Head of Global Regulatory 
+        Affairs, Project Kuiper at Amazon
+           Jennifer A. Manner, Senior Vice President of 
+        Regulatory Affairs, Echostar Corporation
+           Margo Deckard, Co-Founder and Chief 
+        Operating Officer, Lynk Global, Inc.
+           Kari Bingen, Director of the Aerospace 
+        Security Project and Senior Fellow at the International 
+        Security Program, Center for Strategic an International 
+        Studies.
+    On February 8, 2023, the Subcommittee on Communications and 
+Technology held a hearing entitled, ``Liftoff: Unleashing 
+Innovation in Satellite Communications Technologies.'' The 
+Subcommittee received testimony on H.R. 1339 from:
+           David Goldman, Senior Director of Satellite 
+        Policy, SpaceX
+           Peter Davidson, Vice President of Global 
+        Government Affairs & Policy, Intelsat
+           Whitney Q. Lohmeyer, Professor of 
+        Engineering, Olin College of Engineering
+           Danielle Pineres, Vice President of 
+        Regulatory Affairs & Compliance, Planet Labs
+
+                        COMMITTEE COST ESTIMATE
+
+    Pursuant to clause 3(d)(1) of rule XIII, the Committee 
+adopts as its own the cost estimate prepared by the Director of 
+the Congressional Budget Office pursuant to section 402 of the 
+Congressional Budget Act of 1974. At the time this report was 
+filed, the estimate was not available.
+
+       EARMARK, LIMITED TAX BENEFITS, AND LIMITED TARIFF BENEFITS
+
+    Pursuant to clause 9(e), 9(f), and 9(g) of rule XXI, the 
+Committee finds that H.R. 1339 contains no earmarks, limited 
+tax benefits, or limited tariff benefits.
+
+                      ADVISORY COMMITTEE STATEMENT
+
+    No advisory committees within the meaning of section 5(b) 
+of the Federal Advisory Committee Act were created by this 
+legislation.
+
+                  APPLICABILITY TO LEGISLATIVE BRANCH
+
+    The Committee finds that the legislation does not relate to 
+the terms and conditions of employment or access to public 
+services or accommodations within the meaning of section 
+102(b)(3) of the Congressional Accountability Act.
+
+             SECTION-BY-SECTION ANALYSIS OF THE LEGISLATION
+
+Section. 1. Short title
+
+    This section designates that the short title may be cited 
+as the ``Precision Agriculture Satellite Connectivity Act.''
+
+Section. 2. Precision agriculture satellite connectivity
+
+    Subsection (a) requires the Federal Communications 
+Commission (the Commission), in consultation with its Precision 
+Agriculture Task Force, to (1) review the rules of the 
+Commission relating to fixed satellite service, mobile 
+satellite service, and earth exploration satellite service to 
+determine whether there are any changes to its rules that could 
+promote precision agriculture; and (2) if the Commission 
+identifies such changes, to develop recommendations for how to 
+implement those changes.
+    Subsection (b) requires the Commission to submit, not later 
+than 15 months after the date of enactment, a report to the 
+House Committee on Energy and Commerce and the Senate Committee 
+on Commerce, Science, and Transportation on the results of the 
+review conducted under subsection (a), including any 
+recommendations.
+    Subsection (c) defines key terms.
+
+         CHANGES IN EXISTING LAW MADE BY THE BILL, AS REPORTED
+
+    This legislation does not amend any existing Federal 
+statute.

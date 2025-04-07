@@ -1,0 +1,901 @@
+[House Report 115-141]
+[From the U.S. Government Publishing Office]
+
+
+115th Congress   }                                      {       Report
+                        HOUSE OF REPRESENTATIVES
+ 1st Session     }                                      {      115-141
+
+======================================================================
+
+
+
+ 
+                 TARGETING CHILD PREDATORS ACT OF 2017
+
+                                _______
+                                
+
+  May 22, 2017.--Committed to the Committee of the Whole House on the 
+              State of the Union and ordered to be printed
+
+                                _______
+                                
+
+   Mr. Goodlatte, from the Committee on the Judiciary, submitted the 
+                               following
+
+                              R E P O R T
+
+                             together with
+
+                            DISSENTING VIEWS
+
+                        [To accompany H.R. 883]
+
+      [Including cost estimate of the Congressional Budget Office]
+
+    The Committee on the Judiciary, to whom was referred the 
+bill (H.R. 883) to amend title 18, United States Code, to 
+provide a certification process for the issuance of 
+nondisclosure requirements accompanying certain administrative 
+subpoenas, to provide for judicial review of such nondisclosure 
+requirements, and for other purposes, having considered the 
+same, report favorably thereon without amendment and recommend 
+that the bill do pass.
+
+                                CONTENTS
+
+                                                                   Page
+Purpose and Summary..............................................     2
+Background and Need for the Legislation..........................     2
+Hearings.........................................................     4
+Committee Consideration..........................................     4
+Committee Votes..................................................     4
+Committee Oversight Findings.....................................     4
+New Budget Authority and Tax Expenditures........................     4
+Congressional Budget Office Cost Estimate........................     5
+Duplication of Federal Programs..................................     6
+Disclosure of Directed Rule Makings..............................     6
+Performance Goals and Objectives.................................     6
+Advisory on Earmarks.............................................     6
+Section-by-Section Analysis......................................     6
+Changes in Existing Law Made by the Bill, as Reported............     7
+Dissenting Views.................................................     8
+
+                          Purpose and Summary
+
+    H.R. 883, the ``Targeting Child Predators Act,'' provides a 
+mechanism for the government to prohibit the recipient of an 
+administrative subpoena under 18 U.S.C. Sec. 3486 from 
+disclosing its existence to the target of an investigation in 
+child exploitation cases when the law enforcement agency 
+certifies that disclosure may result in: (1) endangerment to 
+the life or physical safety of any person; (2) flight to avoid 
+prosecution; (3) destruction of or tampering with evidence; (4) 
+intimidation of potential witnesses; or (5) otherwise seriously 
+jeopardizing an investigation or unduly delaying a trial. The 
+bill also provides judicial review so a company may challenge a 
+non-disclosure order.
+
+                Background and Need for the Legislation
+
+    Federal law authorizes federal agencies to use 
+administrative subpoenas in child exploitation cases.\1\ This 
+provision was originally enacted in 1998 as part of the 
+Protection of Children from Sexual Predators Act.\2\ The use of 
+administrative subpoenas, in lieu of grand jury subpoenas, has 
+enhanced the FBI's ability to investigate online child 
+exploitation offenses in an expeditious manner, which is highly 
+desirable given that those crimes involve the ongoing abuse of 
+children. Section 3486 created a speedy mechanism to identify 
+users of electronic communication services or remote computing 
+services. A timely method was needed because the information is 
+extremely perishable. Many private and commercial online 
+service providers maintain records on Internet usage by periods 
+of time, sometimes two days or less. Although an investigative 
+agency can obtain grand jury subpoenas from a U.S. Attorney's 
+Office in exigent circumstances on an expedited basis, more 
+commonly, the agency's acquisition of grand jury subpoenas 
+takes several weeks. As a result, the Internet service provider 
+is often no longer able to provide the needed information. 
+Giving authority to the United States Attorneys, the Assistant 
+Attorney General for the Criminal Division, and the FBI has 
+facilitated the investigative process necessary to obtain 
+information that identifies subjects and victimized children. 
+In addition, investigative information can be particularly 
+important in cases involving the abuse and exploitation of 
+children.
+---------------------------------------------------------------------------
+    \1\See 18 U.S.C. Sec. 3486.
+    \2\Pub. L. No. 105-314, 112 Stat. 2984-985 (1998).
+---------------------------------------------------------------------------
+
+1. Source and scope of subpoena authority under 18 U.S.C. Sec. 3486(a)
+
+    The Attorney General or the Attorney General's designee is 
+authorized to issue administrative subpoenas for a limited 
+category of information in criminal investigations of 
+pornography, sex abuse, and transportation for illegal sexual 
+activity offenses, where the victim was under eighteen.\3\ The 
+underlying investigation must relate to an act or activity 
+involving a violation of certain sexual abuse crimes,\4\ when 
+the victim was a minor who had not attained the age of eighteen 
+years. Section 3486(a)(1)(C) limits information that a 
+governmental entity may request from a provider of electronic 
+communications service or remote computing provider receiving a 
+subpoena under section 3486. The service or provider can be 
+required to disclose only the subscriber or customer's: (1) 
+name; (2) address; (3) long distance telephone toll billing 
+records; (4) telephone number or other subscriber identity; (5) 
+length of service customer or subscriber utilized, which may be 
+relevant to an authorized law enforcement inquiry.\5\ Using 
+administrative subpoenas to obtain testimony is limited to 
+requiring a custodian of records to give testimony concerning 
+the production and authentication of such records.\6\ 
+Administrative subpoenas issued under section 3486 may require 
+production as soon as possible after service of the subpoena, 
+but not less than twenty-four hours after such issuance.\7\
+---------------------------------------------------------------------------
+    \3\18 U.S.C. Sec. 3486(a).
+    \4\18 U.S.C. Sec. Sec. 1201, 2241(c), 2242, 2243, 2251A, 2252, 
+2252A, 2260, 2421, 2422, or 2423.
+    \5\18 U.S.C. Sec. 3486(a)(1)(C)(i).
+    \6\18 U.S.C. Sec. 3486(a)(1)(C)(ii).
+    \7\18 U.S.C. Sec. 3486(a)(9).
+---------------------------------------------------------------------------
+
+2. Applicable subpoena enforcement mechanisms
+
+    The Attorney General has no authority to enforce an 
+administrative subpoena issued under 18 U.S.C. Sec. 3486(a). 
+The Attorney General is permitted to invoke the aid of any 
+court of the United States within the jurisdiction in which the 
+investigation is carried out or of which the subpoenaed person 
+is an inhabitant, or in which he carries on business.\8\ 
+Failure to comply with a court order may be punished by the 
+court as contempt.\9\
+---------------------------------------------------------------------------
+    \8\18 U.S.C. Sec. 3486(c).
+    \9\18 U.S.C. Sec. 3486(c).
+---------------------------------------------------------------------------
+
+3. Notification provisions and other provisions related to safeguarding 
+        privacy interests
+
+    Federal law provides that a governmental entity receiving 
+records from a provider of electronic communication service or 
+remote computing service pursuant to an administrative subpoena 
+(requesting the name, address, local and long distance 
+telephone toll billing records, telephone number or other 
+subscriber number or identity, and length and type of service) 
+does not have to provide notice to the subscriber.\10\ In 
+addition, 18 U.S.C. Sec. 3486(a)(6) allows an entity issuing a 
+subpoena under 3486 authority to obtain an ex parte order 
+preventing the disclosure of the existence of the subpoena for 
+90 days if the court finds that there is reason to believe 
+disclosure may result in: (1) endangerment to the life or 
+physical safety of any person; (2) flight to avoid prosecution; 
+(3) destruction of or tampering with evidence; or (4) 
+intimidation of potential witnesses. This ex parte order is 
+renewable for an additional 90-day period based on a finding 
+that the reasons listed above continue to exist.\11\
+---------------------------------------------------------------------------
+    \10\18 U.S.C. Sec. 2703(c)(2).
+    \11\18 U.S.C. Sec. 3486(a)(6)(B) and (C).
+---------------------------------------------------------------------------
+
+4. Usefulness of administrative subpoena authority pursuant to 
+        Sec. 3486(a)(1)(A)(i)(I)
+
+    The use of an administrative subpoena is an important tool 
+for the investigation of child pornography and child sexual 
+exploitation investigations. In cases in which children are at 
+``high risk'' and/or may be in imminent danger, the execution 
+of an administrative subpoena allowsimmediate requests to be 
+made to the appropriate entity. Furthermore, unlike grand jury 
+material, which is protected,\12\ information gleaned from the service 
+of an administrative subpoena can be shared with other law enforcement 
+entities without delay. Delay could literally mean the difference 
+between life and death for a child. In contrast, the disclosure 
+limitations placed on investigators using grand jury subpoenas may not 
+allow investigators to share information necessary to the location and 
+apprehension of violent child sexual predators.
+---------------------------------------------------------------------------
+    \12\See Fed. R. Crim. P. 6(e).
+---------------------------------------------------------------------------
+    The purpose of the administrative subpoena in this sphere 
+is to obtain information as expeditiously as possible. Indeed, 
+Congress authorized these subpoenas so agents could gather 
+information without the delay of applying for a court order. 
+Currently, there is no mechanism to prevent an electronic 
+communications service or remote computing provider from 
+notifying the investigation target that the government has 
+sought their subscriber information and toll records without 
+going through the courts. As of now, the only option is to seek 
+a court order under 18 U.S.C. Sec. Sec. 2705(b) or 3486, both 
+of which require court approval, which of course defeats the 
+purpose of allowing that limited, non-content 2703(c)(2) 
+information to be provided to the government efficiently with 
+an administrative subpoena.
+
+                                Hearings
+
+    The Committee on the Judiciary held no hearings on H.R. 
+883, but did hold a hearing on the subject of combating crimes 
+against children on March 16, 2017.
+
+                        Committee Consideration
+
+    On April 27, 2017, the Committee met in open session and 
+ordered the bill, H.R. 883, favorably reported, without 
+amendment, by voice vote, a quorum being present.
+
+                            Committee Votes
+
+    In compliance with clause 3(b) of rule XIII of the Rules of 
+the House of Representatives, the Committee advises that no 
+roll call votes occurred during the Committee's consideration 
+of H.R. 883.
+
+                      Committee Oversight Findings
+
+    In compliance with clause 3(c)(1) of rule XIII of the Rules 
+of the House of Representatives, the Committee advises that the 
+findings and recommendations of the Committee, based on 
+oversight activities under clause 2(b)(1) of rule X of the 
+Rules of the House of Representatives, are incorporated in the 
+descriptive portions of this report.
+
+               New Budget Authority and Tax Expenditures
+
+    Clause 3(c)(2) of rule XIII of the Rules of the House of 
+Representatives is inapplicable because this legislation does 
+not provide new budgetary authority or increased tax 
+expenditures.
+
+               Congressional Budget Office Cost Estimate
+
+    In compliance with clause 3(c)(3) of rule XIII of the Rules 
+of the House of Representatives, the Committee sets forth, with 
+respect to the bill, H.R. 115, the following estimate and 
+comparison prepared by the Director of the Congressional Budget 
+Office under section 402 of the Congressional Budget Act of 
+1974:
+
+                                     U.S. Congress,
+                               Congressional Budget Office,
+                                    Washington, DC, April 26, 2017.
+Hon. Bob Goodlatte, Chairman,
+Committee on the Judiciary,
+House of Representatives, Washington, DC.
+    Dear Mr. Chairman: The Congressional Budget Office has 
+prepared the enclosed cost estimate for H.R. 883, the Targeting 
+Child Predators Act of 2017.
+    If you wish further details on this estimate, we will be 
+pleased to provide them. The CBO staff contact is Robert Reese, 
+who can be reached at 226-2860.
+            Sincerely,
+                                                        Keith Hall.
+Enclosure
+        cc: Honorable John Conyers, Jr.
+           Ranking Member
+
+
+
+
+            H.R. 883--Targeting Child Predators Act of 2017
+
+
+ As ordered reported by the House Committee on the Judiciary on March 
+                                22, 2017
+
+
+
+
+    H.R. 883 would amend the current process for issuing 
+nondisclosure requirements for subpoenas in certain cases of 
+child exploitation. Under current law, a formal court order is 
+needed for such nondisclosure requirements. Under the bill, a 
+nondisclosure requirement could be placed on a subpoena if the 
+subpoena is issued concurrently with a certification that 
+disclosure of the summons could have certain adverse 
+consequences on the defendant or the trial; a formal court 
+order would no longer be necessary.
+    Based on an analysis of information provided by the 
+Administrative Office of the U.S. Courts on the number of cases 
+that would be affected by the bill, CBO estimates that 
+implementing H.R. 883 would have no significant effect on the 
+federal budget.
+    Enacting H.R. 883 would not affect direct spending or 
+revenues; therefore, pay-as-you-go procedures do not apply. CBO 
+estimates that enacting H.R. 883 would not increase net direct 
+spending or on-budget deficits in any of the four consecutive 
+10-year periods beginning in 2028.
+    H.R. 883 contains no intergovernmental or private-sector 
+mandates as defined in the Unfunded Mandates Reform Act and 
+would impose no costs on state, local, or tribal governments.
+    The CBO staff contact for this estimate is Robert Reese. 
+The estimate was approved by H. Samuel Papenfuss, Deputy 
+Assistant Director for Budget Analysis.
+
+                    Duplication of Federal Programs
+
+    No provision of H.R. 883 establishes or reauthorizes a 
+program of the Federal government known to be duplicative of 
+another Federal program, a program that was included in any 
+report from the Government Accountability Office to Congress 
+pursuant to section 21 of Public Law 111-139, or a program 
+related to a program identified in the most recent Catalog of 
+Federal Domestic Assistance.
+
+                  Disclosure of Directed Rule Makings
+
+    The Committee estimates that H.R. 883 specifically directs 
+to be completed no specific rule makings within the meaning of 
+5 U.S.C. Sec. 551.
+
+                    Performance Goals and Objectives
+
+    The Committee states that pursuant to clause 3(c)(4) of 
+rule XIII of the Rules of the House of Representatives, H.R. 
+883, the ``Targeting Child Predators Act,'' prohibits the 
+recipient of an administrative subpoena under 18 U.S.C. 
+Sec. 3486 from disclosing its existence to the target of an 
+investigation when the government certifies that disclosure may 
+result in: (1) endangerment to the life or physical safety of 
+any person; (2) flight to avoid prosecution; (3) destruction of 
+or tampering with evidence; (4) intimidation of potential 
+witnesses; or (5) otherwise seriously jeopardizing an 
+investigation or unduly delaying a trial. The bill also 
+provides judicial review so a company may challenge a non-
+disclosure order.
+
+                          Advisory on Earmarks
+
+    In accordance with clause 9 of rule XXI of the Rules of the 
+House of Representatives, H.R. 883 does not contain any 
+congressional earmarks, limited tax benefits, or limited tariff 
+benefits as defined in clause 9(e), 9(f), or 9(g) of Rule XXI.
+
+                      Section-by-Section Analysis
+
+    Section 1. Short Title. This section cites the short title 
+of the bill as the ``Targeting Child Predators Act of 2017.''
+    Section 2. Nondisclosure of Administrative Subpoenas. This 
+section provides that if federal officials with administrative 
+subpoena power make a certification that disclosure may result 
+in: (1) endangerment to the life or physical safety of any 
+person; (2) flight to avoid prosecution; (3) destruction of or 
+tampering with evidence; (4) intimidation of potential 
+witnesses; or (5) otherwise seriously jeopardizing an 
+investigation or unduly delaying a trial, then providers of 
+electronic communication services or remote computer services 
+may not disclose the existence of the subpoena for 180 days.
+    Section 3. Judicial Review of Nondisclosure Requirements. 
+This section provides a mechanism for judicial review for the 
+provider to demand the government to begin judicial review 
+proceedings or to challenge the subpoena's non-disclosure 
+requirement itself.
+
+         Changes in Existing Law Made by the Bill, as Reported
+
+  In compliance with clause 3(e) of rule XIII of the Rules of 
+the House of Representatives, changes in existing law made by 
+the bill, as reported, are shown as follows (existing law 
+proposed to be omitted is enclosed in black brackets, new 
+matter is printed in italics, and existing law in which no 
+change is proposed is shown in roman):
+
+TITLE 18, UNITED STATES CODE
+
+           *       *       *       *       *       *       *
+
+
+
+PART II--CRIMINAL PROCEDURE
+
+           *       *       *       *       *       *       *
+
+
+                  CHAPTER 223--WITNESSES AND EVIDENCE
+
+
+Sec.
+3481. Competency of accused.
+     * * * * * * *
+3486A. Judicial review of nondisclosure requirements.
+
+           *       *       *       *       *       *       *
+
+
+Sec. 3486. Administrative subpoenas
+
+  (a) Authorization.--(1)(A) In any investigation of--
+          (i)(I) a Federal health care offense; or (II) a 
+        Federal offense involving the sexual exploitation or 
+        abuse of children, the Attorney General;
+          (ii) an unregistered sex offender conducted by the 
+        United States Marshals Service, the Director of the 
+        United States Marshals Service; or
+          (iii) an offense under section 871 or 879, or a 
+        threat against a person protected by the United States 
+        Secret Service under paragraph (5) or (6) of section 
+        3056, if the Director of the Secret Service determines 
+        that the threat constituting the offense or the threat 
+        against the person protected is imminent, [the 
+        Secretary of the Treasury] the Secretary of Homeland 
+        Security,
+may issue in writing and cause to be served a subpoena 
+requiring the production and testimony described in 
+subparagraph (B).
+  (B) Except as provided in subparagraph (C), a subpoena issued 
+under subparagraph (A) may require--
+          (i) the production of any records or other things 
+        relevant to the investigation; and
+          (ii) testimony by the custodian of the things 
+        required to be produced concerning the production and 
+        authenticity of those things.
+  (C) A subpoena issued under subparagraph (A) with respect to 
+a provider of electronic communication service or remote 
+computing service, in an investigation of a Federal offense 
+involving the sexual exploitation or abuse of children shall 
+not extend beyond--
+          (i) requiring that provider to disclose the 
+        information specified in section 2703(c)(2), which may 
+        be relevant to an authorized law enforcement inquiry; 
+        or
+          (ii) requiring a custodian of the records of that 
+        provider to give testimony concerning the production 
+        and authentication of such records or information.
+  (D) As used in this paragraph--
+          (i) the term ``Federal offense involving the sexual 
+        exploitation or abuse of children'' means an offense 
+        under section 1201, 1591, 2241(c), 2242, 2243, 2251, 
+        2251A, 2252, 2252A, 2260, 2421, 2422, or 2423, in which 
+        the victim is an individual who has not attained the 
+        age of 18 years; and
+          (ii) the term ``sex offender'' means an individual 
+        required to register under the Sex Offender 
+        Registration and Notification Act (42 U.S.C. 16901 et 
+        seq.).
+  (2) A subpoena under this subsection shall describe the 
+objects required to be produced and prescribe a return date 
+within a reasonable period of time within which the objects can 
+be assembled and made available.
+  (3) The production of records relating to a Federal health 
+care offense shall not be required under this section at any 
+place more than 500 miles distant from the place where the 
+subpoena for the production of such records is served. The 
+production of things in any other case may be required from any 
+place within the United States or subject to the laws or 
+jurisdiction of the United States.
+  (4) Witnesses subpoenaed under this section shall be paid the 
+same fees and mileage that are paid witnesses in the courts of 
+the United States.
+  (5) At any time before the return date specified in the 
+summons, the person or entity summoned may, in the United 
+States district court for the district in which that person or 
+entity does business or resides, petition for an order 
+modifying or setting aside the summons, or a prohibition of 
+disclosure [ordered by a court] under paragraph (6).
+  [(6)(A) A United States district court for the district in 
+which the summons is or will be served, upon application of the 
+United States, may issue an ex parte order that no person or 
+entity disclose to any other person or entity (other than to an 
+attorney in order to obtain legal advice) the existence of such 
+summons for a period of up to 90 days.
+  [(B) Such order may be issued on a showing that the things 
+being sought may be relevant to the investigation and there is 
+reason to believe that such disclosure may result in--
+          [(i) endangerment to the life or physical safety of 
+        any person;
+          [(ii) flight to avoid prosecution;
+          [(iii) destruction of or tampering with evidence; or
+          [(iv) intimidation of potential witnesses.
+  [(C) An order under this paragraph may be renewed for 
+additional periods of up to 90 days upon a showing that the 
+circumstances described in subparagraph (B) continue to exist.]
+          (6)(A)(i) If a subpoena issued under this section is 
+        accompanied by a certification under clause (ii) and 
+        notice of the right to judicial review under 
+        subparagraph (C), no recipient of a subpoena under this 
+        section shall disclose to any person that the Federal 
+        official who issued the subpoena has sought or obtained 
+        access to information or records under this section, 
+        for a period of 180 days.
+          (ii) The requirements of clause (i) shall apply if 
+        the Federal official who issued the subpoena certifies 
+        that the absence of a prohibition of disclosure under 
+        this subsection may result in--
+                  (I) endangering the life or physical safety 
+                of an individual;
+                  (II) flight from prosecution;
+                  (III) destruction of or tampering with 
+                evidence;
+                  (IV) intimidation of potential witnesses; or
+                  (V) otherwise seriously jeopardizing an 
+                investigation or unduly delaying a trial.
+          (B)(i) A recipient of a subpoena under this section 
+        may disclose information otherwise subject to any 
+        applicable nondisclosure requirement to--
+                  (I) those persons to whom disclosure is 
+                necessary in order to comply with the request;
+                  (II) an attorney in order to obtain legal 
+                advice or assistance regarding the request; or
+                  (III) other persons as permitted by the 
+                Federal official who issued the subpoena.
+          (ii) A person to whom disclosure is made under clause 
+        (i) shall be subject to the nondisclosure requirements 
+        applicable to a person to whom a subpoena is issued 
+        under this section in the same manner as the person to 
+        whom the subpoena was issued.
+          (iii) Any recipient that discloses to a person 
+        described in clause (i) information otherwise subject 
+        to a nondisclosure requirement shall notify the person 
+        of the applicable nondisclosure requirement.
+          (iv) At the request of the Federal official who 
+        issued the subpoena, any person making or intending to 
+        make a disclosure under subclause (I) or (III) of 
+        clause (i) shall identify to the individual making the 
+        request under this clause the person to whom such 
+        disclosure will be made or to whom such disclosure was 
+        made prior to the request.
+          (C)(i) A nondisclosure requirement imposed under 
+        subparagraph (A) shall be subject to judicial review 
+        under section 3486A.
+          (ii) A subpoena issued under this section, in 
+        connection with which a nondisclosure requirement under 
+        subparagraph (A) is imposed, shall include notice of 
+        the availability of judicial review described in clause 
+        (i).
+          (D) A nondisclosure requirement imposed under 
+        subparagraph (A) may be extended in accordance with 
+        section 3486A(a)(4).
+  (7) A summons issued under this section shall not require the 
+production of anything that would be protected from production 
+under the standards applicable to a subpoena duces tecum issued 
+by a court of the United States.
+  (8) If no case or proceeding arises from the production of 
+records or other things pursuant to this section within a 
+reasonable time after those records or things are produced, the 
+agency to which those records or things were delivered shall, 
+upon written demand made by the person producing those records 
+or things, return them to that person, except where the 
+production required was only of copies rather than originals.
+  (9) A subpoena issued under paragraph (1)(A)(i)(II) or 
+(1)(A)(iii) may require production as soon as possible, but in 
+no event less than 24 hours after service of the subpoena.
+  (10) As soon as practicable following the issuance of a 
+subpoena under paragraph (1)(A)(iii), [the Secretary of the 
+Treasury] the Secretary of Homeland Security shall notify the 
+Attorney General of its issuance.
+  (b) Service.--A subpoena issued under this section may be 
+served by any person who is at least 18 years of age and is 
+designated in the subpoena to serve it. Service upon a natural 
+person may be made by personal delivery of the subpoena to him. 
+Service may be made upon a domestic or foreign corporation or 
+upon a partnership or other unincorporated association which is 
+subject to suit under a common name, by delivering the subpoena 
+to an officer, to a managing or general agent, or to any other 
+agent authorized by appointment or by law to receive service of 
+process. The affidavit of the person serving the subpoena 
+entered on a true copy thereof by the person serving it shall 
+be proof of service.
+  (c) Enforcement.--In the case of contumacy by or refusal to 
+obey a subpoena issued to any person, the Attorney General may 
+invoke the aid of any court of the United States within the 
+jurisdiction of which the investigation is carried on or of 
+which the subpoenaed person is an inhabitant, or in which he 
+carries on business or may be found, to compel compliance with 
+the subpoena. The court may issue an order requiring the 
+subpoenaed person to appear before the Attorney General to 
+produce records, if so ordered, or to give testimony concerning 
+the production and authentication of such records. Any failure 
+to obey the order of the court may be punished by the court as 
+a contempt thereof. All process in any such case may be served 
+in any judicial district in which such person may be found.
+  (d) Immunity From Civil Liability.--Notwithstanding any 
+Federal, State, or local law, any person, including officers, 
+agents, and employees, receiving a subpoena under this section, 
+who complies in good faith with the subpoena and thus produces 
+the materials sought, shall not be liable in any court of any 
+State or the United States to any customer or other person for 
+such production or for nondisclosure of that production to the 
+customer.
+  (e) Limitation on Use.--(1) Health information about an 
+individual that is disclosed under this section may not be used 
+in, or disclosed to any person for use in, any administrative, 
+civil, or criminal action or investigation directed against the 
+individual who is the subject of the information unless the 
+action or investigation arises out of and is directly related 
+to receipt of health care or payment for health care or action 
+involving a fraudulent claim related to health; or if 
+authorized by an appropriate order of a court of competent 
+jurisdiction, granted after application showing good cause 
+therefor.
+  (2) In assessing good cause, the court shall weigh the public 
+interest and the need for disclosure against the injury to the 
+patient, to the physician-patient relationship, and to the 
+treatment services.
+  (3) Upon the granting of such order, the court, in 
+determining the extent to which any disclosure of all or any 
+part of any record is necessary, shall impose appropriate 
+safeguards against unauthorized disclosure.
+
+Sec. 3486A. Judicial review of nondisclosure requirements
+
+  (a) Nondisclosure.--
+          (1) In general.--
+                  (A) Notice.--If a recipient of a subpoena 
+                under section 3486 wishes to have a court 
+                review a nondisclosure requirement imposed in 
+                connection with the subpoena, the recipient may 
+                notify the Government or file a petition for 
+                judicial review in any court described in 
+                subsection (a)(5) of section 3486.
+                  (B) Application.--Not later than 30 days 
+                after the date of receipt of a notification 
+                under subparagraph (A), the Government shall 
+                apply for an order prohibiting the disclosure 
+                of the existence or contents of the relevant 
+                subpoena. An application under this 
+                subparagraph may be filed in the district court 
+                of the United States for the judicial district 
+                in which the recipient of the subpoena is doing 
+                business or in the district court of the United 
+                States for any judicial district within which 
+                the authorized investigation that is the basis 
+                for the subpoena is being conducted. The 
+                applicable nondisclosure requirement shall 
+                remain in effect during the pendency of 
+                proceedings relating to the requirement.
+                  (C) Consideration.--A district court of the 
+                United States that receives a petition under 
+                subparagraph (A) or an application under 
+                subparagraph (B) should rule expeditiously, and 
+                shall, subject to paragraph (3), issue a 
+                nondisclosure order that includes conditions 
+                appropriate to the circumstances.
+          (2) Application contents.--An application for a 
+        nondisclosure order or extension thereof or a response 
+        to a petition filed under paragraph (1) shall include a 
+        certification from the Federal official who issued the 
+        subpoena indicating that the absence of a prohibition 
+        of disclosure under this subsection may result in--
+                  (A) endangering the life or physical safety 
+                of an individual;
+                  (B) flight from prosecution;
+                  (C) destruction of or tampering with 
+                evidence;
+                  (D) intimidation of potential witnesses; or
+                  (E) otherwise seriously jeopardizing an 
+                investigation or unduly delaying a trial.
+          (3) Standard.--A district court of the United States 
+        shall issue a nondisclosure order or extension thereof 
+        under this subsection if the court determines that 
+        there is reason to believe that disclosure of the 
+        information subject to the nondisclosure requirement 
+        during the applicable time period may result in--
+                  (A) endangering the life or physical safety 
+                of an individual;
+                  (B) flight from prosecution;
+                  (C) destruction of or tampering with 
+                evidence;
+                  (D) intimidation of potential witnesses; or
+                  (E) otherwise seriously jeopardizing an 
+                investigation or unduly delaying a trial.
+          (4) Extension.--Upon a showing that the circumstances 
+        described in subparagraphs (A) through (E) of paragraph 
+        (3) continue to exist, a district court of the United 
+        States may issue an ex parte order extending a 
+        nondisclosure order imposed under this subsection or 
+        under section 3486(a)(6)(A) for additional periods of 
+        180 days, or, if the court determines that the 
+        circumstances necessitate a longer period of 
+        nondisclosure, for additional periods which are longer 
+        than 180 days.
+  (b) Closed Hearings.--In all proceedings under this section, 
+subject to any right to an open hearing in a contempt 
+proceeding, the court must close any hearing to the extent 
+necessary to prevent an unauthorized disclosure of a request 
+for records, a report, or other information made to any person 
+or entity under section 3486. Petitions, filings, records, 
+orders, certifications, and subpoenas must also be kept under 
+seal to the extent and as long as necessary to prevent the 
+unauthorized disclosure of a subpoena under section 3486.
+
+           *       *       *       *       *       *       *
+
+
+                            Dissenting Views
+
+    H.R. 883, the ``Targeting Child Predators Act of 2017,'' 
+would modify the process by which the U.S. Attorney General, 
+the Director of the U.S. States Marshals Service, and the 
+Secretary of Homeland Security issue administrative subpoenas 
+by eliminating the need to obtain a court order, requiring 
+nondisclosure of the existence of a subpoena, and extending the 
+initial period of nondisclosure from 90 days to 180 days. We 
+believe that the requirement that a judge approve such 
+nondisclosure orders prior to their issuance is an important 
+check on the potential abuse of these orders. As H.R. 883 fails 
+to provide for this critical check, we respectfully dissent and 
+accordingly urge our colleagues to oppose this legislation when 
+it comes to the floor.
+
+                       DESCRIPTION AND BACKGROUND
+
+                              DESCRIPTION
+
+    Section 2 of the bill amends section 3486(a) of title 18 of 
+the United States Code, which sets out the process by which the 
+U.S. Attorney General, the Director of the U.S. Marshals 
+Service, and the Secretary of Homeland Security issue 
+administrative subpoenas. As amended, section 3486(a) would: 
+(1) eliminate the portion of the statute requiring a federal 
+official requesting the subpoena to apply to a United States 
+district court for an ex parte order of nondisclosure; (2) make 
+the nondisclosure requirement subject to judicial review; and 
+(3) increase the current nondisclosure period from 90 days to 
+180 days. A subpoena issued under this provision would impose a 
+nondisclosure requirement on the recipient, without application 
+to a judge, if the subpoena is accompanied by a notice of the 
+right to judicial review and a certification that disclosure 
+may result in endangering the life or safety of a person, 
+flight from prosecution, destruction of or tampering with 
+evidence, intimidation of potential witnesses, or otherwise 
+seriously jeopardize an investigation or unduly delay a trial. 
+Recipients of subpoenas may disclose information to persons 
+necessary to comply with the subpoena, such as an attorney in 
+order to obtain advice or assistance, or other persons allowed 
+by the issuer of the subpoena.
+    Section 3 of the bill establishes the procedure for 
+obtaining judicial review of nondisclosure requirements imposed 
+in administrative subpoenas under section 3486. A recipient of 
+a subpoena may notify the government or file a petition for 
+judicial review of a nondisclosure order in a district court 
+where the person resides or business is conducted. No later 
+than 30 days after the notice is received, the government must 
+apply for an order prohibiting disclosure of the existence or 
+contents of the subpoena. The application must include a 
+certification alleging that disclosure may result in: 
+endangering the life or physical safety of an individual; 
+flight from prosecution; destruction of or tampering with 
+evidence; and intimidation of potential witnesses; or otherwise 
+seriously jeopardizing an investigation or unduly delaying a 
+trial. A U.S. district court judge must issue a nondisclosure 
+order or extension if he or she determines that there is reason 
+to believe that disclosure will result in the occurrence of any 
+of the aforementioned circumstances. Extensions may be granted 
+for 180 days or longer if the circumstances require a longer 
+period of nondisclosure. The proceedings must be closed to the 
+extent necessary to prevent disclosure of information under 
+section 3486 and all filings, records, orders, certifications, 
+and the like must be kept under seal. A clerical amendment is 
+made to the table of sections to correspond with the addition 
+of section 3486A.
+
+                               BACKGROUND
+
+    As provided in section 3486, administrative subpoena 
+authority is the power granted to certain federal agencies to 
+compel, without judicial approval, the production of records 
+(and testimony of the custodian of such records about their 
+authenticity) relevant to an investigation. With the required 
+showing of relevance, an administrative subpoena, which is more 
+limited in scope of what may be compelled to be produced, is 
+not subject to the Fourth Amendment's probable cause 
+requirement.\1\ Such subpoenas give the government agencies 
+authorized to use them as an investigative tool, similar to 
+that used by grand juries, to investigate alleged violations of 
+the law.\2\ Although agencies do not need probable cause to 
+issue a subpoena, judicial review is intended to prevent 
+agencies from abusing their subpoena power.\3\ In fact, an 
+administrative subpoena begins an adversarial process that 
+permits judicial review of the subpoena's reasonableness.\4\
+---------------------------------------------------------------------------
+    \1\U.S. v. Powell, 379 U.S. 48, 57 (1964); see SEC v. Jerry T. 
+O'Brien, Inc., 467 U.S. 735, 741-42 (1984) (holding that the standards 
+set in Powell govern all administrative subpoenas).
+    \2\Office of Legal Policy, U.S. Dep't of Justice, Report to 
+Congress on the Use of Administrative Subpoena Authorities by Executive 
+Branch Agencies and Entities 35 (2002) [hereinafter DOJ Report].
+    \3\Id. at 9.
+    \4\18 U.S.C. Sec. 3486(a)(5) (2017).
+---------------------------------------------------------------------------
+    The Attorney General is given this authority with respect 
+to the investigations of health care offenses and offenses 
+involving the sexual exploitation or abuse of children. A 
+subpoena issued by the Attorney General pursuant to section 
+3486, to a provider of electronic communication service or 
+remote computing service, in an investigation of a federal 
+offense involving the sexual exploitation or abuse of children 
+is limited by section 2703 of title 18, and the contents of the 
+subpoena must not extend beyond requiring the provider to 
+disclose information specified in section 2703(c)(2).\5\ The 
+U.S. Marshals Service is authorized to issue administrative 
+subpoenas in tracking unregistered sex offenders and the Secret 
+Service is given this authority with respect to investigating 
+imminent threats against those whom they protect.
+---------------------------------------------------------------------------
+    \5\A provider of electronic communication service or remote 
+computing service shall disclose to a governmental entity: name, 
+address, telephone records, length and type of service used, telephone 
+or instrument number or other subscriber number or identity, including 
+any temporarily assigned network address, and means and source of 
+payment, of a subscriber or customer when the entity uses an 
+administrative subpoena authorized by a Federal statute.
+---------------------------------------------------------------------------
+    Upon application of the United States (Attorney General, 
+U.S. Marshals Service, or Secret Service), a U.S. district 
+court may issue an order of nondisclosure of the existence of 
+the subpoena for a period of up to 90 days if disclosure may 
+result in endangerment to a person's life or safety; flight to 
+avoid prosecution; destruction of or tampering with evidence; 
+or intimidation of potential witnesses. The order may be 
+extended for additional 90-day periods if such circumstances 
+persist.\6\
+---------------------------------------------------------------------------
+    \6\18 U.S.C. Sec. 3486(a)(6)(A) (2017).
+---------------------------------------------------------------------------
+    In the context of protecting children from predators, H.R. 
+883 seeks to strengthen the ability of law enforcement to seek 
+out, locate, and prosecute online sex offenders. Law 
+enforcement investigators may obtain the Internet Protocol (IP) 
+address of individuals suspected of exchanging or distributing 
+child pornography, enticing children, or otherwise committing 
+child sexual exploitation crimes online. Law enforcement 
+investigators may also subpoena Internet Service Providers 
+(ISPs) for the user information attached to the IP address. 
+Unless notice to customers is delayed by a nondisclosure order, 
+ISPs might inform the user of the law enforcement inquiry, 
+allowing the user to wipe their accounts and delete potentially 
+incriminating evidence. H.R. 883 would eliminate judicial 
+review prior to the issue of nondisclosure orders and require 
+that recipients wait 180 days before disclosing to a user that 
+their information was requested by law enforcement. This change 
+would apply to all agencies authorized to issue such subpoenas 
+pursuant to section 3486, i.e., the Attorney General, the U.S. 
+Marshals Service, and the U.S. Secret Service.
+
+                         CONCERN WITH H.R. 883
+
+    H.R. 883 eliminates the requirement that officials 
+requesting the subpoenas apply to a judge for a nondisclosure 
+order. The requirement that a judge issue a nondisclosure order 
+helps ensure that the government pursues such orders only when 
+they are truly necessary. Although a recipient of such a 
+subpoena may challenge the nondisclosure order in court, the 
+absence of judicial oversight or review at the front end may 
+lead to governmental abuse of this authority. Particularly in 
+the online context, companies are doing more to give notice to 
+customers as to the government's investigative requests for 
+their information, so eliminating judicial oversight or prior 
+judicial review harms a benefit that companies believe 
+customers desire.
+
+                               CONCLUSION
+
+    Federal law grants certain agencies the authority to issue 
+administrative subpoenas only under certain circumstances 
+because of the extraordinary nature of allowing these agencies 
+to compel the production of records pursuant to a standard less 
+demanding than probable cause. Although well-intended, H.R. 883 
+unwisely eliminates an important protection that helps prevent 
+abuse of administrative subpoenas. We believe current law 
+strikes the right balance by requiring a judge to approve the 
+inclusion of a nondisclosure order with administrative 
+subpoenas.
+    Accordingly, we oppose H.R. 1039 and we urge our colleagues 
+to join us in opposition.
+                                   Mr. Conyers, Jr.
+                                   Ms. Lofgren.
+                                   Ms. Jackson Lee.
+                                   Mr. Johnson, Jr.
+                                   Mr. Gutierrez.
+                                   Ms. Bass.
+                                   Mr. Richmond.
+                                   Mr. Jeffries.
+
+                                  [all]
